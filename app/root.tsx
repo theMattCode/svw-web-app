@@ -9,7 +9,7 @@ import {
 } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: "/tailwind" },
+  { rel: "stylesheet", href: "/tailwindcss" },
 ];
 
 export const meta: MetaFunction = () => ({
