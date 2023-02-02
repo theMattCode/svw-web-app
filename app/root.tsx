@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 
-import styles from "#/styles/app.css";
+import styles from "#/generated.css";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
