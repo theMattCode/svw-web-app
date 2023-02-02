@@ -1,6 +1,6 @@
 overwrite: true
 schema: 'http://localhost:1337/graphql'
 generates:
-  app/lib/graphql/schema.json:
+  lib/graphql/schema.json:
     plugins:
       - 'introspection'
