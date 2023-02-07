@@ -12,31 +12,43 @@ type MenuProps = {
   socialMedia: SocialMediaData[];
 };
 
-export default function Header({ menuItems, logo, socialMedia }: MenuProps): JSX.Element {
+export default function Header({
+  menuItems,
+  logo,
+  socialMedia,
+}: MenuProps): JSX.Element {
   return (
-    <>
+    <header>
       <SmallScreenNavigation />
-      <LargeScreenNavigation menuItems={menuItems} logo={logo} socialMedia={socialMedia} />
-    </>
+      <LargeScreenNavigation
+        menuItems={menuItems}
+        logo={logo}
+        socialMedia={socialMedia}
+      />
+    </header>
   );
 }
 
 function SmallScreenNavigation(): JSX.Element {
-  return <header className="md:hidden">not yet implemented</header>;
+  return <div className="md:hidden">not yet implemented</div>;
 }
 
-function LargeScreenNavigation({ menuItems, logo, socialMedia }: MenuProps): JSX.Element {
+function LargeScreenNavigation({
+  menuItems,
+  logo,
+  socialMedia,
+}: MenuProps): JSX.Element {
   return (
-    <header className="hidden md:block">
+    <div className="hidden md:block ">
       <div className="flex flex-col">
-        <div className="flex flex-row flex-1">
-          <div className="container pl-4">
+        <div className="flex flex-row flex-1 bg-svw-blue-default">
+          <div className="container text-sm">
             <AccessHeader socialMedia={socialMedia} />
           </div>
         </div>
-        <div className="place-content-between bg-svw-blue-default mt-1">
-          <div className="container pl-4 flex flex-row place-content-between items-center">
-            <div className="overflow-visible h-16 z-50 md:pr-8 lg:pr-16 border-r-8 border-r-white">
+        <div className="place-content-between">
+          <div className="container flex flex-row place-content-between items-center">
+            <div className="overflow-visible h-14 z-50">
               {logo && (
                 <Link href="/">
                   <Image
@@ -44,7 +56,8 @@ function LargeScreenNavigation({ menuItems, logo, socialMedia }: MenuProps): JSX
                     alt=""
                     width={128}
                     height={128}
-                    style={{ transform: "translateY(-32px)" }}
+                    className="pt-2 h-24 lg:ml-32"
+                    /*style={{ transform: "translateY(-32px)" }}*/
                   />
                 </Link>
               )}
@@ -53,7 +66,7 @@ function LargeScreenNavigation({ menuItems, logo, socialMedia }: MenuProps): JSX
           </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 
@@ -63,10 +76,15 @@ type AccessHeaderProps = {
 
 function AccessHeader({ socialMedia }: AccessHeaderProps): JSX.Element {
   return (
-    <div className="flex flex-row place-content-end">
+    <div className="flex flex-row text-white place-content-end">
       {socialMedia?.map((item) => (
         <Link key={item.name} href={item.url ?? ""} target="_blank">
-          <Image src={getFullAssetUrl(item.icon?.data?.attributes?.url ?? "")} alt="" width={28} height={28} />
+          <Image
+            src={getFullAssetUrl(item.icon?.data?.attributes?.url ?? "")}
+            alt=""
+            width={28}
+            height={28}
+          />
         </Link>
       ))}
       <Link href="/mitglied-werden" className="px-1">
@@ -82,14 +100,17 @@ function AccessHeader({ socialMedia }: AccessHeaderProps): JSX.Element {
 function SearchField(): JSX.Element {
   return (
     <form>
-      <div className="relative">
+      <div className="relative text-black text-sm py-0.5">
         <input
-          className="text-white bg-svw-blue-default border-2 border-svw-blue-default h-8 px-2 pr-8 text-sm focus:outline-none w-40 placeholder-gray-300"
+          className="bg-white h-6 px-2 pr-8 focus:outline-none w-40 placeholder-gray-500"
           type="search"
           name="search"
           placeholder="Suche"
         />
-        <button type="submit" className="absolute right-0 top-0 mt-2 mr-2 text-white">
+        <button
+          type="submit"
+          className="absolute right-0 mt-1.5 top-0 mr-1.5 text-svw-blue-default"
+        >
           <FaSearch />
         </button>
       </div>

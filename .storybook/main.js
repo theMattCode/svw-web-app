@@ -1,19 +1,27 @@
-const path = require('path');
+const path = require("path");
+
 module.exports = {
-  "stories": [
-    "../stories/**/*.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+  stories: [
+    "../components/**/*.mdx",
+    "../components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
   ],
-  "framework": {
-    "name": "@storybook/nextjs",
-    "options": {}
+  framework: {
+    name: "@storybook/nextjs",
+    options: {},
   },
-  "docs": {
-    "autodocs": "tag"
-  }
-}
+  docs: {
+    autodocs: "tag",
+  },
+  webpackFinal: async (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "#": path.resolve(__dirname, "../"),
+    };
+    return config;
+  },
+};

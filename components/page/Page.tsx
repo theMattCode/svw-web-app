@@ -10,7 +10,7 @@ export function Page(props: Props): JSX.Element {
     props.data;
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex flex-row w-full">
         {headerContents?.map((content) => {
           if (content) {
             return (

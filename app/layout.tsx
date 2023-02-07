@@ -10,7 +10,8 @@ export default async function Layout({
   const homepageData = await fetchHomepageData();
   return (
     <html lang="de">
-      <body className="2xl:bg-[url('/background-2xl.png')] xl:bg-[url('/background-xl.png')] lg:bg-[url('/background-lg.png')] md:bg-[url('/background-md.png')] md:bg-contain md:bg-repeat-y">
+      <body /*className="2xl:bg-[url('/background-2xl.png')] xl:bg-[url('/background-xl.png')] lg:bg-[url('/background-lg.png')] md:bg-[url('/background-md.png')] md:bg-contain md:bg-repeat-y"*/
+      >
         <div className="min-h-screen flex flex-col">
           <Header
             menuItems={

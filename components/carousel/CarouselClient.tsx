@@ -1,9 +1,9 @@
 "use client";
 
 import { PromotionArticle } from "#/lib/graphql/articles.gql";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { getFullAssetUrl } from "#/lib/asset";
+import Link from "next/link";
 
 type Props = {
   articles: PromotionArticle[];
@@ -11,6 +11,14 @@ type Props = {
 
 export function CarouselClient({ articles }: Props): JSX.Element {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const length = articles.length;
+    setTimeout(
+      () => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1),
+      5000
+    );
+  }, [currentSlide, articles.length, setCurrentSlide]);
 
   /*
   const handleNextSlide = () => {
@@ -24,40 +32,52 @@ export function CarouselClient({ articles }: Props): JSX.Element {
   };
   */
   return (
-    <div className="mx-8 md:w-10/12 lg:w-8/12">
-      <div className="overflow-hidden border-2 border-white">
+    <div className="w-full h-full">
+      <div className="flex flex-col h-full place-items-end">
         {articles.map((article, index) => {
           if (index === currentSlide && article.image?.data?.attributes) {
             const imageAttributes = article.image.data.attributes;
             return (
-              <Image
-                src={getFullAssetUrl(imageAttributes.url)}
-                alt=""
-                width={imageAttributes.width ?? 0}
-                height={imageAttributes.height ?? 0}
-                className="animate-fadeIn"
-                key={article.slug}
-              />
+              <>
+                <Image
+                  key={article.slug}
+                  src={imageAttributes.url}
+                  alt=""
+                  width={imageAttributes.width ?? 0}
+                  height={imageAttributes.height ?? 0}
+                  className="object-cover absolute left-0 right-0 w-full h-96 md:h-[50vh]"
+                />
+                <div className="container flex flex-row items-end h-full z-50">
+                  <h3 className="px-3 flex flex-row lg:ml-32">
+                    <Link
+                      href={`/news/${article.slug}`}
+                      className="py-0.5 bg-white/75 news-title-shadow"
+                    >
+                      {article.title}
+                    </Link>
+                  </h3>
+                </div>
+              </>
             );
           }
         })}
-      </div>
-      <div className="flex flex-row justify-center p-2">
-        {articles.map((_, index) => {
-          return (
-            <div
-              className={
-                index === currentSlide
-                  ? "h-3 w-3 bg-svw-blue-default rounded-full border-2 border-svw-blue-default mx-2 mb-2 cursor-pointer"
-                  : "h-3 w-3 bg-neutral-300 rounded-full border-2 border-svw-blue-default mx-2 mb-2 cursor-pointer"
-              }
-              key={index}
-              onClick={() => {
-                setCurrentSlide(index);
-              }}
-            />
-          );
-        })}
+        <div className="container flex flex-row justify-center items-end p-2 z-50 ">
+          {articles.map((_, index) => {
+            return (
+              <div
+                key={index}
+                className={
+                  index === currentSlide
+                    ? "h-2 w-4 bg-svw-blue-default m-2 cursor-pointer"
+                    : "h-2 w-4 bg-white m-2 cursor-pointer"
+                }
+                onClick={() => {
+                  setCurrentSlide(index);
+                }}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
