@@ -46,24 +46,8 @@ function LargeScreenNavigation({
             <AccessHeader socialMedia={socialMedia} />
           </div>
         </div>
-        <div className="place-content-between">
-          <div className="container flex flex-row place-content-between items-center">
-            <div className="overflow-visible h-14 z-50">
-              {logo && (
-                <Link href="/">
-                  <Image
-                    src={getFullAssetUrl(logo)}
-                    alt=""
-                    width={128}
-                    height={128}
-                    className="pt-2 h-24 lg:ml-32"
-                    /*style={{ transform: "translateY(-32px)" }}*/
-                  />
-                </Link>
-              )}
-            </div>
-            <MainNavigation menuItems={menuItems} />
-          </div>
+        <div className="container">
+          <MainNavigation logo={logo} menuItems={menuItems} />
         </div>
       </div>
     </div>
