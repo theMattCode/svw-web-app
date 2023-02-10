@@ -20,17 +20,6 @@ export function CarouselClient({ articles }: Props): JSX.Element {
     );
   }, [currentSlide, articles.length, setCurrentSlide]);
 
-  /*
-  const handleNextSlide = () => {
-    let newSlide = currentSlide === articles.length - 1 ? 0 : currentSlide + 1;
-    setCurrentSlide(newSlide);
-  };
-
-  const handlePrevSlide = () => {
-    let newSlide = currentSlide === 0 ? articles.length - 1 : currentSlide - 1;
-    setCurrentSlide(newSlide);
-  };
-  */
   return (
     <div className="w-full h-full">
       <div className="flex flex-col h-full place-items-end">
@@ -48,14 +37,13 @@ export function CarouselClient({ articles }: Props): JSX.Element {
                   className="object-cover absolute left-0 right-0 w-full h-96 md:h-[50vh]"
                 />
                 <div className="container flex flex-row items-end h-full z-50">
-                  <h3 className="px-3 flex flex-row lg:ml-32">
-                    <Link
-                      href={`/news/${article.slug}`}
-                      className="py-0.5 bg-white/75 news-title-shadow"
-                    >
-                      {article.title}
-                    </Link>
-                  </h3>
+                  <Link href={`/news/${article.slug}`}>
+                    <h3 className="px-3 lg:ml-32 w-10/12 lg:w-7/12">
+                      <span className="py-0.5 bg-white/75 news-title-shadow">
+                        {article.title}
+                      </span>
+                    </h3>
+                  </Link>
                 </div>
               </>
             );
