@@ -38,7 +38,6 @@ function LargeScreenNavigation({
   logo,
   socialMedia,
 }: MenuProps): JSX.Element {
-  console.dir(menuItems, { depth: null });
   return (
     <div className="hidden md:block ">
       <div className="flex flex-col">

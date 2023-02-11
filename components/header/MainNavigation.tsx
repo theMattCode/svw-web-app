@@ -47,19 +47,28 @@ export function MainNavigation({ logo, menuItems }: Props): JSX.Element {
                   isLast={array.length - 1 === index}
                 />
                 <div className="hidden absolute left-0 top-[6em] group-hover:block z-40 w-full border-t-2 border-svw-blue-default bg-neutral-200/90 text-black">
-                  <div className="container px-4 py-20 flex flex-row">
-                    {subPages.map((subPage) => {
-                      if (subPage.attributes?.slug) {
-                        return (
-                          <Link
-                            key={subPage.attributes?.slug}
-                            href={subPage.attributes?.slug}
-                          >
-                            {subPage.attributes?.title}
-                          </Link>
-                        );
-                      }
-                    })}
+                  <div className="container px-4 py-4 flex flex-row gap-x-12 gap-y-4 justify-center">
+                    <div>
+                      <span className="font-bold text-lg">
+                        <Link href={menuItem.slug}>{menuItem.title}</Link>
+                      </span>
+                      <ul className="list-none">
+                        {subPages.map((subPage) => {
+                          if (subPage.attributes?.slug) {
+                            return (
+                              <li key={subPage.id}>
+                                <Link
+                                  key={subPage.attributes?.slug}
+                                  href={subPage.attributes?.slug}
+                                >
+                                  {subPage.attributes?.title}
+                                </Link>
+                              </li>
+                            );
+                          }
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

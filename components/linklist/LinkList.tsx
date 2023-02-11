@@ -5,16 +5,22 @@ type Props = { linkList: FooterLinkListData };
 
 export function LinkList({ linkList }: Props): JSX.Element {
   return (
-    <div key={linkList.id}>
+    <div>
       <span className="font-bold text-lg">
-        {linkList.titleUrl ? <Link href={linkList.titleUrl}>{linkList.title}</Link> : linkList.title}
+        {linkList.titleUrl ? (
+          <Link href={linkList.titleUrl}>{linkList.title}</Link>
+        ) : (
+          linkList.title
+        )}
       </span>
       <ul className="list-none">
         {linkList.pageLinks?.data.map((pageLink) => {
           if (pageLink && pageLink.attributes?.slug) {
             return (
               <li key={pageLink.id}>
-                <Link href={pageLink.attributes?.slug}>{pageLink.attributes?.title}</Link>
+                <Link href={pageLink.attributes?.slug}>
+                  {pageLink.attributes?.title}
+                </Link>
               </li>
             );
           }
