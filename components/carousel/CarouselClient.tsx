@@ -1,7 +1,7 @@
 "use client";
 
 import { PromotionArticle } from "#/lib/graphql/articles.gql";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ export function CarouselClient({ articles }: Props): JSX.Element {
     const length = articles.length;
     setTimeout(
       () => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1),
-      5000
+      7000
     );
   }, [currentSlide, articles.length, setCurrentSlide]);
 
@@ -27,16 +27,15 @@ export function CarouselClient({ articles }: Props): JSX.Element {
           if (index === currentSlide && article.image?.data?.attributes) {
             const imageAttributes = article.image.data.attributes;
             return (
-              <>
+              <Fragment key={article.slug}>
                 <Image
-                  key={article.slug}
                   src={imageAttributes.url}
                   alt=""
                   width={imageAttributes.width ?? 0}
                   height={imageAttributes.height ?? 0}
                   className="object-cover absolute left-0 right-0 w-full h-96 md:h-[50vh]"
                 />
-                <div className="container flex flex-row items-end h-full z-50">
+                <div className="container flex flex-row items-end h-full z-0">
                   <Link href={`/news/${article.slug}`}>
                     <h3 className="px-3 lg:ml-32 w-10/12 lg:w-7/12">
                       <span className="py-0.5 bg-white/75 news-title-shadow">
@@ -45,11 +44,11 @@ export function CarouselClient({ articles }: Props): JSX.Element {
                     </h3>
                   </Link>
                 </div>
-              </>
+              </Fragment>
             );
           }
         })}
-        <div className="container flex flex-row justify-center items-end p-2 z-50 ">
+        <div className="container flex flex-row justify-center items-end p-2 z-0 ">
           {articles.map((_, index) => {
             return (
               <div

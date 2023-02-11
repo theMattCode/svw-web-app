@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,6 +16,19 @@ module.exports = {
           darkest: "#00173F",
         },
       },
+      // that is animation class
+      animation: {
+        fade: "fadeOut 8s ease-in-out",
+      },
+
+      // that is actual animation
+      keyframes: (theme) => ({
+        fadeOut: {
+          "0%": { opacity: 1 },
+          "80%": { opacity: 1 },
+          "100%": { opacity: 0.2 },
+        },
+      }),
     },
     container: {
       center: true,

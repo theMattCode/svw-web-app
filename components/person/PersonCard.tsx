@@ -9,7 +9,7 @@ type Props = {
 export function PersonCard({ person }: Props): JSX.Element {
   const picture = person.picture?.data?.attributes;
   return (
-    <div className="mt-16 flex justify-center">
+    <div className="mb-8 flex justify-center">
       <div className="flex flex-col md:flex-row bg-white shadow-lg border-t-4 border-svw-blue-default">
         <Image
           className="w-full h-96 md:h-auto object-cover md:w-48"
@@ -25,7 +25,9 @@ export function PersonCard({ person }: Props): JSX.Element {
           <p className="text-gray-700 text-base mb-4">
             {person.tags?.data.map((tag) => tag.attributes?.name).join(", ")}
           </p>
-          {person.description && <p className="text-gray-700 text-base mb-4">{person.description}</p>}
+          {person.description && (
+            <p className="text-gray-700 text-base mb-4">{person.description}</p>
+          )}
           <div className="grid grid-cols-[auto_auto]">
             {person.email && (
               <>
@@ -40,7 +42,9 @@ export function PersonCard({ person }: Props): JSX.Element {
               <>
                 <p className="text-gray-600 text-sm">Telefon</p>
                 <p className="text-gray-600 text-sm font-bold text-svw-blue-default">
-                  <Link href={`tel:${person.telephone}`}>{person.telephone}</Link>
+                  <Link href={`tel:${person.telephone}`}>
+                    {person.telephone}
+                  </Link>
                 </p>
               </>
             )}

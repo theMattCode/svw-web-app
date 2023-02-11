@@ -10,7 +10,7 @@ export function Page(props: Props): JSX.Element {
     props.data;
   return (
     <>
-      <div className="flex flex-row w-full">
+      <div className="flex flex-row w-full min-h-[5em] border-t-2 border-svw-blue-default">
         {headerContents?.map((content) => {
           if (content) {
             return (
@@ -23,7 +23,7 @@ export function Page(props: Props): JSX.Element {
           }
         })}
       </div>
-      <div className="container flex flex-row place-content-between">
+      <div className="container flex flex-row">
         <div className="">
           {leftContents?.map((content) => {
             if (content) {

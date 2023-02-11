@@ -1,5 +1,5 @@
 import { gql } from "@apollo/client";
-import { LINK_COMPONENT } from "./fragments.gql";
+import { FILE_FRAGMENT, LINK_COMPONENT } from "./fragments.gql";
 import { HomepageQuery } from "./generated";
 import { ExtractType } from "./types";
 import graphqlClient from "#/lib/graphql/graphqlClient";
@@ -77,20 +77,50 @@ export const HOMEPAGE = gql`
             telefax
             email
           }
-          subPages {
+          subPages(pagination: { page: 1, pageSize: 20 }) {
             data {
               id
               attributes {
                 title
                 slug
+                subPages(pagination: { page: 1, pageSize: 20 }) {
+                  data {
+                    id
+                    attributes {
+                      title
+                      slug
+                    }
+                  }
+                }
               }
             }
           }
         }
       }
     }
+    sponsors(
+      pagination: { page: 1, pageSize: 1000 }
+      filters: { active: { eq: true } }
+    ) {
+      meta {
+        pagination {
+          total
+        }
+      }
+      data {
+        id
+        attributes {
+          name
+          active
+          image {
+            ...FileFragment
+          }
+        }
+      }
+    }
   }
   ${LINK_COMPONENT}
+  ${FILE_FRAGMENT}
 `;
 
 export type HomepageData = ExtractType<
@@ -109,10 +139,14 @@ export type Page = Omit<
   ExtractType<HomepageData, ["subPages", "data", "attributes"]>,
   "__typename"
 >;
+export type Sponsor = ExtractType<
+  HomepageQuery,
+  ["sponsors", "data", "attributes"]
+>;
 
-export async function fetchHomepageData(): Promise<HomepageData | undefined> {
+export async function fetchHomepageData(): Promise<HomepageQuery> {
   const { data } = await graphqlClient.query<HomepageQuery>({
     query: HOMEPAGE,
   });
-  return data.homepage?.data?.attributes ?? undefined;
+  return data;
 }

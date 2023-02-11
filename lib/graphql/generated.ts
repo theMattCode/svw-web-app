@@ -375,6 +375,13 @@ export enum Enum_Componentsharedlink_Target {
   Top = 'top'
 }
 
+export enum Enum_Sponsor_Level {
+  Bronze = 'Bronze',
+  Gold = 'Gold',
+  Platinum = 'Platinum',
+  Silver = 'Silver'
+}
+
 export type Error = {
   __typename?: 'Error';
   code: Scalars['String'];
@@ -1179,6 +1186,7 @@ export type Sponsor = {
   active?: Maybe<Scalars['Boolean']>;
   createdAt?: Maybe<Scalars['DateTime']>;
   image?: Maybe<UploadFileEntityResponse>;
+  level?: Maybe<Enum_Sponsor_Level>;
   name: Scalars['String'];
   publishedAt?: Maybe<Scalars['DateTime']>;
   updatedAt?: Maybe<Scalars['DateTime']>;
@@ -1206,6 +1214,7 @@ export type SponsorFiltersInput = {
   and?: InputMaybe<Array<InputMaybe<SponsorFiltersInput>>>;
   createdAt?: InputMaybe<DateTimeFilterInput>;
   id?: InputMaybe<IdFilterInput>;
+  level?: InputMaybe<StringFilterInput>;
   name?: InputMaybe<StringFilterInput>;
   not?: InputMaybe<SponsorFiltersInput>;
   or?: InputMaybe<Array<InputMaybe<SponsorFiltersInput>>>;
@@ -1216,6 +1225,7 @@ export type SponsorFiltersInput = {
 export type SponsorInput = {
   active?: InputMaybe<Scalars['Boolean']>;
   image?: InputMaybe<Scalars['ID']>;
+  level?: InputMaybe<Enum_Sponsor_Level>;
   name?: InputMaybe<Scalars['String']>;
   publishedAt?: InputMaybe<Scalars['DateTime']>;
 };
@@ -1717,4 +1727,4 @@ export type FileFragmentFragment = { __typename?: 'UploadFileEntityResponse', da
 export type HomepageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HomepageQuery = { __typename?: 'Query', homepage?: { __typename?: 'HomepageEntityResponse', data?: { __typename?: 'HomepageEntity', id?: string | null, attributes?: { __typename?: 'Homepage', meta?: { __typename?: 'ComponentSharedMeta', id: string, title: string, description?: string | null, favicon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, name: string } | null } | null } | null } | null, logo?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string } | null } | null } | null, footer?: { __typename?: 'ComponentGlobalFooter', id: string, labelLeft?: string | null, labelRight?: string | null, linkLists?: Array<{ __typename?: 'ComponentSharedLinkLists', id: string, title?: string | null, titleUrl?: string | null, pageLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null, links?: Array<{ __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', attributes?: { __typename?: 'UploadFile', url: string, alternativeText?: string | null } | null } | null } | null } | null> | null } | null> | null } | null, socialMedia?: Array<{ __typename?: 'ComponentSharedSocialMedia', id: string, name?: string | null, url?: string | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', attributes?: { __typename?: 'UploadFile', url: string, alternativeText?: string | null } | null } | null } | null } | null> | null, contact?: { __typename?: 'ComponentGlobalContact', id: string, name?: string | null, street?: string | null, postalCode?: string | null, city?: string | null, telephone?: string | null, telefax?: string | null, email?: string | null } | null, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null } | null } | null } | null };
+export type HomepageQuery = { __typename?: 'Query', homepage?: { __typename?: 'HomepageEntityResponse', data?: { __typename?: 'HomepageEntity', id?: string | null, attributes?: { __typename?: 'Homepage', meta?: { __typename?: 'ComponentSharedMeta', id: string, title: string, description?: string | null, favicon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, name: string } | null } | null } | null } | null, logo?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string } | null } | null } | null, footer?: { __typename?: 'ComponentGlobalFooter', id: string, labelLeft?: string | null, labelRight?: string | null, linkLists?: Array<{ __typename?: 'ComponentSharedLinkLists', id: string, title?: string | null, titleUrl?: string | null, pageLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null, links?: Array<{ __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', attributes?: { __typename?: 'UploadFile', url: string, alternativeText?: string | null } | null } | null } | null } | null> | null } | null> | null } | null, socialMedia?: Array<{ __typename?: 'ComponentSharedSocialMedia', id: string, name?: string | null, url?: string | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', attributes?: { __typename?: 'UploadFile', url: string, alternativeText?: string | null } | null } | null } | null } | null> | null, contact?: { __typename?: 'ComponentGlobalContact', id: string, name?: string | null, street?: string | null, postalCode?: string | null, city?: string | null, telephone?: string | null, telefax?: string | null, email?: string | null } | null, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null } | null }> } | null } | null } | null } | null, sponsors?: { __typename?: 'SponsorEntityResponseCollection', meta: { __typename?: 'ResponseCollectionMeta', pagination: { __typename?: 'Pagination', total: number } }, data: Array<{ __typename?: 'SponsorEntity', id?: string | null, attributes?: { __typename?: 'Sponsor', name: string, active?: boolean | null, image?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null }> } | null };
