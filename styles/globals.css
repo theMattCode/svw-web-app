@@ -49,3 +49,7 @@ p {
     -ms-box-decoration-break: clone;
     -o-box-decoration-break: clone;
 }
+
+iframe nav {
+    display: none;
+}

@@ -10,14 +10,13 @@ export function Page(props: Props): JSX.Element {
     props.data;
   return (
     <>
-      <div className="flex flex-row w-full min-h-[5em] border-t-2 border-svw-blue-default">
+      <div className="flex flex-row w-full min-h-[5em] border-t-2 border-white">
         {headerContents?.map((content) => {
           if (content) {
             return (
               <DynamicContent
                 key={"id" in content ? content.id : content.code}
                 component={content}
-                page={props.data}
               />
             );
           }
@@ -31,7 +30,6 @@ export function Page(props: Props): JSX.Element {
                 <DynamicContent
                   key={"id" in content ? content.id : content.code}
                   component={content}
-                  page={props.data}
                 />
               );
             }
@@ -44,7 +42,6 @@ export function Page(props: Props): JSX.Element {
                 <DynamicContent
                   key={"id" in content ? content.id : content.code}
                   component={content}
-                  page={props.data}
                 />
               );
             }
@@ -57,7 +54,6 @@ export function Page(props: Props): JSX.Element {
                 <DynamicContent
                   key={"id" in content ? content.id : content.code}
                   component={content}
-                  page={props.data}
                 />
               );
             }

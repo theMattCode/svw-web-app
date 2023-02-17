@@ -3,8 +3,10 @@ import { Page, SocialMediaData } from "#/lib/graphql/homepage.gql";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import CallToActionButton from "#/components/button/CallToActionButton";
-import { FaFileSignature, FaSearch } from "react-icons/fa";
+import { FaBars, FaFileSignature, FaSearch } from "react-icons/fa";
 import { MainNavigation } from "#/components/header/MainNavigation";
+import { useState } from "react";
+import SmallScreenNavigation from "#/components/header/SmallScreenNavigation";
 
 type MenuProps = {
   menuItems: Page[];
@@ -19,8 +21,12 @@ export default function Header({
 }: MenuProps): JSX.Element {
   return (
     <header>
-      <SmallScreenNavigation />
-      <LargeScreenNavigation
+      <SmallScreenHeader
+        menuItems={menuItems}
+        logo={logo}
+        socialMedia={socialMedia}
+      />
+      <LargeScreenHeader
         menuItems={menuItems}
         logo={logo}
         socialMedia={socialMedia}
@@ -29,23 +35,46 @@ export default function Header({
   );
 }
 
-function SmallScreenNavigation(): JSX.Element {
-  return <div className="md:hidden">not yet implemented</div>;
+function SmallScreenHeader({
+  menuItems,
+  socialMedia,
+  logo,
+}: MenuProps): JSX.Element {
+  return (
+    <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white">
+      <div />
+      <div className="z-30">
+        {logo && (
+          <Link href="/">
+            <Image
+              src={getFullAssetUrl(logo)}
+              alt=""
+              width={64}
+              height={64}
+              className="h-16"
+            />
+          </Link>
+        )}
+      </div>
+      <SmallScreenNavigation menuItems={menuItems} socialMedia={socialMedia} />
+    </div>
+  );
 }
 
-function LargeScreenNavigation({
+function LargeScreenHeader({
   menuItems,
   logo,
   socialMedia,
 }: MenuProps): JSX.Element {
   return (
-    <div className="hidden md:block ">
-      <div className="flex flex-col">
-        <div className="flex flex-row flex-1 bg-svw-blue-default">
-          <div className="container text-sm">
-            <AccessHeader socialMedia={socialMedia} />
-          </div>
+    <div className="hidden md:flex flex-col">
+      <div className="flex flex-row flex-1 text-white bg-svw-blue-darker">
+        <div className="container text-sm">
+          <AccessHeader socialMedia={socialMedia} />
         </div>
+      </div>
+
+      <div className="bg-svw-blue-default text-white">
         <div className="container">
           <MainNavigation logo={logo} menuItems={menuItems} />
         </div>

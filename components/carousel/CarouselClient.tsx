@@ -35,10 +35,10 @@ export function CarouselClient({ articles }: Props): JSX.Element {
                   height={imageAttributes.height ?? 0}
                   className="object-cover absolute left-0 right-0 w-full h-96 md:h-[50vh]"
                 />
-                <div className="container flex flex-row items-end h-full z-0">
-                  <Link href={`/news/${article.slug}`}>
-                    <h3 className="px-3 lg:ml-32 w-10/12 lg:w-7/12">
-                      <span className="py-0.5 bg-white/75 news-title-shadow">
+                <div className="container flex flex-row items-end h-full w-full z-0">
+                  <Link href={`/news/${article.slug}`} className="">
+                    <h3 className="px-3 lg:ml-32 w-10/12">
+                      <span className="py-0.5 bg-white/75 text-2xl news-title-shadow">
                         {article.title}
                       </span>
                     </h3>

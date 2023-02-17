@@ -18,9 +18,7 @@ export default async function Layout({
           <Header
             menuItems={
               homepageData?.subPages?.data.map((page) => ({
-                title: page.attributes?.title ?? "",
-                slug: page.attributes?.slug ?? "",
-                subPages: page.attributes?.subPages,
+                ...(page.attributes ?? { title: "", slug: "" }),
               })) ?? []
             }
             logo={homepageData?.logo?.data?.attributes?.url}
@@ -29,7 +27,7 @@ export default async function Layout({
               []
             }
           />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 bg-neutral-100 pb-8">{children}</main>
           <Sponsors sponsors={data.sponsors?.data} />
           <Footer contact={homepageData?.contact} {...homepageData?.footer} />
         </div>

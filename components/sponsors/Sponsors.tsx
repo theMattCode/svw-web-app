@@ -9,7 +9,7 @@ type Props = {
 export default function Sponsors({ sponsors }: Props): JSX.Element | null {
   if (!sponsors) return null;
   return (
-    <div className="mt-4 border-t border-svw-blue-default">
+    <div className="border-t border-svw-blue-default">
       <div className="container">
         <h2 className="flex flex-row justify-center">Unsere Partner</h2>
         <div className="p-3 flex flex-row flex-wrap place-content-between">

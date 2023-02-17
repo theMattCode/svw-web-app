@@ -9,6 +9,7 @@ export const PROMOTION_ARTICLES_QUERY = gql`
     articles(
       filters: { promote: { eq: true } }
       pagination: { limit: $limit }
+      sort: ["date:DESC"]
     ) {
       data {
         id

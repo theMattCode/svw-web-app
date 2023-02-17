@@ -14,17 +14,33 @@ export const LINK_COMPONENT = gql`
     text
     target
     icon {
-      data {
-        attributes {
-          url
-          alternativeText
-        }
-      }
+      ...FileFragment
     }
     isDownload
     isExternal
   }
 `;
+
+export const LINK_LIST_COMPONENT = gql`
+  fragment LinkListComponent on ComponentSharedLinkLists {
+    id
+    title
+    titleUrl
+    pageLinks {
+      data {
+        id
+        attributes {
+          title
+          slug
+        }
+      }
+    }
+    links {
+      ...LinkComponent
+    }
+  }
+`;
+
 export const PEOPLE = gql`
   fragment People on People {
     firstname
@@ -41,19 +57,7 @@ export const PEOPLE = gql`
       }
     }
     picture {
-      data {
-        id
-        attributes {
-          url
-          width
-          height
-          hash
-          mime
-          name
-          provider
-          size
-        }
-      }
+      ...FileFragment
     }
   }
 `;
@@ -105,14 +109,6 @@ export const SPACING_COMPONENT = gql`
   }
 `;
 
-export const SUB_PAGE_NAVIGATION_COMPONENT = gql`
-  fragment SubPageNavigationComponent on ComponentBlockSubPageNavigation {
-    __typename
-    id
-    flat
-  }
-`;
-
 export const ARTICLES_COMPONENT = gql`
   fragment ArticlesComponent on ComponentBlockArticles {
     id
@@ -135,5 +131,12 @@ export const FILE_FRAGMENT = gql`
         size
       }
     }
+  }
+`;
+
+export const FUSSBALL_DE_WIDGET = gql`
+  fragment FussballDeWidget on ComponentSharedFussballDeWidget {
+    id
+    key
   }
 `;
