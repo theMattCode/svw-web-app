@@ -30,7 +30,7 @@ export function MainNavigation({ logo, menuItems }: Props): JSX.Element {
               alt=""
               width={128}
               height={128}
-              className="h-32 lg:ml-32 "
+              className="h-32 lg:ml-32"
               style={{ transform: "translateY(-20px)" }}
             />
           </Link>
@@ -109,7 +109,7 @@ function NavItemWithMegaMenu({
         isLast={isLast}
       />
       <div className="hidden absolute left-0 top-[6em] group-hover:block z-10 w-full border-t-2 border-white bg-neutral-200/90 text-black">
-        <div className="container px-4 py-4 flex flex-row gap-x-12 gap-y-4 justify-center">
+        <div className="container pl-24 xl:pl-4 pr-4 py-12 flex flex-row gap-x-12 gap-y-4 justify-center">
           {megaMenuContents?.map((content) => {
             if (content) {
               return (

@@ -35,7 +35,7 @@ export function Page(props: Props): JSX.Element {
             }
           })}
         </div>
-        <main className="">
+        <main className="container max-w-4xl p-8 bg-white shadow-xl">
           {mainContents?.map((content) => {
             if (content) {
               return (

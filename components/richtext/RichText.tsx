@@ -8,34 +8,32 @@ type Props = {
 export default function RichText({ content }: Props): JSX.Element | null {
   if (content) {
     return (
-      <div className="p-2 bg-white">
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          components={{
-            ul: ({ node, ...props }) => (
-              <div className="pl-5 font-light">
-                <ul className="list-disc list-outside" {...props} />
-              </div>
-            ),
-            th: ({ node, ...props }) => (
-              <th className="border border-gray-300 py-2 px-3" {...props} />
-            ),
-            td: ({ node, ...props }) => (
-              <td className="border border-gray-300 py-2 px-3" {...props} />
-            ),
-            img: ({ node, ...props }) => (
-              <img
-                className="w-full"
-                {...props}
-                alt={props.alt ?? ""}
-                src={getFullAssetUrl(props.src ?? "")}
-              />
-            ),
-          }}
-        >
-          {content}
-        </ReactMarkdown>
-      </div>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          ul: ({ children }) => (
+            <div className="pl-5 font-light">
+              <ul className="list-disc list-outside">{children}</ul>
+            </div>
+          ),
+          th: ({ children }) => (
+            <th className="border border-gray-300 py-2 px-3">{children}</th>
+          ),
+          td: ({ children }) => (
+            <td className="border border-gray-300 py-2 px-3">{children}</td>
+          ),
+          img: (props) => (
+            <img
+              className="w-full"
+              alt={props.alt ?? ""}
+              src={getFullAssetUrl(props.src ?? "")}
+            />
+          ),
+          p: ({ children }) => <p className="font-light py-2">{children}</p>,
+        }}
+      >
+        {content}
+      </ReactMarkdown>
     );
   }
   return null;

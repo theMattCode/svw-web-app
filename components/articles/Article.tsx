@@ -1,6 +1,10 @@
 import graphqlClient from "#/lib/graphql/graphqlClient";
 import { ArticleQuery, ArticleQueryVariables } from "#/lib/graphql/generated";
 import { ARTICLE_QUERY } from "#/components/articles/articles.gql";
+import RichText from "#/components/richtext/RichText";
+import Image from "next/image";
+import { getFullAssetUrl } from "#/lib/asset";
+import { formatDate } from "#/lib/format";
 
 type Props = {
   slug: string;
@@ -25,13 +29,27 @@ async function LoadingArticle({ slug }: Props): Promise<JSX.Element | null> {
     return null;
   }
 
+  const image = article.attributes?.image?.data?.attributes;
+
   return (
-    <div>
-      <div className="container">
-        <div></div>
-        <div>
-          {data.articles?.data.map((article) => article.attributes?.text)}
+    <div className="container bg-white my-16 p-8 max-w-3xl shadow-xl">
+      {image && (
+        <div className="flex flex-col place-items-end pb-4">
+          <Image
+            src={getFullAssetUrl(image.url)}
+            alt=""
+            width={image.width ?? 0}
+            height={image.height ?? 0}
+          />
         </div>
+      )}
+      <h1>{article.attributes?.title}</h1>
+      <div className="text-sm">{formatDate(article.attributes?.date)}</div>
+      <div>
+        <RichText
+          key={article.attributes?.slug}
+          content={article.attributes?.text}
+        />
       </div>
     </div>
   );

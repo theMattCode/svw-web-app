@@ -9,7 +9,7 @@ type Props = {
 export function PersonCard({ person }: Props): JSX.Element {
   const picture = person.picture?.data?.attributes;
   return (
-    <div className="mb-8 flex justify-center">
+    <div className="mb-8 flex">
       <div className="flex flex-col md:flex-row bg-white shadow-lg border-t-4 border-svw-blue-default">
         <Image
           className="w-full h-96 md:h-auto object-cover md:w-48"
@@ -32,7 +32,7 @@ export function PersonCard({ person }: Props): JSX.Element {
             {person.email && (
               <>
                 <p className="text-gray-600 text-sm">E-Mail</p>
-                <p className="text-gray-600 text-sm font-bold text-svw-blue-default">
+                <p className="text-gray-600 text-sm font-bold text-svw-blue-default overflow-ellipsis">
                   <Link href={`mailto:${person.email}`}>{person.email}</Link>
                 </p>
               </>
