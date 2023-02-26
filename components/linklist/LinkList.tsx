@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { FooterLinkListData } from "#/lib/graphql/homepage.gql";
+import { ComponentSharedLinkLists } from "#/lib/graphql/generated";
 
-type Props = { linkList: FooterLinkListData };
+type Props = { linkList: ComponentSharedLinkLists };
 
 export function LinkList({ linkList }: Props): JSX.Element {
   return (

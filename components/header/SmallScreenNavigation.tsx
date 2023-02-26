@@ -2,19 +2,18 @@
 
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
-import { Page, SocialMediaData } from "#/lib/graphql/homepage.gql";
+import { HeaderData } from "#/app/data.gql";
 import Link from "next/link";
 
 type Props = {
-  menuItems: Page[];
-  socialMedia: SocialMediaData[];
+  headerData: HeaderData | null;
 };
 
 export default function SmallScreenNavigation({
-  menuItems,
-  socialMedia,
+  headerData,
 }: Props): JSX.Element {
   const [open, setOpen] = useState<boolean>(false);
+
   return (
     <div className="flex flex-col">
       <FaBars className="h-16 mr-6" onClick={() => setOpen((open) => !open)} />
@@ -24,11 +23,18 @@ export default function SmallScreenNavigation({
         }`}
       >
         <ul>
-          {menuItems.map((menuItem) => (
-            <li key={menuItem.slug} className="p-2 border-b border-neutral-300">
-              <Link href={menuItem.slug}>{menuItem.title}</Link>
-            </li>
-          ))}
+          {headerData?.navigationLinks?.data.map((menuItem) => {
+            const page = menuItem.attributes;
+            if (page) {
+              return (
+                <li key={page.slug} className="p-2 border-b border-neutral-300">
+                  <Link href={page.slug} onClick={() => setOpen(false)}>
+                    {page.title}
+                  </Link>
+                </li>
+              );
+            }
+          })}
         </ul>
       </div>
     </div>

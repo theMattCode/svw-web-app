@@ -1,9 +1,9 @@
 import { getFullAssetUrl } from "#/lib/asset";
-import { fetchMeta } from "#/lib/graphql/homepage.gql";
+import { fetchMeta } from "#/app/data.gql";
 
 export default async function Head() {
   const data = await fetchMeta();
-  const meta = data?.homepage?.data?.attributes?.meta;
+  const meta = data?.meta?.data?.attributes;
   const faviconUrl = meta?.favicon?.data?.attributes?.url;
   return (
     <>

@@ -2,12 +2,12 @@ import { DynamicContent } from "#/components/dynamic/DynamicContent";
 import { Page as PageData } from "#/lib/graphql/generated";
 
 type Props = {
-  data: PageData;
+  pageData: PageData;
 };
 
-export function Page(props: Props): JSX.Element {
+export function Page({ pageData }: Props): JSX.Element {
   const { mainContents, leftContents, rightContents, headerContents } =
-    props.data;
+    pageData;
   return (
     <>
       <div className="flex flex-row w-full min-h-[5em] border-t-2 border-white">

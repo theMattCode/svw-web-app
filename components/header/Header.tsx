@@ -1,53 +1,34 @@
 import Link from "next/link";
-import { Page, SocialMediaData } from "#/lib/graphql/homepage.gql";
+import { AccessHeaderData, HeaderData } from "#/app/data.gql";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import CallToActionButton from "#/components/button/CallToActionButton";
-import { FaBars, FaFileSignature, FaSearch } from "react-icons/fa";
+import { FaFileSignature, FaSearch } from "react-icons/fa";
 import { MainNavigation } from "#/components/header/MainNavigation";
-import { useState } from "react";
 import SmallScreenNavigation from "#/components/header/SmallScreenNavigation";
 
-type MenuProps = {
-  menuItems: Page[];
-  logo: string | undefined;
-  socialMedia: SocialMediaData[];
+type HeaderProps = {
+  headerData: HeaderData | null;
 };
 
-export default function Header({
-  menuItems,
-  logo,
-  socialMedia,
-}: MenuProps): JSX.Element {
+export function Header({ headerData }: HeaderProps): JSX.Element {
   return (
     <header>
-      <SmallScreenHeader
-        menuItems={menuItems}
-        logo={logo}
-        socialMedia={socialMedia}
-      />
-      <LargeScreenHeader
-        menuItems={menuItems}
-        logo={logo}
-        socialMedia={socialMedia}
-      />
+      <SmallScreenHeader headerData={headerData} />
+      <LargeScreenHeader headerData={headerData} />
     </header>
   );
 }
 
-function SmallScreenHeader({
-  menuItems,
-  socialMedia,
-  logo,
-}: MenuProps): JSX.Element {
+function SmallScreenHeader({ headerData }: HeaderProps): JSX.Element {
   return (
     <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white">
       <div />
       <div className="z-30">
-        {logo && (
+        {headerData?.logo?.data?.attributes?.url && (
           <Link href="/">
             <Image
-              src={getFullAssetUrl(logo)}
+              src={getFullAssetUrl(headerData.logo?.data?.attributes?.url)}
               alt=""
               width={64}
               height={64}
@@ -56,27 +37,23 @@ function SmallScreenHeader({
           </Link>
         )}
       </div>
-      <SmallScreenNavigation menuItems={menuItems} socialMedia={socialMedia} />
+      <SmallScreenNavigation headerData={headerData} />
     </div>
   );
 }
 
-function LargeScreenHeader({
-  menuItems,
-  logo,
-  socialMedia,
-}: MenuProps): JSX.Element {
+function LargeScreenHeader({ headerData }: HeaderProps): JSX.Element {
   return (
     <div className="hidden md:flex flex-col">
       <div className="flex flex-row flex-1 text-white bg-svw-blue-darker">
         <div className="container text-sm">
-          <AccessHeader socialMedia={socialMedia} />
+          <AccessHeader accessHeaderData={headerData?.accessLinks} />
         </div>
       </div>
 
       <div className="bg-svw-blue-default text-white">
         <div className="container">
-          <MainNavigation logo={logo} menuItems={menuItems} />
+          <MainNavigation headerData={headerData} />
         </div>
       </div>
     </div>
@@ -84,22 +61,26 @@ function LargeScreenHeader({
 }
 
 type AccessHeaderProps = {
-  socialMedia: SocialMediaData[];
+  accessHeaderData?: AccessHeaderData | null;
 };
 
-function AccessHeader({ socialMedia }: AccessHeaderProps): JSX.Element {
+function AccessHeader({ accessHeaderData }: AccessHeaderProps): JSX.Element {
   return (
     <div className="flex flex-row text-white place-content-end">
-      {socialMedia?.map((item) => (
-        <Link key={item.name} href={item.url ?? ""} target="_blank">
-          <Image
-            src={getFullAssetUrl(item.icon?.data?.attributes?.url ?? "")}
-            alt=""
-            width={28}
-            height={28}
-          />
-        </Link>
-      ))}
+      {accessHeaderData?.links?.map((item) => {
+        if (item) {
+          return (
+            <Link key={item.text} href={item.href} target="_blank">
+              <Image
+                src={getFullAssetUrl(item.icon?.data?.attributes?.url ?? "")}
+                alt=""
+                width={28}
+                height={28}
+              />
+            </Link>
+          );
+        }
+      })}
       <Link href="/mitglied-werden" className="px-1">
         <CallToActionButton text="Mitglied werden">
           <FaFileSignature />

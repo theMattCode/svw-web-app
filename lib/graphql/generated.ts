@@ -12,11 +12,11 @@ export type Scalars = {
   Float: number;
   Date: any;
   DateTime: any;
+  FooterContentsDynamicZoneInput: any;
   JSON: any;
   PageHeaderContentsDynamicZoneInput: any;
   PageLeftContentsDynamicZoneInput: any;
   PageMainContentsDynamicZoneInput: any;
-  PageMegaMenuContentsDynamicZoneInput: any;
   PageRightContentsDynamicZoneInput: any;
   Upload: any;
 };
@@ -103,6 +103,44 @@ export type BooleanFilterInput = {
   startsWith?: InputMaybe<Scalars['Boolean']>;
 };
 
+export type Club = {
+  __typename?: 'Club';
+  address: Scalars['String'];
+  city: Scalars['String'];
+  createdAt?: Maybe<Scalars['DateTime']>;
+  email: Scalars['String'];
+  emblem?: Maybe<UploadFileEntityResponse>;
+  logo?: Maybe<UploadFileEntityResponse>;
+  name: Scalars['String'];
+  postalCode: Scalars['String'];
+  telefax?: Maybe<Scalars['String']>;
+  telephone: Scalars['String'];
+  updatedAt?: Maybe<Scalars['DateTime']>;
+};
+
+export type ClubEntity = {
+  __typename?: 'ClubEntity';
+  attributes?: Maybe<Club>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type ClubEntityResponse = {
+  __typename?: 'ClubEntityResponse';
+  data?: Maybe<ClubEntity>;
+};
+
+export type ClubInput = {
+  address?: InputMaybe<Scalars['String']>;
+  city?: InputMaybe<Scalars['String']>;
+  email?: InputMaybe<Scalars['String']>;
+  emblem?: InputMaybe<Scalars['ID']>;
+  logo?: InputMaybe<Scalars['ID']>;
+  name?: InputMaybe<Scalars['String']>;
+  postalCode?: InputMaybe<Scalars['String']>;
+  telefax?: InputMaybe<Scalars['String']>;
+  telephone?: InputMaybe<Scalars['String']>;
+};
+
 export type ComponentBlockArticles = {
   __typename?: 'ComponentBlockArticles';
   id: Scalars['ID'];
@@ -131,64 +169,6 @@ export type ComponentBlockTaggedPersons = {
   __typename?: 'ComponentBlockTaggedPersons';
   id: Scalars['ID'];
   tag?: Maybe<TagEntityResponse>;
-};
-
-export type ComponentGlobalContact = {
-  __typename?: 'ComponentGlobalContact';
-  city?: Maybe<Scalars['String']>;
-  email?: Maybe<Scalars['String']>;
-  id: Scalars['ID'];
-  name?: Maybe<Scalars['String']>;
-  postalCode?: Maybe<Scalars['String']>;
-  street?: Maybe<Scalars['String']>;
-  telefax?: Maybe<Scalars['String']>;
-  telephone?: Maybe<Scalars['String']>;
-};
-
-export type ComponentGlobalContactInput = {
-  city?: InputMaybe<Scalars['String']>;
-  email?: InputMaybe<Scalars['String']>;
-  id?: InputMaybe<Scalars['ID']>;
-  name?: InputMaybe<Scalars['String']>;
-  postalCode?: InputMaybe<Scalars['String']>;
-  street?: InputMaybe<Scalars['String']>;
-  telefax?: InputMaybe<Scalars['String']>;
-  telephone?: InputMaybe<Scalars['String']>;
-};
-
-export type ComponentGlobalFooter = {
-  __typename?: 'ComponentGlobalFooter';
-  id: Scalars['ID'];
-  labelLeft?: Maybe<Scalars['String']>;
-  labelRight?: Maybe<Scalars['String']>;
-  linkLists?: Maybe<Array<Maybe<ComponentSharedLinkLists>>>;
-};
-
-
-export type ComponentGlobalFooterLinkListsArgs = {
-  filters?: InputMaybe<ComponentSharedLinkListsFiltersInput>;
-  pagination?: InputMaybe<PaginationArg>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
-};
-
-export type ComponentGlobalFooterInput = {
-  id?: InputMaybe<Scalars['ID']>;
-  labelLeft?: InputMaybe<Scalars['String']>;
-  labelRight?: InputMaybe<Scalars['String']>;
-  linkLists?: InputMaybe<Array<InputMaybe<ComponentSharedLinkListsInput>>>;
-};
-
-export type ComponentGlobalHeader = {
-  __typename?: 'ComponentGlobalHeader';
-  id: Scalars['ID'];
-  pageLinks?: Maybe<Array<Maybe<ComponentSharedLink>>>;
-};
-
-
-export type ComponentGlobalHeaderPageLinksArgs = {
-  filters?: InputMaybe<ComponentSharedLinkFiltersInput>;
-  pagination?: InputMaybe<PaginationArg>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
 export type ComponentSharedFussballDeWidget = {
@@ -237,6 +217,7 @@ export type ComponentSharedLinkLists = {
   id: Scalars['ID'];
   links?: Maybe<Array<Maybe<ComponentSharedLink>>>;
   pageLinks?: Maybe<PageRelationResponseCollection>;
+  shopLinks?: Maybe<ShopRelationResponseCollection>;
   title?: Maybe<Scalars['String']>;
   titleUrl?: Maybe<Scalars['String']>;
 };
@@ -256,60 +237,21 @@ export type ComponentSharedLinkListsPageLinksArgs = {
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
-export type ComponentSharedLinkListsFiltersInput = {
-  and?: InputMaybe<Array<InputMaybe<ComponentSharedLinkListsFiltersInput>>>;
-  links?: InputMaybe<ComponentSharedLinkFiltersInput>;
-  not?: InputMaybe<ComponentSharedLinkListsFiltersInput>;
-  or?: InputMaybe<Array<InputMaybe<ComponentSharedLinkListsFiltersInput>>>;
-  pageLinks?: InputMaybe<PageFiltersInput>;
-  title?: InputMaybe<StringFilterInput>;
-  titleUrl?: InputMaybe<StringFilterInput>;
+
+export type ComponentSharedLinkListsShopLinksArgs = {
+  filters?: InputMaybe<ShopFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
 export type ComponentSharedLinkListsInput = {
   id?: InputMaybe<Scalars['ID']>;
   links?: InputMaybe<Array<InputMaybe<ComponentSharedLinkInput>>>;
   pageLinks?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  shopLinks?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   title?: InputMaybe<Scalars['String']>;
   titleUrl?: InputMaybe<Scalars['String']>;
-};
-
-export type ComponentSharedMeta = {
-  __typename?: 'ComponentSharedMeta';
-  description?: Maybe<Scalars['String']>;
-  favicon?: Maybe<UploadFileEntityResponse>;
-  id: Scalars['ID'];
-  title: Scalars['String'];
-};
-
-export type ComponentSharedMetaInput = {
-  description?: InputMaybe<Scalars['String']>;
-  favicon?: InputMaybe<Scalars['ID']>;
-  id?: InputMaybe<Scalars['ID']>;
-  title?: InputMaybe<Scalars['String']>;
-};
-
-export type ComponentSharedSocialMedia = {
-  __typename?: 'ComponentSharedSocialMedia';
-  icon?: Maybe<UploadFileEntityResponse>;
-  id: Scalars['ID'];
-  name?: Maybe<Scalars['String']>;
-  url?: Maybe<Scalars['String']>;
-};
-
-export type ComponentSharedSocialMediaFiltersInput = {
-  and?: InputMaybe<Array<InputMaybe<ComponentSharedSocialMediaFiltersInput>>>;
-  name?: InputMaybe<StringFilterInput>;
-  not?: InputMaybe<ComponentSharedSocialMediaFiltersInput>;
-  or?: InputMaybe<Array<InputMaybe<ComponentSharedSocialMediaFiltersInput>>>;
-  url?: InputMaybe<StringFilterInput>;
-};
-
-export type ComponentSharedSocialMediaInput = {
-  icon?: InputMaybe<Scalars['ID']>;
-  id?: InputMaybe<Scalars['ID']>;
-  name?: InputMaybe<Scalars['String']>;
-  url?: InputMaybe<Scalars['String']>;
 };
 
 export type ComponentSharedSpacing = {
@@ -417,57 +359,78 @@ export type FloatFilterInput = {
   startsWith?: InputMaybe<Scalars['Float']>;
 };
 
-export type GenericMorph = Article | ComponentBlockArticles | ComponentBlockCarousel | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentGlobalContact | ComponentGlobalFooter | ComponentGlobalHeader | ComponentSharedFussballDeWidget | ComponentSharedLink | ComponentSharedLinkLists | ComponentSharedMeta | ComponentSharedSocialMedia | ComponentSharedSpacing | Homepage | I18NLocale | Page | People | Sponsor | Tag | UploadFile | UploadFolder | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser;
-
-export type Homepage = {
-  __typename?: 'Homepage';
-  contact?: Maybe<ComponentGlobalContact>;
+export type Footer = {
+  __typename?: 'Footer';
+  contents?: Maybe<Array<Maybe<FooterContentsDynamicZone>>>;
+  copyright: Scalars['String'];
   createdAt?: Maybe<Scalars['DateTime']>;
-  footer?: Maybe<ComponentGlobalFooter>;
-  logo?: Maybe<UploadFileEntityResponse>;
-  meta?: Maybe<ComponentSharedMeta>;
-  page?: Maybe<PageEntityResponse>;
-  publishedAt?: Maybe<Scalars['DateTime']>;
-  socialMedia?: Maybe<Array<Maybe<ComponentSharedSocialMedia>>>;
-  subPages?: Maybe<PageRelationResponseCollection>;
+  socialMediaLinks?: Maybe<SocialMediaRelationResponseCollection>;
   updatedAt?: Maybe<Scalars['DateTime']>;
 };
 
 
-export type HomepageSocialMediaArgs = {
-  filters?: InputMaybe<ComponentSharedSocialMediaFiltersInput>;
+export type FooterSocialMediaLinksArgs = {
+  filters?: InputMaybe<SocialMediaFiltersInput>;
   pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
+export type FooterContentsDynamicZone = ComponentBlockRichText | ComponentSharedLink | ComponentSharedLinkLists | Error;
 
-export type HomepageSubPagesArgs = {
+export type FooterEntity = {
+  __typename?: 'FooterEntity';
+  attributes?: Maybe<Footer>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type FooterEntityResponse = {
+  __typename?: 'FooterEntityResponse';
+  data?: Maybe<FooterEntity>;
+};
+
+export type FooterInput = {
+  contents?: InputMaybe<Array<Scalars['FooterContentsDynamicZoneInput']>>;
+  copyright?: InputMaybe<Scalars['String']>;
+  socialMediaLinks?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+};
+
+export type GenericMorph = Article | Club | ComponentBlockArticles | ComponentBlockCarousel | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedLink | ComponentSharedLinkLists | ComponentSharedSpacing | Footer | Header | I18NLocale | Meta | Page | People | Shop | SocialMedia | Sponsor | Tag | UploadFile | UploadFolder | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser;
+
+export type Header = {
+  __typename?: 'Header';
+  accessLinks?: Maybe<ComponentSharedLinkLists>;
+  createdAt?: Maybe<Scalars['DateTime']>;
+  logo?: Maybe<UploadFileEntityResponse>;
+  navigationLinks?: Maybe<PageRelationResponseCollection>;
+  showSearch: Scalars['Boolean'];
+  updatedAt?: Maybe<Scalars['DateTime']>;
+};
+
+
+export type HeaderNavigationLinksArgs = {
   filters?: InputMaybe<PageFiltersInput>;
   pagination?: InputMaybe<PaginationArg>;
   publicationState?: InputMaybe<PublicationState>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
-export type HomepageEntity = {
-  __typename?: 'HomepageEntity';
-  attributes?: Maybe<Homepage>;
+export type HeaderEntity = {
+  __typename?: 'HeaderEntity';
+  attributes?: Maybe<Header>;
   id?: Maybe<Scalars['ID']>;
 };
 
-export type HomepageEntityResponse = {
-  __typename?: 'HomepageEntityResponse';
-  data?: Maybe<HomepageEntity>;
+export type HeaderEntityResponse = {
+  __typename?: 'HeaderEntityResponse';
+  data?: Maybe<HeaderEntity>;
 };
 
-export type HomepageInput = {
-  contact?: InputMaybe<ComponentGlobalContactInput>;
-  footer?: InputMaybe<ComponentGlobalFooterInput>;
+export type HeaderInput = {
+  accessLinks?: InputMaybe<ComponentSharedLinkListsInput>;
   logo?: InputMaybe<Scalars['ID']>;
-  meta?: InputMaybe<ComponentSharedMetaInput>;
-  page?: InputMaybe<Scalars['ID']>;
-  publishedAt?: InputMaybe<Scalars['DateTime']>;
-  socialMedia?: InputMaybe<Array<InputMaybe<ComponentSharedSocialMediaInput>>>;
-  subPages?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  navigationLinks?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  showSearch?: InputMaybe<Scalars['Boolean']>;
 };
 
 export type I18NLocale = {
@@ -578,6 +541,32 @@ export type JsonFilterInput = {
   startsWith?: InputMaybe<Scalars['JSON']>;
 };
 
+export type Meta = {
+  __typename?: 'Meta';
+  createdAt?: Maybe<Scalars['DateTime']>;
+  description: Scalars['String'];
+  favicon?: Maybe<UploadFileEntityResponse>;
+  title: Scalars['String'];
+  updatedAt?: Maybe<Scalars['DateTime']>;
+};
+
+export type MetaEntity = {
+  __typename?: 'MetaEntity';
+  attributes?: Maybe<Meta>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type MetaEntityResponse = {
+  __typename?: 'MetaEntityResponse';
+  data?: Maybe<MetaEntity>;
+};
+
+export type MetaInput = {
+  description?: InputMaybe<Scalars['String']>;
+  favicon?: InputMaybe<Scalars['ID']>;
+  title?: InputMaybe<Scalars['String']>;
+};
+
 export type Mutation = {
   __typename?: 'Mutation';
   /** Change user password. Confirm with the current password. */
@@ -585,6 +574,8 @@ export type Mutation = {
   createArticle?: Maybe<ArticleEntityResponse>;
   createPage?: Maybe<PageEntityResponse>;
   createPeople?: Maybe<PeopleEntityResponse>;
+  createShop?: Maybe<ShopEntityResponse>;
+  createSocialMedia?: Maybe<SocialMediaEntityResponse>;
   createSponsor?: Maybe<SponsorEntityResponse>;
   createTag?: Maybe<TagEntityResponse>;
   createUploadFile?: Maybe<UploadFileEntityResponse>;
@@ -594,9 +585,14 @@ export type Mutation = {
   /** Create a new user */
   createUsersPermissionsUser: UsersPermissionsUserEntityResponse;
   deleteArticle?: Maybe<ArticleEntityResponse>;
-  deleteHomepage?: Maybe<HomepageEntityResponse>;
+  deleteClub?: Maybe<ClubEntityResponse>;
+  deleteFooter?: Maybe<FooterEntityResponse>;
+  deleteHeader?: Maybe<HeaderEntityResponse>;
+  deleteMeta?: Maybe<MetaEntityResponse>;
   deletePage?: Maybe<PageEntityResponse>;
   deletePeople?: Maybe<PeopleEntityResponse>;
+  deleteShop?: Maybe<ShopEntityResponse>;
+  deleteSocialMedia?: Maybe<SocialMediaEntityResponse>;
   deleteSponsor?: Maybe<SponsorEntityResponse>;
   deleteTag?: Maybe<TagEntityResponse>;
   deleteUploadFile?: Maybe<UploadFileEntityResponse>;
@@ -617,10 +613,15 @@ export type Mutation = {
   /** Reset user password. Confirm with a code (resetToken from forgotPassword) */
   resetPassword?: Maybe<UsersPermissionsLoginPayload>;
   updateArticle?: Maybe<ArticleEntityResponse>;
+  updateClub?: Maybe<ClubEntityResponse>;
   updateFileInfo: UploadFileEntityResponse;
-  updateHomepage?: Maybe<HomepageEntityResponse>;
+  updateFooter?: Maybe<FooterEntityResponse>;
+  updateHeader?: Maybe<HeaderEntityResponse>;
+  updateMeta?: Maybe<MetaEntityResponse>;
   updatePage?: Maybe<PageEntityResponse>;
   updatePeople?: Maybe<PeopleEntityResponse>;
+  updateShop?: Maybe<ShopEntityResponse>;
+  updateSocialMedia?: Maybe<SocialMediaEntityResponse>;
   updateSponsor?: Maybe<SponsorEntityResponse>;
   updateTag?: Maybe<TagEntityResponse>;
   updateUploadFile?: Maybe<UploadFileEntityResponse>;
@@ -652,6 +653,16 @@ export type MutationCreatePageArgs = {
 
 export type MutationCreatePeopleArgs = {
   data: PeopleInput;
+};
+
+
+export type MutationCreateShopArgs = {
+  data: ShopInput;
+};
+
+
+export type MutationCreateSocialMediaArgs = {
+  data: SocialMediaInput;
 };
 
 
@@ -696,6 +707,16 @@ export type MutationDeletePageArgs = {
 
 
 export type MutationDeletePeopleArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type MutationDeleteShopArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type MutationDeleteSocialMediaArgs = {
   id: Scalars['ID'];
 };
 
@@ -776,14 +797,29 @@ export type MutationUpdateArticleArgs = {
 };
 
 
+export type MutationUpdateClubArgs = {
+  data: ClubInput;
+};
+
+
 export type MutationUpdateFileInfoArgs = {
   id: Scalars['ID'];
   info?: InputMaybe<FileInfoInput>;
 };
 
 
-export type MutationUpdateHomepageArgs = {
-  data: HomepageInput;
+export type MutationUpdateFooterArgs = {
+  data: FooterInput;
+};
+
+
+export type MutationUpdateHeaderArgs = {
+  data: HeaderInput;
+};
+
+
+export type MutationUpdateMetaArgs = {
+  data: MetaInput;
 };
 
 
@@ -795,6 +831,18 @@ export type MutationUpdatePageArgs = {
 
 export type MutationUpdatePeopleArgs = {
   data: PeopleInput;
+  id: Scalars['ID'];
+};
+
+
+export type MutationUpdateShopArgs = {
+  data: ShopInput;
+  id: Scalars['ID'];
+};
+
+
+export type MutationUpdateSocialMediaArgs = {
+  data: SocialMediaInput;
   id: Scalars['ID'];
 };
 
@@ -849,7 +897,6 @@ export type Page = {
   headerContents?: Maybe<Array<Maybe<PageHeaderContentsDynamicZone>>>;
   leftContents?: Maybe<Array<Maybe<PageLeftContentsDynamicZone>>>;
   mainContents?: Maybe<Array<Maybe<PageMainContentsDynamicZone>>>;
-  megaMenuContents?: Maybe<Array<Maybe<PageMegaMenuContentsDynamicZone>>>;
   parentPage?: Maybe<PageEntityResponse>;
   publishedAt?: Maybe<Scalars['DateTime']>;
   rightContents?: Maybe<Array<Maybe<PageRightContentsDynamicZone>>>;
@@ -914,7 +961,6 @@ export type PageInput = {
   headerContents?: InputMaybe<Array<Scalars['PageHeaderContentsDynamicZoneInput']>>;
   leftContents?: InputMaybe<Array<Scalars['PageLeftContentsDynamicZoneInput']>>;
   mainContents?: InputMaybe<Array<Scalars['PageMainContentsDynamicZoneInput']>>;
-  megaMenuContents?: InputMaybe<Array<Scalars['PageMegaMenuContentsDynamicZoneInput']>>;
   parentPage?: InputMaybe<Scalars['ID']>;
   publishedAt?: InputMaybe<Scalars['DateTime']>;
   rightContents?: InputMaybe<Array<Scalars['PageRightContentsDynamicZoneInput']>>;
@@ -927,8 +973,6 @@ export type PageInput = {
 export type PageLeftContentsDynamicZone = ComponentBlockArticles | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedSpacing | Error;
 
 export type PageMainContentsDynamicZone = ComponentBlockArticles | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedSpacing | Error;
-
-export type PageMegaMenuContentsDynamicZone = ComponentBlockArticles | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedLinkLists | ComponentSharedSpacing | Error;
 
 export type PageRelationResponseCollection = {
   __typename?: 'PageRelationResponseCollection';
@@ -1027,14 +1071,21 @@ export type Query = {
   __typename?: 'Query';
   article?: Maybe<ArticleEntityResponse>;
   articles?: Maybe<ArticleEntityResponseCollection>;
-  homepage?: Maybe<HomepageEntityResponse>;
+  club?: Maybe<ClubEntityResponse>;
+  footer?: Maybe<FooterEntityResponse>;
+  header?: Maybe<HeaderEntityResponse>;
   i18NLocale?: Maybe<I18NLocaleEntityResponse>;
   i18NLocales?: Maybe<I18NLocaleEntityResponseCollection>;
   me?: Maybe<UsersPermissionsMe>;
+  meta?: Maybe<MetaEntityResponse>;
   page?: Maybe<PageEntityResponse>;
   pages?: Maybe<PageEntityResponseCollection>;
   people?: Maybe<PeopleEntityResponse>;
   peoples?: Maybe<PeopleEntityResponseCollection>;
+  shop?: Maybe<ShopEntityResponse>;
+  shops?: Maybe<ShopEntityResponseCollection>;
+  socialMedia?: Maybe<SocialMediaEntityResponse>;
+  socialMedias?: Maybe<SocialMediaEntityResponseCollection>;
   sponsor?: Maybe<SponsorEntityResponse>;
   sponsors?: Maybe<SponsorEntityResponseCollection>;
   tag?: Maybe<TagEntityResponse>;
@@ -1060,11 +1111,6 @@ export type QueryArticlesArgs = {
   pagination?: InputMaybe<PaginationArg>;
   publicationState?: InputMaybe<PublicationState>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
-};
-
-
-export type QueryHomepageArgs = {
-  publicationState?: InputMaybe<PublicationState>;
 };
 
 
@@ -1100,6 +1146,32 @@ export type QueryPeopleArgs = {
 
 export type QueryPeoplesArgs = {
   filters?: InputMaybe<PeopleFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+};
+
+
+export type QueryShopArgs = {
+  id?: InputMaybe<Scalars['ID']>;
+};
+
+
+export type QueryShopsArgs = {
+  filters?: InputMaybe<ShopFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+};
+
+
+export type QuerySocialMediaArgs = {
+  id?: InputMaybe<Scalars['ID']>;
+};
+
+
+export type QuerySocialMediasArgs = {
+  filters?: InputMaybe<SocialMediaFiltersInput>;
   pagination?: InputMaybe<PaginationArg>;
   publicationState?: InputMaybe<PublicationState>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
@@ -1182,6 +1254,106 @@ export type QueryUsersPermissionsUsersArgs = {
 export type ResponseCollectionMeta = {
   __typename?: 'ResponseCollectionMeta';
   pagination: Pagination;
+};
+
+export type Shop = {
+  __typename?: 'Shop';
+  createdAt?: Maybe<Scalars['DateTime']>;
+  name: Scalars['String'];
+  publishedAt?: Maybe<Scalars['DateTime']>;
+  updatedAt?: Maybe<Scalars['DateTime']>;
+  url: Scalars['String'];
+};
+
+export type ShopEntity = {
+  __typename?: 'ShopEntity';
+  attributes?: Maybe<Shop>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type ShopEntityResponse = {
+  __typename?: 'ShopEntityResponse';
+  data?: Maybe<ShopEntity>;
+};
+
+export type ShopEntityResponseCollection = {
+  __typename?: 'ShopEntityResponseCollection';
+  data: Array<ShopEntity>;
+  meta: ResponseCollectionMeta;
+};
+
+export type ShopFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<ShopFiltersInput>>>;
+  createdAt?: InputMaybe<DateTimeFilterInput>;
+  id?: InputMaybe<IdFilterInput>;
+  name?: InputMaybe<StringFilterInput>;
+  not?: InputMaybe<ShopFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<ShopFiltersInput>>>;
+  publishedAt?: InputMaybe<DateTimeFilterInput>;
+  updatedAt?: InputMaybe<DateTimeFilterInput>;
+  url?: InputMaybe<StringFilterInput>;
+};
+
+export type ShopInput = {
+  name?: InputMaybe<Scalars['String']>;
+  publishedAt?: InputMaybe<Scalars['DateTime']>;
+  url?: InputMaybe<Scalars['String']>;
+};
+
+export type ShopRelationResponseCollection = {
+  __typename?: 'ShopRelationResponseCollection';
+  data: Array<ShopEntity>;
+};
+
+export type SocialMedia = {
+  __typename?: 'SocialMedia';
+  createdAt?: Maybe<Scalars['DateTime']>;
+  icon?: Maybe<UploadFileEntityResponse>;
+  name: Scalars['String'];
+  publishedAt?: Maybe<Scalars['DateTime']>;
+  updatedAt?: Maybe<Scalars['DateTime']>;
+  url: Scalars['String'];
+};
+
+export type SocialMediaEntity = {
+  __typename?: 'SocialMediaEntity';
+  attributes?: Maybe<SocialMedia>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type SocialMediaEntityResponse = {
+  __typename?: 'SocialMediaEntityResponse';
+  data?: Maybe<SocialMediaEntity>;
+};
+
+export type SocialMediaEntityResponseCollection = {
+  __typename?: 'SocialMediaEntityResponseCollection';
+  data: Array<SocialMediaEntity>;
+  meta: ResponseCollectionMeta;
+};
+
+export type SocialMediaFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<SocialMediaFiltersInput>>>;
+  createdAt?: InputMaybe<DateTimeFilterInput>;
+  id?: InputMaybe<IdFilterInput>;
+  name?: InputMaybe<StringFilterInput>;
+  not?: InputMaybe<SocialMediaFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<SocialMediaFiltersInput>>>;
+  publishedAt?: InputMaybe<DateTimeFilterInput>;
+  updatedAt?: InputMaybe<DateTimeFilterInput>;
+  url?: InputMaybe<StringFilterInput>;
+};
+
+export type SocialMediaInput = {
+  icon?: InputMaybe<Scalars['ID']>;
+  name?: InputMaybe<Scalars['String']>;
+  publishedAt?: InputMaybe<Scalars['DateTime']>;
+  url?: InputMaybe<Scalars['String']>;
+};
+
+export type SocialMediaRelationResponseCollection = {
+  __typename?: 'SocialMediaRelationResponseCollection';
+  data: Array<SocialMediaEntity>;
 };
 
 export type Sponsor = {
@@ -1676,6 +1848,16 @@ export type UsersPermissionsUserRelationResponseCollection = {
   data: Array<UsersPermissionsUserEntity>;
 };
 
+export type HomepageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type HomepageQuery = { __typename?: 'Query', club?: { __typename?: 'ClubEntityResponse', data?: { __typename?: 'ClubEntity', id?: string | null, attributes?: { __typename?: 'Club', name: string, address: string, postalCode: string, city: string, telephone: string, telefax?: string | null, email: string, logo?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null } | null } | null, header?: { __typename?: 'HeaderEntityResponse', data?: { __typename?: 'HeaderEntity', id?: string | null, attributes?: { __typename?: 'Header', showSearch: boolean, logo?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null, accessLinks?: { __typename?: 'ComponentSharedLinkLists', id: string, title?: string | null, titleUrl?: string | null, pageLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null, links?: Array<{ __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null> | null } | null, navigationLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null } | null }> } | null } | null }> } | null } | null } | null } | null, sponsors?: { __typename?: 'SponsorEntityResponseCollection', meta: { __typename?: 'ResponseCollectionMeta', pagination: { __typename?: 'Pagination', total: number } }, data: Array<{ __typename?: 'SponsorEntity', id?: string | null, attributes?: { __typename?: 'Sponsor', name: string, active?: boolean | null, image?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null }> } | null, footer?: { __typename?: 'FooterEntityResponse', data?: { __typename?: 'FooterEntity', id?: string | null, attributes?: { __typename?: 'Footer', copyright: string, contents?: Array<{ __typename?: 'ComponentBlockRichText' } | { __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | { __typename?: 'ComponentSharedLinkLists', id: string, title?: string | null, titleUrl?: string | null, pageLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null, links?: Array<{ __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null> | null } | { __typename?: 'Error' } | null> | null, socialMediaLinks?: { __typename?: 'SocialMediaRelationResponseCollection', data: Array<{ __typename?: 'SocialMediaEntity', id?: string | null, attributes?: { __typename?: 'SocialMedia', name: string, url: string, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null }> } | null } | null } | null } | null };
+
+export type MetaQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type MetaQuery = { __typename?: 'Query', meta?: { __typename?: 'MetaEntityResponse', data?: { __typename?: 'MetaEntity', id?: string | null, attributes?: { __typename?: 'Meta', title: string, description: string, favicon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null } | null } | null };
+
 export type ArticlesQueryVariables = Exact<{
   page: Scalars['Int'];
   pageSize: Scalars['Int'];
@@ -1735,13 +1917,3 @@ export type ArticlesComponentFragment = { __typename?: 'ComponentBlockArticles',
 export type FileFragmentFragment = { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null };
 
 export type FussballDeWidgetFragment = { __typename?: 'ComponentSharedFussballDeWidget', id: string, key: string };
-
-export type HomepageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type HomepageQuery = { __typename?: 'Query', homepage?: { __typename?: 'HomepageEntityResponse', data?: { __typename?: 'HomepageEntity', id?: string | null, attributes?: { __typename?: 'Homepage', meta?: { __typename?: 'ComponentSharedMeta', id: string, title: string, description?: string | null, favicon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, name: string } | null } | null } | null } | null, logo?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string } | null } | null } | null, footer?: { __typename?: 'ComponentGlobalFooter', id: string, labelLeft?: string | null, labelRight?: string | null, linkLists?: Array<{ __typename?: 'ComponentSharedLinkLists', id: string, title?: string | null, titleUrl?: string | null, pageLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null, links?: Array<{ __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null> | null } | null> | null } | null, socialMedia?: Array<{ __typename?: 'ComponentSharedSocialMedia', id: string, name?: string | null, url?: string | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', attributes?: { __typename?: 'UploadFile', url: string, alternativeText?: string | null } | null } | null } | null } | null> | null, contact?: { __typename?: 'ComponentGlobalContact', id: string, name?: string | null, street?: string | null, postalCode?: string | null, city?: string | null, telephone?: string | null, telefax?: string | null, email?: string | null } | null, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string, megaMenuContents?: Array<{ __typename: 'ComponentBlockArticles', id: string, pageSize: number } | { __typename: 'ComponentBlockPersons', id: string, person?: { __typename?: 'PeopleEntityResponse', data?: { __typename?: 'PeopleEntity', id?: string | null, attributes?: { __typename?: 'People', firstname: string, lastname: string, description?: string | null, email?: string | null, telephone?: string | null, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null, picture?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null } | null } | null } | { __typename: 'ComponentBlockRichText', id: string, content?: string | null } | { __typename: 'ComponentBlockTaggedPersons', id: string, tag?: { __typename?: 'TagEntityResponse', data?: { __typename?: 'TagEntity', id?: string | null } | null } | null } | { __typename: 'ComponentSharedFussballDeWidget', id: string, key: string } | { __typename: 'ComponentSharedLinkLists', id: string, title?: string | null, titleUrl?: string | null, pageLinks?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null, links?: Array<{ __typename?: 'ComponentSharedLink', id: string, href: string, text?: string | null, target?: Enum_Componentsharedlink_Target | null, isDownload?: boolean | null, isExternal?: boolean | null, icon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null> | null } | { __typename: 'ComponentSharedSpacing', id: string, width?: string | null, height?: string | null } | { __typename: 'Error', code: string, message?: string | null } | null> | null } | null }> } | null } | null } | null } | null, sponsors?: { __typename?: 'SponsorEntityResponseCollection', meta: { __typename?: 'ResponseCollectionMeta', pagination: { __typename?: 'Pagination', total: number } }, data: Array<{ __typename?: 'SponsorEntity', id?: string | null, attributes?: { __typename?: 'Sponsor', name: string, active?: boolean | null, image?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null }> } | null };
-
-export type MetaQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type MetaQuery = { __typename?: 'Query', homepage?: { __typename?: 'HomepageEntityResponse', data?: { __typename?: 'HomepageEntity', id?: string | null, attributes?: { __typename?: 'Homepage', meta?: { __typename?: 'ComponentSharedMeta', id: string, title: string, description?: string | null, favicon?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, name: string } | null } | null } | null } | null, logo?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string } | null } | null } | null } | null } | null } | null };

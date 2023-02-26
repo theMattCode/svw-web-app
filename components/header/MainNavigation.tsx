@@ -1,18 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Page } from "#/lib/graphql/generated";
 import { Suspense, useState } from "react";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
-import { DynamicContent } from "#/components/dynamic/DynamicContent";
+import { HeaderData, NavItemData } from "#/app/data.gql";
 
 type Props = {
-  logo: string | undefined;
-  menuItems: Page[];
+  headerData: HeaderData | null;
 };
-export function MainNavigation({ logo, menuItems }: Props): JSX.Element {
-  const [activeItem, setActiveItem] = useState<Page | null>(null);
+export function MainNavigation({ headerData }: Props): JSX.Element {
+  const [activeItem, setActiveItem] = useState<NavItemData | null>(null);
   return (
     <nav className="text-white whitespace-nowrap w-full flex flex-row">
       <Suspense>
@@ -23,10 +21,10 @@ export function MainNavigation({ logo, menuItems }: Props): JSX.Element {
         ></script>
       </Suspense>
       <div className="h-14 z-30">
-        {logo && (
+        {headerData?.logo?.data?.attributes?.url && (
           <Link href="/" onClick={() => setActiveItem(null)}>
             <Image
-              src={getFullAssetUrl(logo)}
+              src={getFullAssetUrl(headerData.logo.data?.attributes?.url)}
               alt=""
               width={128}
               height={128}
@@ -37,29 +35,32 @@ export function MainNavigation({ logo, menuItems }: Props): JSX.Element {
         )}
       </div>
       <div className="flex flex-row flex-grow justify-center h-14 text-sm">
-        {menuItems?.map((menuItem, index, array) => {
-          const megaMenuContents = menuItem.megaMenuContents;
-          const hasMegaMenu = megaMenuContents && megaMenuContents?.length > 0;
-          if (hasMegaMenu) {
+        {headerData?.navigationLinks?.data.map((link, index, array) => {
+          const page = link.attributes;
+          const subPages = page?.subPages?.data;
+          const hasMegaMenu = subPages && subPages?.length > 0;
+          if (page) {
+            if (hasMegaMenu) {
+              return (
+                <NavItemWithMegaMenu
+                  key={page?.slug}
+                  menuItem={page}
+                  isActiveItem={activeItem === page}
+                  setActiveItem={setActiveItem}
+                  isLast={array.length - 1 === index}
+                />
+              );
+            }
             return (
-              <NavItemWithMegaMenu
-                key={menuItem.slug}
-                menuItem={menuItem}
-                isActiveItem={activeItem === menuItem}
+              <NavItem
+                key={page?.slug}
+                menuItem={page}
+                isActiveItem={activeItem === page}
                 setActiveItem={setActiveItem}
                 isLast={array.length - 1 === index}
               />
             );
           }
-          return (
-            <NavItem
-              key={menuItem.slug}
-              menuItem={menuItem}
-              isActiveItem={activeItem === menuItem}
-              setActiveItem={setActiveItem}
-              isLast={array.length - 1 === index}
-            />
-          );
         })}
       </div>
     </nav>
@@ -67,9 +68,9 @@ export function MainNavigation({ logo, menuItems }: Props): JSX.Element {
 }
 
 type NavItemProps = {
-  menuItem: Page;
+  menuItem: NavItemData;
   isActiveItem: boolean;
-  setActiveItem: (menuItem: Page) => void;
+  setActiveItem: (menuItem: NavItemData) => void;
   isLast: boolean;
 };
 
@@ -98,7 +99,7 @@ function NavItemWithMegaMenu({
   setActiveItem,
   isLast,
 }: NavItemProps): JSX.Element {
-  const megaMenuContents = menuItem.megaMenuContents;
+  const subPages = menuItem.subPages?.data;
   return (
     <div key={menuItem.slug} className="group flex flex-row place-items-center">
       <NavItem
@@ -110,13 +111,13 @@ function NavItemWithMegaMenu({
       />
       <div className="hidden absolute left-0 top-[6em] group-hover:block z-10 w-full border-t-2 border-white bg-neutral-200/90 text-black">
         <div className="container pl-24 xl:pl-4 pr-4 py-12 flex flex-row gap-x-12 gap-y-4 justify-center">
-          {megaMenuContents?.map((content) => {
-            if (content) {
+          {subPages?.map((subPage) => {
+            const page = subPage.attributes;
+            if (page) {
               return (
-                <DynamicContent
-                  key={"id" in content ? content.id : content.code}
-                  component={content}
-                />
+                <Link key={page.slug} href={page.slug}>
+                  {page.title}
+                </Link>
               );
             }
           })}
