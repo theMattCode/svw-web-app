@@ -8,9 +8,8 @@ const httpLink = new HttpLink({
        * Available options:
        * { cache: 'force-cache' }: Generates statically like getStaticProps.
        * { cache: 'no-store'}: Generates server-side upon every request like getServerSideProps.
-       * { revalidate: 20 }: Generates statically but revalidates every 20 seconds
+       * { revalidate: 20 }: BROKEN!! Generates statically but revalidates every 20 seconds
        */
-      revalidate: 20,
     },
   },
   headers: {

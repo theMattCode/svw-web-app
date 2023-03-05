@@ -2,7 +2,7 @@ type Props = {
   widgetKey: string;
 };
 
-export default function FussballDeWidget({ widgetKey }: Props): JSX.Element {
+export function FussballDeWidget({ widgetKey }: Props): JSX.Element {
   return (
     <div className="justify-self-end self-end items-end place-self-end">
       <iframe

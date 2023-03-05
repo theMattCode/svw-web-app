@@ -1,25 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import { HeaderData, NavItemData } from "#/app/data.gql";
+import { Page } from "#/lib/graphql/generated";
+import { FaChevronRight } from "react-icons/fa";
 
 type Props = {
   headerData: HeaderData | null;
 };
-export function MainNavigation({ headerData }: Props): JSX.Element {
+export function LargeScreenNavigation({ headerData }: Props): JSX.Element {
   const [activeItem, setActiveItem] = useState<NavItemData | null>(null);
   return (
     <nav className="text-white whitespace-nowrap w-full flex flex-row">
-      <Suspense>
-        <script
-          async
-          type="text/javascript"
-          src="https://www.fussball.de/static/layout/fbde2/egm//js/widget2.js"
-        ></script>
-      </Suspense>
       <div className="h-14 z-30">
         {headerData?.logo?.data?.attributes?.url && (
           <Link href="/" onClick={() => setActiveItem(null)}>
@@ -115,9 +110,12 @@ function NavItemWithMegaMenu({
             const page = subPage.attributes;
             if (page) {
               return (
-                <Link key={page.slug} href={page.slug}>
-                  {page.title}
-                </Link>
+                <div key={page.slug}>
+                  <span className="text-lg">
+                    <Link href={page.slug}>{page.title}</Link>
+                  </span>
+                  <SubPageList parent={page} />
+                </div>
               );
             }
           })}
@@ -125,4 +123,29 @@ function NavItemWithMegaMenu({
       </div>
     </div>
   );
+}
+
+function SubPageList({ parent }: { parent: Page }): JSX.Element | null {
+  if (parent.subPages?.data && parent.subPages.data.length > 0) {
+    return (
+      <ul className="list-none">
+        {parent.subPages.data.map((subPage) => {
+          if (subPage.attributes) {
+            return (
+              <li key={subPage.attributes.slug}>
+                <Link
+                  href={subPage.attributes?.slug}
+                  className="flex flex-row gap-x-2 items-center"
+                >
+                  <FaChevronRight className="text-svw-blue-default" />
+                  <span>{subPage.attributes?.title}</span>
+                </Link>
+              </li>
+            );
+          }
+        })}
+      </ul>
+    );
+  }
+  return null;
 }

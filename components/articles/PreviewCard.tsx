@@ -11,6 +11,7 @@ export function PreviewCard({ article }: Props): JSX.Element {
       href={`/news/${article.slug}`}
       className="shadow-lg border-t-4 border-svw-blue-default bg-white flex flex-col w-full h-full"
     >
+      <div></div>
       {image && (
         <Image
           src={image.url}

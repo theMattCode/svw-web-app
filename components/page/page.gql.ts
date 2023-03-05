@@ -4,6 +4,7 @@ import graphqlClient from "#/lib/graphql/graphqlClient";
 import {
   ARTICLE_CAROUSEL_COMPONENT,
   ARTICLES_COMPONENT,
+  ARTICLES_PREVIEW_LIST_COMPONENT,
   ERROR,
   FILE_FRAGMENT,
   FUSSBALL_DE_WIDGET,
@@ -34,6 +35,7 @@ export const PAGE_DATA = gql`
             ...PersonComponent
             ...TaggedPersonsComponent
             ...ArticlesComponent
+            ...ArticlesPreviewListComponent
             ...FussballDeWidget
             ...Error
           }
@@ -44,6 +46,7 @@ export const PAGE_DATA = gql`
             ...PersonComponent
             ...TaggedPersonsComponent
             ...ArticlesComponent
+            ...ArticlesPreviewListComponent
             ...FussballDeWidget
             ...Error
           }
@@ -54,6 +57,7 @@ export const PAGE_DATA = gql`
             ...PersonComponent
             ...TaggedPersonsComponent
             ...ArticlesComponent
+            ...ArticlesPreviewListComponent
             ...FussballDeWidget
             ...Error
           }
@@ -74,11 +78,12 @@ export const PAGE_DATA = gql`
   ${PERSON_COMPONENT}
   ${SPACING_COMPONENT}
   ${ARTICLE_CAROUSEL_COMPONENT}
+  ${ARTICLES_COMPONENT}
+  ${ARTICLES_PREVIEW_LIST_COMPONENT}
   ${RICH_TEXT_COMPONENT}
   ${FILE_FRAGMENT}
   ${PEOPLE}
   ${TAGGED_PERSONS_COMPONENT}
-  ${ARTICLES_COMPONENT}
   ${FUSSBALL_DE_WIDGET}
 `;
 

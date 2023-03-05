@@ -1,11 +1,14 @@
 import { DynamicContent } from "#/components/dynamic/DynamicContent";
 import { Page as PageData } from "#/lib/graphql/generated";
+import { Params, SearchParams } from "#/lib/url";
 
 type Props = {
   pageData: PageData;
+  params?: Params;
+  searchParams?: SearchParams;
 };
 
-export function Page({ pageData }: Props): JSX.Element {
+export function Page({ pageData, params, searchParams }: Props): JSX.Element {
   const { mainContents, leftContents, rightContents, headerContents } =
     pageData;
   return (
@@ -17,9 +20,12 @@ export function Page({ pageData }: Props): JSX.Element {
               <DynamicContent
                 key={"id" in content ? content.id : content.code}
                 component={content}
+                params={params}
+                searchParams={searchParams}
               />
             );
           }
+          return <></>;
         })}
       </div>
       <div className="container flex flex-row">
@@ -30,18 +36,22 @@ export function Page({ pageData }: Props): JSX.Element {
                 <DynamicContent
                   key={"id" in content ? content.id : content.code}
                   component={content}
+                  params={params}
+                  searchParams={searchParams}
                 />
               );
             }
           })}
         </div>
-        <main className="container max-w-4xl p-8 bg-white shadow-xl">
+        <main className="container max-w-4xl xl:max-w-7xl p-8">
           {mainContents?.map((content) => {
             if (content) {
               return (
                 <DynamicContent
                   key={"id" in content ? content.id : content.code}
                   component={content}
+                  params={params}
+                  searchParams={searchParams}
                 />
               );
             }
@@ -54,6 +64,8 @@ export function Page({ pageData }: Props): JSX.Element {
                 <DynamicContent
                   key={"id" in content ? content.id : content.code}
                   component={content}
+                  params={params}
+                  searchParams={searchParams}
                 />
               );
             }

@@ -5,24 +5,29 @@ import {
   PageHeaderContentsDynamicZone,
   PageLeftContentsDynamicZone,
   PageMainContentsDynamicZone,
-  PageMegaMenuContentsDynamicZone,
   PageRightContentsDynamicZone,
 } from "#/lib/graphql/generated";
 import { TaggedPersons } from "#/components/person/TaggedPersons";
 import { PreviewList } from "#/components/articles/PreviewList";
-import { LinkList } from "#/components/linklist/LinkList";
-import FussballDeWidget from "#/components/widget/Fussball.de";
+import { FussballDeWidget } from "#/components/widget/Fussball.de";
+import { ArticleList } from "#/components/articles/ArticleList";
+import { Params, SearchParams } from "#/lib/url";
 
 type Props = {
   component:
     | PageHeaderContentsDynamicZone
     | PageMainContentsDynamicZone
     | PageLeftContentsDynamicZone
-    | PageRightContentsDynamicZone
-    | PageMegaMenuContentsDynamicZone;
+    | PageRightContentsDynamicZone;
+  params?: Params;
+  searchParams?: SearchParams;
 };
 
-export function DynamicContent({ component }: Props): JSX.Element | null {
+export function DynamicContent({
+  component,
+  params,
+  searchParams,
+}: Props): JSX.Element | null {
   switch (component.__typename) {
     case "ComponentBlockCarousel":
       /* @ts-expect-error Server Component */
@@ -41,12 +46,21 @@ export function DynamicContent({ component }: Props): JSX.Element | null {
       /* @ts-expect-error Server Component */
       return <TaggedPersons tagId={component.tag?.data?.id ?? null} />;
 
-    case "ComponentBlockArticles":
+    case "ComponentBlockArticlesPreviewList":
       /* @ts-expect-error Server Component */
       return <PreviewList pageSize={component.pageSize} />;
 
-    case "ComponentSharedLinkLists":
-      return <LinkList linkList={component} />;
+    case "ComponentBlockArticles": {
+      const page = Number.parseInt(searchParams?.page ?? "1");
+      return (
+        /* @ts-expect-error Server Component */
+        <ArticleList
+          pageSize={component.pageSize}
+          page={page}
+          slug={params?.slug}
+        />
+      );
+    }
 
     case "ComponentSharedFussballDeWidget":
       return <FussballDeWidget widgetKey={component.key} />;

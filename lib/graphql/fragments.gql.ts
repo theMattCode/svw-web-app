@@ -35,6 +35,15 @@ export const LINK_LIST_COMPONENT = gql`
         }
       }
     }
+    shopLinks {
+      data {
+        id
+        attributes {
+          name
+          url
+        }
+      }
+    }
     links {
       ...LinkComponent
     }
@@ -111,6 +120,13 @@ export const SPACING_COMPONENT = gql`
 
 export const ARTICLES_COMPONENT = gql`
   fragment ArticlesComponent on ComponentBlockArticles {
+    id
+    pageSize
+  }
+`;
+
+export const ARTICLES_PREVIEW_LIST_COMPONENT = gql`
+  fragment ArticlesPreviewListComponent on ComponentBlockArticlesPreviewList {
     id
     pageSize
   }
