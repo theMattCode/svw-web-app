@@ -44,7 +44,16 @@ export async function ArticleList({
   );
 }
 
-function Pagination({ slug, currentPage, pageCount }): JSX.Element {
+type PaginationProps = {
+  slug: string | undefined;
+  currentPage: number;
+  pageCount: number;
+};
+function Pagination({
+  slug,
+  currentPage,
+  pageCount,
+}: PaginationProps): JSX.Element {
   const pages = Array.from(Array(pageCount).keys());
   return (
     <div className="flex flex-row place-content-end">
