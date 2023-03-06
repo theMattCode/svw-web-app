@@ -25,15 +25,13 @@ const httpLink = new HttpLink({
     console.log(
       `${new Date().toISOString().slice(-13)} 📡 Sending ${
         body.operationName
-      }\nrequest: ${body.query}\nWith variables: ${JSON.stringify(
-        body.variables
-      )}`
+      }\nrequest headers: ${init?.headers}`
     );
     const response = await fetch(input, init);
     console.log(
       `${new Date().toISOString().slice(-13)} 📡 Received ${
         body.operationName
-      } response in ${Date.now() - start}ms`
+      } response in ${Date.now() - start}ms\n${body}`
     );
 
     return {
