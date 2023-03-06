@@ -19,20 +19,9 @@ const httpLink = new HttpLink({
     input: RequestInfo,
     init?: RequestInit
   ): Promise<Response> {
-    const body = JSON.parse(init?.body?.toString() ?? "{}");
-
-    const start = Date.now();
-    console.log(
-      `${new Date().toISOString().slice(-13)} 📡 Sending ${
-        body.operationName
-      }\nrequest headers: ${init?.headers}`
-    );
+    console.dir(input);
+    console.dir(init);
     const response = await fetch(input, init);
-    console.log(
-      `${new Date().toISOString().slice(-13)} 📡 Received ${
-        body.operationName
-      } response in ${Date.now() - start}ms\n${body}`
-    );
 
     return {
       ...response,
