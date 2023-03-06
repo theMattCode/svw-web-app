@@ -15,6 +15,7 @@ const httpLink = new HttpLink({
   headers: {
     authorization: `Bearer ${process.env.NEXT_PUBLIC_BACKEND_TOKEN}`,
   },
+  /*
   fetch: async function loggingFetch(
     input: RequestInfo,
     init?: RequestInit
@@ -22,10 +23,8 @@ const httpLink = new HttpLink({
     console.dir(input);
     console.dir(init);
     const response = await fetch(input, init);
-
     return {
       ...response,
-
       async text() {
         const start = Date.now();
         const result = await response.text();
@@ -39,6 +38,7 @@ const httpLink = new HttpLink({
       },
     };
   },
+  */
 });
 
 const graphqlClient = new ApolloClient({
