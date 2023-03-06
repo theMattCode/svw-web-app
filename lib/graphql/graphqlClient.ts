@@ -1,9 +1,4 @@
-import {
-  ApolloClient,
-  ApolloLink,
-  HttpLink,
-  InMemoryCache,
-} from "@apollo/client";
+import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
 
 const httpLink = new HttpLink({
   uri: `${process.env.NEXT_PUBLIC_BACKEND_URL}/graphql`,
@@ -20,15 +15,43 @@ const httpLink = new HttpLink({
   headers: {
     authorization: `Bearer ${process.env.NEXT_PUBLIC_BACKEND_TOKEN}`,
   },
-});
+  fetch: async function loggingFetch(
+    input: RequestInfo,
+    init?: RequestInit
+  ): Promise<Response> {
+    const body = JSON.parse(init?.body?.toString() ?? "{}");
 
-const responseLogger = new ApolloLink((operation, forward) => {
-  return forward(operation).map((result) => {
-    const context = operation.getContext();
-    console.dir(context.request);
-    console.dir(context.response);
-    return result;
-  });
+    const start = Date.now();
+    console.log(
+      `${new Date().toISOString().slice(-13)} 📡 Sending ${
+        body.operationName
+      }\nrequest: ${body.query}\nWith variables: ${JSON.stringify(
+        body.variables
+      )}`
+    );
+    const response = await fetch(input, init);
+    console.log(
+      `${new Date().toISOString().slice(-13)} 📡 Received ${
+        body.operationName
+      } response in ${Date.now() - start}ms`
+    );
+
+    return {
+      ...response,
+
+      async text() {
+        const start = Date.now();
+        const result = await response.text();
+        console.log(JSON.parse(result));
+        console.log(
+          `${new Date().toISOString().slice(-13)} ⚙️ in ${
+            Date.now() - start
+          }ms (${result.length} bytes)`
+        );
+        return result;
+      },
+    };
+  },
 });
 
 const graphqlClient = new ApolloClient({
@@ -39,7 +62,7 @@ const graphqlClient = new ApolloClient({
       fetchPolicy: "no-cache",
     },
   },
-  link: ApolloLink.from([responseLogger, httpLink]),
+  link: httpLink,
 });
 
 export default graphqlClient;
