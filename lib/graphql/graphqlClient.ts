@@ -1,4 +1,9 @@
-import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
+import {
+  ApolloClient,
+  ApolloLink,
+  HttpLink,
+  InMemoryCache,
+} from "@apollo/client";
 
 const httpLink = new HttpLink({
   uri: `${process.env.NEXT_PUBLIC_BACKEND_URL}/graphql`,
@@ -17,6 +22,15 @@ const httpLink = new HttpLink({
   },
 });
 
+const responseLogger = new ApolloLink((operation, forward) => {
+  return forward(operation).map((result) => {
+    const context = operation.getContext();
+    console.dir(context.request);
+    console.dir(context.response);
+    return result;
+  });
+});
+
 const graphqlClient = new ApolloClient({
   name: "svw-web-app-apollo-client",
   cache: new InMemoryCache(),
@@ -25,7 +39,7 @@ const graphqlClient = new ApolloClient({
       fetchPolicy: "no-cache",
     },
   },
-  link: httpLink,
+  link: ApolloLink.from([responseLogger, httpLink]),
 });
 
 export default graphqlClient;
