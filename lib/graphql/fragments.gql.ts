@@ -50,6 +50,23 @@ export const LINK_LIST_COMPONENT = gql`
   }
 `;
 
+export const TAG_FRAGMENT = gql`
+  fragment Tag on TagEntity {
+    id
+    attributes {
+      name
+    }
+  }
+`;
+
+export const TAGS_FRAGMENT = gql`
+  fragment Tags on TagRelationResponseCollection {
+    data {
+      ...Tag
+    }
+  }
+`;
+
 export const PEOPLE = gql`
   fragment People on People {
     firstname
@@ -58,12 +75,7 @@ export const PEOPLE = gql`
     email
     telephone
     tags {
-      data {
-        id
-        attributes {
-          name
-        }
-      }
+      ...Tags
     }
     picture {
       ...FileFragment
@@ -90,7 +102,7 @@ export const TAGGED_PERSONS_COMPONENT = gql`
     id
     tag {
       data {
-        id
+        ...Tag
       }
     }
   }

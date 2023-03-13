@@ -5,6 +5,8 @@ import { PreviewCard } from "#/components/articles/PreviewCard";
 import { injectFullAssetUrl } from "#/lib/asset";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
+import { Heading } from "#/components/heading/Heading";
+import { PreviewArticle } from "#/components/articles/PreviewArticle";
 
 const DEFAULT_PAGE_SIZE = 8;
 
@@ -24,18 +26,14 @@ export async function PreviewList({
   });
   return (
     <div className="flex flex-col">
-      <div className="text-lg flex flex-row gap-1 h-10">
-        <div className="h-full bg-svw-blue-default text-white px-4 flex flex-col justify-center">
-          Aktuelles
-        </div>
-        <div className="h-full bg-svw-blue-default w-full"> </div>
-      </div>
-      <div className="pt-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
+      <Link href="/aktuelles">
+        <Heading text="Aktuelles" />
+      </Link>
+      <div className="flex flex-col pt-1">
         {data.articles?.data.map((article) => {
           if (article.attributes) {
-            injectFullAssetUrl(article.attributes.image?.data?.attributes);
             return (
-              <PreviewCard key={article.id} article={article.attributes} />
+              <PreviewArticle key={article.id} article={article.attributes} />
             );
           }
         })}

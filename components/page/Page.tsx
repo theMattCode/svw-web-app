@@ -43,7 +43,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
             }
           })}
         </div>
-        <main className="container max-w-4xl xl:max-w-7xl p-8">
+        <main className="container max-w-4xl xl:max-w-7xl p-4">
           {mainContents?.map((content) => {
             if (content) {
               return (

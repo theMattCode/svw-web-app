@@ -1,5 +1,11 @@
 import { gql } from "@apollo/client";
-import { FILE_FRAGMENT } from "#/lib/graphql/fragments.gql";
+import {
+  FILE_FRAGMENT,
+  TAG_FRAGMENT,
+  TAGS_FRAGMENT,
+} from "#/lib/graphql/fragments.gql";
+import { ExtractType } from "#/lib/graphql/types";
+import { ArticlesQuery } from "#/lib/graphql/generated";
 
 export const ARTICLES_QUERY = gql`
   query Articles($page: Int!, $pageSize: Int!) {
@@ -15,6 +21,10 @@ export const ARTICLES_QUERY = gql`
           date
           text
           promote
+          teaser
+          tags {
+            ...Tags
+          }
           image {
             ...FileFragment
           }
@@ -30,8 +40,15 @@ export const ARTICLES_QUERY = gql`
       }
     }
   }
+  ${TAG_FRAGMENT}
+  ${TAGS_FRAGMENT}
   ${FILE_FRAGMENT}
 `;
+
+export type ListedArticle = ExtractType<
+  ArticlesQuery,
+  ["articles", "data", "attributes"]
+>;
 
 export const ARTICLE_QUERY = gql`
   query Article($slug: String!) {
