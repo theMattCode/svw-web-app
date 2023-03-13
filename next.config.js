@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "localhost",
         port: "1337",
       },
+      {
+        protocol: "https",
+        hostname: "svw.uber.space",
+        pathname: "/uploads",
+      },
     ],
   },
 };
