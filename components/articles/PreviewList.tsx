@@ -33,7 +33,10 @@ export async function PreviewList({
         {data.articles?.data.map((article) => {
           if (article.attributes) {
             return (
-              <PreviewArticle key={article.id} article={article.attributes} />
+              <>
+                <PreviewArticle key={article.id} article={article.attributes} />
+                <hr className="border-svw-blue-default my-2" />
+              </>
             );
           }
         })}

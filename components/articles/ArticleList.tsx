@@ -32,9 +32,12 @@ export async function ArticleList({
         currentPage={page}
         pageCount={pagination.pageCount}
       />
-      {data.articles?.data.map((article) =>
+      {data.articles?.data.map((article, index, array) =>
         article.attributes ? (
-          <PreviewArticle key={article.id} article={article.attributes} />
+          <>
+            <PreviewArticle key={article.id} article={article.attributes} />
+            <hr className="border-svw-blue-default my-2" />
+          </>
         ) : null
       )}
     </div>

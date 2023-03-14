@@ -4,6 +4,8 @@ import { SplitHeading } from "#/components/heading/SplitHeading";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import { asTagsString } from "#/lib/tags";
+import RichText from "#/components/richtext/RichText";
+import { FaChevronRight } from "react-icons/fa";
 
 type PreviewArticleProps = {
   article: ListedArticle;
@@ -15,20 +17,35 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
   return (
     <Link
       href={`news/${article.slug}`}
-      className="mb-4 flex flex-col shadow-lg"
+      className="flex flex-col md:flex-row gap-4"
     >
-      <SplitHeading primaryText={tags} secondaryText={article.date} />
-      <div className="flex flex-col md:flex-row bg-white">
+      {picture?.url && (
         <Image
-          className="w-full h-96 md:h-auto object-cover md:w-56 p-1"
-          src={getFullAssetUrl(picture?.url ?? "")}
+          className="w-full md:w-72 h-40 object-cover"
+          src={getFullAssetUrl(picture.url)}
           alt=""
-          width={picture?.width ?? 0}
-          height={picture?.height ?? 0}
+          width={picture.width ?? 0}
+          height={picture.height ?? 0}
         />
-        <div className="w-full p-2 flex flex-col justify-start">
-          <h3>{article.title}</h3>
-          <div>{article.teaser}</div>
+      )}
+      <div className="w-full max-h-40 flex flex-col justify-start">
+        <div className="flex flex-row text-sm gap-4">
+          <div>
+            {new Date(article.date).toLocaleDateString("de-DE", {
+              dateStyle: "full",
+            })}
+          </div>
+          <div>{tags}</div>
+        </div>
+        <div className="text-2xl font-bold text-svw-blue-default">
+          {article.title}
+        </div>
+        <div className="flex flex-col justify-between h-full">
+          <div className="truncate">{article.teaser}</div>
+          <Link href="/aktuelles" className="flex flex-row gap-1 items-center">
+            <FaChevronRight className="text-svw-blue-default" />
+            <span>Weiter lesen</span>
+          </Link>
         </div>
       </div>
     </Link>
