@@ -1,6 +1,5 @@
 import { fetchPromotionArticles } from "#/lib/graphql/articles.gql";
 import { CarouselClient } from "#/components/carousel/CarouselClient";
-import { injectFullAssetUrl } from "#/lib/asset";
 
 type Props = {
   maxItems: number;
