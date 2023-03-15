@@ -30,6 +30,12 @@ export default function RichText({ content }: Props): JSX.Element | null {
             />
           ),
           p: ({ children }) => <p className="font-light py-2">{children}</p>,
+          blockquote: ({ children }) => (
+            <blockquote className="flex flex-row divide-x">
+              <div />
+              <div className="pl-2 italic">{children}</div>
+            </blockquote>
+          ),
         }}
       >
         {content}
