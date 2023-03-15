@@ -13,21 +13,23 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
     pageData;
   return (
     <>
-      <div className="flex flex-row w-full min-h-[5em] border-t-2 border-white">
-        {headerContents?.map((content) => {
-          if (content) {
-            return (
-              <DynamicContent
-                key={"id" in content ? content.id : content.code}
-                component={content}
-                params={params}
-                searchParams={searchParams}
-              />
-            );
-          }
-          return <></>;
-        })}
-      </div>
+      {headerContents && (
+        <div className="flex flex-row w-full min-h-[5em] border-t-2 border-white bg-svw-blue-default">
+          {headerContents?.map((content) => {
+            if (content) {
+              return (
+                <DynamicContent
+                  key={"id" in content ? content.id : content.code}
+                  component={content}
+                  params={params}
+                  searchParams={searchParams}
+                />
+              );
+            }
+            return <></>;
+          })}
+        </div>
+      )}
       <div className="container flex flex-row">
         <div className="">
           {leftContents?.map((content) => {
