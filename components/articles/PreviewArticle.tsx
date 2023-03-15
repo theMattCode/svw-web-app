@@ -21,7 +21,7 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
     >
       {picture?.url && (
         <Image
-          className="w-full md:w-72 h-40 object-cover"
+          className="w-full md:w-72 md:min-w-[18rem] h-80 md:h-44 object-cover"
           src={getFullAssetUrl(picture.url)}
           alt=""
           width={picture.width ?? 0}
@@ -29,7 +29,7 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
         />
       )}
       <div className="w-full max-h-40 flex flex-col justify-start">
-        <div className="flex flex-row text-sm gap-4">
+        <div className="flex flex-row text-sm gap-4 py-1">
           <div>
             {new Date(article.date).toLocaleDateString("de-DE", {
               dateStyle: "full",
@@ -37,12 +37,15 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
           </div>
           <div>{tags}</div>
         </div>
-        <div className="text-2xl font-bold text-svw-blue-default">
+        <div className="text-2xl font-bold text-svw-blue-default  py-1">
           {article.title}
         </div>
         <div className="flex flex-col justify-between h-full">
-          <div className="truncate">{article.teaser}</div>
-          <Link href="/aktuelles" className="flex flex-row gap-1 items-center">
+          <div className="truncate py-1">{article.teaser}</div>
+          <Link
+            href="/aktuelles"
+            className="flex flex-row gap-1 items-center py-1"
+          >
             <FaChevronRight className="text-svw-blue-default" />
             <span>Weiter lesen</span>
           </Link>

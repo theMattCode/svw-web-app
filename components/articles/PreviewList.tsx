@@ -29,7 +29,7 @@ export async function PreviewList({
       <Link href="/aktuelles">
         <Heading text="Aktuelles" />
       </Link>
-      <div className="flex flex-col pt-1">
+      <div className="flex flex-col pt-2">
         {data.articles?.data.map((article) => {
           if (article.attributes) {
             return (
