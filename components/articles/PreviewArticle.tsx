@@ -1,10 +1,8 @@
 import { ListedArticle } from "#/components/articles/articles.gql";
 import Link from "next/link";
-import { SplitHeading } from "#/components/heading/SplitHeading";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import { asTagsString } from "#/lib/tags";
-import RichText from "#/components/richtext/RichText";
 import { FaChevronRight } from "react-icons/fa";
 import Teaser from "./Teaser";
 

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { Heading } from "#/components/heading/Heading";
 import { PreviewArticle } from "#/components/articles/PreviewArticle";
+import { Fragment } from "react";
 
 const DEFAULT_PAGE_SIZE = 8;
 
@@ -33,10 +34,10 @@ export async function PreviewList({
         {data.articles?.data.map((article) => {
           if (article.attributes) {
             return (
-              <>
-                <PreviewArticle key={article.id} article={article.attributes} />
+              <Fragment key={article.id}>
+                <PreviewArticle article={article.attributes} />
                 <hr className="border-svw-blue-default my-2" />
-              </>
+              </Fragment>
             );
           }
         })}
