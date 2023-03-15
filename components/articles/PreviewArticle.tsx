@@ -6,6 +6,7 @@ import { getFullAssetUrl } from "#/lib/asset";
 import { asTagsString } from "#/lib/tags";
 import RichText from "#/components/richtext/RichText";
 import { FaChevronRight } from "react-icons/fa";
+import Teaser from "./Teaser";
 
 type PreviewArticleProps = {
   article: ListedArticle;
@@ -28,7 +29,7 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
           height={picture.height ?? 0}
         />
       )}
-      <div className="w-full max-h-40 flex flex-col justify-start">
+      <div className="w-full flex flex-col justify-start">
         <div className="flex flex-row text-sm gap-4 py-1">
           <div>
             {new Date(article.date).toLocaleDateString("de-DE", {
@@ -41,7 +42,7 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
           {article.title}
         </div>
         <div className="flex flex-col justify-between h-full">
-          <div className="truncate py-1">{article.teaser}</div>
+          <Teaser content={article.teaser} />
           <Link
             href="/aktuelles"
             className="flex flex-row gap-1 items-center py-1"
