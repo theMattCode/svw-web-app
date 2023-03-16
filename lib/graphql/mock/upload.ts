@@ -1,16 +1,31 @@
-import { UploadFile } from "../generated";
+import { UploadFile, UploadFileEntityResponse } from "../generated";
+import placeholderSvg from "#/public/placeholder.svg";
 
-export function createPlaceholderUploadFile(): UploadFile {
+export function createPlaceholderUploadFile(
+  uploadFile: Partial<UploadFile> = {}
+): UploadFile {
   return {
     __typename: "UploadFile",
-    url: "/placeholder.svg",
-    alternativeText: "Placeholder",
-    size: 1775,
-    width: 250,
-    height: 250,
+    url: uploadFile.url ?? placeholderSvg.src,
+    width: uploadFile.width ?? 100,
+    height: uploadFile.height ?? 100,
+    provider: uploadFile.provider ?? "local",
+    size: uploadFile.size ?? 100,
     mime: "image/svg+xml",
-    name: "placeholder.svg",
-    hash: "placeholder",
-    provider: "local",
+    name: uploadFile.name ?? "placeholder.svg",
+    hash: uploadFile.hash ?? "",
+  };
+}
+
+export function createUploadFileEntityResponse(
+  uploadFile: Partial<UploadFile> = {}
+): UploadFileEntityResponse {
+  return {
+    __typename: "UploadFileEntityResponse",
+    data: {
+      __typename: "UploadFileEntity",
+      id: `placeholder-id`,
+      attributes: createPlaceholderUploadFile(uploadFile),
+    },
   };
 }
