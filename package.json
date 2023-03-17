@@ -10,8 +10,8 @@
     "lint": "next lint",
     "graphql:codegen": "graphql-codegen --config codegen.yml",
     "graphql:updateSchema": "graphql-codegen --config schema-update.yml",
-    "storybook": "STORYBOOK_ACTIVE=true storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "NEXT_PUBLIC_BACKEND_URL='' storybook dev -p 6006",
+    "build-storybook": "NEXT_PUBLIC_BACKEND_URL='' storybook build",
     "chromatic": "npx chromatic"
   },
   "dependencies": {

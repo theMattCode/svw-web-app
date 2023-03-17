@@ -10,7 +10,5 @@ export function injectFullAssetUrl(
 }
 
 export function getFullAssetUrl(urlAttribute: string): string {
-  return process.env.STORYBOOK_ACTIVE
-    ? urlAttribute
-    : `${process.env.NEXT_PUBLIC_BACKEND_URL}${urlAttribute}`;
+  return `${process.env.NEXT_PUBLIC_BACKEND_URL}${urlAttribute}`;
 }
