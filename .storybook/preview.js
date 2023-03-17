@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { DEFAULT_VIEWPORTS } from "#/lib/stories";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -7,5 +8,9 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  viewport: {
+    viewports: DEFAULT_VIEWPORTS,
+    defaultViewport: "md",
   },
 };

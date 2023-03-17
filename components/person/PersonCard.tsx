@@ -4,6 +4,7 @@ import { getFullAssetUrl } from "#/lib/asset";
 import Link from "next/link";
 import { Heading } from "#/components/heading/Heading";
 import { asTagsString } from "#/lib/tags";
+import { PropsWithChildren } from "react";
 
 type Props = {
   person: Person;
@@ -12,7 +13,7 @@ type Props = {
 export function PersonCard({ person }: Props): JSX.Element {
   const picture = person.picture?.data?.attributes;
   return (
-    <div className="mb-8 flex flex-col shadow-lg">
+    <div className="mb-8 flex flex-col md:max-w-[768px] shadow-lg">
       <Heading text={`${person.firstname} ${person.lastname}`} />
       <div className="flex flex-col md:flex-row bg-white">
         <Image
@@ -29,27 +30,36 @@ export function PersonCard({ person }: Props): JSX.Element {
           )}
           <div className="flex flex-col md:grid md:grid-cols-[auto_minmax(0,1fr)] md:gap-x-4">
             {person.email && (
-              <>
-                <span className="text-gray-600 text-sm pt-2">E-Mail</span>
-                <span className="text-gray-600 text-sm font-bold text-svw-blue-default overflow-ellipsis md:pt-2">
-                  <Link href={`mailto:${person.email}`}>{person.email}</Link>
-                </span>
-              </>
+              <ContactDetail label="E-Mail">
+                <Link href={`mailto:${person.email}`}>{person.email}</Link>
+              </ContactDetail>
             )}
 
-            {person.email && (
-              <>
-                <span className="text-gray-600 text-sm pt-2">Telefon</span>
-                <span className="text-gray-600 text-sm font-bold text-svw-blue-default md:pt-2">
-                  <Link href={`tel:${person.telephone}`}>
-                    {person.telephone}
-                  </Link>
-                </span>
-              </>
+            {person.telephone && (
+              <ContactDetail label="Telefon">
+                <Link href={`tel:${person.telephone}`}>{person.telephone}</Link>
+              </ContactDetail>
             )}
           </div>
         </div>
       </div>
     </div>
+  );
+}
+
+type ContactDetailProps = {
+  label: string;
+};
+function ContactDetail({
+  label,
+  children,
+}: PropsWithChildren<ContactDetailProps>) {
+  return (
+    <>
+      <span className="text-gray-600 text-sm pt-2">{label}</span>
+      <span className="text-gray-600 text-sm font-bold truncate md:pt-2">
+        {children}
+      </span>
+    </>
   );
 }

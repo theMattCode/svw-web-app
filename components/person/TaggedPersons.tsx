@@ -25,13 +25,13 @@ export async function TaggedPersons({
   });
 
   return (
-    <div className="flex flex-col gap-2">
+    <>
       {data.peoples?.data.map((person) => {
         if (person.attributes) {
           return <PersonCard key={person.id} person={person.attributes} />;
         }
         return null;
       })}
-    </div>
+    </>
   );
 }

@@ -12,6 +12,7 @@ import { PreviewList } from "#/components/articles/PreviewList";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
+import { Person } from "#/components/person/Person";
 
 type Props = {
   component:
@@ -40,7 +41,7 @@ export function DynamicContent({
       return <Spacing width={component.width} height={component.height} />;
 
     case "ComponentBlockPersons":
-      return <div>{component.person?.data?.attributes?.lastname}</div>;
+      return <Person person={component.person?.data ?? null} />;
 
     case "ComponentBlockTaggedPersons":
       /* @ts-expect-error Server Component */
