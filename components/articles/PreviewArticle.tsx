@@ -41,13 +41,10 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
         </div>
         <div className="flex flex-col justify-between h-full">
           <Teaser content={article.teaser} />
-          <Link
-            href="/aktuelles"
-            className="flex flex-row gap-1 items-center py-1"
-          >
+          <div className="flex flex-row gap-1 items-center py-1">
             <FaChevronRight className="text-svw-blue-default" />
             <span>Weiter lesen</span>
-          </Link>
+          </div>
         </div>
       </div>
     </Link>
