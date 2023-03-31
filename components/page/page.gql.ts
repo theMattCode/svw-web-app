@@ -25,6 +25,7 @@ export const PAGE_DATA = gql`
         attributes {
           title
           slug
+          description
           headerContents {
             __typename
             ...ArticleCarouselComponent
