@@ -13,4 +13,5 @@ export const parameters = {
     viewports: DEFAULT_VIEWPORTS,
     defaultViewport: "md",
   },
+  chromatic: { viewports: [320, 640, 768, 1024, 1200] },
 };
