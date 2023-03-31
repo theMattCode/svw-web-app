@@ -15,31 +15,31 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 h1 {
-    @apply text-3xl mb-2
+    @apply text-3xl
 }
 
 h2 {
-    @apply text-2xl mt-4 mb-2
+    @apply text-2xl
 }
 
 h3 {
-    @apply text-xl mt-4 mb-2
+    @apply text-xl
 }
 
 h4 {
-    @apply text-lg mt-4 mb-2
+    @apply text-lg
 }
 
 h5 {
-    @apply text-lg italic mt-4 mb-2
+    @apply text-lg italic
 }
 
 h6  {
-    @apply italic mt-4 mb-2
+    @apply italic
 }
 
 p {
-    @apply text-base font-light my-2
+    @apply text-base font-light
 }
 
 .news-title-shadow {

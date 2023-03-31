@@ -17,10 +17,10 @@ export default function RichText({ content }: Props): JSX.Element | null {
             </div>
           ),
           th: ({ children }) => (
-            <th className="border border-gray-300 py-2 px-3">{children}</th>
+            <th className="border border-gray-300 px-3">{children}</th>
           ),
           td: ({ children }) => (
-            <td className="border border-gray-300 py-2 px-3">{children}</td>
+            <td className="border border-gray-300 px-3">{children}</td>
           ),
           img: (props) => (
             <img
@@ -29,7 +29,7 @@ export default function RichText({ content }: Props): JSX.Element | null {
               src={getFullAssetUrl(props.src ?? "")}
             />
           ),
-          p: ({ children }) => <p className="font-light py-2">{children}</p>,
+          p: ({ children }) => <p className="font-light">{children}</p>,
           blockquote: ({ children }) => (
             <blockquote className="flex flex-row divide-x">
               <div />

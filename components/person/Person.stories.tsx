@@ -27,8 +27,3 @@ export const PersonCard: Story = {
     );
   },
 };
-PersonCard.parameters = {
-  chromatic: {
-    viewports: [320, 640, 768, 1024, 1280],
-  },
-};
