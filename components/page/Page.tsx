@@ -15,7 +15,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
     <>
       <div className="min-h-[4em] border-t-2 border-white">
         {headerContents && (
-          <div className="flex flex-row w-full ">
+          <div className="flex flex-row w-full">
             {headerContents?.map((content) => {
               if (content) {
                 return (
@@ -47,7 +47,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
             }
           })}
         </div>
-        <main className="container p-4">
+        <main className="container flex flex-col p-4 gap-4">
           {mainContents?.map((content) => {
             if (content) {
               return (
