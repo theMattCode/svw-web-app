@@ -44,18 +44,21 @@ export const HOMEPAGE = gql`
               attributes {
                 title
                 slug
+                description
                 subPages {
                   data {
                     id
                     attributes {
                       title
                       slug
+                      description
                       subPages {
                         data {
                           id
                           attributes {
                             title
                             slug
+                            description
                           }
                         }
                       }
