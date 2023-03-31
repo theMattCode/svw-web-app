@@ -13,23 +13,25 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
     pageData;
   return (
     <>
-      {headerContents && (
-        <div className="flex flex-row w-full min-h-[5em] border-t-2 border-white bg-svw-blue-default">
-          {headerContents?.map((content) => {
-            if (content) {
-              return (
-                <DynamicContent
-                  key={"id" in content ? content.id : content.code}
-                  component={content}
-                  params={params}
-                  searchParams={searchParams}
-                />
-              );
-            }
-            return <></>;
-          })}
-        </div>
-      )}
+      <div className="min-h-[4em] border-t-2 border-white">
+        {headerContents && (
+          <div className="flex flex-row w-full ">
+            {headerContents?.map((content) => {
+              if (content) {
+                return (
+                  <DynamicContent
+                    key={"id" in content ? content.id : content.code}
+                    component={content}
+                    params={params}
+                    searchParams={searchParams}
+                  />
+                );
+              }
+              return <></>;
+            })}
+          </div>
+        )}
+      </div>
       <div className="container flex flex-row">
         <div className="">
           {leftContents?.map((content) => {
@@ -45,7 +47,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
             }
           })}
         </div>
-        <main className="container max-w-4xl xl:max-w-7xl p-4">
+        <main className="container p-4">
           {mainContents?.map((content) => {
             if (content) {
               return (
