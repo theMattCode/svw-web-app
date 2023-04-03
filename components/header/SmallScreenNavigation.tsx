@@ -1,9 +1,15 @@
 "use client";
 
-import { FaBars } from "react-icons/fa";
+import {
+  FaArrowDown,
+  FaBars,
+  FaChevronDown,
+  FaChevronLeft,
+} from "react-icons/fa";
 import { useState } from "react";
 import { HeaderData } from "#/app/data.gql";
 import Link from "next/link";
+import { Page, PageEntity } from "#/lib/graphql/generated";
 
 type Props = {
   headerData: HeaderData | null;
@@ -27,16 +33,61 @@ export default function SmallScreenNavigation({
             const page = menuItem.attributes;
             if (page) {
               return (
-                <li key={page.slug} className="p-2 border-b border-neutral-300">
-                  <Link href={page.slug} onClick={() => setOpen(false)}>
-                    {page.title}
-                  </Link>
-                </li>
+                <ListItem
+                  key={page.slug}
+                  page={page}
+                  onClick={() => setOpen(false)}
+                />
               );
             }
           })}
         </ul>
       </div>
     </div>
+  );
+}
+
+type ListItemProps = {
+  page: Page;
+  onClick: () => void;
+};
+
+function ListItem({ page, onClick }: ListItemProps): JSX.Element {
+  const [open, setOpen] = useState<boolean>(false);
+  const hasSubPages = (page.subPages?.data.length ?? 0) > 0;
+  return (
+    <li key={page.slug} className="border-b border-neutral-300 flex flex-col">
+      <div className="p-2 flex flex-row justify-between items-center">
+        <Link href={page.slug} onClick={onClick}>
+          {page.title}
+        </Link>
+        {hasSubPages && !open && (
+          <FaChevronDown onClick={() => setOpen(true)} />
+        )}
+        {hasSubPages && open && (
+          <FaChevronLeft onClick={() => setOpen(false)} />
+        )}
+      </div>
+      {hasSubPages && open && (
+        <ul className="bg-neutral-100">
+          {page.subPages?.data.map((subPageEntity) => {
+            const subPage = subPageEntity.attributes;
+            if (subPage) {
+              return (
+                <li
+                  key={subPage.slug}
+                  className="p-2 border-b border-neutral-200"
+                >
+                  <Link href={subPage.slug} onClick={onClick}>
+                    {subPage.title}
+                  </Link>
+                </li>
+              );
+            }
+            return null;
+          })}
+        </ul>
+      )}
+    </li>
   );
 }
