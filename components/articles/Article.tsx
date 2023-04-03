@@ -32,7 +32,7 @@ async function LoadingArticle({ slug }: Props): Promise<JSX.Element | null> {
   const image = article.attributes?.image?.data?.attributes;
 
   return (
-    <div className="container bg-white my-16 p-8 max-w-3xl shadow-xl">
+    <div className="container bg-white my-16 p-8 max-w-3xl shadow-xl flex flex-col gap-2">
       {image && (
         <div className="flex flex-col place-items-end pb-4">
           <Image
@@ -45,12 +45,11 @@ async function LoadingArticle({ slug }: Props): Promise<JSX.Element | null> {
       )}
       <h1>{article.attributes?.title}</h1>
       <div className="text-sm">{formatDate(article.attributes?.date)}</div>
-      <div>
-        <RichText
-          key={article.attributes?.slug}
-          content={article.attributes?.text}
-        />
-      </div>
+
+      <RichText
+        key={article.attributes?.slug}
+        content={article.attributes?.text}
+      />
     </div>
   );
 }
