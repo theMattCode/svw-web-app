@@ -12,8 +12,13 @@ export default function RichText({ content }: Props): JSX.Element | null {
         remarkPlugins={[remarkGfm]}
         components={{
           ul: ({ children }) => (
-            <div className="pl-5 font-light">
+            <div className="pl-6 font-light">
               <ul className="list-disc list-outside">{children}</ul>
+            </div>
+          ),
+          ol: ({ children }) => (
+            <div className="pl-6 font-light">
+              <ol className="list-decimal list-outside">{children}</ol>
             </div>
           ),
           th: ({ children }) => (
