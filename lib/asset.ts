@@ -10,5 +10,8 @@ export function injectFullAssetUrl(
 }
 
 export function getFullAssetUrl(urlAttribute: string): string {
+  if (urlAttribute.startsWith("mailto:") || urlAttribute.startsWith("tel:")) {
+    return urlAttribute;
+  }
   return `${process.env.NEXT_PUBLIC_BACKEND_URL}${urlAttribute}`;
 }

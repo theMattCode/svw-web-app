@@ -32,8 +32,8 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
           </div>
         )}
       </div>
-      <div className="container flex flex-row">
-        <div className="">
+      <div className="container flex flex-col md:flex-row">
+        <div className="max-w-lg p-4">
           {leftContents?.map((content) => {
             if (content) {
               return (
@@ -47,7 +47,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
             }
           })}
         </div>
-        <main className="container flex flex-col p-4 gap-4">
+        <main className="container flex flex-col p-4 gap-4 min-w-[50%]">
           {mainContents?.map((content) => {
             if (content) {
               return (
@@ -61,7 +61,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
             }
           })}
         </main>
-        <div className="">
+        <div className="max-w-lg p-4">
           {rightContents?.map((content) => {
             if (content) {
               return (
