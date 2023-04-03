@@ -29,6 +29,14 @@ export default function RichText({ content }: Props): JSX.Element | null {
               src={getFullAssetUrl(props.src ?? "")}
             />
           ),
+          a: (props) => (
+            <a
+              href={getFullAssetUrl(props.href ?? "")}
+              className="text-svw-blue-default font-medium"
+            >
+              {props.children}
+            </a>
+          ),
           p: ({ children }) => <p className="font-light">{children}</p>,
           blockquote: ({ children }) => (
             <blockquote className="flex flex-row divide-x">
