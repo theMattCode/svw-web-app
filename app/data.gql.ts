@@ -85,6 +85,7 @@ export const HOMEPAGE = gql`
         attributes {
           name
           active
+          url
           image {
             ...FileFragment
           }
