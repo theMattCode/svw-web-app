@@ -36,7 +36,7 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
           </div>
           <div>{tags}</div>
         </div>
-        <div className="text-2xl font-bold text-svw-blue-default  py-1">
+        <div className="text-2xl font-normal text-svw-blue-default py-1">
           {article.title}
         </div>
         <div className="flex flex-col justify-between h-full">

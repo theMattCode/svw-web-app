@@ -1,11 +1,8 @@
 import graphqlClient from "#/lib/graphql/graphqlClient";
 import { ARTICLES_QUERY } from "#/components/articles/articles.gql";
 import { ArticlesQuery, ArticlesQueryVariables } from "#/lib/graphql/generated";
-import { PreviewCard } from "#/components/articles/PreviewCard";
-import { injectFullAssetUrl } from "#/lib/asset";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
-import { Heading } from "#/components/heading/Heading";
 import { PreviewArticle } from "#/components/articles/PreviewArticle";
 import { Fragment } from "react";
 
@@ -28,7 +25,7 @@ export async function PreviewList({
   return (
     <div className="flex flex-col">
       <Link href="/aktuelles">
-        <Heading text="Aktuelles" />
+        <h1>Aktuelles</h1>
       </Link>
       <div className="flex flex-col pt-2">
         {data.articles?.data.map((article) => {
