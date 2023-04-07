@@ -1,18 +1,16 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { PreviewCard } from "#/components/articles/PreviewCard";
 import { Article } from "#/lib/graphql/generated";
-import placeholderSvg from "#/public/placeholder.svg";
 import { PreviewArticle } from "#/components/articles/PreviewArticle";
 import { createUploadFileEntityResponse } from "#/lib/graphql/mock/upload";
 
-const meta: Meta<typeof PreviewCard> = {
+const meta: Meta<typeof PreviewArticle> = {
   title: "Components/Articles",
-  component: PreviewCard,
+  component: PreviewArticle,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof PreviewCard>;
+type Story = StoryObj<typeof PreviewArticle>;
 
 function createArticle(): Article {
   return {

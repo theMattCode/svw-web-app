@@ -15,7 +15,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 h1 {
-    @apply text-3xl
+    @apply text-4xl font-light text-black w-full border-b-2 border-svw-blue-default pb-1 mb-2
 }
 
 h2 {
@@ -40,6 +40,14 @@ h6  {
 
 p {
     @apply text-base font-light
+}
+
+th {
+    @apply border border-gray-300 px-3
+}
+
+td {
+    @apply border border-gray-300 px-3
 }
 
 .news-title-shadow {
