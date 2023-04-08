@@ -120,6 +120,8 @@ export const RICH_TEXT_TWO_COLUMN_COMPONENT = gql`
     id
     leftContent
     rightContent
+    leftFraction
+    rightFraction
   }
 `;
 

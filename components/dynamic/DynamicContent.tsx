@@ -43,6 +43,8 @@ export function DynamicContent({
         <RichTextTwoColumn
           leftContent={component.leftContent}
           rightContent={component.rightContent}
+          leftFraction={component.leftFraction}
+          rightFraction={component.rightFraction}
         />
       );
 
