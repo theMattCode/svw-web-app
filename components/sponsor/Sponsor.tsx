@@ -1,5 +1,5 @@
 import { SponsorEntity } from "#/lib/graphql/generated";
-import { OptionalLink } from "#/app/link/Link";
+import { OptionalLink } from "#/components/link/Link";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 
