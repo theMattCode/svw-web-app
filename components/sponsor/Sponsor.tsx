@@ -11,11 +11,7 @@ export function Sponsor({
   const imageAttributes = sponsor.attributes?.image?.data?.attributes;
   if (imageAttributes) {
     return (
-      <OptionalLink
-        key={sponsor.id}
-        href={sponsor.attributes?.url}
-        target="_blank"
-      >
+      <OptionalLink href={sponsor.attributes?.url} target="_blank">
         <div className="shadow-xl bg-white p-2 flex justify-center content-center">
           <Image
             src={getFullAssetUrl(imageAttributes?.url)}
