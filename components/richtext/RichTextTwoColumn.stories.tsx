@@ -16,6 +16,11 @@ const meta: Meta<typeof RichTextTwoColumn> = {
     leftFraction: 1,
     rightFraction: 1,
   },
+  parameters: {
+    chromatic: {
+      viewports: [768, 1024],
+    },
+  },
 };
 
 export default meta;
