@@ -1481,6 +1481,57 @@
       },
       {
         "kind": "OBJECT",
+        "name": "ComponentBlockRichTextTwoColumn",
+        "description": null,
+        "fields": [
+          {
+            "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "leftContent",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "rightContent",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "ComponentBlockTaggedPersons",
         "description": null,
         "fields": [
@@ -3661,6 +3712,11 @@
           {
             "kind": "OBJECT",
             "name": "ComponentBlockRichText",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "ComponentBlockRichTextTwoColumn",
             "ofType": null
           },
           {
@@ -8053,6 +8109,11 @@
           {
             "kind": "OBJECT",
             "name": "ComponentBlockRichText",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "ComponentBlockRichTextTwoColumn",
             "ofType": null
           },
           {

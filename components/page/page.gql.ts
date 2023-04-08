@@ -1,5 +1,5 @@
 import { gql } from "@apollo/client";
-import { Page, PageDataQuery, PageEntity } from "#/lib/graphql/generated";
+import { PageDataQuery, PageEntity } from "#/lib/graphql/generated";
 import graphqlClient from "#/lib/graphql/graphqlClient";
 import {
   ARTICLE_CAROUSEL_COMPONENT,
@@ -11,6 +11,7 @@ import {
   PEOPLE,
   PERSON_COMPONENT,
   RICH_TEXT_COMPONENT,
+  RICH_TEXT_TWO_COLUMN_COMPONENT,
   SPACING_COMPONENT,
   TAG_FRAGMENT,
   TAGGED_PERSONS_COMPONENT,
@@ -34,6 +35,7 @@ export const PAGE_DATA = gql`
           mainContents {
             __typename
             ...RichTextComponent
+            ...RichTextTwoColumnComponent
             ...SpacingComponent
             ...PersonComponent
             ...TaggedPersonsComponent
@@ -84,6 +86,7 @@ export const PAGE_DATA = gql`
   ${ARTICLES_COMPONENT}
   ${ARTICLES_PREVIEW_LIST_COMPONENT}
   ${RICH_TEXT_COMPONENT}
+  ${RICH_TEXT_TWO_COLUMN_COMPONENT}
   ${TAG_FRAGMENT}
   ${TAGS_FRAGMENT}
   ${FILE_FRAGMENT}

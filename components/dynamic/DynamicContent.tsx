@@ -13,6 +13,7 @@ import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
 import { Person } from "#/components/person/Person";
+import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
 
 type Props = {
   component:
@@ -36,6 +37,14 @@ export function DynamicContent({
 
     case "ComponentBlockRichText":
       return <RichText content={component.content} />;
+
+    case "ComponentBlockRichTextTwoColumn":
+      return (
+        <RichTextTwoColumn
+          leftContent={component.leftContent}
+          rightContent={component.rightContent}
+        />
+      );
 
     case "ComponentSharedSpacing":
       return <Spacing width={component.width} height={component.height} />;
