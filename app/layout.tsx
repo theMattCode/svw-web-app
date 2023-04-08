@@ -2,7 +2,7 @@ import "#/styles/globals.css";
 import React, { PropsWithChildren, Suspense } from "react";
 import Footer from "#/components/footer/Footer";
 import { fetchBasicData, fetchMeta } from "#/app/data.gql";
-import Sponsors from "#/components/sponsors/Sponsors";
+import SponsorGrid from "#/components/sponsor/SponsorGrid";
 import { Header } from "#/components/header/Header";
 import { Metadata } from "next";
 import { getFullAssetUrl } from "#/lib/asset";
@@ -44,7 +44,7 @@ export default async function Layout({
         <div className="min-h-screen flex flex-col">
           <Header headerData={headerData} />
           <main className="flex-1 bg-neutral-100">{children}</main>
-          <Sponsors sponsors={data.sponsors?.data} />
+          <SponsorGrid sponsors={data.sponsors?.data} />
           <Footer footerData={footerData} clubData={clubData} />
         </div>
       </body>
