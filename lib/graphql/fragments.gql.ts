@@ -115,6 +115,14 @@ export const RICH_TEXT_COMPONENT = gql`
   }
 `;
 
+export const RICH_TEXT_TWO_COLUMN_COMPONENT = gql`
+  fragment RichTextTwoColumnComponent on ComponentBlockRichTextTwoColumn {
+    id
+    leftContent
+    rightContent
+  }
+`;
+
 export const ARTICLE_CAROUSEL_COMPONENT = gql`
   fragment ArticleCarouselComponent on ComponentBlockCarousel {
     id
