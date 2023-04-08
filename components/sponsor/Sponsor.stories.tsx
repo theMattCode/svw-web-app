@@ -12,18 +12,20 @@ export default meta;
 export const SponsorWithLink: StoryObj = {
   render: () => {
     return (
-      <Sponsor
-        sponsor={{
-          id: "1",
-          __typename: "SponsorEntity",
-          attributes: {
-            __typename: "Sponsor",
-            name: "Sponsoring GmbH",
-            url: "#",
-            image: createUploadFileEntityResponse(),
-          },
-        }}
-      />
+      <div className="p-6 bg-gray-100">
+        <Sponsor
+          sponsor={{
+            id: "1",
+            __typename: "SponsorEntity",
+            attributes: {
+              __typename: "Sponsor",
+              name: "Sponsoring GmbH",
+              url: "#",
+              image: createUploadFileEntityResponse(),
+            },
+          }}
+        />
+      </div>
     );
   },
 };
@@ -31,17 +33,19 @@ export const SponsorWithLink: StoryObj = {
 export const SponsorWithoutLink: StoryObj = {
   render: () => {
     return (
-      <Sponsor
-        sponsor={{
-          id: "1",
-          __typename: "SponsorEntity",
-          attributes: {
-            __typename: "Sponsor",
-            name: "Sponsoring GmbH",
-            image: createUploadFileEntityResponse(),
-          },
-        }}
-      />
+      <div className="p-6 bg-gray-100">
+        <Sponsor
+          sponsor={{
+            id: "1",
+            __typename: "SponsorEntity",
+            attributes: {
+              __typename: "Sponsor",
+              name: "Sponsoring GmbH",
+              image: createUploadFileEntityResponse(),
+            },
+          }}
+        />
+      </div>
     );
   },
 };

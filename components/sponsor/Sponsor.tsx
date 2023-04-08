@@ -16,7 +16,7 @@ export function Sponsor({
         href={sponsor.attributes?.url}
         target="_blank"
       >
-        <div className="shadow-xl p-2 flex justify-center content-center">
+        <div className="shadow-xl bg-white p-2 flex justify-center content-center">
           <Image
             src={getFullAssetUrl(imageAttributes?.url)}
             alt={imageAttributes.name}
