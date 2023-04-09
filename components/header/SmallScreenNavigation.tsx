@@ -1,15 +1,10 @@
 "use client";
 
-import {
-  FaArrowDown,
-  FaBars,
-  FaChevronDown,
-  FaChevronLeft,
-} from "react-icons/fa";
+import { FaBars, FaChevronDown, FaChevronLeft } from "react-icons/fa";
 import { useState } from "react";
 import { HeaderData } from "#/app/data.gql";
 import Link from "next/link";
-import { Page, PageEntity } from "#/lib/graphql/generated";
+import { Page } from "#/lib/graphql/generated";
 
 type Props = {
   headerData: HeaderData | null;
@@ -24,7 +19,7 @@ export default function SmallScreenNavigation({
     <div className="flex flex-col">
       <FaBars className="h-16 mr-6" onClick={() => setOpen((open) => !open)} />
       <div
-        className={`fixed right-0 top-16 w-full border-t-2 border-white bg-neutral-200 text-black ${
+        className={`fixed right-0 top-16 w-full border-t-2 border-white bg-neutral-300 text-black ${
           open ? "visible z-30" : "hidden"
         }`}
       >
@@ -35,6 +30,7 @@ export default function SmallScreenNavigation({
               return (
                 <ListItem
                   key={page.slug}
+                  level={1}
                   page={page}
                   onClick={() => setOpen(false)}
                 />
@@ -47,16 +43,45 @@ export default function SmallScreenNavigation({
   );
 }
 
+type ItemStyle = {
+  border: string;
+  background: string;
+};
+
+type ItemStyles = {
+  [key: number]: ItemStyle;
+};
+const ITEM_STYLES: ItemStyles = {
+  1: {
+    border: "border-neutral-400",
+    background: "bg-neutral-300",
+  },
+  2: {
+    border: "border-neutral-300",
+    background: "bg-neutral-200",
+  },
+  3: {
+    border: "border-neutral-200",
+    background: "bg-neutral-100",
+  },
+  4: {
+    border: "border-neutral-100",
+    background: "bg-neutral-50",
+  },
+};
+
 type ListItemProps = {
   page: Page;
   onClick: () => void;
+  level: number;
 };
 
-function ListItem({ page, onClick }: ListItemProps): JSX.Element {
+function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
   const [open, setOpen] = useState<boolean>(false);
   const hasSubPages = (page.subPages?.data.length ?? 0) > 0;
+  const itemStyle = ITEM_STYLES[level];
   return (
-    <li key={page.slug} className="border-b border-neutral-300 flex flex-col">
+    <li className={`border-b ${itemStyle.border} flex flex-col`}>
       <div className="p-2 flex flex-row justify-between items-center">
         <Link href={page.slug} onClick={onClick}>
           {page.title}
@@ -69,19 +94,17 @@ function ListItem({ page, onClick }: ListItemProps): JSX.Element {
         )}
       </div>
       {hasSubPages && open && (
-        <ul className="bg-neutral-100">
+        <ul className={ITEM_STYLES[level + 1].background}>
           {page.subPages?.data.map((subPageEntity) => {
             const subPage = subPageEntity.attributes;
             if (subPage) {
               return (
-                <li
+                <ListItem
                   key={subPage.slug}
-                  className="p-2 border-b border-neutral-200"
-                >
-                  <Link href={subPage.slug} onClick={onClick}>
-                    {subPage.title}
-                  </Link>
-                </li>
+                  level={level + 1}
+                  page={subPage}
+                  onClick={onClick}
+                />
               );
             }
             return null;
