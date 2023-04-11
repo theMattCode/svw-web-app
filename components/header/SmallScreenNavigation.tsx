@@ -18,27 +18,25 @@ export default function SmallScreenNavigation({
   return (
     <div className="flex flex-col">
       <FaBars className="h-16 mr-6" onClick={() => setOpen((open) => !open)} />
-      <div
-        className={`fixed right-0 top-16 w-full border-t-2 border-white bg-neutral-300 text-black ${
+      <ul
+        className={`fixed right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
           open ? "visible z-30" : "hidden"
         }`}
       >
-        <ul>
-          {headerData?.navigationLinks?.data.map((menuItem) => {
-            const page = menuItem.attributes;
-            if (page) {
-              return (
-                <ListItem
-                  key={page.slug}
-                  level={1}
-                  page={page}
-                  onClick={() => setOpen(false)}
-                />
-              );
-            }
-          })}
-        </ul>
-      </div>
+        {headerData?.navigationLinks?.data.map((menuItem) => {
+          const page = menuItem.attributes;
+          if (page) {
+            return (
+              <ListItem
+                key={page.slug}
+                level={1}
+                page={page}
+                onClick={() => setOpen(false)}
+              />
+            );
+          }
+        })}
+      </ul>
     </div>
   );
 }
@@ -46,6 +44,7 @@ export default function SmallScreenNavigation({
 type ItemStyle = {
   border: string;
   background: string;
+  text: string;
 };
 
 type ItemStyles = {
@@ -53,20 +52,24 @@ type ItemStyles = {
 };
 const ITEM_STYLES: ItemStyles = {
   1: {
-    border: "border-neutral-400",
-    background: "bg-neutral-300",
+    border: "border-svw-blue-darkest",
+    background: "bg-svw-blue-darker",
+    text: "text-white",
   },
   2: {
-    border: "border-neutral-300",
-    background: "bg-neutral-200",
+    border: "border-svw-blue-darker",
+    background: "bg-svw-blue-dark",
+    text: "text-white",
   },
   3: {
-    border: "border-neutral-200",
-    background: "bg-neutral-100",
+    border: "border-svw-blue-dark",
+    background: "bg-svw-blue-default",
+    text: "text-black",
   },
   4: {
-    border: "border-neutral-100",
+    border: "border-svw-blue-default",
     background: "bg-neutral-50",
+    text: "text-black",
   },
 };
 
@@ -81,7 +84,9 @@ function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
   const hasSubPages = (page.subPages?.data.length ?? 0) > 0;
   const itemStyle = ITEM_STYLES[level];
   return (
-    <li className={`border-b ${itemStyle.border} flex flex-col`}>
+    <li
+      className={`border-b ${itemStyle.border} last:border-b-0 flex flex-col`}
+    >
       <div className="p-2 flex flex-row justify-between items-center">
         <Link href={page.slug} onClick={onClick}>
           {page.title}
