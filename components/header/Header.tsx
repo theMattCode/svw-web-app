@@ -35,9 +35,9 @@ function SmallScreenHeader({ headerData, clubData }: HeaderProps): JSX.Element {
           />
         </Link>
       )}
-      <div className="self-center text-center text-sm sm:text-lg">
+      <Link href="/" className="self-center text-center text-sm sm:text-lg">
         {clubData?.name}
-      </div>
+      </Link>
       <SmallScreenNavigation headerData={headerData} />
     </div>
   );
