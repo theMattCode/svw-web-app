@@ -78,6 +78,12 @@ export const Expanded: Story = {
     const canvas = within(canvasElement);
     const menuButton = await canvas.findByRole("button");
     await userEvent.click(menuButton);
+
+    let allButtons = await canvas.findAllByRole("button");
+    await userEvent.click(allButtons[1]);
+
+    allButtons = await canvas.findAllByRole("button");
+    await userEvent.click(allButtons[2]);
   },
 };
 

@@ -99,12 +99,14 @@ function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
           <FaChevronDown
             className="cursor-pointer"
             onClick={() => setOpen(true)}
+            role="button"
           />
         )}
         {hasSubPages && open && (
           <FaChevronLeft
             className="cursor-pointer"
             onClick={() => setOpen(false)}
+            role="button"
           />
         )}
       </div>
