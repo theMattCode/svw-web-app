@@ -45,7 +45,6 @@ export function AccessHeader({
           <FaFileSignature />
         </CallToActionButton>
       </Link>
-      <SearchField />
     </div>
   );
 }

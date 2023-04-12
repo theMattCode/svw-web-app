@@ -5,37 +5,39 @@ import { getFullAssetUrl } from "#/lib/asset";
 import { LargeScreenNavigation } from "#/components/header/LargeScreenNavigation";
 import SmallScreenNavigation from "#/components/header/SmallScreenNavigation";
 import { AccessHeader } from "#/components/header/AccessHeader";
+import { Club } from "#/lib/graphql/generated";
 
 type HeaderProps = {
   headerData: HeaderData | null;
+  clubData?: Club | null;
 };
 
-export function Header({ headerData }: HeaderProps): JSX.Element {
+export function Header({ headerData, clubData }: HeaderProps): JSX.Element {
   return (
     <header>
-      <SmallScreenHeader headerData={headerData} />
+      <SmallScreenHeader headerData={headerData} clubData={clubData} />
       <LargeScreenHeader headerData={headerData} />
     </header>
   );
 }
 
-function SmallScreenHeader({ headerData }: HeaderProps): JSX.Element {
+function SmallScreenHeader({ headerData, clubData }: HeaderProps): JSX.Element {
   return (
-    <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white">
-      <div />
-      <div className="z-30">
-        {headerData?.logo?.data?.attributes?.url && (
-          <Link href="/">
-            <Image
-              src={getFullAssetUrl(headerData.logo.data.attributes.url)}
-              alt=""
-              width={64}
-              height={64}
-              className="h-16"
-            />
-          </Link>
-        )}
-      </div>
+    <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white px-2 gap-2">
+      {clubData?.logo?.data?.attributes?.url && (
+        <Link href="/">
+          <Image
+            src={getFullAssetUrl(clubData.logo.data.attributes.url)}
+            alt=""
+            width={48}
+            height={48}
+            className="h-16"
+          />
+        </Link>
+      )}
+      <Link href="/" className="self-center text-center text-sm sm:text-lg">
+        {clubData?.name}
+      </Link>
       <SmallScreenNavigation headerData={headerData} />
     </div>
   );

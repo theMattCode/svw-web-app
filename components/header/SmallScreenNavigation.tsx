@@ -1,15 +1,10 @@
 "use client";
 
-import {
-  FaArrowDown,
-  FaBars,
-  FaChevronDown,
-  FaChevronLeft,
-} from "react-icons/fa";
+import { FaBars, FaChevronDown, FaChevronLeft } from "react-icons/fa";
 import { useState } from "react";
 import { HeaderData } from "#/app/data.gql";
 import Link from "next/link";
-import { Page, PageEntity } from "#/lib/graphql/generated";
+import { Page } from "#/lib/graphql/generated";
 
 type Props = {
   headerData: HeaderData | null;
@@ -21,67 +16,112 @@ export default function SmallScreenNavigation({
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex flex-col">
-      <FaBars className="h-16 mr-6" onClick={() => setOpen((open) => !open)} />
-      <div
-        className={`fixed right-0 top-16 w-full border-t-2 border-white bg-neutral-200 text-black ${
+    <div className="flex flex-col justify-center">
+      <FaBars
+        className="cursor-pointer"
+        onClick={() => setOpen((open) => !open)}
+        role="button"
+      />
+      <ul
+        className={`absolute right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
           open ? "visible z-30" : "hidden"
         }`}
       >
-        <ul>
-          {headerData?.navigationLinks?.data.map((menuItem) => {
-            const page = menuItem.attributes;
-            if (page) {
-              return (
-                <ListItem
-                  key={page.slug}
-                  page={page}
-                  onClick={() => setOpen(false)}
-                />
-              );
-            }
-          })}
-        </ul>
-      </div>
+        {headerData?.navigationLinks?.data.map((menuItem) => {
+          const page = menuItem.attributes;
+          if (page) {
+            return (
+              <ListItem
+                key={page.slug}
+                level={1}
+                page={page}
+                onClick={() => setOpen(false)}
+              />
+            );
+          }
+        })}
+      </ul>
     </div>
   );
 }
 
+type ItemStyle = {
+  border: string;
+  background: string;
+  text: string;
+};
+
+type ItemStyles = {
+  [key: number]: ItemStyle;
+};
+const ITEM_STYLES: ItemStyles = {
+  1: {
+    border: "border-svw-blue-darkest",
+    background: "bg-svw-blue-darker",
+    text: "text-white",
+  },
+  2: {
+    border: "border-svw-blue-darker",
+    background: "bg-svw-blue-dark",
+    text: "text-white",
+  },
+  3: {
+    border: "border-svw-blue-dark",
+    background: "bg-svw-blue-default",
+    text: "text-black",
+  },
+  4: {
+    border: "border-svw-blue-default",
+    background: "bg-neutral-50",
+    text: "text-black",
+  },
+};
+
 type ListItemProps = {
   page: Page;
   onClick: () => void;
+  level: number;
 };
 
-function ListItem({ page, onClick }: ListItemProps): JSX.Element {
+function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
   const [open, setOpen] = useState<boolean>(false);
   const hasSubPages = (page.subPages?.data.length ?? 0) > 0;
+  const itemStyle = ITEM_STYLES[level];
   return (
-    <li key={page.slug} className="border-b border-neutral-300 flex flex-col">
+    <li
+      className={`border-b ${itemStyle.border} last:border-b-0 flex flex-col`}
+    >
       <div className="p-2 flex flex-row justify-between items-center">
-        <Link href={page.slug} onClick={onClick}>
+        <Link className="w-full" href={page.slug} onClick={onClick}>
           {page.title}
         </Link>
         {hasSubPages && !open && (
-          <FaChevronDown onClick={() => setOpen(true)} />
+          <FaChevronDown
+            className="cursor-pointer"
+            onClick={() => setOpen(true)}
+            role="button"
+          />
         )}
         {hasSubPages && open && (
-          <FaChevronLeft onClick={() => setOpen(false)} />
+          <FaChevronLeft
+            className="cursor-pointer"
+            onClick={() => setOpen(false)}
+            role="button"
+          />
         )}
       </div>
       {hasSubPages && open && (
-        <ul className="bg-neutral-100">
+        <ul className={ITEM_STYLES[level + 1].background}>
           {page.subPages?.data.map((subPageEntity) => {
             const subPage = subPageEntity.attributes;
             if (subPage) {
               return (
-                <li
+                <ListItem
                   key={subPage.slug}
-                  className="p-2 border-b border-neutral-200"
-                >
-                  <Link href={subPage.slug} onClick={onClick}>
-                    {subPage.title}
-                  </Link>
-                </li>
+                  level={level + 1}
+                  page={subPage}
+                  onClick={onClick}
+                />
               );
             }
             return null;

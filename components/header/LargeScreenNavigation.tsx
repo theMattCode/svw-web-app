@@ -7,6 +7,7 @@ import { getFullAssetUrl } from "#/lib/asset";
 import { HeaderData, NavItemData } from "#/app/data.gql";
 import { Page } from "#/lib/graphql/generated";
 import { FaChevronRight } from "react-icons/fa";
+import { SearchField } from "#/components/header/SearchField";
 
 type Props = {
   headerData: HeaderData | null;
@@ -58,6 +59,11 @@ export function LargeScreenNavigation({ headerData }: Props): JSX.Element {
           }
         })}
       </div>
+      {headerData?.showSearch && (
+        <div className="self-center">
+          <SearchField />
+        </div>
+      )}
     </nav>
   );
 }
@@ -104,8 +110,8 @@ function NavItemWithMegaMenu({
         setActiveItem={setActiveItem}
         isLast={isLast}
       />
-      <div className="hidden absolute left-0 top-[6em] group-hover:block z-10 w-full border-t-2 border-white bg-svw-blue-darker text-white">
-        <div className="container lg:px-36 lg:py-16 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center">
+      <div className="hidden absolute left-0 top-[6em] group-hover:block z-10 w-full border-t-2 border-white bg-svw-blue-darker text-white pt-16 pb-4">
+        <div className="container lg:px-36 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center">
           {subPages?.map((subPage) => {
             const page = subPage.attributes;
             if (page) {
