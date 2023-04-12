@@ -21,8 +21,18 @@ export default function RichText({ content }: Props): JSX.Element | null {
               <ol className="list-decimal list-outside">{children}</ol>
             </div>
           ),
-          th: ({ children }) => (
-            <th className="border border-gray-300 px-3">{children}</th>
+          th: ({ children, style }) => (
+            <th
+              className={`border border-gray-300 px-3 ${
+                style?.textAlign === "left"
+                  ? "text-left"
+                  : style?.textAlign === "right"
+                  ? "text-right"
+                  : ""
+              }`}
+            >
+              {children}
+            </th>
           ),
           td: ({ children }) => (
             <td className="border border-gray-300 px-3">{children}</td>
