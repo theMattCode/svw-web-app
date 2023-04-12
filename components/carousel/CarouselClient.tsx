@@ -1,7 +1,7 @@
 "use client";
 
 import { PromotionArticle } from "#/lib/graphql/articles.gql";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,10 +14,11 @@ export function CarouselClient({ articles }: Props): JSX.Element {
 
   useEffect(() => {
     const length = articles.length;
-    setTimeout(
+    const timeout = setTimeout(
       () => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1),
       7000
     );
+    return () => clearTimeout(timeout);
   }, [currentSlide, articles.length, setCurrentSlide]);
 
   return (
