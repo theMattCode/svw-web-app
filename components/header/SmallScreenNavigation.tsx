@@ -16,13 +16,14 @@ export default function SmallScreenNavigation({
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center">
       <FaBars
-        className="h-16 mx-6 cursor-pointer"
+        className="cursor-pointer"
         onClick={() => setOpen((open) => !open)}
+        role="button"
       />
       <ul
-        className={`fixed right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
+        className={`absolute right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
           open ? "visible z-30" : "hidden"
         }`}
       >
@@ -91,7 +92,7 @@ function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
       className={`border-b ${itemStyle.border} last:border-b-0 flex flex-col`}
     >
       <div className="p-2 flex flex-row justify-between items-center">
-        <Link href={page.slug} onClick={onClick}>
+        <Link className="w-full" href={page.slug} onClick={onClick}>
           {page.title}
         </Link>
         {hasSubPages && !open && (

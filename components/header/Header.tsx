@@ -23,21 +23,18 @@ export function Header({ headerData, clubData }: HeaderProps): JSX.Element {
 
 function SmallScreenHeader({ headerData, clubData }: HeaderProps): JSX.Element {
   return (
-    <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white">
-      <div />
-      <div className="z-30">
-        {clubData?.logo?.data?.attributes?.url && (
-          <Link href="/">
-            <Image
-              src={getFullAssetUrl(clubData.logo.data.attributes.url)}
-              alt=""
-              width={64}
-              height={64}
-              className="h-16"
-            />
-          </Link>
-        )}
-      </div>
+    <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white px-2 gap-2">
+      {clubData?.logo?.data?.attributes?.url && (
+        <Link href="/">
+          <Image
+            src={getFullAssetUrl(clubData.logo.data.attributes.url)}
+            alt=""
+            width={48}
+            height={48}
+            className="h-16"
+          />
+        </Link>
+      )}
       <div className="self-center text-center text-sm sm:text-lg">
         {clubData?.name}
       </div>

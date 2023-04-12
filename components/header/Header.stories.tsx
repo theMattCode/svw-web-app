@@ -4,6 +4,8 @@ import { createUploadFileEntityResponse } from "#/lib/graphql/mock/upload";
 import { createPageEntity } from "#/lib/graphql/mock/page";
 import { PageRelationResponseCollection } from "#/lib/graphql/generated";
 import { DEFAULT_VIEWPORTS } from "#/lib/stories";
+import { createClub } from "#/lib/graphql/mock/club";
+import { userEvent, within } from "@storybook/testing-library";
 
 const meta: Meta<typeof HeaderComponent> = {
   title: "Components/Header",
@@ -60,6 +62,7 @@ export const Expanded: Story = {
       logo: createUploadFileEntityResponse(),
       showSearch: false,
     },
+    clubData: createClub(),
   },
   parameters: {
     viewport: {
@@ -71,7 +74,11 @@ export const Expanded: Story = {
     },
     chromatic: { viewports: [320, 640] },
   },
-  play: async ({ canvasElement }) => {},
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const menuButton = await canvas.findByRole("button");
+    await userEvent.click(menuButton);
+  },
 };
 
 export const Collapsed: Story = {
@@ -82,5 +89,6 @@ export const Collapsed: Story = {
       logo: createUploadFileEntityResponse(),
       showSearch: false,
     },
+    clubData: createClub(),
   },
 };
