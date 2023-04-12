@@ -15,5 +15,5 @@ export function OptionalLink({ href, children, ...props }: Props): JSX.Element {
     );
   }
 
-  return <>{children}</>;
+  return <div className={props.className}>{children}</div>;
 }

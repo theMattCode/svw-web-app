@@ -17,7 +17,10 @@ export default function SmallScreenNavigation({
 
   return (
     <div className="flex flex-col">
-      <FaBars className="h-16 mr-6" onClick={() => setOpen((open) => !open)} />
+      <FaBars
+        className="h-16 mx-6 cursor-pointer"
+        onClick={() => setOpen((open) => !open)}
+      />
       <ul
         className={`fixed right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
           open ? "visible z-30" : "hidden"
@@ -92,10 +95,16 @@ function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
           {page.title}
         </Link>
         {hasSubPages && !open && (
-          <FaChevronDown onClick={() => setOpen(true)} />
+          <FaChevronDown
+            className="cursor-pointer"
+            onClick={() => setOpen(true)}
+          />
         )}
         {hasSubPages && open && (
-          <FaChevronLeft onClick={() => setOpen(false)} />
+          <FaChevronLeft
+            className="cursor-pointer"
+            onClick={() => setOpen(false)}
+          />
         )}
       </div>
       {hasSubPages && open && (

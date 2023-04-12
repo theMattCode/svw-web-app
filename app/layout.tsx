@@ -42,7 +42,7 @@ export default async function Layout({
       <body /*className="2xl:bg-[url('/background-2xl.png')] xl:bg-[url('/background-xl.png')] lg:bg-[url('/background-lg.png')] md:bg-[url('/background-md.png')] md:bg-contain md:bg-repeat-y"*/
       >
         <div className="min-h-screen flex flex-col">
-          <Header headerData={headerData} />
+          <Header headerData={headerData} clubData={clubData} />
           <main className="flex-1 bg-neutral-100">{children}</main>
           <SponsorGrid sponsors={data.sponsors?.data} />
           <Footer footerData={footerData} clubData={clubData} />
