@@ -22,6 +22,11 @@ export const RichText: StoryObj = {
 
 ###### h6 - Lorem Ipsum Dolor Sit Amet
 
+| Links | Mitte | Rechts |
+| :--- | --- | ---: |
+| Zellentext | Zellentext | Lorem ipsum dolor sit amet |
+| Zellentext | Lorem ipsum dolor sit amet, consetetur sadipscing elitr | Zellentext |
+
 [a - Lorem Ipsum Dolor Sit Amet](#)
 
 p - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -36,13 +41,7 @@ sit amet.
 > kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
 > sadipscing elitr, _sed diam nonumy eirmod_ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 > At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-> ipsum dolor sit amet.
-
-| Kurs | Wochentag | Uhrzeit |
-| :--- | --- | ---: |
-| Yoga | Montag, Mittwoch, Freitag | 08:30 Uhr – 10:00 Uhr |
-| Powerfitness | Montag | 18:30 – 20.30 Uhr |
-`}
+> ipsum dolor sit amet.`}
     />
   ),
 };

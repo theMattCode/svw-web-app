@@ -21,9 +21,10 @@ export default function RichText({ content }: Props): JSX.Element | null {
               <ol className="list-decimal list-outside">{children}</ol>
             </div>
           ),
+          table: ({ children }) => <table className="w-fit">{children}</table>,
           th: ({ children, style }) => (
             <th
-              className={`border border-gray-300 px-3 ${
+              className={`border-0 bg-svw-blue-default text-white px-3 py-2 ${
                 style?.textAlign === "left"
                   ? "text-left"
                   : style?.textAlign === "right"
@@ -34,8 +35,13 @@ export default function RichText({ content }: Props): JSX.Element | null {
               {children}
             </th>
           ),
+          tr: ({ children }) => (
+            <tr className="even:bg-gray-200">{children}</tr>
+          ),
           td: ({ children }) => (
-            <td className="border border-gray-300 px-3">{children}</td>
+            <td className="border-0 border-b border-svw-blue-default px-3 py-2">
+              {children}
+            </td>
           ),
           img: (props) => (
             <img
