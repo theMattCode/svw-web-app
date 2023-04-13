@@ -22,6 +22,11 @@ export const RichText: StoryObj = {
 
 ###### h6 - Lorem Ipsum Dolor Sit Amet
 
+| Links | Mitte | Rechts |
+| :--- | --- | ---: |
+| Zellentext | Zellentext | Lorem ipsum dolor sit amet |
+| Zellentext | Lorem ipsum dolor sit amet, consetetur sadipscing elitr | Zellentext |
+
 [a - Lorem Ipsum Dolor Sit Amet](#)
 
 p - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
