@@ -68,6 +68,7 @@ export function DynamicContent({
         /* @ts-expect-error Server Component */
         <ArticleList
           pageSize={component.pageSize}
+          tags={component.tags}
           page={page}
           slug={params?.slug}
         />

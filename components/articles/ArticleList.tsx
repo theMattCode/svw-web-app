@@ -1,5 +1,10 @@
 import graphqlClient from "#/lib/graphql/graphqlClient";
-import { ArticlesQuery, ArticlesQueryVariables } from "#/lib/graphql/generated";
+import {
+  ArticlesQuery,
+  ArticlesQueryVariables,
+  TagFiltersInput,
+  TagRelationResponseCollection,
+} from "#/lib/graphql/generated";
 import { ARTICLES_QUERY } from "#/components/articles/articles.gql";
 import { Pagination } from "#/components/pagination/Pagination";
 import { PreviewArticle } from "#/components/articles/PreviewArticle";
@@ -8,18 +13,22 @@ type ArticleListProps = {
   pageSize: number;
   page: number;
   slug?: string;
+  tags?: TagRelationResponseCollection | null;
 };
 export async function ArticleList({
   pageSize,
   page,
   slug,
+  tags,
 }: ArticleListProps): Promise<JSX.Element | null> {
+  const tagFilters: TagFiltersInput[] =
+    tags?.data.map((tag) => ({ id: { eq: tag.id } })) ?? [];
   const { data } = await graphqlClient.query<
     ArticlesQuery,
     ArticlesQueryVariables
   >({
     query: ARTICLES_QUERY,
-    variables: { page, pageSize },
+    variables: { page, pageSize, tagFilters },
   });
   const pagination = data.articles?.meta.pagination;
   if (!pagination) {

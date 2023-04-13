@@ -144,6 +144,9 @@ export const ARTICLES_COMPONENT = gql`
   fragment ArticlesComponent on ComponentBlockArticles {
     id
     pageSize
+    tags {
+      ...Tags
+    }
   }
 `;
 
