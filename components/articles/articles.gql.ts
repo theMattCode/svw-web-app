@@ -8,10 +8,11 @@ import { ExtractType } from "#/lib/graphql/types";
 import { ArticlesQuery } from "#/lib/graphql/generated";
 
 export const ARTICLES_QUERY = gql`
-  query Articles($page: Int!, $pageSize: Int!) {
+  query Articles($page: Int!, $pageSize: Int!, $tagFilters: [TagFiltersInput]) {
     articles(
       pagination: { page: $page, pageSize: $pageSize }
       sort: ["date:DESC"]
+      filters: { tags: { or: $tagFilters } }
     ) {
       data {
         id
