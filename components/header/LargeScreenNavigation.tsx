@@ -111,25 +111,26 @@ function NavItemWithMegaMenu({
         isLast={isLast}
       />
       <div className="hidden absolute left-0 top-[6em] group-hover:block z-10 w-full border-t-2 border-white bg-svw-blue-darker text-white pt-16 pb-4">
-        <div className="container lg:px-36 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center">
+        <div className="container lg:px-36 gap-4 columns-2 lg:columns-3">
           {subPages?.map((subPage) => {
             const page = subPage.attributes;
             if (page) {
               const hasSubpages =
                 page.subPages?.data && page.subPages.data.length > 0;
               return (
-                <div key={page.slug} className="">
-                  <div className="px-4 py-2 ring-1 ring-svw-blue-default/25">
-                    <span className="text-lg">
-                      <Link href={page.slug}>{page.title}</Link>
-                    </span>
-                    {hasSubpages && <SubPageList parent={page} />}
-                    {!hasSubpages && page.description && (
-                      <div className="whitespace-pre-wrap text-xs">
-                        {page.description}
-                      </div>
-                    )}
-                  </div>
+                <div
+                  key={page.slug}
+                  className="w-full mb-4 px-4 py-2 ring-1 ring-svw-blue-default/25 break-inside-avoid"
+                >
+                  <span className="text-lg">
+                    <Link href={page.slug}>{page.title}</Link>
+                  </span>
+                  {hasSubpages && <SubPageList parent={page} />}
+                  {!hasSubpages && page.description && (
+                    <div className="whitespace-pre-wrap text-xs">
+                      {page.description}
+                    </div>
+                  )}
                 </div>
               );
             }
