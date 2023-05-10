@@ -49,6 +49,11 @@ export async function ArticleList({
           </>
         ) : null
       )}
+      <Pagination
+        slug={slug}
+        currentPage={page}
+        pageCount={pagination.pageCount}
+      />
     </div>
   );
 }
