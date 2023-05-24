@@ -61,7 +61,7 @@ export default function RichText({ content }: Props): JSX.Element | null {
                 {props.children}
               </a>
             ),
-            p: ({ children }) => <p className="font-light">{children}</p>,
+            p: ({ children }) => <p className="font-light pt-2">{children}</p>,
             blockquote: ({ children }) => (
               <blockquote className="flex flex-row divide-x">
                 <div />
