@@ -1,4 +1,4 @@
-import { Carousel } from "#/components/carousel/Carousel";
+import { ArticleCarousel } from "#/components/carousel/ArticleCarousel";
 import RichText from "#/components/richtext/RichText";
 import { Spacing } from "#/components/spacing/Spacing";
 import {
@@ -14,6 +14,7 @@ import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
 import { Person } from "#/components/person/Person";
 import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
+import { Announcements } from "#/components/announcements/Announcements";
 
 type Props = {
   component:
@@ -33,7 +34,7 @@ export function DynamicContent({
   switch (component.__typename) {
     case "ComponentBlockCarousel":
       /* @ts-expect-error Server Component */
-      return <Carousel maxItems={component.maxArticles ?? 3} />;
+      return <ArticleCarousel maxItems={component.maxArticles ?? 3} />;
 
     case "ComponentBlockRichText":
       return <RichText content={component.content} />;
@@ -57,6 +58,12 @@ export function DynamicContent({
     case "ComponentBlockTaggedPersons":
       /* @ts-expect-error Server Component */
       return <TaggedPersons tagId={component.tag?.data?.id ?? null} />;
+
+    case "ComponentBlockAnnouncements":
+      return (
+        /* @ts-expect-error Server Component */
+        <Announcements title={component.title} tags={component.tags?.data} />
+      );
 
     case "ComponentBlockArticlesPreviewList":
       /* @ts-expect-error Server Component */
