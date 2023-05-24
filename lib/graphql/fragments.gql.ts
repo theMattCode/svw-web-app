@@ -125,6 +125,16 @@ export const RICH_TEXT_TWO_COLUMN_COMPONENT = gql`
   }
 `;
 
+export const ANNOUNCEMENTS = gql`
+  fragment Announcements on ComponentBlockAnnouncements {
+    id
+    title
+    tags {
+      ...Tags
+    }
+  }
+`;
+
 export const ARTICLE_CAROUSEL_COMPONENT = gql`
   fragment ArticleCarouselComponent on ComponentBlockCarousel {
     id

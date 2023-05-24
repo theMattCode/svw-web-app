@@ -28,7 +28,11 @@ export async function TaggedPersons({
     <>
       {data.peoples?.data.map((person) => {
         if (person.attributes) {
-          return <PersonCard key={person.id} person={person.attributes} />;
+          return (
+            <div key={person.id} className="p-2">
+              <PersonCard person={person.attributes} />
+            </div>
+          );
         }
         return null;
       })}

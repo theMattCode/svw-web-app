@@ -3,8 +3,9 @@ import { ARTICLES_QUERY } from "#/components/articles/articles.gql";
 import { ArticlesQuery, ArticlesQueryVariables } from "#/lib/graphql/generated";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
-import { PreviewArticle } from "#/components/articles/PreviewArticle";
 import { Fragment } from "react";
+import { RibbonTitle } from "#/components/announcements/AnnouncementsRibbon";
+import { PreviewListItem } from "#/components/articles/PreviewListItem";
 
 const DEFAULT_PAGE_SIZE = 8;
 
@@ -23,29 +24,25 @@ export async function PreviewList({
     variables: { page: 1, pageSize: pageSize },
   });
   return (
-    <div className="flex flex-col">
+    <div className="bg-svw-blue-darker w-full md:px-4">
       <Link href="/aktuelles">
-        <h1>Aktuelles</h1>
+        <RibbonTitle title="Aktuelles" />
       </Link>
-      <div className="flex flex-col pt-2">
+      <div className="container flex flex-col gap-4">
         {data.articles?.data.map((article) => {
           if (article.attributes) {
             return (
-              <Fragment key={article.id}>
-                <PreviewArticle article={article.attributes} />
-                <hr className="border-svw-blue-default my-2" />
-              </Fragment>
+              <PreviewListItem key={article.id} article={article.attributes} />
             );
           }
         })}
       </div>
-      <span className="pt-4 flex flex-row justify-center">
+      <span className="container pl-2 pt-4 pb-8 flex flex-row ">
         <Link href="/aktuelles" className="flex flex-row gap-1 items-center">
           <FaChevronRight className="text-svw-blue-default" />
-          <span>Weitere Artikel</span>
+          <h3 className="text-white">Weitere Artikel</h3>
         </Link>
       </span>
-      <hr className="my-4 border-svw-blue-default" />
     </div>
   );
 }

@@ -9,5 +9,9 @@ export function Person({ person }: Props): JSX.Element | null {
     return null;
   }
 
-  return <PersonCard key={person.id} person={person.attributes} />;
+  return (
+    <div className="p-2">
+      <PersonCard key={person.id} person={person.attributes} />
+    </div>
+  );
 }

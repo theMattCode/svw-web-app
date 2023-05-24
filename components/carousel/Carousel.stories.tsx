@@ -1,16 +1,16 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Carousel } from "#/components/carousel/Carousel";
-import { CarouselClient } from "#/components/carousel/CarouselClient";
+import { ArticleCarousel } from "#/components/carousel/ArticleCarousel";
+import { ArticleCarouselClient } from "#/components/carousel/ArticleCarouselClient";
 import { Article } from "#/lib/graphql/generated";
 import placeholderSvg from "#/public/placeholder.svg";
 
-const meta: Meta<typeof Carousel> = {
+const meta: Meta<typeof ArticleCarousel> = {
   title: "Components/Carousel",
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Carousel>;
+type Story = StoryObj<typeof ArticleCarousel>;
 
 function createArticle(index: number): Article {
   return {
@@ -48,7 +48,7 @@ function createArticle(index: number): Article {
 export const ThreeItemsCarousel: Story = {
   render: () => (
     <div className="bg-neutral-200 flex flex-col place-items-center pt-4">
-      <CarouselClient
+      <ArticleCarouselClient
         articles={[createArticle(1), createArticle(2), createArticle(3)]}
       />
     </div>

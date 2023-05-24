@@ -10,13 +10,13 @@ type PreviewArticleProps = {
   article: ListedArticle;
 };
 
-export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
+export function PreviewListItem({ article }: PreviewArticleProps): JSX.Element {
   const picture = article.image?.data?.attributes;
   const tags = asTagsString(article.tags);
   return (
     <Link
       href={`news/${article.slug}`}
-      className="flex flex-col md:flex-row gap-4"
+      className="flex flex-col md:flex-row gap-4 bg-neutral-100 p-2 shadow-2xl"
     >
       {picture?.url && (
         <Image
@@ -28,7 +28,7 @@ export function PreviewArticle({ article }: PreviewArticleProps): JSX.Element {
         />
       )}
       <div className="w-full flex flex-col justify-start">
-        <div className="flex flex-row text-sm gap-4 py-1">
+        <div className="flex flex-row text-sm gap-1 md:gap-4 py-1">
           <div>
             {new Date(article.date).toLocaleDateString("de-DE", {
               dateStyle: "full",

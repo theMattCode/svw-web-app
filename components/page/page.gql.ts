@@ -2,6 +2,7 @@ import { gql } from "@apollo/client";
 import { PageDataQuery, PageEntity } from "#/lib/graphql/generated";
 import graphqlClient from "#/lib/graphql/graphqlClient";
 import {
+  ANNOUNCEMENTS,
   ARTICLE_CAROUSEL_COMPONENT,
   ARTICLES_COMPONENT,
   ARTICLES_PREVIEW_LIST_COMPONENT,
@@ -42,6 +43,7 @@ export const PAGE_DATA = gql`
             ...ArticlesComponent
             ...ArticlesPreviewListComponent
             ...FussballDeWidget
+            ...Announcements
             ...Error
           }
           leftContents {
@@ -53,6 +55,7 @@ export const PAGE_DATA = gql`
             ...ArticlesComponent
             ...ArticlesPreviewListComponent
             ...FussballDeWidget
+            ...Announcements
             ...Error
           }
           rightContents {
@@ -64,6 +67,7 @@ export const PAGE_DATA = gql`
             ...ArticlesComponent
             ...ArticlesPreviewListComponent
             ...FussballDeWidget
+            ...Announcements
             ...Error
           }
           subPages {
@@ -82,6 +86,7 @@ export const PAGE_DATA = gql`
   ${ERROR}
   ${PERSON_COMPONENT}
   ${SPACING_COMPONENT}
+  ${ANNOUNCEMENTS}
   ${ARTICLE_CAROUSEL_COMPONENT}
   ${ARTICLES_COMPONENT}
   ${ARTICLES_PREVIEW_LIST_COMPONENT}

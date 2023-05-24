@@ -1,16 +1,16 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Article } from "#/lib/graphql/generated";
-import { PreviewArticle } from "#/components/articles/PreviewArticle";
+import { ArticleListItem } from "#/components/articles/ArticleListItem";
 import { createUploadFileEntityResponse } from "#/lib/graphql/mock/upload";
 
-const meta: Meta<typeof PreviewArticle> = {
+const meta: Meta<typeof ArticleListItem> = {
   title: "Components/Articles",
-  component: PreviewArticle,
+  component: ArticleListItem,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof PreviewArticle>;
+type Story = StoryObj<typeof ArticleListItem>;
 
 function createArticle(): Article {
   return {
@@ -30,13 +30,13 @@ function createArticle(): Article {
 }
 
 export const PreviewArticleWithoutImage: Story = {
-  render: () => <PreviewArticle article={createArticle()} />,
+  render: () => <ArticleListItem article={createArticle()} />,
 };
 
 export const PreviewArticleWithImage: Story = {
   render: () => {
     const article = createArticle();
     article.image = createUploadFileEntityResponse();
-    return <PreviewArticle article={article} />;
+    return <ArticleListItem article={article} />;
   },
 };

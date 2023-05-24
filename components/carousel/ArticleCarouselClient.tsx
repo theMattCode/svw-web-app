@@ -9,7 +9,7 @@ type Props = {
   articles: PromotionArticle[];
 };
 
-export function CarouselClient({ articles }: Props): JSX.Element {
+export function ArticleCarouselClient({ articles }: Props): JSX.Element {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export function CarouselClient({ articles }: Props): JSX.Element {
                   alt=""
                   width={imageAttributes.width ?? 0}
                   height={imageAttributes.height ?? 0}
-                  className="object-cover absolute left-0 right-0 w-full h-96 md:h-[50vh]"
+                  className="object-cover absolute left-0 right-0 w-full h-[65vh]"
                 />
                 <div className="container flex flex-row items-end h-full w-full z-0">
                   <Link href={`/news/${article.slug}`} className="">

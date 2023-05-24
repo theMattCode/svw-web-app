@@ -7,7 +7,7 @@ import {
 } from "#/lib/graphql/generated";
 import { ARTICLES_QUERY } from "#/components/articles/articles.gql";
 import { Pagination } from "#/components/pagination/Pagination";
-import { PreviewArticle } from "#/components/articles/PreviewArticle";
+import { ArticleListItem } from "#/components/articles/ArticleListItem";
 
 type ArticleListProps = {
   pageSize: number;
@@ -35,7 +35,7 @@ export async function ArticleList({
     return null;
   }
   return (
-    <div className="flex flex-col w-full gap-1">
+    <div className="container flex flex-col w-full gap-1">
       <Pagination
         slug={slug}
         currentPage={page}
@@ -44,7 +44,7 @@ export async function ArticleList({
       {data.articles?.data.map((article, index, array) =>
         article.attributes ? (
           <>
-            <PreviewArticle key={article.id} article={article.attributes} />
+            <ArticleListItem key={article.id} article={article.attributes} />
             <hr className="border-svw-blue-default my-2" />
           </>
         ) : null

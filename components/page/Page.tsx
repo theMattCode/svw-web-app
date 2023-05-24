@@ -32,49 +32,55 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
           </div>
         )}
       </div>
-      <div className="container flex flex-col md:flex-row">
-        <div className="max-w-lg p-2 md:p-4">
-          {leftContents?.map((content) => {
-            if (content) {
-              return (
-                <DynamicContent
-                  key={"id" in content ? content.id : content.code}
-                  component={content}
-                  params={params}
-                  searchParams={searchParams}
-                />
-              );
-            }
-          })}
-        </div>
-        <main className="container flex flex-col p-2 md:p-4 gap-4 min-w-[50%]">
-          {mainContents?.map((content) => {
-            if (content) {
-              return (
-                <DynamicContent
-                  key={"id" in content ? content.id : content.code}
-                  component={content}
-                  params={params}
-                  searchParams={searchParams}
-                />
-              );
-            }
-          })}
-        </main>
-        <div className="max-w-lg p-2 md:p-4">
-          {rightContents?.map((content) => {
-            if (content) {
-              return (
-                <DynamicContent
-                  key={"id" in content ? content.id : content.code}
-                  component={content}
-                  params={params}
-                  searchParams={searchParams}
-                />
-              );
-            }
-          })}
-        </div>
+      <div className="flex flex-col md:flex-row w-full">
+        {leftContents && leftContents.length > 0 && (
+          <div className="">
+            {leftContents.map((content) => {
+              if (content) {
+                return (
+                  <DynamicContent
+                    key={"id" in content ? content.id : content.code}
+                    component={content}
+                    params={params}
+                    searchParams={searchParams}
+                  />
+                );
+              }
+            })}
+          </div>
+        )}
+        {mainContents && mainContents.length > 0 && (
+          <main className="flex flex-col w-full">
+            {mainContents.map((content) => {
+              if (content) {
+                return (
+                  <DynamicContent
+                    key={"id" in content ? content.id : content.code}
+                    component={content}
+                    params={params}
+                    searchParams={searchParams}
+                  />
+                );
+              }
+            })}
+          </main>
+        )}
+        {rightContents && rightContents.length > 0 && (
+          <div className="max-w-lg w-full">
+            {rightContents.map((content) => {
+              if (content) {
+                return (
+                  <DynamicContent
+                    key={"id" in content ? content.id : content.code}
+                    component={content}
+                    params={params}
+                    searchParams={searchParams}
+                  />
+                );
+              }
+            })}
+          </div>
+        )}
       </div>
     </>
   );

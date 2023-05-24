@@ -12,7 +12,7 @@ type Props = {
 export function PersonCard({ person }: Props): JSX.Element {
   const picture = person.picture?.data?.attributes;
   return (
-    <div className="flex flex-col md:max-w-[768px] md:min-w-[550px] md:flex-row bg-white shadow-lg">
+    <div className="container flex flex-col md:max-w-[768px] md:min-w-[550px] md:flex-row bg-white shadow-lg">
       <Image
         className="w-full h-96 md:h-auto object-cover md:w-56 p-1"
         src={getFullAssetUrl(picture?.url ?? "")}

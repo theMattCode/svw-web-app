@@ -49,7 +49,7 @@ export default function RichTextTwoColumn({
     rightFraction,
   });
   return (
-    <div className={`grid grid-cols-1 gap-4 ${gridTemplateColumns}`}>
+    <div className={`container grid grid-cols-1 gap-4 ${gridTemplateColumns}`}>
       <div>
         <RichText content={leftContent} />
       </div>
