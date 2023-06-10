@@ -35,25 +35,26 @@ export async function ArticleList({
     return null;
   }
   return (
-    <div className="container flex flex-col w-full gap-1">
-      <Pagination
-        slug={slug}
-        currentPage={page}
-        pageCount={pagination.pageCount}
-      />
-      {data.articles?.data.map((article, index, array) =>
-        article.attributes ? (
-          <>
-            <ArticleListItem key={article.id} article={article.attributes} />
-            <hr className="border-svw-blue-default my-2" />
-          </>
-        ) : null
-      )}
-      <Pagination
-        slug={slug}
-        currentPage={page}
-        pageCount={pagination.pageCount}
-      />
+    <div className="bg-svw-blue-darker w-full md:px-4">
+      <div className="container flex flex-col gap-4">
+        <Pagination
+          slug={slug}
+          currentPage={page}
+          pageCount={pagination.pageCount}
+        />
+        {data.articles?.data.map((article, index, array) =>
+          article.attributes ? (
+            <>
+              <ArticleListItem key={article.id} article={article.attributes} />
+            </>
+          ) : null
+        )}
+        <Pagination
+          slug={slug}
+          currentPage={page}
+          pageCount={pagination.pageCount}
+        />
+      </div>
     </div>
   );
 }

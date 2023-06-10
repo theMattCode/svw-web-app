@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { TiChevronLeft, TiChevronRight } from "react-icons/all";
 
 type Props = {
   children: JSX.Element | JSX.Element[];

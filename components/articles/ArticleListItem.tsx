@@ -6,17 +6,17 @@ import { asTagsString } from "#/lib/tags";
 import { FaChevronRight } from "react-icons/fa";
 import Teaser from "./Teaser";
 
-type PreviewArticleProps = {
+type Props = {
   article: ListedArticle;
 };
 
-export function ArticleListItem({ article }: PreviewArticleProps): JSX.Element {
+export function ArticleListItem({ article }: Props): JSX.Element {
   const picture = article.image?.data?.attributes;
   const tags = asTagsString(article.tags);
   return (
     <Link
       href={`news/${article.slug}`}
-      className="flex flex-col md:flex-row gap-4"
+      className="flex flex-col md:flex-row gap-4 bg-neutral-100 p-2 shadow-2xl hover:scale-[1.02]"
     >
       {picture?.url && (
         <Image
@@ -28,14 +28,6 @@ export function ArticleListItem({ article }: PreviewArticleProps): JSX.Element {
         />
       )}
       <div className="w-full flex flex-col justify-start">
-        <div className="flex flex-row text-sm gap-4 py-1">
-          <div>
-            {new Date(article.date).toLocaleDateString("de-DE", {
-              dateStyle: "full",
-            })}
-          </div>
-          <div>{tags}</div>
-        </div>
         <div className="text-2xl font-normal text-svw-blue-default py-1">
           {article.title}
         </div>
@@ -44,6 +36,20 @@ export function ArticleListItem({ article }: PreviewArticleProps): JSX.Element {
           <div className="flex flex-row gap-1 items-center py-1">
             <FaChevronRight className="text-svw-blue-default" />
             <span>Weiter lesen</span>
+          </div>
+        </div>
+        <div className="flex flex-row text-sm gap-1 md:gap-4 py-1">
+          <div className="p-1">
+            {new Date(article.date).toLocaleDateString("de-DE", {
+              dateStyle: "full",
+            })}
+          </div>
+          <div className="flex gap-1">
+            {article.tags?.data.map((tag) => (
+              <span key={tag.id} className="text-black bg-gray-200 py-1 px-2">
+                {tag.attributes?.name}
+              </span>
+            ))}
           </div>
         </div>
       </div>

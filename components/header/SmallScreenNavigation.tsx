@@ -15,13 +15,16 @@ export default function SmallScreenNavigation({
 }: Props): JSX.Element {
   const [open, setOpen] = useState<boolean>(false);
 
+  const toggleOpen = () => setOpen((open) => !open);
+
   return (
     <div className="flex flex-col justify-center">
-      <FaBars
-        className="cursor-pointer"
-        onClick={() => setOpen((open) => !open)}
-        role="button"
-      />
+      <button
+        className="w-10 h-10 flex justify-center items-center"
+        onClick={toggleOpen}
+      >
+        <FaBars />
+      </button>
       <ul
         className={`absolute right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
           open ? "visible z-30" : "hidden"
@@ -91,23 +94,17 @@ function ListItem({ page, onClick, level }: ListItemProps): JSX.Element {
     <li
       className={`border-b ${itemStyle.border} last:border-b-0 flex flex-col`}
     >
-      <div className="p-2 flex flex-row justify-between items-center">
-        <Link className="w-full" href={page.slug} onClick={onClick}>
+      <div className="flex flex-row justify-between items-center">
+        <Link className="w-full p-2" href={page.slug} onClick={onClick}>
           {page.title}
         </Link>
-        {hasSubPages && !open && (
-          <FaChevronDown
-            className="cursor-pointer"
-            onClick={() => setOpen(true)}
-            role="button"
-          />
-        )}
-        {hasSubPages && open && (
-          <FaChevronLeft
-            className="cursor-pointer"
-            onClick={() => setOpen(false)}
-            role="button"
-          />
+        {hasSubPages && (
+          <button
+            className="w-10 h-10 flex justify-center items-center"
+            onClick={() => setOpen((open) => !open)}
+          >
+            {open ? <FaChevronDown /> : <FaChevronLeft />}
+          </button>
         )}
       </div>
       {hasSubPages && open && (

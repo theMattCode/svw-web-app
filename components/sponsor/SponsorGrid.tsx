@@ -12,9 +12,11 @@ function shuffle(): number {
 export default function SponsorGrid({ sponsors }: Props): JSX.Element | null {
   if (!sponsors) return null;
   return (
-    <div className="bg-white border-t border-svw-blue-default py-4">
+    <div className="bg-svw-blue-dark border-t border-svw-blue-default py-4">
       <div className="container">
-        <h2 className="flex flex-row justify-center">Unsere Partner</h2>
+        <h2 className="flex flex-row justify-center text-white">
+          Unsere Partner
+        </h2>
         <div className="p-3 flex flex-col items-center sm:grid sm:grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
           {sponsors?.sort(shuffle).map((sponsor) => (
             <Sponsor key={sponsor.id} sponsor={sponsor} />
