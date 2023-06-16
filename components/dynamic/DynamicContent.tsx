@@ -3,9 +3,7 @@ import RichText from "#/components/richtext/RichText";
 import { Spacing } from "#/components/spacing/Spacing";
 import {
   PageHeaderContentsDynamicZone,
-  PageLeftContentsDynamicZone,
   PageMainContentsDynamicZone,
-  PageRightContentsDynamicZone,
 } from "#/lib/graphql/generated";
 import { TaggedPersons } from "#/components/person/TaggedPersons";
 import { PreviewList } from "#/components/articles/PreviewList";
@@ -17,11 +15,7 @@ import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
 import { Announcements } from "#/components/announcements/Announcements";
 
 type Props = {
-  component:
-    | PageHeaderContentsDynamicZone
-    | PageMainContentsDynamicZone
-    | PageLeftContentsDynamicZone
-    | PageRightContentsDynamicZone;
+  component: PageHeaderContentsDynamicZone | PageMainContentsDynamicZone;
   params?: Params;
   searchParams?: SearchParams;
 };
