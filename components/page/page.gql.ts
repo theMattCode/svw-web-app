@@ -46,30 +46,6 @@ export const PAGE_DATA = gql`
             ...Announcements
             ...Error
           }
-          leftContents {
-            __typename
-            ...RichTextComponent
-            ...SpacingComponent
-            ...PersonComponent
-            ...TaggedPersonsComponent
-            ...ArticlesComponent
-            ...ArticlesPreviewListComponent
-            ...FussballDeWidget
-            ...Announcements
-            ...Error
-          }
-          rightContents {
-            __typename
-            ...RichTextComponent
-            ...SpacingComponent
-            ...PersonComponent
-            ...TaggedPersonsComponent
-            ...ArticlesComponent
-            ...ArticlesPreviewListComponent
-            ...FussballDeWidget
-            ...Announcements
-            ...Error
-          }
           subPages {
             data {
               id
