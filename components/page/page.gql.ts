@@ -9,6 +9,8 @@ import {
   ERROR,
   FILE_FRAGMENT,
   FUSSBALL_DE_WIDGET,
+  LINK_COMPONENT,
+  LINK_LIST_COMPONENT,
   PEOPLE,
   PERSON_COMPONENT,
   RICH_TEXT_COMPONENT,
@@ -45,6 +47,32 @@ export const PAGE_DATA = gql`
             ...FussballDeWidget
             ...Announcements
             ...Error
+          }
+          blocks {
+            __typename
+            data {
+              __typename
+              id
+              attributes {
+                __typename
+                title
+                bgColor
+                contents {
+                  __typename
+                  ...Announcements
+                  ...ArticleCarouselComponent
+                  ...ArticlesComponent
+                  ...ArticlesPreviewListComponent
+                  ...RichTextComponent
+                  ...RichTextTwoColumnComponent
+                  ...SpacingComponent
+                  ...PersonComponent
+                  ...TaggedPersonsComponent
+                  ...FussballDeWidget
+                  ...Error
+                }
+              }
+            }
           }
           subPages {
             data {

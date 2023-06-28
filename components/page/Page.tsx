@@ -2,6 +2,9 @@ import { DynamicContent } from "#/components/dynamic/DynamicContent";
 import { Page as PageData } from "#/lib/graphql/generated";
 import { Params, SearchParams } from "#/lib/url";
 
+import { BlockTitle } from "#/components/block/BlockTitle";
+import { Blocks } from "#/components/block/Blocks";
+
 type Props = {
   pageData: PageData;
   params?: Params;
@@ -9,11 +12,11 @@ type Props = {
 };
 
 export function Page({ pageData, params, searchParams }: Props): JSX.Element {
-  const { mainContents, headerContents } = pageData;
+  const { mainContents, headerContents, blocks } = pageData;
   return (
     <>
-      {headerContents && (
-        <div className="md:min-h-[4em] border-t-2 border-white">
+      <div className="md:min-h-[4em] border-t-2 border-white bg-svw-blue-dark">
+        {headerContents && (
           <div className="flex flex-row w-full">
             {headerContents?.map((content) => {
               if (content) {
@@ -29,24 +32,29 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
               return <></>;
             })}
           </div>
-        </div>
-      )}
-      {mainContents && mainContents.length > 0 && (
-        <main className="flex flex-col w-full">
-          {mainContents.map((content) => {
-            if (content) {
-              return (
-                <DynamicContent
-                  key={"id" in content ? content.id : content.code}
-                  component={content}
-                  params={params}
-                  searchParams={searchParams}
-                />
-              );
-            }
-          })}
-        </main>
-      )}
+        )}
+      </div>
+      <div className="flex flex-col w-full">
+        <Blocks blocks={blocks} params={params} searchParams={searchParams} />
+      </div>
+      <div className="flex flex-col md:flex-row w-full">
+        {mainContents && mainContents.length > 0 && (
+          <main className="flex flex-col w-full">
+            {mainContents.map((content) => {
+              if (content) {
+                return (
+                  <DynamicContent
+                    key={"id" in content ? content.id : content.code}
+                    component={content}
+                    params={params}
+                    searchParams={searchParams}
+                  />
+                );
+              }
+            })}
+          </main>
+        )}
+      </div>
     </>
   );
 }

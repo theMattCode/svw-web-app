@@ -2,6 +2,7 @@ import { ArticleCarousel } from "#/components/carousel/ArticleCarousel";
 import RichText from "#/components/richtext/RichText";
 import { Spacing } from "#/components/spacing/Spacing";
 import {
+  BlockContentsDynamicZone,
   PageHeaderContentsDynamicZone,
   PageMainContentsDynamicZone,
 } from "#/lib/graphql/generated";
@@ -15,7 +16,10 @@ import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
 import { Announcements } from "#/components/announcements/Announcements";
 
 type Props = {
-  component: PageHeaderContentsDynamicZone | PageMainContentsDynamicZone;
+  component:
+    | PageHeaderContentsDynamicZone
+    | PageMainContentsDynamicZone
+    | BlockContentsDynamicZone;
   params?: Params;
   searchParams?: SearchParams;
 };

@@ -43,7 +43,7 @@ export default async function Layout({
       >
         <div className="min-h-screen flex flex-col">
           <Header headerData={headerData} clubData={clubData} />
-          <main className="flex-1 bg-neutral-100">{children}</main>
+          <main className="flex-1 bg-svw-blue-dark">{children}</main>
           <SponsorGrid sponsors={data.sponsors?.data} />
           <Footer footerData={footerData} clubData={clubData} />
         </div>

@@ -1,7 +1,7 @@
 import { Announcements } from "#/components/announcements/Announcements";
 import { Meta, StoryObj } from "@storybook/react";
 import { Announcement, AnnouncementEntity } from "#/lib/graphql/generated";
-import { AnnouncementsRibbon } from "#/components/announcements/AnnouncementsRibbon";
+import { AnnouncementsCarousel } from "#/components/announcements/AnnouncementsCarousel";
 import { createUploadFileEntityResponse } from "#/lib/graphql/mock/upload";
 
 const meta: Meta<typeof Announcements> = {
@@ -35,8 +35,7 @@ function createAnnouncementEntity(
 
 export const MultipleAnnouncements: Story = {
   render: () => (
-    <AnnouncementsRibbon
-      title="Ankündigung"
+    <AnnouncementsCarousel
       announcements={[
         createAnnouncementEntity("announcement-1"),
         createAnnouncementEntity("announcement-2"),
@@ -48,8 +47,7 @@ export const MultipleAnnouncements: Story = {
 
 export const SingleAnnouncement: Story = {
   render: () => (
-    <AnnouncementsRibbon
-      title="Ankündigung"
+    <AnnouncementsCarousel
       announcements={[createAnnouncementEntity("announcement-1")]}
     />
   ),
@@ -57,8 +55,7 @@ export const SingleAnnouncement: Story = {
 
 export const SingleAnnouncementWithImage: Story = {
   render: () => (
-    <AnnouncementsRibbon
-      title="Ankündigung"
+    <AnnouncementsCarousel
       announcements={[
         createAnnouncementEntity("announcement-1", {
           image: createUploadFileEntityResponse(),

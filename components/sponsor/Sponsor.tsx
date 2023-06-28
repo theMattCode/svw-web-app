@@ -14,7 +14,7 @@ export function Sponsor({
       <OptionalLink
         href={sponsor.attributes?.url}
         target="_blank"
-        className="shadow-xl bg-white p-2 flex justify-center content-center w-full"
+        className="shadow-xl bg-white p-2 flex justify-center content-center w-full hover:scale-105"
       >
         <Image
           src={getFullAssetUrl(imageAttributes?.url)}

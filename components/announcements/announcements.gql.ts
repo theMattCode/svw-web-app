@@ -5,11 +5,17 @@ import {
   TAGS_FRAGMENT,
 } from "#/lib/graphql/fragments.gql";
 import graphqlClient from "#/lib/graphql/graphqlClient";
-import { AnnouncementsQuery } from "#/lib/graphql/generated";
+import {
+  AnnouncementsQuery,
+  AnnouncementsQueryVariables,
+} from "#/lib/graphql/generated";
 
 export const ANNOUNCEMENTS = gql`
-  query Announcements($limit: Int) {
-    announcements(pagination: { limit: $limit }) {
+  query Announcements($limit: Int, $now: DateTime) {
+    announcements(
+      pagination: { limit: $limit }
+      filters: { activeDate: { lte: $now }, expiryDate: { gte: $now } }
+    ) {
       data {
         id
         attributes {
@@ -34,9 +40,12 @@ export const ANNOUNCEMENTS = gql`
 `;
 
 export async function fetchAnnouncements() {
-  const { data } = await graphqlClient.query<AnnouncementsQuery>({
+  const { data } = await graphqlClient.query<
+    AnnouncementsQuery,
+    AnnouncementsQueryVariables
+  >({
     query: ANNOUNCEMENTS,
-    variables: {},
+    variables: { now: new Date() },
   });
 
   return data;

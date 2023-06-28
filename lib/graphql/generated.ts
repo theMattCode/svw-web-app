@@ -10,14 +10,13 @@ export type Scalars = {
   Boolean: boolean;
   Int: number;
   Float: number;
+  BlockContentsDynamicZoneInput: any;
   Date: any;
   DateTime: any;
   FooterContentsDynamicZoneInput: any;
   JSON: any;
   PageHeaderContentsDynamicZoneInput: any;
-  PageLeftContentsDynamicZoneInput: any;
   PageMainContentsDynamicZoneInput: any;
-  PageRightContentsDynamicZoneInput: any;
   Upload: any;
 };
 
@@ -154,6 +153,62 @@ export type ArticleInput = {
   teaser?: InputMaybe<Scalars['String']>;
   text?: InputMaybe<Scalars['String']>;
   title?: InputMaybe<Scalars['String']>;
+};
+
+export type Block = {
+  __typename?: 'Block';
+  bgColor?: Maybe<Scalars['String']>;
+  contents?: Maybe<Array<Maybe<BlockContentsDynamicZone>>>;
+  createdAt?: Maybe<Scalars['DateTime']>;
+  name?: Maybe<Scalars['String']>;
+  publishedAt?: Maybe<Scalars['DateTime']>;
+  title?: Maybe<Scalars['String']>;
+  updatedAt?: Maybe<Scalars['DateTime']>;
+};
+
+export type BlockContentsDynamicZone = ComponentBlockAnnouncements | ComponentBlockArticles | ComponentBlockArticlesPreviewList | ComponentBlockCarousel | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockRichTextTwoColumn | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedSpacing | Error;
+
+export type BlockEntity = {
+  __typename?: 'BlockEntity';
+  attributes?: Maybe<Block>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type BlockEntityResponse = {
+  __typename?: 'BlockEntityResponse';
+  data?: Maybe<BlockEntity>;
+};
+
+export type BlockEntityResponseCollection = {
+  __typename?: 'BlockEntityResponseCollection';
+  data: Array<BlockEntity>;
+  meta: ResponseCollectionMeta;
+};
+
+export type BlockFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<BlockFiltersInput>>>;
+  bgColor?: InputMaybe<StringFilterInput>;
+  createdAt?: InputMaybe<DateTimeFilterInput>;
+  id?: InputMaybe<IdFilterInput>;
+  name?: InputMaybe<StringFilterInput>;
+  not?: InputMaybe<BlockFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<BlockFiltersInput>>>;
+  publishedAt?: InputMaybe<DateTimeFilterInput>;
+  title?: InputMaybe<StringFilterInput>;
+  updatedAt?: InputMaybe<DateTimeFilterInput>;
+};
+
+export type BlockInput = {
+  bgColor?: InputMaybe<Scalars['String']>;
+  contents?: InputMaybe<Array<Scalars['BlockContentsDynamicZoneInput']>>;
+  name?: InputMaybe<Scalars['String']>;
+  publishedAt?: InputMaybe<Scalars['DateTime']>;
+  title?: InputMaybe<Scalars['String']>;
+};
+
+export type BlockRelationResponseCollection = {
+  __typename?: 'BlockRelationResponseCollection';
+  data: Array<BlockEntity>;
 };
 
 export type BooleanFilterInput = {
@@ -511,7 +566,7 @@ export type FooterInput = {
   socialMediaLinks?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
 };
 
-export type GenericMorph = Announcement | Article | Club | ComponentBlockAnnouncements | ComponentBlockArticles | ComponentBlockArticlesPreviewList | ComponentBlockCarousel | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockRichTextTwoColumn | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedLink | ComponentSharedLinkLists | ComponentSharedSpacing | Footer | Header | I18NLocale | Meta | Page | People | Shop | SocialMedia | Sponsor | Tag | UploadFile | UploadFolder | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser;
+export type GenericMorph = Announcement | Article | Block | Club | ComponentBlockAnnouncements | ComponentBlockArticles | ComponentBlockArticlesPreviewList | ComponentBlockCarousel | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockRichTextTwoColumn | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedLink | ComponentSharedLinkLists | ComponentSharedSpacing | Footer | Header | I18NLocale | Meta | Page | People | Shop | SocialMedia | Sponsor | Tag | UploadFile | UploadFolder | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser;
 
 export type Header = {
   __typename?: 'Header';
@@ -689,6 +744,7 @@ export type Mutation = {
   changePassword?: Maybe<UsersPermissionsLoginPayload>;
   createAnnouncement?: Maybe<AnnouncementEntityResponse>;
   createArticle?: Maybe<ArticleEntityResponse>;
+  createBlock?: Maybe<BlockEntityResponse>;
   createPage?: Maybe<PageEntityResponse>;
   createPeople?: Maybe<PeopleEntityResponse>;
   createShop?: Maybe<ShopEntityResponse>;
@@ -703,6 +759,7 @@ export type Mutation = {
   createUsersPermissionsUser: UsersPermissionsUserEntityResponse;
   deleteAnnouncement?: Maybe<AnnouncementEntityResponse>;
   deleteArticle?: Maybe<ArticleEntityResponse>;
+  deleteBlock?: Maybe<BlockEntityResponse>;
   deleteClub?: Maybe<ClubEntityResponse>;
   deleteFooter?: Maybe<FooterEntityResponse>;
   deleteHeader?: Maybe<HeaderEntityResponse>;
@@ -732,6 +789,7 @@ export type Mutation = {
   resetPassword?: Maybe<UsersPermissionsLoginPayload>;
   updateAnnouncement?: Maybe<AnnouncementEntityResponse>;
   updateArticle?: Maybe<ArticleEntityResponse>;
+  updateBlock?: Maybe<BlockEntityResponse>;
   updateClub?: Maybe<ClubEntityResponse>;
   updateFileInfo: UploadFileEntityResponse;
   updateFooter?: Maybe<FooterEntityResponse>;
@@ -767,6 +825,11 @@ export type MutationCreateAnnouncementArgs = {
 
 export type MutationCreateArticleArgs = {
   data: ArticleInput;
+};
+
+
+export type MutationCreateBlockArgs = {
+  data: BlockInput;
 };
 
 
@@ -826,6 +889,11 @@ export type MutationDeleteAnnouncementArgs = {
 
 
 export type MutationDeleteArticleArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type MutationDeleteBlockArgs = {
   id: Scalars['ID'];
 };
 
@@ -932,6 +1000,12 @@ export type MutationUpdateArticleArgs = {
 };
 
 
+export type MutationUpdateBlockArgs = {
+  data: BlockInput;
+  id: Scalars['ID'];
+};
+
+
 export type MutationUpdateClubArgs = {
   data: ClubInput;
 };
@@ -1028,19 +1102,26 @@ export type MutationUploadArgs = {
 
 export type Page = {
   __typename?: 'Page';
+  blocks?: Maybe<BlockRelationResponseCollection>;
   createdAt?: Maybe<Scalars['DateTime']>;
   description?: Maybe<Scalars['String']>;
   headerContents?: Maybe<Array<Maybe<PageHeaderContentsDynamicZone>>>;
-  leftContents?: Maybe<Array<Maybe<PageLeftContentsDynamicZone>>>;
   mainContents?: Maybe<Array<Maybe<PageMainContentsDynamicZone>>>;
   parentPage?: Maybe<PageEntityResponse>;
   publishedAt?: Maybe<Scalars['DateTime']>;
-  rightContents?: Maybe<Array<Maybe<PageRightContentsDynamicZone>>>;
   slug: Scalars['String'];
   subPages?: Maybe<PageRelationResponseCollection>;
   tags?: Maybe<TagRelationResponseCollection>;
   title: Scalars['String'];
   updatedAt?: Maybe<Scalars['DateTime']>;
+};
+
+
+export type PageBlocksArgs = {
+  filters?: InputMaybe<BlockFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
 
@@ -1078,6 +1159,7 @@ export type PageEntityResponseCollection = {
 
 export type PageFiltersInput = {
   and?: InputMaybe<Array<InputMaybe<PageFiltersInput>>>;
+  blocks?: InputMaybe<BlockFiltersInput>;
   createdAt?: InputMaybe<DateTimeFilterInput>;
   description?: InputMaybe<StringFilterInput>;
   id?: InputMaybe<IdFilterInput>;
@@ -1095,20 +1177,17 @@ export type PageFiltersInput = {
 export type PageHeaderContentsDynamicZone = ComponentBlockCarousel | Error;
 
 export type PageInput = {
+  blocks?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   description?: InputMaybe<Scalars['String']>;
   headerContents?: InputMaybe<Array<Scalars['PageHeaderContentsDynamicZoneInput']>>;
-  leftContents?: InputMaybe<Array<Scalars['PageLeftContentsDynamicZoneInput']>>;
   mainContents?: InputMaybe<Array<Scalars['PageMainContentsDynamicZoneInput']>>;
   parentPage?: InputMaybe<Scalars['ID']>;
   publishedAt?: InputMaybe<Scalars['DateTime']>;
-  rightContents?: InputMaybe<Array<Scalars['PageRightContentsDynamicZoneInput']>>;
   slug?: InputMaybe<Scalars['String']>;
   subPages?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   tags?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   title?: InputMaybe<Scalars['String']>;
 };
-
-export type PageLeftContentsDynamicZone = ComponentBlockAnnouncements | ComponentBlockArticles | ComponentBlockArticlesPreviewList | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedSpacing | Error;
 
 export type PageMainContentsDynamicZone = ComponentBlockAnnouncements | ComponentBlockArticles | ComponentBlockArticlesPreviewList | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockRichTextTwoColumn | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedSpacing | Error;
 
@@ -1116,8 +1195,6 @@ export type PageRelationResponseCollection = {
   __typename?: 'PageRelationResponseCollection';
   data: Array<PageEntity>;
 };
-
-export type PageRightContentsDynamicZone = ComponentBlockAnnouncements | ComponentBlockArticles | ComponentBlockArticlesPreviewList | ComponentBlockPersons | ComponentBlockRichText | ComponentBlockTaggedPersons | ComponentSharedFussballDeWidget | ComponentSharedSpacing | Error;
 
 export type Pagination = {
   __typename?: 'Pagination';
@@ -1214,6 +1291,8 @@ export type Query = {
   announcements?: Maybe<AnnouncementEntityResponseCollection>;
   article?: Maybe<ArticleEntityResponse>;
   articles?: Maybe<ArticleEntityResponseCollection>;
+  block?: Maybe<BlockEntityResponse>;
+  blocks?: Maybe<BlockEntityResponseCollection>;
   club?: Maybe<ClubEntityResponse>;
   footer?: Maybe<FooterEntityResponse>;
   header?: Maybe<HeaderEntityResponse>;
@@ -1264,6 +1343,19 @@ export type QueryArticleArgs = {
 
 export type QueryArticlesArgs = {
   filters?: InputMaybe<ArticleFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+};
+
+
+export type QueryBlockArgs = {
+  id?: InputMaybe<Scalars['ID']>;
+};
+
+
+export type QueryBlocksArgs = {
+  filters?: InputMaybe<BlockFiltersInput>;
   pagination?: InputMaybe<PaginationArg>;
   publicationState?: InputMaybe<PublicationState>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
@@ -2019,6 +2111,7 @@ export type MetaQuery = { __typename?: 'Query', meta?: { __typename?: 'MetaEntit
 
 export type AnnouncementsQueryVariables = Exact<{
   limit?: InputMaybe<Scalars['Int']>;
+  now?: InputMaybe<Scalars['DateTime']>;
 }>;
 
 
@@ -2045,7 +2138,7 @@ export type PageDataQueryVariables = Exact<{
 }>;
 
 
-export type PageDataQuery = { __typename?: 'Query', pages?: { __typename?: 'PageEntityResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string, description?: string | null, headerContents?: Array<{ __typename: 'ComponentBlockCarousel', id: string, maxArticles?: number | null } | { __typename: 'Error', code: string, message?: string | null } | null> | null, mainContents?: Array<{ __typename: 'ComponentBlockAnnouncements', id: string, title: string, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null } | { __typename: 'ComponentBlockArticles', id: string, pageSize: number, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null } | { __typename: 'ComponentBlockArticlesPreviewList', id: string, pageSize: number } | { __typename: 'ComponentBlockPersons', id: string, person?: { __typename?: 'PeopleEntityResponse', data?: { __typename?: 'PeopleEntity', id?: string | null, attributes?: { __typename?: 'People', firstname: string, lastname: string, description?: string | null, email?: string | null, telephone?: string | null, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null, picture?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null } | null } | null } | { __typename: 'ComponentBlockRichText', id: string, content?: string | null } | { __typename: 'ComponentBlockRichTextTwoColumn', id: string, leftContent?: string | null, rightContent?: string | null, leftFraction?: number | null, rightFraction?: number | null } | { __typename: 'ComponentBlockTaggedPersons', id: string, tag?: { __typename?: 'TagEntityResponse', data?: { __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null } | null } | null } | { __typename: 'ComponentSharedFussballDeWidget', id: string, key: string } | { __typename: 'ComponentSharedSpacing', id: string, width?: string | null, height?: string | null } | { __typename: 'Error', code: string, message?: string | null } | null> | null, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null } | null }> } | null };
+export type PageDataQuery = { __typename?: 'Query', pages?: { __typename?: 'PageEntityResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string, description?: string | null, headerContents?: Array<{ __typename: 'ComponentBlockCarousel', id: string, maxArticles?: number | null } | { __typename: 'Error', code: string, message?: string | null } | null> | null, mainContents?: Array<{ __typename: 'ComponentBlockAnnouncements', id: string, title: string, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null } | { __typename: 'ComponentBlockArticles', id: string, pageSize: number, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null } | { __typename: 'ComponentBlockArticlesPreviewList', id: string, pageSize: number } | { __typename: 'ComponentBlockPersons', id: string, person?: { __typename?: 'PeopleEntityResponse', data?: { __typename?: 'PeopleEntity', id?: string | null, attributes?: { __typename?: 'People', firstname: string, lastname: string, description?: string | null, email?: string | null, telephone?: string | null, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null, picture?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null } | null } | null } | { __typename: 'ComponentBlockRichText', id: string, content?: string | null } | { __typename: 'ComponentBlockRichTextTwoColumn', id: string, leftContent?: string | null, rightContent?: string | null, leftFraction?: number | null, rightFraction?: number | null } | { __typename: 'ComponentBlockTaggedPersons', id: string, tag?: { __typename?: 'TagEntityResponse', data?: { __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null } | null } | null } | { __typename: 'ComponentSharedFussballDeWidget', id: string, key: string } | { __typename: 'ComponentSharedSpacing', id: string, width?: string | null, height?: string | null } | { __typename: 'Error', code: string, message?: string | null } | null> | null, blocks?: { __typename: 'BlockRelationResponseCollection', data: Array<{ __typename: 'BlockEntity', id?: string | null, attributes?: { __typename: 'Block', title?: string | null, bgColor?: string | null, contents?: Array<{ __typename: 'ComponentBlockAnnouncements', id: string, title: string, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null } | { __typename: 'ComponentBlockArticles', id: string, pageSize: number, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null } | { __typename: 'ComponentBlockArticlesPreviewList', id: string, pageSize: number } | { __typename: 'ComponentBlockCarousel', id: string, maxArticles?: number | null } | { __typename: 'ComponentBlockPersons', id: string, person?: { __typename?: 'PeopleEntityResponse', data?: { __typename?: 'PeopleEntity', id?: string | null, attributes?: { __typename?: 'People', firstname: string, lastname: string, description?: string | null, email?: string | null, telephone?: string | null, tags?: { __typename?: 'TagRelationResponseCollection', data: Array<{ __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null }> } | null, picture?: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, width?: number | null, height?: number | null, hash: string, mime: string, name: string, provider: string, size: number } | null } | null } | null } | null } | null } | null } | { __typename: 'ComponentBlockRichText', id: string, content?: string | null } | { __typename: 'ComponentBlockRichTextTwoColumn', id: string, leftContent?: string | null, rightContent?: string | null, leftFraction?: number | null, rightFraction?: number | null } | { __typename: 'ComponentBlockTaggedPersons', id: string, tag?: { __typename?: 'TagEntityResponse', data?: { __typename?: 'TagEntity', id?: string | null, attributes?: { __typename?: 'Tag', name: string } | null } | null } | null } | { __typename: 'ComponentSharedFussballDeWidget', id: string, key: string } | { __typename: 'ComponentSharedSpacing', id: string, width?: string | null, height?: string | null } | { __typename: 'Error', code: string, message?: string | null } | null> | null } | null }> } | null, subPages?: { __typename?: 'PageRelationResponseCollection', data: Array<{ __typename?: 'PageEntity', id?: string | null, attributes?: { __typename?: 'Page', title: string, slug: string } | null }> } | null } | null }> } | null };
 
 export type TaggedPeopleQueryVariables = Exact<{
   tagId: Scalars['ID'];
