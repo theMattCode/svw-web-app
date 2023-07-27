@@ -1,13 +1,13 @@
-type Props = { title: string; bgColor?: string };
+type Props = { title: string };
 
-export function BlockTitle({ title, bgColor = "bg-svw-blue-darker" }: Props) {
+export function BlockTitle({ title }: Props) {
   return (
     <div className="w-full flex py-2">
-      <div className="container flex bg-svw-blue-dark">
-        <div className="text-white text-3xl font-bold uppercase px-6 py-3">
+      <div className="container flex md:gap-1.5">
+        <div className="bg-svw-blue-dark text-white text-3xl font-bold uppercase px-6 py-3">
           {title}
         </div>
-        <div className="w-1.5 h-full" style={{ backgroundColor: bgColor }} />
+        <div className="bg-svw-blue-dark w-full" />
       </div>
     </div>
   );

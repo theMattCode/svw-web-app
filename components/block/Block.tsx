@@ -15,9 +15,7 @@ export function Block({ block, params, searchParams }: Props) {
       className="w-full pb-8 bg-svw-blue-darker"
       style={{ backgroundColor: block.bgColor ?? "" }}
     >
-      {block.title && (
-        <BlockTitle title={block.title} bgColor={block.bgColor ?? undefined} />
-      )}
+      {block.title && <BlockTitle title={block.title} />}
       {block.contents &&
         block.contents.length > 0 &&
         block.contents.map((content) => {
