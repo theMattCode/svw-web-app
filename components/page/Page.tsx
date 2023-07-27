@@ -15,7 +15,7 @@ export function Page({ pageData, params, searchParams }: Props): JSX.Element {
   const { mainContents, headerContents, blocks } = pageData;
   return (
     <>
-      <div className="md:min-h-[4em] border-t-2 border-white bg-svw-blue-dark">
+      <div className="md:min-h-[4em] border-t-2 border-white bg-svw-blue-darker">
         {headerContents && (
           <div className="flex flex-row w-full">
             {headerContents?.map((content) => {

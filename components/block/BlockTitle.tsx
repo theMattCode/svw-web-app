@@ -2,9 +2,12 @@ type Props = { title: string };
 
 export function BlockTitle({ title }: Props) {
   return (
-    <div className="container flex justify-center md:justify-start">
-      <div className="text-white bg-svw-blue-dark w-fit ribbon-heading px-4 pt-4 pb-2 mb-12">
-        <div className="text-3xl font-bold uppercase">{title}</div>
+    <div className="w-full flex py-2">
+      <div className="container flex md:gap-1.5">
+        <div className="bg-svw-blue-dark text-white text-3xl font-bold uppercase px-6 py-3">
+          {title}
+        </div>
+        <div className="bg-svw-blue-dark w-full" />
       </div>
     </div>
   );
