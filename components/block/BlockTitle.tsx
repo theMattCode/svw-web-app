@@ -1,10 +1,13 @@
-type Props = { title: string };
+type Props = { title: string; bgColor?: string };
 
-export function BlockTitle({ title }: Props) {
+export function BlockTitle({ title, bgColor = "bg-svw-blue-darker" }: Props) {
   return (
-    <div className="container flex justify-center md:justify-start">
-      <div className="text-white bg-svw-blue-dark w-fit ribbon-heading px-4 pt-4 pb-2 mb-12">
-        <div className="text-3xl font-bold uppercase">{title}</div>
+    <div className="w-full flex py-2">
+      <div className="container flex bg-svw-blue-dark">
+        <div className="text-white text-3xl font-bold uppercase px-6 py-3">
+          {title}
+        </div>
+        <div className="w-1.5 h-full" style={{ backgroundColor: bgColor }} />
       </div>
     </div>
   );

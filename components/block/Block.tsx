@@ -12,10 +12,12 @@ type Props = {
 export function Block({ block, params, searchParams }: Props) {
   return (
     <div
-      className="w-full md:px-4 pb-8 bg-svw-blue-darker"
+      className="w-full pb-8 bg-svw-blue-darker"
       style={{ backgroundColor: block.bgColor ?? "" }}
     >
-      {block.title && <BlockTitle title={block.title} />}
+      {block.title && (
+        <BlockTitle title={block.title} bgColor={block.bgColor ?? undefined} />
+      )}
       {block.contents &&
         block.contents.length > 0 &&
         block.contents.map((content) => {
