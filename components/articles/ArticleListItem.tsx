@@ -23,8 +23,8 @@ export function ArticleListItem({ article }: Props): JSX.Element {
           className="w-full md:w-72 md:min-w-[18rem] h-80 md:h-44 object-cover"
           src={getFullAssetUrl(picture.url)}
           alt=""
-          width={picture.width ?? 0}
-          height={picture.height ?? 0}
+          width={280}
+          height={280}
         />
       )}
       <div className="w-full flex flex-col justify-start">
