@@ -19,15 +19,15 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl
+    @apply text-2xl pt-4
 }
 
 h3 {
-    @apply text-xl
+    @apply text-xl pt-3
 }
 
 h4 {
-    @apply text-lg
+    @apply text-lg pt-2
 }
 
 h5 {
