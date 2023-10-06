@@ -14,24 +14,28 @@ type HeaderProps = {
 
 export function Header({ headerData, clubData }: HeaderProps): JSX.Element {
   return (
-    <header>
-      <SmallScreenHeader headerData={headerData} clubData={clubData} />
-      <LargeScreenHeader headerData={headerData} />
-    </header>
+    <>
+      <div className="md:hidden">
+        <SmallScreenHeader headerData={headerData} clubData={clubData} />
+      </div>
+      <div className="hidden">
+        <LargeScreenHeader headerData={headerData} />
+      </div>
+    </>
   );
 }
 
 function SmallScreenHeader({ headerData, clubData }: HeaderProps): JSX.Element {
   return (
-    <div className="md:hidden flex flex-row place-content-between h-16 align-middle bg-svw-blue-default text-white pl-2 gap-2">
-      {clubData?.logo?.data?.attributes?.url && (
+    <div className="flex flex-row place-content-between h-12 align-middle bg-svw-blue-dark border-b-2 text-white gap-2">
+      {clubData?.emblem?.data?.attributes?.url && (
         <Link href="/">
           <Image
-            src={getFullAssetUrl(clubData.logo.data.attributes.url)}
+            src={getFullAssetUrl(clubData.emblem.data.attributes.url)}
             alt=""
-            width={48}
-            height={48}
-            className="h-16"
+            width={64}
+            height={64}
+            className="h-16 m-2"
           />
         </Link>
       )}

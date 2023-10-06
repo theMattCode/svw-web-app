@@ -24,6 +24,9 @@ export const HOMEPAGE = gql`
           logo {
             ...FileFragment
           }
+          emblem {
+            ...FileFragment
+          }
         }
       }
     }

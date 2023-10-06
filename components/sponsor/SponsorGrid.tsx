@@ -12,7 +12,7 @@ function shuffle(): number {
 export default function SponsorGrid({ sponsors }: Props): JSX.Element | null {
   if (!sponsors) return null;
   return (
-    <div className="bg-svw-blue-dark border-t border-svw-blue-default py-4">
+    <div className="bg-svw-blue-dark border-t-4 border-svw-blue-default py-4">
       <div className="container">
         <h2 className="flex flex-row justify-center text-white">
           Unsere Partner
