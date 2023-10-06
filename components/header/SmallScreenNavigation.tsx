@@ -26,8 +26,8 @@ export default function SmallScreenNavigation({
         <FaBars />
       </button>
       <ul
-        className={`absolute right-0 top-16 w-full border-t-2 border-white bg-svw-blue-darker text-white ${
-          open ? "visible z-30" : "hidden"
+        className={`absolute right-0 top-12 pt-4 w-full bg-svw-blue-darker text-white ${
+          open ? "visible z-40" : "hidden"
         }`}
       >
         {headerData?.navigationLinks?.data.map((menuItem) => {
