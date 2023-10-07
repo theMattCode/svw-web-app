@@ -1,10 +1,9 @@
-import { ClubData, FooterData } from "#/app/data.gql";
+import { FooterData } from "#/app/data.gql";
 import { LinkList } from "#/components/linklist/LinkList";
 import { club } from "#/content/club";
 
 type FooterProps = {
   footerData: FooterData | null;
-  clubData: ClubData | null;
 };
 
 export default function Footer({ footerData }: FooterProps): JSX.Element {
@@ -34,8 +33,7 @@ export default function Footer({ footerData }: FooterProps): JSX.Element {
         </div>
       </div>
       <div className="container px-4 py-2 border-t border-neutral-400 text-neutral-600">
-        <div>{footerData?.copyright}</div>
-        <div></div>
+        <div>{club.copyright}</div>
       </div>
     </footer>
   );

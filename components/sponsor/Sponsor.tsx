@@ -1,30 +1,27 @@
-import { SponsorEntity } from "#/lib/graphql/generated";
+import type { Sponsor } from "#/content/sponsor";
 import { OptionalLink } from "#/components/link/Link";
 import Image from "next/image";
-import { getFullAssetUrl } from "#/lib/asset";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 
-export function Sponsor({
-  sponsor,
-}: {
-  sponsor: SponsorEntity;
-}): JSX.Element | null {
-  const imageAttributes = sponsor.attributes?.image?.data?.attributes;
-  if (imageAttributes) {
-    return (
-      <OptionalLink
-        href={sponsor.attributes?.url}
-        target="_blank"
-        className="shadow-xl bg-white p-2 flex justify-center content-center w-full hover:scale-105"
-      >
-        <Image
-          src={getFullAssetUrl(imageAttributes?.url)}
-          alt={imageAttributes.name}
-          width={imageAttributes.width ?? 100}
-          height={imageAttributes.height ?? 100}
-          className="object-contain sm:h-48 h-full w-full"
-        />
-      </OptionalLink>
-    );
-  }
-  return null;
+type Props = {
+  sponsor: Sponsor;
+};
+
+export function Sponsor({ sponsor }: Props): JSX.Element | null {
+  const dimensions = calcImageDimensionsForWidth(sponsor.image, 192);
+  return (
+    <OptionalLink
+      href={sponsor.url}
+      target="_blank"
+      className="shadow-xl bg-white p-2 flex justify-center content-center w-full"
+    >
+      <Image
+        src={sponsor.image.url}
+        alt={sponsor.name}
+        width={dimensions.width}
+        height={dimensions.height}
+        className="object-contain sm:h-48 h-full w-full"
+      />
+    </OptionalLink>
+  );
 }

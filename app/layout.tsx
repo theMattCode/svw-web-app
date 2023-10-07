@@ -1,12 +1,10 @@
 import "#/styles/globals.css";
-import React, { PropsWithChildren, Suspense } from "react";
+import React, { PropsWithChildren } from "react";
 import Footer from "#/components/footer/Footer";
 import { fetchBasicData, fetchMeta } from "#/app/data.gql";
 import SponsorGrid from "#/components/sponsor/SponsorGrid";
 import { Metadata } from "next";
-import { getFullAssetUrl } from "#/lib/asset";
 import { Navigation } from "#/components/navigation/Navigation";
-import { club } from "#/content/club";
 
 export async function generateMetadata(): Promise<Metadata> {
   const data = await fetchMeta();
@@ -27,7 +25,6 @@ export default async function Layout({
 }: PropsWithChildren): Promise<JSX.Element> {
   const data = await fetchBasicData();
   const footerData = data?.footer?.data?.attributes ?? null;
-  const clubData = data?.club?.data?.attributes ?? null;
   return (
     <html lang="de">
       <head>
@@ -42,8 +39,8 @@ export default async function Layout({
 
         <header className="bg-svw-blue-dark">hero</header>
         <main className="h-screen">{children}</main>
-        <SponsorGrid sponsors={data.sponsors?.data} />
-        <Footer footerData={footerData} clubData={clubData} />
+        <SponsorGrid />
+        <Footer footerData={footerData} />
       </body>
     </html>
   );
