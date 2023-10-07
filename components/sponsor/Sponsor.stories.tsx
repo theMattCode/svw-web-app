@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Sponsor } from "#/components/sponsor/Sponsor";
-import { createUploadFileEntityResponse } from "#/lib/graphql/mock/upload";
+import { sponsors } from "#/content/sponsor";
 
 const meta: Meta = {
   title: "Components/Sponsor/Sponsor",
@@ -13,18 +13,7 @@ export const SponsorWithLink: StoryObj = {
   render: () => {
     return (
       <div className="p-6 bg-gray-100">
-        <Sponsor
-          sponsor={{
-            id: "1",
-            __typename: "SponsorEntity",
-            attributes: {
-              __typename: "Sponsor",
-              name: "Sponsoring GmbH",
-              url: "#",
-              image: createUploadFileEntityResponse(),
-            },
-          }}
-        />
+        <Sponsor sponsor={sponsors.find((candidate) => candidate.url)!} />
       </div>
     );
   },
@@ -35,15 +24,7 @@ export const SponsorWithoutLink: StoryObj = {
     return (
       <div className="p-6 bg-gray-100">
         <Sponsor
-          sponsor={{
-            id: "1",
-            __typename: "SponsorEntity",
-            attributes: {
-              __typename: "Sponsor",
-              name: "Sponsoring GmbH",
-              image: createUploadFileEntityResponse(),
-            },
-          }}
+          sponsor={sponsors.find((candidate) => candidate.url === null)!}
         />
       </div>
     );

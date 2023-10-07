@@ -1,3 +1,14 @@
+export type Club = {
+  name: string;
+  short: string;
+  abbreviation: string;
+  address: { street: string; zip: string; city: string };
+  contact: { telephone: string; telefax: string; email: string };
+  logo: string;
+  emblem: string;
+  copyright: string;
+};
+
 export const club = {
   name: "Sportverein Walddorf 1904 e.V.",
   short: "SV Walddorf",
@@ -14,9 +25,15 @@ export const club = {
   },
   logo: "media/svw-logo.svg",
   emblem: "media/svw-emblem.svg",
+  copyright: "© Offizielle Website des SV Walddorf 1904 e.V.",
 };
 
-export const shops = [
+export type Shop = {
+  name: string;
+  url: string;
+};
+
+export const shops: Shop[] = [
   {
     name: "SVW",
     url: "https://verein.baechi-teamsport.de/SV-Walddorf",

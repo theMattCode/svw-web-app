@@ -1,16 +1,16 @@
-import { SponsorEntity } from "#/lib/graphql/generated";
 import { Sponsor } from "#/components/sponsor/Sponsor";
+import { sponsors as sponsorData } from "#/content/sponsor";
 
 type Props = {
-  sponsors?: SponsorEntity[] | null;
+  shuffle?: boolean;
 };
 
-function shuffle(): number {
+function shuffleFn(): number {
   return 0.5 - Math.random();
 }
 
-export default function SponsorGrid({ sponsors }: Props): JSX.Element | null {
-  if (!sponsors) return null;
+export default function SponsorGrid({ shuffle = false }: Props): JSX.Element {
+  const sponsors = shuffle ? sponsorData?.sort(shuffleFn) : sponsorData;
   return (
     <div className="bg-svw-blue-dark border-t-4 border-svw-blue-default py-4">
       <div className="container">
@@ -18,8 +18,8 @@ export default function SponsorGrid({ sponsors }: Props): JSX.Element | null {
           Unsere Partner
         </h2>
         <div className="p-3 flex flex-col items-center sm:grid sm:grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
-          {sponsors?.sort(shuffle).map((sponsor) => (
-            <Sponsor key={sponsor.id} sponsor={sponsor} />
+          {sponsors.map((sponsor) => (
+            <Sponsor key={sponsor.name} sponsor={sponsor} />
           ))}
         </div>
       </div>
