@@ -24,7 +24,7 @@ export function LargeScreenNavigation({ headerData }: Props): JSX.Element {
               alt=""
               width={128}
               height={128}
-              className="h-32"
+              className="h-32 opacity-100"
               style={{ transform: "translateY(-20px)" }}
             />
           </Link>

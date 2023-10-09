@@ -1,9 +1,5 @@
 import { setupServer, SetupServerApi } from "msw/node";
 
-function setupGraphQLServer(): SetupServerApi {
-  return setupServer();
-}
-
-const server: SetupServerApi = setupGraphQLServer();
+const server = setupServer();
 
 export default server;
