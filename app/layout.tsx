@@ -39,7 +39,7 @@ export default async function Layout({
 
         <main className="">{children}</main>
         <SponsorGrid />
-        <Footer footerData={footerData} />
+        <Footer />
       </body>
     </html>
   );
