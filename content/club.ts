@@ -23,8 +23,8 @@ export const club = {
     telefax: "+49 7127 580616",
     email: "info@svwalddorf.de",
   },
-  logo: "media/svw-logo.svg",
-  emblem: "media/svw-emblem.svg",
+  logo: "/media/svw-logo.svg",
+  emblem: "/media/svw-emblem.svg",
   copyright: "© Offizielle Website des SV Walddorf 1904 e.V.",
 };
 

@@ -37,8 +37,7 @@ export default async function Layout({
       <body className="flex flex-col">
         <Navigation />
 
-        <header className="bg-svw-blue-dark">hero</header>
-        <main className="h-screen">{children}</main>
+        <main className="">{children}</main>
         <SponsorGrid />
         <Footer footerData={footerData} />
       </body>

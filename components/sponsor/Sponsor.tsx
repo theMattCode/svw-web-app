@@ -20,7 +20,7 @@ export function Sponsor({ sponsor }: Props): JSX.Element | null {
         alt={sponsor.name}
         width={dimensions.width}
         height={dimensions.height}
-        className="object-contain sm:h-48 h-full w-full"
+        className="transition-all object-contain sm:h-48 h-full w-full"
       />
     </OptionalLink>
   );
