@@ -34,7 +34,7 @@ export default async function Layout({
         <Navigation />
 
         <main className="">{children}</main>
-        <SponsorGrid />
+        <SponsorGrid shuffle={true} />
         <Footer />
       </body>
     </html>
