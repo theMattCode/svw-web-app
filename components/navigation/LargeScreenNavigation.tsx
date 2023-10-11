@@ -15,7 +15,7 @@ export function LargeScreenNavigation() {
           </Link>
           {item.subMenu && (
             <div className="absolute left-0 py-4 hidden group-hover:block w-full bg-svw-blue-dark text-white">
-              <div className="container gap-8 columns-2 lg:columns-3">
+              <div className="container px-4 gap-8 columns-2 lg:columns-3">
                 {item.subMenu.map((subPage) => (
                   <div
                     key={subPage.name}
