@@ -17,6 +17,9 @@ module.exports = {
           darkest: "#00173F",
         },
       },
+      backgroundImage: {
+        hero: "url('/media/hero/bg.jpg')",
+      },
       // that is animation class
       animation: {
         fade: "fadeOut 8s ease-in-out",

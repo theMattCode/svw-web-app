@@ -9,9 +9,9 @@ export type Club = {
   copyright: string;
 };
 
-export const club = {
+export const club: Club = {
   name: "Sportverein Walddorf 1904 e.V.",
-  short: "SV Walddorf",
+  short: "SV Walddorf 1904 e.V.",
   abbreviation: "SVW",
   address: {
     street: "Weiherwiesen 5",

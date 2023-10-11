@@ -1,11 +1,11 @@
-import { menu } from "#/content/menu";
+import { sitemap } from "#/content/sitemap";
 import Link from "next/link";
 import React from "react";
 
 export function LargeScreenNavigation() {
   return (
     <div className="transition-all z-30 hidden md:flex h-full w-full justify-center">
-      {menu.map((item) => (
+      {sitemap.map((item) => (
         <div key={item.name} className="group">
           <Link
             href={item.url}
@@ -15,7 +15,7 @@ export function LargeScreenNavigation() {
           </Link>
           {item.subMenu && (
             <div className="absolute left-0 py-4 hidden group-hover:block w-full bg-svw-blue-dark text-white">
-              <div className="container gap-8 columns-2 lg:columns-3">
+              <div className="container px-4 gap-8 columns-2 lg:columns-3">
                 {item.subMenu.map((subPage) => (
                   <div
                     key={subPage.name}

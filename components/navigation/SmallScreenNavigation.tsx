@@ -2,9 +2,10 @@
 
 import { FaBars, FaX } from "react-icons/fa6";
 import React, { useState } from "react";
-import { menu, MenuItem } from "#/content/menu";
+import { sitemap, MenuItem } from "#/content/sitemap";
 import Link from "next/link";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaFileSignature, FaShoppingCart } from "react-icons/fa";
+import { shops } from "#/content/club";
 
 export function SmallScreenNavigation() {
   const [open, setOpen] = useState<boolean>(false);
@@ -21,15 +22,38 @@ export function SmallScreenNavigation() {
         {open && <FaX />}
         {!open && <FaBars />}
       </button>
-      <ul
+      <div
         className={`${
-          open ? "block" : "hidden h-0"
-        } transition-all w-full absolute right-0 top-10 p-2 pt-6 bg-svw-blue-dark text-white`}
+          open ? "flex flex-col" : "hidden h-0"
+        } transition-all w-full absolute right-0 top-12 p-2 pt-6 bg-svw-blue-dark text-white`}
       >
-        {menu.map((item) => (
-          <ListItem key={item.name} item={item} onClick={close} />
-        ))}
-      </ul>
+        <ul className="transition-all w-full">
+          {sitemap.map((item) => (
+            <ListItem key={item.name} item={item} onClick={close} />
+          ))}
+        </ul>
+        <div className="pt-2 flex flex-wrap gap-2 justify-center">
+          {shops.map((shop) => (
+            <Link
+              key={shop.name}
+              target="_blank"
+              href={shop.url}
+              className="flex items-center px-1.5 py-1 gap-1.5 hover:bg-svw-blue-darker whitespace-nowrap"
+            >
+              <FaShoppingCart />
+              <span>{shop.name}</span>
+            </Link>
+          ))}
+          <Link
+            key="Mitglied werden"
+            href="/mitglied-werden"
+            className="flex items-center px-1.5 py-1 gap-1.5 hover:bg-svw-blue-darker whitespace-nowrap"
+          >
+            <FaFileSignature />
+            <span>Mitglied werden</span>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
