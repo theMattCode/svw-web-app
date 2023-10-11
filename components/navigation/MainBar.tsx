@@ -7,26 +7,26 @@ import { LargeScreenNavigation } from "#/components/navigation/LargeScreenNaviga
 
 export function MainBar() {
   return (
-    <div data-tid="nav-main-bar" className="transition-all h-10 md:h-12">
-      <div className="transition-all md:container flex justify-between md:justify-start items-center pl-2 h-10 md:h-12 text-svw-blue-darkest">
+    <div data-tid="nav-main-bar" className="transition-all">
+      <div className="transition-all md:container flex justify-between md:justify-start items-center pl-2 h-12 md:h-12">
         <Link href="/" className="z-50">
           <Image
             src={club.emblem}
-            width={92}
-            height={92}
+            width={100}
+            height={100}
             alt={club.name}
-            className="transition-all hidden md:block h-20"
+            className="transition-all hidden md:block"
           />
           <Image
             src={club.emblem}
-            width={48}
-            height={48}
+            width={64}
+            height={64}
             alt={club.name}
-            className="transition-all md:hidden h-14 translate-y-2"
+            className="transition-all md:hidden translate-y-3"
           />
         </Link>
         <LargeScreenNavigation />
-        <span className="transition-all md:hidden px-4 text-center text-sm">
+        <span className="transition-all md:hidden px-4 text-center">
           {club.name}
         </span>
         <SmallScreenNavigation />

@@ -13,7 +13,7 @@ export default function SponsorGrid({ shuffle = false }: Props): JSX.Element {
   const sponsors = shuffle ? sponsorData?.sort(shuffleFn) : sponsorData;
   return (
     <div className="bg-svw-blue-dark border-t-4 border-svw-blue-default py-1">
-      <div className="container">
+      <div className="transition-all container">
         <h2 className="flex flex-row justify-center text-white">
           Unsere Partner
         </h2>

@@ -4,7 +4,7 @@ export type MenuItem = {
   subMenu?: MenuItem[];
 };
 
-export const menu: MenuItem[] = [
+export const sitemap: MenuItem[] = [
   {
     name: "Verein",
     url: "/verein",
@@ -63,4 +63,15 @@ export const menu: MenuItem[] = [
     ],
   },
   { name: "Aktuelles", url: "/aktuelles" },
+];
+
+export const activities: MenuItem[] = [
+  { name: "Badminton", url: "/badminton" },
+  { name: "Fußball", url: "/fussball" },
+  { name: "Yoga", url: "/yoga" },
+  { name: "Power Fitness", url: "/power-fitness" },
+  { name: "Gymnastik 65plus", url: "/gymnastik-65plus" },
+  { name: "Teen Dance", url: "/teen-dance" },
+  { name: "Fit und Gesund", url: "/fit-und-gesund" },
+  { name: "Reha-Sport", url: "/rehasport" },
 ];

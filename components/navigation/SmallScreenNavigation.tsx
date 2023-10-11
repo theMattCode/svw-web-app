@@ -2,7 +2,7 @@
 
 import { FaBars, FaX } from "react-icons/fa6";
 import React, { useState } from "react";
-import { menu, MenuItem } from "#/content/menu";
+import { sitemap, MenuItem } from "#/content/sitemap";
 import Link from "next/link";
 import { FaChevronDown, FaFileSignature, FaShoppingCart } from "react-icons/fa";
 import { shops } from "#/content/club";
@@ -25,10 +25,10 @@ export function SmallScreenNavigation() {
       <div
         className={`${
           open ? "flex flex-col" : "hidden h-0"
-        } transition-all w-full absolute right-0 top-10 p-2 pt-6 bg-svw-blue-dark text-white`}
+        } transition-all w-full absolute right-0 top-12 p-2 pt-6 bg-svw-blue-dark text-white`}
       >
         <ul className="transition-all w-full">
-          {menu.map((item) => (
+          {sitemap.map((item) => (
             <ListItem key={item.name} item={item} onClick={close} />
           ))}
         </ul>

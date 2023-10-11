@@ -1,11 +1,11 @@
-import { menu } from "#/content/menu";
+import { sitemap } from "#/content/sitemap";
 import Link from "next/link";
 import React from "react";
 
 export function LargeScreenNavigation() {
   return (
     <div className="transition-all z-30 hidden md:flex h-full w-full justify-center">
-      {menu.map((item) => (
+      {sitemap.map((item) => (
         <div key={item.name} className="group">
           <Link
             href={item.url}
