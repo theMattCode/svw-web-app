@@ -1,16 +1,16 @@
-import { AnnouncementEntity } from "#/lib/graphql/generated";
 import { Carousel } from "#/components/carousel/Carousel";
-import { Announcement } from "#/components/announcements/Announcement";
+import { AnnouncementItem } from "#/components/announcements/AnnouncementItem";
+import { Announcement } from "#/content/announcements";
 
 type Props = {
-  announcements: AnnouncementEntity[];
+  announcements: Announcement[];
 };
 
 export function AnnouncementsCarousel({ announcements }: Props) {
   return (
     <Carousel>
       {announcements?.map((announcement) => (
-        <Announcement key={announcement.id} announcement={announcement} />
+        <AnnouncementItem key={announcement.slug} announcement={announcement} />
       ))}
     </Carousel>
   );
