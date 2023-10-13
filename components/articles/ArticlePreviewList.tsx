@@ -11,9 +11,9 @@ type Props = {
   pageSize: number;
 };
 
-export async function PreviewList({
+export async function ArticlePreviewList({
   pageSize = DEFAULT_PAGE_SIZE,
-}: Props): Promise<JSX.Element> {
+}: Props) {
   const { data } = await graphqlClient.query<
     ArticlesQuery,
     ArticlesQueryVariables
@@ -22,8 +22,11 @@ export async function PreviewList({
     variables: { page: 1, pageSize: pageSize },
   });
   return (
-    <div className="bg-svw-blue-darker w-full md:px-4">
-      <div className="container flex flex-col gap-4">
+    <div className="bg-svw-blue-darker w-full p-4">
+      <div className="container flex flex-col gap-4 items-center">
+        <div className="font-bold text-white text-3xl md:-translate-x-0.5">
+          Aktuelles
+        </div>
         {data.articles?.data.map((article) => {
           if (article.attributes) {
             return (
@@ -31,13 +34,11 @@ export async function PreviewList({
             );
           }
         })}
-      </div>
-      <span className="container pl-2 pt-4 pb-8 flex flex-row ">
         <Link href="/aktuelles" className="flex flex-row gap-1 items-center">
           <FaChevronRight className="text-svw-blue-default" />
-          <h3 className="text-white">Weitere Artikel</h3>
+          <div className="text-white">Weitere Artikel</div>
         </Link>
-      </span>
+      </div>
     </div>
   );
 }

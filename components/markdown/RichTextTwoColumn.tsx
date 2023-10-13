@@ -1,4 +1,4 @@
-import RichText from "#/components/richtext/RichText";
+import Markdown from "#/components/markdown/Markdown";
 
 type Props = {
   leftContent?: string | null;
@@ -51,10 +51,10 @@ export default function RichTextTwoColumn({
   return (
     <div className={`container grid grid-cols-1 gap-4 ${gridTemplateColumns}`}>
       <div>
-        <RichText content={leftContent} />
+        <Markdown content={leftContent} />
       </div>
       <div>
-        <RichText content={rightContent} />
+        <Markdown content={rightContent} />
       </div>
     </div>
   );

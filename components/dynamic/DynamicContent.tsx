@@ -1,5 +1,5 @@
 import { ArticleCarousel } from "#/components/carousel/ArticleCarousel";
-import RichText from "#/components/richtext/RichText";
+import Markdown from "#/components/markdown/Markdown";
 import { Spacing } from "#/components/spacing/Spacing";
 import {
   BlockContentsDynamicZone,
@@ -7,13 +7,12 @@ import {
   PageMainContentsDynamicZone,
 } from "#/lib/graphql/generated";
 import { TaggedPersons } from "#/components/person/TaggedPersons";
-import { PreviewList } from "#/components/articles/PreviewList";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
 import { Person } from "#/components/person/Person";
-import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
-import { Announcements } from "#/components/announcements/Announcements";
+import RichTextTwoColumn from "#/components/markdown/RichTextTwoColumn";
 
 type Props = {
   component:
@@ -35,7 +34,7 @@ export function DynamicContent({
       return <ArticleCarousel maxItems={component.maxArticles ?? 3} />;
 
     case "ComponentBlockRichText":
-      return <RichText content={component.content} />;
+      return <Markdown content={component.content} />;
 
     case "ComponentBlockRichTextTwoColumn":
       return (
@@ -57,15 +56,9 @@ export function DynamicContent({
       /* @ts-expect-error Server Component */
       return <TaggedPersons tagId={component.tag?.data?.id ?? null} />;
 
-    case "ComponentBlockAnnouncements":
-      return (
-        /* @ts-expect-error Server Component */
-        <Announcements title={component.title} tags={component.tags?.data} />
-      );
-
     case "ComponentBlockArticlesPreviewList":
       /* @ts-expect-error Server Component */
-      return <PreviewList pageSize={component.pageSize} />;
+      return <ArticlePreviewList pageSize={component.pageSize} />;
 
     case "ComponentBlockArticles": {
       const page = Number.parseInt(searchParams?.page ?? "1");

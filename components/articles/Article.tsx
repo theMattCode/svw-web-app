@@ -1,7 +1,7 @@
 import graphqlClient from "#/lib/graphql/graphqlClient";
 import { ArticleQuery, ArticleQueryVariables } from "#/lib/graphql/generated";
 import { ARTICLE_QUERY } from "#/components/articles/articles.gql";
-import RichText from "#/components/richtext/RichText";
+import Markdown from "#/components/markdown/Markdown";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import { formatDate } from "#/lib/format";
@@ -46,7 +46,7 @@ async function LoadingArticle({ slug }: Props): Promise<JSX.Element | null> {
       <h1>{article.attributes?.title}</h1>
       <div className="text-sm">{formatDate(article.attributes?.date)}</div>
 
-      <RichText
+      <Markdown
         key={article.attributes?.slug}
         content={article.attributes?.text}
       />

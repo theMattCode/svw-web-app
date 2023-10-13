@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
+import RichTextTwoColumn from "#/components/markdown/RichTextTwoColumn";
 
 const content: string = `# h1 - Lorem Ipsum Dolor Sit Amet
 

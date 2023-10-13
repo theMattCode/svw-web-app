@@ -1,11 +1,13 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getFullAssetUrl } from "#/lib/asset";
+import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   content?: string | null;
 };
-export default function RichText({ content }: Props): JSX.Element | null {
+export default function Markdown({ content }: Props): JSX.Element | null {
   if (content) {
     return (
       <div className="container">
@@ -47,20 +49,25 @@ export default function RichText({ content }: Props): JSX.Element | null {
               </td>
             ),
             img: (props) => (
-              <img
+              <Image
                 className="w-full"
                 alt={props.alt ?? ""}
-                src={getFullAssetUrl(props.src ?? "")}
+                src={props.src ?? ""}
               />
             ),
-            a: (props) => (
-              <a
-                href={getFullAssetUrl(props.href ?? "")}
-                className="text-svw-blue-default font-medium"
-              >
-                {props.children}
-              </a>
-            ),
+            a: (props) => {
+              if (props.href) {
+                return (
+                  <Link
+                    href={props.href}
+                    className="text-svw-blue-default font-medium"
+                  >
+                    {props.children}
+                  </Link>
+                );
+              }
+              return <>{props.children}</>;
+            },
             p: ({ children }) => <p className="font-light pt-2">{children}</p>,
             blockquote: ({ children }) => (
               <blockquote className="flex flex-row divide-x">
