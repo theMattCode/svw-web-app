@@ -7,7 +7,7 @@ import {
   PageMainContentsDynamicZone,
 } from "#/lib/graphql/generated";
 import { TaggedPersons } from "#/components/person/TaggedPersons";
-import { PreviewList } from "#/components/articles/PreviewList";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
@@ -58,7 +58,7 @@ export function DynamicContent({
 
     case "ComponentBlockArticlesPreviewList":
       /* @ts-expect-error Server Component */
-      return <PreviewList pageSize={component.pageSize} />;
+      return <ArticlePreviewList pageSize={component.pageSize} />;
 
     case "ComponentBlockArticles": {
       const page = Number.parseInt(searchParams?.page ?? "1");

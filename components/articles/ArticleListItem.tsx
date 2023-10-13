@@ -16,7 +16,7 @@ export function ArticleListItem({ article }: Props): JSX.Element {
   return (
     <Link
       href={`news/${article.slug}`}
-      className="flex flex-col md:flex-row gap-4 bg-neutral-100 p-2 shadow-2xl hover:scale-[1.02]"
+      className="flex flex-col w-full md:flex-row gap-4 bg-neutral-100 p-2 shadow-2xl"
     >
       {picture?.url && (
         <Image
