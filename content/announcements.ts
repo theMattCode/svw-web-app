@@ -9,6 +9,8 @@ export type Announcement = {
   mdContent: string;
 };
 
-export const announcementFiles = [
-  "2023-08-14_Wiedereröffnung_Sportgaststätte_Weiherwiesen.md",
-];
+export type AnnouncementWithFrontmatter = Announcement & {
+  activeDate: string;
+  expiryDate: string;
+  tags: string[];
+};
