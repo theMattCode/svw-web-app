@@ -1,5 +1,5 @@
 import { ArticleCarousel } from "#/components/carousel/ArticleCarousel";
-import RichText from "#/components/richtext/RichText";
+import Markdown from "#/components/markdown/Markdown";
 import { Spacing } from "#/components/spacing/Spacing";
 import {
   BlockContentsDynamicZone,
@@ -12,8 +12,7 @@ import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
 import { Person } from "#/components/person/Person";
-import RichTextTwoColumn from "#/components/richtext/RichTextTwoColumn";
-import { Announcements } from "#/components/announcements/Announcements";
+import RichTextTwoColumn from "#/components/markdown/RichTextTwoColumn";
 
 type Props = {
   component:
@@ -35,7 +34,7 @@ export function DynamicContent({
       return <ArticleCarousel maxItems={component.maxArticles ?? 3} />;
 
     case "ComponentBlockRichText":
-      return <RichText content={component.content} />;
+      return <Markdown content={component.content} />;
 
     case "ComponentBlockRichTextTwoColumn":
       return (
@@ -56,12 +55,6 @@ export function DynamicContent({
     case "ComponentBlockTaggedPersons":
       /* @ts-expect-error Server Component */
       return <TaggedPersons tagId={component.tag?.data?.id ?? null} />;
-
-    case "ComponentBlockAnnouncements":
-      return (
-        /* @ts-expect-error Server Component */
-        <Announcements title={component.title} tags={component.tags?.data} />
-      );
 
     case "ComponentBlockArticlesPreviewList":
       /* @ts-expect-error Server Component */

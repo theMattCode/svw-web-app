@@ -1,15 +1,20 @@
-import { AnnouncementsCarousel } from "#/components/announcements/AnnouncementsCarousel";
-import { announcements } from "#/content/announcements";
+import { Carousel } from "#/components/carousel/Carousel";
+import { AnnouncementItem } from "#/components/announcements/AnnouncementItem";
+import { Announcement } from "#/content/announcements";
 
-export function Announcements() {
+type Props = {
+  announcements: Announcement[];
+};
+
+export function Announcements({ announcements }: Props) {
   return (
-    <div className="bg-white">
-      <div className="container p-4 flex flex-col gap-4">
-        <div className="transition-all font-bold text-3xl md:-translate-x-0.5 self-center">
-          Ankündigungen
-        </div>
-        <AnnouncementsCarousel announcements={announcements} />
-      </div>
-    </div>
+    <Carousel>
+      {announcements.map((announcement) => (
+        <AnnouncementItem
+          key={announcement.title}
+          announcement={announcement}
+        />
+      ))}
+    </Carousel>
   );
 }
