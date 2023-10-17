@@ -1,33 +1,38 @@
-import { Person } from "#/components/person/people.gql";
 import Image from "next/image";
 import { getFullAssetUrl } from "#/lib/asset";
 import Link from "next/link";
-import { asTagsString } from "#/lib/tags";
 import { PropsWithChildren } from "react";
+import { getPersonName, Person } from "#/content/people";
+import { GoPersonFill } from "react-icons/go";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 
 type Props = {
-  person: Person;
+  person: Person | undefined;
 };
 
-export function PersonCard({ person }: Props): JSX.Element {
-  const picture = person.picture?.data?.attributes;
+export function PersonCard({ person }: Props) {
+  if (person === undefined) return null;
+
+  const imageDimensions = person.image
+    ? calcImageDimensionsForWidth(person.image, 400)
+    : { width: 400, height: 400 };
+
   return (
-    <div className="container flex flex-col md:max-w-[768px] md:min-w-[550px] md:flex-row bg-white shadow-lg">
-      <Image
-        className="w-full h-96 md:h-auto object-cover md:w-56 p-1"
-        src={getFullAssetUrl(picture?.url ?? "")}
-        alt=""
-        width={picture?.width ?? 0}
-        height={picture?.height ?? 0}
-      />
+    <div className="container flex flex-col md:max-w-xl md:min-w-[550px] md:flex-row bg-white shadow-lg">
+      {person.image ? (
+        <Image
+          className="w-full h-80 md:h-auto object-cover md:w-48 p-1"
+          src={person.image.src}
+          alt={person.image.alt}
+          width={imageDimensions.width}
+          height={imageDimensions.height}
+        />
+      ) : (
+        <GoPersonFill className="w-full h-80 md:h-auto object-cover md:w-48 p-1 text-gray-300" />
+      )}
       <div className="w-full p-4 flex flex-col justify-start">
-        <h1>
-          {person.firstname} {person.lastname}
-        </h1>
-        <div className="font-bold">{asTagsString(person.tags)}</div>
-        {person.description && (
-          <p className="text-gray-700 text-base mb-4">{person.description}</p>
-        )}
+        <div className="text-3xl">{getPersonName(person)}</div>
+        <div className="font-medium">{person.tags.join(", ")}</div>
         <div className="flex flex-col md:grid md:grid-cols-[auto_minmax(0,1fr)] md:gap-x-4">
           {person.email && (
             <ContactDetail label="E-Mail">
@@ -35,9 +40,9 @@ export function PersonCard({ person }: Props): JSX.Element {
             </ContactDetail>
           )}
 
-          {person.telephone && (
+          {person.phone && (
             <ContactDetail label="Telefon">
-              <Link href={`tel:${person.telephone}`}>{person.telephone}</Link>
+              <Link href={`tel:${person.phone}`}>{person.phone}</Link>
             </ContactDetail>
           )}
         </div>

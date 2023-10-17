@@ -19,7 +19,7 @@ export function Carousel({ children }: Props) {
   }, [currentSlide, length, setCurrentSlide]);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col">
       <div className="overflow-hidden relative">
         <div
           className="flex transition-transform ease-out duration-500"

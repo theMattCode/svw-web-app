@@ -7,7 +7,7 @@ export function FastAccessBar() {
   return (
     <div
       data-tid="nav-fast-access-bar"
-      className="hidden md:flex bg-svw-blue-dark text-white text-sm h-6 items-center"
+      className="hidden md:flex bg-svw-blue-default text-white text-sm h-6 items-center"
     >
       <div className="transition-all container flex justify-end gap-2 h-full">
         {shops.map((shop) => (
@@ -15,15 +15,15 @@ export function FastAccessBar() {
             key={shop.name}
             target="_blank"
             href={shop.url}
-            className="flex items-center px-2 gap-1.5 hover:bg-svw-blue-darker"
+            className="flex items-center px-2 gap-1.5 hover:bg-svw-blue-dark"
           >
             <FaShoppingCart />
             <span>{shop.name}</span>
           </Link>
         ))}
         <Link
-          href="/mitglied-werden"
-          className="flex items-center px-2 gap-1.5 hover:bg-svw-blue-darker"
+          href="/verein/mitglied-werden"
+          className="flex items-center px-2 gap-1.5 hover:bg-svw-blue-dark"
         >
           <FaFileSignature />
           <span>Mitglied werden</span>

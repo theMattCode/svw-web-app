@@ -31,7 +31,7 @@ h4 {
 }
 
 h5 {
-    @apply text-lg italic
+    @apply text-base font-medium
 }
 
 h6  {
@@ -39,7 +39,11 @@ h6  {
 }
 
 p {
-    @apply text-base font-light
+    @apply text-sm font-light
+}
+
+p > a {
+    @apply font-normal underline text-svw-blue-darker
 }
 
 th {
@@ -61,24 +65,3 @@ td {
 iframe nav {
     display: none;
 }
-
-/*
-.ribbon-heading {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-}
-
-.ribbon-heading::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: inherit;
-    padding-bottom: 22%;
-    width: 50%;
-    z-index: -1;
-    transform-origin: 0 0;
-    transform: rotate(-12.7deg) skewX(65.1deg);
-}
-*/

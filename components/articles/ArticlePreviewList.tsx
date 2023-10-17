@@ -4,6 +4,7 @@ import { ArticlesQuery, ArticlesQueryVariables } from "#/lib/graphql/generated";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { ArticleListItem } from "#/components/articles/ArticleListItem";
+import { BlockTitle } from "#/components/block/BlockTitle";
 
 const DEFAULT_PAGE_SIZE = 8;
 
@@ -22,11 +23,9 @@ export async function ArticlePreviewList({
     variables: { page: 1, pageSize: pageSize },
   });
   return (
-    <div className="bg-svw-blue-darker w-full p-4">
-      <div className="container flex flex-col gap-4 items-center">
-        <div className="font-bold text-white text-3xl md:-translate-x-0.5">
-          Aktuelles
-        </div>
+    <div className="bg-neutral-200 w-full p-4">
+      <div className="container flex flex-col gap-2 items-center">
+        <BlockTitle title="Aktuelles" />
         {data.articles?.data.map((article) => {
           if (article.attributes) {
             return (

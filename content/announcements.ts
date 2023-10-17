@@ -1,11 +1,8 @@
+import { Image } from "#/content/image";
+
 export type Announcement = {
   title: string;
-  image: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
+  image: Image;
   mdContent: string;
 };
 
