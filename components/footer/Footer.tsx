@@ -10,10 +10,7 @@ export default function Footer(): JSX.Element {
         <div className="columns-1 md:columns-2 lg:columns-4 xl:columuns-5 justify-between">
           {footer.blocks?.map((block) => {
             return (
-              <ul
-                key={block.title}
-                className="list-none break-inside-avoid py-4"
-              >
+              <ul key={block.title} className="list-none break-inside-avoid py-4">
                 <li key="title">
                   <span className="font-medium text-xl">{block.title}</span>
                 </li>
@@ -24,7 +21,7 @@ export default function Footer(): JSX.Element {
                         <HiOutlineExternalLink className="text-black" />
                       </span>
                     )}
-                    <Link href={link.url} target={link.extern ? "_blank" : ""}>
+                    <Link href={link.url} target={link.extern ? "_blank" : "_self"}>
                       {link.title}
                     </Link>
                   </li>

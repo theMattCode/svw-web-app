@@ -46,13 +46,26 @@ p > a {
     @apply font-normal underline text-svw-blue-darker
 }
 
+table {
+    @apply w-full font-light
+}
+
 th {
-    @apply border border-gray-300 px-3
+    @apply border-0 bg-svw-blue-default text-white px-3 py-2
+}
+
+tr {
+    @apply even:bg-gray-200 first:border-t border-0 border-svw-blue-default
+}
+
+thead > tr {
+    @apply bg-svw-blue-default text-white font-medium
 }
 
 td {
-    @apply border border-gray-300 px-3
+    @apply  border-0 border-b border-svw-blue-default px-3 py-2
 }
+
 
 .news-title-shadow {
     box-shadow: 10px 0 0 rgba(255, 255, 255, 0.75), -10px 0 0 rgba(255, 255, 255, 0.75);
@@ -64,4 +77,8 @@ td {
 
 iframe nav {
     display: none;
+}
+
+.rbc-header {
+    @apply text-2xl
 }

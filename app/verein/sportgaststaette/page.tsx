@@ -3,7 +3,6 @@ import { BlockTitle } from "#/components/block/BlockTitle";
 import Link from "next/link";
 import Image from "next/image";
 import { PageBase } from "#/components/page/PageBase";
-import Markdown from "#/components/markdown/Markdown";
 
 export default function Sportgaststaette() {
   return (
@@ -17,15 +16,12 @@ export default function Sportgaststaette() {
           height={858}
           className="lg:w-1/2"
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col grow">
           <h3>Kontakt</h3>
           <h4>Adresse</h4>
           <p>
             Weiherwiesen 5, 72141 Walddorfhäslach (
-            <Link
-              href="https://maps.app.goo.gl/85A3Uw7TfvjVmQ2XA"
-              target="_blank"
-            >
+            <Link href="https://maps.app.goo.gl/85A3Uw7TfvjVmQ2XA" target="_blank">
               Google Maps
             </Link>
             )

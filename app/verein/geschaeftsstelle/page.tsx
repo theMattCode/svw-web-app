@@ -3,6 +3,7 @@ import { BlockTitle } from "#/components/block/BlockTitle";
 import Link from "next/link";
 import Image from "next/image";
 import { PageBase } from "#/components/page/PageBase";
+import { club } from "#/content/club";
 
 export default function Geschaeftsstelle() {
   return (
@@ -18,17 +19,13 @@ export default function Geschaeftsstelle() {
         />
         <div className="flex flex-col">
           <p className="font-light">
-            Unsere Geschäftsstelle befindet sich in unserem Sportheim auf dem
-            Sportgelände Weiherwiesen.
+            Unsere Geschäftsstelle befindet sich in unserem Sportheim auf dem Sportgelände Weiherwiesen.
           </p>
           <h3>Kontakt</h3>
           <h4>Adresse</h4>
           <p>
             Weiherwiesen 5, 72141 Walddorfhäslach (
-            <Link
-              href="https://maps.app.goo.gl/o1xKaHZN7sAexotr7"
-              target="_blank"
-            >
+            <Link href="https://maps.app.goo.gl/o1xKaHZN7sAexotr7" target="_blank">
               Google Maps
             </Link>
             )
@@ -37,13 +34,12 @@ export default function Geschaeftsstelle() {
           <p>
             <Link href="tel:+497127580015">07127/580015 (AB).</Link>
             <br />
-            Unsere Geschäftsstelle ist nicht durchgehend besetzt. Bitte
-            hinterlassen sie auf dem Anrufbeantworter eine Nachricht, wir rufen
-            sie baldmöglichst zurück.
+            Unsere Geschäftsstelle ist nicht durchgehend besetzt. Bitte hinterlassen sie auf dem Anrufbeantworter eine
+            Nachricht, wir rufen sie baldmöglichst zurück.
           </p>
           <h4>E-Mail</h4>
           <p>
-            <Link href="mailto:info@svwalddorf.de">info@svwalddorf.de</Link>
+            <Link href={`mailto:${club.contact.email}`}>{club.contact.email}</Link>
           </p>
         </div>
       </div>
