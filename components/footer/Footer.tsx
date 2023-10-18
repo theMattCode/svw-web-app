@@ -6,13 +6,13 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 export default function Footer(): JSX.Element {
   return (
     <footer className="bg-neutral-200 border-t-4 border-svw-blue-default text-sm">
-      <div className="container py-8 px-4">
-        <div className="flex flex-row flex-wrap gap-x-12 gap-y-4 justify-between">
+      <div className="container p-4">
+        <div className="columns-1 md:columns-2 lg:columns-4 xl:columuns-5 justify-between">
           {footer.blocks?.map((block) => {
             return (
-              <ul key={block.title} className="list-none">
+              <ul key={block.title} className="list-none break-inside-avoid py-4">
                 <li key="title">
-                  <span className="font-bold text-lg">{block.title}</span>
+                  <span className="font-medium text-xl">{block.title}</span>
                 </li>
                 {block.links.map((link) => (
                   <li key={link.title} className="flex items-center h-6">
@@ -21,7 +21,7 @@ export default function Footer(): JSX.Element {
                         <HiOutlineExternalLink className="text-black" />
                       </span>
                     )}
-                    <Link href={link.url} target={link.extern ? "_blank" : ""}>
+                    <Link href={link.url} target={link.extern ? "_blank" : "_self"}>
                       {link.title}
                     </Link>
                   </li>
@@ -29,9 +29,9 @@ export default function Footer(): JSX.Element {
               </ul>
             );
           })}
-          <ul key="contact" className="list-none">
+          <ul key="contact" className="list-none break-inside-avoid py-4">
             <li>
-              <span className="font-bold text-lg">{club.name}</span>
+              <span className="font-medium text-xl">{club.name}</span>
             </li>
             <li>{club.address.street}</li>
             <li>

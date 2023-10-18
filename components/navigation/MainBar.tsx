@@ -8,7 +8,7 @@ import { LargeScreenNavigation } from "#/components/navigation/LargeScreenNaviga
 export function MainBar() {
   return (
     <div data-tid="nav-main-bar" className="transition-all">
-      <div className="transition-all md:container flex justify-between md:justify-start items-center pl-2 h-12 md:h-12">
+      <div className="transition-all md:container flex justify-between md:justify-start items-center pl-2 h-12 md:h-12 text-black">
         <Link href="/" className="z-50">
           <Image
             src={club.emblem}

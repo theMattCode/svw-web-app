@@ -22,7 +22,7 @@ export function Hero(): JSX.Element {
                   href={activity.url}
                   className="transition-all flex items-center px-2 py-1 gap-1 hover:bg-svw-blue-darker whitespace-nowrap bg-svw-blue-default"
                 >
-                  <span>{activity.name}</span>
+                  <span className="uppercase font-medium">{activity.name}</span>
                 </Link>
               ))}
             </div>

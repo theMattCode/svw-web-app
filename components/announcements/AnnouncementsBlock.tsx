@@ -3,6 +3,7 @@
 import { Announcements } from "#/components/announcements/Announcements";
 import { useEffect, useState } from "react";
 import { Announcement } from "#/content/announcements";
+import { BlockTitle } from "#/components/block/BlockTitle";
 
 export function AnnouncementsBlock() {
   const [announcements, setAnnouncements] = useState<Announcement[]>([]);
@@ -18,10 +19,8 @@ export function AnnouncementsBlock() {
   }
 
   return (
-    <div className="flex flex-col gap-4 p-4 bg-amber-200">
-      <div className="font-bold text-3xl md:-translate-x-0.5 self-center">
-        Ankündigungen
-      </div>
+    <div className={`flex flex-col px-4 pt-4 bg-amber-200`}>
+      <BlockTitle title="Ankündigungen" />
       <Announcements announcements={announcements} />
     </div>
   );
