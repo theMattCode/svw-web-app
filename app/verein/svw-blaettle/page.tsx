@@ -22,18 +22,18 @@ export default function SVWBlaettle() {
               className="self-center"
             />
             <div className="flex flex-col">
-              <h4>Unsere Vereinszeitschrift &quot;s'SVW Blättle&quot;</h4>
+              <h4>Unsere Vereinszeitschrift &quot;s&apos;SVW Blättle&quot;</h4>
               <p>
-                &quot;s'SVW Blättle&quot; wird mit einer aktuellen Berichterstattung über das Vereinsgeschehen während
-                der gesamten Saison 2022/2023 bei allen Veranstaltungen, an alle Neu-Mitglieder der Sparten, sowie den
-                Heimspielen der I. und II. Mannschaft des SV Walddorf an die Zuschauer verteilt. Ferner wird das "SVW
-                Blättle" auch bei Sponsoren und öffentlichen Anlaufpunkten wie dem Rathaus ausliegen. Insgesamt hat das
-                SVW Blättle eine Auflage von über 1.000 Stück, welche auch an wechselnde Haushalte der Gemeinde
-                Walddorfhäslach verteilt werden.
+                &quot;s&apos;SVW Blättle&quot; wird mit einer aktuellen Berichterstattung über das Vereinsgeschehen
+                während der gesamten Saison 2022/2023 bei allen Veranstaltungen, an alle Neu-Mitglieder der Sparten,
+                sowie den Heimspielen der I. und II. Mannschaft des SV Walddorf an die Zuschauer verteilt. Ferner wird
+                das &quot;SVW Blättle&quot; auch bei Sponsoren und öffentlichen Anlaufpunkten wie dem Rathaus ausliegen.
+                Insgesamt hat das SVW Blättle eine Auflage von über 1.000 Stück, welche auch an wechselnde Haushalte der
+                Gemeinde Walddorfhäslach verteilt werden.
               </p>
-              <h4>Das &quot;s'SVW Blättle&quot; für Sponsoren</h4>
+              <h4>Das &quot;s&apos;SVW Blättle&quot; für Sponsoren</h4>
               <p>
-                Sie möchten gerne im &quot;s'SVW Blättle&quot; werben und damit uns als Verein unterstützen? Beim
+                Sie möchten gerne im &quot;s&apos;SVW Blättle&quot; werben und damit uns als Verein unterstützen? Beim
                 SVW-Blättle profitieren Sie nicht nur von einer großen Auflagenzahl von über 1000 Stk. und einer breit
                 gefächerten Leserschaft durch alle Altersgruppen durch, sondern auch von unserem Ansehen und gutem Image
                 in der Region. Nachhaltiger könnte ihre Werbung nicht sein, zudem unser Blättle auch auf FSC-Papier
