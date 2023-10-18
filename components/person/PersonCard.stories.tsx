@@ -4,6 +4,7 @@ import { PersonCard } from "#/components/person/PersonCard";
 
 const meta: Meta<typeof PersonCard> = {
   title: "Components/People",
+  component: PersonCard,
 };
 
 export default meta;
