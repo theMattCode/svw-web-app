@@ -6,28 +6,19 @@ import {
   PageHeaderContentsDynamicZone,
   PageMainContentsDynamicZone,
 } from "#/lib/graphql/generated";
-import { TaggedPersons } from "#/components/person/TaggedPersons";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticleList } from "#/components/articles/ArticleList";
 import { Params, SearchParams } from "#/lib/url";
-import { Person } from "#/components/person/Person";
 import RichTextTwoColumn from "#/components/markdown/RichTextTwoColumn";
 
 type Props = {
-  component:
-    | PageHeaderContentsDynamicZone
-    | PageMainContentsDynamicZone
-    | BlockContentsDynamicZone;
+  component: PageHeaderContentsDynamicZone | PageMainContentsDynamicZone | BlockContentsDynamicZone;
   params?: Params;
   searchParams?: SearchParams;
 };
 
-export function DynamicContent({
-  component,
-  params,
-  searchParams,
-}: Props): JSX.Element | null {
+export function DynamicContent({ component, params, searchParams }: Props): JSX.Element | null {
   switch (component.__typename) {
     case "ComponentBlockCarousel":
       /* @ts-expect-error Server Component */
@@ -49,13 +40,6 @@ export function DynamicContent({
     case "ComponentSharedSpacing":
       return <Spacing width={component.width} height={component.height} />;
 
-    case "ComponentBlockPersons":
-      return <Person person={component.person?.data ?? null} />;
-
-    case "ComponentBlockTaggedPersons":
-      /* @ts-expect-error Server Component */
-      return <TaggedPersons tagId={component.tag?.data?.id ?? null} />;
-
     case "ComponentBlockArticlesPreviewList":
       /* @ts-expect-error Server Component */
       return <ArticlePreviewList pageSize={component.pageSize} />;
@@ -64,12 +48,7 @@ export function DynamicContent({
       const page = Number.parseInt(searchParams?.page ?? "1");
       return (
         /* @ts-expect-error Server Component */
-        <ArticleList
-          pageSize={component.pageSize}
-          tags={component.tags}
-          page={page}
-          slug={params?.slug}
-        />
+        <ArticleList pageSize={component.pageSize} tags={component.tags} page={page} slug={params?.slug} />
       );
     }
 

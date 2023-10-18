@@ -37,8 +37,8 @@ export default function SVWBlaettle() {
                 SVW-Blättle profitieren Sie nicht nur von einer großen Auflagenzahl von über 1000 Stk. und einer breit
                 gefächerten Leserschaft durch alle Altersgruppen durch, sondern auch von unserem Ansehen und gutem Image
                 in der Region. Nachhaltiger könnte ihre Werbung nicht sein, zudem unser Blättle auch auf FSC-Papier
-                europäischer Herkunft und 100% CO-2 neutral lokal in Nürtingen gedruckt wird. Sie sind an einer
-                Werbeanzeige interessiert, dann können sie sich gerne an unseren&nbsp;
+                europäischer Herkunft und 100% CO<sub>2</sub> neutral lokal in Nürtingen gedruckt wird. Sie sind an
+                einer Werbeanzeige interessiert, dann können sie sich gerne an unseren&nbsp;
                 <Link href="mailto:martin.bayer@svwalddorf.de">
                   Vorstand Finanzen Martin Bayer (martin.bayer@svwalddorf.de)
                 </Link>
