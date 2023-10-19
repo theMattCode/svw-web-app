@@ -1,9 +1,10 @@
 import Article from "#/components/articles/Article";
+import { PageBase } from "#/components/page/PageBase";
 
 export default function Page({ params }: any): JSX.Element {
   return (
-    <div className="border-t-2 border-white">
+    <PageBase>
       <Article slug={params.slug} />
-    </div>
+    </PageBase>
   );
 }

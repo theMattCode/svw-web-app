@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { getFullAssetUrl } from "#/lib/asset";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 import { getPersonName, Person } from "#/content/people";
