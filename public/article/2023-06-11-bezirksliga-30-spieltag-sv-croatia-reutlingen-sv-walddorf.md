@@ -1,6 +1,6 @@
 ---
 title: "Bezirksliga, 30. Spieltag, SV Croatia Reutlingen - SV Walddorf"
-slug: "bezirksliga-30-spieltag-sv-croatia-reutlingen-sv-walddorf"
+slug: "2023-06-11-bezirksliga-30-spieltag-sv-croatia-reutlingen-sv-walddorf"
 date: "2023-06-11"
 promote: false
 createdAt: "2023-06-21T05:13:19.654Z"

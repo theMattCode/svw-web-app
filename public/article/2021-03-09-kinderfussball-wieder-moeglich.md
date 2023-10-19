@@ -1,6 +1,6 @@
 ---
 title: "Kinderfußball wieder möglich!"
-slug: "kinderfussball-wieder-moeglich"
+slug: "2021-03-09-kinderfussball-wieder-moeglich"
 date: "2021-03-09"
 promote: true
 createdAt: "null"

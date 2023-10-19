@@ -1,6 +1,6 @@
 ---
 title: "Benjamin Link - Sportliche Leitung"
-slug: "ruhepol-benjamin-link"
+slug: "2021-05-04-ruhepol-benjamin-link"
 date: "2021-05-04"
 promote: true
 createdAt: "null"

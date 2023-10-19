@@ -1,6 +1,6 @@
 ---
 title: "Dauerbrenner"
-slug: "dauerbrenner"
+slug: "2022-08-19-dauerbrenner"
 date: "2022-08-19"
 promote: false
 createdAt: "null"

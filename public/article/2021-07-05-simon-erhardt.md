@@ -1,6 +1,6 @@
 ---
 title: "Simon Erhardt"
-slug: "simon-erhardt"
+slug: "2021-07-05-simon-erhardt"
 date: "2021-07-05"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer Aktiven und der Jugend"
-slug: "spielbericht-unserer-aktiven-und-der-jugend-1"
+slug: "2021-11-15-spielbericht-unserer-aktiven-und-der-jugend-1"
 date: "2021-11-15"
 promote: true
 createdAt: "null"

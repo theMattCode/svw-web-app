@@ -1,6 +1,6 @@
 ---
 title: "Bezirkshallen-Zwischenrunde der E-Junioren"
-slug: "bezirkshallen-zwischenrunde-der-e-junioren"
+slug: "2020-01-14-bezirkshallen-zwischenrunde-der-e-junioren"
 date: "2020-01-14"
 promote: false
 createdAt: "null"

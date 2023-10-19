@@ -1,6 +1,6 @@
 ---
 title: "Julian Wohlfarth - Sportliche Leitung"
-slug: "organisationstalent-julian-wohlfarth"
+slug: "2021-05-08-organisationstalent-julian-wohlfarth"
 date: "2021-05-08"
 promote: true
 createdAt: "null"

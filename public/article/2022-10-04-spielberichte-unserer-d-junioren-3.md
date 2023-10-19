@@ -1,6 +1,6 @@
 ---
 title: "Spielberichte unserer D-Junioren"
-slug: "spielberichte-unserer-d-junioren-3"
+slug: "2022-10-04-spielberichte-unserer-d-junioren-3"
 date: "2022-10-04"
 promote: false
 createdAt: "null"

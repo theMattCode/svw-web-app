@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht zum Pokalviertelfinale in Wendelsheim"
-slug: "spielbericht-zum-pokalviertelfinale-in-wendelsheim"
+slug: "2020-07-29-spielbericht-zum-pokalviertelfinale-in-wendelsheim"
 date: "2020-07-29"
 promote: false
 createdAt: "null"

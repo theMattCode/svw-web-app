@@ -1,6 +1,6 @@
 ---
 title: " Der Sportverein Walddorf pflanzt eine Tanne im Bürgerwald III"
-slug: "der-sportverein-walddorf-pflanzt-eine-tanne-im-buergerwald-iii"
+slug: "2022-03-19-der-sportverein-walddorf-pflanzt-eine-tanne-im-buergerwald-iii"
 date: "2022-03-19"
 promote: true
 createdAt: "null"

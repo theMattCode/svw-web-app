@@ -1,6 +1,6 @@
 ---
 title: "Wir bedanken uns bei allen unseren Gönnern!"
-slug: "wir-bedanken-uns-bei-allen-unseren-goennern"
+slug: "2021-04-05-wir-bedanken-uns-bei-allen-unseren-goennern"
 date: "2021-04-05"
 promote: true
 createdAt: "null"

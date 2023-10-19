@@ -1,6 +1,6 @@
 ---
 title: "Wichtige Information zum Beitragseinzug 2020"
-slug: "wichtige-information-zum-beitragseinzug-2020"
+slug: "2020-01-20-wichtige-information-zum-beitragseinzug-2020"
 date: "2020-01-20"
 promote: true
 createdAt: "null"

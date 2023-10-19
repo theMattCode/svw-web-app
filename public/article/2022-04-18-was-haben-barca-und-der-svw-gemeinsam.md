@@ -1,6 +1,6 @@
 ---
 title: "Was haben Barça und der SVW gemeinsam?"
-slug: "was-haben-barca-und-der-svw-gemeinsam"
+slug: "2022-04-18-was-haben-barca-und-der-svw-gemeinsam"
 date: "2022-04-18"
 promote: true
 createdAt: "null"

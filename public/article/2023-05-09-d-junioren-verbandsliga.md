@@ -1,6 +1,6 @@
 ---
 title: "D-Junioren Verbandsliga"
-slug: "d-junioren-verbandsliga"
+slug: "2023-05-09-d-junioren-verbandsliga"
 date: "2023-05-09"
 promote: false
 createdAt: "2023-05-24T07:10:45.771Z"

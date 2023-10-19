@@ -1,6 +1,6 @@
 ---
 title: "Einladung zur Mitgliederversammlung [ABGESAGT]"
-slug: "einladung-zur-mitgliederversammlung"
+slug: "2020-02-24-einladung-zur-mitgliederversammlung"
 date: "2020-02-24"
 promote: true
 createdAt: "null"

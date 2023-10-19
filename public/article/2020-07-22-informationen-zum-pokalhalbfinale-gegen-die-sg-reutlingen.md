@@ -1,6 +1,6 @@
 ---
 title: "Informationen zum Pokalhalbfinale gegen die SG Reutlingen"
-slug: "informationen-zum-pokalhalbfinale-gegen-die-sg-reutlingen"
+slug: "2020-07-22-informationen-zum-pokalhalbfinale-gegen-die-sg-reutlingen"
 date: "2020-07-22"
 promote: true
 createdAt: "null"

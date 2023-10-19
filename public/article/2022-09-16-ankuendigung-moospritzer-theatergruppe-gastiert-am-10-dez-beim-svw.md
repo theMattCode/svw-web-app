@@ -1,6 +1,6 @@
 ---
 title: "D'Moo'spritzer Theatergruppe gastiert am 10. Dez. beim SVW"
-slug: "ankuendigung-moospritzer-theatergruppe-gastiert-am-10-dez-beim-svw"
+slug: "2022-09-16-ankuendigung-moospritzer-theatergruppe-gastiert-am-10-dez-beim-svw"
 date: "2022-09-16"
 promote: false
 createdAt: "null"

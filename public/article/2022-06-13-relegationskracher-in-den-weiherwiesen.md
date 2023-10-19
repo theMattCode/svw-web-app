@@ -1,6 +1,6 @@
 ---
 title: "Relegationskracher in den Weiherwiesen"
-slug: "relegationskracher-in-den-weiherwiesen"
+slug: "2022-06-13-relegationskracher-in-den-weiherwiesen"
 date: "2022-06-13"
 promote: false
 createdAt: "null"

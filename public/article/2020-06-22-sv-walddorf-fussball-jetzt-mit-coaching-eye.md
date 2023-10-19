@@ -1,6 +1,6 @@
 ---
 title: "SV Walddorf Fussball jetzt mit COACHING EYE"
-slug: "sv-walddorf-fussball-jetzt-mit-coaching-eye"
+slug: "2020-06-22-sv-walddorf-fussball-jetzt-mit-coaching-eye"
 date: "2020-06-22"
 promote: true
 createdAt: "null"

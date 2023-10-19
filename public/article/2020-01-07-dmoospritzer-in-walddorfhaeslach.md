@@ -1,6 +1,6 @@
 ---
 title: "D'Moo'Spritzer in Walddorfhäslach"
-slug: "dmoospritzer-in-walddorfhaeslach"
+slug: "2020-01-07-dmoospritzer-in-walddorfhaeslach"
 date: "2020-01-07"
 promote: false
 createdAt: "null"

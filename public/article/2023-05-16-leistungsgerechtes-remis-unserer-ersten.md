@@ -1,6 +1,6 @@
 ---
 title: "Leistungsgerechtes Remis unserer Ersten"
-slug: "leistungsgerechtes-remis-unserer-ersten"
+slug: "2023-05-16-leistungsgerechtes-remis-unserer-ersten"
 date: "2023-05-16"
 promote: false
 createdAt: "2023-05-24T07:25:37.588Z"

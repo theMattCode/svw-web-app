@@ -1,6 +1,6 @@
 ---
 title: "Testspiele unserer D-Junioren"
-slug: "testspiele-unserer-d-junioren"
+slug: "2021-07-07-testspiele-unserer-d-junioren"
 date: "2021-07-07"
 promote: false
 createdAt: "null"

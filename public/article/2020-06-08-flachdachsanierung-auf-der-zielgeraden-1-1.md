@@ -1,6 +1,6 @@
 ---
 title: "Flachdachsanierung auf der Zielgeraden"
-slug: "flachdachsanierung-auf-der-zielgeraden-1-1"
+slug: "2020-06-08-flachdachsanierung-auf-der-zielgeraden-1-1"
 date: "2020-06-08"
 promote: true
 createdAt: "null"

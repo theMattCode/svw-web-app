@@ -1,6 +1,6 @@
 ---
 title: "Informationen zum Relegationsspiel SV Wurmlingen - FC Römerstein"
-slug: "informationen-zum-relegationsspiel-sv-wurmlingen-fc-roemerstein"
+slug: "2023-06-22-informationen-zum-relegationsspiel-sv-wurmlingen-fc-roemerstein"
 date: "2023-06-22"
 promote: false
 createdAt: "2023-06-30T07:50:35.308Z"

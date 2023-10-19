@@ -1,6 +1,6 @@
 ---
 title: "Badminton – eine 2000 Jahre alte Sportart"
-slug: "badminton-eine-2000-jahre-alte-sportart"
+slug: "2023-05-08-badminton-eine-2000-jahre-alte-sportart"
 date: "2023-05-08"
 promote: false
 createdAt: "2023-05-24T06:56:20.133Z"

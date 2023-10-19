@@ -1,6 +1,6 @@
 ---
 title: "Sieg und Niederlage im Bezirkspokal"
-slug: "sieg-und-niederlage-im-bezirkspokal"
+slug: "2021-08-30-sieg-und-niederlage-im-bezirkspokal"
 date: "2021-08-30"
 promote: true
 createdAt: "null"

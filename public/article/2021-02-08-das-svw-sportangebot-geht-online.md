@@ -1,6 +1,6 @@
 ---
 title: "Das SVW Sportangebot geht online!"
-slug: "das-svw-sportangebot-geht-online"
+slug: "2021-02-08-das-svw-sportangebot-geht-online"
 date: "2021-02-08"
 promote: true
 createdAt: "null"

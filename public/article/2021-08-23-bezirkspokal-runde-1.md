@@ -1,6 +1,6 @@
 ---
 title: "Bezirkspokal Runde 1"
-slug: "bezirkspokal-runde-1"
+slug: "2021-08-23-bezirkspokal-runde-1"
 date: "2021-08-23"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Fußball-Tennis Vereins-Meisterschaft"
-slug: "fussball-tennis-vereins-meisterschaft"
+slug: "2020-06-15-fussball-tennis-vereins-meisterschaft"
 date: "2020-06-15"
 promote: false
 createdAt: "null"

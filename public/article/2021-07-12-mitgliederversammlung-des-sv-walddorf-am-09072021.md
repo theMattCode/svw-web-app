@@ -1,6 +1,6 @@
 ---
 title: "Mitgliederversammlung des SV Walddorf am 09.07.2021"
-slug: "mitgliederversammlung-des-sv-walddorf-am-09072021"
+slug: "2021-07-12-mitgliederversammlung-des-sv-walddorf-am-09072021"
 date: "2021-07-12"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Verschiebung Mitgliederversammlung"
-slug: "verschiebung-mitgliederversammlung"
+slug: "2021-03-12-verschiebung-mitgliederversammlung"
 date: "2021-03-12"
 promote: false
 createdAt: "null"

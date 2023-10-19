@@ -1,6 +1,6 @@
 ---
 title: "Kooperation mit Physiosana beim Reha-Sport"
-slug: "kooperation-mit-physiosana-beim-reha-sport"
+slug: "2021-04-20-kooperation-mit-physiosana-beim-reha-sport"
 date: "2021-04-20"
 promote: false
 createdAt: "null"

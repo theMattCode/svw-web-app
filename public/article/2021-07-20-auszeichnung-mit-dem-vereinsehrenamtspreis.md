@@ -1,6 +1,6 @@
 ---
 title: "Auszeichnung mit dem Vereinsehrenamtspreis"
-slug: "auszeichnung-mit-dem-vereinsehrenamtspreis"
+slug: "2021-07-20-auszeichnung-mit-dem-vereinsehrenamtspreis"
 date: "2021-07-20"
 promote: true
 createdAt: "null"

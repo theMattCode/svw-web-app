@@ -1,6 +1,6 @@
 ---
 title: "Fußball Aktive - Spiele vom 16.04."
-slug: "fussball-aktive-spiele-vom-16-04"
+slug: "2023-04-16-fussball-aktive-spiele-vom-16-04"
 date: "2023-04-16"
 promote: false
 createdAt: "2023-05-03T07:25:58.366Z"

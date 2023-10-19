@@ -1,6 +1,6 @@
 ---
 title: "D-Junioren Saisonfinale"
-slug: "d-junioren-saisonfinale"
+slug: "2022-11-15-d-junioren-saisonfinale"
 date: "2022-11-15"
 promote: false
 createdAt: "null"

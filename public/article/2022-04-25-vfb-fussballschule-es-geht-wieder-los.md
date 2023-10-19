@@ -1,6 +1,6 @@
 ---
 title: "VfB Fußballschule: Es geht wieder los!"
-slug: "vfb-fussballschule-es-geht-wieder-los"
+slug: "2022-04-25-vfb-fussballschule-es-geht-wieder-los"
 date: "2022-04-25"
 promote: false
 createdAt: "null"

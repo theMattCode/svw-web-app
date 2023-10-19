@@ -1,6 +1,6 @@
 ---
 title: "Zweiter Spieltag in der Quali-Runde der E-Junioren"
-slug: "zweiter-spieltag-in-der-quali-runde-der-e-junioren"
+slug: "2020-09-28-zweiter-spieltag-in-der-quali-runde-der-e-junioren"
 date: "2020-09-28"
 promote: false
 createdAt: "null"

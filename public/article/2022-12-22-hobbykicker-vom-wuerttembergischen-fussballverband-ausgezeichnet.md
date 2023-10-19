@@ -1,6 +1,6 @@
 ---
 title: "Hobbykicker vom Württembergischen Fußballverband ausgezeichnet"
-slug: "hobbykicker-vom-wuerttembergischen-fussballverband-ausgezeichnet"
+slug: "2022-12-22-hobbykicker-vom-wuerttembergischen-fussballverband-ausgezeichnet"
 date: "2022-12-22"
 promote: false
 createdAt: "null"

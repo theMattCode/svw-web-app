@@ -1,6 +1,6 @@
 ---
 title: "Unser Sportbetrieb startet wieder!"
-slug: "unser-sportbetrieb-startet-wieder"
+slug: "2021-06-09-unser-sportbetrieb-startet-wieder"
 date: "2021-06-09"
 promote: true
 createdAt: "null"

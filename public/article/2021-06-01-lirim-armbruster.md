@@ -1,6 +1,6 @@
 ---
 title: "Lirim Armbruster"
-slug: "lirim-armbruster"
+slug: "2021-06-01-lirim-armbruster"
 date: "2021-06-01"
 promote: true
 createdAt: "null"

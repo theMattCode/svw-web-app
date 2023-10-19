@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren: Doppelsieg in Pfullingen"
-slug: "e-junioren-doppelsieg-in-pfullingen"
+slug: "2020-10-12-e-junioren-doppelsieg-in-pfullingen"
 date: "2020-10-12"
 promote: false
 createdAt: "null"

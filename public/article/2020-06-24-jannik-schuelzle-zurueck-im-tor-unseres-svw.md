@@ -1,6 +1,6 @@
 ---
 title: "Jannik Schülzle zurück im Tor unseres SVW"
-slug: "jannik-schuelzle-zurueck-im-tor-unseres-svw"
+slug: "2020-06-24-jannik-schuelzle-zurueck-im-tor-unseres-svw"
 date: "2020-06-24"
 promote: true
 createdAt: "null"

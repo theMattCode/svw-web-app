@@ -1,6 +1,6 @@
 ---
 title: "Letzte Heimspiele"
-slug: "letzte-heimspiele-2023"
+slug: "2023-06-04-letzte-heimspiele-2023"
 date: "2023-06-04"
 promote: false
 createdAt: "2023-06-21T04:44:37.402Z"

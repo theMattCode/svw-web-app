@@ -1,6 +1,6 @@
 ---
 title: "D-Junioren: Spieltage 5 und 6 in der Verbandsliga"
-slug: "d-junioren-spieltage-5-und-6-in-der-verbandsliga"
+slug: "2023-05-23-d-junioren-spieltage-5-und-6-in-der-verbandsliga"
 date: "2023-05-23"
 promote: false
 createdAt: "2023-05-24T07:31:38.129Z"

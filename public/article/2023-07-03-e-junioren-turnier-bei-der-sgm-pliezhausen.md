@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren-Turnier bei der SGM Pliezhausen"
-slug: "e-junioren-turnier-bei-der-sgm-pliezhausen"
+slug: "2023-07-03-e-junioren-turnier-bei-der-sgm-pliezhausen"
 date: "2023-07-03"
 promote: false
 createdAt: "2023-07-31T13:22:27.208Z"

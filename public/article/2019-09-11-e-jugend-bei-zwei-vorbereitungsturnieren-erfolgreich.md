@@ -1,6 +1,6 @@
 ---
 title: "E-Jugend bei zwei Vorbereitungsturnieren erfolgreich"
-slug: "e-jugend-bei-zwei-vorbereitungsturnieren-erfolgreich"
+slug: "2019-09-11-e-jugend-bei-zwei-vorbereitungsturnieren-erfolgreich"
 date: "2019-09-11"
 promote: false
 createdAt: "null"

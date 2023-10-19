@@ -1,6 +1,6 @@
 ---
 title: "Neuzugang Malte Priewe"
-slug: "neuzugang-malte-priewe"
+slug: "2023-02-23-neuzugang-malte-priewe"
 date: "2023-02-23"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Fünfacher Pichler sichert den Sieg gegen Eningen"
-slug: "fuenfacher-pichler-sichert-den-sieg-gegen-eningen"
+slug: "2022-03-24-fuenfacher-pichler-sichert-den-sieg-gegen-eningen"
 date: "2022-03-24"
 promote: false
 createdAt: "null"

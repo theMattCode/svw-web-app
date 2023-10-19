@@ -1,6 +1,6 @@
 ---
 title: "Trendsportart HobbyHorsing durchgestartet"
-slug: "trendsportart-hobby-horsing-durchgestartet"
+slug: "2023-09-22-trendsportart-hobby-horsing-durchgestartet"
 date: "2023-09-22"
 promote: false
 createdAt: "2023-09-24T18:35:00.783Z"

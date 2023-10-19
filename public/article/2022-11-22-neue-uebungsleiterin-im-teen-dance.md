@@ -1,6 +1,6 @@
 ---
 title: "Neue Übungsleiterin im Teen-Dance"
-slug: "neue-uebungsleiterin-im-teen-dance"
+slug: "2022-11-22-neue-uebungsleiterin-im-teen-dance"
 date: "2022-11-22"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Schaulaufen des Meisters, Meisterexpress, Partynacht!"
-slug: "schaulaufen-des-meisters-meisterexpress-partynacht"
+slug: "2023-06-11-schaulaufen-des-meisters-meisterexpress-partynacht"
 date: "2023-06-11"
 promote: false
 createdAt: "2023-06-21T05:03:57.925Z"

@@ -1,6 +1,6 @@
 ---
 title: "Einladung zur Mitgliederversammlung"
-slug: "einladung-zur-mitgliederversammlung-1"
+slug: "2020-07-06-einladung-zur-mitgliederversammlung-1"
 date: "2020-07-06"
 promote: true
 createdAt: "null"

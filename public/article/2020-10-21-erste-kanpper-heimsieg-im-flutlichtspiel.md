@@ -1,6 +1,6 @@
 ---
 title: "Erste: Kanpper Heimsieg im Flutlichtspiel"
-slug: "erste-kanpper-heimsieg-im-flutlichtspiel"
+slug: "2020-10-21-erste-kanpper-heimsieg-im-flutlichtspiel"
 date: "2020-10-21"
 promote: false
 createdAt: "null"

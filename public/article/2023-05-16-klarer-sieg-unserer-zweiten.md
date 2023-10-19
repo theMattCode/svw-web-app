@@ -1,6 +1,6 @@
 ---
 title: "Klarer Sieg unserer Zweiten"
-slug: "klarer-sieg-unserer-zweiten"
+slug: "2023-05-16-klarer-sieg-unserer-zweiten"
 date: "2023-05-16"
 promote: false
 createdAt: "2023-05-24T07:24:36.678Z"

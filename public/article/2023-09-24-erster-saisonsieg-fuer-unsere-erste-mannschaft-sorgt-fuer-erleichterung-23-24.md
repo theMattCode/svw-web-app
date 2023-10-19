@@ -1,6 +1,6 @@
 ---
 title: "Erster Saisonsieg für unsere Erste Mannschaft sorgt für Erleichterung"
-slug: "erster-saisonsieg-fuer-unsere-erste-mannschaft-sorgt-fuer-erleichterung-23-24"
+slug: "2023-09-24-erster-saisonsieg-fuer-unsere-erste-mannschaft-sorgt-fuer-erleichterung-23-24"
 date: "2023-09-24"
 promote: false
 createdAt: "2023-09-25T12:41:22.606Z"

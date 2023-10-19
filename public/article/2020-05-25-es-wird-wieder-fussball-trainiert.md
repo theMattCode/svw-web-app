@@ -1,6 +1,6 @@
 ---
 title: "Es wird wieder Fußball trainiert!"
-slug: "es-wird-wieder-fussball-trainiert"
+slug: "2020-05-25-es-wird-wieder-fussball-trainiert"
 date: "2020-05-25"
 promote: true
 createdAt: "null"

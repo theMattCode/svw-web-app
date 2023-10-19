@@ -1,6 +1,6 @@
 ---
 title: "Fußballtraining wieder ausgesetzt!"
-slug: "fussballtraining-wieder-ausgesetzt"
+slug: "2021-03-22-fussballtraining-wieder-ausgesetzt"
 date: "2021-03-22"
 promote: false
 createdAt: "null"

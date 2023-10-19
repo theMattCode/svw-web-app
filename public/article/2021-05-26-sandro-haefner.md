@@ -1,6 +1,6 @@
 ---
 title: "Sandro Häfner"
-slug: "sandro-haefner"
+slug: "2021-05-26-sandro-haefner"
 date: "2021-05-26"
 promote: true
 createdAt: "null"

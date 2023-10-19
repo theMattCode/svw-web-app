@@ -1,6 +1,6 @@
 ---
 title: "HobbyHorsing - Reite deine Fantasie!"
-slug: "hobby-horsing-reite-deine-fantasie"
+slug: "2023-09-11-hobby-horsing-reite-deine-fantasie"
 date: "2023-09-11"
 promote: false
 createdAt: "2023-09-12T11:49:01.459Z"

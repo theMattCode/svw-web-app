@@ -1,6 +1,6 @@
 ---
 title: "Verleihung des DFB-Ehrenamtspreises an Sven Skorupa und Peter Weik"
-slug: "verleihung-des-dfb-ehrenamtspreises-an-sven-skorupa-und-peter-weik"
+slug: "2020-01-27-verleihung-des-dfb-ehrenamtspreises-an-sven-skorupa-und-peter-weik"
 date: "2020-01-27"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Unsere Aktiven am Wahlsonntag"
-slug: "unsere-aktiven-am-wahlsonntag"
+slug: "2021-09-22-unsere-aktiven-am-wahlsonntag"
 date: "2021-09-22"
 promote: true
 createdAt: "null"

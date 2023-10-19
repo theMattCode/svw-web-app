@@ -1,6 +1,6 @@
 ---
 title: "Frohe Ostern!"
-slug: "frohe-ostern"
+slug: "2021-03-25-frohe-ostern"
 date: "2021-03-25"
 promote: true
 createdAt: "null"

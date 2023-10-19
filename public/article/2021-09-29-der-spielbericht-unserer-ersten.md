@@ -1,6 +1,6 @@
 ---
 title: "Der Spielbericht unserer Ersten"
-slug: "der-spielbericht-unserer-ersten"
+slug: "2021-09-29-der-spielbericht-unserer-ersten"
 date: "2021-09-29"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Sportwoche des SV Walddorf"
-slug: "sportwoche-des-sv-walddorf"
+slug: "2023-07-24-sportwoche-des-sv-walddorf"
 date: "2023-07-24"
 promote: false
 createdAt: "2023-07-28T07:39:15.014Z"

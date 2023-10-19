@@ -1,6 +1,6 @@
 ---
 title: "11:0-Heimerfolg der Ersten gegen den SV Rommelsbach"
-slug: "110-heimerfolg-der-ersten-gegen-den-sv-rommelsbach"
+slug: "2020-10-05-110-heimerfolg-der-ersten-gegen-den-sv-rommelsbach"
 date: "2020-10-05"
 promote: false
 createdAt: "null"

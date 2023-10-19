@@ -1,6 +1,6 @@
 ---
 title: "Luis Armbruster wird spielender Co-Trainer"
-slug: "luis-armbruster-wird-spielender-co-trainer"
+slug: "2022-09-19-luis-armbruster-wird-spielender-co-trainer"
 date: "2022-09-19"
 promote: true
 createdAt: "null"

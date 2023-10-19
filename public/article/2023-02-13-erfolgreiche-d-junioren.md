@@ -1,6 +1,6 @@
 ---
 title: "Erfolgreiche D-Junioren"
-slug: "erfolgreiche-d-junioren"
+slug: "2023-02-13-erfolgreiche-d-junioren"
 date: "2023-02-13"
 promote: false
 createdAt: "null"

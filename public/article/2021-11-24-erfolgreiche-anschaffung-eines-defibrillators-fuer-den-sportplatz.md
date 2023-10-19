@@ -1,6 +1,6 @@
 ---
 title: "Erfolgreiche Anschaffung eines Defibrillators für den Sportplatz"
-slug: "erfolgreiche-anschaffung-eines-defibrillators-fuer-den-sportplatz"
+slug: "2021-11-24-erfolgreiche-anschaffung-eines-defibrillators-fuer-den-sportplatz"
 date: "2021-11-24"
 promote: true
 createdAt: "null"

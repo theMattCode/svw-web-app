@@ -1,6 +1,6 @@
 ---
 title: "Volles Programm für die E-Junioren"
-slug: "volles-programm-fuer-die-e-junioren"
+slug: "2020-03-09-volles-programm-fuer-die-e-junioren"
 date: "2020-03-09"
 promote: false
 createdAt: "null"

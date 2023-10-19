@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht E1-Junioren"
-slug: "spielbericht-e1-junioren-1"
+slug: "2023-05-15-spielbericht-e1-junioren-1"
 date: "2023-05-15"
 promote: false
 createdAt: "2023-05-24T07:23:35.370Z"

@@ -1,6 +1,6 @@
 ---
 title: "Kaderupdate"
-slug: "kaderupdate"
+slug: "2020-06-21-kaderupdate"
 date: "2020-06-21"
 promote: true
 createdAt: "null"

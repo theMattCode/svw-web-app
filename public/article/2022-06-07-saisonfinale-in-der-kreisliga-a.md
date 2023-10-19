@@ -1,6 +1,6 @@
 ---
 title: "Saisonfinale in der Kreisliga A"
-slug: "saisonfinale-in-der-kreisliga-a"
+slug: "2022-06-07-saisonfinale-in-der-kreisliga-a"
 date: "2022-06-07"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Neuzugang Robin Schraitle"
-slug: "neuzugang-robin-schraitle"
+slug: "2022-07-02-neuzugang-robin-schraitle"
 date: "2022-07-02"
 promote: false
 createdAt: "null"

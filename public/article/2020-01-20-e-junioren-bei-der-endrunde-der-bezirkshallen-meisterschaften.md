@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren bei der Endrunde der Bezirkshallen-Meisterschaften"
-slug: "e-junioren-bei-der-endrunde-der-bezirkshallen-meisterschaften"
+slug: "2020-01-20-e-junioren-bei-der-endrunde-der-bezirkshallen-meisterschaften"
 date: "2020-01-20"
 promote: false
 createdAt: "null"

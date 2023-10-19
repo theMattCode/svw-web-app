@@ -1,6 +1,6 @@
 ---
 title: "Weitere Corona Lockerungen ab 02.06."
-slug: "weitere-corona-lockerungen-ab-0206-1"
+slug: "2020-05-25-weitere-corona-lockerungen-ab-0206-1"
 date: "2020-05-25"
 promote: true
 createdAt: "null"

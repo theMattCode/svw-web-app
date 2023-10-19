@@ -1,6 +1,6 @@
 ---
 title: "Spielberichte zur 1. Runde des Bezirkspokals"
-slug: "spielberichte-zur-1-runde-des-bezirkspokals"
+slug: "2020-08-17-spielberichte-zur-1-runde-des-bezirkspokals"
 date: "2020-08-17"
 promote: false
 createdAt: "null"

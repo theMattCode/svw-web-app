@@ -1,6 +1,6 @@
 ---
 title: "Spiele unserer Ersten am 19.03 und 26.03"
-slug: "spiele-unserer-ersten-am-19-03-und-26-03"
+slug: "2023-04-03-spiele-unserer-ersten-am-19-03-und-26-03"
 date: "2023-04-03"
 promote: false
 createdAt: "2023-04-04T12:29:39.918Z"

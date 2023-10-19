@@ -1,6 +1,6 @@
 ---
 title: "6. Hallenturnier der F2 - Junioren in Mittelstadt"
-slug: "6-hallenturnier-der-f2-junioren-in-mittelstadt"
+slug: "2020-02-16-6-hallenturnier-der-f2-junioren-in-mittelstadt"
 date: "2020-02-16"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Unser SVW-Blättle ist verfügbar!"
-slug: "unser-svw-blaettle-ist-verfuegbar"
+slug: "2020-11-16-unser-svw-blaettle-ist-verfuegbar"
 date: "2020-11-16"
 promote: false
 createdAt: "null"

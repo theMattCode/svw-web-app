@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht Aktive II"
-slug: "kreisliga-b-5-spieltag-sv-walddorf-ii-sgm-kirchentellinsfurt-kusterdingen-ii-20-00"
+slug: "2022-10-17-kreisliga-b-5-spieltag-sv-walddorf-ii-sgm-kirchentellinsfurt-kusterdingen-ii-20-00"
 date: "2022-10-17"
 promote: false
 createdAt: "null"

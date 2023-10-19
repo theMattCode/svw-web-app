@@ -1,6 +1,6 @@
 ---
 title: "15. Spieltag: 08.03.20 SV Walddorf II - TB Kirchentellinsfurt II"
-slug: "15-spieltag-080320-sv-walddorf-ii-tb-kirchentellinsfurt-ii"
+slug: "2020-03-09-15-spieltag-080320-sv-walddorf-ii-tb-kirchentellinsfurt-ii"
 date: "2020-03-09"
 promote: false
 createdAt: "null"

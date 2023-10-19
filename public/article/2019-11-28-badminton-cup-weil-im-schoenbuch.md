@@ -1,6 +1,6 @@
 ---
 title: "Badminton Cup Weil im Schönbuch"
-slug: "badminton-cup-weil-im-schoenbuch"
+slug: "2019-11-28-badminton-cup-weil-im-schoenbuch"
 date: "2019-11-28"
 promote: false
 createdAt: "null"

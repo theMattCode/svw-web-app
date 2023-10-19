@@ -1,6 +1,6 @@
 ---
 title: "Tilgner bei Comeback mit dem Schlusspunkt"
-slug: "tilgner-bei-comeback-mit-dem-schlusspunkt"
+slug: "2022-03-21-tilgner-bei-comeback-mit-dem-schlusspunkt"
 date: "2022-03-21"
 promote: false
 createdAt: "null"

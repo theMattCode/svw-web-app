@@ -1,6 +1,6 @@
 ---
 title: "Neuzugang Luis Walker"
-slug: "neuzugang-luis-walker"
+slug: "2023-02-23-neuzugang-luis-walker"
 date: "2023-02-23"
 promote: true
 createdAt: "null"

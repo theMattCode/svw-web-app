@@ -1,6 +1,6 @@
 ---
 title: "Unsere Erste wartet weiter auf die ersten Punkte"
-slug: "unsere-erste-wartet-weiter-auf-die-ersten-punkte"
+slug: "2023-09-09-unsere-erste-wartet-weiter-auf-die-ersten-punkte"
 date: "2023-09-09"
 promote: false
 createdAt: "2023-09-12T11:40:37.338Z"

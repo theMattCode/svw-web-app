@@ -1,6 +1,6 @@
 ---
 title: "Trainingslager 1. Mannschaft"
-slug: "trainingslager-1-mannschaft"
+slug: "2021-07-20-trainingslager-1-mannschaft"
 date: "2021-07-20"
 promote: false
 createdAt: "null"

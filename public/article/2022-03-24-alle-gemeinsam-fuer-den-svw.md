@@ -1,6 +1,6 @@
 ---
 title: "ALLE GEMEINSAM FÜR DEN SVW"
-slug: "alle-gemeinsam-fuer-den-svw"
+slug: "2022-03-24-alle-gemeinsam-fuer-den-svw"
 date: "2022-03-24"
 promote: false
 createdAt: "null"

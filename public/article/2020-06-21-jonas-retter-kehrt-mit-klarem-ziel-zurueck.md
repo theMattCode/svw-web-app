@@ -1,6 +1,6 @@
 ---
 title: "Jonas Retter kehrt mit klarem Ziel zurück!"
-slug: "jonas-retter-kehrt-mit-klarem-ziel-zurueck"
+slug: "2020-06-21-jonas-retter-kehrt-mit-klarem-ziel-zurueck"
 date: "2020-06-21"
 promote: true
 createdAt: "null"

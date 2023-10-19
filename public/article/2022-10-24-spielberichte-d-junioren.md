@@ -1,6 +1,6 @@
 ---
 title: "Spielberichte D-Junioren"
-slug: "spielberichte-d-junioren"
+slug: "2022-10-24-spielberichte-d-junioren"
 date: "2022-10-24"
 promote: false
 createdAt: "null"

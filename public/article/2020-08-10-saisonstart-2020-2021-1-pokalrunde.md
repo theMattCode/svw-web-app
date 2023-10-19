@@ -1,6 +1,6 @@
 ---
 title: "Saisonstart 2020/2021: 1. Pokalrunde"
-slug: "saisonstart-2020-2021-1-pokalrunde"
+slug: "2020-08-10-saisonstart-2020-2021-1-pokalrunde"
 date: "2020-08-10"
 promote: true
 createdAt: "null"

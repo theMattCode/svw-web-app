@@ -1,6 +1,6 @@
 ---
 title: "Verschiebung der Sponsoren-Radtour des SVW"
-slug: "verschiebung-der-sponsoren-radtour-des-svw"
+slug: "2021-04-12-verschiebung-der-sponsoren-radtour-des-svw"
 date: "2021-04-12"
 promote: false
 createdAt: "null"

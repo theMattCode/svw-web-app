@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren bei Turnier und Leistungsvergleich erfolgreich"
-slug: "e-junioren-bei-turnier-und-leistungsvergleich-erfolgreich"
+slug: "2020-01-20-e-junioren-bei-turnier-und-leistungsvergleich-erfolgreich"
 date: "2020-01-20"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Daniel Strenger trägt in der neuen Saison das Trikot unseres SVW"
-slug: "daniel-strenger-traegt-in-der-neuen-saison-das-trikot-unseres-svw"
+slug: "2020-06-24-daniel-strenger-traegt-in-der-neuen-saison-das-trikot-unseres-svw"
 date: "2020-06-24"
 promote: true
 createdAt: "null"

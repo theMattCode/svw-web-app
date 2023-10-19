@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer D-Junioren"
-slug: "spielbericht-unserer-d-junioren"
+slug: "2021-10-12-spielbericht-unserer-d-junioren"
 date: "2021-10-12"
 promote: true
 createdAt: "null"

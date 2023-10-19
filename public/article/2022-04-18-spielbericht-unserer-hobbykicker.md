@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer Hobbykicker"
-slug: "spielbericht-unserer-hobbykicker"
+slug: "2022-04-18-spielbericht-unserer-hobbykicker"
 date: "2022-04-18"
 promote: false
 createdAt: "null"

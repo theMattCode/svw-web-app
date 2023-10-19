@@ -1,6 +1,6 @@
 ---
 title: "FANCARD von Fussball.de"
-slug: "fancard-von-fussballde"
+slug: "2021-07-03-fancard-von-fussballde"
 date: "2021-07-03"
 promote: true
 createdAt: "null"

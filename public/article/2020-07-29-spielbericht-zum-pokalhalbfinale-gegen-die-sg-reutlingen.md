@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht zum Pokalhalbfinale gegen die SG Reutlingen"
-slug: "spielbericht-zum-pokalhalbfinale-gegen-die-sg-reutlingen"
+slug: "2020-07-29-spielbericht-zum-pokalhalbfinale-gegen-die-sg-reutlingen"
 date: "2020-07-29"
 promote: false
 createdAt: "null"

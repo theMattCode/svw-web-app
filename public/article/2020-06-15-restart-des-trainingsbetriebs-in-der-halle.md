@@ -1,6 +1,6 @@
 ---
 title: "Restart des Trainingsbetriebs in der Halle"
-slug: "restart-des-trainingsbetriebs-in-der-halle"
+slug: "2020-06-15-restart-des-trainingsbetriebs-in-der-halle"
 date: "2020-06-15"
 promote: true
 createdAt: "null"

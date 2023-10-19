@@ -1,6 +1,6 @@
 ---
 title: "Update zur Corona-Pandemie"
-slug: "update-zur-corona-pandemie"
+slug: "2020-05-07-update-zur-corona-pandemie"
 date: "2020-05-07"
 promote: true
 createdAt: "null"

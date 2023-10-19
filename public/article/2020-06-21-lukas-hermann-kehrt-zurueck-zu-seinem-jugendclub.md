@@ -1,6 +1,6 @@
 ---
 title: "Lukas Hermann kehrt zurück zu seinem Jugendclub"
-slug: "lukas-hermann-kehrt-zurueck-zu-seinem-jugendclub"
+slug: "2020-06-21-lukas-hermann-kehrt-zurueck-zu-seinem-jugendclub"
 date: "2020-06-21"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Wichtige Information zum Beitragseinzug 2021"
-slug: "wichtige-information-zum-beitragseinzug-2021"
+slug: "2021-03-03-wichtige-information-zum-beitragseinzug-2021"
 date: "2021-03-03"
 promote: true
 createdAt: "null"

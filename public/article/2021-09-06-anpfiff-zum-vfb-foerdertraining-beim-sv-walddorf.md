@@ -1,6 +1,6 @@
 ---
 title: "Anpfiff zum VfB-Fördertraining beim SV Walddorf "
-slug: "anpfiff-zum-vfb-foerdertraining-beim-sv-walddorf"
+slug: "2021-09-06-anpfiff-zum-vfb-foerdertraining-beim-sv-walddorf"
 date: "2021-09-06"
 promote: true
 createdAt: "null"

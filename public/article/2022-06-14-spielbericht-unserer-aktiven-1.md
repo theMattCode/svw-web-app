@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer Aktiven"
-slug: "spielbericht-unserer-aktiven-1"
+slug: "2022-06-14-spielbericht-unserer-aktiven-1"
 date: "2022-06-14"
 promote: false
 createdAt: "null"

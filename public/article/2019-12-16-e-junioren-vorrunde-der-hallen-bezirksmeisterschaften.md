@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren: Vorrunde der Hallen-Bezirksmeisterschaften"
-slug: "e-junioren-vorrunde-der-hallen-bezirksmeisterschaften"
+slug: "2019-12-16-e-junioren-vorrunde-der-hallen-bezirksmeisterschaften"
 date: "2019-12-16"
 promote: false
 createdAt: "null"

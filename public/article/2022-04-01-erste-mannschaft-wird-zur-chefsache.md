@@ -1,6 +1,6 @@
 ---
 title: "Erste Mannschaft wird zur Chefsache"
-slug: "erste-mannschaft-wird-zur-chefsache"
+slug: "2022-04-01-erste-mannschaft-wird-zur-chefsache"
 date: "2022-04-01"
 promote: false
 createdAt: "null"

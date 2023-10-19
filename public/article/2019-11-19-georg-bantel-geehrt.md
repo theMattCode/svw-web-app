@@ -1,6 +1,6 @@
 ---
 title: "Georg Bantel geehrt"
-slug: "georg-bantel-geehrt"
+slug: "2019-11-19-georg-bantel-geehrt"
 date: "2019-11-19"
 promote: false
 createdAt: "null"

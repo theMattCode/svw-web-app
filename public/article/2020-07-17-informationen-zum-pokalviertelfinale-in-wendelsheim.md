@@ -1,6 +1,6 @@
 ---
 title: "Informationen zum Pokalviertelfinale in Wendelsheim"
-slug: "informationen-zum-pokalviertelfinale-in-wendelsheim"
+slug: "2020-07-17-informationen-zum-pokalviertelfinale-in-wendelsheim"
 date: "2020-07-17"
 promote: false
 createdAt: "null"

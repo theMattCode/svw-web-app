@@ -1,6 +1,6 @@
 ---
 title: "1. Walddorfer Bändelesturnier"
-slug: "1-walddorfer-baendelesturnier"
+slug: "2019-12-16-1-walddorfer-baendelesturnier"
 date: "2019-12-16"
 promote: false
 createdAt: "null"

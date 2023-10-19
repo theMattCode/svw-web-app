@@ -1,6 +1,6 @@
 ---
 title: "SVW Akademie in DFB Trainerzeitschrift „Fussballtraining“"
-slug: "svw-akademie-in-dfb-trainerzeitschrift-fussballtraining"
+slug: "2020-08-28-svw-akademie-in-dfb-trainerzeitschrift-fussballtraining"
 date: "2020-08-28"
 promote: false
 createdAt: "null"

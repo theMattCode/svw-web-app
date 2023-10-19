@@ -1,6 +1,6 @@
 ---
 title: "F2 Hallenturnier am Samstag, 18.01. 20 beim TSV Bernhausen"
-slug: "f2-hallenturnier-am-samstag-1801-20-beim-tsv-bernhausen"
+slug: "2020-01-20-f2-hallenturnier-am-samstag-1801-20-beim-tsv-bernhausen"
 date: "2020-01-20"
 promote: false
 createdAt: "null"

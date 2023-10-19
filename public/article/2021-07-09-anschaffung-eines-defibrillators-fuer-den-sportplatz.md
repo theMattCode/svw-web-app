@@ -1,6 +1,6 @@
 ---
 title: "Anschaffung eines Defibrillators für den Sportplatz"
-slug: "anschaffung-eines-defibrillators-fuer-den-sportplatz"
+slug: "2021-07-09-anschaffung-eines-defibrillators-fuer-den-sportplatz"
 date: "2021-07-09"
 promote: true
 createdAt: "null"

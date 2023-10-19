@@ -1,6 +1,6 @@
 ---
 title: "Walddorfer Dorffest"
-slug: "walddorfer-dorffest"
+slug: "2022-07-09-walddorfer-dorffest"
 date: "2022-07-09"
 promote: false
 createdAt: "null"

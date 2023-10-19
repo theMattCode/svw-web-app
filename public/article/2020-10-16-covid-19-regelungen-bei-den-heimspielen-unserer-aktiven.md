@@ -1,6 +1,6 @@
 ---
 title: "COVID-19-Regelungen bei den Heimspielen unserer Aktiven"
-slug: "covid-19-regelungen-bei-den-heimspielen-unserer-aktiven"
+slug: "2020-10-16-covid-19-regelungen-bei-den-heimspielen-unserer-aktiven"
 date: "2020-10-16"
 promote: true
 createdAt: "null"

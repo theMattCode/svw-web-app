@@ -1,6 +1,6 @@
 ---
 title: "Offizieller Trainingsauftakt der 1. Mannschaft"
-slug: "offizieller-trainingsauftakt-der-1-mannschaft"
+slug: "2021-07-07-offizieller-trainingsauftakt-der-1-mannschaft"
 date: "2021-07-07"
 promote: false
 createdAt: "null"

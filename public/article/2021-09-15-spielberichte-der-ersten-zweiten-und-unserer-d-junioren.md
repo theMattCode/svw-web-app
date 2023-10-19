@@ -1,6 +1,6 @@
 ---
 title: "Spielberichte der Ersten, Zweiten und unserer D-Junioren"
-slug: "spielberichte-der-ersten-zweiten-und-unserer-d-junioren"
+slug: "2021-09-15-spielberichte-der-ersten-zweiten-und-unserer-d-junioren"
 date: "2021-09-15"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Luis Armbruster kommt vom TSV Pliezhausen"
-slug: "luis-armbruster-kommt-vom-tsv-pliezhausen"
+slug: "2020-06-21-luis-armbruster-kommt-vom-tsv-pliezhausen"
 date: "2020-06-21"
 promote: true
 createdAt: "null"

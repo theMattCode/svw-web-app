@@ -1,6 +1,6 @@
 ---
 title: "Zweite feiert dritten Sieg in Folge"
-slug: "zweite-feiert-dritten-sieg-in-folge"
+slug: "2020-10-05-zweite-feiert-dritten-sieg-in-folge"
 date: "2020-10-05"
 promote: false
 createdAt: "null"

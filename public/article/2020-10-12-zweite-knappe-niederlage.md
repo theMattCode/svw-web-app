@@ -1,6 +1,6 @@
 ---
 title: "Zweite: Knappe Niederlage"
-slug: "zweite-knappe-niederlage"
+slug: "2020-10-12-zweite-knappe-niederlage"
 date: "2020-10-12"
 promote: false
 createdAt: "null"

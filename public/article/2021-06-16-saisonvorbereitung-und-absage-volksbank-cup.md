@@ -1,6 +1,6 @@
 ---
 title: "Saisonvorbereitung und Absage Volksbank Cup"
-slug: "saisonvorbereitung-und-absage-volksbank-cup"
+slug: "2021-06-16-saisonvorbereitung-und-absage-volksbank-cup"
 date: "2021-06-16"
 promote: false
 createdAt: "null"

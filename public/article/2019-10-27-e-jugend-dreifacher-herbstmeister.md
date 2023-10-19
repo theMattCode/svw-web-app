@@ -1,6 +1,6 @@
 ---
 title: "E-Jugend dreifacher Herbstmeister!"
-slug: "e-jugend-dreifacher-herbstmeister"
+slug: "2019-10-27-e-jugend-dreifacher-herbstmeister"
 date: "2019-10-27"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "15. Walddorfhäslacher Volksbank-Hallen-Cup"
-slug: "15-walddorfhaeslacher-volksbank-hallen-cup"
+slug: "2019-09-19-15-walddorfhaeslacher-volksbank-hallen-cup"
 date: "2019-09-19"
 promote: true
 createdAt: "null"

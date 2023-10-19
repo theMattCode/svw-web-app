@@ -1,6 +1,6 @@
 ---
 title: "Jan Becker kehrt vom SSV Rübgarten zurück!"
-slug: "jan-becker-kehrt-vom-ssv-ruebgarten-zurueck"
+slug: "2021-04-13-jan-becker-kehrt-vom-ssv-ruebgarten-zurueck"
 date: "2021-04-13"
 promote: true
 createdAt: "null"

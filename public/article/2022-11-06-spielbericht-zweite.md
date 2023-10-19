@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht Zweite"
-slug: "spielbericht-zweite"
+slug: "2022-11-06-spielbericht-zweite"
 date: "2022-11-06"
 promote: false
 createdAt: "null"

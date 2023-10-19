@@ -1,6 +1,6 @@
 ---
 title: "Bezirksliga, 22. Spieltag"
-slug: "bezirksliga-22-spieltag"
+slug: "2023-04-04-bezirksliga-22-spieltag"
 date: "2023-04-04"
 promote: false
 createdAt: "2023-04-04T12:23:36.119Z"

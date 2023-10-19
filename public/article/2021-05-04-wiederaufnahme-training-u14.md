@@ -1,6 +1,6 @@
 ---
 title: "Wiederaufnahme Training U14"
-slug: "wiederaufnahme-training-u14"
+slug: "2021-05-04-wiederaufnahme-training-u14"
 date: "2021-05-04"
 promote: false
 createdAt: "null"

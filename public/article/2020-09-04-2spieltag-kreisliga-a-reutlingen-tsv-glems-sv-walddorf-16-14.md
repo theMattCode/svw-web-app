@@ -1,6 +1,6 @@
 ---
 title: "2.Spieltag: Kreisliga A Reutlingen: TSV Glems - SV Walddorf 1:6 (1:4)"
-slug: "2spieltag-kreisliga-a-reutlingen-tsv-glems-sv-walddorf-16-14"
+slug: "2020-09-04-2spieltag-kreisliga-a-reutlingen-tsv-glems-sv-walddorf-16-14"
 date: "2020-09-04"
 promote: false
 createdAt: "null"

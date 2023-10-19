@@ -1,6 +1,6 @@
 ---
 title: "Bezirksliga-Relegation in den Weiherwiesen"
-slug: "relegationsspiel-am-25-juni-1200-zuschauer-in-den-weiherwiesen"
+slug: "2023-06-25-relegationsspiel-am-25-juni-1200-zuschauer-in-den-weiherwiesen"
 date: "2023-06-25"
 promote: false
 createdAt: "2023-06-30T07:25:03.971Z"

@@ -1,6 +1,6 @@
 ---
 title: "SV Walddorf Fußball: Ist-Zustand"
-slug: "sv-walddorf-fussball-ist-zustand"
+slug: "2021-02-21-sv-walddorf-fussball-ist-zustand"
 date: "2021-02-21"
 promote: true
 createdAt: "null"

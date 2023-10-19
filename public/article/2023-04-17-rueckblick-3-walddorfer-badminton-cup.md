@@ -1,6 +1,6 @@
 ---
 title: "Rückblick 3. Walddorfer Badminton-Cup"
-slug: "rueckblick-3-walddorfer-badminton-cup"
+slug: "2023-04-17-rueckblick-3-walddorfer-badminton-cup"
 date: "2023-04-17"
 promote: true
 createdAt: "2023-05-03T07:11:36.876Z"

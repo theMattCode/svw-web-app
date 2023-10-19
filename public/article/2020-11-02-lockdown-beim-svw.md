@@ -1,6 +1,6 @@
 ---
 title: "Lockdown beim SVW!"
-slug: "lockdown-beim-svw"
+slug: "2020-11-02-lockdown-beim-svw"
 date: "2020-11-02"
 promote: true
 createdAt: "null"

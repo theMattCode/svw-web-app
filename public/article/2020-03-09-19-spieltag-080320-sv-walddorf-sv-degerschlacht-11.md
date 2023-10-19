@@ -1,6 +1,6 @@
 ---
 title: "19. Spieltag: 08.03.20 SV Walddorf - SV Degerschlacht 1:1"
-slug: "19-spieltag-080320-sv-walddorf-sv-degerschlacht-11"
+slug: "2020-03-09-19-spieltag-080320-sv-walddorf-sv-degerschlacht-11"
 date: "2020-03-09"
 promote: false
 createdAt: "null"

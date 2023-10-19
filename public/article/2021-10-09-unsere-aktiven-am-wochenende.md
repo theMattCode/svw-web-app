@@ -1,6 +1,6 @@
 ---
 title: "Unsere Aktiven am Wochenende"
-slug: "unsere-aktiven-am-wochenende"
+slug: "2021-10-09-unsere-aktiven-am-wochenende"
 date: "2021-10-09"
 promote: true
 createdAt: "null"

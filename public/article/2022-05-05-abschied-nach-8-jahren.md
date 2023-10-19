@@ -1,6 +1,6 @@
 ---
 title: "Danke Wicki"
-slug: "abschied-nach-8-jahren"
+slug: "2022-05-05-abschied-nach-8-jahren"
 date: "2022-05-05"
 promote: true
 createdAt: "null"

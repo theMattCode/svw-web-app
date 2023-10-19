@@ -1,6 +1,6 @@
 ---
 title: "Sven Skorupa - Sportliche Leitung"
-slug: "sven-skorupa-eine-schluesselfigur-unserer-sportlichen-leitung"
+slug: "2021-05-06-sven-skorupa-eine-schluesselfigur-unserer-sportlichen-leitung"
 date: "2021-05-06"
 promote: true
 createdAt: "null"

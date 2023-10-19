@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer Ersten: 2. Bezirkspokalrunde TSV Gomaringen 2 - SV Walddorf 0:4"
-slug: "spielbericht-unserer-ersten-2-bezirkspokalrunde-tsv-gomaringen-2-sv-walddorf-04"
+slug: "2021-09-03-spielbericht-unserer-ersten-2-bezirkspokalrunde-tsv-gomaringen-2-sv-walddorf-04"
 date: "2021-09-03"
 promote: true
 createdAt: "null"

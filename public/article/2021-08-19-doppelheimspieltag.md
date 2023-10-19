@@ -1,6 +1,6 @@
 ---
 title: "Doppelheimspieltag"
-slug: "doppelheimspieltag"
+slug: "2021-08-19-doppelheimspieltag"
 date: "2021-08-19"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Sportheim-Pächter gesucht!"
-slug: "sportheim-paechter-gesucht"
+slug: "2023-03-15-sportheim-paechter-gesucht"
 date: "2023-03-15"
 promote: true
 createdAt: "null"

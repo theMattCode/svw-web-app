@@ -1,6 +1,6 @@
 ---
 title: "Wir freuen uns über neue Teilnehmer/innen !"
-slug: "wir-freuen-uns-ueber-neue-teilnehmer-innen"
+slug: "2020-02-03-wir-freuen-uns-ueber-neue-teilnehmer-innen"
 date: "2020-02-03"
 promote: false
 createdAt: "null"

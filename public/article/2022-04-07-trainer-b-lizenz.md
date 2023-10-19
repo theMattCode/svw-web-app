@@ -1,6 +1,6 @@
 ---
 title: "Trainer B-Lizenz"
-slug: "trainer-b-lizenz"
+slug: "2022-04-07-trainer-b-lizenz"
 date: "2022-04-07"
 promote: true
 createdAt: "null"

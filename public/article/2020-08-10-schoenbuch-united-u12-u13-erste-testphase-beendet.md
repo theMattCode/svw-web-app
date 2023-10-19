@@ -1,6 +1,6 @@
 ---
 title: "Schönbuch United U12/U13: erste Testphase beendet"
-slug: "schoenbuch-united-u12-u13-erste-testphase-beendet"
+slug: "2020-08-10-schoenbuch-united-u12-u13-erste-testphase-beendet"
 date: "2020-08-10"
 promote: false
 createdAt: "null"

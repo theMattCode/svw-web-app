@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren: Top Platzierung beim Juniors Kristall Cup"
-slug: "e-junioren-top-platzierung-beim-juniors-kristall-cup"
+slug: "2019-12-16-e-junioren-top-platzierung-beim-juniors-kristall-cup"
 date: "2019-12-16"
 promote: false
 createdAt: "null"

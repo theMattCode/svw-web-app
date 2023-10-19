@@ -1,6 +1,6 @@
 ---
 title: "Sportverein Walddorf fährt 2500 € Spenden ein"
-slug: "sportverein-walddorf-faehrt-2500-eur-spenden-ein"
+slug: "2022-06-19-sportverein-walddorf-faehrt-2500-eur-spenden-ein"
 date: "2022-06-19"
 promote: false
 createdAt: "null"

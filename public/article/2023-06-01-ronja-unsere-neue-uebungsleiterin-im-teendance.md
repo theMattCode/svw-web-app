@@ -1,6 +1,6 @@
 ---
 title: "Ronja - unsere neue Übungsleiterin im Teendance"
-slug: "ronja-unsere-neue-uebungsleiterin-im-teendance"
+slug: "2023-06-01-ronja-unsere-neue-uebungsleiterin-im-teendance"
 date: "2023-06-01"
 promote: false
 createdAt: "2023-06-21T04:42:07.530Z"

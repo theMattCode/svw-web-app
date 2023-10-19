@@ -1,6 +1,6 @@
 ---
 title: "Lockere drei Punkte gegen den TVU"
-slug: "lockere-drei-punkte-gegen-den-tvu"
+slug: "2022-03-14-lockere-drei-punkte-gegen-den-tvu"
 date: "2022-03-14"
 promote: false
 createdAt: "null"

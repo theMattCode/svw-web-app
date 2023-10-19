@@ -1,6 +1,6 @@
 ---
 title: "Aktive Badminton-Mannschaft geht an den Start!"
-slug: "aktive-badminton-mannschaft-geht-an-den-start"
+slug: "2023-09-25-aktive-badminton-mannschaft-geht-an-den-start"
 date: "2023-09-25"
 promote: false
 createdAt: "2023-09-27T12:55:14.691Z"

@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer D-Jugend"
-slug: "spielbericht-unserer-d-jugend"
+slug: "2022-10-12-spielbericht-unserer-d-jugend"
 date: "2022-10-12"
 promote: false
 createdAt: "null"

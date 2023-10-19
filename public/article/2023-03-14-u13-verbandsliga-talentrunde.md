@@ -1,6 +1,6 @@
 ---
 title: "U13 Verbandsliga Talentrunde"
-slug: "u13-verbandsliga-talentrunde"
+slug: "2023-03-14-u13-verbandsliga-talentrunde"
 date: "2023-03-14"
 promote: false
 createdAt: "2023-04-04T12:14:50.683Z"

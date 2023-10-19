@@ -1,6 +1,6 @@
 ---
 title: "Zweite: Auswärtssige in Altenburg"
-slug: "zweite-auswaertssige-in-altenburg"
+slug: "2020-10-26-zweite-auswaertssige-in-altenburg"
 date: "2020-10-26"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Bericht Spartenversammlung ,,Fitness und Gesundheitssport´´"
-slug: "bericht-spartenversammlung-fitness-und-gesundheitssport"
+slug: "2022-05-05-bericht-spartenversammlung-fitness-und-gesundheitssport"
 date: "2022-05-05"
 promote: false
 createdAt: "null"

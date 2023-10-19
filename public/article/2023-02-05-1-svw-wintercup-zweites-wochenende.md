@@ -1,6 +1,6 @@
 ---
 title: "1. SVW-Wintercup - zweites Wochenende"
-slug: "1-svw-wintercup-zweites-wochenende"
+slug: "2023-02-05-1-svw-wintercup-zweites-wochenende"
 date: "2023-02-05"
 promote: true
 createdAt: "null"

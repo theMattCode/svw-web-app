@@ -1,6 +1,6 @@
 ---
 title: "Corona-Pandemie – erste Lockerungen"
-slug: "corona-pandemie-erste-lockerungen"
+slug: "2020-05-12-corona-pandemie-erste-lockerungen"
 date: "2020-05-12"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Chrisse Rau kehrt zu unserem SV Walddorf zurück!"
-slug: "chrisse-rau-kehrt-zu-unserem-sv-walddorf-zurueck"
+slug: "2021-04-13-chrisse-rau-kehrt-zu-unserem-sv-walddorf-zurueck"
 date: "2021-04-13"
 promote: true
 createdAt: "null"

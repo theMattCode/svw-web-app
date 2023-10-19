@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren mit starker Leistung im Spitzenspiel und Derby"
-slug: "e-junioren-mit-starker-leistung-im-spitzenspiel-und-derby"
+slug: "2020-10-26-e-junioren-mit-starker-leistung-im-spitzenspiel-und-derby"
 date: "2020-10-26"
 promote: false
 createdAt: "null"

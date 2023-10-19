@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht unserer Ersten"
-slug: "spielbericht-unserer-ersten-08august2021"
+slug: "2021-08-17-spielbericht-unserer-ersten-08august2021"
 date: "2021-08-17"
 promote: true
 createdAt: "null"

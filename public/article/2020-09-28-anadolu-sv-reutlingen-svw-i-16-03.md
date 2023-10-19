@@ -1,6 +1,6 @@
 ---
 title: "Anadolu SV Reutlingen - SVW I 1:6 (0:3)"
-slug: "anadolu-sv-reutlingen-svw-i-16-03"
+slug: "2020-09-28-anadolu-sv-reutlingen-svw-i-16-03"
 date: "2020-09-28"
 promote: false
 createdAt: "null"

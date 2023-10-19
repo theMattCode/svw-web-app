@@ -1,6 +1,6 @@
 ---
 title: "Robert Schuster: Comeback in Walddorf aus "Clubliebe""
-slug: "robert-schuster-comeback-in-walddorf-aus-clubliebe"
+slug: "2020-07-03-robert-schuster-comeback-in-walddorf-aus-clubliebe"
 date: "2020-07-03"
 promote: true
 createdAt: "null"

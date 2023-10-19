@@ -1,6 +1,6 @@
 ---
 title: "Hinweis zum Hallensport"
-slug: "hinweis-zum-hallensport"
+slug: "2021-03-15-hinweis-zum-hallensport"
 date: "2021-03-15"
 promote: false
 createdAt: "null"

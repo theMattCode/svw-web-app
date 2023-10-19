@@ -1,6 +1,6 @@
 ---
 title: "Neuer Rehasportkurs: „Sport in der Krebsnachsorge“ "
-slug: "neuer-rehasportkurs-sport-in-der-krebsnachsorge"
+slug: "2021-08-23-neuer-rehasportkurs-sport-in-der-krebsnachsorge"
 date: "2021-08-23"
 promote: false
 createdAt: "null"

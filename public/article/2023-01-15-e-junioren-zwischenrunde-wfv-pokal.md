@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren - Endrunde wfv-Pokal"
-slug: "e-junioren-zwischenrunde-wfv-pokal"
+slug: "2023-01-15-e-junioren-zwischenrunde-wfv-pokal"
 date: "2023-01-15"
 promote: false
 createdAt: "null"

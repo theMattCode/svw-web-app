@@ -1,6 +1,6 @@
 ---
 title: "Pichler verlängert bei unserem SV Walddorf"
-slug: "pichler-verlaengert-bei-unserem-sv-walddorf"
+slug: "2021-03-01-pichler-verlaengert-bei-unserem-sv-walddorf"
 date: "2021-03-01"
 promote: true
 createdAt: "null"

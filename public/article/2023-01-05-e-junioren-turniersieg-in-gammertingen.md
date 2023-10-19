@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren - Turniersieg in Gammertingen"
-slug: "e-junioren-turniersieg-in-gammertingen"
+slug: "2023-01-05-e-junioren-turniersieg-in-gammertingen"
 date: "2023-01-05"
 promote: false
 createdAt: "null"

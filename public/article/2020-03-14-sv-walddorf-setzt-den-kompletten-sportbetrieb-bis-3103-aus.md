@@ -1,6 +1,6 @@
 ---
 title: "SV Walddorf setzt den kompletten Sportbetrieb bis 31.03. aus"
-slug: "sv-walddorf-setzt-den-kompletten-sportbetrieb-bis-3103-aus"
+slug: "2020-03-14-sv-walddorf-setzt-den-kompletten-sportbetrieb-bis-3103-aus"
 date: "2020-03-14"
 promote: true
 createdAt: "null"

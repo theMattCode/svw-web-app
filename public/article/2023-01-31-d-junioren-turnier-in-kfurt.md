@@ -1,6 +1,6 @@
 ---
 title: "D-Junioren - Turnier in K´furt"
-slug: "d-junioren-turnier-in-kfurt"
+slug: "2023-01-31-d-junioren-turnier-in-kfurt"
 date: "2023-01-31"
 promote: false
 createdAt: "null"

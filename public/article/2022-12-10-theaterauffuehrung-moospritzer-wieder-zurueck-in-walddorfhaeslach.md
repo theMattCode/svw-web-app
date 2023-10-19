@@ -1,6 +1,6 @@
 ---
 title: "Theateraufführung D´Moo´spritzer wieder zurück in Walddorfhäslach"
-slug: "theaterauffuehrung-moospritzer-wieder-zurueck-in-walddorfhaeslach"
+slug: "2022-12-10-theaterauffuehrung-moospritzer-wieder-zurueck-in-walddorfhaeslach"
 date: "2022-12-10"
 promote: false
 createdAt: "null"

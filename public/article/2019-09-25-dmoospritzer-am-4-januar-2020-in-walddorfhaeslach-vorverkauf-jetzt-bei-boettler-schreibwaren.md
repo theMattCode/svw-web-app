@@ -1,6 +1,6 @@
 ---
 title: "D'Moo'Spritzer am 4. Januar 2020 in Walddorfhäslach – Vorverkauf jetzt bei Böttler Schreibwaren!"
-slug: "dmoospritzer-am-4-januar-2020-in-walddorfhaeslach-vorverkauf-jetzt-bei-boettler-schreibwaren"
+slug: "2019-09-25-dmoospritzer-am-4-januar-2020-in-walddorfhaeslach-vorverkauf-jetzt-bei-boettler-schreibwaren"
 date: "2019-09-25"
 promote: true
 createdAt: "null"

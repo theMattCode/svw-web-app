@@ -1,6 +1,6 @@
 ---
 title: "Rückrunden-Vorbereitung unserer Aktiven"
-slug: "rueckrunden-vorbereitung-unserer-aktiven"
+slug: "2020-01-27-rueckrunden-vorbereitung-unserer-aktiven"
 date: "2020-01-27"
 promote: false
 createdAt: "null"

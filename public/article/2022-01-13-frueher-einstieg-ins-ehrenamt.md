@@ -1,6 +1,6 @@
 ---
 title: "Früher Einstieg ins Ehrenamt"
-slug: "frueher-einstieg-ins-ehrenamt"
+slug: "2022-01-13-frueher-einstieg-ins-ehrenamt"
 date: "2022-01-13"
 promote: false
 createdAt: "null"

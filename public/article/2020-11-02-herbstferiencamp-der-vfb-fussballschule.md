@@ -1,6 +1,6 @@
 ---
 title: "Herbstferiencamp der VfB-Fußballschule"
-slug: "herbstferiencamp-der-vfb-fussballschule"
+slug: "2020-11-02-herbstferiencamp-der-vfb-fussballschule"
 date: "2020-11-02"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren: Doppelte Treppchen-Platzierung in Kusterdingen"
-slug: "e-junioren-doppelte-treppchen-platzierung-in-kusterdingen"
+slug: "2020-03-01-e-junioren-doppelte-treppchen-platzierung-in-kusterdingen"
 date: "2020-03-01"
 promote: false
 createdAt: "null"

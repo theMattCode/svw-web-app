@@ -1,6 +1,6 @@
 ---
 title: "D-Junioren beim Qualiturnier Landesstaffel"
-slug: "d-junioren-beim-qualiturnier-landesstaffel"
+slug: "2022-11-28-d-junioren-beim-qualiturnier-landesstaffel"
 date: "2022-11-28"
 promote: false
 createdAt: "null"

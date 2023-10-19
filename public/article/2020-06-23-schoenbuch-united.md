@@ -1,6 +1,6 @@
 ---
 title: "Schönbuch United"
-slug: "schoenbuch-united"
+slug: "2020-06-23-schoenbuch-united"
 date: "2020-06-23"
 promote: true
 createdAt: "null"

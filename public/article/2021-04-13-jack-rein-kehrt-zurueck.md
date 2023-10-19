@@ -1,6 +1,6 @@
 ---
 title: "Jack Rein kehrt zurück!"
-slug: "jack-rein-kehrt-zurueck"
+slug: "2021-04-13-jack-rein-kehrt-zurueck"
 date: "2021-04-13"
 promote: true
 createdAt: "null"

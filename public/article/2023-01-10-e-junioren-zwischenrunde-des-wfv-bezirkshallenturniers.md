@@ -1,6 +1,6 @@
 ---
 title: " E-Junioren - Zwischenrunde des wfv Bezirkshallenturniers"
-slug: "e-junioren-zwischenrunde-des-wfv-bezirkshallenturniers"
+slug: "2023-01-10-e-junioren-zwischenrunde-des-wfv-bezirkshallenturniers"
 date: "2023-01-10"
 promote: false
 createdAt: "null"

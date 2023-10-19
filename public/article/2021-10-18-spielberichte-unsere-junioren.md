@@ -1,6 +1,6 @@
 ---
 title: "Spielberichte unserer Junioren"
-slug: "spielberichte-unsere-junioren"
+slug: "2021-10-18-spielberichte-unsere-junioren"
 date: "2021-10-18"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Max Schraitle holt sich den Titel in der 1. inoffiziellen SVW-Fussballtennismeisterschaft"
-slug: "max-schraitle-holt-sich-den-titel-in-der-1-inoffiziellen-svw-fussballtennismeisterschaft"
+slug: "2020-06-24-max-schraitle-holt-sich-den-titel-in-der-1-inoffiziellen-svw-fussballtennismeisterschaft"
 date: "2020-06-24"
 promote: false
 createdAt: "null"

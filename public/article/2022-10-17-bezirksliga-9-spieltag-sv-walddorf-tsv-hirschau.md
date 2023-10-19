@@ -1,6 +1,6 @@
 ---
 title: "Spielbericht Aktive I"
-slug: "bezirksliga-9-spieltag-sv-walddorf-tsv-hirschau"
+slug: "2022-10-17-bezirksliga-9-spieltag-sv-walddorf-tsv-hirschau"
 date: "2022-10-17"
 promote: false
 createdAt: "null"

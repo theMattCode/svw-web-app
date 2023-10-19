@@ -1,6 +1,6 @@
 ---
 title: "Jugend Champions-Cup"
-slug: "jugend-champions-cup"
+slug: "2023-03-07-jugend-champions-cup"
 date: "2023-03-07"
 promote: false
 createdAt: "null"

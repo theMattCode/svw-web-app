@@ -1,6 +1,6 @@
 ---
 title: "Saisonauftakt in bei der Zweiten // Erste zu Gast in Unterhausen"
-slug: "saisonauftakt-in-bei-der-zweiten-erste-zu-gast-in-unterhausen"
+slug: "2021-09-03-saisonauftakt-in-bei-der-zweiten-erste-zu-gast-in-unterhausen"
 date: "2021-09-03"
 promote: true
 createdAt: "null"

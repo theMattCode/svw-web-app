@@ -1,6 +1,6 @@
 ---
 title: "Spendenaufruf Dachsanierung"
-slug: "spendenaufruf-dachsanierung"
+slug: "2020-04-20-spendenaufruf-dachsanierung"
 date: "2020-04-20"
 promote: true
 createdAt: "null"

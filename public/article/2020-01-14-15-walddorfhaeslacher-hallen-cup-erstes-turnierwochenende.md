@@ -1,6 +1,6 @@
 ---
 title: "15. Walddorfhäslacher Hallen-Cup: erstes Turnierwochenende"
-slug: "15-walddorfhaeslacher-hallen-cup-erstes-turnierwochenende"
+slug: "2020-01-14-15-walddorfhaeslacher-hallen-cup-erstes-turnierwochenende"
 date: "2020-01-14"
 promote: true
 createdAt: "null"

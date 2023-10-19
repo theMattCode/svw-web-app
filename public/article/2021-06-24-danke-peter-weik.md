@@ -1,6 +1,6 @@
 ---
 title: "Danke Peter Weik!"
-slug: "danke-peter-weik"
+slug: "2021-06-24-danke-peter-weik"
 date: "2021-06-24"
 promote: false
 createdAt: "null"

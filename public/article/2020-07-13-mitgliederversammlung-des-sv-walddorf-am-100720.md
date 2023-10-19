@@ -1,6 +1,6 @@
 ---
 title: "Mitgliederversammlung des SV Walddorf am 10.07.20"
-slug: "mitgliederversammlung-des-sv-walddorf-am-100720"
+slug: "2020-07-13-mitgliederversammlung-des-sv-walddorf-am-100720"
 date: "2020-07-13"
 promote: true
 createdAt: "null"

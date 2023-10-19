@@ -1,6 +1,6 @@
 ---
 title: "Wunschspieler Alexander Greineck kommt vom SSV Rübgarten!"
-slug: "wunschspieler-alexander-greineck-kommt-vom-ssv-ruebgarten"
+slug: "2021-04-15-wunschspieler-alexander-greineck-kommt-vom-ssv-ruebgarten"
 date: "2021-04-15"
 promote: true
 createdAt: "null"

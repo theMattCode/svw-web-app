@@ -1,6 +1,6 @@
 ---
 title: "2. FTB-Cup bei hochsommerlichen Temperaturen"
-slug: "2-ftb-cup-bei-hochsommerlichen-temperaturen"
+slug: "2023-06-25-2-ftb-cup-bei-hochsommerlichen-temperaturen"
 date: "2023-06-25"
 promote: false
 createdAt: "2023-06-30T07:30:38.612Z"

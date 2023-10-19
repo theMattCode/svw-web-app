@@ -1,6 +1,6 @@
 ---
 title: "5. Hallenturnier unserer F2 Junioren am Sonntag, 09.02.20 beim TSV Pliezhausen"
-slug: "5-hallenturnier-unserer-f2-junioren-am-sonntag-090220-beim-tsv-pliezhausen"
+slug: "2020-02-10-5-hallenturnier-unserer-f2-junioren-am-sonntag-090220-beim-tsv-pliezhausen"
 date: "2020-02-10"
 promote: false
 createdAt: "null"

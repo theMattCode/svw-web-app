@@ -1,6 +1,6 @@
 ---
 title: "Bambini-Spieltag"
-slug: "bambini-spieltag"
+slug: "2023-05-07-bambini-spieltag"
 date: "2023-05-07"
 promote: false
 createdAt: "2023-05-24T07:18:47.403Z"

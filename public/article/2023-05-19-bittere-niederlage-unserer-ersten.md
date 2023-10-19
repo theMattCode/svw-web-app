@@ -1,6 +1,6 @@
 ---
 title: "Bittere Niederlage unserer Ersten"
-slug: "bittere-niederlage-unserer-ersten"
+slug: "2023-05-19-bittere-niederlage-unserer-ersten"
 date: "2023-05-19"
 promote: false
 createdAt: "2023-05-24T07:27:51.962Z"

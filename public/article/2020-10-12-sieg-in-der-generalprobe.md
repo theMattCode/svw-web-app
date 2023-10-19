@@ -1,6 +1,6 @@
 ---
 title: "Erste: Sieg in der Generalprobe"
-slug: "sieg-in-der-generalprobe"
+slug: "2020-10-12-sieg-in-der-generalprobe"
 date: "2020-10-12"
 promote: false
 createdAt: "null"

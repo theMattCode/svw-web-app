@@ -1,6 +1,6 @@
 ---
 title: "1. SVW-Wintercup - erstes Wochenende"
-slug: "1-svw-wintercup-erstes-wochenende"
+slug: "2023-01-29-1-svw-wintercup-erstes-wochenende"
 date: "2023-01-29"
 promote: true
 createdAt: "null"

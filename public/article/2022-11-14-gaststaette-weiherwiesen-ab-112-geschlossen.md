@@ -1,6 +1,6 @@
 ---
 title: "Gaststätte Weiherwiesen ab 1.12. geschlossen"
-slug: "gaststaette-weiherwiesen-ab-112-geschlossen"
+slug: "2022-11-14-gaststaette-weiherwiesen-ab-112-geschlossen"
 date: "2022-11-14"
 promote: false
 createdAt: "null"

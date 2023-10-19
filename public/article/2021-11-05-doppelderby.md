@@ -1,6 +1,6 @@
 ---
 title: "Doppelderby"
-slug: "doppelderby"
+slug: "2021-11-05-doppelderby"
 date: "2021-11-05"
 promote: true
 createdAt: "null"

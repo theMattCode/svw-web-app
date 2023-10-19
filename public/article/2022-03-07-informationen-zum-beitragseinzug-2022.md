@@ -1,6 +1,6 @@
 ---
 title: "Informationen zum Beitragseinzug 2022"
-slug: "informationen-zum-beitragseinzug-2022"
+slug: "2022-03-07-informationen-zum-beitragseinzug-2022"
 date: "2022-03-07"
 promote: true
 createdAt: "null"

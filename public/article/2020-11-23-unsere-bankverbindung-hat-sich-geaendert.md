@@ -1,6 +1,6 @@
 ---
 title: "Unsere Bankverbindung hat sich geändert!"
-slug: "unsere-bankverbindung-hat-sich-geaendert"
+slug: "2020-11-23-unsere-bankverbindung-hat-sich-geaendert"
 date: "2020-11-23"
 promote: true
 createdAt: "null"

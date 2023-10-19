@@ -1,6 +1,6 @@
 ---
 title: "Unser Online-Sportangebot"
-slug: "unser-online-sportangebot"
+slug: "2021-03-09-unser-online-sportangebot"
 date: "2021-03-09"
 promote: true
 createdAt: "null"

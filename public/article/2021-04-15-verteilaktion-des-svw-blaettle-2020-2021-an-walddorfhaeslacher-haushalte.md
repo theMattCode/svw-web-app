@@ -1,6 +1,6 @@
 ---
 title: "Verteilaktion des „SVW-Blättle 2020/2021“ an Walddorfhäslacher Haushalte"
-slug: "verteilaktion-des-svw-blaettle-2020-2021-an-walddorfhaeslacher-haushalte"
+slug: "2021-04-15-verteilaktion-des-svw-blaettle-2020-2021-an-walddorfhaeslacher-haushalte"
 date: "2021-04-15"
 promote: true
 createdAt: "null"

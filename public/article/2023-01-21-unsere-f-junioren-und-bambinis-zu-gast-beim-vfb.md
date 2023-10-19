@@ -1,6 +1,6 @@
 ---
 title: "Unsere F-Junioren und Bambinis zu Gast beim VfB"
-slug: "unsere-f-junioren-und-bambinis-zu-gast-beim-vfb"
+slug: "2023-01-21-unsere-f-junioren-und-bambinis-zu-gast-beim-vfb"
 date: "2023-01-21"
 promote: false
 createdAt: "null"

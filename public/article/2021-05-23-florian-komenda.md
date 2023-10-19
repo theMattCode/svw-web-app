@@ -1,6 +1,6 @@
 ---
 title: "Florian Komenda"
-slug: "florian-komenda"
+slug: "2021-05-23-florian-komenda"
 date: "2021-05-23"
 promote: true
 createdAt: "null"

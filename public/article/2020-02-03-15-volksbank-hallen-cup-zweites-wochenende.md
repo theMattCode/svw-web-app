@@ -1,6 +1,6 @@
 ---
 title: "15. Volksbank-Hallen-Cup: zweites Wochenende"
-slug: "15-volksbank-hallen-cup-zweites-wochenende"
+slug: "2020-02-03-15-volksbank-hallen-cup-zweites-wochenende"
 date: "2020-02-03"
 promote: true
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "Landesliga gegen Oberliga in Walddorfhäslach"
-slug: "landesliga-gegen-oberliga-in-walddorfhaeslach"
+slug: "2020-02-10-landesliga-gegen-oberliga-in-walddorfhaeslach"
 date: "2020-02-10"
 promote: false
 createdAt: "null"

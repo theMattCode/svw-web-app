@@ -1,6 +1,6 @@
 ---
 title: "Bezirksliga 19. Spieltag"
-slug: "bezirksliga-19-spieltag"
+slug: "2023-03-12-bezirksliga-19-spieltag"
 date: "2023-03-12"
 promote: false
 createdAt: "2023-04-04T12:33:42.904Z"

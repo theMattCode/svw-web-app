@@ -1,6 +1,6 @@
 ---
 title: "SVW Fortbildungskonzept für unsere Trainer findet großen Anklang"
-slug: "svw-fortbildungskonzept-fuer-unsere-trainer-findet-grossen-anklang"
+slug: "2019-11-04-svw-fortbildungskonzept-fuer-unsere-trainer-findet-grossen-anklang"
 date: "2019-11-04"
 promote: false
 createdAt: "null"

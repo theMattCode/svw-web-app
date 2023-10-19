@@ -1,6 +1,6 @@
 ---
 title: "15. Walddorfhäslacher Volksbank-Hallen-Cup am kommenden Wochenende"
-slug: "15-walddorfhaeslacher-volksbank-hallen-cup-am-kommenden-wochenende-1"
+slug: "2020-01-27-15-walddorfhaeslacher-volksbank-hallen-cup-am-kommenden-wochenende-1"
 date: "2020-01-27"
 promote: false
 createdAt: "null"

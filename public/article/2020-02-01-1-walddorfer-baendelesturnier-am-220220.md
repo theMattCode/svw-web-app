@@ -1,6 +1,6 @@
 ---
 title: "1. Walddorfer Bändelesturnier am 22.02.20"
-slug: "1-walddorfer-baendelesturnier-am-220220"
+slug: "2020-02-01-1-walddorfer-baendelesturnier-am-220220"
 date: "2020-02-01"
 promote: true
 createdAt: "null"

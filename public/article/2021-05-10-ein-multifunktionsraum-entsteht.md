@@ -1,6 +1,6 @@
 ---
 title: "Ein Multifunktionsraum entsteht"
-slug: "ein-multifunktionsraum-entsteht"
+slug: "2021-05-10-ein-multifunktionsraum-entsteht"
 date: "2021-05-10"
 promote: false
 createdAt: "null"

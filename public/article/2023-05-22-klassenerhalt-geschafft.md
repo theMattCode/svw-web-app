@@ -1,6 +1,6 @@
 ---
 title: "Klassenerhalt geschafft!"
-slug: "klassenerhalt-geschafft"
+slug: "2023-05-22-klassenerhalt-geschafft"
 date: "2023-05-22"
 promote: false
 createdAt: "2023-05-24T07:29:10.951Z"

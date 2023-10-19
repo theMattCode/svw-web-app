@@ -1,6 +1,6 @@
 ---
 title: "Bericht zur Mitgliederversammlung 2023"
-slug: "bericht-zur-mitgliederversammlung-2023"
+slug: "2023-03-21-bericht-zur-mitgliederversammlung-2023"
 date: "2023-03-21"
 promote: false
 createdAt: "2023-04-04T12:13:47.707Z"

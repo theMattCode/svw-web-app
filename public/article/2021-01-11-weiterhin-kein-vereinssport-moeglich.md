@@ -1,6 +1,6 @@
 ---
 title: "Weiterhin kein Vereinssport möglich"
-slug: "weiterhin-kein-vereinssport-moeglich"
+slug: "2021-01-11-weiterhin-kein-vereinssport-moeglich"
 date: "2021-01-11"
 promote: true
 createdAt: "null"

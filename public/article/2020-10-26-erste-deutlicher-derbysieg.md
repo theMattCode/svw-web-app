@@ -1,6 +1,6 @@
 ---
 title: "Erste: Deutlicher Derbysieg"
-slug: "erste-deutlicher-derbysieg"
+slug: "2020-10-26-erste-deutlicher-derbysieg"
 date: "2020-10-26"
 promote: false
 createdAt: "null"

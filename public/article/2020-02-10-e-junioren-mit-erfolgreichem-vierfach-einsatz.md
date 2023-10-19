@@ -1,6 +1,6 @@
 ---
 title: "E-Junioren mit erfolgreichem Vierfach-Einsatz"
-slug: "e-junioren-mit-erfolgreichem-vierfach-einsatz"
+slug: "2020-02-10-e-junioren-mit-erfolgreichem-vierfach-einsatz"
 date: "2020-02-10"
 promote: false
 createdAt: "null"

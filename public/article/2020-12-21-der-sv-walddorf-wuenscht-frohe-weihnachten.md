@@ -1,6 +1,6 @@
 ---
 title: "Der SV Walddorf wünscht frohe Weihnachten!"
-slug: "der-sv-walddorf-wuenscht-frohe-weihnachten"
+slug: "2020-12-21-der-sv-walddorf-wuenscht-frohe-weihnachten"
 date: "2020-12-21"
 promote: true
 createdAt: "null"

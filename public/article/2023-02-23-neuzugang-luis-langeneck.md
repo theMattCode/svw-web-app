@@ -1,6 +1,6 @@
 ---
 title: "Neuzugang Luis Langeneck"
-slug: "neuzugang-luis-langeneck"
+slug: "2023-02-23-neuzugang-luis-langeneck"
 date: "2023-02-23"
 promote: true
 createdAt: "null"

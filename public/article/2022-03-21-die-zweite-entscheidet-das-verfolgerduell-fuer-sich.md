@@ -1,6 +1,6 @@
 ---
 title: "Die Zweite entscheidet das Verfolgerduell für sich"
-slug: "die-zweite-entscheidet-das-verfolgerduell-fuer-sich"
+slug: "2022-03-21-die-zweite-entscheidet-das-verfolgerduell-fuer-sich"
 date: "2022-03-21"
 promote: false
 createdAt: "null"

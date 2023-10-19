@@ -1,6 +1,6 @@
 ---
 title: "Björn Kittelmann- Sportvorstand "
-slug: "urgestein-bjoern-kittelmann"
+slug: "2021-05-02-urgestein-bjoern-kittelmann"
 date: "2021-05-02"
 promote: true
 createdAt: "null"

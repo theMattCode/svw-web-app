@@ -1,6 +1,6 @@
 ---
 title: "Unser neuer Multifunktionsraum ist startklar"
-slug: "unser-neuer-multifunktionsraum-ist-startklar"
+slug: "2021-06-08-unser-neuer-multifunktionsraum-ist-startklar"
 date: "2021-06-08"
 promote: true
 createdAt: "null"

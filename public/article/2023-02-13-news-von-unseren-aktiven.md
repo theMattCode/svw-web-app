@@ -1,6 +1,6 @@
 ---
 title: "News von unseren Aktiven"
-slug: "news-von-unseren-aktiven"
+slug: "2023-02-13-news-von-unseren-aktiven"
 date: "2023-02-13"
 promote: false
 createdAt: "null"

@@ -1,6 +1,6 @@
 ---
 title: "D-Junioren - Das Abenteuer Verbandsliga beginnt"
-slug: "d-junioren-das-abenteuer-verbandsliga-beginnt"
+slug: "2023-04-04-d-junioren-das-abenteuer-verbandsliga-beginnt"
 date: "2023-04-04"
 promote: false
 createdAt: "2023-04-04T12:28:15.769Z"

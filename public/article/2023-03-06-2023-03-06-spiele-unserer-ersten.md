@@ -1,6 +1,6 @@
 ---
 title: "Spiele unserer Ersten"
-slug: "2023-03-06-spiele-unserer-ersten"
+slug: "2023-03-06-2023-03-06-spiele-unserer-ersten"
 date: "2023-03-06"
 promote: false
 createdAt: "null"

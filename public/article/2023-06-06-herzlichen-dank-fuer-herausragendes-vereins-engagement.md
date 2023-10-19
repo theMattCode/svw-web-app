@@ -1,6 +1,6 @@
 ---
 title: "Herzlichen Dank für herausragendes Vereins-Engagement"
-slug: "herzlichen-dank-fuer-herausragendes-vereins-engagement"
+slug: "2023-06-06-herzlichen-dank-fuer-herausragendes-vereins-engagement"
 date: "2023-06-06"
 promote: false
 createdAt: "2023-06-21T04:50:47.173Z"
