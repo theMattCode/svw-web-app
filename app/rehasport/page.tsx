@@ -55,7 +55,7 @@ export default function Rehasport() {
         <h3>Kursprogramm</h3>
         <p>IMAGE</p>
         <p>
-          Mehr Informationen zum Rehasportkurs "Sport nach Krebs" gibt's im&nbsp;
+          Mehr Informationen zum Rehasportkurs &quot;Sport nach Krebs&quot; gibt&apos;s im&nbsp;
           <Link href="/download/Flyer_Rehasport_2022-01-01.pdf">Flyer zum Download</Link>.
         </p>
         <h3>Kontakt</h3>
