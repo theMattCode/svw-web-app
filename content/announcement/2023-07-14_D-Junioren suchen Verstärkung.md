@@ -6,7 +6,7 @@ tags:
   - Fußball
   - D-Junioren
 image: 
-  src: /media/2023/2023-06-29_fyler_probetraining.jpg
+  src: /media/2023/2023-06-29-fyler-probetraining.jpg
   width: 4032
   height: 3024
   alt: Flyer Probetraining

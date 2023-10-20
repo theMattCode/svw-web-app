@@ -15,7 +15,7 @@ export default function Badminton() {
       <BlockTitle title="Badminton" />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
-          src="/media/sparten/badminton/badminton_team_2021-08-22.jpg"
+          src="/media/sparten/badminton/badminton-team-2021-08-22.jpg"
           alt="Badminton Mitglieder"
           width={width}
           height={height}
