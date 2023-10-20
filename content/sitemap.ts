@@ -5,7 +5,7 @@ export type MenuItem = {
   subMenu?: MenuItem[];
 };
 
-export const verein = {
+export const verein: MenuItem = {
   name: "Verein",
   url: "/verein",
   subMenu: [
@@ -31,30 +31,30 @@ export const verein = {
   ],
 };
 
-export const sparten = {
+export const yoga: MenuItem = { name: "Yoga", url: "/fitness-und-gesundheitssport/yoga" };
+export const powerFitness: MenuItem = {
+  name: "Power Fitness",
+  url: "/fitness-und-gesundheitssport/powerfitness",
+};
+export const gymnastik65plus: MenuItem = {
+  name: "Gymnastik 65plus",
+  url: "/fitness-und-gesundheitssport/gymnastik-65plus",
+};
+export const teenDance: MenuItem = { name: "Teen Dance", url: "/fitness-und-gesundheitssport/teen-dance" };
+export const fitUndGesund: MenuItem = {
+  name: "Fit und Gesund",
+  url: "/fitness-und-gesundheitssport/fit-und-gesund",
+};
+export const fitnessUndGesundheitssport: MenuItem = {
+  name: "Fitness & Gesundheitssport",
+  url: "/fitness-und-gesundheitssport",
+  subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund],
+};
+export const sparten: MenuItem = {
   name: "Sparten",
   url: "/sparten",
   subMenu: [
-    {
-      name: "Fitness & Gesundheitssport",
-      url: "/fitness-und-gesundheitssport",
-      subMenu: [
-        { name: "Yoga", url: "/fitness-und-gesundheitssport/yoga" },
-        {
-          name: "Power Fitness",
-          url: "/fitness-und-gesundheitssport/power-fitness",
-        },
-        {
-          name: "Gymnastik 65plus",
-          url: "/fitness-und-gesundheitssport/gymnastik-65plus",
-        },
-        { name: "Teen Dance", url: "/fitness-und-gesundheitssport/teen-dance" },
-        {
-          name: "Fit und Gesund",
-          url: "/fitness-und-gesundheitssport/fit-und-gesund",
-        },
-      ],
-    },
+    fitnessUndGesundheitssport,
     {
       name: "Fußball",
       url: "/fussball",
@@ -74,7 +74,7 @@ export const sparten = {
   ],
 };
 
-export const aktuelles = { name: "Aktuelles", url: "/aktuelles" };
+export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };
 
 export const sitemap: MenuItem[] = [verein, sparten, aktuelles];
 

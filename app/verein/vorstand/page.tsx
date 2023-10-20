@@ -19,13 +19,15 @@ export default function Vorstand() {
   return (
     <PageBase>
       <BlockTitle title="Vorstand" />
-      {vorstand.map((person, index) => (
-        <PersonCard
-          person={person}
-          // If person is undefined, we made the mistake when collecting people or defining them in the content folder
-          key={person ? getPersonName(person) : index}
-        />
-      ))}
+      <div className="transition-all grid grid-cols-1 xl:grid-cols-2 gap-2">
+        {vorstand.map((person, index) => (
+          <PersonCard
+            person={person}
+            // If person is undefined, we made the mistake when collecting people or defining them in the content folder
+            key={person ? getPersonName(person) : index}
+          />
+        ))}
+      </div>
     </PageBase>
   );
 }

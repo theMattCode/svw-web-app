@@ -6,7 +6,7 @@ tags:
   - Sportgaststätte
   - Verein
 image: 
-  src: /media/2023/2023-08-14_gruppenbild_paechter.jpg
+  src: /media/2023/2023-08-14-gruppenbild-paechter.jpg
   width: 4032
   height: 3024
   alt: Gruppenbild mit Pächter der Sportgaststätte Weiherwiesen
