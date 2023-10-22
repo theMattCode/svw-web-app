@@ -42,7 +42,7 @@ p {
     @apply text-sm font-light
 }
 
-p > a {
+p > a, td > a {
     @apply font-normal underline text-svw-blue-darker
 }
 

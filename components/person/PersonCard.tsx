@@ -15,7 +15,7 @@ export function PersonCard({ person }: Props) {
   const imageDimensions = person.image ? calcImageDimensionsForWidth(person.image, 400) : { width: 400, height: 400 };
 
   return (
-    <div className="container flex flex-col  md:min-w-[550px] md:flex-row bg-white shadow-lg">
+    <div className="container flex flex-col md:flex-row bg-white shadow-lg">
       {person.image ? (
         <Image
           className="w-full h-80 md:h-auto object-cover md:w-48 p-1"
@@ -28,8 +28,8 @@ export function PersonCard({ person }: Props) {
         <GoPersonFill className="w-full h-80 md:h-auto object-cover md:w-48 p-1 text-gray-300" />
       )}
       <div className="w-full p-4 flex flex-col justify-start">
-        <div className="text-3xl">{getPersonName(person)}</div>
-        <div className="font-medium">{person.tags.join(", ")}</div>
+        <div className="text-xl">{getPersonName(person)}</div>
+        <div className="font-normal">{person.tags.join(", ")}</div>
         <div className="flex flex-col md:grid md:grid-cols-[auto_minmax(0,1fr)] md:gap-x-4">
           {person.email && (
             <ContactDetail label="E-Mail">

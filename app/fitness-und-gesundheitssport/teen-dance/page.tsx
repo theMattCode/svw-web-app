@@ -23,8 +23,6 @@ export default function TeenDance() {
               Ende werden die Tänze bei verschiedenen Veranstaltungen aufgeführt. Bei allem Fleiß kommt das Spielen aber
               nicht zu kurz.
             </p>
-          </div>
-          <div className="flex flex-col gap-2">
             <h3>Trainingszeiten</h3>
             <h4>1. Gruppe „Coole Engel“</h4>
             <p>Für Kinder im Alter von 6 – 9 Jahren.</p>
@@ -36,11 +34,11 @@ export default function TeenDance() {
             <p>Für Kinder im Alter von ab 14 Jahren.</p>
             <p>Donnerstag 17.15 -18.15 Uhr im Gymnastikraum (Spiegelraum) der Ballspielhalle</p>
           </div>
-        </div>
-        <h3>Übungsleitung</h3>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-2">
-          <PersonCard person={getPersonByName("Andrea Speier")} />
-          <PersonCard person={getPersonByName("Ronja Mödinger")} />
+          <div className="flex flex-col gap-2">
+            <h3>Übungsleitung</h3>
+            <PersonCard person={getPersonByName("Andrea Speier")} />
+            <PersonCard person={getPersonByName("Ronja Mödinger")} />
+          </div>
         </div>
       </div>
     </PageBase>

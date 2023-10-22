@@ -1,10 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import * as fs from "fs";
 import matter from "gray-matter";
-import {
-  Announcement,
-  AnnouncementWithFrontmatter,
-} from "#/content/announcements";
+import { Announcement, AnnouncementWithFrontmatter } from "#/content/announcements";
 import isWithinInterval from "date-fns/isWithinInterval";
 
 const announcementsDir = "content/announcement";
