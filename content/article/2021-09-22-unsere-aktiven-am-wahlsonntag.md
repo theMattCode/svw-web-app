@@ -3,8 +3,6 @@ title: "Unsere Aktiven am Wahlsonntag"
 slug: "2021-09-22-unsere-aktiven-am-wahlsonntag"
 date: "2021-09-22"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Nachdem ihr alle fleißig beim Wählen wart und eure Stimme für den neuen Bundestag abgegeben habt heißt natürlich wieder Anpfiff zum Fußball in den Weiherwiesen. Am Sonntag kämpfen unsere Aktiven leider wieder getrennt voneinander um Punkte in der Kreisliga A2 und B4.
 

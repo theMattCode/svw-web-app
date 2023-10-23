@@ -3,7 +3,6 @@ title: "Wunschspieler Alexander Greineck kommt vom SSV Rübgarten!"
 slug: "2021-04-15-wunschspieler-alexander-greineck-kommt-vom-ssv-ruebgarten"
 date: "2021-04-15"
 promote: true
-createdAt: "null"
 teaser: "Greineck wechselt mit einer Menge ,,Bock´´ in die Weiherwiesen."
 ---
 <p class="MsoNoSpacing">Alexander Greineck kommt als absoluter Wunschspieler vom SSV Rübgarten zu unserem SV Walddorf! Greineck kommt mit einer Menge Erfahrung und mit Stationen die unter anderem lauten TSV Oferdingen, SSV Reutlingen, TSG Balingen, Young Boys Reutlingen und SSV Rübgarten.

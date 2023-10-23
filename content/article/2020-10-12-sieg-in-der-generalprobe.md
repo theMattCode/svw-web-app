@@ -2,9 +2,6 @@
 title: "Erste: Sieg in der Generalprobe"
 slug: "2020-10-12-sieg-in-der-generalprobe"
 date: "2020-10-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 SVW Aktive I: TSV Lustnau II - SV Walddorf 1:5 (0:1)
 

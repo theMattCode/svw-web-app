@@ -2,7 +2,6 @@
 title: "E-Jugend - 3. Platz beim Ostercup"
 slug: "2023-04-15-e-jugend-3-platz-beim-ostercup"
 date: "2023-04-15"
-promote: false
 createdAt: "2023-05-03T07:19:03.535Z"
 teaser: "Am Samstag, 15.04., waren wir zu Gast bei den Reutlinger Juniors."
 ---

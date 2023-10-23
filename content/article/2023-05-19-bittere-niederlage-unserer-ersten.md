@@ -2,7 +2,6 @@
 title: "Bittere Niederlage unserer Ersten"
 slug: "2023-05-19-bittere-niederlage-unserer-ersten"
 date: "2023-05-19"
-promote: false
 createdAt: "2023-05-24T07:27:51.962Z"
 teaser: "17.05.23, Bezirksliga, Nachholspiel 26. Spieltag, SSC Tübingen - SV Walddorf 2:1 (0:1)"
 ---

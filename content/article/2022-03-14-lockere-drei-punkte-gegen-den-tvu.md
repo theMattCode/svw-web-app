@@ -2,9 +2,6 @@
 title: "Lockere drei Punkte gegen den TVU"
 slug: "2022-03-14-lockere-drei-punkte-gegen-den-tvu"
 date: "2022-03-14"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 **SV Walddorf I - TV Unterhausen 3:0 (kampflos)**
 

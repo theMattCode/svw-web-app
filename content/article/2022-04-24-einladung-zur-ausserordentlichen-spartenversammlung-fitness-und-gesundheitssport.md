@@ -2,9 +2,6 @@
 title: "Einladung zur außerordentlichen Spartenversammlung „Fitness und Gesundheitssport“"
 slug: "2022-04-24-einladung-zur-ausserordentlichen-spartenversammlung-fitness-und-gesundheitssport"
 date: "2022-04-24"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
  __„Stillstand ist Rückschritt“ __
 

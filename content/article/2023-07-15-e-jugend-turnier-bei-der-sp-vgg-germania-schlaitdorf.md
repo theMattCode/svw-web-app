@@ -2,7 +2,6 @@
 title: "E-Jugend Turnier bei der SpVgg Germania Schlaitdorf"
 slug: "2023-07-15-e-jugend-turnier-bei-der-sp-vgg-germania-schlaitdorf"
 date: "2023-07-15"
-promote: false
 createdAt: "2023-07-31T13:30:54.260Z"
 teaser: "Junge E-Junioren erreichen super zweiten Platz"
 ---

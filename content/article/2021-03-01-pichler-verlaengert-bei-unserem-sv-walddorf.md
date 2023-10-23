@@ -3,8 +3,6 @@ title: "Pichler verlängert bei unserem SV Walddorf"
 slug: "2021-03-01-pichler-verlaengert-bei-unserem-sv-walddorf"
 date: "2021-03-01"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Unsere Personalplanungen in den Trainerteams der Aktiven sind abgeschlossen! Nach den bereits verlängerten Verträgen von Benjamin Link (Cheftrainer Erste) und unserem Trainerduo Fabian Schramm und Julian Wohlfarth (Zweite), dürfen wir euch die Vertragsverlängerung mit unserem Co-Trainer der ersten Mannschaft, Sven Pichler bekannt geben. Unser "Schalker" steht aktuell mit 15 Ligatreffern auf Platz zwei der Torschützenliste und hat sich in reiferem Fußballeralter auf einer für ihn neuen Position zum Topstürmer entwickelt.
 

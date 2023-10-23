@@ -2,8 +2,6 @@
 title: "D-Junioren - Turnier in K´furt"
 slug: "2023-01-31-d-junioren-turnier-in-kfurt"
 date: "2023-01-31"
-promote: false
-createdAt: "null"
 teaser: "Plätze 1,2 und 4 beim Turnier des TB K'furt"
 ---
 **Plätze 1,2 und 4 beim Turnier des TB K'furt**

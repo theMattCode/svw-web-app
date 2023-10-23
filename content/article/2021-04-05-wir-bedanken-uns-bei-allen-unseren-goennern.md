@@ -3,8 +3,6 @@ title: "Wir bedanken uns bei allen unseren Gönnern!"
 slug: "2021-04-05-wir-bedanken-uns-bei-allen-unseren-goennern"
 date: "2021-04-05"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Einen wichtigen Beitrag zur Vereinsfinanzierung leisten unsere **Sponsoren und Spender.**
 

@@ -3,8 +3,6 @@ title: "Der SV Walddorf wird offizieller Standort der VfB Fußballschule"
 slug: "2020-08-29-der-sv-walddorf-wird-offizieller-standort-der-vfb-fussballschule"
 date: "2020-08-29"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Mitte letzten Jahres startete die Zusammenarbeit des SV Walddorf und der Fußballschule des VfB Stuttgart.
 

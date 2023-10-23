@@ -3,8 +3,6 @@ title: "Der Spielbericht unserer D-Junioren"
 slug: "2021-10-05-der-spielbericht-unserer-d-junioren"
 date: "2021-10-05"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 - Platz 3 inder Bezirkspokalendrunde, Qualifikation für den wfv-Pokal-
 

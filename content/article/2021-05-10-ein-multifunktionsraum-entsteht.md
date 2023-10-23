@@ -2,9 +2,6 @@
 title: "Ein Multifunktionsraum entsteht"
 slug: "2021-05-10-ein-multifunktionsraum-entsteht"
 date: "2021-05-10"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Als 2015 der Kabinenneubau, als Erweiterung des bestehenden SVW-Sportheims, entstand, blieb die ehemalige "Heimkabine" an der Schnittstelle zwischen Altbau und Neubau als Baustelle zunächst unvollendet.
 

@@ -3,8 +3,6 @@ title: "15. Volksbank-Hallen-Cup: zweites Wochenende"
 slug: "2020-02-03-15-volksbank-hallen-cup-zweites-wochenende"
 date: "2020-02-03"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Am vergangenen Wochenende fand in der Ballspielhalle der zweite Teil unseres 15. Walddorfhäslacher Volksbank-Hallen-Cups statt.
 

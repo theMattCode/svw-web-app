@@ -2,9 +2,6 @@
 title: "2. Staffeltag der F-Junioren in Reutlingen"
 slug: "2021-10-13-2-staffeltag-der-f-junioren-in-reutlingen"
 date: "2021-10-13"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Unsere Jahrgänge 2013 und 2014 durften am vergangenen Samstag zum zweiten Staffeltag der Saison nach Reutlingen reisen.
 

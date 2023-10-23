@@ -2,9 +2,6 @@
 title: "18. Spieltag: 03.03.20 TSV Riederich - SV Walddorf 3:3"
 slug: "2020-03-04-18-spieltag-030320-tsv-riederich-sv-walddorf-33"
 date: "2020-03-04"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am 03.03.20 reiste unsere Erste zum vermeintlich schwersten Auswärtsspiel der Saison zum Tabellenführer nach Riederich.
 

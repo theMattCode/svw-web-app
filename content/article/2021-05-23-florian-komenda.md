@@ -3,8 +3,6 @@ title: "Florian Komenda"
 slug: "2021-05-23-florian-komenda"
 date: "2021-05-23"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Thomas Tuchel beißt sich noch heute in seinen Allerwertesten, denn der SV Walddorf sticht den FC Chelsea bei der Verpflichtung von Florian Komenda aus. Nicht nur Tuchel weiß die Qualitäten des Stürmers zu schätzen, sondern auch unser Cheftrainer Benjamin Link. Technisch versiert, schnell und stark im Abschluss, all das hätte nach London gepasst, gibt es in der kommenden Saison aber in den Weiherwiesen mit atemberaubender Kreisligaatmosphäre. Herzlich Willkommen zurück, Flo!
 

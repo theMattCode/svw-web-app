@@ -1,10 +1,7 @@
 ---
-title: "15. Walddorfhäslacher Volksbank-Hallen-Cup am kommenden Wochenende"
-slug: "2020-01-27-15-walddorfhaeslacher-volksbank-hallen-cup-am-kommenden-wochenende-1"
+title: "15. Walddorfhäslacher Volksbank-Hallen-Cup: Tag 2 am kommenden Wochenende"
+slug: "2020-01-27-15-walddorfhaeslacher-volksbank-hallen-cup-tag-2-am-kommenden-wochenende"
 date: "2020-01-27"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Nachdem vor drei Wochen bereits die ersten Turniere des 15. Walddorfhäslacher Volksbank-Hallen-Cups stattfanden, geht es am kommenden Wochenende in die nächste Runde.
 

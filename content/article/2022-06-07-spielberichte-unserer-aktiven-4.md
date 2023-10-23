@@ -2,9 +2,6 @@
 title: "Spielberichte unserer Aktiven"
 slug: "2022-06-07-spielberichte-unserer-aktiven-4"
 date: "2022-06-07"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Aktive I: FC Reutlingen - SV Walddorf 0:23 (0:10)
 

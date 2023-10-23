@@ -3,8 +3,6 @@ title: "Spielbericht unserer D-Junioren"
 slug: "2021-10-12-spielbericht-unserer-d-junioren"
 date: "2021-10-12"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="ox-2989754d1f-">- Die Teams unserer D-Junioren bleiben weiter siegreich -
 

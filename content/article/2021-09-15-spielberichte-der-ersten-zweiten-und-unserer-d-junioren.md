@@ -2,9 +2,6 @@
 title: "Spielberichte der Ersten, Zweiten und unserer D-Junioren"
 slug: "2021-09-15-spielberichte-der-ersten-zweiten-und-unserer-d-junioren"
 date: "2021-09-15"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 **AKTIVE**
 
@@ -46,7 +43,3 @@ Unsere D1 gewann am vergangenen Wochenende das VR-Talentiade-Bezirkspokalturnier
 
 
 Es spielten: Simon Bauer, Ben Paetzold, Niklas Mayer, Noel Akkoc, David Schmid, Linas Walker, Elay Sepe, Fionn Fogl, Chrisi Jesch, Leo Filipovic, Ben Lichtenberger, Mika Kittelmann, Enis Pekel, Peter Braun, Jan Wörz, Jamal Musiala, Laurin Epple, Dorian Osaj, Maxim Laux, Luka Maric, Jonathan Troost.
-
-
-
-

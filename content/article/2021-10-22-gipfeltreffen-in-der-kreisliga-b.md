@@ -3,8 +3,6 @@ title: "Gipfeltreffen in der Kreisliga B"
 slug: "2021-10-22-gipfeltreffen-in-der-kreisliga-b"
 date: "2021-10-22"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 **Gipfeltreffen in der Kreisliga B**
 

@@ -2,9 +2,6 @@
 title: "Hinweis zum Hallensport"
 slug: "2021-03-15-hinweis-zum-hallensport"
 date: "2021-03-15"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Auch wenn die aktuelle Corona-Verordnung ab 22.03. unter bestimmten Bedingungen einen kontaktfreien Sport in der Halle zulässt, werden wir **mit dem Hallensport frühestens nach den Osterferien beginnen.**
 

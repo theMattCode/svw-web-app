@@ -2,8 +2,6 @@
 title: "Spielbericht unserer D-Junioren"
 slug: "2022-09-19-spielbericht-unserer-d-junioren-5"
 date: "2022-09-19"
-promote: false
-createdAt: "null"
 teaser: "Schönbuch United I - VFB Bodelshausen 6:1 (2:1)
 
 TSV Sondelfingen II - Schönbuch United III 1:1 (0:0)"

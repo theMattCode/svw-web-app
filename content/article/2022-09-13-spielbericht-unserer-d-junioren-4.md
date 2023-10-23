@@ -2,8 +2,6 @@
 title: "Spielbericht unserer D-Junioren"
 slug: "2022-09-13-spielbericht-unserer-d-junioren-4"
 date: "2022-09-13"
-promote: false
-createdAt: "null"
 teaser: "D-Junioren gewinnen Bezirkspokalturnier"
 ---
 Mit zwei Teams waren unsere D-Junioren am vergangenen Samstag in Reutlingen beim Bezirkspokalturnier am Start. Nach der Vorrunde traf man sich unglücklicherweise im Viertelfinale zum Bruderduell D1 gegen D2, in welchen sich die Älteren gegen die tapfer kämpfenden Jüngeren durchsetzten. Im Finale zeigten die Jungs ihre beste Leistung abrufen und gewannen deutlich mit 3:0 gegen die TSG Reutlingen. Das schönste an diesem erfolgreichen Tag: Am Ende konnten wieder alle gemeinsam jubeln!

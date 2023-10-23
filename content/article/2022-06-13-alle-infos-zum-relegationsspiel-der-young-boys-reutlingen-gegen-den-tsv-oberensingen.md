@@ -2,8 +2,6 @@
 title: "Alle Infos zum Relegationsspiel der Young Boys Reutlingen gegen den TSV Oberensingen"
 slug: "2022-06-13-alle-infos-zum-relegationsspiel-der-young-boys-reutlingen-gegen-den-tsv-oberensingen"
 date: "2022-06-13"
-promote: false
-createdAt: "null"
 teaser: "Infos zur Anreise, zum Eintritt und vielem mehr."
 ---
 **Anreise**

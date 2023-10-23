@@ -2,7 +2,6 @@
 title: "Spielbericht U13 Verbandsliga Talentrunde"
 slug: "2023-04-25-spielbericht-u13-verbandsliga-talentrunde"
 date: "2023-04-25"
-promote: false
 createdAt: "2023-05-03T07:32:18.152Z"
 teaser: "Erstes Auswärtsspiel in der D-Junioren-Verbandsliga"
 ---

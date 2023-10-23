@@ -2,9 +2,7 @@
 title: "HobbyHorsing - Reite deine Fantasie!"
 slug: "2023-09-11-hobby-horsing-reite-deine-fantasie"
 date: "2023-09-11"
-promote: false
 createdAt: "2023-09-12T11:49:01.459Z"
-teaser: ""
 ---
 Wir freuen uns, euch unseren brandneuen Hobbyhorsing-Kurs im Rahmen unseres Sportangebotes „Spiel und Spaß“ beim Sportverein Walddorf vorzustellen! Taucht ein in die wunderbare Welt des Hobbyhorsing und erlebt gemeinsam mit uns einzigartige Abenteuer auf dem Rücken eurer eigenen, handgemachten Pferde!
 

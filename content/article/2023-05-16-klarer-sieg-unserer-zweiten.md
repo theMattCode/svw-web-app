@@ -2,7 +2,6 @@
 title: "Klarer Sieg unserer Zweiten"
 slug: "2023-05-16-klarer-sieg-unserer-zweiten"
 date: "2023-05-16"
-promote: false
 createdAt: "2023-05-24T07:24:36.678Z"
 teaser: "14.05.23, Kreisliga, 18. Spieltag, SV Walddorf II - SSV Rübgarten II 7:1 (2:0)"
 ---

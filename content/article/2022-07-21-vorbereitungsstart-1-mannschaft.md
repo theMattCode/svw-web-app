@@ -2,9 +2,6 @@
 title: "Vorbereitungsstart 1. Mannschaft"
 slug: "2022-07-21-vorbereitungsstart-1-mannschaft"
 date: "2022-07-21"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 
 

@@ -3,8 +3,6 @@ title: "Unsere Bankverbindung hat sich geändert!"
 slug: "2020-11-23-unsere-bankverbindung-hat-sich-geaendert"
 date: "2020-11-23"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Aufgrund der Verschmelzung von Volksbank Reutlingen eG mit der Vereinigte Volksbank eG zur **Vereinigte Volksbanken eG** (BIC: GENODES1BBV) haben sich unsere Kontonummern geändert.
 

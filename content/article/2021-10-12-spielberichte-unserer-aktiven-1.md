@@ -3,8 +3,6 @@ title: "Spielberichte unserer Aktiven"
 slug: "2021-10-12-spielberichte-unserer-aktiven-1"
 date: "2021-10-12"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Kreisliga A2: SVW - SV Degerschlacht 3:0 (1:0)
 
@@ -35,7 +33,3 @@ Auch die zweite Garde des SVW hat somit ein aussergewöhnlich gute Ausgangsposit
 
 
 Es spielten: Thomas Sieber, Luca Häfner (65. Patrick Aberle), Alexander Scharr, Julian Wohlfarth, David Schnitzler, Jannik Jung (46. Dennis Dieter), Thomas Ammon (65. Davide Balena), Alexander Deile, Lukas Bux, Marcus Belschner (46. Alex Peguero), Jonathan Kießling
-
-
-
-

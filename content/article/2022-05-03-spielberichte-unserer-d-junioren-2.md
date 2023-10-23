@@ -2,9 +2,6 @@
 title: "Spielberichte unserer D-Junioren"
 slug: "2022-05-03-spielberichte-unserer-d-junioren-2"
 date: "2022-05-03"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Zwei Siege und eine Niederlage gab es am Wochenende für unsere D-Jugend Mannschaften. Die D1 besiegte auf den SSC Tübingen mit 3:0 (2:0) Toren und bleibt aussichtsrreich im Aufstiegsrennen in der Leistungsstaffel. Die D2 gewann das Topspiel Erster gegen Zweiter knapp aber hochverdient mit 2:1 (1:1) gegen die SGM Mössinge/Belsen und bleibt in ihrer Staffel Tabellenführer. Personell gebeutelt musste unser D3 eine Niederlage in Rommelsbach hinnehmen.
 

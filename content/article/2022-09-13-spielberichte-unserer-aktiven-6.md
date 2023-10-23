@@ -2,8 +2,6 @@
 title: "Spielberichte unserer Aktiven"
 slug: "2022-09-13-spielberichte-unserer-aktiven-6"
 date: "2022-09-13"
-promote: false
-createdAt: "null"
 teaser: "Bezirksliga Alb, 4. Spieltag: SV Walddorf - VFL Pfullingen U23 2:0 (0:0)
 
 Bezirksliga Alb, 3. Spieltag: SV Hirrlingen - SV Walddorf  2:2 (1:0)"

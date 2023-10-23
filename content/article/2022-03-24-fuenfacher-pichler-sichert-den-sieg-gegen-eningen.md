@@ -2,9 +2,6 @@
 title: "Fünfacher Pichler sichert den Sieg gegen Eningen"
 slug: "2022-03-24-fuenfacher-pichler-sichert-den-sieg-gegen-eningen"
 date: "2022-03-24"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Der SV Walddorf besiegte den TSV Eningen II klar und deutlich mit 8:0 (5:0). Mann des Abends war Co-Spielertrainer Sven Pichler mit seinen 5 Toren.
 

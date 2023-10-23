@@ -3,8 +3,6 @@ title: "Restart des Trainingsbetriebs in der Halle"
 slug: "2020-06-15-restart-des-trainingsbetriebs-in-der-halle"
 date: "2020-06-15"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Seit dieser Woche ist der Trainingsbetrieb unter den Vorgaben der Corona-Verordnung für Sportstätten eingeschränkt wieder möglich.
 

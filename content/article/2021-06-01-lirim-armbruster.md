@@ -3,7 +3,6 @@ title: "Lirim Armbruster"
 slug: "2021-06-01-lirim-armbruster"
 date: "2021-06-01"
 promote: true
-createdAt: "null"
 teaser: "Lirim kehrt zum SVW zurück!"
 ---
 <p class="MsoNoSpacing">Lirimz is back! Unser 7. Neuzugang beweist nicht nur als Influencer und selbsternannter Ghetto Cowboy in Instagram Qualität, sondern auch auf dem Feld. Mit Lirim Armbruster bekommt unsere Zweite ein richtiges Powerhorse ins Team, welches nicht nur durch seine Physis auf dem Feld glänzt, sondern auch durch seine technischen Ballkünste und seine lockere Art. Nach einer langen Kreuzbandverletzung konnte Lirim pünktlich in der vergangenen Woche ins Mannschaftstraining einsteigen. Wir freuen uns, dass du wieder am Start bist. Herzlich Willkommen zurück, Lirimz!

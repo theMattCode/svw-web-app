@@ -3,8 +3,6 @@ title: "Flachdachsanierung auf der Zielgeraden"
 slug: "2020-06-08-flachdachsanierung-auf-der-zielgeraden-1-1"
 date: "2020-06-08"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Die Sanierung des Flachdaches unseres Sportheimes befindet sich auf der Zielgeraden. Restarbeiten an der seitlichen Dachverkleidung stehen noch aus.
 

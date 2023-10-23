@@ -2,7 +2,6 @@
 title: "Letzte Heimspiele"
 slug: "2023-06-04-letzte-heimspiele-2023"
 date: "2023-06-04"
-promote: false
 createdAt: "2023-06-21T04:44:37.402Z"
 teaser: "04.06.2023, Kreisliga B, SV Walddorf II - CP Reutlingen 4:0 (1:0)
 

@@ -3,8 +3,6 @@ title: "Simon Erhardt"
 slug: "2021-07-05-simon-erhardt"
 date: "2021-07-05"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Zum Auftakt der neuen Saison dürfen wir euch einen weiteren Neuzugang präsentieren. Simon Erhardt kommt auf Leihbasis vom TSV Hemhofen in die Weiherwiesen zu unserem SV Walddorf. Mit Simon verpflichten wir eine Menge fußballerisches Talent und Erfahrung. In seinem Jugendverein ATSV Erlangen spielte er über acht Jahre und war Teil der Aufstiegsmannschaft in die Bayernliga. Zudem profitiert er von drei Jahren bei der SpVgg Greuther Fürth. Zuletzt war Simon als spielender Co-Trainer in der Kreisklasse aktiv und ob man es nun glauben will oder nicht: Seine Lieblingsposition ist doch tatsächlich Torhüter.
 
@@ -49,5 +47,3 @@ teaser: ""
 
 
 <p class="MsoNoSpacing">
-
- 

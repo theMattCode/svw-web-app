@@ -3,8 +3,6 @@ title: "Auszeichnung mit dem Vereinsehrenamtspreis"
 slug: "2021-07-20-auszeichnung-mit-dem-vereinsehrenamtspreis"
 date: "2021-07-20"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Der SV Walddorf freut sich über den zweiten Platz beim Vereinsehrenamtspreis. Die Auszeichnung des Württembergischen Fußball Verbunds (Wfv) richtet sich an Vereine, die in den letzten drei Jahren herausragendes ehrenamtliches Engagement bewiesen haben.
 

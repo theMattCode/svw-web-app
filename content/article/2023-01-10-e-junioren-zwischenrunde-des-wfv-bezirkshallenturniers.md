@@ -2,8 +2,6 @@
 title: " E-Junioren - Zwischenrunde des wfv Bezirkshallenturniers"
 slug: "2023-01-10-e-junioren-zwischenrunde-des-wfv-bezirkshallenturniers"
 date: "2023-01-10"
-promote: false
-createdAt: "null"
 teaser: "wfv-Bezirkshallenturnier in Rommelsbach"
 ---
 In der Zwischenrunde des wfv-Bezirkshallenturniers, gestern in Rommelsbach, konnten wir folgende Ergebnisse erzielen:

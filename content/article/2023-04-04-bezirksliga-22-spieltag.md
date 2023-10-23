@@ -2,7 +2,6 @@
 title: "Bezirksliga, 22. Spieltag"
 slug: "2023-04-04-bezirksliga-22-spieltag"
 date: "2023-04-04"
-promote: false
 createdAt: "2023-04-04T12:23:36.119Z"
 teaser: "SV Pfrondorf - SV Walddorf 1:6 (0:3)"
 ---

@@ -3,8 +3,6 @@ title: "Erste Mannschaft- Saisonstart in der Kreisliga A"
 slug: "2021-08-06-erste-mannschaft-saisonstart-in-der-kreisliga-a"
 date: "2021-08-06"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Erste Mannschaft -Saisonstart in der Kreisliga A
 

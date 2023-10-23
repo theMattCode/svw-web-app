@@ -3,8 +3,6 @@ title: "Spielberichte unserer Aktiven"
 slug: "2021-10-18-spielberichte-unsere-aktiven"
 date: "2021-10-18"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 SV Gniebel - SV Walddorf 1:8 (1:2)
 
@@ -26,7 +24,3 @@ Nach einer torlosen und umkämpften ersten Halbzeit, in der man die ein oder and
 
 
 Es spielten: Marco Knoblauch, Niko Baur, Luca Häfner (82. Davide Balena), Markus Scharr (51. Jannik Jung), Julian Wohlfarth, Dennis Dieter, Alexander Deile, Jonathan Kießling, Thomas Ammon (46. Andy Scherbaum), Alexander Peguero, Marcus Belschner (67. Marco Speier)
-
-
-
-

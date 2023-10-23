@@ -2,9 +2,6 @@
 title: "Rückrunden-Vorbereitung unserer Aktiven"
 slug: "2020-01-27-rueckrunden-vorbereitung-unserer-aktiven"
 date: "2020-01-27"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am Samstag, 25.01.2020 startete die 1. Mannschaft in die Rückrundenvorbereitung.
 

@@ -2,9 +2,7 @@
 title: "Badminton – eine 2000 Jahre alte Sportart"
 slug: "2023-05-08-badminton-eine-2000-jahre-alte-sportart"
 date: "2023-05-08"
-promote: false
 createdAt: "2023-05-24T06:56:20.133Z"
-teaser: ""
 ---
 Badminton entwickelte sich aus dem antiken Federball-Spiel „battledore and shuttlecock“, einem Rückschlagspiel, das die alten Kulturvölker in China, Indien, Griechenland oder Japan schon vor 2000 Jahren praktizierten. Dabei wurden mit abgeflachten Hölzern kleine, mit Hühnerfedern gespickte Holzbälle geschlagen. Auch von den Azteken und Inkas sind diese Rückschlagspiele bekannt.
 

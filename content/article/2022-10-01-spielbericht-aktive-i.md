@@ -2,7 +2,6 @@
 title: "Spielbericht Aktive I"
 slug: "2022-10-01-spielbericht-aktive-i"
 date: "2022-10-01"
-promote: false
 createdAt: "2023-04-14T13:46:46.837Z"
 teaser: "Bezirksliga, 6. Spieltag, SV Walddorf - TSG Tübingen II 4:4 (2:2)"
 ---

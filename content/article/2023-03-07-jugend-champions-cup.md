@@ -2,8 +2,6 @@
 title: "Jugend Champions-Cup"
 slug: "2023-03-07-jugend-champions-cup"
 date: "2023-03-07"
-promote: false
-createdAt: "null"
 teaser: "SVW Jugendmannschaften beim Jugend-Champions-Cup in Dettenhausen"
 ---
 **SVW Jugendmannschaften beim Jugend-Champions-Cup in Dettenhausen**

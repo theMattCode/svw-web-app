@@ -3,7 +3,6 @@ title: "Anschaffung eines Defibrillators für den Sportplatz"
 slug: "2021-07-09-anschaffung-eines-defibrillators-fuer-den-sportplatz"
 date: "2021-07-09"
 promote: true
-createdAt: "null"
 teaser: ",,Wir für Hier´´ Sportverein Walddorf e.V / Vereinigte Volksbanken"
 ---
 **Der Sportverein Walddorf benötigt die Unterstützung seiner Freunde – wir möchten 2.000,00 € für ein lebensrettendes Projekt einsammeln.**
@@ -34,7 +33,3 @@ Wir danken Euch allen für Eure Unterstützung und werden nach erfolgreicher Pro
 
 
 **Rückfragen zum Förderprojekt:** Martin Bayer, Vorstand Finanzen, <a href="mailto:martin.bayer@svwalddorf.de">martin.bayer@svwalddorf.de</a>
-
-
-
-

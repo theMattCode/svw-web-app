@@ -3,8 +3,6 @@ title: "Kaderupdate"
 slug: "2020-06-21-kaderupdate"
 date: "2020-06-21"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoPlainText">Die Corona-Krise hat uns allen einen unfreiwilligen Stillstand gebracht. Seit dem 11. März stand der Spiel- und Trainingsbetrieb weitgehend still. Seit gestern ist die Saison 2019/2020 offiziell abgebrochen und wir richten unseren Blick auf die neue Saison.
 

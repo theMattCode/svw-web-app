@@ -2,9 +2,6 @@
 title: "Fußball-Tennis Vereins-Meisterschaft"
 slug: "2020-06-15-fussball-tennis-vereins-meisterschaft"
 date: "2020-06-15"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am vergangenen Samstag starteten die Aktiven mit ihrer inoffiziellen Fussballtennisvereinsmeisterschaft. Da momentan kein Trainingsbetrieb stattfindet ein gelungenes Event, um mal wieder gegen den Ball zu treten.
 

@@ -3,8 +3,6 @@ title: "Unser Sportbetrieb startet wieder!"
 slug: "2021-06-09-unser-sportbetrieb-startet-wieder"
 date: "2021-06-09"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Die aktuelle Corona-Verordnung bietet mit Wirkung vom 7. Juni weitere Erleichterungen für den Sport:
 

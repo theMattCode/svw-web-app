@@ -3,8 +3,6 @@ title: "COVID-19-Regelungen bei den Heimspielen unserer Aktiven"
 slug: "2020-10-16-covid-19-regelungen-bei-den-heimspielen-unserer-aktiven"
 date: "2020-10-16"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Aufgrund der aktuell steigenden Indize-Werte gelten für die Heimspiele unserer Teams neue Verordnungen. Es gelten im Zuge dieser Verordnungen und unseres Hygienekonzepts folgende Regelungen:
 

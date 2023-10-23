@@ -4,7 +4,6 @@ slug: "2023-04-17-rueckblick-3-walddorfer-badminton-cup"
 date: "2023-04-17"
 promote: true
 createdAt: "2023-05-03T07:11:36.876Z"
-teaser: ""
 ---
 Am 18. Und 19. März veranstaltete die Abteilung Badminton den 3. Walddorfer Badminton Cup. Gespielt wurde in den Disziplinen Herrendoppel Hobby, Damendoppel Hobby, Mixed Hobby und Mixed Aktive. Insgesamt haben 44 Paarungen an dem Turnier teilgenommen. Der SV Walddorf konnte neben fleißigen Helfern auch selbst 8 Spielpaarungen stellen. Es spielten: Lorenz Fritz und Philipp Konzelmann (HD Hobby Platz 10), Gregor Tretter und Stefan (HD Platz 17), Michael Schäfer und Peter Schäfer (HD Hobby Platz 5), Julian Petermann und Manuel Kadler (HD Hobby Platz 8), Milena Heim und Lena Bayer (DD Hobby Platz 4), Julia Meyle und Claudia Papp (DD Hobby Platz 3), Claudia Papp und Emilio C. (MX Platz 9), Milena Heim und Lorenz Fritz (MX Hobby Platz 2).
 

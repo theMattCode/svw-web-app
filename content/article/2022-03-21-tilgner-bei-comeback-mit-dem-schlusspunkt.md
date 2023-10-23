@@ -2,9 +2,6 @@
 title: "Tilgner bei Comeback mit dem Schlusspunkt"
 slug: "2022-03-21-tilgner-bei-comeback-mit-dem-schlusspunkt"
 date: "2022-03-21"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 **TSV Betzingen I - SV Walddorf I 0:2 (0:1)**
 

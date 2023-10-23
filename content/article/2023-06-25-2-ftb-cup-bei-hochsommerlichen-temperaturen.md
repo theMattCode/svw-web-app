@@ -2,7 +2,6 @@
 title: "2. FTB-Cup bei hochsommerlichen Temperaturen"
 slug: "2023-06-25-2-ftb-cup-bei-hochsommerlichen-temperaturen"
 date: "2023-06-25"
-promote: false
 createdAt: "2023-06-30T07:30:38.612Z"
 teaser: "Am vergangenen Wochenende war es endlich soweit: Wir veranstalteten unser großes Jugendfußball-Turnier, den 2. FTB-Cup."
 ---

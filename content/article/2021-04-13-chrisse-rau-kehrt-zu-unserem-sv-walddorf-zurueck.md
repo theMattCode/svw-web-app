@@ -2,9 +2,7 @@
 title: "Chrisse Rau kehrt zu unserem SV Walddorf zurück!"
 slug: "2021-04-13-chrisse-rau-kehrt-zu-unserem-sv-walddorf-zurueck"
 date: "2021-04-13"
-promote: true
-createdAt: "null"
-teaser: ""Sharky" kehrt in seinen Heimatteich zurück!"
+promote: trueSharky" kehrt in seinen Heimatteich zurück!"
 ---
 Zur neuen Saison 2021/2022 dürfen wir einen alten Bekannten und echten Walddorfer bei uns wieder willkommen heißen. Christoph Rau alias Sharky, CR7 oder einfach nur Chrisse kehrt nach zweieinhalb Saisons im Trikot unseres Kooperationspartners TB Kirchentellinsfurt an seine alte Wirkungsstätte zurück und schnürt künftig die Kichstiefel unter seinem langjährigen Teamkameraden und guten Kumpel Benny Link. Herzlich willkommen Zuhause Chrisse!
 

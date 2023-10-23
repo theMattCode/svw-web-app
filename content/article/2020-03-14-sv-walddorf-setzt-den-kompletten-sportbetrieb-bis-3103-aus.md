@@ -3,8 +3,6 @@ title: "SV Walddorf setzt den kompletten Sportbetrieb bis 31.03. aus"
 slug: "2020-03-14-sv-walddorf-setzt-den-kompletten-sportbetrieb-bis-3103-aus"
 date: "2020-03-14"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <h1>WICHTIGE MITTEILUNG!</h1>
 Aufgrund der hochdynamischen Entwicklung der Ausbreitung des Corona-Virus sehen wir es als unsere Verantwortung den Sportbetrieb beim SV Walddorf ab sofort bis vorerst einschließlich 31.03. auszusetzen.

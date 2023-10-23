@@ -2,9 +2,6 @@
 title: "E-Junioren bei Turnier und Leistungsvergleich erfolgreich"
 slug: "2020-01-20-e-junioren-bei-turnier-und-leistungsvergleich-erfolgreich"
 date: "2020-01-20"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am vergangenen Samstag waren unsere E-Junioren mal wieder doppelt im Einsatz: In Metzingen nahmen wir an einem Leistungsvergleich teil, parallel dazu fand ein Turnier in Göppingen statt.
 

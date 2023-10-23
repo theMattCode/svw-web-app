@@ -2,9 +2,6 @@
 title: "Spielbericht unserer Ersten"
 slug: "2022-05-05-spielbericht-unserer-ersten-4"
 date: "2022-05-05"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Pokalthriller in Walddorf - Leider ohne Happy End!
 

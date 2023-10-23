@@ -2,9 +2,6 @@
 title: "6. Hallenturnier der F2 - Junioren in Mittelstadt"
 slug: "2020-02-16-6-hallenturnier-der-f2-junioren-in-mittelstadt"
 date: "2020-02-16"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Beim Hallenturnier in Mittelstadt am vergangenen Sonntag gab es ein Novum: Die SG Reutlingen trat nicht an und es wurde nach Abstimmung mit allen Trainern ein "ALL STARS-TEAM" gebildet. Aus jedem Team wurden 1-2 Spieler genommen und spielten mit gelben Leibchen als Ersatz für die SG Reutlingen. So konnte der Spiel- und Zeitplan eingehalten werden und die Kinder hatten ihren Spaß.
 

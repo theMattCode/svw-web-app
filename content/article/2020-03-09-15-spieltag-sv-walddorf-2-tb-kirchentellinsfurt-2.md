@@ -1,10 +1,7 @@
 ---
 title: "15. Spieltag: 08.03.20 SV Walddorf II - TB Kirchentellinsfurt II"
-slug: "2020-03-09-15-spieltag-080320-sv-walddorf-ii-tb-kirchentellinsfurt-ii"
+slug: "2020-03-09-15-spieltag-sv-walddorf-2-tb-kirchentellinsfurt-2"
 date: "2020-03-09"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Unsere Zweite Mannschaft muste am vergangenen Wochenende im Heimspiel gegen den TB Kirchentellinsfurt eine knappe 2:3 Niederlage hinnehmen.
 

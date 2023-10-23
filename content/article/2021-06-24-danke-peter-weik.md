@@ -2,9 +2,6 @@
 title: "Danke Peter Weik!"
 slug: "2021-06-24-danke-peter-weik"
 date: "2021-06-24"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Stellvertretend für die vielen ehrenamtlichen Helferinnen und Helfer wurde Peter Weik durch die 2. Vorsitzende Andrea Speier sowie des Finanzvorstands Martin Bayer ein Präsentkorb mit allerlei mediterranen Köstlichkeiten überreicht.
 

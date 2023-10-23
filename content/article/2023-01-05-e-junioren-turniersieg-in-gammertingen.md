@@ -2,9 +2,6 @@
 title: "E-Junioren - Turniersieg in Gammertingen"
 slug: "2023-01-05-e-junioren-turniersieg-in-gammertingen"
 date: "2023-01-05"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Im durchaus stark besetzten Hallenturnier gestern in Gammertingen konnten wir uns den **1. Platz** und somit den **Turniersieg** sichern!
 

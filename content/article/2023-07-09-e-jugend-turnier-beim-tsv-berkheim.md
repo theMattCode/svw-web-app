@@ -2,7 +2,6 @@
 title: "E-Jugend-Turnier beim TSV Berkheim"
 slug: "2023-07-09-e-jugend-turnier-beim-tsv-berkheim"
 date: "2023-07-09"
-promote: false
 createdAt: "2023-07-31T13:26:38.028Z"
 teaser: "Neue E-Junioren bestreiten das erste Turnier"
 ---

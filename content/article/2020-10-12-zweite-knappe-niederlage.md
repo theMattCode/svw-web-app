@@ -2,9 +2,6 @@
 title: "Zweite: Knappe Niederlage"
 slug: "2020-10-12-zweite-knappe-niederlage"
 date: "2020-10-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 SVW Aktive II: TB Kichentellinsfurt II - SV Walddorf II 2:1 (1:1)
 

@@ -2,8 +2,6 @@
 title: "News von unseren Aktiven"
 slug: "2023-02-13-news-von-unseren-aktiven"
 date: "2023-02-13"
-promote: false
-createdAt: "null"
 teaser: "Aktueller Stand Vorbereitung 1. Mannschaft"
 ---
 ## Aktueller Stand Vorbereitung 1. Mannschaft

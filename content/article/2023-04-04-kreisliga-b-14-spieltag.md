@@ -2,7 +2,6 @@
 title: "Kreisliga B, 14. Spieltag"
 slug: "2023-04-04-kreisliga-b-14-spieltag"
 date: "2023-04-04"
-promote: false
 createdAt: "2023-04-04T12:24:08.644Z"
 teaser: "SV Anadolu Reutlingen II - SV Walddorf II 2:3 (2:1)"
 ---

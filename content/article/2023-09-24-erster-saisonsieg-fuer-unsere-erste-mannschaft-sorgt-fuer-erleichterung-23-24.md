@@ -2,7 +2,6 @@
 title: "Erster Saisonsieg für unsere Erste Mannschaft sorgt für Erleichterung"
 slug: "2023-09-24-erster-saisonsieg-fuer-unsere-erste-mannschaft-sorgt-fuer-erleichterung-23-24"
 date: "2023-09-24"
-promote: false
 createdAt: "2023-09-25T12:41:22.606Z"
 teaser: "Bezirksliga, 6. Spieltag, SV Walddorf - SV Zainingen 3:0 (0:0)"
 ---

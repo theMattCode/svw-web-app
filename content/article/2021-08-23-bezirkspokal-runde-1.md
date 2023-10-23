@@ -3,8 +3,6 @@ title: "Bezirkspokal Runde 1"
 slug: "2021-08-23-bezirkspokal-runde-1"
 date: "2021-08-23"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Am morgigen Mittwoch steht die erste Runde des Bezirkspokals an. Für unsere Zweite geht es im ersten Pflichtspiel der Saison gegen den TSV Riederich. Anstoß ist um 18:15 Uhr in den Weiherwiesen. Für Getränke und Rote Wurst ist natürlich gesorgt. Bitte beachtet, dass es aufgrund der Corona-Pandemie am Eingang etwas länger dauern könnte und plant dementsprechend mehr Zeit ein. Alle Hygieneregelungen findet ihr unter :  https://bit.ly/3D4wZLd
 

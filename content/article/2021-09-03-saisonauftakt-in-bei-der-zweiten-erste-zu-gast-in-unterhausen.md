@@ -3,8 +3,6 @@ title: "Saisonauftakt in bei der Zweiten // Erste zu Gast in Unterhausen"
 slug: "2021-09-03-saisonauftakt-in-bei-der-zweiten-erste-zu-gast-in-unterhausen"
 date: "2021-09-03"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Endlich startet auch unserer Zweite Mannschaft in die Saison 2021/2022. Zum Auftakt der Kreisliga B geht es zur vierten Mannschaft der SGM Entringen/Altingen. Die Mannschaft von Fabian Schramm und Julian Wohlfarth erwartet nach einer langen Vorbereitungsphase mit insgesamt zehn Spielen eine spannende und anspruchsvolle Saison in der Kreisliga B.
 

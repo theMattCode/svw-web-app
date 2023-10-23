@@ -2,7 +2,6 @@
 title: "Ronja - unsere neue Übungsleiterin im Teendance"
 slug: "2023-06-01-ronja-unsere-neue-uebungsleiterin-im-teendance"
 date: "2023-06-01"
-promote: false
 createdAt: "2023-06-21T04:42:07.530Z"
 teaser: "Neue Leitung der dritten Teendance-Gruppe (Mädchen ab 14 Jahre)"
 ---

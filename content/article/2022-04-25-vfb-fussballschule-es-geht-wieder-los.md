@@ -2,9 +2,6 @@
 title: "VfB Fußballschule: Es geht wieder los!"
 slug: "2022-04-25-vfb-fussballschule-es-geht-wieder-los"
 date: "2022-04-25"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Nachdem während den mehrfachen Unterbrechungen der Spielzeiten in den vergangenen zwei Jahren auch immer wieder das Fördertraining der VfB-Fußballschule ausgesetzt werden musste, freut es uns umso mehr euch heute mitteilen zu können, dass die VfB Fußballschule ab dem 28.04.2022 bis zum 14.07.2022 wieder zwei Trainingsblöcke auf unserem Sportgelände anbietet:
 

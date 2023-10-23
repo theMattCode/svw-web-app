@@ -2,9 +2,6 @@
 title: "D-Junioren beim Hallenturnier in Pliezhausen"
 slug: "2020-02-15-d-junioren-beim-hallenturnier-in-pliezhausen"
 date: "2020-02-15"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am Samstag, den 15.02. waren wir mit unseren D2-Junioren in Pliezhausen unterwegs.
 

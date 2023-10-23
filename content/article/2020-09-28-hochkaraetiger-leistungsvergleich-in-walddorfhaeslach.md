@@ -2,9 +2,6 @@
 title: "Hochkarätiger Leistungsvergleich in Walddorfhäslach"
 slug: "2020-09-28-hochkaraetiger-leistungsvergleich-in-walddorfhaeslach"
 date: "2020-09-28"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am Sonntag vorvergangene Woche konnten wir mal wieder namhafte Gäste auf unserer Sportanlage willkommen heißen.
 

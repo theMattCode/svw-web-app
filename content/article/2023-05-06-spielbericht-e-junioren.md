@@ -2,7 +2,6 @@
 title: "Spielbericht E-Junioren"
 slug: "2023-05-06-spielbericht-e-junioren"
 date: "2023-05-06"
-promote: false
 createdAt: "2023-05-24T06:48:39.863Z"
 teaser: "SV Walddorf I - TSV Betzingen I 4:3 (2:0)"
 ---

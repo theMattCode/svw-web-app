@@ -2,9 +2,7 @@
 title: "Bericht zur Mitgliederversammlung 2023"
 slug: "2023-03-21-bericht-zur-mitgliederversammlung-2023"
 date: "2023-03-21"
-promote: false
 createdAt: "2023-04-04T12:13:47.707Z"
-teaser: ""
 ---
 Am 17.02.2023 führte der SV Walddorf seine diesjährige Mitgliederversammlung durch, endlich wieder ohne Corona-bedingte Einschränkungen.
 

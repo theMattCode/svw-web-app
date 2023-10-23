@@ -2,9 +2,6 @@
 title: "Saison 2020/21 wird beendet und annulliert"
 slug: "2021-04-12-saison-2020-21-wird-beendet-und-annulliert"
 date: "2021-04-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Es hatte sich schon seit längerem abgezeichnet, letzte Woche kam dann die Bestätigung des WFV: die aktuelle Fussballsaison wird für alle Aktiven- und Jugend-Mannschaften beendet und annulliert.
 

@@ -3,8 +3,6 @@ title: "Absage Volksbank-Cup"
 slug: "2020-06-08-absage-volksbank-cup-1-1"
 date: "2020-06-08"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Zum ersten Mal seit 13 Jahren kann unser traditioneller Volksbank-Cup dieses Jahr nicht stattfinden. Aufgrund der aktuellen Bestimmungen bleibt uns leider keine andere Wahl, als unser diesjähriges Sommerturnier abzusagen.
 

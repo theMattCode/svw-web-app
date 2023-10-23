@@ -3,8 +3,6 @@ title: "Spielbericht unserer Aktiven und der Jugend"
 slug: "2021-11-15-spielbericht-unserer-aktiven-und-der-jugend-1"
 date: "2021-11-15"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 TSV Lustnau - SV Walddorf 1:3 (0:1)
 

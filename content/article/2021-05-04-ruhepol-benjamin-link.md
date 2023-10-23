@@ -3,7 +3,6 @@ title: "Benjamin Link - Sportliche Leitung"
 slug: "2021-05-04-ruhepol-benjamin-link"
 date: "2021-05-04"
 promote: true
-createdAt: "null"
 teaser: "Heute stellen wir euch einen absoluten Allrounder unseres Vereins vor!"
 ---
 <p class="MsoNoSpacing">Vor gut zwei Monaten durften wir die Vertragsverlängerung mit ihm bekanntgeben, heute wollen wir von ihm wissen was die Arbeit beim SV Walddorf so besonders macht. Benjamin Link ist, neben den seiner Haupttätigkeit als Trainer unserer Ersten, für die gesamte sportliche Ausrichtung unseres Spitzenbereichs und somit auch für die hervorragende Entwicklung der letzten zwei Jahre verantwortlich. Mit seiner ruhigen und sachlichen Art neben dem Platz schuf er in den zurückliegenden zwei Spielzeiten die Spielidee unserer drei Spitzenteams, welche er als topausgebildeter B-Lizenz-Inhaber mit seinem Team in gnadenloser Perfektion umsetzt.

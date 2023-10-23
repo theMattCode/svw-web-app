@@ -3,8 +3,6 @@ title: "Unsere Aktiven am Wochenende"
 slug: "2021-10-09-unsere-aktiven-am-wochenende"
 date: "2021-10-09"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 SV Walddorf – SV Degerschlacht // 10.10.2021 // 15:30 Uhr
 

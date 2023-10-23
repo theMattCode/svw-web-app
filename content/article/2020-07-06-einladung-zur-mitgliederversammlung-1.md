@@ -3,8 +3,6 @@ title: "Einladung zur Mitgliederversammlung"
 slug: "2020-07-06-einladung-zur-mitgliederversammlung-1"
 date: "2020-07-06"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Die für den 24.03.2020 einberufene Mitgliederversammlung musste wegen der damals aufkommenden Corona-Pandemie kurzfristig abgesagt und auf unbestimmte Zeit verschoben werden.
 

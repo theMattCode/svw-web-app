@@ -2,9 +2,6 @@
 title: "Spielbericht zum Pokalhalbfinale gegen die SG Reutlingen"
 slug: "2020-07-29-spielbericht-zum-pokalhalbfinale-gegen-die-sg-reutlingen"
 date: "2020-07-29"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 - Unglückliche 2:4 Niederlage nach erneut toller Leistung -
 
@@ -25,7 +22,3 @@ Es spielten: Jannik Schülzle, Lukas Hermann (63. Daniel Russom), Amadou Bah, Ma
 
 
 Nicht nur das Team auf dem Feld hat an diesem Samstag sich von seiner besten Seite gezeigt, auch das Team "Drumherum". 100 Zuschauer durften auf das Gelände, Karten mussten vorbestellt werden, bereits 30min vor Spielbeginn musste die Kasse schon wieder geschlossen werden: Gemäß Coronavorgaben des Württembergischen Fußballverbandes mit ausgearbeitetem Hygienekonzept des SVW wurde die Veranstaltung perfekt organisiert und umgesetzt. Vielen Dank an alle Helfer in allen Bereichen.
-
-
-
- 

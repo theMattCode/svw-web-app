@@ -2,8 +2,6 @@
 title: "D'Moo'spritzer Theatergruppe gastiert am 10. Dez. beim SVW"
 slug: "2022-09-16-ankuendigung-moospritzer-theatergruppe-gastiert-am-10-dez-beim-svw"
 date: "2022-09-16"
-promote: false
-createdAt: "null"
 teaser: "Kartenvorverkauf startet demnächst!"
 ---
 Nach einer zweijährigen corona-bedingten Zwangspause startet der Theaterverein D'Moo'spritzer wieder mit Vollgas durch.

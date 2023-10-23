@@ -2,9 +2,6 @@
 title: "Testspiele unserer D-Junioren"
 slug: "2021-07-07-testspiele-unserer-d-junioren"
 date: "2021-07-07"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Unsere D-Junioren geben in der Vorbereitung auf die neue Saison bereits richtig Vollgas. Es sind immer um die 35 hochmotivierte Kinder im Training, in den bisherigen Testspielen konnten folgende Ergebnisse erzielt werden:
 

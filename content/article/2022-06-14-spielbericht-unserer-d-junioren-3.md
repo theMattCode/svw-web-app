@@ -2,9 +2,6 @@
 title: "Spielbericht unserer D-Junioren"
 slug: "2022-06-14-spielbericht-unserer-d-junioren-3"
 date: "2022-06-14"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 - Meisterdouble für die D-Junioren -
 

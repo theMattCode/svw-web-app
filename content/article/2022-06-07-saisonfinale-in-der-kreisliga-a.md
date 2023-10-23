@@ -2,8 +2,6 @@
 title: "Saisonfinale in der Kreisliga A"
 slug: "2022-06-07-saisonfinale-in-der-kreisliga-a"
 date: "2022-06-07"
-promote: false
-createdAt: "null"
 teaser: "Wir haben gekämpft, gefiebert und gelitten. Wir haben gemeinsam gewonnen und wir haben gemeinsam verloren. Jetzt wird es Zeit uns zu belohnen!"
 ---
 <p class="MsoNoSpacing">Wir haben gekämpft, gefiebert und gelitten. Wir haben gemeinsam gewonnen und wir haben gemeinsam verloren. Wir alle – die Spieler, die Trainer, die Funktionäre, die Fans – haben in den vergangenen drei Spielzeiten unseren SV Walddorf durch eine der schwierigsten Zeiten der letzten Jahre getragen. Immer wieder wurde uns durch die pandemiebedingten Abbrüche, die Chance verwehrt, uns für all die harte Arbeit zu belohnen.

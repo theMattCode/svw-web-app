@@ -2,9 +2,6 @@
 title: "3.Spieltag, Kreisliga A Reutlingen: SV Walddorf - TSV Kusterdingen 4:2"
 slug: "2020-09-10-3spieltag-kreisliga-a-reutlingen-sv-walddorf-tsv-kusterdingen-42"
 date: "2020-09-10"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 In einer abwechslungsreichen Partie gewann der SVW hochverdient gegen tapfer kämpfende Kusterdinger.
 

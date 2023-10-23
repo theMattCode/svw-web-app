@@ -2,8 +2,6 @@
 title: "Spielberichte unserer D-Junioren"
 slug: "2022-10-04-spielberichte-unserer-d-junioren-3"
 date: "2022-10-04"
-promote: false
-createdAt: "null"
 teaser: "Podestplatz bei der Talentiade 2022"
 ---
 Nachdem wir uns Mitte August durch einen souveränen Turniersieg qualifiziert hatten, durften unsere D-Junioren am vergangenen Montag zur Talentiade nach Tübingen reisen.

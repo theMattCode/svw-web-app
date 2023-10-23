@@ -2,9 +2,6 @@
 title: "Spielberichte unserer Aktiven"
 slug: "2022-05-19-spielberichte-unserer-aktiven-3"
 date: "2022-05-19"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 08.05.22 SV Walddorf - CP Reutlingen (Abbruch beim Stand von 6:0)
 

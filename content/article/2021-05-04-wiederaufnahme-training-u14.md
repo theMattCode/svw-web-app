@@ -2,9 +2,6 @@
 title: "Wiederaufnahme Training U14"
 slug: "2021-05-04-wiederaufnahme-training-u14"
 date: "2021-05-04"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Nach einer weiteren langen Pause und einigen Überlegungen, ob das wirklich das richtige Signal ist, starteten am Freitag unsere E-Junioren mit einem ersten Test des Trainings unter Bundesnotbremse-Bedingungen.
 

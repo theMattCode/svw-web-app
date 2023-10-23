@@ -2,7 +2,6 @@
 title: "Sportwoche des SV Walddorf"
 slug: "2023-07-24-sportwoche-des-sv-walddorf"
 date: "2023-07-24"
-promote: false
 createdAt: "2023-07-28T07:39:15.014Z"
 teaser: "Bewegung, Spaß und Spiel für Erwachsene"
 ---

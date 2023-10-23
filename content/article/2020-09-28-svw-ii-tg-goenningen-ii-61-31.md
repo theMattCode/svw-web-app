@@ -2,9 +2,6 @@
 title: "SVW II - TG Gönningen II 6:1 (3:1)"
 slug: "2020-09-28-svw-ii-tg-goenningen-ii-61-31"
 date: "2020-09-28"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Einen ungefährdeten Sieg fuhr das Team von Fabi Schramm gegen die TG Gönningen II ein.
 

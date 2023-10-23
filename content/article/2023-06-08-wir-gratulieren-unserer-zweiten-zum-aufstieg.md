@@ -2,9 +2,7 @@
 title: "Wir Gratulieren unserer Zweiten zum Aufstieg!"
 slug: "2023-06-08-wir-gratulieren-unserer-zweiten-zum-aufstieg"
 date: "2023-06-08"
-promote: false
 createdAt: "2023-06-21T05:02:29.974Z"
-teaser: ""
 ---
 Durch einen 4:0 Heimsieg am vorletzten Spieltag sicherte sich unsere Zweite vorzeitig die Meisterschaft und den direkten Aufstieg in die Kreisliga A.
 

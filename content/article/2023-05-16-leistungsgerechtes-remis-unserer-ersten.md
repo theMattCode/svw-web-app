@@ -2,7 +2,6 @@
 title: "Leistungsgerechtes Remis unserer Ersten"
 slug: "2023-05-16-leistungsgerechtes-remis-unserer-ersten"
 date: "2023-05-16"
-promote: false
 createdAt: "2023-05-24T07:25:37.588Z"
 teaser: "14.05.23, Bezirksliga, 27. Spieltag, SV Walddorf - SG Reutlingen 2:2 (1:2)"
 ---

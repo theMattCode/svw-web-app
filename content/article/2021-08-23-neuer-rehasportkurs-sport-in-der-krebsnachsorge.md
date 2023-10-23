@@ -2,9 +2,6 @@
 title: "Neuer Rehasportkurs: „Sport in der Krebsnachsorge“ "
 slug: "2021-08-23-neuer-rehasportkurs-sport-in-der-krebsnachsorge"
 date: "2021-08-23"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Nach einer Krebserkrankung den Weg zurück ins „normale“ Leben zu finden, ist eine schwere Aufgabe. Der Sportverein Walddorf unterstützt diese Menschen bei ihrer Rückkehr in den Alltag mit dem speziellen Bewegungs- und Sportangebot. Sport hilft die Nebenwirkungen einer Krebstherapie messbar zu reduzieren und die Leistungsfähigkeit zu erhöhen.
 

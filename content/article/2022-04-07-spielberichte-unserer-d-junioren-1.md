@@ -2,9 +2,6 @@
 title: "Spielberichte unserer D-Junioren"
 slug: "2022-04-07-spielberichte-unserer-d-junioren-1"
 date: "2022-04-07"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Schönbuch United D1 - SGM Trochtelfingen/Steinhilben/Mägerkingen I 6:0 (3:0)
 

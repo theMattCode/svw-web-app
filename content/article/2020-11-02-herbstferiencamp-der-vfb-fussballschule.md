@@ -3,8 +3,6 @@ title: "Herbstferiencamp der VfB-Fußballschule"
 slug: "2020-11-02-herbstferiencamp-der-vfb-fussballschule"
 date: "2020-11-02"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoPlainText">Herbstferiencamp der VfB Fußballschule beim SV Walddorf war ein toller Erfolg.
 

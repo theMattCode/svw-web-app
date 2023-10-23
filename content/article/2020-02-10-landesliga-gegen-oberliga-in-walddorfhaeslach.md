@@ -2,9 +2,6 @@
 title: "Landesliga gegen Oberliga in Walddorfhäslach"
 slug: "2020-02-10-landesliga-gegen-oberliga-in-walddorfhaeslach"
 date: "2020-02-10"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am kommenden Samstag den 15.02.20 können wir dank unseres tollen Kunstrasens hochklassige Gäste begrüßen.
 

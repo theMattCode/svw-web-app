@@ -3,8 +3,6 @@ title: "Schönbuch United"
 slug: "2020-06-23-schoenbuch-united"
 date: "2020-06-23"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Schönbuch United – Die Junioren aus Walddorf und Kirchentellinsfurt kicken künftig gemeinsam
 

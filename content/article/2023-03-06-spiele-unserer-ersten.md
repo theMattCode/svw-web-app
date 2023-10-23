@@ -1,12 +1,10 @@
 ---
 title: "Spiele unserer Ersten"
-slug: "2023-03-06-2023-03-06-spiele-unserer-ersten"
+slug: "2023-03-06-spiele-unserer-ersten"
 date: "2023-03-06"
-promote: false
-createdAt: "null"
 teaser: "26.02.2023, Bezirksliga, 17. Spieltag: TSV Eningen - SV Walddorf 4:1 (2:0)
 
-05.03.2023, Bezirksliga, 18. Spieltag: SV Walddorf - SV Hirrlingen 1:3 (1:1)"
+  05.03.2023, Bezirksliga, 18. Spieltag: SV Walddorf - SV Hirrlingen 1:3 (1:1)"
 ---
 **26.02.2023, Bezirksliga, 17. Spieltag: TSV Eningen - SV Walddorf 4:1 (2:0)**
 

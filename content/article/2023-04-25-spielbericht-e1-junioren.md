@@ -2,7 +2,6 @@
 title: "Spielbericht E1-Junioren"
 slug: "2023-04-25-spielbericht-e1-junioren"
 date: "2023-04-25"
-promote: false
 createdAt: "2023-05-03T07:29:02.665Z"
 teaser: "Kreisstaffel 1, TSG Tübingen I - SV Walddorf I 5:2 (2:1)"
 ---

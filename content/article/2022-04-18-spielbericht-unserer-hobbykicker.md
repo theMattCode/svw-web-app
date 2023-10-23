@@ -2,9 +2,6 @@
 title: "Spielbericht unserer Hobbykicker"
 slug: "2022-04-18-spielbericht-unserer-hobbykicker"
 date: "2022-04-18"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Unsere Hobbykicker gewinnen am 5. Spieltag der Großfeldliga mit 7:3!
 
@@ -39,7 +36,3 @@ Die nächsten Termine:
 
 
 Es spielten Simi, Tarek, Lukas, Fabi, Kevin, Padi, Badu, Timo, Robin, Manu, Alex, Rogelio, Axel, Nici &amp; Tobi
-
-
-
-

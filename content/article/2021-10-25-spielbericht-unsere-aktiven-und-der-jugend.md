@@ -3,8 +3,6 @@ title: "Spielbericht unsere Aktiven und der Jugend"
 slug: "2021-10-25-spielbericht-unsere-aktiven-und-der-jugend"
 date: "2021-10-25"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Aktive I: Das Spiel SV Walddorf gegen den TSV Oferdingen ist kurzfristig ausgefallen!
 

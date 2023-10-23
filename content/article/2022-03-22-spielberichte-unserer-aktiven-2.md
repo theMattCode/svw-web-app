@@ -2,9 +2,6 @@
 title: "Spielberichte unserer Aktiven"
 slug: "2022-03-22-spielberichte-unserer-aktiven-2"
 date: "2022-03-22"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 **13.03.2022, SV Walddorf I - TV Unterhausen 3:0 (kampflos)**
 

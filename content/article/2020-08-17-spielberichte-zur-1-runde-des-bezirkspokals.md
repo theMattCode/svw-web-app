@@ -2,9 +2,6 @@
 title: "Spielberichte zur 1. Runde des Bezirkspokals"
 slug: "2020-08-17-spielberichte-zur-1-runde-des-bezirkspokals"
 date: "2020-08-17"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 SVW II - VFB Bodelshausen 1:3 (1:1)
 

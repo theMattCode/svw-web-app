@@ -2,7 +2,6 @@
 title: "Unsere Erste wartet weiter auf die ersten Punkte"
 slug: "2023-09-09-unsere-erste-wartet-weiter-auf-die-ersten-punkte"
 date: "2023-09-09"
-promote: false
 createdAt: "2023-09-12T11:40:37.338Z"
 teaser: "**09.09.2023, Bezirksliga, 4. Spieltag, SV Walddorf - SSC Tübingen 1:5 (1:1)**"
 ---

@@ -2,8 +2,6 @@
 title: "Unsere F-Junioren und Bambinis zu Gast beim VfB"
 slug: "2023-01-21-unsere-f-junioren-und-bambinis-zu-gast-beim-vfb"
 date: "2023-01-21"
-promote: false
-createdAt: "null"
 teaser: "SVW beim Tag des Kinder- und Jugendfußballs des VfB Stuttgart"
 ---
 Am **Tag des Kinder- und Jugendfußballs des VfB Stuttgart** am 21.01.2023 haben unsere F-Junioren und Bambinis sich in die Mercedes-Benz-Arena aufgemacht um den VfB beim Auftaktspiel der Rückrunde gegen den 1. FSV Mainz zu unterstützen.

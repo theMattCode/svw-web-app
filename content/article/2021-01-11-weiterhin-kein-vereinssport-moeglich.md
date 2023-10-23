@@ -3,8 +3,6 @@ title: "Weiterhin kein Vereinssport möglich"
 slug: "2021-01-11-weiterhin-kein-vereinssport-moeglich"
 date: "2021-01-11"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Es wird wohl noch ein paar Wochen dauern, bis wir beim Sportverein Walddorf wieder mit unserem Sportangebot starten können. Wir prüfen daher gerade die Möglichkeit unsere **Kurse in der Sparte Fitness und Gesundheitssport auch online** anbieten zu können. Bis es soweit ist müsst ihr euch noch etwas gedulden.
 

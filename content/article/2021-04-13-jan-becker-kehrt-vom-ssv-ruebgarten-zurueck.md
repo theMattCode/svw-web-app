@@ -3,7 +3,6 @@ title: "Jan Becker kehrt vom SSV Rübgarten zurück!"
 slug: "2021-04-13-jan-becker-kehrt-vom-ssv-ruebgarten-zurueck"
 date: "2021-04-13"
 promote: true
-createdAt: "null"
 teaser: "Becker zurück zu seinem Jugendclub!"
 ---
 Nach fünf Spielzeiten im Trikot des SSV Rübgarten kehrt Jan Becker zur neuen Saison zu seinem Jugendclub, unserem SV Walddorf, zurück und trifft dort auf einige bekannte Gesichter. Bei seiner ersten Station im Aktivenbereich hat sich Jan in den vergangenen Jahren zu einem der Führungsspieler des SSV entwickelt, umso froher sind wir ihn endlich wieder in den Weiherwiesen begrüßen zu dürfen. Herzlich Willkommen zurück Jan!

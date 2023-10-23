@@ -3,8 +3,6 @@ title: "Unser neuer Multifunktionsraum ist startklar"
 slug: "2021-06-08-unser-neuer-multifunktionsraum-ist-startklar"
 date: "2021-06-08"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Das Planungs- und Bauteam des SVW hat in den letzten Wochen mit viel Einsatz den neuen Multifunktionsraum im Kabinentrakt unsers Sportheims fertiggestellt (siehe auch unseren Bericht vom 12.05.2021 an dieser Stelle). Rechtzeitig mit den aktuellen Lockerungen der Corona-bedingten Einschränkungen kann er seiner Bestimmung übergeben werden. Bereits im April diente der erst halbfertige Raum als Aufnahme-Studio für einen Yoga-Kurs im Rahmen des online-Sportangebotes der Sparte Fitness und Gesundheitssport.
 

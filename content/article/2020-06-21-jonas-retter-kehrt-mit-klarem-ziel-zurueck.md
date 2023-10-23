@@ -3,8 +3,6 @@ title: "Jonas Retter kehrt mit klarem Ziel zurück!"
 slug: "2020-06-21-jonas-retter-kehrt-mit-klarem-ziel-zurueck"
 date: "2020-06-21"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Unser dritter Neuzugang kehrt mit einem klaren Ziel zu unserem SV Walddorf zurück. Nach drei Jahren beim Ligakonkurrenten TSV Pliezhausen wird Jonas Retter in der kommenden Saison wieder unter seinem alten Jugendcoach Benjamin Link auflaufen.
 

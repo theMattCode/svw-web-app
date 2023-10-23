@@ -3,7 +3,6 @@ title: "Julian Wohlfarth - Sportliche Leitung"
 slug: "2021-05-08-organisationstalent-julian-wohlfarth"
 date: "2021-05-08"
 promote: true
-createdAt: "null"
 teaser: "Julian Wohlfarth - einmaliges Mitglied in der sportlichen Leitung"
 ---
 <p class="MsoNoSpacing">Heute stellen wir euch Julian Wohlfarth vor. Er ist einer der Faktoren, warum man sich als Trainer beim SV Walddorf komplett auf den sportlichen Bereich konzentrieren kann. Bei ihm laufen alle organisatorischen Themen im Hintergrund zusammen, das hilft jedem Trainer im Verein extrem und das weiß auch jeder sehr zu schätzen. Für die Arbeit im letzten Corona-Jahr hat er vermutlich den größten Respekt verdient, denn als er den Job angenommen hatte, war mit Sicherheit nicht damit zu rechnen, dass er ständig irgendwelche Corona-Gesetze prüfen und darauf basierend ein Vereinskonzept erstellen muss **?**. Neben seiner Tätigkeit in der sportlichen Leitung ist er zusätzlich noch Teil des Trainerteams. Zusammen mit Fabian Schramm macht er bei der zweiten Mannschaft einen super Job und ist dort für die sehr gute Weiterentwicklung mitverantwortlich.

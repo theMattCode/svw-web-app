@@ -3,7 +3,6 @@ title: "Sandro Häfner"
 slug: "2021-05-26-sandro-haefner"
 date: "2021-05-26"
 promote: true
-createdAt: "null"
 teaser: "Der Mann mit dem härtesten Schuss kehrt in zu seinem Heimatverein zurück!"
 ---
 <p class="MsoNoSpacing">Wir haben schonmal vorgesorgt und stärkere Tornetze bestellt, denn in der kommenden Saison heißt es „Willkommen Zuhause, Sandro“. Der Mann mit dem härtesten Schuss der Liga kehrt zu seinem Heimatclub zurück. Nach einer Kreuzbandverletzung wird Sandro behutsam an die Vollbelastung herangeführt, um in der kommenden Saison die gegnerischen Torhüter zur Verzweiflung zu treiben.

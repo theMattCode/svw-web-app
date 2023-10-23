@@ -2,9 +2,6 @@
 title: "Gaststätte Weiherwiesen ab 1.12. geschlossen"
 slug: "2022-11-14-gaststaette-weiherwiesen-ab-112-geschlossen"
 date: "2022-11-14"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Leider geht der SV Walddorf und die Pächterfamilie Patelis ab dem 01.12.2022 wieder getrennte Wege.
 

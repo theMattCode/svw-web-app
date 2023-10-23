@@ -3,8 +3,6 @@ title: "Lukas Hermann kehrt zurück zu seinem Jugendclub"
 slug: "2020-06-21-lukas-hermann-kehrt-zurueck-zu-seinem-jugendclub"
 date: "2020-06-21"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Unser zweiter Neuzugang ist ein bekanntes Gesicht. Lukas Hermann wechselt zur kommenden Saison zurück zum SV Walddorf und schließt sich damit seinem alten Jugendclub an. In den vergangenen drei Jahren spielte Lukas für den TSV Pliezhausen, nun trifft er auf viele seiner ehemaligen Teamkameraden.
 

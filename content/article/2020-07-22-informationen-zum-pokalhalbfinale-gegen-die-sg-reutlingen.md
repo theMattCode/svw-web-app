@@ -3,8 +3,6 @@ title: "Informationen zum Pokalhalbfinale gegen die SG Reutlingen"
 slug: "2020-07-22-informationen-zum-pokalhalbfinale-gegen-die-sg-reutlingen"
 date: "2020-07-22"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 **Update 24.07.2020 11:30 Uhr**
 
@@ -55,7 +53,3 @@ Ermäßigt (Rentner, Studierende, Frauen) 3,00€**
 
 
 Wir bitten alle Zuschauer um Verständnis und wünschen viel Spaß!
-
-
-
-

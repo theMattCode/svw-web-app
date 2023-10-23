@@ -3,8 +3,6 @@ title: "1. Walddorfer Bändelesturnier"
 slug: "2020-02-23-1-walddorfer-baendelesturnier-1"
 date: "2020-02-23"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Die Sparte Badminton richtete am vergangenen Samstag, dem 22. Februar 2020, das erste Walddorfer Bändelesturnier aus. Die 48 Teilnehmer und Teilnehmerinnen hatten zusammen einen ganzen Tag voller Sport, Spaß und Badminton.
 

@@ -2,9 +2,6 @@
 title: "E-Junioren mit starker Leistung im Spitzenspiel und Derby"
 slug: "2020-10-26-e-junioren-mit-starker-leistung-im-spitzenspiel-und-derby"
 date: "2020-10-26"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Unsere E1 stand beim SSV Reutlingen kurz vor dem Sieg und musste in einer zweifelhaft langen Nachspielzeit sehr unglücklich in letzter Sekunde den 2:2 -Ausgleich hinehmen. Dementsprechend fühlte sich das Ergebnis erstmal wie eine gefühlte Niederlage an. Kopf hoch Jungs, allein die Tatsache, dass wir als SVW den SSV Reutlingen am Rande der Niederlage hatten sollte Kompliment genug sein.
 

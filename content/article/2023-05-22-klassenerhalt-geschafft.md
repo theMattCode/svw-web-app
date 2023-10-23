@@ -2,7 +2,6 @@
 title: "Klassenerhalt geschafft!"
 slug: "2023-05-22-klassenerhalt-geschafft"
 date: "2023-05-22"
-promote: false
 createdAt: "2023-05-24T07:29:10.951Z"
 teaser: "21.05.23, Bezirksliga, 28. Spieltag, FC Rottenburg - SV Walddorf 0:0 (0:0)
 

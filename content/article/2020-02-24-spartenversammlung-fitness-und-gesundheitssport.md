@@ -2,9 +2,6 @@
 title: "Spartenversammlung Fitness und Gesundheitssport"
 slug: "2020-02-24-spartenversammlung-fitness-und-gesundheitssport"
 date: "2020-02-24"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Liebe Mitglieder der Sparte Fitness und Gesundheitssport,
 

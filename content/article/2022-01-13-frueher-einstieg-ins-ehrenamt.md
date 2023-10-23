@@ -2,9 +2,6 @@
 title: "Früher Einstieg ins Ehrenamt"
 slug: "2022-01-13-frueher-einstieg-ins-ehrenamt"
 date: "2022-01-13"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Die Feiertage sind ja immer auch eine Zeit um Danke zu sagen und so bekamen im letzten F-Jugend-Training vor den Ferien auch zwei besondere Vereinsmitglieder ein Präsent überreicht.
 

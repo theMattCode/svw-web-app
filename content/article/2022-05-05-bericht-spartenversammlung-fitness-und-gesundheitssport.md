@@ -2,9 +2,6 @@
 title: "Bericht Spartenversammlung ,,Fitness und Gesundheitssport´´"
 slug: "2022-05-05-bericht-spartenversammlung-fitness-und-gesundheitssport"
 date: "2022-05-05"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Mit 20 Mitgliedern war die außerordentliche Spartenversammlung unserer Sparte „Fitness und Gesundheitssport“ sehr gut besucht – nach langer Zeit mal wieder eine Sitzung im Nebenraum unserer Vereinsgaststätte.
 

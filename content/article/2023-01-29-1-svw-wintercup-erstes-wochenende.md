@@ -3,8 +3,6 @@ title: "1. SVW-Wintercup - erstes Wochenende"
 slug: "2023-01-29-1-svw-wintercup-erstes-wochenende"
 date: "2023-01-29"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Am vergangenen Wochenende fanden die ersten Jugendturniere im Rahmen des 1. SV Walddorf Wintercups statt. In der Ballspielhalle konnten die vielen Zuschauer bei Pommes, Hot-Dogs und Kuchen die Turniere der F- und E-Jugend Jahrgänge genießen.
 

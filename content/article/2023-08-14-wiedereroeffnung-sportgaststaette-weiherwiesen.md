@@ -2,7 +2,6 @@
 title: "Wiedereröffnung Sportgaststätte Weiherwiesen"
 slug: "2023-08-14-wiedereroeffnung-sportgaststaette-weiherwiesen"
 date: "2023-08-14"
-promote: false
 createdAt: "2023-08-29T05:29:29.247Z"
 teaser: "Sportgaststätte Weiherwiesen ab dem 15.09.2023 wieder geöffnet!"
 ---

@@ -3,8 +3,6 @@ title: "Spielbericht unserer Aktiven und der Jugend"
 slug: "2021-11-23-spielbericht-unserer-aktiven-und-der-jugend-2"
 date: "2021-11-23"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Aktive
 

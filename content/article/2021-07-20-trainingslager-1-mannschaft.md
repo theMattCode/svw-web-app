@@ -2,9 +2,6 @@
 title: "Trainingslager 1. Mannschaft"
 slug: "2021-07-20-trainingslager-1-mannschaft"
 date: "2021-07-20"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Unsere 1. Mannschaft hat 3 Tage lang ihr diesjähriges Trainingslager in Walddorf absolviert.
 

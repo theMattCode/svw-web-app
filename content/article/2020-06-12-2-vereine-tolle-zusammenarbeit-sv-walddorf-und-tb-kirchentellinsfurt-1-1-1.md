@@ -2,9 +2,6 @@
 title: "2 Vereine, tolle Zusammenarbeit. SV Walddorf und TB Kirchentellinsfurt."
 slug: "2020-06-12-2-vereine-tolle-zusammenarbeit-sv-walddorf-und-tb-kirchentellinsfurt-1-1-1"
 date: "2020-06-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 6 Tage leistungsorientiertes Zusatztraining!
 

@@ -3,8 +3,6 @@ title: " Herzlichen Dank für 22 großartige Jahre im Teen Dance"
 slug: "2022-08-02-herzlichen-dank-fuer-22-grossartige-jahre-im-teen-dance"
 date: "2022-08-02"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 **Herzlichen Dank für 22 großartige Jahre im Teen Dance**
 

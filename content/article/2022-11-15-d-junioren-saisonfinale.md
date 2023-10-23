@@ -2,8 +2,6 @@
 title: "D-Junioren Saisonfinale"
 slug: "2022-11-15-d-junioren-saisonfinale"
 date: "2022-11-15"
-promote: false
-createdAt: "null"
 teaser: "Grandioses (vorläufiges) Saisonfinale unserer D-Junioren"
 ---
 Das Saisonende am vergangenen Wochenende hatte für unsere D-Junioren ein eingeplantes Highlight und ein absolut unerwartetes glückliches Ende parat.

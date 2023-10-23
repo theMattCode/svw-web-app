@@ -2,8 +2,6 @@
 title: "Spielbericht unserer D-Jugend"
 slug: "2022-10-12-spielbericht-unserer-d-jugend"
 date: "2022-10-12"
-promote: false
-createdAt: "null"
 teaser: "Bezirksstaffel, SGM Nehren/Dusslingen I - SVW D1 0:4 (0:4)
 
 Kreisstaffel, SVW D2 - SGM Genkingen/Gönningen 8:1 (6:1)

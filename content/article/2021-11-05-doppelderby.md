@@ -3,8 +3,6 @@ title: "Doppelderby"
 slug: "2021-11-05-doppelderby"
 date: "2021-11-05"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Doppelderby in den Weiherwiesen. Wir empfangen heute den SSV Rübgarten sowohl mit unserer Ersten als auch mit unserer Zweite Mannschaft.
 

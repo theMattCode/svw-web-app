@@ -3,8 +3,6 @@ title: "Der SV Walddorf wünscht frohe Weihnachten!"
 slug: "2020-12-21-der-sv-walddorf-wuenscht-frohe-weihnachten"
 date: "2020-12-21"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Liebe Mitglieder, das bevorstehende Weihnachtsfest gibt uns die Zeit einmal inne zu halten und zurück zu blicken auf ein ganz besonderes Jahr. Das Jahr 2020 verlief alles andere als normal. Seit Frühjahr beherrscht ein kleiner, hartnäckiger Virus unser Leben.
 

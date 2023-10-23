@@ -2,9 +2,6 @@
 title: "E-Junioren: Doppelte Treppchen-Platzierung in Kusterdingen"
 slug: "2020-03-01-e-junioren-doppelte-treppchen-platzierung-in-kusterdingen"
 date: "2020-03-01"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Mit zwei Jahrgangs-gemischten Mannschaften fuhren wir am vergangenen Sonntag nach Kusterdingen. Da unsere 2009er parallel auch noch ein Testspiel hatten, war an diesem Tag wieder ein Mal die ganze Breite unseres Kaders gefragt.
 

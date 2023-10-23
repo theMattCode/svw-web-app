@@ -2,9 +2,6 @@
 title: "E-Junioren bei Leistungsvergleich erfolgreich"
 slug: "2020-02-03-e-junioren-bei-leistungsvergleich-erfolgreich"
 date: "2020-02-03"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Auf der Suche nach neuen Herausforderungen für unsere E-Junioren verschlug es unsere 2009er am vergangenen Samstag nach Pforzheim.
 

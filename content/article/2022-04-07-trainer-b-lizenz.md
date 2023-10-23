@@ -3,8 +3,6 @@ title: "Trainer B-Lizenz"
 slug: "2022-04-07-trainer-b-lizenz"
 date: "2022-04-07"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 SV Walddorf ist Standort für den Prüfungslehrganges zur wfv-B-Lizenz -
 

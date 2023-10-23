@@ -3,8 +3,6 @@ title: "Spielbericht unserer Aktiven"
 slug: "2021-11-29-spielbericht-unsere-aktiven"
 date: "2021-11-29"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 SV Walddorf - SGM Dettingen/Glems II 2:1 (0:0)
 

@@ -2,8 +2,6 @@
 title: "E-Jugend - Hallenturnier in Gäufelden"
 slug: "2023-01-23-e-jugend-hallenturnier-in-gaeufelden"
 date: "2023-01-23"
-promote: false
-createdAt: "null"
 teaser: "Jungendfußball-Hallenturnier am 22.01.2023 bei der SG Gäufelden"
 ---
 ## Vorrunde

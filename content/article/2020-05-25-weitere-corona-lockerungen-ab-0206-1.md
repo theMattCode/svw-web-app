@@ -3,8 +3,6 @@ title: "Weitere Corona Lockerungen ab 02.06."
 slug: "2020-05-25-weitere-corona-lockerungen-ab-0206-1"
 date: "2020-05-25"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Liebe Mitglieder, seit 10 Wochen ruht aufgrund der Corona-Pandemie der Sportbetrieb beim SV Walddorf - unser Vereinsleben steht nahezu komplett still. Das ist für einen Verein, bei dem die Mitglieder und das gemeinsame Miteinander im Vordergrund stehen, eine sehr schwierige Situation.
 

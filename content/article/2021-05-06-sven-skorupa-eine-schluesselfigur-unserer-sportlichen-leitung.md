@@ -3,7 +3,6 @@ title: "Sven Skorupa - Sportliche Leitung"
 slug: "2021-05-06-sven-skorupa-eine-schluesselfigur-unserer-sportlichen-leitung"
 date: "2021-05-06"
 promote: true
-createdAt: "null"
 teaser: "´´We want to keep the SVW moving´´ Hier steckt eine Menge Power dahinter"
 ---
 <p class="MsoNoSpacing">Heute dürfen wir euch eine unserer Schlüsselfiguren in der sportlichen Leitung vorstellen. Sven Skorupa nimmt als Leiter und Mitschöpfer der SVW-Akademie und des Fußballkonzepts eine tragende Rolle ein. Er ist hauptverantwortlich für die sportliche Ausrichtung unserer Teams im Bereich U6 bis U17 (Grundlagen- und Aufbaubereich). Mit seiner offenen Herangehensweise integriert er moderne sowie kreative Inhalte in unserem Juniorenbereich und treibt somit die Entwicklung unserer jungen Generation stätig an.

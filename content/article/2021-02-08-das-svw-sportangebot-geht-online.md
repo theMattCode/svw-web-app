@@ -3,8 +3,6 @@ title: "Das SVW Sportangebot geht online!"
 slug: "2021-02-08-das-svw-sportangebot-geht-online"
 date: "2021-02-08"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Am Montag sind wir mit den ersten Online-Sportstunden gestartet. Dafür wurde eine Umkleidekabine im Sportheim zum Sendestudio umfunktioniert. Den Anfang machen Monika Haar mit Yoga und Andrea Troglauer mit ihrer Fitnessstunde für Frauen. Weitere Angebote werden folgen.
 

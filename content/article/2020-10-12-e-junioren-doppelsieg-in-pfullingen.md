@@ -2,9 +2,6 @@
 title: "E-Junioren: Doppelsieg in Pfullingen"
 slug: "2020-10-12-e-junioren-doppelsieg-in-pfullingen"
 date: "2020-10-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Mit Auswärtssiegen kehrten die E-Junioren-Teams des SV Walddorf am vergangenen Samstag aus Pfullingen zurück.
 

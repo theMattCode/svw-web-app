@@ -3,8 +3,6 @@ title: "1. SVW-Wintercup - zweites Wochenende"
 slug: "2023-02-05-1-svw-wintercup-zweites-wochenende"
 date: "2023-02-05"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Zum zweiten Teil unseres 1. SVW-Wintercups waren am vergangenen Wochenende die D-Junioren und die Bambini eingeladen.
 

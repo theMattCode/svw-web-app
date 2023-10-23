@@ -3,8 +3,6 @@ title: "Einladung zur Mitgliederversammlung [ABGESAGT]"
 slug: "2020-02-24-einladung-zur-mitgliederversammlung"
 date: "2020-02-24"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 **Achtung, die Mitgliederversammlung wurde abgesagt und wird zu einem späteren Zeitpunkt stattfinden!**
 

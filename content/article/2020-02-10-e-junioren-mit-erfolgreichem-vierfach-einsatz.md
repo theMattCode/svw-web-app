@@ -2,9 +2,6 @@
 title: "E-Junioren mit erfolgreichem Vierfach-Einsatz"
 slug: "2020-02-10-e-junioren-mit-erfolgreichem-vierfach-einsatz"
 date: "2020-02-10"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am vergangenen Wochenende nahmen unsere E-Junioren mit je zwei Mannschaften an zwei Turnieren teil.
 

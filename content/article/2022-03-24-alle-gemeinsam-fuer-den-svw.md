@@ -2,9 +2,6 @@
 title: "ALLE GEMEINSAM FÜR DEN SVW"
 slug: "2022-03-24-alle-gemeinsam-fuer-den-svw"
 date: "2022-03-24"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Nach dem Nachholspiel untrer der Woche kommenden Sonntag um 15 Uhr steht das große Gipfeltreffen der Kreisliga A in Walddorf an. Unsere Erste spielt gegen den SV Anadolu; beide Teams mit der aktuell besten Ausgangsposition für die Meisterschaft/Aufstieg.
 

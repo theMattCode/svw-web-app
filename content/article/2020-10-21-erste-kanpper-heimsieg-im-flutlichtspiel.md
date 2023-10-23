@@ -2,9 +2,6 @@
 title: "Erste: Kanpper Heimsieg im Flutlichtspiel"
 slug: "2020-10-21-erste-kanpper-heimsieg-im-flutlichtspiel"
 date: "2020-10-21"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 **SV Walddorf - TSV Betzingen 3:2 (1:1) **
 

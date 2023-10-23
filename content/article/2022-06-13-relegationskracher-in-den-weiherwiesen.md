@@ -2,9 +2,6 @@
 title: "Relegationskracher in den Weiherwiesen"
 slug: "2022-06-13-relegationskracher-in-den-weiherwiesen"
 date: "2022-06-13"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Ein Kracher folgt auf den Nächsten! Am Sonntag haben wir uns die Meisterschaft gesichert und am Mittwoch dürfen wir das Relegationsspiel zur Verbandsliga in der 1. Runde austragen.
 

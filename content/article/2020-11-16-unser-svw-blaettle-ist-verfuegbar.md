@@ -2,9 +2,6 @@
 title: "Unser SVW-Blättle ist verfügbar!"
 slug: "2020-11-16-unser-svw-blaettle-ist-verfuegbar"
 date: "2020-11-16"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Gerne hätten wir das druckfrische SVW-Blättle für die neue Saison 2020-21 an einem Heimspieltag unserer Ersten und Zweiten Mannschaft präsentiert.
 

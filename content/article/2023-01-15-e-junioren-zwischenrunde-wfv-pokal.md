@@ -2,8 +2,6 @@
 title: "E-Junioren - Endrunde wfv-Pokal"
 slug: "2023-01-15-e-junioren-zwischenrunde-wfv-pokal"
 date: "2023-01-15"
-promote: false
-createdAt: "null"
 teaser: "Endrunde des Bezirkes Alb in Großengstingen"
 ---
 Am Sonntag, 15.01.23, trafen sich die 10 Turniersieger der Zwischenrunden zur Endrunde des Bezirkes Alb, (Reutlingen / Tübingen / Münsingen) in Großengstingen. Die 10 Teams wurden in zwei 5er Gruppen aufgeteilt, hier unsere Ergebnisse im Überblick:

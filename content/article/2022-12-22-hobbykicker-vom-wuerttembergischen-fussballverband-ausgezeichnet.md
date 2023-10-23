@@ -2,8 +2,6 @@
 title: "Hobbykicker vom Württembergischen Fußballverband ausgezeichnet"
 slug: "2022-12-22-hobbykicker-vom-wuerttembergischen-fussballverband-ausgezeichnet"
 date: "2022-12-22"
-promote: false
-createdAt: "null"
 teaser: "Fairplay-Pokal in der Kleinfeldmeisterschaft des wfv"
 ---
 Unsere Hobbykicker sichern sich im Spieljahr 2022 den **Fairplay-Pokal in der Kleinfeldmeisterschaft des Württembergischen Fußballverbandes**. Damit konnte der Pokal bereits zum dritten Mal in fünf Spielzeiten gewonnen werden. Jedes Jahr gilt es sich gegen 25 andere Teams zu behaupten.

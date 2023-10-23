@@ -2,9 +2,6 @@
 title: "Volles Programm für die E-Junioren"
 slug: "2020-03-09-volles-programm-fuer-die-e-junioren"
 date: "2020-03-09"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Die vergangene Woche hielt für unsere jungen Kicker mal wieder ein umfassendes Programm bereit.
 

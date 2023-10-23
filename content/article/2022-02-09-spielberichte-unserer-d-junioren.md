@@ -2,9 +2,6 @@
 title: "Spielberichte unserer D-Junioren"
 slug: "2022-02-09-spielberichte-unserer-d-junioren"
 date: "2022-02-09"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
  __Schönbuch United - Stuttgarter Kickers 1:0 (1:0) __
 

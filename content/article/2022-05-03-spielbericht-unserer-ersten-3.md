@@ -2,9 +2,6 @@
 title: "Spielbericht unserer Ersten"
 slug: "2022-05-03-spielbericht-unserer-ersten-3"
 date: "2022-05-03"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 - Sixpack von Kai Petruv -
 
@@ -16,7 +13,3 @@ Highlight folgt auf Highlight: Alle Beteiligten fiebern am Mittwoch (04.05. 19 U
 
 
 Es spielten: Jannik Schülzle, Lukas Hermann (58. Marcus Becker), Alex Greineck (58. Amadou Bah), Jan Becker, Dominik Mydlak, Moritz Schwaibold, Jonas Retter, David Schnitzler (74. Patrick Mayer), Kai Petruv, Chrisse Rau, Stefan Tilgner (63. Daniel Burkhardt)
-
-
-
-

@@ -3,8 +3,6 @@ title: "Informationen zum Beitragseinzug 2022"
 slug: "2022-03-07-informationen-zum-beitragseinzug-2022"
 date: "2022-03-07"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Wir werden Anfang April die Mitgliedsbeiträge für das Jahr 2022 einziehen. Damit das reibungslos funktioniert haben wir drei dringende Bitten:
 

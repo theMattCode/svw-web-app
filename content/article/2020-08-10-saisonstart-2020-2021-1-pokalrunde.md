@@ -3,8 +3,6 @@ title: "Saisonstart 2020/2021: 1. Pokalrunde"
 slug: "2020-08-10-saisonstart-2020-2021-1-pokalrunde"
 date: "2020-08-10"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Am Sonntag ist es nach langem Warten endlich wieder soweit, wir starten in die neue Saison 2020/2021. Um den Anforderungen des Württembergischen Fußballverbands, der Landesregierung sowie dem Kultusministerium Baden-Württembergs Rechnung zu tragen, bitten wir alle Zuschauer um die Einhaltung der Vorgaben und Regelungen.
 

@@ -3,8 +3,6 @@ title: "Corona-Pandemie – erste Lockerungen"
 slug: "2020-05-12-corona-pandemie-erste-lockerungen"
 date: "2020-05-12"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Liebe Mitglieder, seit über 8 Wochen ruht aufgrund der Corona-Pandemie der Sportbetrieb beim SV Walddorf - unser Vereinsleben steht komplett still. Das ist für einen Verein, wo die Mitglieder und das gemeinsame Miteinander im Vordergrund stehen, eine sehr schwierige Situation.
 

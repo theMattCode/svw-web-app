@@ -3,7 +3,6 @@ title: "Anpfiff zum VfB-Fördertraining beim SV Walddorf "
 slug: "2021-09-06-anpfiff-zum-vfb-foerdertraining-beim-sv-walddorf"
 date: "2021-09-06"
 promote: true
-createdAt: "null"
 teaser: "23.09.2021 bis 16.12.2021"
 ---
 Ab September hast du wieder die Möglichkeit, auch im Herbst professionell zu trainieren.

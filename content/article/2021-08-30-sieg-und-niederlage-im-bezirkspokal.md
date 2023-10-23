@@ -3,8 +3,6 @@ title: "Sieg und Niederlage im Bezirkspokal"
 slug: "2021-08-30-sieg-und-niederlage-im-bezirkspokal"
 date: "2021-08-30"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="ox-2989754d1f-"> __Vergangene Woche waren unsere aktiven Teams in der ersten Bezirkspokalrunde im Einsatz.  __
 

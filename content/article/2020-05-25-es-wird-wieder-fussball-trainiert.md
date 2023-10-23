@@ -3,8 +3,6 @@ title: "Es wird wieder Fußball trainiert!"
 slug: "2020-05-25-es-wird-wieder-fussball-trainiert"
 date: "2020-05-25"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Nach genau 10 weitgehend Fußball-losen Wochen starteten unsere E-Junioren am vergangenen Freitag als erstes Team den Testballon "Fußball-Training unter Corona-Maßnahmen".
 

@@ -3,8 +3,6 @@ title: "Update zur Corona-Pandemie"
 slug: "2020-05-07-update-zur-corona-pandemie"
 date: "2020-05-07"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="text-justify">Liebe Mitglieder, Fans und Unterstützer,
 

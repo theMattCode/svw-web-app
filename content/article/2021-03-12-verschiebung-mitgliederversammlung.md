@@ -2,9 +2,6 @@
 title: "Verschiebung Mitgliederversammlung"
 slug: "2021-03-12-verschiebung-mitgliederversammlung"
 date: "2021-03-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Aufgrund der aktuellen Lage müssen wir unsere Mitgliederversammlung leider erneut verschieben.
 

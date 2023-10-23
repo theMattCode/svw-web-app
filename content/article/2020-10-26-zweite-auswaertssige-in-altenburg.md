@@ -2,9 +2,6 @@
 title: "Zweite: Auswärtssige in Altenburg"
 slug: "2020-10-26-zweite-auswaertssige-in-altenburg"
 date: "2020-10-26"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 TSV Altenburg - SV Walddorf II 1:3 (1:1)
 

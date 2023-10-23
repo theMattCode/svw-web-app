@@ -3,7 +3,6 @@ title: "Björn Kittelmann- Sportvorstand "
 slug: "2021-05-02-urgestein-bjoern-kittelmann"
 date: "2021-05-02"
 promote: true
-createdAt: "null"
 teaser: "Björn Kittelmann gehört zum festen Inventar unseres Vereins!"
 ---
 <p class="MsoNoSpacing">In den kommenden Tagen und Wochen wollen wir euch die Menschen vorstellen, welche bei uns die Arbeit im Hintergrund erledigen und somit die Grundlage für die erfolgreiche Arbeit unserer Teams schaffen. Starten wollen wir mit einem Urgestein. Unser Sportvorstand Björn Kittelmann gehört quasi zum Inventar beim SV Walddorf und hat diesen über Jahre geprägt. Sei es als Spieler, Trainer in allen Altersklassen oder in seiner aktuellen Funktion. Er unterstützt den Fußball mit vollem Engagement und gibt immer Vollgas. Darüber hinaus ist er immer offen für neue Impulse, fördert und fordert “kreativen Fußball“.

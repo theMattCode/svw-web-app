@@ -3,8 +3,6 @@ title: "Luis Armbruster kommt vom TSV Pliezhausen"
 slug: "2020-06-21-luis-armbruster-kommt-vom-tsv-pliezhausen"
 date: "2020-06-21"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Mit großer Freude dürfen wir euch heute unseren ersten Neuzugang für die kommende Saison vorstellen. In der kommenden Saison wird sich Luis Armbruster das Trikot unseres SV Walddorf überstreifen.
 

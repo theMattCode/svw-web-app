@@ -3,7 +3,6 @@ title: "Sportheim-Pächter gesucht!"
 slug: "2023-03-15-sportheim-paechter-gesucht"
 date: "2023-03-15"
 promote: true
-createdAt: "null"
 teaser: "Für unsere Sportgaststätte „Weiherwiesen“ suchen wir zum nächstmöglichen Termin einen motivierten Pächter."
 ---
 ## Objektbeschreibung

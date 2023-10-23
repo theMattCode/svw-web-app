@@ -3,8 +3,6 @@ title: "Spielberichte unserer Aktiven"
 slug: "2021-09-10-spielberichte-unserer-aktiven"
 date: "2021-09-10"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Kreisliga A, 5. Spieltag: TV Unterhausen - SV Walddorf 0:2 (0:1)
 

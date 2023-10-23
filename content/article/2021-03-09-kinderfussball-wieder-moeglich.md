@@ -3,8 +3,6 @@ title: "Kinderfußball wieder möglich!"
 slug: "2021-03-09-kinderfussball-wieder-moeglich"
 date: "2021-03-09"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Die neue Corona-Verordnung vom 7. März lässt die Hoffnung aufkommen, dass unser sehnlichst vermisster Vereinssport langsam wieder zurückkehrt.
 

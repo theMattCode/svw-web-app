@@ -3,8 +3,6 @@ title: "Unser Online-Sportangebot"
 slug: "2021-03-09-unser-online-sportangebot"
 date: "2021-03-09"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Mit der Yoga-Sportstunde von Sandra Dießner ging nun auch das dritte Sportangebot unserer Sparte Fitness &amp; Gesundheitssport online.
 

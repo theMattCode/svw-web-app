@@ -2,9 +2,6 @@
 title: "Walddorfer Dorffest"
 slug: "2022-07-09-walddorfer-dorffest"
 date: "2022-07-09"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Am Sonntag, 10. Juli steigt das große Dorffest anlässlich der Einweihung des neuen Walddorfer Ortskerns – und **der SV Walddorf ist mit dabei! **
 
@@ -49,12 +46,3 @@ Darüber hinaus bietet der SV Walddorf auf der „Bewirtungsmeile**“ in der Ra
 
 
 Wir wünschen allen Besuchern ein schönes und geselliges Dorffest.
-
-
-
-
-
-
-
-
-

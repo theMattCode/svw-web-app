@@ -3,8 +3,6 @@ title: "SV Walddorf Fußball: Ist-Zustand"
 slug: "2021-02-21-sv-walddorf-fussball-ist-zustand"
 date: "2021-02-21"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Noch immer ruht der reguläre Spiel- und Trainingsbetrieb aufgrund des Lockdowns. Unsere Aktiven halten sich mit einer wöchentlichen Online-Session sowie einer Lauf-App fit, damit alle sofort wieder in möglichst fittem Zustand ins Training bei einer möglichen Wiederaufnahme einsteigen können.
 

@@ -3,8 +3,6 @@ title: "Robert Schuster: Comeback in Walddorf aus "Clubliebe""
 slug: "2020-07-03-robert-schuster-comeback-in-walddorf-aus-clubliebe"
 date: "2020-07-03"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">Etwas mehr als drei Jahre ist es her, dass Robert seine Fußballschuhe für unseren SV Walddorf schnürte. Damals gab es zum Abschluss der Saison 16/17 einen satten 4:0-Derbysieg gegen den SV Gniebel. Nun, nach drei Spielzeiten, kehrt Robert zu seinem Herzensclub zurück. Wir sagen: „Herzlich Willkommen zurück!“
 

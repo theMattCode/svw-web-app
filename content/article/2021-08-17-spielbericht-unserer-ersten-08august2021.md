@@ -3,8 +3,6 @@ title: "Spielbericht unserer Ersten"
 slug: "2021-08-17-spielbericht-unserer-ersten-08august2021"
 date: "2021-08-17"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Saison 21/22, 1. Spieltag, Kreisliga A, TSV Eningen II - SV Walddorf
 

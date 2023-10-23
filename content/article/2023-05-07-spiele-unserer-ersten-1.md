@@ -2,7 +2,6 @@
 title: "Spiele unserer Ersten"
 slug: "2023-05-07-spiele-unserer-ersten-1"
 date: "2023-05-07"
-promote: false
 createdAt: "2023-05-24T06:53:18.203Z"
 teaser: "23.04.2023, Bezirksliga, TSV Hirschau - SV Walddorf 7:0 (3:0)
 

@@ -2,9 +2,6 @@
 title: "Sportverein Walddorf fährt 2500 € Spenden ein"
 slug: "2022-06-19-sportverein-walddorf-faehrt-2500-eur-spenden-ein"
 date: "2022-06-19"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Nach einer längeren, Corona-bedingten Pause konnte der SV Walddorf am 14. und 15. Mai seine elfte Sponsoren-Radtour durchführen. Sie stand auch in diesem Jahr unter dem Motto „Radeln für einen guten Zweck“ und wurde ebenso wie die früheren Touren von vielen Spendern und tatkräftigen Helfern unterstützt. Jede Fahrerin und jeder Fahrer hatte dazu einen oder mehrere Sponsoren geworben, die jeweils € 50,-- oder mehr für soziale Zwecke in Walddorfhäslach und in der Region gespendet haben.
 

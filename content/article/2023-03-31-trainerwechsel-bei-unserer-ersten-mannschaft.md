@@ -2,7 +2,6 @@
 title: "Trainerwechsel bei unserer Ersten Mannschaft"
 slug: "2023-03-31-trainerwechsel-bei-unserer-ersten-mannschaft"
 date: "2023-03-31"
-promote: false
 createdAt: "2023-04-04T12:06:58.923Z"
 teaser: "Erol Türkoglu übernimmt zur neuen Saison von Benny Link."
 ---

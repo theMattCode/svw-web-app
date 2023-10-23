@@ -3,8 +3,6 @@ title: "Wichtige Information zum Beitragseinzug 2021"
 slug: "2021-03-15-wichtige-information-zum-beitragseinzug-2021-1"
 date: "2021-03-15"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Wir werden Anfang April die Mitgliedsbeiträge für das Jahr 2021 einziehen. Dazu 2 Hinweise:
 

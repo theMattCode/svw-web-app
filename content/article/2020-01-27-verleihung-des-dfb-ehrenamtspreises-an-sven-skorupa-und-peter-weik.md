@@ -3,8 +3,6 @@ title: "Verleihung des DFB-Ehrenamtspreises an Sven Skorupa und Peter Weik"
 slug: "2020-01-27-verleihung-des-dfb-ehrenamtspreises-an-sven-skorupa-und-peter-weik"
 date: "2020-01-27"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 Großer Abend im Sparkassen Carre Tübingen für Sven Skorupa und Peter Weik vom SV Walddorf. Beide wurden am 27. Januar für ihre besonderen Verdienste und ihr herausragendes ehrenamtliches Engagement im Rahmen eines Festaktes mit dem DFB Ehrenamtspreis ausgezeichnet.
 

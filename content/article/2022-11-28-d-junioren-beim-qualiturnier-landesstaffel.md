@@ -2,9 +2,6 @@
 title: "D-Junioren beim Qualiturnier Landesstaffel"
 slug: "2022-11-28-d-junioren-beim-qualiturnier-landesstaffel"
 date: "2022-11-28"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Wie vor zwei Wochen hier berichtet hatten sich unsere D-Junioren durch das Erreichen des zweiten Platzes in der Bezirksstaffel für die Aufstiegsturniere für die Talentrunde qualifiziert.
 

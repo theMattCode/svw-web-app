@@ -2,9 +2,6 @@
 title: "Saisonvorbereitung und Absage Volksbank Cup"
 slug: "2021-06-16-saisonvorbereitung-und-absage-volksbank-cup"
 date: "2021-06-16"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Wie bereits im letzten Jahr, kann unser traditioneller Volksbank-Cup dieses Jahr leider nicht stattfinden. Aufgrund der aktuellen Bestimmungen und dem dort vorgeschriebenen erheblichen organisatorischen Aufwands bleibt uns leider keine andere Wahl, als unser diesjähriges Sommerturnier abzusagen.
 

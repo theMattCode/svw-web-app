@@ -3,8 +3,6 @@ title: "Daniel Strenger trägt in der neuen Saison das Trikot unseres SVW"
 slug: "2020-06-24-daniel-strenger-traegt-in-der-neuen-saison-das-trikot-unseres-svw"
 date: "2020-06-24"
 promote: true
-createdAt: "null"
-teaser: ""
 ---
 <p class="MsoNoSpacing">In der kommenden Saison wird Daniel Strenger sich das Trikot unseres SV Walddorf überstreifen. Daniel kommt vom TSV Pliezhausen und bringt Erfahrung in unsere junge Truppe. Wir sagen herzlich willkommen!
 

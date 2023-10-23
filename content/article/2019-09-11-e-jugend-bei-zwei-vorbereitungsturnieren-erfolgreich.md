@@ -2,9 +2,9 @@
 title: "E-Jugend bei zwei Vorbereitungsturnieren erfolgreich"
 slug: "2019-09-11-e-jugend-bei-zwei-vorbereitungsturnieren-erfolgreich"
 date: "2019-09-11"
-promote: false
-createdAt: "null"
-teaser: ""
+tags:
+  - Fußball
+  - E-Junioren
 ---
 Am Samstag waren wir mit einer Mannschaft in Weil im Schönbuch am Start. Nach gerade mal zwei Trainings reisten wir mit einer gemischten Mannschaft an, die zum ersten Mal zusammengespielt hat. Die Jungs zeigten zum Teil tollen Kombinationsfußball und gewannen souverän die Vorrunde mit vier Siegen und 18:0 Toren.
 
@@ -24,8 +24,6 @@ Auch diesmal hatten wir das Glück leider nicht auf unserer Seite. Somit spielte
 Es spielten: Nico, Louis, Fionn, Niklas, Leo, Chrisi, Ben P., Elias, Linas, Maurice
 
 
-
-
 Unseren 2010ern merkte man in den ersten Spielen die lange Spielpause noch deutlich an. Die erste Partie gegen den SV Kickers Pforzheim konnte knapp mit 1:0 gewonnen werden, im zweiten Spiel setzte es dann aber eine völlig unnötige 0:1 Niederlage gegen Vaihingen.
 
 Das nächste Match brachte dann die Wende: obwohl wir gegen die Gastgeber 0:2 verloren, war die Jungs jetzt wieder voll dabei. Sie warfen sich in jeden Zweikampf und hielten bis kurz vor Schluss das 0:0.
@@ -35,7 +33,6 @@ Durch diese gute Leistung bestärkt lieferte unsere Mannschaft in den letzten be
 Im folgenden Achtelfinale gegen den späteren Turnierzweiten Germania Gmünd war der Gegner leicht überlegen, durch zwei unglückliche Gegentore mussten wir uns 0:2 geschlagen geben.
 
 Insbesondere in Anbetracht der starken Gegner und der langen Spielpause trotzdem eine tolle Leistung von Benedikt, Ben L., David, Enis, Jannis, Julian, Mika, Peter und Samu.
-
 
 
 Die zwei Turniere am Wochenende haben schon gezeigt, was für ein großes Potential unsere Jungs besitzen. Macht weiter so.

@@ -2,7 +2,6 @@
 title: "E-Junioren-Turnier bei der SGM Pliezhausen"
 slug: "2023-07-03-e-junioren-turnier-bei-der-sgm-pliezhausen"
 date: "2023-07-03"
-promote: false
 createdAt: "2023-07-31T13:22:27.208Z"
 teaser: "E-Junioren feiern zum Abschluss der Saison den 1. Platz in Pliezhausen"
 ---

@@ -2,9 +2,6 @@
 title: "Verschiebung der Sponsoren-Radtour des SVW"
 slug: "2021-04-12-verschiebung-der-sponsoren-radtour-des-svw"
 date: "2021-04-12"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Die Sponsorenradtour des SVW, die bisher zehn Mal unter dem Motto "Radfahren für einen guten Zweck" stattfand, war in diesem Frühjahr am 12.06.2021 geplant. Aufgrund der aktuellen Corona – bedingten Kontaktbeschränkungen kann sie an diesem Termin aber leider nicht stattfinden.
 

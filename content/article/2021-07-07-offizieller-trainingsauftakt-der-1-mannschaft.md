@@ -2,9 +2,6 @@
 title: "Offizieller Trainingsauftakt der 1. Mannschaft"
 slug: "2021-07-07-offizieller-trainingsauftakt-der-1-mannschaft"
 date: "2021-07-07"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Bei warmen Temperaturen starteten die Männer der 1. Mannschaft heute in die Vorbereitung.
 

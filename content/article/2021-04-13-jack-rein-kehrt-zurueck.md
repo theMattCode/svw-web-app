@@ -3,7 +3,6 @@ title: "Jack Rein kehrt zurück!"
 slug: "2021-04-13-jack-rein-kehrt-zurueck"
 date: "2021-04-13"
 promote: true
-createdAt: "null"
 teaser: "Jack Rein zurück in seinem "Kinderzimmer"!"
 ---
 Nach zwei Spielzeiten in den Trikots der Young Boys Reutlingen und der TSG Tübingen kehrt Jack Rein pünktlich zu seiner ersten Spielzeit im Aktivenbereich zurück zu seinem Jugendclub, unserem SV Walddorf. Bei seinen Stationen in Tübingen und Reutlingen konnte Jack in den vergangen Spielzeiten unter anderem Erfahrungen in der A-Junioren-Landesstaffel sowie in der A-Junioren-Bezirksstaffel sammeln. Wir freuen uns, dass du wieder da bist Jack! Herzlich Willkommen zurück!

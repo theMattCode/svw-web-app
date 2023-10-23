@@ -2,9 +2,6 @@
 title: "Spielbericht unserer Ersten"
 slug: "2022-03-28-spielbericht-unserer-ersten"
 date: "2022-03-28"
-promote: false
-createdAt: "null"
-teaser: ""
 ---
 Der SV Walddorf und der SV Anadolu Reutlingen trennen sich im Spitzenspiel der Kreisliga A 2:2 (1:2) Unentschieden. Zwar hatte der SVW deutlich mehr und die besseren Torchancen, allerdings verwertete der Gast sehr effektiv seine wenigen Tormöglichkeiten und lag sogar zweimal in Führung.
 

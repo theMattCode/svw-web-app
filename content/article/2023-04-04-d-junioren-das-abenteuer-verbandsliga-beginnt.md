@@ -2,9 +2,7 @@
 title: "D-Junioren - Das Abenteuer Verbandsliga beginnt"
 slug: "2023-04-04-d-junioren-das-abenteuer-verbandsliga-beginnt"
 date: "2023-04-04"
-promote: false
 createdAt: "2023-04-04T12:28:15.769Z"
-teaser: ""
 ---
 Am vorvergangenen Wochenende starteten unsere D-Junioren in die erste Verbandsliga Saison einer Mannschaft des SV Walddorf überhaupt.
 Den Auftakt gab es zu Hause gegen Olympia Laupheim. Einige der Jungs waren im Vorfeld durchaus nervös gewesen, der Respekt vor dem hohen Level für das man sich qualifiziert hatte war deutlich zu spüren.
