@@ -21,21 +21,35 @@ export type Article = {
 export type PaginatedArticles = {
   page: number;
   pageSize: number;
-  total: number;
+  totalArticles: number;
+  totalPages: number;
   articles: Article[];
 };
+
+export function getArticle(slug: string): Article | null {
+  return readArticle(`${slug}.md`);
+}
+
+function readArticle(filename: string) {
+  const fileContent = fs.readFileSync(`${articlesDir}/${filename}`, "utf-8");
+  const { data, content } = matter(fileContent);
+  return { ...data, content } as Article;
+}
+
 export function getArticles(page: number, pageSize: number): PaginatedArticles {
-  const allFiles = fs.readdirSync(articlesDir);
+  const allFiles = fs.readdirSync(articlesDir).reverse();
 
   const startIndex = (page - 1) * pageSize;
   const endIndex = startIndex + pageSize;
 
   const pageFiles = allFiles.slice(startIndex, endIndex);
-  const articles = pageFiles.map((file) => {
-    const fileContent = fs.readFileSync(`${articlesDir}/${file}`, "utf-8");
-    const { data, content } = matter(fileContent);
-    return { ...data, content } as Article;
-  });
+  const articles = pageFiles.map((filename) => readArticle(filename));
 
-  return { page, pageSize, total: allFiles.length, articles };
+  return {
+    page,
+    pageSize,
+    totalArticles: allFiles.length,
+    totalPages: Math.ceil(allFiles.length / pageSize),
+    articles,
+  };
 }
