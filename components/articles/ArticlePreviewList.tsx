@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { ArticleListItem } from "#/components/articles/ArticleListItem";
-import { BlockTitle } from "#/components/block/BlockTitle";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { getArticles } from "#/content/article";
 
 const DEFAULT_PAGE_SIZE = 8;

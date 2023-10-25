@@ -26,7 +26,7 @@ export type PaginatedArticles = {
   articles: Article[];
 };
 
-export function getArticle(slug: string): Article | null {
+export function getArticle(slug: string): Article {
   return readArticle(`${slug}.md`);
 }
 

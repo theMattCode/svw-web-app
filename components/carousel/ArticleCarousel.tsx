@@ -1,18 +1,14 @@
-import { fetchPromotionArticles } from "#/lib/graphql/articles.gql";
 import { ArticleCarouselClient } from "#/components/carousel/ArticleCarouselClient";
+import { getArticles } from "#/content/article";
 
 type Props = {
   maxItems: number;
 };
-export async function ArticleCarousel({
-  maxItems,
-}: Props): Promise<JSX.Element> {
-  const articles = await fetchPromotionArticles(maxItems);
+export function ArticleCarousel({ maxItems }: Props) {
+  const paginatedArticles = getArticles(1, maxItems);
   return (
     <div className="flex flex-col w-full place-items-end h-[65vh]">
-      <ArticleCarouselClient
-        articles={articles.filter((value) => value.image?.data !== null)}
-      />
+      <ArticleCarouselClient articles={paginatedArticles.articles.filter((value) => value.image !== null)} />
     </div>
   );
 }

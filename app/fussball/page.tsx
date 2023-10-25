@@ -1,5 +1,5 @@
 import React from "react";
-import { BlockTitle } from "#/components/block/BlockTitle";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { SubMenu } from "#/components/navigation/SubMenu";
 import { fussball } from "#/content/sitemap";

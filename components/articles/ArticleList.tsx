@@ -1,8 +1,7 @@
-import { TagRelationResponseCollection } from "#/lib/graphql/generated";
 import { Pagination } from "#/components/pagination/Pagination";
 import { ArticleListItem } from "#/components/articles/ArticleListItem";
 import { getArticles } from "#/content/article";
-import { BlockTitle } from "#/components/block/BlockTitle";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 
 const PAGE_SIZE = 20;
 
@@ -10,7 +9,7 @@ type ArticleListProps = {
   pageSize: number;
   page: number;
   slug?: string;
-  tags?: TagRelationResponseCollection | null;
+  tags?: string[] | null;
 };
 
 export function ArticleList({ page, pageSize, slug }: ArticleListProps): JSX.Element | null {

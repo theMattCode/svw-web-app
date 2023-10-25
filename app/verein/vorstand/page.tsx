@@ -1,7 +1,7 @@
 import React from "react";
 import { getPersonByTag, getPersonName, people } from "#/content/people";
 import { PersonCard } from "#/components/person/PersonCard";
-import { BlockTitle } from "#/components/block/BlockTitle";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 
 export default function Vorstand() {
