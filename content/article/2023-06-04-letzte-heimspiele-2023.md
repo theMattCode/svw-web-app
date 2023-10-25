@@ -5,7 +5,12 @@ date: "2023-06-04"
 createdAt: "2023-06-21T04:44:37.402Z"
 teaser: "04.06.2023, Kreisliga B, SV Walddorf II - CP Reutlingen 4:0 (1:0)
 
+
 04.06.2023, Bezirksliga, SV Walddorf - SGM Dettingen-Weiler 3:1 (1:1)"
+tags:
+  - Fussball
+  - Aktive I
+  - Aktive II
 ---
 ## SV Walddorf II - CP Reutlingen 4:0 (1:0)
 

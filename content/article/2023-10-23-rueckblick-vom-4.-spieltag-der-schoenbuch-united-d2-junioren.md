@@ -4,6 +4,14 @@ slug: "2023-10-23-rueckblick-vom-4.-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-21"
 createdAt: "2023-10-23T12:00:00.000Z"
 teaser: "Schönbuch United II - SGM FC Mittelstadt/TV Bempflingen II 3:3 (1:2)"
+image:
+  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
+  alt: "E-Junioren Team 2023/24"
+  width: 3895
+  height: 1393
+tags:
+  - Fußball
+  - D-Junioren
 ---
 Im ersten Durchgang gelang uns nicht viel - wir fanden nicht ins Spiel und hatten in allen Mannschaftsteilen Abstimmungsprobleme. Zu viele Fehlpässe und einfache Ballverluste führten zu 2 Gegentoren - schnell lagen wir mit 0:2 im Rückstand. Kurz vor der Pause gelang uns nach einem Eckball der Anschlusstreffer zum 1:2.
 

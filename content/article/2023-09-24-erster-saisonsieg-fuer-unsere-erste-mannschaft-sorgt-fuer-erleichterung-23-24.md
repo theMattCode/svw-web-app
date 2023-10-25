@@ -4,6 +4,15 @@ slug: "2023-09-24-erster-saisonsieg-fuer-unsere-erste-mannschaft-sorgt-fuer-erle
 date: "2023-09-24"
 createdAt: "2023-09-25T12:41:22.606Z"
 teaser: "Bezirksliga, 6. Spieltag, SV Walddorf - SV Zainingen 3:0 (0:0)"
+image:
+  src: "/media/sparten/fussball/aktive-team-2023-24.png"
+  alt: "Aktive Team 2023/24"
+  width: 1856
+  height: 1392
+tags:
+  - Fussball
+  - Aktive I
+  - Aktive II
 ---
 Nach schwierigen ersten Saisonwochen gelang der Mannschaft von Erol Türkoglu nach einer konzentrierten und engagierten Leistung der wichtige erste Dreier.
 

@@ -5,8 +5,17 @@ date: "2023-10-16"
 createdAt: "2023-10-17T12:00:00.000Z"
 teaser: "15.10.23, Bezirksliga, 9. Spieltag, SV Walddorf - TSG Tübingen II 2:1 (1:0)
 
-  15.10.23, Kreisliga A, 9. Spieltag, SV Walddorf II - TSV Oferdingen 0:0"
 
+15.10.23, Kreisliga A, 9. Spieltag, SV Walddorf II - TSV Oferdingen 0:0"
+image:
+  src: "/media/sparten/fussball/aktive-team-2023-24.png"
+  alt: "Aktive Team 2023/24"
+  width: 1856
+  height: 1392
+tags:
+  - Fußball
+  - Aktive I
+  - Aktive II
 ---
 Es war ein nahezu perfekter Sonntag für unsere Aktiven Fußballer. Nachdem unsere Zweite gegen den auf Platz 2 stehenden TSV Oferdingen ein achtbares 0:0 erkämpfte und sogar mit etwas mehr Glück im Abschluss einen Dreier einfahren hätte können, erkämpfte unsere Erste ein vielumjubeltes 2:1 gegen die TSG Tübingen 2.
 

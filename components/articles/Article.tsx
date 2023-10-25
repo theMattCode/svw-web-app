@@ -12,7 +12,7 @@ export default function Article({ slug }: Props): JSX.Element {
   if (!article) {
     return <div>Article nicht gefunden</div>;
   }
-  const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 640) : { width: 0, height: 0 };
+  const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 768) : { width: 0, height: 0 };
   return (
     <div className="container bg-white p-2 max-w-3xl shadow-xl flex flex-col gap-2">
       {article?.image && (

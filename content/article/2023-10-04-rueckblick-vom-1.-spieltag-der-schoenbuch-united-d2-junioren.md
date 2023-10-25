@@ -4,6 +4,14 @@ slug: "2023-10-04-rueckblick-vom-1.-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-04"
 createdAt: "2023-10-05T12:00:00.000Z"
 teaser: "SGM Reutlingen/Rommelsbach I - Schönbuch United II 3:1 (2:1)"
+image:
+  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
+  alt: "E-Junioren Team 2023/24"
+  width: 3895
+  height: 1393
+tags:
+  - Fußball
+  - D-Junioren
 ---
 Gegen die SGM konnten wir durchaus mithalten und gingen mit 1:0 in Führung. Durch einen "Sonntagsschuss" der SGM und ein ganz unglückliches Gegentor noch vor der Halbzeit lagen wir mit 1:2 im Rückstand.
 

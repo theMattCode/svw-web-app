@@ -4,6 +4,14 @@ slug: "2023-10-08-rueckblick-vom-2.-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-08"
 createdAt: "2023-10-09T12:00:00.000Z"
 teaser: "Schönbuch United II - TSV Betzingen III 4:0 (1:0)"
+image:
+  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
+  alt: "E-Junioren Team 2023/24"
+  width: 3895
+  height: 1393
+tags:
+  - Fußball
+  - D-Junioren
 ---
 Der TSV Betzingen hat insgesamt 4 (!) Teams. Die 2011er stellen Team I und II, während die 2012er in den Teams III und IV spielen.
 
