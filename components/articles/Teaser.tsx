@@ -7,16 +7,16 @@ type Props = {
 export default function Teaser({ content }: Props): JSX.Element | null {
   if (content) {
     return (
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          p: ({ children }) => (
-            <p className="font-bold text-sm p-1 m-0">{children}</p>
-          ),
-        }}
-      >
-        {content}
-      </ReactMarkdown>
+      <div className="py-2 flex flex-col gap-1 h-full">
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            p: ({ children }) => <p className="font-medium text-sm m-0">{children}</p>,
+          }}
+        >
+          {content}
+        </ReactMarkdown>
+      </div>
     );
   }
   return null;

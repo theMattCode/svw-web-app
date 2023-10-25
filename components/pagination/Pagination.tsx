@@ -12,16 +12,12 @@ type PaginationProps = {
   pageCount: number;
 };
 
-export function Pagination({
-  slug,
-  currentPage,
-  pageCount,
-}: PaginationProps): JSX.Element {
+export function Pagination({ slug, currentPage, pageCount }: PaginationProps): JSX.Element {
   const pages = Array.from(Array(pageCount).keys());
   const disabled = `inline-flex items-center justify-center w-6 h-6 text-lg text-gray-400 pointer-events-none`;
   const enabled = `inline-flex items-center justify-center w-6 h-6 text-lg hover:ring-0 hover:bg-svw-blue-lighter hover:text-white`;
   return (
-    <div className="flex flex-row place-content-end text-white gap-0.5">
+    <div className="flex flex-row place-content-end gap-0.5">
       {currentPage === 1 && (
         <button className={disabled}>
           <PiArrowLineLeftDuotone />
@@ -54,7 +50,7 @@ export function Pagination({
               className={`relative inline-flex items-center justify-center w-6 h-6
                   ${
                     page === currentPage
-                      ? "bg-svw-blue-default"
+                      ? "bg-svw-blue-default text-white"
                       : "hover:bg-svw-blue-lighter hover:text-white"
                   }
                 `}

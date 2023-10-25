@@ -3,15 +3,13 @@
 import { Announcements } from "#/components/announcements/Announcements";
 import { useEffect, useState } from "react";
 import { Announcement } from "#/content/announcements";
-import { BlockTitle } from "#/components/block/BlockTitle";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 
 export function AnnouncementsBlock() {
   const [announcements, setAnnouncements] = useState<Announcement[]>([]);
 
   useEffect(() => {
-    fetch("/api/announcements").then((response) =>
-      response.json().then((data) => setAnnouncements(data))
-    );
+    fetch("/api/announcements").then((response) => response.json().then((data) => setAnnouncements(data)));
   }, []);
 
   if (announcements.length === 0) {

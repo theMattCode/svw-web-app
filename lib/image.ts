@@ -3,10 +3,10 @@ export type ImageDimensions = {
   height: number;
 };
 
-export function calcImageDimensionsForWidth(
-  source: ImageDimensions,
-  targetWidth: number
-): ImageDimensions {
+export function calcImageDimensionsForWidth(source: ImageDimensions | undefined, targetWidth: number): ImageDimensions {
+  if (source === undefined) {
+    return { width: 0, height: 0 };
+  }
   const ratio = source.width / source.height;
   return {
     width: targetWidth,
@@ -15,9 +15,12 @@ export function calcImageDimensionsForWidth(
 }
 
 export function calcImageDimensionsForHeight(
-  source: ImageDimensions,
+  source: ImageDimensions | undefined,
   targetHeight: number
 ): ImageDimensions {
+  if (source === undefined) {
+    return { width: 0, height: 0 };
+  }
   const ratio = source.width / source.height;
   return {
     width: Math.floor(targetHeight * ratio),

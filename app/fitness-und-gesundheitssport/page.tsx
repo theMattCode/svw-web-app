@@ -1,5 +1,5 @@
 import React from "react";
-import { BlockTitle } from "#/components/block/BlockTitle";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import Link from "next/link";
 import { fitUndGesund, gymnastik65plus, powerFitness, teenDance, yoga } from "#/content/sitemap";

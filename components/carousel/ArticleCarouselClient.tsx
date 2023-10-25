@@ -1,12 +1,12 @@
 "use client";
 
-import { PromotionArticle } from "#/lib/graphql/articles.gql";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Article } from "#/content/article";
 
 type Props = {
-  articles: PromotionArticle[];
+  articles: Article[];
 };
 
 export function ArticleCarouselClient({ articles }: Props): JSX.Element {
@@ -14,10 +14,7 @@ export function ArticleCarouselClient({ articles }: Props): JSX.Element {
 
   useEffect(() => {
     const length = articles.length;
-    const timeout = setTimeout(
-      () => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1),
-      7000
-    );
+    const timeout = setTimeout(() => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1), 7000);
     return () => clearTimeout(timeout);
   }, [currentSlide, articles.length, setCurrentSlide]);
 
@@ -25,23 +22,20 @@ export function ArticleCarouselClient({ articles }: Props): JSX.Element {
     <div className="w-full h-full">
       <div className="flex flex-col h-full place-items-end">
         {articles.map((article, index) => {
-          if (index === currentSlide && article.image?.data?.attributes) {
-            const imageAttributes = article.image.data.attributes;
+          if (index === currentSlide && article.image) {
             return (
               <Fragment key={article.slug}>
                 <Image
-                  src={imageAttributes.url}
+                  src={article.image.src}
                   alt=""
-                  width={imageAttributes.width ?? 0}
-                  height={imageAttributes.height ?? 0}
+                  width={article.image.width ?? 0}
+                  height={article.image.height ?? 0}
                   className="object-cover absolute left-0 right-0 w-full h-[65vh]"
                 />
                 <div className="container flex flex-row items-end h-full w-full z-0">
                   <Link href={`/news/${article.slug}`} className="">
                     <h3 className="px-3 lg:ml-32 w-10/12">
-                      <span className="py-0.5 bg-white/75 text-2xl news-title-shadow">
-                        {article.title}
-                      </span>
+                      <span className="py-0.5 bg-white/75 text-2xl news-title-shadow">{article.title}</span>
                     </h3>
                   </Link>
                 </div>

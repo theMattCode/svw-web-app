@@ -50,28 +50,40 @@ export const fitnessUndGesundheitssport: MenuItem = {
   url: "/fitness-und-gesundheitssport",
   subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund],
 };
+
+export const fusballAktive = { name: "Aktive", url: "/fussball/aktive" };
+export const fussballB = { name: "B-Junioren", url: "/fussball/b-junioren" };
+export const fussballC = { name: "C-Junioren", url: "/fussball/c-junioren" };
+export const fussballD = { name: "D-Junioren", url: "/fussball/d-junioren" };
+export const fussballE = { name: "E-Junioren", url: "/fussball/e-junioren" };
+export const fussballF = { name: "F-Junioren", url: "/fussball/f-junioren" };
+export const fussballBambini = { name: "Bambini", url: "/fussball/bambini" };
+export const fussballDamen = { name: "Damen", url: "/fussball/damen" };
+export const fussballHobby = { name: "Hobbykicker", url: "/fussball/hobbykicker" };
+export const fussball = {
+  name: "Fußball",
+  url: "/fussball",
+  subMenu: [
+    fusballAktive,
+    fussballB,
+    fussballC,
+    fussballD,
+    fussballE,
+    fussballF,
+    fussballBambini,
+    fussballDamen,
+    fussballHobby,
+  ],
+};
+
+export const badminton = { name: "Badminton", url: "/badminton" };
+
+export const rehasport = { name: "Reha-Sport", url: "/rehasport" };
+
 export const sparten: MenuItem = {
   name: "Sparten",
   url: "/sparten",
-  subMenu: [
-    fitnessUndGesundheitssport,
-    {
-      name: "Fußball",
-      url: "/fussball",
-      subMenu: [
-        { name: "Aktive", url: "/fussball/aktive" },
-        { name: "C-Jugend", url: "/fussball/c-junioren" },
-        { name: "D-Jugend", url: "/fussball/d-junioren" },
-        { name: "E-Jugend", url: "/fussball/e-junioren" },
-        { name: "F-Jugend", url: "/fussball/f-junioren" },
-        { name: "Bambini", url: "/fussball/bambini" },
-        { name: "Damen", url: "/fussball/damen" },
-        { name: "Hobbykicker", url: "/fussball/hobbykicker" },
-      ],
-    },
-    { name: "Badminton", url: "/badminton" },
-    { name: "Reha-Sport", url: "/rehasport" },
-  ],
+  subMenu: [fitnessUndGesundheitssport, fussball, badminton, rehasport],
 };
 
 export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };
