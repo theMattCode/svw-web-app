@@ -34,7 +34,7 @@ export function ArticleListItem({ articleMatter }: Props): JSX.Element {
         </div>
         <Teaser content={articleMatter.teaser} />
         <div className="flex flex-row gap-1 md:gap-4">
-          <div className="flex gap-2 font-medium text-white uppercase">
+          <div className="flex gap-2 font-medium text-white uppercase flex-wrap">
             {articleMatter.tags?.map((tag: string) => (
               <div key={tag} className="flex bg-svw-blue-default py-1 px-2 whitespace-nowrap items-center">
                 {tag}

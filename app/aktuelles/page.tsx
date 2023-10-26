@@ -11,8 +11,10 @@ export default async function Aktuelles({ searchParams }: PageProps) {
   const articlesResponse = await fetch(`${getURL()}/api/articles?page=${page}&pageSize=${PAGE_SIZE}`);
   const paginatedArticles: PaginatedArticleMatters = await articlesResponse.json();
   return (
-    <PageBase>
-      <ArticleList paginatedArticleMatters={paginatedArticles} />
-    </PageBase>
+    <div className="bg-neutral-200 pt-8">
+      <div className="flex flex-col gap-2">
+        <ArticleList paginatedArticleMatters={paginatedArticles} />
+      </div>
+    </div>
   );
 }
