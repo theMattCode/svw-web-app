@@ -1,60 +1,32 @@
-import graphqlClient from "#/lib/graphql/graphqlClient";
-import {
-  ArticlesQuery,
-  ArticlesQueryVariables,
-  TagFiltersInput,
-  TagRelationResponseCollection,
-} from "#/lib/graphql/generated";
-import { ARTICLES_QUERY } from "#/components/articles/articles.gql";
 import { Pagination } from "#/components/pagination/Pagination";
 import { ArticleListItem } from "#/components/articles/ArticleListItem";
+import { getArticles, PaginatedArticleMatters } from "#/content/article";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
 
 type ArticleListProps = {
-  pageSize: number;
-  page: number;
-  slug?: string;
-  tags?: TagRelationResponseCollection | null;
+  paginatedArticleMatters: PaginatedArticleMatters;
 };
-export async function ArticleList({
-  pageSize,
-  page,
-  slug,
-  tags,
-}: ArticleListProps): Promise<JSX.Element | null> {
-  const tagFilters: TagFiltersInput[] =
-    tags?.data.map((tag) => ({ id: { eq: tag.id } })) ?? [];
-  const { data } = await graphqlClient.query<
-    ArticlesQuery,
-    ArticlesQueryVariables
-  >({
-    query: ARTICLES_QUERY,
-    variables: { page, pageSize, tagFilters },
-  });
-  const pagination = data.articles?.meta.pagination;
-  if (!pagination) {
-    return null;
-  }
+
+export function ArticleList({ paginatedArticleMatters }: ArticleListProps) {
   return (
-    <div className="bg-svw-blue-darker w-full md:px-4">
-      <div className="container flex flex-col gap-4">
-        <Pagination
-          slug={slug}
-          currentPage={page}
-          pageCount={pagination.pageCount}
-        />
-        {data.articles?.data.map((article, index, array) =>
-          article.attributes ? (
-            <>
-              <ArticleListItem key={article.id} article={article.attributes} />
-            </>
-          ) : null
-        )}
-        <Pagination
-          slug={slug}
-          currentPage={page}
-          pageCount={pagination.pageCount}
-        />
+    <>
+      <BlockTitle title="Aktuelles" />
+      <div className="w-full flex flex-col pb-2">
+        <div className="flex flex-col">
+          <div className="container flex flex-col gap-2">
+            {paginatedArticleMatters.articles?.map((article) => (
+              <ArticleListItem key={article.slug} articleMatter={article} />
+            ))}
+          </div>
+          <div className="sticky bottom-0 flex justify-center items-center p-0.5 pt-2">
+            <Pagination
+              slug={undefined}
+              currentPage={paginatedArticleMatters.page}
+              pageCount={paginatedArticleMatters.totalPages}
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

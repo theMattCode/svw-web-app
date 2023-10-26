@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -16,6 +12,10 @@ module.exports = {
           darker: "#004877",
           darkest: "#00173F",
         },
+      },
+      backgroundImage: {
+        hero: "url('/media/hero/bg.jpg')",
+        "hero-rehasport": "url('/media/hero/rehasport-hero-2021-07-20.jpg')",
       },
       // that is animation class
       animation: {

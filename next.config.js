@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    // Required until the new app directory feature is fully enabled
-    appDir: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -19,6 +15,13 @@ const nextConfig = {
         pathname: "/uploads/**",
       },
     ],
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.node/,
+      use: "raw-loader",
+    });
+    return config;
   },
 };
 

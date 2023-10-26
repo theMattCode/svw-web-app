@@ -1,20 +1,20 @@
-import { TagEntity } from "#/lib/graphql/generated";
-import { fetchAnnouncements } from "#/components/announcements/announcements.gql";
-import { AnnouncementsCarousel } from "#/components/announcements/AnnouncementsCarousel";
+import { Carousel } from "#/components/carousel/Carousel";
+import { AnnouncementItem } from "#/components/announcements/AnnouncementItem";
+import { Announcement } from "#/content/announcements";
 
 type Props = {
-  title: string;
-  tags: TagEntity[] | undefined | null;
+  announcements: Announcement[];
 };
 
-export async function Announcements({
-  title,
-  tags,
-}: Props): Promise<JSX.Element | null> {
-  const announcementsData = await fetchAnnouncements();
+export function Announcements({ announcements }: Props) {
   return (
-    <AnnouncementsCarousel
-      announcements={announcementsData.announcements?.data ?? []}
-    />
+    <Carousel>
+      {announcements.map((announcement) => (
+        <AnnouncementItem
+          key={announcement.title}
+          announcement={announcement}
+        />
+      ))}
+    </Carousel>
   );
 }

@@ -1,10 +1,14 @@
-import { fetchPageData } from "#/components/page/page.gql";
-import { Page } from "#/components/page/Page";
+import { Hero } from "#/components/hero/hero";
+import { AnnouncementsBlock } from "#/components/announcements/AnnouncementsBlock";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default async function IndexPage(): Promise<JSX.Element | null> {
-  const pageData = await fetchPageData("index");
-  if (pageData?.attributes) {
-    return <Page pageData={pageData.attributes} />;
-  }
-  return null;
+  return (
+    <div className="flex flex-col">
+      <Hero />
+      <AnnouncementsBlock />
+      {/* @ts-expect-error Server Component */}
+      <ArticlePreviewList pageSize={10} />
+    </div>
+  );
 }

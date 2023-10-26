@@ -1,55 +1,27 @@
-import graphqlClient from "#/lib/graphql/graphqlClient";
-import { ArticleQuery, ArticleQueryVariables } from "#/lib/graphql/generated";
-import { ARTICLE_QUERY } from "#/components/articles/articles.gql";
-import RichText from "#/components/richtext/RichText";
+import Markdown from "#/components/markdown/Markdown";
 import Image from "next/image";
-import { getFullAssetUrl } from "#/lib/asset";
 import { formatDate } from "#/lib/format";
+import { Article } from "#/content/article";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 
 type Props = {
-  slug: string;
+  article: Article;
 };
-export default function Article({ slug }: Props): JSX.Element {
-  /* @ts-expect-error Server Component */
-  return <LoadingArticle slug={slug} />;
-}
 
-async function LoadingArticle({ slug }: Props): Promise<JSX.Element | null> {
-  const { data } = await graphqlClient.query<
-    ArticleQuery,
-    ArticleQueryVariables
-  >({
-    query: ARTICLE_QUERY,
-    variables: { slug },
-  });
-
-  const article = data.articles?.data[0];
-  if (!article) {
-    // TODO route to 404 (or back to home?)
-    return null;
-  }
-
-  const image = article.attributes?.image?.data?.attributes;
-
+export default function Article({ article }: Props): JSX.Element {
+  const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 768) : { width: 0, height: 0 };
   return (
-    <div className="container bg-white my-16 p-8 max-w-3xl shadow-xl flex flex-col gap-2">
-      {image && (
+    <div className="container bg-white p-2 max-w-3xl shadow-xl flex flex-col gap-2">
+      {article?.image && (
         <div className="flex flex-col place-items-end pb-4">
-          <Image
-            src={getFullAssetUrl(image.url)}
-            alt=""
-            width={image.width ?? 0}
-            height={image.height ?? 0}
-          />
+          <Image src={article.image} alt={article.image.alt} width={width} height={height} />
         </div>
       )}
-      <h1>{article.attributes?.title}</h1>
-      <div className="text-sm">{formatDate(article.attributes?.date)}</div>
-
-      <RichText
-        key={article.attributes?.slug}
-        content={article.attributes?.text}
-      />
+      <div className="transition-all flex flex-col gap-2 md:p-2">
+        <h1>{article?.title}</h1>
+        <div className="text-sm">{formatDate(article.date)}</div>
+        <Markdown key={article.slug} content={article.content} />
+      </div>
     </div>
   );
 }
