@@ -1,29 +1,30 @@
 import { Pagination } from "#/components/pagination/Pagination";
 import { ArticleListItem } from "#/components/articles/ArticleListItem";
-import { getArticles } from "#/content/article";
+import { getArticles, PaginatedArticleMatters } from "#/content/article";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 
 const PAGE_SIZE = 20;
 
 type ArticleListProps = {
-  pageSize: number;
-  page: number;
-  slug?: string;
-  tags?: string[] | null;
+  paginatedArticleMatters: PaginatedArticleMatters;
 };
 
-export function ArticleList({ page, pageSize, slug }: ArticleListProps): JSX.Element | null {
-  const { articles, totalPages } = getArticles(page, pageSize || PAGE_SIZE);
-
-  const pagination = <Pagination slug={slug} currentPage={page} pageCount={totalPages} />;
+export function ArticleList({ paginatedArticleMatters }: ArticleListProps) {
+  const pagination = (
+    <Pagination
+      slug={undefined}
+      currentPage={paginatedArticleMatters.page}
+      pageCount={paginatedArticleMatters.totalPages}
+    />
+  );
   return (
     <>
       <BlockTitle title="Aktuelles" />
       <div className="w-full">
         <div className="container flex flex-col gap-4">
           {pagination}
-          {articles?.map((article) => (
-            <ArticleListItem key={article.slug} article={article} />
+          {paginatedArticleMatters.articles?.map((article) => (
+            <ArticleListItem key={article.slug} articleMatter={article} />
           ))}
           {pagination}
         </div>

@@ -1,6 +1,6 @@
 ---
 title: "Rückblick vom 1. Spieltag der Schönbuch United D2-Junioren"
-slug: "2023-10-04-rueckblick-vom-1.-spieltag-der-schoenbuch-united-d2-junioren"
+slug: "2023-10-04-rueckblick-vom-1-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-04"
 createdAt: "2023-10-05T12:00:00.000Z"
 teaser: "SGM Reutlingen/Rommelsbach I - Schönbuch United II 3:1 (2:1)"
