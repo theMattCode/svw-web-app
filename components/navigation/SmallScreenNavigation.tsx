@@ -2,7 +2,7 @@
 
 import { FaBars, FaX } from "react-icons/fa6";
 import React, { useState } from "react";
-import { sitemap, MenuItem } from "#/content/sitemap";
+import { sitemap, MenuItem, mitgliedWerden } from "#/content/sitemap";
 import Link from "next/link";
 import { FaChevronDown, FaFileSignature, FaShoppingCart } from "react-icons/fa";
 import { shops } from "#/content/club";
@@ -45,12 +45,12 @@ export function SmallScreenNavigation() {
             </Link>
           ))}
           <Link
-            key="Mitglied werden"
-            href="/mitglied-werden"
+            key={mitgliedWerden.name}
+            href={mitgliedWerden.url}
             className="flex items-center px-1.5 py-1 gap-1.5 hover:bg-svw-blue-darker whitespace-nowrap"
           >
             <FaFileSignature />
-            <span>Mitglied werden</span>
+            <span>{mitgliedWerden.name}</span>
           </Link>
         </div>
       </div>
@@ -77,9 +77,7 @@ function ListItem({ item, onClick }: { item: MenuItem; onClick: () => void }) {
             className="h-full aspect-square flex justify-center items-center border-b border-white border-opacity-25"
             onClick={toggleOpenClose}
           >
-            <FaChevronDown
-              className={`transition-all ${open ? "rotate-90" : ""}`}
-            />
+            <FaChevronDown className={`transition-all ${open ? "rotate-90" : ""}`} />
           </button>
         )}
       </div>

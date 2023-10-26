@@ -5,6 +5,8 @@ export type MenuItem = {
   subMenu?: MenuItem[];
 };
 
+export const mitgliedWerden = { name: "Mitglied werden", url: "/verein/mitglied-werden" };
+
 export const verein: MenuItem = {
   name: "Verein",
   url: "/verein",
@@ -15,7 +17,7 @@ export const verein: MenuItem = {
     { name: "Ansprechpartner", url: "/verein/ansprechpartner" },
     { name: "s'SVW Blättle", url: "/verein/svw-blaettle" },
     { name: "Spenden und Sponsoring", url: "/verein/spenden-und-sponsoring" },
-    { name: "Mitglied werden", url: "/verein/mitglied-werden" },
+    mitgliedWerden,
     { name: "Veranstaltungen", url: "/verein/veranstaltungen" },
     { name: "Historie", url: "/verein/historie" },
     { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true },
