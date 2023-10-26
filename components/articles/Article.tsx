@@ -1,17 +1,14 @@
 import Markdown from "#/components/markdown/Markdown";
 import Image from "next/image";
 import { formatDate } from "#/lib/format";
-import { getArticle } from "#/content/article";
+import { Article } from "#/content/article";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 
 type Props = {
-  slug: string;
+  article: Article;
 };
-export default function Article({ slug }: Props): JSX.Element {
-  const article = getArticle(slug);
-  if (!article) {
-    return <div>Article nicht gefunden</div>;
-  }
+
+export default function Article({ article }: Props): JSX.Element {
   const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 768) : { width: 0, height: 0 };
   return (
     <div className="container bg-white p-2 max-w-3xl shadow-xl flex flex-col gap-2">
