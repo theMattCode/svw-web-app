@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
 import { ArticleListItem } from "#/components/articles/ArticleListItem";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { getArticles } from "#/content/article";
+import { aktuelles } from "#/content/sitemap";
 
 const DEFAULT_PAGE_SIZE = 8;
 
@@ -15,13 +15,15 @@ export async function ArticlePreviewList({ pageSize = DEFAULT_PAGE_SIZE }: Props
   return (
     <div className="bg-neutral-200 w-full p-4">
       <div className="container flex flex-col gap-2 items-center">
-        <BlockTitle title="Aktuelles" />
+        <BlockTitle title={aktuelles.name} />
         {articles.map((article) => (
           <ArticleListItem key={article.slug} articleMatter={article} />
         ))}
-        <Link href="/aktuelles" className="flex flex-row gap-1 items-center">
-          <FaChevronRight className="text-svw-blue-default" />
-          <div className="text-white">Weitere Artikel</div>
+        <Link
+          href={aktuelles.url}
+          className="flex flex-row gap-1 content-center items-center text-white bg-svw-blue-default p-2 rounded-md"
+        >
+          Weitere Artikel
         </Link>
       </div>
     </div>
