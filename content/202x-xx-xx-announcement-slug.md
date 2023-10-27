@@ -1,7 +1,7 @@
 ---
 title: Sportgaststätte Weiherwiesen wieder geöffnet
 activeDate: 2023-08-14 00:00
-expiryDate: 2023-10-31 00:00
+expiryDate: 2023-11-30 00:00
 tags:
   - Sportgaststätte
   - Verein
@@ -13,4 +13,4 @@ image:
 ---
 Die Sportgaststätte Weiherwiesen ist seit dem 15.09.2023 wieder geöffnet.
 
-[Mehr Informationen](/news/wiedereroeffnung-sportgaststaette-weiherwiesen)
+[Mehr Informationen](/verein/sportgaststaette)
