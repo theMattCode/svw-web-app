@@ -11,7 +11,7 @@ type Props = {
 export default function Article({ article }: Props): JSX.Element {
   const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 768) : { width: 0, height: 0 };
   return (
-    <div className="container bg-white p-2 max-w-3xl shadow-xl flex flex-col gap-2">
+    <article className="container bg-white p-2 max-w-3xl shadow-xl flex flex-col gap-2">
       {article?.image && (
         <div className="flex flex-col place-items-end pb-4">
           <Image src={article.image} alt={article.image.alt} width={width} height={height} />
@@ -22,6 +22,6 @@ export default function Article({ article }: Props): JSX.Element {
         <div className="text-sm">{formatDate(article.date)}</div>
         <Markdown key={article.slug} content={article.content} />
       </div>
-    </div>
+    </article>
   );
 }

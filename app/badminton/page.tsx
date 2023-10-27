@@ -56,6 +56,15 @@ export default function Badminton() {
             <p>
               <Link href={`mailto:${club.contact.email}`}>badminton@svwalddorf.de</Link>
             </p>
+            <h4>Aktive</h4>
+            <p>
+              <Link
+                href="https://bwbv-badminton.liga.nu/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=SW+23%2F24&group=31104"
+                target="_blank"
+              >
+                Aktuelle Tabelle und Spielplan
+              </Link>
+            </p>
           </div>
         </div>
       </div>
