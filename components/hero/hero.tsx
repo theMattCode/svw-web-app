@@ -9,9 +9,9 @@ export function Hero(): JSX.Element {
       <div className="w-full bg-white bg-opacity-80">
         <div className="transition-all container px-4 pb-4 flex flex-col md:flex-row justify-center items-center">
           <div className="transition-all w-full md:w-1/2 flex flex-col items-center">
-            <div className="hidden md:block font-semibold">{club.name}</div>
             <div className="md:hidden pt-4 font-medium">Dein Verein für</div>
-            <div className="transition-all font-bold text-5xl md:-translate-x-0.5">Breitensport</div>
+            <div className="md:block font-semibold">Breiten- und Leistungssport</div>
+            <div className="transition-all font-bold text-5xl md:-translate-x-0.5 text-center">{club.name}</div>
             <div className="py-2">Erlebe gemeinsam mit uns:</div>
             <div className="transition-all flex flex-wrap gap-2 justify-center text-white max-w-md pb-4 ">
               {activities.map((activity) => (

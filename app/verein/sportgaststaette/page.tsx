@@ -78,10 +78,10 @@ export default function Sportgaststaette() {
           </table>
         </div>
         <Image
-          src="/media/verein/sportgaststaette_weiherwiesen_2022.jpg"
+          src="/media/verein/sportgaststaette_weiherwiesen_2022.png"
           alt="Geschäftsstelle"
-          width={1322}
-          height={858}
+          width={1320}
+          height={853}
           className="object-fill"
         />
       </div>

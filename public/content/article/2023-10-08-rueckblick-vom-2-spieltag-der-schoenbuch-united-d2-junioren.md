@@ -2,13 +2,12 @@
 title: "Rückblick vom 2. Spieltag der Schönbuch United D2-Junioren"
 slug: "2023-10-08-rueckblick-vom-2-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-08"
-createdAt: "2023-10-09T12:00:00.000Z"
 teaser: "Schönbuch United II - TSV Betzingen III 4:0 (1:0)"
 image:
-  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
-  alt: "E-Junioren Team 2023/24"
-  width: 3895
-  height: 1393
+  src: "/media/sparten/fussball/d-junioren-team-2023-24.png"
+  alt: "D-Junioren Team 2023/24"
+  width: 3656
+  height: 1311
 tags:
   - Fußball
   - D-Junioren
