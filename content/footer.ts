@@ -1,3 +1,26 @@
+import {
+  aktuelles,
+  ansprechpartner,
+  badminton,
+  datenschutz,
+  fitnessUndGesundheitssport,
+  formales,
+  fussball,
+  geschaeftsstelle,
+  historie,
+  impressum,
+  mitgliedWerden,
+  rehasport,
+  satzung,
+  sparten,
+  sponsoring,
+  sportgaststaette,
+  svwBlaettle,
+  veranstaltungen,
+  verein,
+  vorstand,
+} from "#/content/sitemap";
+
 type Footer = {
   blocks: {
     title: string;
@@ -13,7 +36,7 @@ export const footer: Footer = {
     {
       title: "SVW Welt",
       links: [
-        { title: "Aktuelles", url: "/aktuelles" },
+        { title: aktuelles.name, url: aktuelles.url },
         {
           title: "SVW Aktive Shop",
           url: "https://verein.baechi-teamsport.de/SV-Walddorf-Aktive",
@@ -32,37 +55,37 @@ export const footer: Footer = {
       ],
     },
     {
-      title: "Verein",
+      title: verein.name,
       links: [
-        { title: "Vorstand", url: "/vorstand" },
-        { title: "Geschäftsstelle", url: "/geschaeftsstelle" },
-        { title: "Sportgaststätte", url: "/sportgaststaette" },
-        { title: "Ansprechpartner", url: "/ansprechpartner" },
-        { title: "s'SVW Blättle", url: "/svw-blaettle" },
-        { title: "Spenden und Sponsoring", url: "/spenden-und-sponsoring" },
-        { title: "Mitglied werden", url: "/mitglied-werden" },
-        { title: "Veranstaltungen", url: "/veranstaltungen" },
-        { title: "Historie", url: "/historie" },
+        { title: vorstand.name, url: vorstand.url },
+        { title: geschaeftsstelle.name, url: geschaeftsstelle.url },
+        { title: sportgaststaette.name, url: sportgaststaette.url },
+        { title: ansprechpartner.name, url: ansprechpartner.url },
+        { title: svwBlaettle.name, url: svwBlaettle.url },
+        { title: sponsoring.name, url: sponsoring.url },
+        { title: mitgliedWerden.name, url: mitgliedWerden.url },
+        { title: veranstaltungen.name, url: veranstaltungen.url },
+        { title: historie.name, url: historie.url },
       ],
     },
     {
-      title: "Sparten",
+      title: sparten.name,
       links: [
-        { title: "Fußball", url: "/fussball" },
-        { title: "Badminton", url: "/badminton" },
+        { title: fussball.name, url: fussball.url },
+        { title: badminton.name, url: badminton.url },
         {
-          title: "Fitness & Gesundheitssport",
-          url: "/fitness-und-gesundheitssport",
+          title: fitnessUndGesundheitssport.name,
+          url: fitnessUndGesundheitssport.url,
         },
-        { title: "Reha-Sport", url: "/rehasport" },
+        { title: rehasport.name, url: rehasport.url },
       ],
     },
     {
-      title: "Formales",
+      title: formales.name,
       links: [
-        { title: "Satzung", url: "/satzung" },
-        { title: "Impressum", url: "/impressum" },
-        { title: "Datenschutz", url: "/datenschutz" },
+        { title: satzung.name, url: satzung.url },
+        { title: impressum.name, url: impressum.url },
+        { title: datenschutz.name, url: datenschutz.url },
       ],
     },
   ],

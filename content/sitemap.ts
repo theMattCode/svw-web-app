@@ -6,30 +6,38 @@ export type MenuItem = {
 };
 
 export const mitgliedWerden = { name: "Mitglied werden", url: "/verein/mitglied-werden" };
-
+export const vorstand = { name: "Vorstand", url: "/verein/vorstand" };
+export const geschaeftsstelle = { name: "Geschäftsstelle", url: "/verein/geschaeftsstelle" };
+export const sportgaststaette = { name: "Sportgaststätte Weiherwiesen", url: "/verein/sportgaststaette" };
+export const ansprechpartner = { name: "Ansprechpartner", url: "/verein/ansprechpartner" };
+export const svwBlaettle = { name: "s'SVW Blättle", url: "/verein/svw-blaettle" };
+export const sponsoring = { name: "Spenden und Sponsoring", url: "/verein/spenden-und-sponsoring" };
+export const veranstaltungen = { name: "Veranstaltungen", url: "/verein/veranstaltungen" };
+export const historie = { name: "Historie", url: "/verein/historie" };
+export const foerderkreis = { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true };
+export const satzung = { name: "Satzung", url: "/verein/satzung" };
+export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
+export const impressum = { name: "Impressum", url: "/verein/impressum" };
+export const formales = {
+  name: "Formales",
+  url: "/formales",
+  subMenu: [satzung, datenschutz, impressum],
+};
 export const verein: MenuItem = {
   name: "Verein",
   url: "/verein",
   subMenu: [
-    { name: "Vorstand", url: "/verein/vorstand" },
-    { name: "Geschäftsstelle", url: "/verein/geschaeftsstelle" },
-    { name: "Sportgaststätte Weiherwiesen", url: "/verein/sportgaststaette" },
-    { name: "Ansprechpartner", url: "/verein/ansprechpartner" },
-    { name: "s'SVW Blättle", url: "/verein/svw-blaettle" },
-    { name: "Spenden und Sponsoring", url: "/verein/spenden-und-sponsoring" },
+    vorstand,
+    geschaeftsstelle,
+    sportgaststaette,
+    ansprechpartner,
+    svwBlaettle,
+    sponsoring,
     mitgliedWerden,
-    { name: "Veranstaltungen", url: "/verein/veranstaltungen" },
-    { name: "Historie", url: "/verein/historie" },
-    { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true },
-    {
-      name: "Formales",
-      url: "/formales",
-      subMenu: [
-        { name: "Satzung", url: "/verein/satzung" },
-        { name: "Datenschutz", url: "/verein/datenschutz" },
-        { name: "Impressum", url: "/verein/impressum" },
-      ],
-    },
+    veranstaltungen,
+    historie,
+    foerderkreis,
+    formales,
   ],
 };
 
