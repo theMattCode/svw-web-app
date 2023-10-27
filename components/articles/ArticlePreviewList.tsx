@@ -21,7 +21,7 @@ export async function ArticlePreviewList({ pageSize = DEFAULT_PAGE_SIZE }: Props
         ))}
         <Link
           href={aktuelles.url}
-          className="flex flex-row gap-1 content-center items-center text-white bg-svw-blue-default p-2 rounded-md"
+          className="flex flex-row gap-1 content-center items-center text-white bg-svw-blue-default p-2"
         >
           Weitere Artikel
         </Link>
