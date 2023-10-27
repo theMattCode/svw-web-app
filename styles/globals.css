@@ -15,7 +15,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 h1 {
-    @apply text-4xl font-light w-full border-b-2 border-svw-blue-default pb-1 mb-2
+    @apply text-3xl w-full border-b-2 border-svw-blue-default pb-1 mb-2
 }
 
 h2 {
@@ -31,15 +31,15 @@ h4 {
 }
 
 h5 {
-    @apply text-base font-medium
+    @apply font-medium
 }
 
 h6  {
-    @apply italic
+    @apply underline
 }
 
 p {
-    @apply text-sm font-light
+    @apply font-light
 }
 
 p > a, td > a {
