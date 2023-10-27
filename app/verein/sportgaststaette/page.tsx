@@ -8,14 +8,7 @@ export default function Sportgaststaette() {
   return (
     <PageBase>
       <BlockTitle title="Sportgaststätte Weiherwiesen" />
-      <div className="bg-white shadow-2xl p-2 flex gap-4 flex-col lg:flex-row">
-        <Image
-          src="/media/verein/sportgaststaette_weiherwiesen_2022.jpg"
-          alt="Geschäftsstelle"
-          width={1322}
-          height={858}
-          className="lg:w-1/2"
-        />
+      <div className="bg-white shadow-2xl p-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex flex-col grow">
           <h3>Kontakt</h3>
           <h4>Adresse</h4>
@@ -28,7 +21,7 @@ export default function Sportgaststaette() {
           </p>
           <h4>Telefon</h4>
           <p>
-            <Link href="tel:+491726633453">0172/6633453</Link>
+            <Link href="tel:+491726633453">+49 172 6633453</Link>
           </p>
           <h3>Öffnungszeiten</h3>
           <table>
@@ -84,6 +77,13 @@ export default function Sportgaststaette() {
             </tbody>
           </table>
         </div>
+        <Image
+          src="/media/verein/sportgaststaette_weiherwiesen_2022.jpg"
+          alt="Geschäftsstelle"
+          width={1322}
+          height={858}
+          className="object-fill"
+        />
       </div>
     </PageBase>
   );
