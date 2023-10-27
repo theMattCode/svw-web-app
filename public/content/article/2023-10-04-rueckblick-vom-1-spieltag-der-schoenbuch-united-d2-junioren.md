@@ -2,13 +2,12 @@
 title: "Rückblick vom 1. Spieltag der Schönbuch United D2-Junioren"
 slug: "2023-10-04-rueckblick-vom-1-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-04"
-createdAt: "2023-10-05T12:00:00.000Z"
 teaser: "SGM Reutlingen/Rommelsbach I - Schönbuch United II 3:1 (2:1)"
 image:
-  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
-  alt: "E-Junioren Team 2023/24"
-  width: 3895
-  height: 1393
+  src: "/media/sparten/fussball/d-junioren-team-2023-24.png"
+  alt: "D-Junioren Team 2023/24"
+  width: 3656
+  height: 1311
 tags:
   - Fußball
   - D-Junioren

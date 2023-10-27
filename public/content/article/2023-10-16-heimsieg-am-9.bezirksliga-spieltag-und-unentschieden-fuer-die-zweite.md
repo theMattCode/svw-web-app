@@ -2,11 +2,11 @@
 title: "Heimsieg am 9. Bezirksliga-Spieltag und ein Unentschieden für unsere Zweite"
 slug: "2023-10-16-heimsieg-am-9.bezirksliga-spieltag-und-unentschieden-fuer-die-zweite"
 date: "2023-10-16"
-createdAt: "2023-10-17T12:00:00.000Z"
-teaser: "15.10.23, Bezirksliga, 9. Spieltag, SV Walddorf - TSG Tübingen II 2:1 (1:0)
+teaser: "
+  15.10.23, Bezirksliga, 9. Spieltag, SV Walddorf - TSG Tübingen II 2:1 (1:0)
 
 
-15.10.23, Kreisliga A, 9. Spieltag, SV Walddorf II - TSV Oferdingen 0:0"
+  15.10.23, Kreisliga A, 9. Spieltag, SV Walddorf II - TSV Oferdingen 0:0"
 image:
   src: "/media/sparten/fussball/aktive-team-2023-24.png"
   alt: "Aktive Team 2023/24"

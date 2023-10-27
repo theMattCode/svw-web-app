@@ -4,12 +4,12 @@ slug: "2023-10-16-rueckblick-vom-3-spieltag-der-schoenbuch-united-d2-und-d3-juni
 date: "2023-10-16"
 createdAt: "2023-10-17T12:00:00.000Z"
 image:
-  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
-  alt: "E-Junioren Team 2023/24"
-  width: 3895
-  height: 1393
+  src: "/media/sparten/fussball/d-junioren-team-2023-24.png"
+  alt: "D-Junioren Team 2023/24"
+  width: 3656
+  height: 1311
 teaser: "
-  Kreisstaffel 9: SGM Schönbuch United III - FC Neuhausen II 3:2 (1:2)
+  Kreisstaffel 9: Schönbuch United III - FC Neuhausen II 3:2 (1:2)
 
 
   Kreisstaffel 5: TSV Sondelfingen II - SGM Schönbuch United II 2:3 (1:2)"

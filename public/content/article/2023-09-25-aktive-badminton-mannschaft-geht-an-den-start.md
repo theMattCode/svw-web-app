@@ -2,7 +2,6 @@
 title: "Aktive Badminton-Mannschaft geht an den Start!"
 slug: "2023-09-25-aktive-badminton-mannschaft-geht-an-den-start"
 date: "2023-09-25"
-createdAt: "2023-09-27T12:55:14.691Z"
 teaser: "Bald geht es los mit dem Unternehmen _Badminton Aktive_."
 image:
   src: "/media/sparten/badminton/badminton-team-2023-24.png"
@@ -16,8 +15,6 @@ tags:
 In der demnächst beginnenden Spielsaison der Badminton Kreisliga „Reutlingen/Zollern-Alb“ geht unser SVW mit einer spielstarken Mannschaft an den Start. In unserem Kader stehen u.a. Milena Heim, Julia Meyle, Julian Petermann, Jonas Tittmann, Markus Bernd, Michael Schäfer, Maximilian Rapp und Lorenz Fritz.
 
 Wir wünschen dem Team tolle Spiele und eine erfolgreiche Saison!
-
-![/media/2023/2023-05-07-badminton-2.jpg](/media/2023/2023-05-07-badminton-2.jpg)
 
 ### Unsere Spiele in der Kreisliga
 
@@ -40,7 +37,7 @@ Wir wünschen dem Team tolle Spiele und eine erfolgreiche Saison!
 
 Unsere Heimspiele finden in der Ballspielhalle Walddorfhäslach statt.
 
-![2023-03-06-badminton-ballspielhalle.jpg](/media/2023/2023-03-06-badminton-ballspielhalle.jpg)
+![Badminton in der Walddorfhäslacher Ballspielhalle](/media/2023/2023-03-06-badminton-ballspielhalle.jpg)
 
 ### Lust auf Badminton?
 

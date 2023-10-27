@@ -2,11 +2,16 @@
 title: "HobbyHorsing - Reite deine Fantasie!"
 slug: "2023-09-11-hobby-horsing-reite-deine-fantasie"
 date: "2023-09-11"
-createdAt: "2023-09-12T11:49:01.459Z"
+image:
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  alt: HobbyHorsing
+  width: 1599
+  height: 1066
+teaser: "Neuer HobbyHorsing-Kurs beim SV Walddorf"
+tags:
+  - HobbyHorsing
 ---
 Wir freuen uns, euch unseren brandneuen Hobbyhorsing-Kurs im Rahmen unseres Sportangebotes „Spiel und Spaß“ beim Sportverein Walddorf vorzustellen! Taucht ein in die wunderbare Welt des Hobbyhorsing und erlebt gemeinsam mit uns einzigartige Abenteuer auf dem Rücken eurer eigenen, handgemachten Pferde!
-
-![csm_Screenshot_20230912-125138_ea7bfb7883.png](/uploads/csm_Screenshot_20230912_125138_ea7bfb7883_322deb1899.png)
 
 Was ist Hobbyhorsing? Hobbyhorsing ist eine faszinierende Sportart, bei der ihr euch auf Holz- oder Plüschpferden reitend voll und ganz in eure eigene Fantasiewelt hineinversetzen könnt. Mit eurer Kreativität gestaltet ihr euer Pferd und lasst eure Träume und Vorstellungen lebendig werden.
 

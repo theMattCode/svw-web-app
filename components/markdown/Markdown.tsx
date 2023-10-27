@@ -42,10 +42,10 @@ export default function Markdown({ content }: Props): JSX.Element | null {
               <td className="border-0 border-b border-svw-blue-default px-3 py-2 text-sm">{children}</td>
             ),
             img: (props) => (
-              <div className="w-full flex flex-col">
+              <>
                 <Image className="w-full" alt={props.alt ?? ""} src={props.src ?? ""} width={640} height={480} />
-                {props.alt && <div className="w-full flex flex-row justify-end text-sm text-gray-700">{props.alt}</div>}
-              </div>
+                {props.alt && <p className="w-full flex flex-row justify-end text-sm text-gray-700">{props.alt}</p>}
+              </>
             ),
             a: (props) => {
               if (props.href) {

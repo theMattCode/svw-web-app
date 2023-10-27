@@ -2,8 +2,15 @@
 title: "E-Junioren-Turnier bei der SGM Pliezhausen"
 slug: "2023-07-03-e-junioren-turnier-bei-der-sgm-pliezhausen"
 date: "2023-07-03"
-createdAt: "2023-07-31T13:22:27.208Z"
 teaser: "E-Junioren feiern zum Abschluss der Saison den 1. Platz in Pliezhausen"
+image:
+  src: "/media/sparten/fussball/e-junioren-team-2023-24.png"
+  alt: "E-Junioren Team 2023/24"
+  width: 3895
+  height: 1393
+tags:
+  - Fussball
+  - E-Junioren
 ---
 Unser letztes Turnier im E-Juniorenmodus fand gestern in Pliezhausen statt. Wir konnten zum Abschluss den 1. Platz belegen und somit den Turniersieg feiern!
 

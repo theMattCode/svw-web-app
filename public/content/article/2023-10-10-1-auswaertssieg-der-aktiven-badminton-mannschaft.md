@@ -2,7 +2,6 @@
 title: "1. Auswärtssieg der Aktiven Badminton Mannschaft"
 slug: "2023-10-10-1-auswaertssieg-der-aktiven-badminton-mannschaft"
 date: "2023-10-10"
-createdAt: "2023-10-17T12:00:00.000Z"
 teaser: "Die neu gegründete, aktive Mannschaft der Sparte Badminton startete am Samstag, 07.10.2023, erfolgreich in die erste Spielsaison."
 image:
   src: "/media/sparten/badminton/badminton-team-2023-24.png"
