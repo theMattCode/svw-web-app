@@ -47,7 +47,7 @@ p > a, td > a {
 }
 
 table {
-    @apply w-full font-light
+    @apply w-full font-light overflow-scroll
 }
 
 th {

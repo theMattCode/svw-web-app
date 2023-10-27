@@ -11,6 +11,7 @@ export default function Markdown({ content }: Props): JSX.Element | null {
     return (
       <div className="container">
         <ReactMarkdown
+          className="flex flex-col gap-2"
           remarkPlugins={[remarkGfm]}
           skipHtml={false}
           components={{
@@ -24,7 +25,9 @@ export default function Markdown({ content }: Props): JSX.Element | null {
                 <ol className="list-decimal list-outside">{children}</ol>
               </div>
             ),
-            table: ({ children }) => <table className="w-full">{children}</table>,
+            table: ({ children }) => (
+              <table className="w-full block whitespace-nowrap overflow-y-auto">{children}</table>
+            ),
             th: ({ children, style }) => (
               <th
                 className={`border-0 bg-svw-blue-default text-white px-3 py-2 ${
@@ -34,13 +37,16 @@ export default function Markdown({ content }: Props): JSX.Element | null {
                 {children}
               </th>
             ),
-            tr: ({ children }) => <tr className="even:bg-gray-200">{children}</tr>,
+            tr: ({ children }) => <tr className="even:bg-gray-200 w-full">{children}</tr>,
             td: ({ children }) => (
               <td className="border-0 border-b border-svw-blue-default px-3 py-2 text-sm">{children}</td>
             ),
-            img: (props) => {
-              return <Image className="w-full" alt={props.alt ?? ""} src={props.src ?? ""} width={500} height={500} />;
-            },
+            img: (props) => (
+              <div className="w-full flex flex-col">
+                <Image className="w-full" alt={props.alt ?? ""} src={props.src ?? ""} width={640} height={480} />
+                {props.alt && <div className="w-full flex flex-row justify-end text-sm text-gray-700">{props.alt}</div>}
+              </div>
+            ),
             a: (props) => {
               if (props.href) {
                 return (
@@ -51,7 +57,7 @@ export default function Markdown({ content }: Props): JSX.Element | null {
               }
               return <>{props.children}</>;
             },
-            p: ({ children }) => <p className="font-light pt-2">{children}</p>,
+            p: ({ children }) => <p className="font-light">{children}</p>,
             blockquote: ({ children }) => (
               <blockquote className="flex flex-row divide-x">
                 <div />
