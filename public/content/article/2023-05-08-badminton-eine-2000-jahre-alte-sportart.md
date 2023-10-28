@@ -2,17 +2,23 @@
 title: "Badminton – eine 2000 Jahre alte Sportart"
 slug: "2023-05-08-badminton-eine-2000-jahre-alte-sportart"
 date: "2023-05-08"
-createdAt: "2023-05-24T06:56:20.133Z"
+tags:
+  - Badminton
+image:
+  src: /media/sparten/badminton/badminton.png
+  alt: Badminton
+  width: 1024
+  height: 392
 ---
 Badminton entwickelte sich aus dem antiken Federball-Spiel „battledore and shuttlecock“, einem Rückschlagspiel, das die alten Kulturvölker in China, Indien, Griechenland oder Japan schon vor 2000 Jahren praktizierten. Dabei wurden mit abgeflachten Hölzern kleine, mit Hühnerfedern gespickte Holzbälle geschlagen. Auch von den Azteken und Inkas sind diese Rückschlagspiele bekannt.
 
 1872 wurde das in Indien unter dem Namen Poona bekannte Federballspiel im Dorf Badminton der englischen Grafschaft Gloucestershire vorgestellt – der Ursprung des heutigen Namens **Badminton**.
 
-![2023-05-07_Badminton_10817b3017.jpg](/uploads/2023_05_07_Badminton_10817b3017_3f536d4a23.jpg)
+![](/media/2023/2023-05-07-badminton-1.jpg)
 
-Das Spiel verbreitete sich schnell und es wurden mehrere Badminton Clubs gegründet, die jedoch nach ihren eigenen Regeln spielten. 1893 wurde in England der erste Badmintonverband gegründet, und schon 1899 fanden die ersten All England Championships statt, die heutzutage unter Badmintonanhängern den gleichen Stellenwert haben wie das Turnier von Wimbledon für die Tennisfreunde.
+Das Spiel verbreitete sich schnell und es wurden mehrere Badminton-Clubs gegründet, die jedoch nach ihren eigenen Regeln spielten. 1893 wurde in England der erste Badmintonverband gegründet, und schon 1899 fanden die ersten _All England Championships_ statt, die heutzutage unter Badmintonanhängern den gleichen Stellenwert haben wie das Turnier von Wimbledon für die Tennisfreunde.
 
-Mitte der 1920er Jahre breitete sich der organisierte Badmintonsport vermehrt auch in Nordeuropa, Frankreich, Australien und Nordamerika aus, so dass bereits im Juli 1934 der Welt-Dachverband (heute BWF - Badminton World Federation) gegründet werden konnte.
+Mitte der 1920er Jahre breitete sich der organisierte Badmintonsport vermehrt auch in Nordeuropa, Frankreich, Australien und Nordamerika aus, sodass bereits im Juli 1934 der Welt-Dachverband (heute BWF - Badminton World Federation) gegründet werden konnte.
 
 Die ersten Deutschen Meisterschaften fanden am 17. und 18. Januar 1953 in Wiesbaden statt. Am selben Wochenende wurde der Deutsche Badminton-Verband (DBV) aus der Taufe gehoben
 
@@ -26,9 +32,9 @@ Ein paar Daten:
 - Gespielt wird auf 2 Gewinnsätze (best of three) mit 21 Punkten.
 - Wie im Tennis gibt es Einzel und Doppel-Paarungen.
 
-![2023-05-07_Badminton3.jpg](/uploads/2023_05_07_Badminton3_8d004f4467.jpg)
+![](/media/2023/2023-05-07-badminton-2.jpg)
 
-![2023-05-07_Badminton4.jpg](/uploads/2023_05_07_Badminton4_09c4e3aff1.jpg)
+![](/media/2023/2023-05-07-badminton-3.jpg)
 
 ## Lust auf Badminton?
 

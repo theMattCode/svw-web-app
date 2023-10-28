@@ -16,17 +16,17 @@ Unser letztes Turnier im E-Juniorenmodus fand gestern in Pliezhausen statt. Wir 
 
 Hier unsere Ergebnisse im Überblick:
 
-| Begegnung | Ergebnis |
-| --- | --- |
-| **Vorrunde** | | 
-| SV Walddorf  TV Bempflingen | 1:0 |
-| SV Walddorf - SSV Zuffenhausen II | 1:0 |
-| SV Walddorf - TG Gönningen | 4:0 |
-| SV Walddorf - SG DeSi | 1:0 |
-| **Halbfinale** | | 
-| SV Walddorf - SSV Zuffenhausen I | 1:0 n.V. (0:0) |
-| **Finale** ||
-| SV Walddorf - SSC Tübingen | 1:0 |
+| Begegnung                         | Ergebnis       |
+|-----------------------------------|----------------|
+| **Vorrunde**                      |                | 
+| SV Walddorf  TV Bempflingen       | 1:0            |
+| SV Walddorf - SSV Zuffenhausen II | 1:0            |
+| SV Walddorf - TG Gönningen        | 4:0            |
+| SV Walddorf - SG DeSi             | 1:0            |
+| **Halbfinale**                    |                | 
+| SV Walddorf - SSV Zuffenhausen I  | 1:0 n.V. (0:0) |
+| **Finale**                        |                |
+| SV Walddorf - SSC Tübingen        | 1:0            |
 
 Sehen wir mal von der TG Gönningen ab, hatten wir es durchweg mit starken Gegnern zu tun!
 
@@ -39,7 +39,7 @@ Jungs - das habt Ihr ganz prima gemacht! Ihr konntet alles umsetzen, was wir in 
 ### Weitere Infos
 
 * D-Junioren-Trainingsauftakt ist morgen um 18:00 Uhr auf dem Rasenplatz.
-* Unsere Trainingszeiten sind montags und mittwochs von 18:00 Uhr  - 19:30 Uhr.
+* Unsere Trainingszeiten sind montags und mittwochs von 18:00 Uhr - 19:30 Uhr.
 * Es kommen 5 Spieler vom TB Kirchentellinsfurt dazu - wir werden die Jungs kennenlernen und integrieren.
 
 E-Junioren Trainerteam

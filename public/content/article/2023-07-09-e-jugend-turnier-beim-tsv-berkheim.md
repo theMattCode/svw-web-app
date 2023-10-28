@@ -16,7 +16,7 @@ Am Sonntag folgte unsere E-Jugend einer kurzfristigen Turnier-Einladung des TSV 
 
 ![](/media/2023/2023-07-10-svw-e-tsv-berkheim-1.jpg)
 
-![](/media/2023/2023-07-10-svw-e-tsv-berkheim-2.jpg)
+![Einschwören und Besprechung der Spieltaktik](/media/2023/2023-07-10-svw-e-tsv-berkheim-2.jpg)
 
 Im ersten Spiel traten unsere Jungs gegen den TSV Deizisau an. Der SV Walddorf erwischte einen tollen Start und dominierte das Spiel zu Beginn nach Belieben. Eine frühe Führung war die Belohnung. Leider konnte die Führung trotz einiger Chancen nicht ausgebaut werden und Deizisau fand immer besser ins Spiel. Am Ende ging das Spiel noch mit 1:3 verloren.
 
@@ -24,7 +24,7 @@ Als Nächstes standen zwei direkt aufeinanderfolgende Spiele mit 5 Minuten Pause
 
 Die Jungs zeigten eine herausragende Moral und konnte die Spiele gegen TSV Lichtenwald mit 2:1 und den TSV Berkheim I mit 1:0 Gewinnen. Beide Spiele verliefen ausgeglichen mit leichten Vorteilen für unser Team.
 
-Im Spiel gegen FSV Waldebene Stuttgart-Ost und den TSV Berkheim II zeigte sich dann die hohe Belastung bei steigenden Temperaturen. Die Spiele gingen mit 1:3 und 0:1 jeweils verloren. Das Spiel gegen Waldebene ging gegen einen starken Gegner verdient verloren. Gegen Berkheim II verlief die Partie ausgeglichen und ging nach einigen ausgelassenen Chancen nur sehr unglücklich verloren.
+Im Spiel gegen FSV Waldebene Stuttgart-Ost und den TSV Berkheim II zeigte sich dann die hohe Belastung bei steigenden Temperaturen. Die Spiele gingen mit 1:3 und 0:1 jeweils verloren. Das Spiel gegen Waldebene ging gegen einen starken Gegner vergdient verloren. Gegen Berkheim II verlief die Partie ausgeglichen und ging nach einigen ausgelassenen Chancen nur sehr unglücklich verloren.
 
 Es folgte die finale Partie gegen TSG Esslingen - und eine wahre Energieleistung unserer Mannschaft die über die gesamte Spielzeit anlief. Am Ende konnten unsere Jungs das Spiel souverän mit 3:0 gewinnen - gleichbedeutend mit einem tollen 3. Platz bei einem sehr ausgeglichenen Turnier.
 

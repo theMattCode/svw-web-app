@@ -36,8 +36,8 @@ export default function Aktive() {
           <PersonCard person={getPersonByName("Erol Türkoglu")} />
           <PersonCard person={getPersonByName("Luis Armbruster")} />
           <PersonCard person={getPersonByName("Fabian Schramm")} />
-          <PersonCard person={getPersonByName("Julian Wohlfahrt")} />
-          <PersonCard person={getPersonByName("Achim Wohlfahrt")} />
+          <PersonCard person={getPersonByName("Julian Wohlfarth")} />
+          <PersonCard person={getPersonByName("Achim Wohlfarth")} />
           <PersonCard person={getPersonByName("Björn Kittelmann")} />
         </div>
         <BlockTitle title="Tabelle Aktive I" />
