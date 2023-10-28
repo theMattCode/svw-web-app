@@ -105,11 +105,11 @@ export const people: Person[] = [
   },
   {
     firstname: "Julian",
-    lastname: "Wohlfahrt",
+    lastname: "Wohlfarth",
     tags: ["Sportliche Leitung Aktive und Jugendfußball", "Co-Trainer Aktive II"],
     email: "julian.wohlfarth@svwalddorf.de",
     phone: ["+49 173 7645542"],
-    image: { src: "/media/people/julian-wohlfahrt-2022.png", alt: "Julian Wohlfahrt", width: 767, height: 1024 },
+    image: { src: "/media/people/julian-wohlfarth-2022.png", alt: "Julian Wohlfarth", width: 767, height: 1024 },
   },
   {
     firstname: "Sandra",
@@ -185,9 +185,9 @@ export const people: Person[] = [
   },
   {
     firstname: "Achim",
-    lastname: "Wohlfahrt",
+    lastname: "Wohlfarth",
     tags: ["Betreuer Aktive I", "Betreuer Aktive II"],
-    image: { src: "/media/people/achim-wohlfahrt-2021.png", alt: "Achim Wohlfahrt", width: 551, height: 734 },
+    image: { src: "/media/people/achim-wohlfarth-2021.png", alt: "Achim Wohlfarth", width: 551, height: 734 },
   },
   {
     firstname: "Alex",
