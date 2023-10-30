@@ -30,7 +30,7 @@ export default function Gymnastik65plus() {
           </div>
         </div>
         <h4>Übungsleitung</h4>
-        <PersonCard person={getPersonByName("Bärbel Neumann")} />
+        <PersonCard person={getPersonByName("Eva Marstaller")} />
         <h3>Veranstaltungsort</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <Image

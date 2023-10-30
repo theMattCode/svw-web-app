@@ -3,6 +3,8 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import Link from "next/link";
 import { fitUndGesund, gymnastik65plus, powerFitness, teenDance, yoga } from "#/content/sitemap";
+import { PersonCard } from "#/components/person/PersonCard";
+import { getPersonByName } from "#/content/people";
 
 export default function FitnessUndGesundheitssport() {
   return (
@@ -59,6 +61,12 @@ export default function FitnessUndGesundheitssport() {
             </tr>
           </tbody>
         </table>
+        <h3>Spartenleitung</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <PersonCard person={getPersonByName("Monika Haar")} />
+          <PersonCard person={getPersonByName("Claudia Musse")} />
+          <PersonCard person={getPersonByName("Marc Musse")} />
+        </div>
       </div>
     </PageBase>
   );

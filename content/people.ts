@@ -137,8 +137,23 @@ export const people: Person[] = [
   {
     firstname: "Monika",
     lastname: "Haar",
-    tags: ["Übungsleitung Early Bird Yoga"],
+    tags: ["Spartenleitung Fitness und Gesundheitssport", "Übungsleitung Early Bird Yoga"],
     email: "monika.haar@svwalddorf.de",
+    image: { src: "/media/people/monika-haar-2023.png", alt: "Monika Haar", width: 490, height: 677 },
+  },
+  {
+    firstname: "Claudia",
+    lastname: "Musse",
+    tags: ["Spartenleitung Fitness und Gesundheitssport"],
+    email: "spartenleitungFuG@svwalddorf.de",
+    image: { src: "/media/people/claudia-musse-2023.png", alt: "Claudia Musse", width: 238, height: 295 },
+  },
+  {
+    firstname: "Marc",
+    lastname: "Musse",
+    tags: ["Spartenleitung Fitness und Gesundheitssport"],
+    email: "spartenleitungFuG@svwalddorf.de",
+    image: { src: "/media/people/marc-musse-2023.png", alt: "Marc Musse", width: 223, height: 295 },
   },
   {
     firstname: "Sandra",
@@ -157,6 +172,11 @@ export const people: Person[] = [
     lastname: "Neumann",
     tags: ["Übungsleitung Gymnastik 65plus"],
     phone: ["+49 7127 70746"],
+  },
+  {
+    firstname: "Eva",
+    lastname: "Marstaller",
+    tags: ["Übungsleitung Gymnastik 65plus"],
   },
   {
     firstname: "Ronja",
