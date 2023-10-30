@@ -1,8 +1,6 @@
 import React from "react";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import Image from "next/image";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 
@@ -25,8 +23,8 @@ export default function Yoga() {
           </div>
           <div className="flex flex-col gap-2">
             <h4>Termine Hatha-Yoga</h4>
-            <p>Montag 08:30 - 10:00 im Gymnastikraum in der Ballspielhalle</p>
-            <p>Dienstag 18:30 - 20:00 im Gymnastikraum in der Ballspielhalle</p>
+            <p>Montag 08:30 - 10:00 mit Monika Haar im Gymnastikraum in der Ballspielhalle</p>
+            <p>Dienstag 18:30 - 20:00 mit Sandra Dießner im Gymnastikraum in der Ballspielhalle</p>
           </div>
         </div>
         <h4>Übungsleitung</h4>

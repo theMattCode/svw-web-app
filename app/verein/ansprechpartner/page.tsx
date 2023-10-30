@@ -34,7 +34,7 @@ export default function Ansprechpartner() {
         <PersonCard person={getPersonByTag("Geschäftsstelle")} />
         <PersonCard person={getPersonByTag("Vorstand Sport")} />
         <PersonCard person={getPersonByTag("Sportliche Leitung Aktive und Jugendfußball")} />
-        <PersonCard person={getPersonByTag("Spartenleitung Fitness & Gesundheit")} />
+        <PersonCard person={getPersonByName("Monika Haar")} />
         <PersonCard person={getPersonByTag("Rehasport")} />
         <PersonCard person={getPersonByName("Julian Petermann")} />
       </div>
