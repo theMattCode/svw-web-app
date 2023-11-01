@@ -6,6 +6,7 @@ import Link from "next/link";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Bambini() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3157, height: 1351 }, 1200);
@@ -48,6 +49,7 @@ export default function Bambini() {
           <PersonCard person={getPersonByName("Tobias Bayha")} />
         </div>
       </div>
+      <ArticlePreviewList tags={["Bambini"]} />
     </PageBase>
   );
 }

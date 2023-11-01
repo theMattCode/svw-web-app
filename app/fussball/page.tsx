@@ -3,6 +3,7 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { SubMenu } from "#/components/navigation/SubMenu";
 import { fussball } from "#/content/sitemap";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Fussball() {
   return (
@@ -12,6 +13,8 @@ export default function Fussball() {
           <SubMenu item={fussball} />
         </div>
         <BlockTitle title="Fussball" />
+        <ArticlePreviewList tags={["Fussball"]} showTitle={false} />
+        <BlockTitle title="Spielplan" />
         <div className="container bg-white shadow-2xl p-2 flex flex-col gap-2">
           <FussballDeWidget widgetKey="02KJUU7I0O000000VUM1DNPBVTLF6IIO" height={1000} />
         </div>

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function BJunioren() {
   const { width, height } = calcImageDimensionsForWidth({ width: 2903, height: 1327 }, 1200);
@@ -37,6 +38,7 @@ export default function BJunioren() {
           <PersonCard person={getPersonByName("Thomas Brülls")} />
         </div>
       </div>
+      <ArticlePreviewList tags={["B-Junioren"]} />
     </PageBase>
   );
 }

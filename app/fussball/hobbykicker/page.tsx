@@ -6,6 +6,7 @@ import Link from "next/link";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function HobbyKicker() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4026, height: 2041 }, 1200);
@@ -50,6 +51,7 @@ export default function HobbyKicker() {
         <h3>Ansprechpartner</h3>
         <PersonCard person={getPersonByName("Lukas Drexler")} />
       </div>
+      <ArticlePreviewList tags={["Hobbykicker"]} />
     </PageBase>
   );
 }

@@ -3,6 +3,7 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Yoga() {
   return (
@@ -33,6 +34,7 @@ export default function Yoga() {
           <PersonCard person={getPersonByName("Sandra Dießner")} />
         </div>
       </div>
+      <ArticlePreviewList tags={["Yoga"]} />
     </PageBase>
   );
 }

@@ -7,6 +7,7 @@ import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Aktive() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3477, height: 1367 }, 1200);
@@ -40,6 +41,7 @@ export default function Aktive() {
           <PersonCard person={getPersonByName("Achim Wohlfarth")} />
           <PersonCard person={getPersonByName("Björn Kittelmann")} />
         </div>
+        <ArticlePreviewList tags={["Aktive I", "Aktive II"]} />
         <BlockTitle title="Tabelle Aktive I" />
         <FussballDeWidget widgetKey="02MK9VOPTC000000VUM1DNPAVTVU8DI7" height={904} />
         <BlockTitle title="Spielplan Aktive I" />
