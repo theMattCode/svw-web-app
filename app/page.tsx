@@ -7,7 +7,9 @@ export default async function IndexPage(): Promise<JSX.Element | null> {
     <div className="flex flex-col">
       <Hero />
       <AnnouncementsBlock />
-      <ArticlePreviewList pageSize={10} />
+      <div className="p-4 bg-neutral-200">
+        <ArticlePreviewList pageSize={10} />
+      </div>
     </div>
   );
 }
