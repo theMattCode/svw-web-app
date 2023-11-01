@@ -20,7 +20,7 @@ export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
 export const impressum = { name: "Impressum", url: "/verein/impressum" };
 export const formales = {
   name: "Formales",
-  url: "/formales",
+  url: "/verein/formales",
   subMenu: [satzung, datenschutz, impressum],
 };
 export const verein: MenuItem = {
