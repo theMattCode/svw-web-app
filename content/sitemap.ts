@@ -93,7 +93,7 @@ export const rehasport = { name: "Reha-Sport", url: "/rehasport" };
 export const sparten: MenuItem = {
   name: "Sparten",
   url: "/sparten",
-  subMenu: [fitnessUndGesundheitssport, fussball, badminton, rehasport],
+  subMenu: [badminton, rehasport, fussball, fitnessUndGesundheitssport],
 };
 
 export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };

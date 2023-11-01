@@ -5,6 +5,7 @@ import Link from "next/link";
 import { fitUndGesund, gymnastik65plus, powerFitness, teenDance, yoga } from "#/content/sitemap";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function FitnessUndGesundheitssport() {
   return (
@@ -68,6 +69,7 @@ export default function FitnessUndGesundheitssport() {
           <PersonCard person={getPersonByName("Marc Musse")} />
         </div>
       </div>
+      <ArticlePreviewList tags={["Fitness und Gesundheitssport"]} />
     </PageBase>
   );
 }

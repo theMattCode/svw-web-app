@@ -7,6 +7,7 @@ import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { club } from "#/content/club";
 import Link from "next/link";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Badminton() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4085, height: 2298 }, 1520);
@@ -72,6 +73,7 @@ export default function Badminton() {
         <PersonCard person={getPersonByName("Jonas Tittmann")} />
         <PersonCard person={getPersonByName("Julian Petermann")} />
       </div>
+      <ArticlePreviewList tags={["Badminton"]} />
     </PageBase>
   );
 }

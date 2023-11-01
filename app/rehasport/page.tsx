@@ -6,6 +6,7 @@ import Image from "next/image";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Rehasport() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -145,6 +146,7 @@ export default function Rehasport() {
             />
           </div>
         </div>
+        <ArticlePreviewList tags={["Rehasport"]} />
       </div>
     </div>
   );

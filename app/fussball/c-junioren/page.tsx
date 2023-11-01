@@ -6,6 +6,7 @@ import Link from "next/link";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function CJunioren() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3376, height: 1341 }, 1200);
@@ -41,6 +42,7 @@ export default function CJunioren() {
           <PersonCard person={getPersonByName("Robin Schraitle")} />
         </div>
       </div>
+      <ArticlePreviewList tags={["C-Junioren"]} />
     </PageBase>
   );
 }

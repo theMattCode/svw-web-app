@@ -5,6 +5,7 @@ import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function Gymnastik65plus() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -47,6 +48,7 @@ export default function Gymnastik65plus() {
           />
         </div>
       </div>
+      <ArticlePreviewList tags={["Gymnastik 65plus"]} />
     </PageBase>
   );
 }

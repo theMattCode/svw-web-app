@@ -9,7 +9,8 @@ image:
   width: 1599
   height: 1066
 tags:
-  - HobbyHorsing
+  - Hobby Horsing
+  - Fitness und Gesundheitssport
 ---
 Am Freitag, den 22.09.2023 gab es unsere allererste HobbyHorsing Stunde in der Ballspielhalle.
 

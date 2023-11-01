@@ -5,6 +5,7 @@ import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
+import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
 export default function FitUndGesund() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -58,6 +59,7 @@ export default function FitUndGesund() {
           />
         </div>
       </div>
+      <ArticlePreviewList tags={["Fit und Gesund"]} />
     </PageBase>
   );
 }

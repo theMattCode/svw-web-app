@@ -11,7 +11,7 @@ export type ArticleMatter = {
   title: string;
   slug: string;
   date: string;
-  tags?: [];
+  tags?: string[];
   image?: Image;
   promote?: boolean;
   createdAt?: string;
@@ -70,6 +70,15 @@ export function getArticles(page: number, pageSize: number, articleDirectory?: s
     totalPages: Math.ceil(allFiles.length / pageSize),
     articles,
   };
+}
+
+export function getArticlesByTags(tags: string[], articleDirectory?: string): Article[] {
+  const allFiles = fs.readdirSync(articleDirectory || ARTICLE_DIRECTORY).reverse();
+  const allArticles = allFiles.map((filename) => readArticle(filename, articleDirectory || ARTICLE_DIRECTORY));
+
+  return allArticles.filter((article) =>
+    tags.some((tag) => article.tags?.map((tag) => tag.toLowerCase()).includes(tag.toLowerCase()))
+  );
 }
 
 export function getArticleMatters(page: number, pageSize: number, articleDirectory?: string): PaginatedArticleMatters {
