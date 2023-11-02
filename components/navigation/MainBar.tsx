@@ -26,9 +26,7 @@ export function MainBar() {
           />
         </Link>
         <LargeScreenNavigation />
-        <span className="transition-all md:hidden px-4 text-center">
-          {club.name}
-        </span>
+        <span className="transition-all md:hidden px-4 text-center">{club.name}</span>
         <SmallScreenNavigation />
       </div>
     </div>
