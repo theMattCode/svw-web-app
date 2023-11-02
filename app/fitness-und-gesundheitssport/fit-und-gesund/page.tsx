@@ -24,13 +24,15 @@ export default function FitUndGesund() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
             <h4>Gutes für deinen ganzen Körper</h4>
+            <p>Dieses Gymnastikangebot richtet sich an Frauen und Männer die ihrem Körper etwas Gutes tun wollen.</p>
             <p>
-              Dieses Gymnastikangebot richtet sich an Frauen und Männer die ihrem Körper etwas Gutes tun wollen. Der
-              Kurs bietet ein abwechslungsreiches und intensives Ganzkörpertraining an. Zu Beginn wird bei flotter Musik
-              das Herzkreislaufsystem und die Koordination des Körpers gefordert und gestärkt. Im Anschluss wird der
-              gesamte Körper und Problemzonen wie: Rücken, Bauch, Beine und Po gekräftigt. Mit dem Einsatz von
-              Handgeräten werden die jeweiligen Übungen intensiviert. Gezielte Dehnungs- und Entspannungsübungen runden
-              das Training ab und sorgen für den nötigen Ausgleich.
+              Der Kurs bietet ein abwechslungsreiches und intensives Ganzkörpertraining an. Zu Beginn wird bei flotter
+              Musik das Herzkreislaufsystem und die Koordination des Körpers gefordert und gestärkt.
+            </p>
+            <p>Im Anschluss wird der gesamte Körper und Problemzonen wie Rücken, Bauch, Beine und Po gekräftigt.</p>
+            <p>
+              Mit dem Einsatz von Handgeräten werden die jeweiligen Übungen intensiviert. Gezielte Dehnungs- und
+              Entspannungsübungen runden das Training ab und sorgen für den nötigen Ausgleich.
             </p>
             <p>
               <b>Schnuppern und Vorbeischauen ist immer gern gesehen.</b>

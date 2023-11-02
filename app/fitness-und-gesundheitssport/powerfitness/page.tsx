@@ -19,21 +19,24 @@ export default function Powerfitness() {
           <div className="flex flex-col gap-2">
             <h4>Powerfitness am Montagabend</h4>
             <p>
-              Unsere Ziele sind: Verbesserung der Kondition, Fitness, Körperhaltung und Figur. Einfach vorbei kommen und
-              mitmachen.
+              Powerfitness ist ein idealer Kurs für Einsteigerinnen, junge Mütter und Wiedereinsteigerinnen.
+              Übungsleiterin Andrea Troglauer legt die Trainingsschwerpunkte auf Beweglichkeit und Ausdauer und fördert
+              dabei besonders folgende Punkte:
             </p>
             <p>
               <ul className="list-disc px-8">
-                <li>Ganzkörper Training</li>
-                <li>Stabilisation von Rücken und Wirbelsäule</li>
-                <li>Koordination des Gleichgewichts</li>
-                <li>jede Menge Spaß und Fun</li>
+                <li>Verbesserung der Körperhaltung</li>
+                <li>Steigerung der Herz-Kreislauf-Fitness</li>
+                <li>Verbesserung von Mobilität und Balance</li>
+                <li>Gewichtsreduktion durch erhöhten Kalorienverbrauch</li>
+                <li>Verbesserung der Muskelkraft</li>
+                <li>Allgemeines Wohlbefinden</li>
               </ul>
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <h4>Trainingszeiten</h4>
-            <p>Montags 18:30 -20:30 Uhr im Gymnastikraum der Ballspielhalle</p>
+            <p>Montags 18:30 - 19:30 und 19:30 - 20:30 Uhr im Gymnastikraum der Ballspielhalle</p>
           </div>
         </div>
         <h4>Übungsleitung</h4>
