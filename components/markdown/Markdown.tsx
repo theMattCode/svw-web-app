@@ -26,7 +26,7 @@ export default function Markdown({ content }: Props): JSX.Element | null {
               </div>
             ),
             table: ({ children }) => (
-              <table className="w-full block whitespace-nowrap overflow-y-auto">{children}</table>
+              <table className="block md:table w-full whitespace-nowrap overflow-y-auto">{children}</table>
             ),
             th: ({ children, style }) => (
               <th
