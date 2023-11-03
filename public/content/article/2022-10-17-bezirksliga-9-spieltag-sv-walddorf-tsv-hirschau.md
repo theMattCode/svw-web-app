@@ -3,6 +3,14 @@ title: "Spielbericht Aktive I"
 slug: "2022-10-17-bezirksliga-9-spieltag-sv-walddorf-tsv-hirschau"
 date: "2022-10-17"
 teaser: "Bezirksliga, 9. Spieltag, SV Walddorf  - TSV Hirschau 3:3 (1.2)"
+tags:
+  - Fussball
+  - Aktive I
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 Mal wieder voll auf ihre Kosten kamen die Zuschauer beim Spiel unserer Ersten Mannschaft.
 

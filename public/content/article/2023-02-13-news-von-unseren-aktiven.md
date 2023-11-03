@@ -3,6 +3,14 @@ title: "News von unseren Aktiven"
 slug: "2023-02-13-news-von-unseren-aktiven"
 date: "2023-02-13"
 teaser: "Aktueller Stand Vorbereitung 1. Mannschaft"
+tags:
+  - Fussball
+  - Aktive I
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 ## Aktueller Stand Vorbereitung 1. Mannschaft
 

@@ -2,8 +2,15 @@
 title: "Kreisliga B, 14. Spieltag"
 slug: "2023-04-04-kreisliga-b-14-spieltag"
 date: "2023-04-04"
-createdAt: "2023-04-04T12:24:08.644Z"
-teaser: "SV Anadolu Reutlingen II - SV Walddorf II 2:3 (2:1)"
+teaser: "Kreisliga B, 14. Spieltag, SV Anadolu Reutlingen II - SV Walddorf II 2:3 (2:1)"
+tags:
+  - Fussball
+  - Aktive II
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 Im Spitzenspiel verteidigte unsere Zweite die Tabellenführung beim Zweiten Anadolu und holte 3 wichtige Zähler im Aufstiegsrennen. Die Führung per direktem Freistoß durch Sandro Häfner (11. MInute) drehten die Hausherren noch vor der Pause zum Walddorfer 1:2-Rückstand. Doch das Team von Fabi Schramm und Julian Wohlfarth blieb dran und nahm den Kampf an. Den Ausgleich zum 2.2 erzielte Fabio Müller (56.). In einer hitzigen Schlussphase behielten unsere Jungs kühlen Kopf und belohnten sich mit dem späten Siegtreffer durch Alex Peguero.
 

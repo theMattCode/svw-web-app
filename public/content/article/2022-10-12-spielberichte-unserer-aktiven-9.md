@@ -2,9 +2,20 @@
 title: "Spielberichte unserer Aktiven"
 slug: "2022-10-12-spielberichte-unserer-aktiven-9"
 date: "2022-10-12"
-teaser: "Bezirksliga Alb, 8. Spieltag, TB Kirchentellinsfurt - SV Walddorf I 1:1 (0:1)
+teaser: "
+Bezirksliga Alb, 8. Spieltag, TB Kirchentellinsfurt - SV Walddorf I 1:1 (0:1)
+
 
 Kreisliga B, 4. Spieltag, FC Mittelstadt II - SV Walddorf II 0:8 (0:4)"
+tags:
+  - Fussball
+  - Aktive I
+  - Aktive II
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 ## Aktive I
 

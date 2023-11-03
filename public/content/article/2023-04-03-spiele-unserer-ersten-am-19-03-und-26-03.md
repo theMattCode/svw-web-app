@@ -2,10 +2,19 @@
 title: "Spiele unserer Ersten am 19.03 und 26.03"
 slug: "2023-04-03-spiele-unserer-ersten-am-19-03-und-26-03"
 date: "2023-04-03"
-createdAt: "2023-04-04T12:29:39.918Z"
-teaser: "Bezirksliga, 20. Spieltag, SGM Dettingen/Glems - SV Walddorf 1:2 (0:1)
+teaser: "
+Bezirksliga, 20. Spieltag, SGM Dettingen/Glems - SV Walddorf 1:2 (0:1)
+
 
 Bezirksliga, 21. Spieltag, TSG Tübingen - SV Walddorf 4:4 (0:3)"
+tags:
+  - Fussball
+  - Aktive I
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 ### Bezirksliga, 20. Spieltag, SGM Dettingen/Glems - SV Walddorf 1:2 (0:1)
 

@@ -4,7 +4,17 @@ slug: "2022-10-04-spielberichte-unserer-aktiven-7"
 date: "2022-10-04"
 teaser: "Bezirksliga, 7. Spieltag, SV Walddorf - SV Pfrondorf 4:1 (4:1)
 
+
 Kreisliga B, 3. Spieltag, SV Walddorf II - SV Anadolu Reutlingen II 5:3"
+tags:
+  - Fussball
+  - Aktive I
+  - Aktive II
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 ## Bezirksliga, 7. Spieltag, SV Walddorf - SV Pfrondorf 4:1 (4:1)
 

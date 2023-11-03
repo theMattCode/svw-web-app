@@ -2,9 +2,19 @@
 title: "Spiele unserer Ersten"
 slug: "2023-03-06-spiele-unserer-ersten"
 date: "2023-03-06"
-teaser: "26.02.2023, Bezirksliga, 17. Spieltag: TSV Eningen - SV Walddorf 4:1 (2:0)
+teaser: "
+26.02.2023, Bezirksliga, 17. Spieltag: TSV Eningen - SV Walddorf 4:1 (2:0)
 
-  05.03.2023, Bezirksliga, 18. Spieltag: SV Walddorf - SV Hirrlingen 1:3 (1:1)"
+
+05.03.2023, Bezirksliga, 18. Spieltag: SV Walddorf - SV Hirrlingen 1:3 (1:1)"
+tags:
+  - Fussball
+  - Aktive I
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 **26.02.2023, Bezirksliga, 17. Spieltag: TSV Eningen - SV Walddorf 4:1 (2:0)**
 
