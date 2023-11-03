@@ -37,3 +37,7 @@ next-env.d.ts
 
 # storybook
 build-storybook.log
+
+# sitemap - generated during build
+robots.txt
+sitemap.xml
