@@ -3,6 +3,14 @@ title: "Spielbericht Aktive I"
 slug: "2022-09-19-spielbericht-unserer-aktiven-2"
 date: "2022-09-19"
 teaser: "Bezirksliga Alb, 5. Spieltag, SV Walddorf - SGM Dettinge/Glems 2:4 (0:2)"
+tags:
+  - Fussball
+  - Aktive I
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 ## Unnötige Heimniederlage
 

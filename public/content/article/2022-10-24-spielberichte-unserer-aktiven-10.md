@@ -3,6 +3,14 @@ title: "Spielberichte unserer Aktiven"
 slug: "2022-10-24-spielberichte-unserer-aktiven-10"
 date: "2022-10-24"
 teaser: "Bezirksliga, SV Zainingen - SV Walddorf 1:1 (0:0)"
+tags:
+  - Fussball
+  - Aktive I
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 Im Duell der Aufsteiger spielte unsere Erste bereits zum 6. Mal in dieser Saison Unentschieden. Nach einer frühen Roten Karte für den Torhüter der Gastgeber wegen einer Notbremse (17. Minute) agierte der SVW lange Zeit in Überzahl. Doch diese konnte nie so richtig ausgenutzt werden. Dem Walddorfer Spiel fehlte es lange an Durchschlagskraft. Auch defensiv ließ man den kampfstarken Gegner immer wieder zu Möglichkeiten kommen. Die Anfangsviertelstunde der zweiten Halbzeit war die beste Phase für unsere Mannschaft. Die 1:0-Führung durch David Schnitzler (48.) nach einem gelungenen Angriff und einer weiteren guten Möglichkeit von StefanTilger ließen die mitgereisten Fans auf einen Auswärtssieg hoffen. Der Zaininger Ausgleich aus dem Nichts (60.) sorgte dafür, dass wieder zuviel Unruhe und wenig Klarheit in den Aktionen waren. 
 

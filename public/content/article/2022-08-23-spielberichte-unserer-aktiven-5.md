@@ -2,6 +2,15 @@
 title: "Spielberichte unserer Aktiven"
 slug: "2022-08-23-spielberichte-unserer-aktiven-5"
 date: "2022-08-23"
+tags:
+  - Fussball
+  - Aktive I
+  - Aktive II
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 **Bezirkspokal 1. Runde**
 

@@ -2,10 +2,20 @@
 title: "Fußball Aktive - Spiele vom 16.04."
 slug: "2023-04-16-fussball-aktive-spiele-vom-16-04"
 date: "2023-04-16"
-createdAt: "2023-05-03T07:25:58.366Z"
-teaser: "Bezirksliga, SV Walddorf I - SGM Kirchentellinsfurt/Kusterdingen I 5:0 (2:0)
+teaser: "
+Bezirksliga, SV Walddorf I - SGM Kirchentellinsfurt/Kusterdingen I 5:0 (2:0)
+
 
 Kreisliga B, SV Walddorf II - FC Mittelstadt II I 3:0 (Nichtantritt Gast)"
+tags:
+  - Fussball
+  - Aktive I
+  - Aktive II
+image:
+  src: /media/sparten/fussball/aktive-team-2022-23.png
+  alt: "Aktive Team 2022/23"
+  width: 2985
+  height: 1679 
 ---
 ## SV Walddorf I - SGM Kirchentellinsfurt/Kusterdingen I 5:0 (2:0)
 
