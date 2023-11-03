@@ -9,6 +9,9 @@ import de from "date-fns/locale/de";
 import { useCallback, useState } from "react";
 import { setDefaultOptions } from "date-fns";
 import { Event } from "#/content/events";
+import Link from "next/link";
+import { GrLocation } from "react-icons/gr";
+import { OptionalLink } from "#/components/link/Link";
 
 setDefaultOptions({ locale: de });
 
@@ -58,18 +61,60 @@ export function EventCalendar({ events }: Props) {
       events={events}
       view={view}
       onView={setView}
-      views={[Views.AGENDA, Views.MONTH]}
+      views={[Views.AGENDA, Views.DAY, Views.WEEK, Views.MONTH]}
       startAccessor="start"
       endAccessor="end"
       culture="de"
       messages={messages}
-      style={{ width: "100%", minHeight: 500, height: "100%" }}
+      style={{ width: "100%", minHeight: 700 }}
       date={date}
       length={365}
       onNavigate={onNavigate}
-      formats={{
-        agendaDateFormat: "cccc, dd.MM.yyyy",
-      }}
+      formats={{ agendaDateFormat: "cccc, dd.MM.yyyy" }}
+      components={{ event: ({ event }) => <EventDescription event={event} view={view} /> }}
     />
   );
+}
+
+type EventDescriptionProps = {
+  event: Event;
+  view: View;
+};
+
+function EventDescription({ event, view }: EventDescriptionProps) {
+  if (view === "agenda") {
+    return (
+      <div className="flex flex-col">
+        <div className="font-normal">
+          <OptionalLink href={event.url}>{event.title}</OptionalLink>
+        </div>
+        <div className="flex items-center gap-1">
+          <GrLocation />
+          <div className="flex text-sm">
+            <div>
+              {event.place?.name} {event.place?.address ? `, ${event.place.address}` : ""}
+            </div>
+            {event.place?.url && (
+              <div>
+                <Link href={event.place.url.href} target="_blank">
+                  {event.place.url.text}
+                </Link>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="flex flex-col text-sm">
+        <span className="flex text-ellipsis">{event.title}</span>
+        {event.url && (
+          <Link href={event.url} className="underline">
+            Alle Infos
+          </Link>
+        )}
+      </div>
+    );
+  }
 }
