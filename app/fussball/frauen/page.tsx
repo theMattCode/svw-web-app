@@ -8,16 +8,16 @@ import { getPersonByName } from "#/content/people";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 
-export default function Damen() {
+export default function Frauen() {
   const { width, height } = calcImageDimensionsForWidth({ width: 915, height: 614 }, 1200);
   return (
     <PageBase>
-      <BlockTitle title="Damen" />
+      <BlockTitle title="Frauenfußball" />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
-            src="/media/sparten/fussball/damen-team-2023-24.png"
-            alt="Mannschaftsfoto Damen 2023/24"
+            src="/media/sparten/fussball/frauen-team-2023-24.png"
+            alt="Mannschaftsfoto Frauen 2023/24"
             width={width}
             height={height}
             className="col-span-1 xl:col-span-3"
@@ -32,12 +32,12 @@ export default function Damen() {
           </div>
         </div>
         <p>
-          Beim SV Walddorf gibt es auch eine Damenfußballmannschaft. Hier sind Damen aktiv, die Spaß am wöchentlichen
+          Beim SV Walddorf gibt es auch ein Frauenfußball-Team. Hier sind Frauen aktiv, die Spaß am wöchentlichen
           Fußballtraining haben und die den Sport nicht um jeden Preis wettkampfmäßig betreiben wollen. Eine Teilnahme
           am Spielbetrieb ist aber nicht generell ausgeschlossen.
         </p>
         <p>
-          Die Trainingsgruppe ist ideal für jüngere und nicht mehr ganz junge Damen, die Spaß am Fußball haben und
+          Die Trainingsgruppe ist ideal für Frauen aller Altersklassen, die Spaß am Fußball haben und
           einfach probieren möchten, genauso wie für ehemals aktive Spielerinnen, die wieder einsteigen möchten.
         </p>
         <h3>Ansprechpartner</h3>
@@ -46,7 +46,7 @@ export default function Damen() {
           <PersonCard person={getPersonByName("Melanie Senner")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Damen"]} />
+      <ArticlePreviewList tags={["Frauenfußball"]} />
     </PageBase>
   );
 }
