@@ -54,7 +54,7 @@ Nochmal herzlichen Glückwunsch an alle unsere Kicker zu der tollen Leistung!
 
 ![2023-02-05_um_10-11-58.jpg](/uploads/2023_02_05_um_10_11_58_005c2400d2.jpg)
 
-Unter anderem gab es dabei ein Spiel zwischen einer unserer 4 Walddorfer Mannschaften und dem TSV Oberensingen, bei dem zwischenzeitlich sechs Mädchen im 3 gegen 3 gegeneinander spielten. Tolle Werbung für den Damenfußball von dem wir in Zukunft gerne noch mehr sehen würden.
+Unter anderem gab es dabei ein Spiel zwischen einer unserer 4 Walddorfer Mannschaften und dem TSV Oberensingen, bei dem zwischenzeitlich sechs Mädchen im 3 gegen 3 gegeneinander spielten. Tolle Werbung für den Frauenfußball von dem wir in Zukunft gerne noch mehr sehen würden.
 
 ![Bild_5.jpg](/uploads/Bild_5_5c8dbc02d3.jpg)
 
