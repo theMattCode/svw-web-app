@@ -27,7 +27,7 @@ export default function Frauen() {
             <p>Montag, 19:30 Uhr auf dem Kunstrasen</p>
             <h3>Kontakt</h3>
             <p>
-              <Link href="mailto:damenmannschaft@svwalddorf.de">damenmannschaft@svwalddorf.de</Link>
+              <Link href="mailto:frauenfussball@svwalddorf.de">frauenfussball@svwalddorf.de</Link>
             </p>
           </div>
         </div>
@@ -37,8 +37,8 @@ export default function Frauen() {
           am Spielbetrieb ist aber nicht generell ausgeschlossen.
         </p>
         <p>
-          Die Trainingsgruppe ist ideal für Frauen aller Altersklassen, die Spaß am Fußball haben und
-          einfach probieren möchten, genauso wie für ehemals aktive Spielerinnen, die wieder einsteigen möchten.
+          Die Trainingsgruppe ist ideal für Frauen aller Altersklassen, die Spaß am Fußball haben und einfach probieren
+          möchten, genauso wie für ehemals aktive Spielerinnen, die wieder einsteigen möchten.
         </p>
         <h3>Ansprechpartner</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">

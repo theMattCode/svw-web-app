@@ -101,14 +101,14 @@ export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };
 export const sitemap: MenuItem[] = [verein, sparten, aktuelles];
 
 export const activities: MenuItem[] = [
-  { name: "Badminton", url: "/badminton" },
-  { name: "Fußball", url: "/fussball" },
-  { name: "Yoga", url: "/yoga" },
-  { name: "Power Fitness", url: "/power-fitness" },
-  { name: "Gymnastik 65plus", url: "/gymnastik-65plus" },
-  { name: "Teen Dance", url: "/teen-dance" },
-  { name: "Fit und Gesund", url: "/fit-und-gesund" },
-  { name: "Reha-Sport", url: "/rehasport" },
+  badminton,
+  fussball,
+  yoga,
+  powerFitness,
+  gymnastik65plus,
+  teenDance,
+  fitUndGesund,
+  rehasport,
 ];
 
 export function findItemByName(menuItem: MenuItem, name: string): MenuItem | undefined {
