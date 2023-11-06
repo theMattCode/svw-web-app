@@ -2,7 +2,6 @@
 title: "Rückblick vom 4. Spieltag der Schönbuch United D2-Junioren"
 slug: "2023-10-21-rueckblick-vom-4-spieltag-der-schoenbuch-united-d2-junioren"
 date: "2023-10-21"
-createdAt: "2023-10-23T12:00:00.000Z"
 teaser: "Kreisstaffel 5: Schönbuch United II - SGM FC Mittelstadt/TV Bempflingen II 3:3 (1:2)"
 image:
   src: "/media/sparten/fussball/d-junioren-team-2023-24.png"
