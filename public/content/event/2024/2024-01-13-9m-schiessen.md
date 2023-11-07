@@ -1,0 +1,60 @@
+---
+title: 9m-Schießen
+slug: 2024-01-13-9m-schiessen
+date: 2024-01-13
+tags:
+  - Fussball
+  - Hallenturnier
+  - 9m-Schießen
+calendarEntries:
+  - title: "9m-Schießen"
+    url: /event/2024-01-13-9m-schiessen
+    place:
+      name: Ballsporthalle
+    start: 2024-01-13T13:30+01:00
+    end: 2024-01-13T22:00+01:00
+---
+## Einladung zum traditionellen 9m-Schießen
+
+Liebe Fußballfreunde,
+
+der SV Walddorf veranstaltet wieder sein traditionelles 9m-Schießen. Hierzu wollen wir Euch recht herzlich einladen.
+
+#### Wann?
+
+Samstag, 13. Januar 2024
+
+Anmeldung ab 13:30 Uhr
+
+Spielbeginn 14:00 Uhr
+
+### Wo?
+
+Gemeindehalle Walddorfhäslach,
+Weiherwiesen 2
+72141 Walddorfhäslach
+([Maps](https://maps.app.goo.gl/4y44Bw33x7bEaNVk6))
+
+### Anmeldung
+
+Mannschaftsanmeldung per E-Mail an [9m-turnier@svwalddorf.de](9m-turnier@svwalddorf.de)
+
+Das Startgeld beträgt 40,00€ pro Mannschaft. Barzahlung bei Turnierbeginn.
+
+### Preisgelder
+
+1. Platz: graviertes Weizenglas 5.0l inkl. Füllung&ast; & 150€
+1. Platz: graviertes Weizenglas 3.0l inkl. Füllung&ast; & 100€
+1. Platz: graviertes Weizenglas 3.0l inkl. Füllung&ast; & 50€
+1. Platz: graviertes Weizenglas 3.0l inkl. Füllung&ast;
+
+&ast;einmalige Füllung des Weizenglases mit Weizen, Bier, Colaweizen, Radler, Russ oder vergleichbaren Mischgetränken / Softdrinks.
+
+Für Euer leibliches Wohl wird bestens gesorgt sein. Wir freuen uns auf Euch!
+
+&nbsp;
+
+Mit sportlichem Gruß
+
+Turnierorganisation
+SV Walddorf
