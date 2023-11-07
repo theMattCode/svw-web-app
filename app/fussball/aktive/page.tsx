@@ -9,6 +9,7 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PersonCard } from "#/components/person/PersonCard";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { Paper } from "#/components/paper/Paper";
 import { getPersonByName } from "#/content/people";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function Aktive() {
   return (
     <PageBase>
       <BlockTitle title="Aktive" />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
             src="/media/sparten/fussball/aktive-team-2023-24.png"
@@ -56,7 +57,7 @@ export default function Aktive() {
         <FussballDeWidget widgetKey="02MKA0TUAG000000VUM1DNPEVUF0NFQ2" height={856} />
         <BlockTitle title="Spielplan Aktive II" />
         <FussballDeWidget widgetKey="02LH79RNPG000000VUM1DNOBVTKJO187" />
-      </div>
+      </Paper>
     </PageBase>
   );
 }

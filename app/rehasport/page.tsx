@@ -13,6 +13,7 @@ import { rehasport } from "#/content/sitemap";
 export const metadata: Metadata = {
   title: getTitle(rehasport.name),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function Rehasport() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -34,7 +35,7 @@ export default function Rehasport() {
           </p>
         </div>
         <BlockTitle title={rehasport.name} />
-        <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+        <Paper>
           <h3>Zertifizierte Kurse</h3>
           <p>
             <ul className="list-disc px-8">
@@ -161,7 +162,7 @@ export default function Rehasport() {
               height={trainingsraumDimensions.height}
             />
           </div>
-        </div>
+        </Paper>
         <ArticlePreviewList tags={["Rehasport"]} />
       </div>
     </div>

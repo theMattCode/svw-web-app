@@ -12,6 +12,7 @@ import { getTitle } from "#/lib/page";
 export const metadata: Metadata = {
   title: getTitle(teenDance.name),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function TeenDance() {
   const claudiaMusse = getPersonByName("Claudia Musse");
@@ -20,7 +21,7 @@ export default function TeenDance() {
   return (
     <PageBase>
       <BlockTitle title={teenDance.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
             <p>
@@ -61,7 +62,7 @@ export default function TeenDance() {
             <PersonCard person={getPersonByName("Ronja Mödinger")} />
           </div>
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Teen Dance"]} />
     </PageBase>
   );

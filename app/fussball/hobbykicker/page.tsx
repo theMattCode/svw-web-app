@@ -7,6 +7,7 @@ import { PageBase } from "#/components/page/PageBase";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PersonCard } from "#/components/person/PersonCard";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { Paper } from "#/components/paper/Paper";
 import { getPersonByName } from "#/content/people";
 import { fussballHobby } from "#/content/sitemap";
 
@@ -18,7 +19,7 @@ export default function HobbyKicker() {
   return (
     <PageBase>
       <BlockTitle title={fussballHobby.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <Image
           src="/media/sparten/fussball/hobby-kicker-team-2023-24.png"
           alt="Mannschaftsfoto Hobby-Kicker 2023/24"
@@ -55,7 +56,7 @@ export default function HobbyKicker() {
         </p>
         <h3>Ansprechpartner</h3>
         <PersonCard person={getPersonByName("Lukas Drexler")} />
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Hobbykicker"]} />
     </PageBase>
   );

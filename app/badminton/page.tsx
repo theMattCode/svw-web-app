@@ -8,6 +8,7 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import { PersonCard } from "#/components/person/PersonCard";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { Paper } from "#/components/paper/Paper";
 import { club } from "#/content/club";
 import { getPersonByName } from "#/content/people";
 import { badminton } from "#/content/sitemap";
@@ -21,7 +22,7 @@ export default function Badminton() {
   return (
     <PageBase>
       <BlockTitle title={badminton.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <Image
           src="/media/sparten/badminton/badminton-team-2021-08-22.jpg"
           alt="Badminton Mitglieder"
@@ -75,7 +76,7 @@ export default function Badminton() {
             </p>
           </div>
         </div>
-      </div>
+      </Paper>
       <div className="flex flex-col xl:flex-row gap-2">
         <PersonCard person={getPersonByName("Jonas Tittmann")} />
         <PersonCard person={getPersonByName("Julian Petermann")} />

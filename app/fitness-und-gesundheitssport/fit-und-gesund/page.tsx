@@ -13,6 +13,7 @@ import { fitUndGesund } from "#/content/sitemap";
 export const metadata: Metadata = {
   title: getTitle(fitUndGesund.name),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function FitUndGesund() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -20,7 +21,7 @@ export default function FitUndGesund() {
   return (
     <PageBase>
       <BlockTitle title={FitUndGesund.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <Image
           src="/media/sparten/fitness-und-gesundheitssport/fit-und-gesund-2019.jpg"
           alt="Fit und Gesund Team"
@@ -67,7 +68,7 @@ export default function FitUndGesund() {
             height={trainingsraumDimensions.height}
           />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Fit und Gesund"]} />
     </PageBase>
   );

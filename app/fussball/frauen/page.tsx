@@ -14,13 +14,14 @@ import { fussballFrauen } from "#/content/sitemap";
 export const metadata: Metadata = {
   title: getTitle(fussballFrauen.name),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function Frauen() {
   const { width, height } = calcImageDimensionsForWidth({ width: 915, height: 614 }, 1200);
   return (
     <PageBase>
       <BlockTitle title={fussballFrauen.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
             src="/media/sparten/fussball/frauen-team-2023-24.png"
@@ -52,7 +53,7 @@ export default function Frauen() {
           <PersonCard person={getPersonByName("Anke Schaal")} />
           <PersonCard person={getPersonByName("Melanie Senner")} />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Frauenfußball"]} />
     </PageBase>
   );

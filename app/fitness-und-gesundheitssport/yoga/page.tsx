@@ -4,6 +4,7 @@ import { PageBase } from "#/components/page/PageBase";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { Paper } from "#/components/paper/Paper";
 import { Metadata } from "next";
 import { yoga } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";
@@ -15,7 +16,7 @@ export default function Yoga() {
   return (
     <PageBase>
       <BlockTitle title={yoga.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
             <h4>Yoga für mehr Wohlbefinden</h4>
@@ -52,7 +53,7 @@ export default function Yoga() {
           <PersonCard person={getPersonByName("Monika Haar")} />
           <PersonCard person={getPersonByName("Sandra Dießner")} />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Yoga"]} />
     </PageBase>
   );

@@ -13,13 +13,14 @@ import { getPersonByName } from "#/content/people";
 export const metadata: Metadata = {
   title: getTitle("F-Junioren"),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function FJunioren() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3686, height: 1306 }, 1200);
   return (
     <PageBase>
       <BlockTitle title="F-Junioren" />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
             src="/media/sparten/fussball/f-junioren-team-2023-24.png"
@@ -52,7 +53,7 @@ export default function FJunioren() {
           <PersonCard person={getPersonByName("Ahmet Adsiz")} />
           <PersonCard person={getPersonByName("Vincenzo Bonfiglio")} />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["F-Junioren"]} />
     </PageBase>
   );

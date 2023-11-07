@@ -5,6 +5,7 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { SubMenu } from "#/components/navigation/SubMenu";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { Paper } from "#/components/paper/Paper";
 import { fussball } from "#/content/sitemap";
 
 export const metadata: Metadata = {
@@ -18,8 +19,10 @@ export default function Fussball() {
         <SubMenu item={fussball} />
       </div>
       <BlockTitle title={fussball.name} />
-      <div className="container bg-white shadow-2xl p-2 flex flex-col gap-2">
-        <FussballDeWidget widgetKey="02KJUU7I0O000000VUM1DNPBVTLF6IIO" height={1000} />
+      <div className="container">
+        <Paper>
+          <FussballDeWidget widgetKey="02KJUU7I0O000000VUM1DNPBVTLF6IIO" height={1000} />
+        </Paper>
       </div>
       <ArticlePreviewList tags={["Fussball"]} />
     </div>

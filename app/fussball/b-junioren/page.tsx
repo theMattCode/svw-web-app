@@ -13,13 +13,14 @@ import { getPersonByName } from "#/content/people";
 export const metadata: Metadata = {
   title: getTitle("B-Junioren"),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function BJunioren() {
   const { width, height } = calcImageDimensionsForWidth({ width: 2903, height: 1327 }, 1200);
   return (
     <PageBase>
       <BlockTitle title="B-Junioren" />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
             src="/media/sparten/fussball/b-junioren-team-2023-24.png"
@@ -43,7 +44,7 @@ export default function BJunioren() {
           <PersonCard person={getPersonByName("Steffen Kittelmann")} />
           <PersonCard person={getPersonByName("Thomas Brülls")} />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["B-Junioren"]} />
     </PageBase>
   );

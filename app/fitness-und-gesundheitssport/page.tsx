@@ -14,6 +14,7 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import { PersonCard } from "#/components/person/PersonCard";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { Paper } from "#/components/paper/Paper";
 import { getPersonByName } from "#/content/people";
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function FitnessUndGesundheitssport() {
   return (
     <PageBase>
       <BlockTitle title={fitnessUndGesundheitssport.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <p>
           In unserer Sparte Fitness & Gesundheit bieten wir ein vielfältiges Programm für alle Altersklassen an. Aktuell
           gibt es folgende Gruppen
@@ -81,7 +82,7 @@ export default function FitnessUndGesundheitssport() {
           <PersonCard person={getPersonByName("Claudia Musse")} />
           <PersonCard person={getPersonByName("Marc Musse")} />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Fitness und Gesundheitssport"]} />
     </PageBase>
   );

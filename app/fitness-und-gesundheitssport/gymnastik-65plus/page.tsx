@@ -13,6 +13,7 @@ import { gymnastik65plus } from "#/content/sitemap";
 export const metadata: Metadata = {
   title: getTitle(gymnastik65plus.name),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function Gymnastik65plus() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -21,7 +22,7 @@ export default function Gymnastik65plus() {
   return (
     <PageBase>
       <BlockTitle title={gymnastik65plus.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
             <h4>Angebot</h4>
@@ -54,7 +55,7 @@ export default function Gymnastik65plus() {
             height={trainingsraumDimensions.height}
           />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Gymnastik 65plus"]} />
     </PageBase>
   );

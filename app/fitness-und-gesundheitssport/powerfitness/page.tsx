@@ -13,6 +13,7 @@ import { powerFitness } from "#/content/sitemap";
 export const metadata: Metadata = {
   title: getTitle(powerFitness.name),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function Powerfitness() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -21,7 +22,7 @@ export default function Powerfitness() {
   return (
     <PageBase>
       <BlockTitle title={powerFitness.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
             <h4>Powerfitness am Montagabend</h4>
@@ -63,7 +64,7 @@ export default function Powerfitness() {
             height={trainingsraumDimensions.height}
           />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Powerfitness"]} />
     </PageBase>
   );

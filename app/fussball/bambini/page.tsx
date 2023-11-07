@@ -13,13 +13,14 @@ import { getPersonByName } from "#/content/people";
 export const metadata: Metadata = {
   title: getTitle("Bambini"),
 };
+import { Paper } from "#/components/paper/Paper";
 
 export default function Bambini() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3157, height: 1351 }, 1200);
   return (
     <PageBase>
       <BlockTitle title="Bambini" />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <Paper>
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
             src="/media/sparten/fussball/bambini-team-2023-24.png"
@@ -54,7 +55,7 @@ export default function Bambini() {
           <PersonCard person={getPersonByName("Sascha Flaig")} />
           <PersonCard person={getPersonByName("Tobias Bayha")} />
         </div>
-      </div>
+      </Paper>
       <ArticlePreviewList tags={["Bambini"]} />
     </PageBase>
   );
