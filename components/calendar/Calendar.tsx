@@ -13,6 +13,7 @@ import Link from "next/link";
 import { GrLocation } from "react-icons/gr";
 import { OptionalLink } from "#/components/link/Link";
 import { Spinner } from "#/components/spinner/Spinner";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 
 setDefaultOptions({ locale: de });
 
