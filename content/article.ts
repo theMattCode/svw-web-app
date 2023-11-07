@@ -38,63 +38,64 @@ export type PaginatedArticleMatters = {
   articles: ArticleMatter[];
 };
 
-export function getArticle(slug: string, articleDirectory?: string): Article {
-  return readArticle(`${slug}.md`, articleDirectory || ARTICLE_DIRECTORY);
+export function getArticleBySlug(slug: string, articleDirectory?: string): Article {
+  return readArticle(`${articleDirectory || ARTICLE_DIRECTORY}/${slug.slice(0, 4)}/${slug}.md`);
 }
 
-function readArticleMatter(filename: string, articleDirectory?: string) {
-  const fileContent = fs.readFileSync(`${articleDirectory || ARTICLE_DIRECTORY}/${filename}`, "utf-8");
-  const { data, content } = matter(fileContent);
+function readArticleMatter(path: string) {
+  const fileContent = fs.readFileSync(path, "utf-8");
+  const { data } = matter(fileContent);
   return data as ArticleMatter;
 }
 
-function readArticle(filename: string, articleDirectory: string) {
-  const fileContent = fs.readFileSync(`${articleDirectory}/${filename}`, "utf-8");
+function readArticle(path: string) {
+  const fileContent = fs.readFileSync(path, "utf-8");
   const { data, content } = matter(fileContent);
   return { ...data, content } as Article;
 }
 
-export function getArticles(page: number, pageSize: number, articleDirectory?: string): PaginatedArticles {
-  const allFiles = fs.readdirSync(articleDirectory || ARTICLE_DIRECTORY).reverse();
+export function getAllArticleFilePaths(articleDirectory?: string): string[] {
+  const baseDir = articleDirectory || ARTICLE_DIRECTORY;
+  return fs
+    .readdirSync(baseDir)
+    .flatMap((yearDir) => {
+      const yearPath = `${baseDir}/${yearDir}`;
+      return fs.readdirSync(yearPath).map((filename) => `${yearPath}/${filename}`);
+    })
+    .reverse();
+}
 
+export function getAllArticleSlugs(articleDirectory?: string): string[] {
+  const baseDir = articleDirectory || ARTICLE_DIRECTORY;
+  return fs
+    .readdirSync(baseDir)
+    .flatMap((yearDir) => fs.readdirSync(`${baseDir}/${yearDir}`))
+    .reverse();
+}
+
+function getPage(articleDirectory: string | undefined, page: number, pageSize: number) {
+  const allFiles = getAllArticleFilePaths(articleDirectory);
   const startIndex = (page - 1) * pageSize;
   const endIndex = startIndex + pageSize;
-
   const pageFiles = allFiles.slice(startIndex, endIndex);
-  const articles = pageFiles.map((filename) => readArticle(filename, articleDirectory || ARTICLE_DIRECTORY));
+  return { totalArticles: allFiles.length, totalPages: Math.ceil(allFiles.length / pageSize), pageFiles };
+}
 
-  return {
-    page,
-    pageSize,
-    totalArticles: allFiles.length,
-    totalPages: Math.ceil(allFiles.length / pageSize),
-    articles,
-  };
+export function getArticles(page: number, pageSize: number, articleDirectory?: string): PaginatedArticles {
+  const { pageFiles, totalArticles, totalPages } = getPage(articleDirectory, page, pageSize);
+  const articles = pageFiles.map((filename) => readArticle(filename));
+
+  return { page, pageSize, totalArticles, totalPages, articles };
 }
 
 export function getArticlesByTags(tags: string[], articleDirectory?: string): Article[] {
-  const allFiles = fs.readdirSync(articleDirectory || ARTICLE_DIRECTORY).reverse();
-  const allArticles = allFiles.map((filename) => readArticle(filename, articleDirectory || ARTICLE_DIRECTORY));
-
-  return allArticles.filter((article) =>
-    tags.some((tag) => article.tags?.map((tag) => tag.toLowerCase()).includes(tag.toLowerCase()))
-  );
+  return getAllArticleFilePaths(articleDirectory)
+    .map((filename) => readArticle(filename))
+    .filter((article) => tags.some((tag) => article.tags?.map((tag) => tag.toLowerCase()).includes(tag.toLowerCase())));
 }
 
 export function getArticleMatters(page: number, pageSize: number, articleDirectory?: string): PaginatedArticleMatters {
-  const allFiles = fs.readdirSync(articleDirectory || ARTICLE_DIRECTORY).reverse();
-
-  const startIndex = (page - 1) * pageSize;
-  const endIndex = startIndex + pageSize;
-
-  const pageFiles = allFiles.slice(startIndex, endIndex);
-  const articles = pageFiles.map((filename) => readArticleMatter(filename, articleDirectory));
-
-  return {
-    page,
-    pageSize,
-    totalArticles: allFiles.length,
-    totalPages: Math.ceil(allFiles.length / pageSize),
-    articles,
-  };
+  const { pageFiles, totalArticles, totalPages } = getPage(articleDirectory, page, pageSize);
+  const articles = pageFiles.map((filename) => readArticleMatter(filename));
+  return { page, pageSize, totalArticles, totalPages, articles };
 }

@@ -1,11 +1,13 @@
 import Article from "#/components/articles/Article";
 import { PageBase } from "#/components/page/PageBase";
 import { PageProps } from "#/lib/page";
-import { getArticle } from "#/content/article";
+import { getAllArticleFilePaths, getAllArticleSlugs, getArticleBySlug } from "#/content/article";
 import fs from "fs";
 
+const ARTICLE_DIRECTORY = "public/content/article";
+
 export default function Page({ params }: PageProps) {
-  const article = getArticle(params.slug, "public/content/article");
+  const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
   return (
     <PageBase>
       <Article article={article} />
@@ -14,6 +16,6 @@ export default function Page({ params }: PageProps) {
 }
 
 export function generateStaticParams() {
-  const allFiles = fs.readdirSync("public/content/article").reverse();
-  return allFiles.map((filename) => ({ slug: filename.replace(".md", "") }));
+  const allSlugs = getAllArticleSlugs(ARTICLE_DIRECTORY);
+  return allSlugs.map((filename) => ({ slug: filename.replace(".md", "") }));
 }

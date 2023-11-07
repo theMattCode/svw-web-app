@@ -6,12 +6,14 @@ import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import de from "date-fns/locale/de";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState, useTransition } from "react";
 import { setDefaultOptions } from "date-fns";
-import { Event } from "#/content/events";
+import { Event, EventMatter } from "#/content/events";
 import Link from "next/link";
 import { GrLocation } from "react-icons/gr";
 import { OptionalLink } from "#/components/link/Link";
+import { Spinner } from "#/components/spinner/Spinner";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 
 setDefaultOptions({ locale: de });
 
@@ -46,27 +48,54 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-type Props = {
-  events: Event[];
-};
+type Props = { agendaOnly?: boolean };
 
-export function EventCalendar({ events }: Props) {
+export function EventCalendar({ agendaOnly = false }: Props) {
+  const [events, setEvents] = useState<Event[] | false>(false);
+
+  useEffect(() => {
+    fetch("/api/events")
+      .then((response) => response.json())
+      .then((eventMatter: EventMatter[]) => {
+        setEvents(
+          eventMatter.flatMap((event) =>
+            event.calendarEntries.map((entry) => ({
+              ...entry,
+              start: new Date(entry.start),
+              end: new Date(entry.end),
+            }))
+          )
+        );
+      });
+  }, []);
+
+  if (events === false) {
+    return (
+      <div key="CalendarLoadingSpinner" className="transition-all w-full text-center">
+        <Spinner />
+      </div>
+    );
+  }
+
+  return <CalendarAdapter events={events} agendaOnly={agendaOnly} />;
+}
+
+function CalendarAdapter({ events, agendaOnly }: { events: Event[] } & Props) {
   const [view, setView] = useState<View>(Views.AGENDA);
   const [date, setDate] = useState(new Date());
   const onNavigate = useCallback((newDate: Date) => setDate(newDate), [setDate]);
-
   return (
     <Calendar
       localizer={localizer}
       events={events}
       view={view}
       onView={setView}
-      views={[Views.AGENDA, Views.DAY, Views.WEEK, Views.MONTH]}
+      views={agendaOnly ? [Views.AGENDA] : [Views.AGENDA, Views.DAY, Views.WEEK, Views.MONTH]}
       startAccessor="start"
       endAccessor="end"
       culture="de"
       messages={messages}
-      style={{ width: "100%", minHeight: 700 }}
+      style={{ width: "100%", minHeight: agendaOnly ? 300 : 700 }}
       date={date}
       length={365}
       onNavigate={onNavigate}
