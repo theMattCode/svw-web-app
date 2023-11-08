@@ -1,5 +1,9 @@
 name: 'Chromatic'
-on: push
+on:
+  push:
+    paths-ignore:
+      - 'public/content/'
+      - '.github'
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
@@ -11,4 +15,4 @@ jobs:
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          buildScriptName: 'storybook:build'
+          buildScriptName: 'build:storybook'
