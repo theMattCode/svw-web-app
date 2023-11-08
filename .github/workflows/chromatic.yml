@@ -2,8 +2,8 @@ name: 'Chromatic'
 on:
   push:
     paths-ignore:
-      - 'public/content/'
-      - '.github'
+      - 'public/content/**'
+      - '.github/**'
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
