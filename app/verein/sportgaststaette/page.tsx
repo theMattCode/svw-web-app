@@ -75,7 +75,11 @@ export default function Sportgaststaette() {
               </tr>
               <tr>
                 <td>Sonntag</td>
-                <td>11:30 – 22:00 Uhr</td>
+                <td>
+                  11:30 – 22:00 Uhr
+                  <br />
+                  Mittagsbuffet, Reservierung erwünscht
+                </td>
               </tr>
               <tr>
                 <td>An Feiertagen</td>

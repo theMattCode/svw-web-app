@@ -6,10 +6,10 @@ teaser: "Andrea Speier (2. Vorsitzende) und Martin Bayer (Vorstand für Finanzen
 tags:
   - Verein
 image:
-  src: /media/svw-emblem.svg
+  src: /media/svw-emblem-l.png
   alt: "SVW Emblem"
-  width: 512
-  height: 512
+  width: 1024
+  height: 384
 ---
 Stellvertretend für die vielen ehrenamtlichen Helferinnen und Helfer vor und hinter den Kulissen wollen wir heute zwei verdiente SVW-Mitglieder für ihren großen Einsatz würdigen.
 
