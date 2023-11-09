@@ -2,12 +2,18 @@ import React from "react";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import Link from "next/link";
 import { PageBase } from "#/components/page/PageBase";
-import { findItemByName, verein } from "#/content/sitemap";
+import { findItemByName, sponsoring, verein } from "#/content/sitemap";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+
+export const metadata: Metadata = {
+  title: getTitle(sponsoring.name),
+};
 
 export default function SpendenUndSponsoring() {
   return (
     <PageBase>
-      <BlockTitle title="Spenden und Sponsoring" />
+      <BlockTitle title={sponsoring.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
         <div className="flex flex-col gap-2">
           <h5>Sie wollen den SV Walddorf durch eine Spende unterstützen? Darüber freuen wir uns natürlich sehr!</h5>

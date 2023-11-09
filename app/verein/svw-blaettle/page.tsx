@@ -5,12 +5,19 @@ import { PDFViewer } from "#/components/pdf-viewer/PDFViewer";
 import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import Link from "next/link";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+import { svwBlaettle } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(svwBlaettle.name),
+};
 
 export default function SVWBlaettle() {
   const imageDimensions = calcImageDimensionsForWidth({ width: 3497, height: 4961 }, 300);
   return (
     <PageBase>
-      <BlockTitle title="s'SVW Blättle" />
+      <BlockTitle title={svwBlaettle.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
         <div className="w-full flex flex-col gap-2">
           <div className="flex flex-col gap-2 md:flex-row">

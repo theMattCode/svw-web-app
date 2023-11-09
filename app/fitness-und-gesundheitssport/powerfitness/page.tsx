@@ -1,11 +1,18 @@
 import React from "react";
+import Image from "next/image";
+import { Metadata } from "next";
+import { calcImageDimensionsForWidth } from "#/lib/image";
+import { getTitle } from "#/lib/page";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import Image from "next/image";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+import { powerFitness } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(powerFitness.name),
+};
 
 export default function Powerfitness() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -13,7 +20,7 @@ export default function Powerfitness() {
 
   return (
     <PageBase>
-      <BlockTitle title="Powerfitness" />
+      <BlockTitle title={powerFitness.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">

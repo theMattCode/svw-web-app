@@ -1,4 +1,10 @@
-export type PageProps = {
+import { club } from "#/content/club";
+
+export type PageProps<TSearchParams> = {
   params: { slug: string };
-  searchParams: { [key: string]: string | undefined };
+  searchParams: TSearchParams;
 };
+
+export function getTitle(prefix?: string) {
+  return `${prefix ? `${prefix} - ` : ""}${club.short}`;
+}

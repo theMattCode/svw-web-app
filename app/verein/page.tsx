@@ -1,8 +1,13 @@
-import { verein } from "#/content/sitemap";
 import React from "react";
-
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
 import { SubMenu } from "#/components/navigation/SubMenu";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { verein } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(verein.name),
+};
 
 export default function Verein() {
   return (

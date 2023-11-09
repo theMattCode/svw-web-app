@@ -4,11 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { PageBase } from "#/components/page/PageBase";
 import { club } from "#/content/club";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+import { geschaeftsstelle } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(geschaeftsstelle.name),
+};
 
 export default function Geschaeftsstelle() {
   return (
     <PageBase>
-      <BlockTitle title="Geschäftsstelle" />
+      <BlockTitle title={geschaeftsstelle.name} />
       <div className="bg-white shadow-2xl p-2 flex gap-4 flex-col lg:flex-row">
         <Image
           src="/media/verein/geschaeftsstelle_2023.jpg"

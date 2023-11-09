@@ -3,11 +3,18 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import Link from "next/link";
 import Image from "next/image";
 import { PageBase } from "#/components/page/PageBase";
+import { sportgaststaette } from "#/content/sitemap";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+
+export const metadata: Metadata = {
+  title: getTitle(sportgaststaette.name),
+};
 
 export default function Sportgaststaette() {
   return (
     <PageBase>
-      <BlockTitle title="Sportgaststätte Weiherwiesen" />
+      <BlockTitle title={sportgaststaette.name} />
       <div className="bg-white shadow-2xl p-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex flex-col grow">
           <h3>Kontakt</h3>

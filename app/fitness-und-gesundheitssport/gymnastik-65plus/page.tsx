@@ -1,11 +1,18 @@
 import React from "react";
+import Image from "next/image";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import Image from "next/image";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+import { gymnastik65plus } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(gymnastik65plus.name),
+};
 
 export default function Gymnastik65plus() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -13,7 +20,7 @@ export default function Gymnastik65plus() {
 
   return (
     <PageBase>
-      <BlockTitle title="Gymnastik 65plus" />
+      <BlockTitle title={gymnastik65plus.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">

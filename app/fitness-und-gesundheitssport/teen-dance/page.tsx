@@ -1,22 +1,25 @@
 import React from "react";
+import Link from "next/link";
+import { Metadata } from "next";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
-import Link from "next/link";
+import { teenDance } from "#/content/sitemap";
+import { getTitle } from "#/lib/page";
+
+export const metadata: Metadata = {
+  title: getTitle(teenDance.name),
+};
 
 export default function TeenDance() {
-  const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
-  const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
-
   const claudiaMusse = getPersonByName("Claudia Musse");
   const monikaHaar = getPersonByName("Monika Haar");
 
   return (
     <PageBase>
-      <BlockTitle title="Teen Dance" />
+      <BlockTitle title={teenDance.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">

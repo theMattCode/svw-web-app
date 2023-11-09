@@ -1,19 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PageBase } from "#/components/page/PageBase";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
-import Link from "next/link";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
 import { FussballDeWidget } from "#/components/widget/Fussball.de";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+
+export const metadata: Metadata = {
+  title: getTitle("Aktive"),
+};
 
 export default function Aktive() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3477, height: 1367 }, 1200);
   return (
     <PageBase>
-      <BlockTitle title="Aktive I + II" />
+      <BlockTitle title="Aktive" />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
