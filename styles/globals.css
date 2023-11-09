@@ -46,6 +46,14 @@ p > a, td > a {
     @apply font-normal underline text-svw-blue-darker
 }
 
+p > ul {
+    @apply list-disc
+}
+
+p > ul > li {
+    @apply ml-6
+}
+
 table {
     @apply w-full font-light overflow-scroll
 }
