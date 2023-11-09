@@ -1,6 +1,6 @@
 ---
 title: "Der SV Walddorf beim Frühjahrsempfang der Gemeinde"
-slug: "2023-04-04-article"
+slug: "2023-04-04-fruehjahrsempfang"
 date: "2023-04-04"
 ---
 Am Freitag vor der Osterwoche war der SV Walddorf mit zwei Abteilungen zum Frühjahrsempfang eingeladen. 
