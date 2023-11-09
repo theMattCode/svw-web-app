@@ -1,6 +1,6 @@
 import { club } from "#/content/club";
 
-export type PageProps<TSearchParams> = {
+export type PageProps<TSearchParams = {}> = {
   params: { slug: string };
   searchParams: TSearchParams;
 };
