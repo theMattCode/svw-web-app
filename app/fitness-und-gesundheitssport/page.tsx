@@ -1,16 +1,29 @@
 import React from "react";
+import { Metadata } from "next";
+import Link from "next/link";
+import {
+  fitnessUndGesundheitssport,
+  fitUndGesund,
+  gymnastik65plus,
+  powerFitness,
+  teenDance,
+  yoga,
+} from "#/content/sitemap";
+import { getTitle } from "#/lib/page";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import Link from "next/link";
-import { fitUndGesund, gymnastik65plus, powerFitness, teenDance, yoga } from "#/content/sitemap";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+
+export const metadata: Metadata = {
+  title: getTitle(fitnessUndGesundheitssport.name),
+};
 
 export default function FitnessUndGesundheitssport() {
   return (
     <PageBase>
-      <BlockTitle title="Fitness und Gesundheitssport" />
+      <BlockTitle title={fitnessUndGesundheitssport.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <p>
           In unserer Sparte Fitness & Gesundheit bieten wir ein vielfältiges Programm für alle Altersklassen an. Aktuell

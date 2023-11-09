@@ -1,10 +1,17 @@
 import Article from "#/components/articles/Article";
 import { PageBase } from "#/components/page/PageBase";
-import { PageProps } from "#/lib/page";
-import { getAllArticleFilePaths, getAllArticleSlugs, getArticleBySlug } from "#/content/article";
-import fs from "fs";
+import { getTitle, PageProps } from "#/lib/page";
+import { getAllArticleSlugs, getArticleBySlug } from "#/content/article";
+import { Metadata } from "next";
 
 const ARTICLE_DIRECTORY = "public/content/article";
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
+  return {
+    title: getTitle(article.title),
+  };
+}
 
 export default function Page({ params }: PageProps) {
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);

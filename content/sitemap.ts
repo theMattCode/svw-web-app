@@ -55,10 +55,14 @@ export const fitUndGesund: MenuItem = {
   name: "Fit und Gesund",
   url: "/fitness-und-gesundheitssport/fit-und-gesund",
 };
+export const hobbyHorsing: MenuItem = {
+  name: "HobbyHorsing",
+  url: "/fitness-und-gesundheitssport/hobbyhorsing",
+};
 export const fitnessUndGesundheitssport: MenuItem = {
   name: "Fitness & Gesundheitssport",
   url: "/fitness-und-gesundheitssport",
-  subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund],
+  subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund, hobbyHorsing],
 };
 
 export const fusballAktive = { name: "Aktive", url: "/fussball/aktive" };
@@ -68,7 +72,7 @@ export const fussballD = { name: "D-Junioren", url: "/fussball/d-junioren" };
 export const fussballE = { name: "E-Junioren", url: "/fussball/e-junioren" };
 export const fussballF = { name: "F-Junioren", url: "/fussball/f-junioren" };
 export const fussballBambini = { name: "Bambini", url: "/fussball/bambini" };
-export const fussballFrauen = { name: "Frauen", url: "/fussball/frauen" };
+export const fussballFrauen = { name: "Frauenfussball", url: "/fussball/frauen" };
 export const fussballHobby = { name: "Hobbykicker", url: "/fussball/hobbykicker" };
 export const fussball = {
   name: "Fußball",
@@ -109,6 +113,7 @@ export const activities: MenuItem[] = [
   teenDance,
   fitUndGesund,
   rehasport,
+  hobbyHorsing,
 ];
 
 export function findItemByName(menuItem: MenuItem, name: string): MenuItem | undefined {

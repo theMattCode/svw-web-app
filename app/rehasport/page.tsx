@@ -1,12 +1,18 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
+import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PersonCard } from "#/components/person/PersonCard";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+import { rehasport } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(rehasport.name),
+};
 
 export default function Rehasport() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
@@ -17,7 +23,7 @@ export default function Rehasport() {
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full bg-svw-blue-default bg-opacity-60 h-80" />
         </div>
-        <BlockTitle title="Rehasport" />
+        <BlockTitle title={rehasport.name} />
         <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
           <h3>Zertifizierte Kurse</h3>
           <p>

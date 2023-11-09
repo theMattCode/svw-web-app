@@ -1,6 +1,12 @@
 import { SubMenu } from "#/components/navigation/SubMenu";
 import { formales } from "#/content/sitemap";
 import React from "react";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+
+export const metadata: Metadata = {
+  title: getTitle(formales.name),
+};
 
 export default function Sparten() {
   return (

@@ -1,12 +1,18 @@
 import React from "react";
+import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { getTitle } from "#/lib/page";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PageBase } from "#/components/page/PageBase";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
-import Link from "next/link";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+
+export const metadata: Metadata = {
+  title: getTitle("Bambini"),
+};
 
 export default function Bambini() {
   const { width, height } = calcImageDimensionsForWidth({ width: 3157, height: 1351 }, 1200);

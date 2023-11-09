@@ -3,11 +3,18 @@ import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import Link from "next/link";
 import { club } from "#/content/club";
+import { impressum } from "#/content/sitemap";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+
+export const metadata: Metadata = {
+  title: getTitle(impressum.name),
+};
 
 export default function Impressum() {
   return (
     <PageBase>
-      <BlockTitle title="Impressum" />
+      <BlockTitle title={impressum.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
         <div className="w-full flex flex-col gap-2">
           <h3>Kontakt</h3>

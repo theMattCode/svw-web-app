@@ -1,18 +1,25 @@
 import React from "react";
+import Image from "next/image";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import Image from "next/image";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { getPersonByName } from "#/content/people";
+import { fitUndGesund } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(fitUndGesund.name),
+};
 
 export default function FitUndGesund() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
   return (
     <PageBase>
-      <BlockTitle title="Fit und Gesund" />
+      <BlockTitle title={FitUndGesund.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fitness-und-gesundheitssport/fit-und-gesund-2019.jpg"

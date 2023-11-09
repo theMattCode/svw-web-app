@@ -1,19 +1,26 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+import { calcImageDimensionsForWidth } from "#/lib/image";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import Image from "next/image";
-import { calcImageDimensionsForHeight, calcImageDimensionsForWidth } from "#/lib/image";
 import { PersonCard } from "#/components/person/PersonCard";
-import { getPersonByName } from "#/content/people";
-import { club } from "#/content/club";
-import Link from "next/link";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { club } from "#/content/club";
+import { getPersonByName } from "#/content/people";
+import { badminton } from "#/content/sitemap";
+
+export const metadata: Metadata = {
+  title: getTitle(badminton.name),
+};
 
 export default function Badminton() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4085, height: 2298 }, 1520);
   return (
     <PageBase>
-      <BlockTitle title="Badminton" />
+      <BlockTitle title={badminton.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/badminton/badminton-team-2021-08-22.jpg"

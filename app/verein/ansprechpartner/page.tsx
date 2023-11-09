@@ -4,11 +4,18 @@ import Link from "next/link";
 import { PageBase } from "#/components/page/PageBase";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName, getPersonByTag } from "#/content/people";
+import { ansprechpartner } from "#/content/sitemap";
+import { Metadata } from "next";
+import { getTitle } from "#/lib/page";
+
+export const metadata: Metadata = {
+  title: getTitle(ansprechpartner.name),
+};
 
 export default function Ansprechpartner() {
   return (
     <PageBase>
-      <BlockTitle title="Ansprechpartner" />
+      <BlockTitle title={ansprechpartner.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
         <div className="flex flex-col gap-2">
           <p className="font-light">
