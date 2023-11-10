@@ -3,6 +3,7 @@ import Image from "next/image";
 import { formatDate } from "#/lib/format";
 import { Article } from "#/content/article";
 import { calcImageDimensionsForWidth } from "#/lib/image";
+import { SoccerMatch } from "#/components/match/SoccerMatch";
 
 type Props = {
   article: Article;
@@ -20,6 +21,7 @@ export default function Article({ article }: Props): JSX.Element {
       <div className="transition-all flex flex-col gap-2 md:p-2">
         <h1>{article?.title}</h1>
         <div className="text-sm">{formatDate(article.date)}</div>
+        {article.match && <SoccerMatch match={article.match} />}
         <Markdown key={article.slug} content={article.content} />
       </div>
     </article>

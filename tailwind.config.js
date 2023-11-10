@@ -30,6 +30,9 @@ module.exports = {
           "100%": { opacity: 0.2 },
         },
       }),
+      gridTemplateColumns: {
+        match: "2fr 1fr 2fr",
+      },
     },
     container: {
       center: true,

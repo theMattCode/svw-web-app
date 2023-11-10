@@ -1,6 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { Image } from "#/content/image";
+import { Match } from "#/content/match";
 
 export const DEFAULT_PAGE = 1;
 export const DEFAULT_PAGE_SIZE = 10;
@@ -16,6 +17,7 @@ export type ArticleMatter = {
   promote?: boolean;
   createdAt?: string;
   teaser?: string;
+  match?: Match;
 };
 
 export type Article = ArticleMatter & {
