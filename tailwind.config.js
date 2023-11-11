@@ -31,7 +31,7 @@ module.exports = {
         },
       }),
       gridTemplateColumns: {
-        match: "2fr 1fr 2fr",
+        match: "3fr 1fr 3fr",
       },
     },
     container: {
