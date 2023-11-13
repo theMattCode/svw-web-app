@@ -23,6 +23,16 @@ export default function Rehasport() {
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full bg-svw-blue-default bg-opacity-60 h-80" />
         </div>
+        <BlockTitle title="Ankündigung" />
+        <div className="bg-svw-blue-lighter bg-opacity-75 p-2">
+          <h4>Während den Weihnachtsferien findet kein Rehasport statt.</h4>
+          <p>
+            Letzter Rehasporttag vor den Ferien ist <b>Donnerstag, 21. Dezember 2023</b>.
+          </p>
+          <p>
+            Nach den Ferien geht es im neuen Jahr am <b>Dienstag, 9. Januar 2024</b>, weiter.
+          </p>
+        </div>
         <BlockTitle title={rehasport.name} />
         <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
           <h3>Zertifizierte Kurse</h3>
