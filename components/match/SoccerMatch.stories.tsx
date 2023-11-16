@@ -14,6 +14,8 @@ const meta: Meta<typeof SoccerMatch> = {
       competition: {
         name: "Competition",
         link: { title: "Fussball.de", url: "https://fussball.de", extern: true },
+        season: "1. Bundesliga",
+        round: "1. Spieltag",
       },
       result: { home: { final: 2, halftime: 1 }, away: { final: 1, halftime: 0 } },
       events: [

@@ -15,21 +15,15 @@ match:
   competition:
     name: "D-Junioren Quali-Kreisstaffel 5"
     season: "2023/24"
-    round: "5. Spieltag"
+    round: "7. Spieltag"
     link: "https://www.fussball.de/spiel/sgm-sv-walddorf-schoenbuch-united-ii-sgm-tsv-pliezhausen-ii/-/spiel/02MSOAS7DG000000VS5489B4VV7JEO4N#!/"
   opponents:
     home:
-      name: "SGM Schönbuch United II"
+      name: "Schönbuch United II"
       logo: "/media/logo/sv-walddorf-2023.png"
     away:
       name: "SGM TSV Pliezhausen II"
       logo: "/media/logo/tsv-pliezhausen-2023.png"
-  events:
-    - type: "goal"
-      subtype: "regular"
-      team: "home"
-      time: 30
-      scorer: "(26)"
   result:
     home:
       final: 1
