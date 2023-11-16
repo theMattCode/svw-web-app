@@ -20,15 +20,12 @@ import {
   verein,
   vorstand,
 } from "#/content/sitemap";
+import { Link } from "#/content/link";
 
 type Footer = {
   blocks: {
     title: string;
-    links: {
-      title: string;
-      url: string;
-      extern?: boolean;
-    }[];
+    links: Link[];
   }[];
 };
 export const footer: Footer = {
