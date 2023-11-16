@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { SoccerMatch } from "#/components/match/SoccerMatch";
+import { SoccerMatchReport } from "#/components/match/SoccerMatchReport";
 
-const meta: Meta<typeof SoccerMatch> = {
-  component: SoccerMatch,
+const meta: Meta<typeof SoccerMatchReport> = {
+  component: SoccerMatchReport,
   title: "Components/Match/SoccerMatch",
   args: {
     match: {
@@ -28,6 +28,6 @@ const meta: Meta<typeof SoccerMatch> = {
 
 export default meta;
 
-type Story = StoryObj<typeof SoccerMatch>;
+type Story = StoryObj<typeof SoccerMatchReport>;
 
 export const Default: Story = {};

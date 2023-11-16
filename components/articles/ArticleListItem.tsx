@@ -4,7 +4,7 @@ import Teaser from "./Teaser";
 import { ArticleMatter } from "#/content/article";
 import { calcImageDimensionsForHeight } from "#/lib/image";
 import { SoccerMatchPreview } from "#/components/match/SoccerMatchPreview";
-import { SoccerMatch } from "#/components/match/SoccerMatch";
+import { SoccerMatchReport } from "#/components/match/SoccerMatchReport";
 
 type Props = {
   articleMatter: ArticleMatter;

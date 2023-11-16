@@ -7,7 +7,7 @@ type Props = {
   match: SoccerMatch;
 };
 
-export function SoccerMatch({ match }: Props) {
+export function SoccerMatchReport({ match }: Props) {
   const homeTeam = match.opponents.home;
   const awayTeam = match.opponents.away;
   return (
