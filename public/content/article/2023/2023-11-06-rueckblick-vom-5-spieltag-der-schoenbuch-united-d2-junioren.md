@@ -1,8 +1,7 @@
 ---
-title: "Rückblick vom Nachholtermin des 5. Spieltags der Schönbuch United D2-Junioren"
+title: "Spielbericht D-Junioren II"
 slug: 2023-11-06-rueckblick-vom-5-spieltag-der-schoenbuch-united-d2-junioren
 date: 2023-11-06
-teaser: "Kreisstaffel 5: Schönbuch United II - Reutlinger Juniors III 2:0 (0:0)"
 image:
   src: "/media/sparten/fussball/d-junioren-team-2023-24.png"
   alt: "D-Junioren Team 2023/24"
@@ -15,6 +14,8 @@ match:
   type: "soccer"
   competition:
     name: "D-Junioren Quali-Kreisstaffel 5"
+    season: "2023/24"
+    round: "5. Spieltag"
     link: "https://www.fussball.de/spieltagsuebersicht/d-junioren--quali-kreisstaffel-5-bezirk-alb-kl-d-junioren-kreisstaffel-d-junioren-saison2324-wuerttemberg/-/staffel/02MRREV5M8000000VS5489B3VT9H7HT8-G#!/"
   opponents:
     home:
@@ -42,7 +43,9 @@ match:
       final: 0
       halftime: 0
 ---
-Unter Flutlicht fand das gestrige Nachholspiel gegen die Reutlinger Juniors statt und schon in der Anfangsphase wurde deutlich, dass dies kein Spaziergang werden würde.
+## Rückblick vom Nachholtermin
+
+Unter Flutlicht fand das Nachholspiel gegen die Reutlinger Juniors statt und schon in der Anfangsphase wurde deutlich, dass dies kein Spaziergang werden würde.
 
 Obwohl wir mehr Spielanteile hatten, setzten die schnellen, quirligen Reutlinger immer wieder gefährliche Nadelstiche und unsere Abwehrreihe bekam einiges zu tun. Die erste Hälfte war relativ ausgeglichen, wir konnten unsere optische Überlegenheit nicht nutzen - oft fehlte bei uns der letzte Pass oder wir rannten uns in deren Abwehr fest. Reutlingen vergab eine Großchance - hier hätten wir durchaus in Rückstand geraten können. Wir hatten uns für dieses Spiel viel mehr vorgenommen, doch die Reutlinger hielten (noch) dagegen. Sichtlich enttäuscht gingen wir in die Halbzeitpause.
 

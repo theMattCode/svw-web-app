@@ -16,6 +16,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/media/hero/bg.jpg')",
         "hero-rehasport": "url('/media/hero/rehasport-hero-2021-07-20.jpg')",
+        "soccer-match-bg": "url('/media/res/matchbg.png')",
       },
       // that is animation class
       animation: {
@@ -31,7 +32,7 @@ module.exports = {
         },
       }),
       gridTemplateColumns: {
-        match: "3fr 1fr 3fr",
+        match: "10fr 1fr 10fr",
       },
     },
     container: {
