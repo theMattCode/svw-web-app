@@ -29,7 +29,7 @@ export function ArticleListItem({ articleMatter }: Props): JSX.Element {
         />
       )}
       <div className="w-full flex flex-col justify-between gap-1 text-sm">
-        <div className="w-full text-xl font-medium">{articleMatter.title}</div>
+        <div className="w-full text-xl font-medium px-1">{articleMatter.title}</div>
         {articleMatter.teaser && <Teaser content={articleMatter.teaser} />}
         {articleMatter.match && articleMatter.match.type === "soccer" && (
           <SoccerMatchPreview match={articleMatter.match} />

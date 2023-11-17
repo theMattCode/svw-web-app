@@ -19,7 +19,7 @@ match:
     link: "https://www.fussball.de/spiel/sgm-tsv-sickenhausen-degerschlacht-ii-sgm-sv-walddorf-schoenbuch-united-ii/-/spiel/02MSOAS7K0000000VS5489B4VV7JEO4N#!/"
   opponents:
     home:
-      name: "SGM Degerschlacht/Sickenhausen II"
+      name: "SGM Degerschlacht / Sickenhausen II"
       logo: "/media/logo/tsv-sickenhausen-2023.png"
     away:
       name: "Schönbuch United II"

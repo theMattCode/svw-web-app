@@ -46,7 +46,7 @@ function Result({ home, away }: { home: SoccerMatchResult; away: SoccerMatchResu
   return (
     <div className="transition-all flex justify-center items-center">
       <div className="w-fit flex flex-col">
-        <div className="lg:h-full transition-all flex flex-nowrap bg-svw-blue-default text-white text-lg font-bold justify-center items-center px-2 py-0.5">
+        <div className="lg:h-full transition-all flex flex-nowrap whitespace-nowrap bg-svw-blue-default text-white text-lg font-bold justify-center items-center px-2 py-0.5">
           {home.final} : {away.final}
         </div>
       </div>

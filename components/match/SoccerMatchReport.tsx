@@ -52,7 +52,7 @@ export function Result({ home, away }: { home: SoccerMatchResult; away: SoccerMa
         <div className="md:h-full transition-all flex flex-nowrap bg-svw-blue-default text-white text-xl sm:text-3xl font-extrabold justify-center items-center px-2 sm:px-6 py-0.5 sm:py-1.5 whitespace-nowrap">
           {home.final} : {away.final}
         </div>
-        <div className="flex flex-nowrap bg-svw-blue-darker text-white text-sm sm:text-md font-medium justify-center items-center py-0.5">
+        <div className="flex flex-nowrap bg-svw-blue-darker text-white text-sm sm:text-md font-medium justify-center items-center py-0.5 whitespace-nowrap">
           {home.halftime} : {away.halftime}
         </div>
       </div>
