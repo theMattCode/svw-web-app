@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "description": "SV Walddorf Next.JS App",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "dev:storybook": "storybook dev -p 6006",
@@ -43,7 +46,7 @@
     "@testing-library/user-event": "^14.5.1",
     "@types/jest": "^29.5.8",
     "@types/mdx": "^2.0.10",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.9.1",
     "@types/react": "^18.2.37",
     "@types/react-big-calendar": "^1.8.4",
     "@types/react-dom": "^18.2.15",
@@ -58,7 +61,7 @@
     "prettier": "^3.1.0",
     "raw-loader": "^4.0.2",
     "storybook": "^7.5.3",
-    "tailwindcss": "^3.2.4",
+    "tailwindcss": "^3.3.5",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript": "^4.9.4"
   }
