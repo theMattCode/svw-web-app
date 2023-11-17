@@ -19,7 +19,7 @@ match:
     link: "https://www.fussball.de/spiel/sgm-kirchentellinsfurt-kusterdingen-sv-walddorf-ii/-/spiel/02MEEB7STS000000VS5489B3VUHHBIEF#!/"
   opponents:
     home:
-      name: "SGM Kirchentellinsfurt-Kusterdingen"
+      name: "SGM Kirchentellinsfurt / Kusterdingen"
       logo: "/media/logo/sg-reutlingen-2023.png"
     away:
       name: "SV Walddorf II"
