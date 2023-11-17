@@ -6,7 +6,7 @@ type Props = {
 };
 export default function Teaser({ content }: Props): JSX.Element | null {
   return (
-    <div className="py-2 flex flex-col gap-1 h-full">
+    <div className="p-1 flex flex-col gap-1 h-full">
       {content && (
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
