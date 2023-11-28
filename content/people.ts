@@ -93,7 +93,7 @@ export const people: Person[] = [
     tags: ["Rehasport"],
     email: "rehasport@svwalddorf.de",
     phone: ["+49 7127 580676"],
-    image: { src: "/media/people/ingrid-hartlieb-2023.jpg", alt: "Ingrid Hartlieb", width: 849, height: 1024 },
+    image: { src: "/media/people/ingrid-hartlieb-2023.png", alt: "Ingrid Hartlieb", width: 836, height: 883 },
   },
   {
     firstname: "Antonino",
