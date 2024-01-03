@@ -1,7 +1,7 @@
 ---
 title: Rehasport macht Weihnachtspause
 activeDate: 2023-11-13 00:00
-expiryDate: 2024-01-12 00:00
+expiryDate: 2024-01-10 00:00
 tags:
   - Rehasport
 image: 

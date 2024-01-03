@@ -1,7 +1,7 @@
 ---
 title: Der SV Walddorf wünscht Frohe Weihnachten
 activeDate: 2023-12-15 00:00
-expiryDate: 2024-12-31 00:00
+expiryDate: 2023-12-31 00:00
 tags:
   - Verein
 image: 
