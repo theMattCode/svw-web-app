@@ -16,14 +16,15 @@ Beim ersten Spiel gegen den SV Felldorf konnte sich die Mannschaft auswärts sou
 
 Es spielten:
 
-|---|---|---|---|
-|**1. Herreneinzel:**|Julian Petermann|Sieg in 2 Sätzen|8:21, 14:21|
-|**2. Herreneinzel:**|Jonas Tittmann|Sieg in 2 Sätzen|13:21, 19:21|
-|**3. Herreneinzel:**|Lorenz Fritz|Sieg in 2 Sätzen|17:21, 8:21|
-|**Dameneinzel:**|Milena Heim|Sieg in 2 Sätzen|9:21, 9:21|
-|**1. Herrendoppel:**|Julian Petermann, Jonas Tittmann|Sieg in 2 Sätzen|20:22, 8:21|
-|**2. Herrendoppel:**|Max Rapp, Lorenz Fritz|Sieg in 2 Sätzen|13:21, 8:21|
-|**Mixed:**|Max Rapp, Julia Meyle|Niederlage in 3 Sätzen|15:21, 21:13, 24:22|
+| Begegnung            | Spieler                          | Ergebnis               | Sätze               |
+|----------------------|----------------------------------|------------------------|---------------------|
+| **1. Herreneinzel:** | Julian Petermann                 | Sieg in 2 Sätzen       | 8:21, 14:21         |
+| **2. Herreneinzel:** | Jonas Tittmann                   | Sieg in 2 Sätzen       | 13:21, 19:21        |
+| **3. Herreneinzel:** | Lorenz Fritz                     | Sieg in 2 Sätzen       | 17:21, 8:21         |
+| **Dameneinzel:**     | Milena Heim                      | Sieg in 2 Sätzen       | 9:21, 9:21          |
+| **1. Herrendoppel:** | Julian Petermann, Jonas Tittmann | Sieg in 2 Sätzen       | 20:22, 8:21         |
+| **2. Herrendoppel:** | Max Rapp, Lorenz Fritz           | Sieg in 2 Sätzen       | 13:21, 8:21         |
+| **Mixed:**           | Max Rapp, Julia Meyle            | Niederlage in 3 Sätzen | 15:21, 21:13, 24:22 |
 
 Nach den aufregenden und spannenden Spielen wurde der Sieg gebührend in unserer Sportgaststätte gefeiert.
 
