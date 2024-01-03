@@ -9,6 +9,7 @@ image:
   height: 392
 tags:
   - Fitness und Gesundheitssport
+  - Teen Dance
 teaser: "Die Mädels der Teen Dance Gruppe Coole Engel feiern mit ihrer Übungsleiterin Andrea Speier Weihnachten"
 ---
 Am 14.12. feierten die Mädels der Teen Dance Gruppe mit ihrer Übungsleiterin Andrea Speier ihre Weihnachtsfeier in der Sportgaststätte Weiherwiesen. Bei leckerem Essen mit Pommes, Chicken-Nuggets, Spätzle und Soße konnten sich die Mädels stärken bevor ein Überraschungsgast zur Tür hereinkam: der Weihnachtsmann. Schnell wurde entschieden, welches Lied vorgetragen werden sollte. Es gefiel dem Weihnachtsmann sehr und so belohnte er die Mädels mit einer Kleinigkeit aus seinem Sack. Alle freuten sich über ihr Geschenk und als noch eine Kugel Eis für jeden zum Nachtisch spendiert wurde, fand die Feier ihren perfekten Abschluss. Bei dieser Gelegenheit bedanken wir uns ganz herzlich bei unserer Pächterfamilie, ihr seid Spitze!
