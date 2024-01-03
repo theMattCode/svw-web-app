@@ -8,6 +8,7 @@ image:
   width: 1024
   height: 392
 tags:
+  - Fitness und Gesundheitssport
   - Teen Dance
 ---
 ![](/media/2023/2023-06-28-flyer-teendance-uebungsleitung-gesucht.jpg)

@@ -9,6 +9,7 @@ image:
   width: 1024
   height: 392
 tags:
+  - Fitness und Gesundheitssport
   - Teen Dance
 ---
 Ab dem **15.06.2023** wird **Ronja** (21) die Leitung der **dritten Teendance-Gruppe** (Mädchen ab 14 Jahren) übernehmen. Trainiert wird immer **donnerstags, von 17:20 bis 18:20 Uhr im Gymnastikraum (Spiegelraum) der Ballspielhalle.**
