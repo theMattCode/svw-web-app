@@ -1,25 +1,26 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FiChevronLeft, FiChevronRight, FiChevronsLeft, FiChevronsRight } from "react-icons/fi";
 
 type Props = {
   children: JSX.Element | JSX.Element[];
 };
 export function Carousel({ children }: Props) {
   const length = "length" in children ? children.length : 1;
+  const base = "h-full inline-flex items-center justify-center p-2";
+  const button = `${base} text-lg hover:ring-0 hover:bg-svw-blue-dark hover:text-white`;
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const timeout = setTimeout(
-      () => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1),
-      6000
-    );
+    const timeout = setTimeout(() => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1), 6000);
     return () => clearTimeout(timeout);
   }, [currentSlide, length, setCurrentSlide]);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pb-2">
       <div className="overflow-hidden relative">
         <div
           className="flex transition-transform ease-out duration-500"
@@ -29,39 +30,23 @@ export function Carousel({ children }: Props) {
         </div>
       </div>
       {length > 1 && (
-        <div className="container flex justify-center gap-2">
+        <ul className="rounded-md bg-svw-blue-default inline-flex text-sm text-white items-center justify-center self-center divide-x">
           <button
-            className="flex items-center justify-center w-6 h-6 bg-svw-blue-default text-white text-2xl"
-            onClick={() =>
-              setCurrentSlide(
-                currentSlide === 0 ? length - 1 : currentSlide - 1
-              )
-            }
+            onClick={() => setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1)}
+            className={`${button} rounded-l-md`}
           >
-            &lt;
+            <FiChevronLeft />
           </button>
-          <div className="flex gap-2 items-center">
-            {Array.from({ length }, (_, index) => (
-              <button
-                key={index}
-                className={`w-4 h-4 ${
-                  index === currentSlide ? "bg-svw-blue-default" : "bg-white"
-                }`}
-                onClick={() => setCurrentSlide(index)}
-              />
-            ))}
+          <div className={base}>
+            {currentSlide + 1} von {length}
           </div>
           <button
-            className="flex items-center justify-center w-6 h-6 bg-svw-blue-default text-white text-2xl"
-            onClick={() =>
-              setCurrentSlide(
-                currentSlide === length - 1 ? 0 : currentSlide + 1
-              )
-            }
+            onClick={() => setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1)}
+            className={`${button} rounded-r-md`}
           >
-            &gt;
+            <FiChevronRight />
           </button>
-        </div>
+        </ul>
       )}
     </div>
   );
