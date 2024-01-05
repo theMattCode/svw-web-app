@@ -10,6 +10,7 @@ image:
 teaser: "Neuer HobbyHorsing-Kurs beim SV Walddorf"
 tags:
   - Hobby Horsing
+  - Fitness und Gesundheitssport
 ---
 Wir freuen uns, euch unseren brandneuen Hobbyhorsing-Kurs im Rahmen unseres Sportangebotes „Spiel und Spaß“ beim Sportverein Walddorf vorzustellen! Taucht ein in die wunderbare Welt des Hobbyhorsing und erlebt gemeinsam mit uns einzigartige Abenteuer auf dem Rücken eurer eigenen, handgemachten Pferde!
 

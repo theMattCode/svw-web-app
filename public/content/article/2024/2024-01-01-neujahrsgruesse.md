@@ -1,7 +1,7 @@
 ---
 title: "Ein frohes neues Jahr..."
-slug: 2024-01-05-neujahrsgruesse
-date: 2024-01-05
+slug: 2024-01-01-neujahrsgruesse
+date: 2024-01-01
 image:
   src: "/media/res/neujahr-2024.png"
   alt: "Neujahr 2024"
