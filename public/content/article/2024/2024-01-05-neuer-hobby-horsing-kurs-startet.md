@@ -20,4 +20,8 @@ Am Freitag, den 26. Januar 2024, starten wir einen weiteren Hobby Horsing-Kurs:
 - Kursgebühr: 28,-€ für Vereinsmitglieder
 - Ort: Gymnastikraum in der Ballspielhalle
 
-Anmeldung und weitere Informationen gibt es bei [Kerstin Fischer](mailto:kerstin.fischer@svwalddorf.de) und auf der [Hobby Horsing-Webseite](/fitness-und-gesundheitssport/hobbyhorsing).
+### Anmeldung
+
+Bitte das [Anmeldeformular](/download/2024-01-07_Kursanmeldung_Hobby_Horsing.pdf) vollständig ausgefüllt und unterschrieben an [Kerstin Fischer](mailto:kerstin.fischer@svwalddorf.de) schicken.
+
+Weitere Informationen gibt es bei [Kerstin Fischer](mailto:kerstin.fischer@svwalddorf.de) und auf der [Hobby Horsing-Webseite](/fitness-und-gesundheitssport/hobbyhorsing).
