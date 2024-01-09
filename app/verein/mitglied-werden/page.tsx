@@ -21,9 +21,7 @@ export default function MitgliedWerden() {
           <p>
             Die <b>Eintrittserklärung</b> sowie die&nbsp;
             <b>Einwilligungserklärung zum Datenschutz</b> können sie direkt{" "}
-            <Link href="/download/Eintrittserklaerung_mit_Datenschutz_Sportverein_Walddorf_1904_e_V.pdf">
-              hier herunterladen
-            </Link>
+            <Link href="/download/2023-03-04_Eintrittserklaerung_mit_Datenschutz_Formular.pdf">hier herunterladen</Link>
             .
           </p>
           <p>
