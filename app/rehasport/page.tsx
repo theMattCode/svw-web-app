@@ -23,16 +23,6 @@ export default function Rehasport() {
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full bg-svw-blue-default bg-opacity-60 h-80" />
         </div>
-        <BlockTitle title="Ankündigung" />
-        <div className="bg-svw-blue-lighter bg-opacity-75 p-2">
-          <h4>Während den Weihnachtsferien findet kein Rehasport statt.</h4>
-          <p>
-            Letzter Rehasporttag vor den Ferien ist <b>Donnerstag, 21. Dezember 2023</b>.
-          </p>
-          <p>
-            Nach den Ferien geht es im neuen Jahr am <b>Dienstag, 9. Januar 2024</b>, weiter.
-          </p>
-        </div>
         <BlockTitle title={rehasport.name} />
         <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
           <h3>Zertifizierte Kurse</h3>
@@ -114,12 +104,118 @@ export default function Rehasport() {
             </ul>
           </p>
           <h3>Kursprogramm</h3>
-          <Image
-            src="/media/sparten/rehasport/kursprogramm-2022-09-15.jpg"
-            alt="Rehasport Kursprogramm"
-            width={1364}
-            height={729}
-          />
+          <table className="border-separate border-spacing-x-0.5">
+            <thead>
+              <tr>
+                <td>Montag</td>
+                <td>Dienstag</td>
+                <td>Mittwoch</td>
+                <td>Donnerstag</td>
+                <td>Freitag</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td className="bg-amber-200 border-1">
+                  <div className="flex flex-col items-center">
+                    <div>9:00 - 9:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td className="bg-green-300">
+                  <div className="flex flex-col items-center">
+                    <div>9:00 - 9:45 Uhr</div>
+                    <div className="font-medium">Sport nach Krebs</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>10:00 - 10:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>10:00 - 10:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>11:00 - 11:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>11:00 - 11:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>16:00 - 16:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>17:00 - 17:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>18:00 - 18:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>18:30 - 19:15 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             Mehr Informationen zum Rehasportkurs &quot;Sport nach Krebs&quot; gibt&apos;s im&nbsp;
             <Link href="/download/Flyer_Rehasport_2022-01-01.pdf">Flyer zum Download</Link>.
