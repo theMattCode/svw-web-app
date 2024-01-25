@@ -155,7 +155,7 @@ export default function Rehasport() {
                       <span>
                         <FaInfoCircle />
                       </span>
-                      &nbsp;ab 08.02.: 10:00 - 10:45 Uhr
+                      &nbsp;ab 08.02.2024: 10:00 - 10:45 Uhr
                     </div>
                     <div className="font-medium">Orthopädie</div>
                   </div>
