@@ -22,7 +22,7 @@ export default function Rehasport() {
     <div className="bg-neutral-200 pb-8 px-2">
       <div className="container flex flex-col gap-2">
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
-          <div className="w-full bg-svw-blue-default bg-opacity-60 h-80" />
+          <div className="w-full h-80" />
         </div>
         <BlockTitle title={rehasport.name} />
         <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
