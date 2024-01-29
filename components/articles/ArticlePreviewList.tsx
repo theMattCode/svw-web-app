@@ -15,7 +15,7 @@ type Props = {
 export function ArticlePreviewList({ pageSize = DEFAULT_PAGE_SIZE, tags, showTitle = true }: Props) {
   const articles =
     tags && tags.length > 0
-      ? getArticlesByTags(tags, "public/content/article")
+      ? getArticlesByTags(tags, "public/content/article").slice(0, pageSize)
       : getArticles(1, pageSize, "public/content/article").articles;
 
   if (articles.length === 0) {
