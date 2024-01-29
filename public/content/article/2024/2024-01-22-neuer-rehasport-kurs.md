@@ -3,7 +3,7 @@ title: "Neuer Rehasport-Kurs beim SV Walddorf."
 slug: 2024-01-22-neuer-rehasport-kurs
 date: 2024-01-22
 image:
-  src: /media/hero/rehasport-hero-2021-07-20.jpg
+  src: /media/hero/rehasport-hero-2024-01-29.jpg
   width: 4032
   height: 3024
   alt: rehasport
