@@ -1,4 +1,8 @@
-export default async function CMSIndexPage(): Promise<JSX.Element | null> {
+"use client";
+
+import { JSX } from "react";
+
+export default function CMSIndexPage(): JSX.Element | null {
   // Check if the application is running in development mode
   if (process.env.NODE_ENV !== "development") {
     // Redirect to the home page or show a message indicating the page is not available
