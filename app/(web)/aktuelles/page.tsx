@@ -1,9 +1,9 @@
-import { ArticleList } from "#/components/articles/ArticleList";
-import { getTitle, PageProps } from "#/lib/page";
-import { PaginatedArticleMatters } from "#/content/article";
-import { getURL } from "#/lib/url";
+import { ArticleList } from "../../../components/articles/ArticleList";
+import { getTitle, PageProps } from "../../../lib/page";
+import { PaginatedArticleMatters } from "../../../content/article";
+import { getURL } from "../../../lib/url";
 import { Metadata } from "next";
-import { aktuelles } from "#/content/sitemap";
+import { aktuelles } from "../../../content/sitemap";
 
 export const metadata: Metadata = {
   title: getTitle(aktuelles.name),
