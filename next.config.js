@@ -24,7 +24,7 @@ const nextConfig = {
     return config;
   },
   async redirects() {
-    return [
+    const redirects = [
       {
         source: "/der-verein/veranstaltungen/9m-turnier",
         destination: "/event/2024-01-13-9m-turnier",
@@ -81,6 +81,16 @@ const nextConfig = {
         permanent: true,
       },
     ];
+
+    if (process.env.NODE_ENV !== "development") {
+      redirects.push({
+        source: "/cms",
+        destination: "/",
+        permanent: true,
+      });
+    }
+
+    return redirects;
   },
 };
 
