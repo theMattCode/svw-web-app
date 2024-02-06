@@ -3,6 +3,7 @@ import { AnnouncementsBlock } from "#/components/announcements/AnnouncementsBloc
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { EventCalendar } from "#/components/calendar/Calendar";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { JSX } from "react";
 
 export default async function IndexPage(): Promise<JSX.Element | null> {
   return (

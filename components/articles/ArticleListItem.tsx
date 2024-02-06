@@ -1,10 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
-import Teaser from "./Teaser";
+import { SoccerMatchPreview } from "#/components/match/SoccerMatchPreview";
 import { ArticleMatter } from "#/content/article";
 import { calcImageDimensionsForHeight } from "#/lib/image";
-import { SoccerMatchPreview } from "#/components/match/SoccerMatchPreview";
-import { SoccerMatchReport } from "#/components/match/SoccerMatchReport";
+import Image from "next/image";
+import Link from "next/link";
+import { JSX } from "react";
+import Teaser from "./Teaser";
 
 type Props = {
   articleMatter: ArticleMatter;
@@ -37,11 +37,7 @@ export function ArticleListItem({ articleMatter }: Props): JSX.Element {
         <div className="flex flex-row justify-between">
           <div className="flex flex-row gap-1 md:gap-4">
             <div className="flex gap-1 font-medium text-white uppercase flex-wrap">
-              {articleMatter.tags?.map((tag: string) => (
-                <div key={tag} className="flex bg-svw-blue-default py-1 px-2 whitespace-nowrap items-center">
-                  {tag}
-                </div>
-              ))}
+              {articleMatter.tags?.map((tag: string) => <Tag key={tag} tag={tag} />)}
             </div>
           </div>
           <div className="flex flex-row font-light items-end">
@@ -52,4 +48,10 @@ export function ArticleListItem({ articleMatter }: Props): JSX.Element {
       </div>
     </Link>
   );
+}
+
+type TagProps = { tag: string };
+
+export function Tag({ tag }: TagProps): JSX.Element {
+  return <div className="flex items-center bg-svw-blue-default text-white py-1 px-2 whitespace-nowrap">{tag}</div>;
 }
