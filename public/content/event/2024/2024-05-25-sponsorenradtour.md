@@ -33,7 +33,7 @@ Teilnahme gerne auch mit E-Bike
 * **Unkostenbeitrag:** 
   90 € pro Teilnehmer (Tourverpflegung, Abendessen, Übernachtung, Frühstück)
   40 € Tour-Pauschale (ohne Übernachtung und Abendessen)
-* **Anmeldung:** Per E-Mail unter [sponsorenradtour@svwalddorf.de](mailto:sponsorenradtour@svwalddorf.de)
+* **Anmeldung:** [Anmeldeformular](/download/2024-02-06_Anmeldung_Sponsorenradtour.pdf)  per E-Mail unter [sponsorenradtour@svwalddorf.de](mailto:sponsorenradtour@svwalddorf.de) - 
 * **Weitere Informationen:** Über Klaus Kleinert per E-Mail [klaus_kleinert@t-online.de](mailto:klaus_kleinert@t-online.de) oder telefonisch unter [07127/21692](tel:0712721692)
 * **Anmeldeschluss:** 18.05.2024
 
