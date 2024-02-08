@@ -9,8 +9,8 @@ image:
   height: 392
 tags:
   - Fußball
-  - E-Junioren
-  - F-Junioren
+  - D-Junioren
+  - Bambini
 teaser: "Das vergangene Wochenende stand ganz im Zeichen unseres 2. SV Walddorf Winter-Cups."
 ---
 ## D-Junioren (Jahrgang 2012)
