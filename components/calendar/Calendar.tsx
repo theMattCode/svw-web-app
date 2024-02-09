@@ -99,7 +99,7 @@ function CalendarAdapter({ events, agendaOnly }: { events: Event[] } & Props) {
       date={date}
       length={365}
       onNavigate={onNavigate}
-      formats={{ agendaDateFormat: "cccc, dd.MM.yyyy" }}
+      formats={{ agendaDateFormat: "ccc, dd.MM.yyyy" }}
       components={{ event: ({ event }) => <EventDescription event={event} view={view} /> }}
     />
   );
