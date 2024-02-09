@@ -15,7 +15,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:chromatic": "npx chromatic --only-changed"
+    "test:chromatic": "npx chromatic --only-changed --build-script-name=build:storybook"
   },
   "dependencies": {
     "@next/mdx": "^14.1.0",
@@ -54,7 +54,7 @@
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "autoprefixer": "^10.4.16",
-    "chromatic": "^9.0.0",
+    "chromatic": "^10.9.2",
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.3",
     "eslint-plugin-storybook": "^0.6.15",
