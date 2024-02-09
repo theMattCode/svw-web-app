@@ -1,0 +1,57 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    rebase-strategy: "auto"
+    schedule:
+      interval: "daily"
+      time: "06:00"
+      timezone: "Europe/Berlin"
+    groups:
+      react-pdf-viewer:
+        patterns:
+          - "@react-pdf-viewer/*"
+          - "pdfjs-dist"
+      next:
+        patterns:
+					- "next"
+					- "next-*"
+					- "@next/*"
+					- "raw-loader"
+			markdown:
+			  patterns:
+			    - "gray-matter"
+			    - "react-markdown"
+			    - "rehype-raw"
+			    - "remark-gfm"
+      tailwindcss:
+				patterns:
+					- "tailwindcss"
+					- "postcss"
+					- "autoprefixer"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+          - "@types/redux-logger"
+      storybook:
+        patterns:
+          - "storybook"
+          - "storybook-*"
+          - "@storybook/*"
+      testing:
+        patterns:
+          - "jest"
+          - "jest-*"
+          - "@testing-library/*"
+      lint:
+        patterns:
+					- "eslint"
+					- "eslint-*"
+					- "@typescript-eslint/*"
+      typescript:
+        patterns:
+					- "typescript"
+					- "tsconfig-*"
