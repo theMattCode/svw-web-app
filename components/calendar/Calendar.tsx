@@ -5,7 +5,7 @@ import format from "date-fns/format";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
-import de from "date-fns/locale/de";
+import { de } from "date-fns/locale";
 import { useCallback, useEffect, useState, useTransition } from "react";
 import { setDefaultOptions } from "date-fns";
 import { Event, EventMatter } from "#/content/events";
@@ -63,8 +63,8 @@ export function EventCalendar({ agendaOnly = false }: Props) {
               ...entry,
               start: new Date(entry.start),
               end: new Date(entry.end),
-            }))
-          )
+            })),
+          ),
         );
       });
   }, []);
