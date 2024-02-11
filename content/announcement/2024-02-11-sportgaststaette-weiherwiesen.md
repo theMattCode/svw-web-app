@@ -17,7 +17,7 @@ Wir laden sie ein, unsere Speisen zu genießen und sich in gemütlicher Atmosph�
 
 Täglich wechselndes Gericht für Sie frisch zubereitet mit Suppe zur Vorspeise, auch zum Mitnehmen!
 
-Öffnungszeiten, Speisekarte, Kontaktinformationen und Impressionen finden Sie auf unserer [Webseite](https://xn--sportgaststtte-weiherwiesen-lkc.de/).
+Öffnungszeiten, Speisekarte, Kontaktinformationen und Impressionen finden Sie auf unserer [Webseite](https://sportgaststätte-weiherwiesen.de).
 
 Ihre Rahela Bakic Cackovic mit Team
 ```
