@@ -15,7 +15,7 @@ calendarEntries:
 ---
 Der Sportverein Walddorf lädt alle, die Freude am Radfahren haben, zu seiner 12. Sponsoren-Radtour als Rundfahrt mit Übernachtung ein.
 
-Die Strecke führt ohne Stress auf ruhigen Nebenstraßen, Feld- und Waldwegen durch den Schönbuch und über die Härten auf die Reutlinger Alb. Danach ins Lautertal und über die St. Johanner Alb zum Ziel und Nachtquartier: [Naturfreundehaus Lindenplatz](https://maps.app.goo.gl/Y61TZhgt7kryR4uu7) bei Eningen. Die Fahrstrecke am Samstag beträgt ca. 85&nbsp;km. Am Sonntag verläuft die Rückfahrt durch das Albvorland (ca. 22&nbsp;km).
+Die Strecke führt ohne Stress auf ruhigen Nebenstraßen, Feld- und Waldwegen (z.T. Schotterwege, für Rennräder ungeeignet) durch den Schönbuch und über die Härten auf die Reutlinger Alb. Danach ins Lautertal und über die St. Johanner Alb zum Ziel und Nachtquartier: [Naturfreundehaus Lindenplatz](https://maps.app.goo.gl/Y61TZhgt7kryR4uu7) bei Eningen. Die Fahrstrecke am Samstag beträgt ca. 85&nbsp;km. Am Sonntag verläuft die Rückfahrt durch das Albvorland (ca. 22&nbsp;km).
 
 Jeder, der mitfährt, sucht sich einen Sponsor, der die Fahrerin/den Fahrer mit einer Spende von mindestens 50&nbsp;€ für einen guten Zweck unterstützt. Der gesamte Erlös wird anschließend für einen guten Zweck in Walddorfhäslach gespendet.
 
@@ -33,9 +33,9 @@ Teilnahme gerne auch mit E-Bike
 * **Unkostenbeitrag:** 
   90 € pro Teilnehmer (Tourverpflegung, Abendessen, Übernachtung, Frühstück)
   40 € Tour-Pauschale (ohne Übernachtung und Abendessen)
-* **Anmeldung:** [Anmeldeformular](/download/2024-02-06_Anmeldung_Sponsorenradtour.pdf)  per E-Mail unter [sponsorenradtour@svwalddorf.de](mailto:sponsorenradtour@svwalddorf.de) - 
-* **Weitere Informationen:** Über Klaus Kleinert per E-Mail [klaus_kleinert@t-online.de](mailto:klaus_kleinert@t-online.de) oder telefonisch unter [07127/21692](tel:0712721692)
-* **Anmeldeschluss:** 18.05.2024
+* **Anmeldung:** [Anmeldeformular](/download/2024-02-11_Anmeldung_Sponsorenradtour.pdf)  per E-Mail unter [sponsorenradtour@svwalddorf.de](mailto:sponsorenradtour@svwalddorf.de) - 
+* **Weitere Informationen:** Per E-Mail [sponsorenradtour@svwalddorf.de](mailto:sponsorenradtour@svwalddorf.de) oder auf der [Seite zur Veranstaltung](/event/2024-05-25-sponsorenradtour)
+* **Anmeldeschluss:** 11.05.2024
 
 ![Streckenführung Sponsorenradtour 2024](/media/2024/2024-01-31-sponsorenradtour-streckenkarte.jpg)
 
