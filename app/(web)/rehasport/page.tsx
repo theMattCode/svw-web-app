@@ -127,13 +127,7 @@ export default function Rehasport() {
                 <td></td>
                 <td className="bg-green-300">
                   <div className="flex flex-col items-center">
-                    <div>9:30 - 10:15 Uhr</div>
-                    <div className="flex items-center">
-                      <span>
-                        <FaInfoCircle />
-                      </span>
-                      &nbsp;ab 08.02.2024: 9:00 - 9:45 Uhr
-                    </div>
+                    <div>9:00 - 9:45 Uhr</div>
                     <div className="font-medium">Sport nach Krebs</div>
                   </div>
                 </td>
@@ -150,13 +144,7 @@ export default function Rehasport() {
                 <td></td>
                 <td className="bg-amber-200">
                   <div className="flex flex-col items-center">
-                    <div>10:30 - 11:15 Uhr</div>
-                    <div className="flex items-center">
-                      <span>
-                        <FaInfoCircle />
-                      </span>
-                      &nbsp;ab 08.02.2024: 10:00 - 10:45 Uhr
-                    </div>
+                    <div>10:00 - 10:45 Uhr</div>
                     <div className="font-medium">Orthopädie</div>
                   </div>
                 </td>
@@ -173,12 +161,6 @@ export default function Rehasport() {
                 <td></td>
                 <td className="bg-amber-200">
                   <div className="flex flex-col items-center">
-                    <div className="flex items-center">
-                      <span>
-                        <FaInfoCircle />
-                      </span>
-                      &nbsp;Neu ab 08.02.2024:
-                    </div>
                     <div>11:00 - 11:45 Uhr</div>
                     <div className="font-medium">Orthopädie</div>
                   </div>

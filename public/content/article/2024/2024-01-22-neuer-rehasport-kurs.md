@@ -27,7 +27,7 @@ Ziel des Rehasports ist es, die medizinische Behandlung mit Hilfe von körperlic
 * mittwochs 16:00 bis 16:45 Uhr (Orthopädie)
 * mittwochs 17:00 bis 17:45 Uhr (Orthopädie)
 * mittwochs 18:00 bis 18:45 Uhr (Orthopädie)
-* donnerstags 9:30 bis 10:15 Uhr (Sport nach Krebs)
+* donnerstags 9:00 bis 09:45 Uhr (Sport nach Krebs)
 * donnerstags 10:00 bis 10:45 Uhr (Orthopädie)
 * donnerstags 11:00 bis 11:45 Uhr (Orthopädie)
 * donnerstags 18:30 bis 19:15 Uhr (Orthopädie)
