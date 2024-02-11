@@ -17,7 +17,16 @@ export default function Sportgaststaette() {
       <BlockTitle title={sportgaststaette.name} />
       <div className="bg-white shadow-2xl p-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex flex-col grow">
-          <h3>Kontakt</h3>
+          <h4>Website</h4>
+          <p>
+            <Link href="https://sportgaststätte-weiherwiesen.de/" target="_blank">
+              https://sportgaststätte-weiherwiesen.de
+            </Link>
+          </p>
+          <h4>E-Mail</h4>
+          <p>
+            <Link href="mailto:info@weiherwiesen.de">info@weiherwiesen.de</Link>
+          </p>
           <h4>Adresse</h4>
           <p>
             Weiherwiesen 5, 72141 Walddorfhäslach (
