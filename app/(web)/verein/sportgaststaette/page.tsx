@@ -39,7 +39,7 @@ export default function Sportgaststaette() {
           <p>
             <Link href="tel:+491726633453">+49 172 6633453</Link>
           </p>
-          <h3>Öffnungszeiten</h3>
+          <h4>Öffnungszeiten</h4>
           <table>
             <tbody>
               <tr>
@@ -84,26 +84,41 @@ export default function Sportgaststaette() {
               </tr>
               <tr>
                 <td>Sonntag</td>
-                <td>
-                  11:30 – 22:00 Uhr
-                  <br />
-                  Mittagsbuffet, Reservierung erwünscht
-                </td>
+                <td>11:30 – 22:00 Uhr</td>
               </tr>
               <tr>
                 <td>An Feiertagen</td>
                 <td>11:30 – 22:00 Uhr</td>
               </tr>
+              <tr>
+                <td>
+                  <b>Mittagstisch</b>
+                  <br /> Dienstag bis Freitag
+                </td>
+                <td>11:30 – 14:00 Uhr</td>
+              </tr>
             </tbody>
           </table>
         </div>
-        <Image
-          src="/media/verein/sportgaststaette_weiherwiesen_2022.png"
-          alt="Geschäftsstelle"
-          width={1320}
-          height={853}
-          className="object-fill"
-        />
+        <div className="flex flex-col gap-2">
+          <Image
+            src="/media/verein/sportgaststaette_weiherwiesen_2022.png"
+            alt="Geschäftsstelle"
+            width={1320}
+            height={853}
+            className="object-fill"
+          />
+          <Image
+            src="/media/verein/sportgaststaette/2023-08-14-gruppenbild-paechter.jpg"
+            alt="Von links nach rechts: 2. Vorsitzende Andrea Speier, Pächterin Rahela Bakic Cackovic, Finanzvorstand Martin Bayer neben dem ganzen Team der Sportgaststätte Weiherwiesen"
+            width={4032}
+            height={3024}
+          />
+          <p className="w-full flex flex-row justify-end text-sm text-gray-700">
+            Von links nach rechts: 2. Vorsitzende Andrea Speier, Pächterin Rahela Bakic Cackovic, Finanzvorstand Martin
+            Bayer neben dem ganzen Team der Sportgaststätte Weiherwiesen
+          </p>
+        </div>
       </div>
     </PageBase>
   );
