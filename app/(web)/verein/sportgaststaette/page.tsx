@@ -104,15 +104,15 @@ export default function Sportgaststaette() {
           <Image
             src="/media/verein/sportgaststaette_weiherwiesen_2022.png"
             alt="Geschäftsstelle"
-            width={1320}
-            height={853}
+            width={1024}
+            height={768}
             className="object-fill"
           />
           <Image
             src="/media/verein/sportgaststaette/2023-08-14-gruppenbild-paechter.jpg"
             alt="Von links nach rechts: 2. Vorsitzende Andrea Speier, Pächterin Rahela Bakic Cackovic, Finanzvorstand Martin Bayer neben dem ganzen Team der Sportgaststätte Weiherwiesen"
-            width={4032}
-            height={3024}
+            width={1024}
+            height={768}
           />
           <p className="w-full flex flex-row justify-end text-sm text-gray-700">
             Von links nach rechts: 2. Vorsitzende Andrea Speier, Pächterin Rahela Bakic Cackovic, Finanzvorstand Martin
