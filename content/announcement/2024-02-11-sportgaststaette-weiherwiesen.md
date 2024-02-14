@@ -11,11 +11,7 @@ image:
   width: 280
   height: 280
 ---
-Wir freuen uns, Sie in der Sportgaststätte Weiherwiesen begrüßen zu dürfen, wo wir Ihnen eine vielseitige Auswahl an authentischen kroatischen Spezialitäten und vertrauten deutschen Klassikern präsentieren dürfen.
-
-Wir laden sie ein, unsere Speisen zu genießen und sich in gemütlicher Atmosphäre wohlzufühlen.
-
-Täglich wechselndes Gericht für Sie frisch zubereitet mit Suppe zur Vorspeise, auch zum Mitnehmen!
+Wir laden Sie ein, unsere Speisen zu genießen und sich in gemütlicher Atmosphäre und einer vielseitigen Auswahl an authentischen kroatischen Spezialitäten und vertrauten deutschen Klassikern wohlzufühlen. Täglich wechselndes Gericht für Sie frisch zubereitet mit Suppe zur Vorspeise, auch zum Mitnehmen!
 
 Öffnungszeiten, Speisekarte, Kontaktinformationen und Impressionen finden Sie auf unserer [Webseite](https://sportgaststätte-weiherwiesen.de).
 
