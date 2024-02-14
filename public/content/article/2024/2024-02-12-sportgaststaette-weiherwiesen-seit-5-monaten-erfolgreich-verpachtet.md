@@ -10,7 +10,7 @@ image:
 tags:
   - Verein
   - Sportgaststätte
-teaser: "Der SV Walddorf zieht eine erste positive Bilanz nach 5 Monaten mit der neuen Pächterfamilie."
+teaser: "Der SV Walddorf zieht eine erste positive Bilanz."
 ---
 Seit dem 15.09.2023 ist unsere [Sportgaststätte Weiherwiesen](/verein/sportgaststaette) wieder erfolgreich verpachtet. Rahela Bakic-Cackovic und die „Tante“ verwöhnen uns von Dienstag bis Sonntag mit deutsch-kroatischen Köstlichkeiten. Darüber hinaus bieten Sie einen leckeren Mittagstisch an. Die Sportgaststätte kann auch für Feiern, Geburtstage oder Trauerkaffee genutzt werden. Sprechen Sie einfach die Pächter an, sie unterbreiten Ihnen sehr gerne ein passendes Angebot.
 
