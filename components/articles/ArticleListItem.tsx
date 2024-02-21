@@ -17,18 +17,18 @@ export function ArticleListItem({ articleMatter }: Props): JSX.Element {
   return (
     <Link
       href={`/article/${articleMatter.slug}`}
-      className="flex flex-col w-full md:flex-row gap-1 bg-neutral-100 p-1 shadow-2xl"
+      className="flex flex-col w-full md:flex-row gap-1 bg-neutral-100 shadow-xl rounded-md"
     >
       {articleMatter.image && (
         <Image
-          className="w-full md:max-w-[18rem] h-80 md:max-h-44 object-cover"
+          className="w-full md:max-w-[18rem] h-80 md:max-h-44 object-cover rounded-t-md md:rounded-l-md md:rounded-r-none"
           src={articleMatter.image.src}
           alt={articleMatter.image.alt}
           width={width}
           height={height}
         />
       )}
-      <div className="w-full flex flex-col justify-between gap-1 text-sm">
+      <div className="w-full flex flex-col justify-between gap-1 text-sm pl-2 md:pl-1 py-2 pr-2">
         <div className="w-full text-xl font-medium px-1">{articleMatter.title}</div>
         {articleMatter.teaser && <Teaser content={articleMatter.teaser} />}
         {articleMatter.match && articleMatter.match.type === "soccer" && (

@@ -17,19 +17,19 @@ export function ArticlePreviewListItem({ articleMatter }: Props): JSX.Element {
   return (
     <Link
       href={`/article/${articleMatter.slug}`}
-      className="flex flex-col w-full gap-1 bg-neutral-100 p-1 shadow-2xl justify-between"
+      className="flex flex-col w-full gap-2 bg-neutral-100 shadow-xl justify-between rounded-md"
     >
       <div>
         {articleMatter.image && (
           <Image
-            className="w-full h-80 object-cover"
+            className="w-full h-80 object-cover rounded-t-md"
             src={articleMatter.image.src}
             alt={articleMatter.image.alt}
             width={width}
             height={height}
           />
         )}
-        <div className="w-full flex flex-col justify-between gap-1 text-sm">
+        <div className="w-full flex flex-col justify-between gap-1 text-sm p-2">
           <div className="w-full text-xl font-medium px-1">{articleMatter.title}</div>
           {articleMatter.teaser && <Teaser content={articleMatter.teaser} />}
           {articleMatter.match && articleMatter.match.type === "soccer" && (
@@ -37,7 +37,7 @@ export function ArticlePreviewListItem({ articleMatter }: Props): JSX.Element {
           )}
         </div>
       </div>
-      <div className="justify-self-end">
+      <div className="justify-self-end p-2">
         <div className="flex flex-row justify-between text-sm">
           <div className="flex flex-row gap-1">
             <div className="flex gap-1 font-medium text-white uppercase flex-wrap">

@@ -11,7 +11,7 @@ export function ArticleList({ paginatedArticleMatters }: ArticleListProps) {
   return (
     <>
       <BlockTitle title="Aktuelles" />
-      <div className="w-full flex flex-col pb-2">
+      <div className="w-full flex flex-col pb-2 px-2 md:px-0">
         <div className="flex flex-col">
           <div className="container flex flex-col gap-2">
             {paginatedArticleMatters.articles?.map((article) => (

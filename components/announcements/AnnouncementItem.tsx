@@ -13,15 +13,15 @@ export function AnnouncementItem({ announcement }: Props) {
   return (
     <div className="min-w-full">
       <div className="container flex pt-2 pb-4 place-content-center">
-        <div className="w-full shadow-lg bg-white flex flex-col md:flex-row gap-4 p-2 w-auto">
+        <div className="w-full shadow-lg bg-white flex flex-col md:flex-row gap-4 rounded-md">
           <Image
-            className="w-full md:w-72 md:min-w-[18rem] h-80 md:h-44 object-cover"
+            className="w-full md:w-72 md:min-w-[18rem] h-80 md:h-auto object-cover rounded-t-md md:rounded-l-md md:rounded-r-none"
             src={image.src}
             alt={image.alt}
             width={imageDimensions.width}
             height={imageDimensions.height}
           />
-          <div className="flex flex-col pr-2">
+          <div className="flex flex-col p-2">
             <div className="font-medium text-xl">{announcement.title}</div>
             <Markdown content={announcement.mdContent} />
           </div>
