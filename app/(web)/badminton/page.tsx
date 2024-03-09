@@ -21,7 +21,7 @@ export default function Badminton() {
   return (
     <PageBase>
       <BlockTitle title={badminton.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2 py-2">
         <Image
           src="/media/sparten/badminton/badminton-team-2021-08-22.jpg"
           alt="Badminton Mitglieder"
@@ -56,10 +56,16 @@ export default function Badminton() {
             </p>
           </div>
           <div className="flex flex-col gap-2 flex-shrink-0">
-            <h4>Trainingszeiten Erwachsene</h4>
-            <p>Montag und Donnerstag, 18:30 - 19:30 Uhr in der Ballsporthalle</p>
-            <h4>Trainingszeiten Kinder und Jugendliche</h4>
-            <p>Montag, 17:00 - 18:30 Uhr in der Ballsporthalle</p>
+            <h4>Trainingszeiten</h4>
+            <h5>Kinder (6-14 Jahre)</h5>
+            <ul className="list-disc list-inside font-light">
+              <li>Montag, 17:00 - 18:30 Uhr</li>
+            </ul>
+            <h5>Jugendliche und Erwachsene</h5>
+            <ul className="list-disc list-inside font-light">
+              <li>Montag, 18:30 - 19:30 Uhr</li>
+              <li>Donnerstag, 19:00 - 22:00 Uhr</li>
+            </ul>
             <h4>Kontakt</h4>
             <p>
               <Link href={`mailto:${club.contact.email}`}>badminton@svwalddorf.de</Link>
