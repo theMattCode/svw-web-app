@@ -68,7 +68,7 @@ export const people: Person[] = [
   {
     firstname: "Marc",
     lastname: "Bezner",
-    tags: ["Vorstand Kommunikation"],
+    tags: [],
     email: "marc.bezner@svwalddorf.de",
     phone: ["+49 1520 8601071"],
     image: { src: "/media/people/marc-bezner-2023.jpg", alt: "Marc Bezner", width: 355, height: 473 },
@@ -348,7 +348,9 @@ export const people: Person[] = [
   {
     firstname: "Matthäus",
     lastname: "Mayer",
-    tags: ["Trainer F-Junioren (U8)"],
+    tags: ["Vorstand Kommunikation", "Trainer F-Junioren (U8)"],
+    phone: ["+49 176 66332295"],
+    email: "matthaeus.mayer@svwalddorf.de",
     image: { src: "/media/people/matthaeus-mayer-2023.png", alt: "Matthäus Mayer", width: 857, height: 1024 },
   },
   {
