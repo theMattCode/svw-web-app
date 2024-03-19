@@ -3,13 +3,34 @@ import { PageBase } from "#/components/page/PageBase";
 import { getTitle, PageProps } from "#/lib/page";
 import { getAllArticleSlugs, getArticleBySlug } from "#/content/article";
 import { Metadata } from "next";
+import { club } from "#/content/club";
 
 const ARTICLE_DIRECTORY = "public/content/article";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
+  const title = getTitle(article.title);
+  const baseURL = `https://${process.env.VERCEL_URL ?? process.env.SITE_URL ?? "svwalddorf.de"}`;
   return {
-    title: getTitle(article.title),
+    title,
+    metadataBase: new URL(baseURL),
+    openGraph: {
+      title,
+      siteName: club.name,
+      locale: "de_DE",
+      type: "article",
+      url: `/article/${params.slug}`,
+      images: article.image
+        ? [
+            {
+              url: article.image.src,
+              alt: article.image.alt,
+              width: article.image.width,
+              height: article.image.height,
+            },
+          ]
+        : [],
+    },
   };
 }
 
