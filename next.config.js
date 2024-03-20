@@ -38,6 +38,12 @@ const nextConfig = {
       },
       {
         source: "/der-verein/neuigkeiten-und-berichte",
+        has: [{ type: "query", key: "cHash", value: "531eb1222319725cd30074581f3d7bec" }],
+        destination: "/article/2023-06-25-relegationsspiel-am-25-juni-1200-zuschauer-in-den-weiherwiesen",
+        permanent: true,
+      },
+      {
+        source: "/der-verein/neuigkeiten-und-berichte",
         has: [{ type: "query", key: "cHash", value: "16ef198e337db18f897b69be3222f49c" }],
         destination: "/article/2023-06-22-informationen-zum-relegationsspiel-sv-wurmlingen-fc-roemerstein",
         permanent: true,
