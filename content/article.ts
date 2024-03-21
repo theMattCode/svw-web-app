@@ -40,8 +40,12 @@ export type PaginatedArticleMatters = {
   articles: ArticleMatter[];
 };
 
-export function getArticleBySlug(slug: string, articleDirectory?: string): Article {
-  return readArticle(`${articleDirectory || ARTICLE_DIRECTORY}/${slug.slice(0, 4)}/${slug}.md`);
+export function getArticleBySlug(slug: string, articleDirectory?: string): Article | null {
+  const path = `${articleDirectory || ARTICLE_DIRECTORY}/${slug.slice(0, 4)}/${slug}.md`;
+  if (fs.existsSync(path)) {
+    return readArticle(path);
+  }
+  return null;
 }
 
 function readArticleMatter(path: string) {
@@ -85,19 +89,22 @@ function getPage(articleDirectory: string | undefined, page: number, pageSize: n
 
 export function getArticles(page: number, pageSize: number, articleDirectory?: string): PaginatedArticles {
   const { pageFiles, totalArticles, totalPages } = getPage(articleDirectory, page, pageSize);
-  const articles = pageFiles.map((filename) => readArticle(filename));
+  const articles = pageFiles.filter((filename) => fs.existsSync(filename)).map((filename) => readArticle(filename));
 
   return { page, pageSize, totalArticles, totalPages, articles };
 }
 
 export function getArticlesByTags(tags: string[], articleDirectory?: string): Article[] {
   return getAllArticleFilePaths(articleDirectory)
+    .filter((filename) => fs.existsSync(filename))
     .map((filename) => readArticle(filename))
     .filter((article) => tags.some((tag) => article.tags?.map((tag) => tag.toLowerCase()).includes(tag.toLowerCase())));
 }
 
 export function getArticleMatters(page: number, pageSize: number, articleDirectory?: string): PaginatedArticleMatters {
   const { pageFiles, totalArticles, totalPages } = getPage(articleDirectory, page, pageSize);
-  const articles = pageFiles.map((filename) => readArticleMatter(filename));
+  const articles = pageFiles
+    .filter((filename) => fs.existsSync(filename))
+    .map((filename) => readArticleMatter(filename));
   return { page, pageSize, totalArticles, totalPages, articles };
 }
