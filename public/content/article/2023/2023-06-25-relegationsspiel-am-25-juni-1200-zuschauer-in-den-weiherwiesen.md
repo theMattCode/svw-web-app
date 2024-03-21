@@ -28,4 +28,4 @@ Nach 94 spannenden Minuten bei hochsommerlichen Temperaturen setzte sich der Tü
 
 An dieser Stelle gilt es DANKE zu sagen an die über 60 Helfer aus Reihen des SVW-Fußballs, die diesem Spiel einen würdigen Rahmen verschafft haben. Ohne Euch wäre eine Veranstaltung dieser Größenordnung nicht möglich!
 
-Ein besonderer Dank geht an unseren Mr. Relegation Julian Wohlfarth. Wie schon vergangenes Jahr war das Event professionell organisiert, die große zusätzliche Herausforderung, dass dieses Jahr unser 2. FTP-Cup ebenfalls an diesem Wochenende stattfand, wurde hervorragend gemeistert.
+Ein besonderer Dank geht an unseren Mr. Relegation Julian Wohlfarth. Wie schon vergangenes Jahr war das Event professionell organisiert, die große zusätzliche Herausforderung, dass dieses Jahr unser 2. FTB-Cup ebenfalls an diesem Wochenende stattfand, wurde hervorragend gemeistert.
