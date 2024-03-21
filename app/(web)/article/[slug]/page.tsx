@@ -9,6 +9,7 @@ const ARTICLE_DIRECTORY = "public/content/article";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
+  if (!article) return { title: "Artikel nicht gefunden" };
   const title = getTitle(article.title);
   const baseURL = `https://${process.env.VERCEL_URL ?? process.env.SITE_URL ?? "svwalddorf.de"}`;
   return {
@@ -38,7 +39,8 @@ export default function Page({ params }: PageProps) {
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
   return (
     <PageBase>
-      <Article article={article} />
+      {article && <Article article={article} />}
+      {!article && <div className="container p-4 text-center">Artikel nicht gefunden</div>}
     </PageBase>
   );
 }

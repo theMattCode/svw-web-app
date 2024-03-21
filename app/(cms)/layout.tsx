@@ -1,6 +1,5 @@
 "use client";
 
-import "#/styles/globals.css";
 import NavItem from "#/components/cms/navigation/NavItem";
 import { usePathname } from "next/navigation";
 import { JSX, PropsWithChildren } from "react";

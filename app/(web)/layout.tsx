@@ -1,4 +1,3 @@
-import "#/styles/globals.css";
 import React, { PropsWithChildren } from "react";
 import Footer from "#/components/footer/Footer";
 import SponsorGrid from "#/components/sponsor/SponsorGrid";
