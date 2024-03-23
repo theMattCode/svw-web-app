@@ -47,7 +47,7 @@ export default function MitgliedWerden() {
           <p>
             Dann können sie ihre seitherige Mitgliedschaft zu einer Kombimitgliedschaft erweitern. Dazu müssen sie
             lediglich den&nbsp;
-            <Link href="/download/Aenderungsantrag_Kombimitgliedschaft_2020.pdf">
+            <Link href="/download/2020-01-04_Aenderungsantrag_Kombimitgliedschaft.pdf">
               Änderungsantrag zur Mitgliedschaft
             </Link>
             &nbsp; ausfüllen und an uns senden.
