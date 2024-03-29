@@ -54,3 +54,4 @@ Bei den turnusmäßigen Wahlen waren vier Vorstandsämter zu besetzen. Gewählt 
 Mit einem herzlichen Dank an alle Mitglieder, Helfer, Freunde und Sponsoren des SVW für ein erfolgreiches Sportjahr und an die Teilnehmer der Mitgliederversammlung beschloss Markus Hartlieb die Versammlung.
 
 Im Anschluss an die Mitgliederversammlung ließen die Teilnehmer den Abend in geselliger Runde im [Sportheim](/verein/sportgaststaette) ausklingen.
+
