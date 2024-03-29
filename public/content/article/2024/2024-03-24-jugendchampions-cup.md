@@ -109,15 +109,15 @@ Auch euch an dieser Stelle noch einmal vielen herzlichen Dank!
 
 ### Gesamt
 
-| Platz  | Mannschaft               | Spiele  | Punkte  | Tore+  | Tore-  | Differenz  |
-|:-------|:-------------------------|:--------|:--------|:-------|:-------|:-----------|
-| 1      | SV Walddorf              | 29      | 63      | 79     | 23     | 56         |
-| 2      | SV Pfrondorf             | 29      | 46      | 59     | 34     | 25         |
-| 3      | TSV Waldenbuch           | 29      | 43      | 48     | 54     | -6         |
-| 4      | VfL Dettenhausen         | 29      | 39      | 39     | 56     | -17        |
-| 5      | TSV Hirschau             | 29      | 37      | 47     | 52     | -5         |
-| 6      | Spvgg Weil im Schönbuch  | 29      | 28      | 22     | 73     | -51        |
-| 7      | GSV Maichingen           | 6       | 15      | 10     | 6      | 4          |
-| 7      | Spvgg Holzgerlingen      | 6       | 10      | 16     | 9      | 7          |
-| 7      | SGM Aichtal              | 6       | 10      | 16     | 11     | 5          |
-| 7      | SV03 Tübingen            | 6       | 6       | 15     | 17     | -2         |
+| Platz | Mannschaft               | Spiele  | Punkte  | Tore+  | Tore-  | Differenz  |
+|:------|:-------------------------|:--------|:--------|:-------|:-------|:-----------|
+| 1     | SV Walddorf              | 29      | 63      | 79     | 23     | 56         |
+| 2     | SV Pfrondorf             | 29      | 46      | 59     | 34     | 25         |
+| 3     | TSV Waldenbuch           | 29      | 43      | 48     | 54     | -6         |
+| 4     | VfL Dettenhausen         | 29      | 39      | 39     | 56     | -17        |
+| 5     | TSV Hirschau             | 29      | 37      | 47     | 52     | -5         |
+| 6     | Spvgg Weil im Schönbuch  | 29      | 28      | 22     | 73     | -51        |
+| 7     | GSV Maichingen           | 6       | 15      | 10     | 6      | 4          |
+| 8     | Spvgg Holzgerlingen      | 6       | 10      | 16     | 9      | 7          |
+| 9     | SGM Aichtal              | 6       | 10      | 16     | 11     | 5          |
+| 10    | SV03 Tübingen            | 6       | 6       | 15     | 17     | -2         |
