@@ -1,7 +1,5 @@
 "use client";
 
-import { JSX } from "react";
-
-export default function CMSIndexPage(): JSX.Element | null {
+export default function CMSIndexPage() {
   return <h1>Internal CMS</h1>;
 }
