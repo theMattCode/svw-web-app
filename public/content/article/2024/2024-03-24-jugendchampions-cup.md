@@ -1,6 +1,6 @@
 ---
 title: "Sieg beim Jugendchampions-Cup in Dettenhausen"
-slug: "2024-03-24-jugendchampionscup"
+slug: "2024-03-24-jugendchampions-cup"
 date: "2024-03-24"
 image:
   src: "/media/2024/2024-03-24-jugendchampions-cup-alle.jpg"
