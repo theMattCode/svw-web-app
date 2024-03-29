@@ -21,7 +21,7 @@ export default function MitgliedWerden() {
           <p>
             Die <b>Eintrittserklärung</b> sowie die&nbsp;
             <b>Einwilligungserklärung zum Datenschutz</b> können sie direkt{" "}
-            <Link href="/download/2023-03-04_Eintrittserklaerung_mit_Datenschutz_Formular.pdf">hier herunterladen</Link>
+            <Link href="/download/2024-03-29_Eintrittserklaerung_mit_Datenschutz_Formular.pdf">hier herunterladen</Link>
             .
           </p>
           <p>
@@ -69,7 +69,7 @@ export default function MitgliedWerden() {
           <p>
             Die Kündigung der Mitgliedschaft ist nur zum Jahresende zulässig und muss spätestens bis 31.12. eines Jahres
             beim Verein eingehen. Sie ist entweder schriftlich an die Vereinsadresse zu richten:&nbsp;
-            <b>SV Walddorf, Weiherwiesen 5, 72141 Walddorfhäslach</b> oder per E-Mail an
+            <b>SV Walddorf, Weiherwiesen 5, 72141 Walddorfhäslach</b> oder per E-Mail an&nbsp;
             <Link href={`mailto:${club.contact.email}`}>{club.contact.email}</Link> zu senden.
           </p>
         </div>
