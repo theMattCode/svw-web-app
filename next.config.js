@@ -88,14 +88,6 @@ const nextConfig = {
       },
     ];
 
-    if (process.env.NODE_ENV !== "development") {
-      redirects.push({
-        source: "/cms",
-        destination: "/",
-        permanent: true,
-      });
-    }
-
     return redirects;
   },
 };

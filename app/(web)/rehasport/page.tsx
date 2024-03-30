@@ -9,7 +9,6 @@ import { PersonCard } from "#/components/person/PersonCard";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { rehasport } from "#/content/sitemap";
-import { FaInfoCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: getTitle(rehasport.name),
@@ -20,20 +19,6 @@ export default function Rehasport() {
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
   return (
     <div className="bg-neutral-200 pb-8">
-      <div className="bg-svw-blue-lighter mb-2  pb-2 pt-8 gap-2">
-        <BlockTitle title="Ankündigung" />
-        <div className="container flex flex-col p-2 items-center">
-          <p>
-            Aufgrund einer Veranstaltung der Schulen müssen wir folgende Rehasportkurse dieser Woche{" "}
-            <b>von Donnerstag, 21.03. auf Mittwoch, 20.03. vorverlegen</b>:
-          </p>
-          <ul className="list-disc">
-            <li>9:00 Uhr Sport nach Krebs (Ingrid)</li>
-            <li>10:00 Uhr Orthopädische Gymnastik (Lisa)</li>
-            <li>11:00 Uhr Orthopädische Gymnastik (Lisa)</li>
-          </ul>
-        </div>
-      </div>
       <div className="container flex flex-col gap-2">
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full h-80" />
