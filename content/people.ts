@@ -188,8 +188,13 @@ export const people: Person[] = [
   {
     firstname: "Erol",
     lastname: "Türkoglu",
-    tags: ["Trainer Aktive I"],
+    tags: [],
     image: { src: "/media/people/erol-tuerkoglu-2023.png", alt: "Erol Türkoglu", width: 582, height: 699 },
+  },
+  {
+    firstname: "Benjamin",
+    lastname: "Link",
+    tags: ["Trainer Aktive I"],
   },
   {
     firstname: "Luis",

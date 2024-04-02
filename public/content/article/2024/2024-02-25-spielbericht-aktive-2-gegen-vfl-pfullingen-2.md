@@ -8,8 +8,8 @@ tags:
 image:
   src: "/media/sparten/fussball/aktive-team-2023-24.png"
   alt: "Aktive Team 2023/24"
-  width: 1856
-  height: 1392
+  width: 3477
+  height: 1367
 match:
   type: "soccer"
   competition:
