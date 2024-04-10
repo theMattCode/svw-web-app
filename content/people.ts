@@ -138,7 +138,7 @@ export const people: Person[] = [
     firstname: "Monika",
     lastname: "Haar",
     tags: ["Spartenleitung Fitness und Gesundheitssport", "Übungsleitung Early Bird Yoga"],
-    email: "monika.haar@svwalddorf.de",
+    email: "monikahaar@yahoo.de",
     image: { src: "/media/people/monika-haar-2023.png", alt: "Monika Haar", width: 490, height: 677 },
   },
   {
