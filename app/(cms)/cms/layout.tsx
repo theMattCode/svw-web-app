@@ -1,35 +1,20 @@
 "use client";
 
 import { PropsWithChildren } from "react";
-import { FaHome } from "react-icons/fa";
-import { MdArticle, MdEvent, MdTag } from "react-icons/md";
-import NavItem from "#/components/cms/navigation/NavItem";
-import { usePathname } from "next/navigation";
-import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0/client";
-
-const navItems = [
-  { href: "/cms", icon: <FaHome />, children: "Home" },
-  { href: "/cms/articles", icon: <MdArticle />, children: "Artikel" },
-  { href: "/cms/events", icon: <MdEvent />, children: "Events" },
-  { href: "/cms/tags", icon: <MdTag />, children: "Tags" },
-];
+import { withPageAuthRequired } from "@auth0/nextjs-auth0/client";
+import { Navigation } from "#/components/cms/navigation/Navigation";
+import { Header } from "#/components/cms/header/Header";
 
 export default withPageAuthRequired(function CMSLayout({ children }: PropsWithChildren) {
-  const pathname = usePathname();
-  const { user } = useUser();
   return (
-    <>
-      <div className="bg-svw-blue-default text-white py-4 h-full flex flex-col">
-        {navItems.map((item) => (
-          <NavItem key={item.href} href={item.href} icon={item.icon} active={pathname === item.href}>
-            {item.children}
-          </NavItem>
-        ))}
-        <a href="/api/auth/logout" data-testid=" logout">
-          Logout
-        </a>
+    <div className="w-screen h-screen bg-gray-100 flex">
+      <div className="w-64">
+        <Navigation />
       </div>
-      <div className="p-4 h-full w-full overflow-y-auto flex">{children}</div>
-    </>
+      <div className="w-full flex-col">
+        <Header />
+        <main className="w-full h-full p-4 overflow-auto">{children}</main>
+      </div>
+    </div>
   );
 });

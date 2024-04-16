@@ -7,6 +7,7 @@ module.exports = {
         "svw-blue": {
           lightest: "#9BEBFF",
           lighter: "#5EB2EA",
+          light: "#3999d9",
           default: "#057DB1",
           dark: "#015d98",
           darker: "#004877",

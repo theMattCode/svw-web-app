@@ -1,4 +1,3 @@
-import "#/styles/globals.css";
 import { club } from "#/content/club";
 import { Metadata, Viewport } from "next";
 import { JSX, PropsWithChildren } from "react";

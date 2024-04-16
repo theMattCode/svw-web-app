@@ -1,11 +1,9 @@
-"use client";
-
 import { Card, CardTitle } from "#/components/cms/card/Card";
 
-export default function CMSEvents(): JSX.Element {
+export default function Club() {
   return (
     <Card>
-      <CardTitle>Events</CardTitle>
+      <CardTitle>Club</CardTitle>
     </Card>
   );
 }

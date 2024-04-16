@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../app/(web)/web.css";
 import { DEFAULT_VIEWPORTS } from "#/lib/stories";
 
 export const parameters = {

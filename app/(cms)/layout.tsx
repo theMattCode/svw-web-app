@@ -1,5 +1,6 @@
 "use client";
 
+import "#/app/(cms)/cms.css";
 import { JSX, PropsWithChildren } from "react";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 

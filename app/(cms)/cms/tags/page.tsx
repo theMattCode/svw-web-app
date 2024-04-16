@@ -1,10 +1,17 @@
 "use client";
 
-import { Tag } from "#/components/articles/ArticleListItem";
 import { TagsResponse } from "#/content/tags";
 import fetch from "node-fetch";
-import { JSX, useEffect, useState } from "react";
-import { MdOutlineAddCircle } from "react-icons/md";
+import { JSX, useEffect, useMemo, useState } from "react";
+import { Card, CardContent, CardTitle } from "#/components/cms/card/Card";
+import { createColumnHelper, getCoreRowModel, TableOptions } from "@tanstack/table-core";
+import { Table } from "#/components/cms/table/Table";
+
+interface Tag {
+  name: string;
+}
+
+const COLUMN_HELPER = createColumnHelper<Tag>();
 
 export default function CMSTags(): JSX.Element {
   const [loading, setLoading] = useState(true);
@@ -17,16 +24,24 @@ export default function CMSTags(): JSX.Element {
         setLoading(false);
       });
   }, []);
-  if (loading) {
-    return <>loading</>;
-  }
+
+  const options = useMemo((): TableOptions<Tag> => {
+    return {
+      data: tagResponse?.tags.map((tag) => ({ name: tag })) ?? [],
+      columns: [
+        COLUMN_HELPER.accessor("name", {
+          id: "name",
+          header: "Name",
+        }),
+      ],
+      getCoreRowModel: getCoreRowModel(),
+    };
+  }, [tagResponse?.tags]);
+
   return (
-    <div className="flex flex-col">
-      <h1 className="flex justify-between items-center">
-        <span>Tags</span>
-        <MdOutlineAddCircle className="text-gray-300" />
-      </h1>
-      <div className="flex flex-col gap-1">{tagResponse?.tags.map((tag) => <Tag key={tag} tag={tag} />)}</div>
-    </div>
+    <Card>
+      <CardTitle>Tags</CardTitle>
+      <Table options={options} />
+    </Card>
   );
 }

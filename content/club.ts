@@ -1,6 +1,8 @@
 export type Club = {
   name: string;
   short: string;
+  shorter: string;
+  shortest: string;
   abbreviation: string;
   address: { street: string; zip: string; city: string };
   contact: { telephone: string; telefax: string; email: string };
@@ -12,6 +14,8 @@ export type Club = {
 export const club: Club = {
   name: "Sportverein Walddorf 1904 e.V.",
   short: "SV Walddorf 1904 e.V.",
+  shorter: "SV Walddorf",
+  shortest: "SVW",
   abbreviation: "SVW",
   address: {
     street: "Weiherwiesen 5",
