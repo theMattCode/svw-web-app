@@ -32,6 +32,4 @@ Das Programm sieht folgendermaßen aus
 | Badminton        | Donnerstag, 03.08., 19 Uhr  |
 | Fit und Gesund   | Freitag, 04.08. 18:30 Uhr   |
 
-Treffpunkt ist jeweils zehn Minuten vor Beginn aller Angebote am Parkplatz der Gemeindehalle. Alle Angebote finden im Freien statt. Bitte tragen Sie dem jeweiligen Angebot, angepasste Sportkleidung und denken Sie an ihr Getränk. Bei Regen fallen alle sportlichen Angebote, bis auf Fußball, aus. Falls Sie Fragen haben, melden Sie sich per E-Mail bei [monika.haar@svwalddorf.de](mailto:monika.haar@svwalddorf.de)
-
-
+Treffpunkt ist jeweils zehn Minuten vor Beginn aller Angebote am Parkplatz der Gemeindehalle. Alle Angebote finden im Freien statt. Bitte tragen Sie dem jeweiligen Angebot, angepasste Sportkleidung und denken Sie an ihr Getränk. Bei Regen fallen alle sportlichen Angebote, bis auf Fußball, aus. Falls Sie Fragen haben, melden Sie sich per E-Mail bei [monikahaar@yahoo.de](mailto:monikahaar@yahoo.de)

@@ -19,7 +19,7 @@ export default function FitUndGesund() {
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
   return (
     <PageBase>
-      <BlockTitle title={FitUndGesund.name} />
+      <BlockTitle title={fitUndGesund.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fitness-und-gesundheitssport/fit-und-gesund-2019.jpg"

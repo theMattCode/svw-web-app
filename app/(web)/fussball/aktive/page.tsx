@@ -34,13 +34,16 @@ export default function Aktive() {
             <p>Dienstag und Donnerstag, 19:30 - 21:00 Uhr auf dem Kunstrasenplatz</p>
             <h3>Kontakt</h3>
             <p>
-              <Link href="mailto:aktive@svwalddorf.de">aktive@svwalddorf.de</Link>
+              <Link href="mailto:erstemannschaft@svwalddorf.de">erstemannschaft@svwalddorf.de</Link>
+            </p>
+            <p>
+              <Link href="mailto:zweitemannschaft@svwalddorf.de">zweitemannschaft@svwalddorf.de</Link>
             </p>
           </div>
         </div>
         <h3>Trainer und Betreuer</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-          <PersonCard person={getPersonByName("Erol Türkoglu")} />
+          <PersonCard person={getPersonByName("Benjamin Link")} />
           <PersonCard person={getPersonByName("Luis Armbruster")} />
           <PersonCard person={getPersonByName("Fabian Schramm")} />
           <PersonCard person={getPersonByName("Julian Wohlfarth")} />

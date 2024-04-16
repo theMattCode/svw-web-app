@@ -138,7 +138,7 @@ export const people: Person[] = [
     firstname: "Monika",
     lastname: "Haar",
     tags: ["Spartenleitung Fitness und Gesundheitssport", "Übungsleitung Early Bird Yoga"],
-    email: "monika.haar@svwalddorf.de",
+    email: "monikahaar@yahoo.de",
     image: { src: "/media/people/monika-haar-2023.png", alt: "Monika Haar", width: 490, height: 677 },
   },
   {
@@ -188,8 +188,13 @@ export const people: Person[] = [
   {
     firstname: "Erol",
     lastname: "Türkoglu",
-    tags: ["Trainer Aktive I"],
+    tags: [],
     image: { src: "/media/people/erol-tuerkoglu-2023.png", alt: "Erol Türkoglu", width: 582, height: 699 },
+  },
+  {
+    firstname: "Benjamin",
+    lastname: "Link",
+    tags: ["Trainer Aktive I"],
   },
   {
     firstname: "Luis",
