@@ -4,7 +4,7 @@ slug: "2022-11-06-spielbericht-zweite"
 date: "2022-11-06"
 teaser: "Kreisliga B, Staffel 4, 8. Spieltag, SSV Rübgarten II - SV Walddorf II 0:5 (0:3)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

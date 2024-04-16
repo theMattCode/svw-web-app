@@ -4,7 +4,7 @@ slug: "2022-11-01-spielbericht-aktive-1"
 date: "2022-11-01"
 teaser: "Bezirksliga Alb, 11. Spieltag, SV Walddorf - SSC Tübingen 4:1 (1:1)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

@@ -3,7 +3,7 @@ title: "Wir Gratulieren unserer Zweiten zum Aufstieg!"
 slug: "2023-06-08-wir-gratulieren-unserer-zweiten-zum-aufstieg"
 date: "2023-06-08"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

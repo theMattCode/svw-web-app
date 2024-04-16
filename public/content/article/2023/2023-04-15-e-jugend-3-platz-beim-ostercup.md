@@ -9,7 +9,7 @@ image:
   width: 1600
   height: 900
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Am Samstag, 15.04. waren wir zu Gast bei den Reutlinger Juniors und konnten beim "Ostercup" einen hervorragenden 3. Platz von 15 teilnehmenden Mannschaften belegen!

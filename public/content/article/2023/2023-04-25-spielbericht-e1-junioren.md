@@ -9,7 +9,7 @@ image:
   width: 1600
   height: 900
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Was uns in der Kreisstaffel 1 erwartet, bekamen wir bei der TSG Tübingen zu spüren:

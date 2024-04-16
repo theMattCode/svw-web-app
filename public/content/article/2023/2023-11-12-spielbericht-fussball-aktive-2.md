@@ -3,7 +3,7 @@ title: "Spielbericht Aktive II"
 slug: 2023-11-12-spielbericht-fussball-aktive-2
 date: 2023-11-12
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: "/media/sparten/fussball/aktive-team-2023-24.png"

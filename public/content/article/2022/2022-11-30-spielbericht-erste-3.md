@@ -4,7 +4,7 @@ slug: "2022-11-30-spielbericht-erste-3"
 date: "2022-11-30"
 teaser: "Bezirksliga Alb, 15. Spieltag SV Walddorf - SV Croatia Reutlingen 2:2"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

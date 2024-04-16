@@ -4,7 +4,7 @@ slug: "2022-11-15-spielbericht-erste-1"
 date: "2022-11-15"
 teaser: "Bezirksliga Alb, 13. Spieltag, SV Walddorf - FC Rottenburg 0:3 (0:3)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

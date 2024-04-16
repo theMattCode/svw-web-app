@@ -9,7 +9,7 @@ image:
   width: 1600
   height: 900
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Schon in der ersten Hälfte zeichnete sich ab, dass dieses Spiel schwierig und der Gegner sehr unangenehm werden würde. Obwohl unser Team bezüglich der Spielstärke, Kreativität und Effizienz der Reutlinger Juniors gewarnt war, gerieten wir früh mit 0:1 in Rückstand. Wir konnten nur wenig gelungene Aktionen in der Offensive zeigen, glichen aber dennoch vor der Pause zum 1:1 aus. 

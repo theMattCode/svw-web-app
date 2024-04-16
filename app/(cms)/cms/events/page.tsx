@@ -1,5 +1,11 @@
 "use client";
 
+import { Card, CardTitle } from "#/components/cms/card/Card";
+
 export default function CMSEvents(): JSX.Element {
-  return <h1>Events</h1>;
+  return (
+    <Card>
+      <CardTitle>Events</CardTitle>
+    </Card>
+  );
 }

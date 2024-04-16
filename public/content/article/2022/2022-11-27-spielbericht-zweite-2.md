@@ -4,7 +4,7 @@ slug: "2022-11-27-spielbericht-zweite-2"
 date: "2022-11-27"
 teaser: "Kreisliga B, Staffel 4, 10. Spieltag, CP Reutlingen - SV Walddorf II 0:2 (0:1)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

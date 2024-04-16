@@ -8,7 +8,7 @@ Bezirksliga, 20. Spieltag, SGM Dettingen/Glems - SV Walddorf 1:2 (0:1)
 
 Bezirksliga, 21. Spieltag, TSG Tübingen - SV Walddorf 4:4 (0:3)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

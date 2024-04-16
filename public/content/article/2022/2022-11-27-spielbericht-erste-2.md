@@ -4,7 +4,7 @@ slug: "2022-11-27-spielbericht-erste-2"
 date: "2022-11-27"
 teaser: "Nachtrag: Bezirksliga Alb, 14. Spieltag, SGM Dettingen/Weiler - SV Walddorf 2:1 (1:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

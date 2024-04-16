@@ -9,7 +9,7 @@ image:
   width: 1819
   height: 1024
 tags:
-  - Fussball
+  - Fußball
   - Relegation
 ---
 Liebe Fans des gepflegten Fußballs,

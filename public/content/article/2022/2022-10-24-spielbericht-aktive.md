@@ -4,7 +4,7 @@ slug: "2022-10-24-spielbericht-aktive"
 date: "2022-10-24"
 teaser: "Kreisliga, SV Gniebel - SV Walddorf 3:1 (2:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

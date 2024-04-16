@@ -3,7 +3,7 @@ title: Rückrundenvorbereitung der Aktiven Mannschaften
 slug: 2024-01-29-rueckrundenvorbereitung-fussball-aktive
 date: 2024-01-29
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

@@ -3,7 +3,7 @@ title: "Spielberichte unserer Aktiven"
 slug: "2022-08-23-spielberichte-unserer-aktiven-5"
 date: "2022-08-23"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

@@ -3,7 +3,7 @@ title: "Vorbereitungsstart 1. Mannschaft"
 slug: "2022-07-21-vorbereitungsstart-1-mannschaft"
 date: "2022-07-21"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

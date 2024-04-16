@@ -3,7 +3,7 @@ title: Dritter Platz beim Aktive-AH-Turnier in Riederich
 slug: 2024-02-04-dritter-platz-beim-aktive-ah-turnier-in-riederich
 date: 2024-02-04
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Alte-Herren
 image:

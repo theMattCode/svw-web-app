@@ -8,7 +8,7 @@ image:
   width: 1600
   height: 825
 tags:
-  - Fussball
+  - Fußball
   - Bambini
   - F-Junioren
   - E-Junioren

@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+form {
+    margin-block-end: 0;
+}
+
+/*
+ * Remove the X from search fields which usually allows you to clear the field. This is a non-standard feature and
+ * unsupported by Firefox.
+ */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+h1 {
+    @apply text-3xl w-full border-b-2 border-svw-blue-default pb-1 mb-2
+}
+
+h2 {
+    @apply text-2xl pt-4
+}
+
+h3 {
+    @apply text-xl pt-3
+}
+
+h4 {
+    @apply text-lg pt-2
+}
+
+h5 {
+    @apply font-medium
+}
+
+h6  {
+    @apply underline
+}
+
+p {
+    @apply font-light
+}
+
+p > a, td > a {
+    @apply font-normal underline text-svw-blue-darker
+}
+
+p > ul {
+    @apply list-disc
+}
+
+p > ul > li {
+    @apply ml-6
+}
+
+table {
+    @apply w-full font-light overflow-scroll
+}
+
+th {
+    @apply border-0 px-3 py-2 first:rounded-tl-md last:rounded-tr-md text-left text-sm uppercase
+}
+
+tr {
+    @apply even:bg-gray-100 first:border-t border-0 border-gray-400
+}
+
+thead > tr {
+    @apply bg-svw-blue-default text-white font-medium
+}
+
+td {
+    @apply  border-0 border-b border-gray-300 px-3 py-2 font-normal
+}
+
+.card-base {
+    @apply bg-white rounded-lg shadow-md shadow-gray-200 flex flex-col
+}
+
+.card-content {
+    @apply w-full p-4
+}
+
+.card-title {
+    @apply w-full p-4 text-lg font-medium text-gray-700
+}
+
+.news-title-shadow {
+    box-shadow: 10px 0 0 rgba(255, 255, 255, 0.75), -10px 0 0 rgba(255, 255, 255, 0.75);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+}
+
+iframe nav {
+    display: none;
+}
+
+.rbc-header {
+    @apply text-2xl
+}

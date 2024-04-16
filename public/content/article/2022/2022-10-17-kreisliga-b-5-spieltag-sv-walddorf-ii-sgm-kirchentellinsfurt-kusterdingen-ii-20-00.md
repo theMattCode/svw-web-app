@@ -4,7 +4,7 @@ slug: "2022-10-17-kreisliga-b-5-spieltag-sv-walddorf-ii-sgm-kirchentellinsfurt-k
 date: "2022-10-17"
 teaser: "Kreisliga, 5. Spieltag, SV Walddorf II  - SGM Kirchentellinsfurt/Kusterdingen II 2:0 (0:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

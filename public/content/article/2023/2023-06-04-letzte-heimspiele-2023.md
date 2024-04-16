@@ -8,7 +8,7 @@ teaser: "
 
   Bezirksliga, SV Walddorf - SGM Dettingen-Weiler 3:1 (1:1)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

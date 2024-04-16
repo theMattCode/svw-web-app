@@ -9,7 +9,7 @@ image:
   width: 3895
   height: 1393
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Unser letztes Turnier im E-Juniorenmodus fand gestern in Pliezhausen statt. Wir konnten zum Abschluss den 1. Platz belegen und somit den Turniersieg feiern!

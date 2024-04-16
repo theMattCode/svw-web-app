@@ -8,7 +8,7 @@ image:
   width: 3656
   height: 1311
 tags:
-  - Fussball
+  - Fußball
   - D-Junioren
 ---
 ![](/media/2023/2023-06-29-flyer-d-junioren-verstaerkung.jpg)

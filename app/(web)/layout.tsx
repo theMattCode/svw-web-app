@@ -4,6 +4,7 @@ import SponsorGrid from "#/components/sponsor/SponsorGrid";
 import { Metadata, Viewport } from "next";
 import { Navigation } from "#/components/navigation/Navigation";
 import { club } from "#/content/club";
+import "#/app/(web)/web.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {

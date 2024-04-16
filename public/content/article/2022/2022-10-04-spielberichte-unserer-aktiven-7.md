@@ -7,7 +7,7 @@ teaser: "Bezirksliga, 7. Spieltag, SV Walddorf - SV Pfrondorf 4:1 (4:1)
 
 Kreisliga B, 3. Spieltag, SV Walddorf II - SV Anadolu Reutlingen II 5:3"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

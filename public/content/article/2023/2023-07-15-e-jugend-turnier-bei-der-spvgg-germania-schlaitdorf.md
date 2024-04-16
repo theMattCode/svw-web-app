@@ -9,7 +9,7 @@ image:
   width: 3895
   height: 1393
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 An diesem Wochenende stand für unsere Jungs das Turnier der SpVgg Germania Schlaitdorf an. Im Gruppenmodus mit 6 Mannschaften wurden im Modus Jeder-gegen-Jeden in 5 Spielen 4 Halbfinalisten ermittelt.

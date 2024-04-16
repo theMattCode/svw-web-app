@@ -4,7 +4,7 @@ slug: "2022-11-15-spielbericht-zweite-1"
 date: "2022-11-15"
 teaser: "Kreisliga B, Staffel 4, 9. Spieltag, SV Walddorf II - FC Reutlingen II 7:0 (3:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png
