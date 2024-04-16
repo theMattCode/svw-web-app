@@ -4,7 +4,7 @@ slug: "2023-05-09-d-junioren-verbandsliga"
 date: "2023-05-09"
 teaser: "Berichte zu den Spieltagen 3 und 4"
 tags:
-  - Fussball
+  - Fußball
   - D-Junioren
 image:
   src: /media/sparten/fussball/d-junioren-team-2022-23.png

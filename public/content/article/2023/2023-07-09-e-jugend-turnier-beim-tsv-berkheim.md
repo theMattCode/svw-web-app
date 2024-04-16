@@ -9,7 +9,7 @@ image:
   width: 3895
   height: 1393
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Am Sonntag folgte unsere E-Jugend einer kurzfristigen Turnier-Einladung des TSV Berkheim. Nach nur einem Training mit dem neuen Trainer-Team eine gute Chance sich gegenseitig besser kennenzulernen. Für einige Jungs aus dem jüngeren Jahrgang waren es gleichzeitig die ersten Spiele in der E-Jugend. Sieben Teams traten in einem Jeder-gegen-Jeden-Modus mit einer Spielzeit von 18 Minuten pro Spiel gegeneinander an.

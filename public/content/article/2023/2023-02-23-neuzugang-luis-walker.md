@@ -4,7 +4,7 @@ slug: "2023-02-23-neuzugang-luis-walker"
 date: "2023-02-23"
 teaser: "„Comeback“ für unseren zweiten Neuzugang Luis Walker"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 ---
 „Comeback“ ist das Stichwort für unseren zweiten Neuzugang Luis Walker, denn „Ginczek“ wie er auch gerne von seinen Teamkameraden genannt wird spielte bereits in der A-Jugend für unseren SV Walddorf. Nach der Rückkehr zu seinem Heimatverein FC Mittelstadt und den letzten 3,5 Jahren dort, kehrt Luis somit zu seinem zweiten Herzensverein zurück. Herzlich Willkommen zurück bei unserem SV Walddorf!

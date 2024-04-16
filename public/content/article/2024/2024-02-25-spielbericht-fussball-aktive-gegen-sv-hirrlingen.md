@@ -3,7 +3,7 @@ title: "Spielbericht Aktive gegen SV Hirrlingen"
 slug: "2024-02-25-spielbericht-fussball-aktive-gegen-sv-hirrlingen"
 date: "2024-02-25"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: "/media/sparten/fussball/aktive-team-2023-24.png"

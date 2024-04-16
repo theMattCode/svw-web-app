@@ -4,7 +4,7 @@ slug: "2023-04-04-bezirksliga-22-spieltag"
 date: "2023-04-04"
 teaser: "Bezirksliga, SV Pfrondorf - SV Walddorf 1:6 (0:3)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

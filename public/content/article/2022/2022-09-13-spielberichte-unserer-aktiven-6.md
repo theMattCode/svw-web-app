@@ -8,7 +8,7 @@ Bezirksliga Alb, 3. Spieltag: SV Hirrlingen - SV Walddorf  2:2 (1:0)
 
 Bezirksliga Alb, 4. Spieltag: SV Walddorf - VFL Pfullingen U23 2:0 (0:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

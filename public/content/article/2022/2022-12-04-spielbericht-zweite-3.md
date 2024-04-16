@@ -4,7 +4,7 @@ slug: "2022-12-04-spielbericht-zweite-3"
 date: "2022-12-04"
 teaser: "Kreisliga B, 11. Spieltag, SV Walddorf II - SV Ohmenhausen II 3:0"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

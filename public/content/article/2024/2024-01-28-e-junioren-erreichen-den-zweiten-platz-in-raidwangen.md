@@ -9,7 +9,7 @@ image:
   width: 3895
   height: 1393
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Nach unserem eigenen Turnier am Samstag ging es für unsere E-Jugend am Sonntag gleich noch nach Raidwangen. Wir traten mit einer aus beiden Jahrgängen gemischten Mannschaft an, die so noch nie zusammengespielt hatte. Aber das merkte man unseren Jungs überhaupt nicht an. Sie spielten von Anfang an super zusammen und marschierten absolut souverän durch ihre Vorrunden-Gruppe.

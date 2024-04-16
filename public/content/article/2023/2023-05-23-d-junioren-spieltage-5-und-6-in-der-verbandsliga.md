@@ -3,7 +3,7 @@ title: "D-Junioren: Spieltage 5 und 6 in der Verbandsliga"
 slug: "2023-05-23-d-junioren-spieltage-5-und-6-in-der-verbandsliga"
 date: "2023-05-23"
 tags:
-  - Fussball
+  - Fußball
   - D-Junioren
 image:
   src: /media/sparten/fussball/d-junioren-team-2022-23.png

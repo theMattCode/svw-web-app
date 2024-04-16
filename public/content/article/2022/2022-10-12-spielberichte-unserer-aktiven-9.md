@@ -8,7 +8,7 @@ Bezirksliga Alb, 8. Spieltag, TB Kirchentellinsfurt - SV Walddorf I 1:1 (0:1)
 
 Kreisliga B, 4. Spieltag, FC Mittelstadt II - SV Walddorf II 0:8 (0:4)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

@@ -9,7 +9,7 @@ image:
   width: 1856
   height: 1392
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 ---

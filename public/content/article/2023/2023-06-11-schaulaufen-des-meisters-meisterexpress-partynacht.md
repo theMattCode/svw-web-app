@@ -4,7 +4,7 @@ slug: "2023-06-11-schaulaufen-des-meisters-meisterexpress-partynacht"
 date: "2023-06-11"
 teaser: "Kreisliga B, 22. Spieltag, SV Ohmenhausen II - SV Walddorf II 0:2 (0:1)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

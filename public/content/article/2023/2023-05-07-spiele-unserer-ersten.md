@@ -12,7 +12,7 @@ teaser: "
 06.05.2023, Bezirksliga, SSC Tübingen - SV Walddorf ausgefallen
 "
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

@@ -4,7 +4,7 @@ slug: "2022-10-17-bezirksliga-9-spieltag-sv-walddorf-tsv-hirschau"
 date: "2022-10-17"
 teaser: "Bezirksliga, 9. Spieltag, SV Walddorf  - TSV Hirschau 3:3 (1.2)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

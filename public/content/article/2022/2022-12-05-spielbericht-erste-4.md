@@ -4,7 +4,7 @@ slug: "2022-12-05-spielbericht-erste-4"
 date: "2022-12-05"
 teaser: "Bezirksliga Alb, 16. Spieltag, SV Walddorf I, SGM Altingen/Entringen I 4:3 (1:3)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

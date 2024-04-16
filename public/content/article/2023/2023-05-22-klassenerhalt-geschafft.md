@@ -8,7 +8,7 @@ teaser: "
 
   GESCHAFFT!!!"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

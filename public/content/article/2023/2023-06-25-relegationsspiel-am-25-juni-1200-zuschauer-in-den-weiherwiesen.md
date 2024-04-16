@@ -9,7 +9,7 @@ image:
   width: 1819
   height: 1024
 tags:
-  - Fussball
+  - Fußball
   - Relegation
 ---
 Als krönender Abschluss der Saison wurde der SV Walddorf vom Verband als Veranstalter eines Relegationsspieles ausgewählt. Der Fussballbezirk Alb entschied sich für die Weiherwiesen als Austragungsort für das Finale um den Aufstieg in die Bezirksliga ALB. 

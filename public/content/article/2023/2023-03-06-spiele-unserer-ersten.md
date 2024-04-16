@@ -8,7 +8,7 @@ teaser: "
 
 05.03.2023, Bezirksliga, 18. Spieltag: SV Walddorf - SV Hirrlingen 1:3 (1:1)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

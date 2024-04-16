@@ -3,7 +3,7 @@ title: "D-Junioren - Das Abenteuer Verbandsliga beginnt"
 slug: "2023-04-04-d-junioren-das-abenteuer-verbandsliga-beginnt"
 date: "2023-04-04"
 tags:
-  - Fussball
+  - Fußball
   - D-Junioren
 image:
   src: /media/sparten/fussball/d-junioren-team-2022-23.png

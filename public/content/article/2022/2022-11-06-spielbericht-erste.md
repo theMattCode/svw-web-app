@@ -4,7 +4,7 @@ slug: "2022-11-06-spielbericht-erste"
 date: "2022-11-06"
 teaser: "Bezirksliga Alb, 12. Spieltag, SG Reutlingen - SV Walddorf 2:2 (1:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

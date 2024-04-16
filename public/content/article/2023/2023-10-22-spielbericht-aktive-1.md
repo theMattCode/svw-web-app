@@ -3,7 +3,7 @@ title: "Spielbericht Aktive I"
 slug: "2023-10-22-spielbericht-aktive-1"
 date: "2023-10-22"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: "/media/sparten/fussball/aktive-team-2023-24.png"

@@ -4,7 +4,7 @@ slug: "2022-10-24-spielberichte-unserer-aktiven-10"
 date: "2022-10-24"
 teaser: "Bezirksliga, SV Zainingen - SV Walddorf 1:1 (0:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

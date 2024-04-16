@@ -4,7 +4,7 @@ slug: "2023-05-16-klarer-sieg-unserer-zweiten"
 date: "2023-05-16"
 teaser: "Kreisliga, 18. Spieltag, SV Walddorf II - SSV Rübgarten II 7:1 (2:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

@@ -3,7 +3,7 @@ title: "Spielbericht Aktive II gegen VFL Pfullingen II"
 slug: "2024-02-25-spielbericht-aktive-2-gegen-vfl-pfullingen-2"
 date: "2024-02-25"
 tags:
-  - Fussball
+  - Fußball
   - Aktive II
 image:
   src: "/media/sparten/fussball/aktive-team-2023-24.png"

@@ -4,7 +4,7 @@ slug: "2023-03-31-trainerwechsel-bei-unserer-ersten-mannschaft"
 date: "2023-03-31"
 teaser: "Erol Türkoglu übernimmt zur neuen Saison von Benny Link."
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

@@ -4,7 +4,7 @@ slug: "2023-06-11-bezirksliga-30-spieltag-sv-croatia-reutlingen-sv-walddorf"
 date: "2023-06-11"
 teaser: "Bezirksliga, 30. Spieltag, SV Croatia Reutlingen - SV Walddorf 5:0 (1:0)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

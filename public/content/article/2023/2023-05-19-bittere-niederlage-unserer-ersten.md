@@ -4,7 +4,7 @@ slug: "2023-05-19-bittere-niederlage-unserer-ersten"
 date: "2023-05-19"
 teaser: "Bezirksliga, Nachholspiel 26. Spieltag, SSC Tübingen - SV Walddorf 2:1 (0:1)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

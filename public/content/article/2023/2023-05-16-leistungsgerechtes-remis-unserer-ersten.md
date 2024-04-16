@@ -4,7 +4,7 @@ slug: "2023-05-16-leistungsgerechtes-remis-unserer-ersten"
 date: "2023-05-16"
 teaser: "Bezirksliga, 27. Spieltag, SV Walddorf - SG Reutlingen 2:2 (1:2)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

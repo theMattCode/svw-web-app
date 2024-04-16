@@ -4,7 +4,7 @@ slug: "2023-03-12-bezirksliga-19-spieltag"
 date: "2023-03-12"
 teaser: "Bezirksliga, 19. Spieltag: VFL Pfullingen U23 - SV Walddorf 0:2 (0:2)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 image:
   src: /media/sparten/fussball/aktive-team-2022-23.png

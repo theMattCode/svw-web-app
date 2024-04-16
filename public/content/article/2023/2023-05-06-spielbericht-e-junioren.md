@@ -9,7 +9,7 @@ image:
   width: 1600
   height: 900
 tags:
-  - Fussball
+  - Fußball
   - E-Junioren
 ---
 Nichts für schwache Nerven war unser Spiel letzten Samstag gegen den TSV aus Betzingen!

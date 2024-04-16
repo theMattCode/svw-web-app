@@ -8,7 +8,7 @@ Bezirksliga, SV Walddorf I - SGM Kirchentellinsfurt/Kusterdingen I 5:0 (2:0)
 
 Kreisliga B, SV Walddorf II - FC Mittelstadt II I 3:0 (Nichtantritt Gast)"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
   - Aktive II
 image:

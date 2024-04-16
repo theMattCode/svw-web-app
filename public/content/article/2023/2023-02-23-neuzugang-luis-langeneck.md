@@ -4,7 +4,7 @@ slug: "2023-02-23-neuzugang-luis-langeneck"
 date: "2023-02-23"
 teaser: "Luis Langeneck wechselt vom TuS Metzingen zu unserem SV Walddorf."
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 ---
 Luis wechselt vom TuS Metzingen zu unserem SV Walddorf. Das erste Mal trat Luis beim FC Mittelstadt gegen den Ball bevor er sich früh in der Jugend dem TuS Metzingen anschloss, bei dem er den Großteil seiner fußballerischen Ausbildung absolvierte und in der vergangenen Halbsaison seine Eindrücke im Landesligateam des letztjährigen Aufsteigers sammeln konnten. Wir heißen ihn bei unserem SV Walddorf herzlich willkommen!

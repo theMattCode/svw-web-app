@@ -5,7 +5,7 @@ date: "2023-02-23"
 promote: true
 teaser: "Malte wechselt von den A-Junioren des VfL Pfullingen zu uns"
 tags:
-  - Fussball
+  - Fußball
   - Aktive I
 ---
 Vom Schönberg an den Schönbuch. Malte wechselt von den A-Junioren des VfL Pfullingen zu uns an den Schönbuchrand und schließt sich ebenso wie Luis Langeneck unserer Ersten Mannschaft an. Malte absolvierte seine fußballerische Ausbildung unter anderem in Oferdingen, Sondelfingen, beim SSV Reutlingen und zuletzt beim VfL Pfullingen. Herzlich Willkommen bei unserem SV Walddorf!

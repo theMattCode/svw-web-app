@@ -9,7 +9,7 @@ image:
   width: 1600
   height: 900
 tags:
-  - Fussball
+  - Fußball
   - D-Junioren
 ---
 Nach dem Auftaktsieg vor 3 Wochen ging es für unsere D-Junioren am vergangenen Samstag zum ersten Auswärtsspiel in der Verbandsliga.
