@@ -8,7 +8,7 @@ Mit der Yoga-Sportstunde von Sandra Dießner ging nun auch das dritte Sportangeb
 
 Unsere Online-Angebote im Überblick:
 
-**Early-Bird Yoga,** montags, 8:30 bis 9:30 Uhr. Übungsleiterin: Monika Haar. Anmeldung unter monika.haar@svwalddorf.de
+**Early-Bird Yoga,** montags, 8:30 bis 9:30 Uhr. Übungsleiterin: Monika Haar. Anmeldung unter monikahaar@yahoo.de
 
 **Frauenfitness**, montags 18:00 bis 19:00 Uhr. Übungsleiterin: Andrea Troglauer, Anmeldung unter andrea.troglauer@svwalddorf.de.
 

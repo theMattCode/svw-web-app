@@ -25,7 +25,7 @@ Dir fällt zuhause die Decke auf den Kopf und du findest, dass man in dieser Zei
 Die Yogastunde findet **montags, 8:30 Uhr**, zur gewohnten Zeit statt.
 
 
-Anmeldung: monika.haar@svwalddorf.de
+Anmeldung: monikahaar@yahoo.de
 
 
 
