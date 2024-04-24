@@ -16,12 +16,13 @@ export const veranstaltungen = { name: "Veranstaltungen", url: "/verein/veransta
 export const historie = { name: "Historie", url: "/verein/historie" };
 export const foerderkreis = { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true };
 export const satzung = { name: "Satzung", url: "/verein/satzung" };
+export const geschaeftsordnung = { name: "Geschäftsordnung", url: "/verein/geschaeftsordnung" };
 export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
 export const impressum = { name: "Impressum", url: "/verein/impressum" };
 export const formales = {
   name: "Formales",
   url: "/verein/formales",
-  subMenu: [satzung, datenschutz, impressum],
+  subMenu: [satzung, geschaeftsordnung, datenschutz, impressum],
 };
 export const verein: MenuItem = {
   name: "Verein",
