@@ -13,4 +13,4 @@ calendarEntries:
     place:
       name: "Sportpark Weiherwiesen"
 ---
-Ansprechpartner: [kerstin.fischer@svwalddorf.de](kerstin.fischer@svwalddorf.de)
+Ansprechpartner: [kerstin.fischer@svwalddorf.de](mailto:kerstin.fischer@svwalddorf.de)
