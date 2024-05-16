@@ -19,6 +19,14 @@ export default function Rehasport() {
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
   return (
     <div className="bg-neutral-200 pb-8">
+      <div className="bg-svw-blue-lighter mb-2  pb-2 pt-8 gap-2">
+        <BlockTitle title="Ankündigung" />
+        <div className="container flex flex-col pt-2 items-center">
+          <div className="bg-white shadow-2xl p-2 flex flex-col gap-2 w-full">
+            Unsere Rehasport-Kurse finden auch während den Pfingstferien statt.
+          </div>
+        </div>
+      </div>
       <div className="container flex flex-col gap-2">
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full h-80" />
