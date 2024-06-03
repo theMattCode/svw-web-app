@@ -11,7 +11,7 @@ image:
   alt: "Aktive Team 2023/24"
   width: 1856
   height: 1392
-teaser: "Wir müssen nach zwei erfolgreichen Saisons auf den bitteren Abstieg beider Mannschaften der Aktiven zum Ende der Saison 2024/2025 blicken."
+teaser: "Nach zwei erfolgreichen Saisons blicken wir auf die aktuelle  Saison 2023/2024 und dem bitteren Abstieg beider Mannschaften der Aktiven zurückblicken."
 ---
 ### SV Walddorf I, Bezirksliga Alb, Saison 2023/2024
 
