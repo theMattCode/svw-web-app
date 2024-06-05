@@ -3,7 +3,9 @@ on:
   push:
     paths-ignore:
       - 'public/content/**'
+      - 'app/content/announcement/**'
       - '.github/**'
+
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
