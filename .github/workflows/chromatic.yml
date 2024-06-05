@@ -1,6 +1,8 @@
 name: 'Chromatic'
 on:
   push:
+    paths:
+      - '.github/chromatic.yml'
     paths-ignore:
       - 'public/content/**'
       - 'app/content/announcement/**'
