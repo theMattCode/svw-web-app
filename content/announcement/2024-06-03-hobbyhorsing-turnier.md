@@ -1,5 +1,5 @@
 ---
-title: "1. Turnier der HobbyHorsing Mädels"
+title: "1. Turnier der HobbyHorsing Mädels am 08. Juni 2024"
 activeDate: 2024-06-01 00:00
 expiryDate: 2024-06-09 00:00
 tags:
