@@ -17,7 +17,7 @@ export default function Markdown({ content }: Props): JSX.Element | null {
           rehypePlugins={[rehypeRaw]}
           components={{
             ul: ({ children }) => (
-              <div className="pl-6 font-light text-sm">
+              <div className="pl-6 font-light">
                 <ul className="list-disc list-outside">{children}</ul>
               </div>
             ),
