@@ -3,16 +3,20 @@ on:
   push:
     paths-ignore:
       - 'public/content/**'
-      - '.github/**'
+      - 'app/content/announcement/**'
+
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - uses: actions/checkout@v1
       - name: Install dependencies
         run: npm install
       - name: Publish to Chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@v11
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: 'build:storybook'
