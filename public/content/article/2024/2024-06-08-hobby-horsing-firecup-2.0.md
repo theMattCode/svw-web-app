@@ -28,11 +28,7 @@ Ein weiteres Highlight des Turniers war das Kostümspringen, bei dem die Kreativ
 
 Den krönenden Abschluss bildete das Geländespringen unter freiem Himmel, bei dem die Teilnehmerinnen und ihre Pferde ihr Geschick und ihre Geschwindigkeit auf einem abwechslungsreichen Parcours beweisen konnten. Die frische Luft und die natürliche Umgebung trugen zu einer besonders dynamischen und aufregenden Atmosphäre bei.
 
-![](/media/2024/2024-06-08_firecup-2.0-4.jpg)
-
-![](/media/2024/2024-06-08_firecup-2.0-5.jpg)
-
-Ohne die mehrmonatige Vorbereitung von Marlene Fischer (12) und Hannah Jones (15) hätte der Firecup 2.0 so nicht stattfinden können. Die beiden haben mit Ihrem unermüdlichen Engagement und Ihrer Leidenschaft maßgeblich zum Gelingen des Tuniers beigetragen.
+Ohne die mehrmonatige Vorbereitung von Marlene Fischer (12) und Hannah Jones (15) hätte der Firecup 2.0 so nicht stattfinden können. Die beiden haben mit Ihrem unermüdlichen Engagement und Ihrer Leidenschaft maßgeblich zum Gelingen des Turniers beigetragen.
 
 ![](/media/2024/2024-06-08_firecup-2.0-6.jpg)
 
