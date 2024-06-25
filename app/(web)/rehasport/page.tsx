@@ -60,8 +60,9 @@ export default function Rehasport() {
                 <ul className="list-disc px-8">
                   <li>Ticket für Vereinsmitglieder: 50,-€ für 10 Kursstunden a 45 min</li>
                   <li>Ticket für Nichtmitglieder: 80,-€ für 10 Kursstunden a 45 min</li>
+                  <li>Die Kursgebühr ist im Voraus zu bezahlen.</li>
                   <li>
-                    Das Ticket gilt für die Dauer von 15 Wochen. Danach verfallen alle nicht wahr genommen Kursstunden.
+                    Das Ticket gilt für die Dauer von 13 Wochen. Danach verfallen alle nicht wahr genommen Kursstunden.
                     Eine Rückerstattung ist ausgeschlossen. Termine, an denen keine Rehastunde stattfinden kann, (Bsp.:
                     Feiertage) verlängern die Laufzeit entsprechend.
                   </li>
@@ -217,6 +218,19 @@ export default function Rehasport() {
                 <td className="bg-amber-200">
                   <div className="flex flex-col items-center">
                     <div>18:30 - 19:15 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div className="font-medium text-red-600">NEU ab 4. Juli 2024:</div>
+                    <div>19:30 - 20:15 Uhr</div>
                     <div className="font-medium">Orthopädie</div>
                   </div>
                 </td>
