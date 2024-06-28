@@ -15,6 +15,7 @@ export const sponsoring = { name: "Spenden und Sponsoring", url: "/verein/spende
 export const veranstaltungen = { name: "Veranstaltungen", url: "/verein/veranstaltungen" };
 export const historie = { name: "Historie", url: "/verein/historie" };
 export const foerderkreis = { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true };
+export const jugendschutz = { name: "Jugendschutz", url: "/verein/jugendschutz" };
 export const satzung = { name: "Satzung", url: "/verein/satzung" };
 export const geschaeftsordnung = { name: "Geschäftsordnung", url: "/verein/geschaeftsordnung" };
 export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
@@ -38,6 +39,7 @@ export const verein: MenuItem = {
     veranstaltungen,
     historie,
     foerderkreis,
+    jugendschutz,
     formales,
   ],
 };
