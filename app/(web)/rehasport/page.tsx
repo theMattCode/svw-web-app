@@ -19,14 +19,6 @@ export default function Rehasport() {
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
   return (
     <div className="bg-neutral-200 pb-8">
-      <div className="bg-svw-blue-lighter mb-2  pb-2 pt-8 gap-2">
-        <BlockTitle title="Ankündigung" />
-        <div className="container flex flex-col pt-2 items-center">
-          <div className="bg-white shadow-2xl p-2 flex flex-col gap-2 w-full">
-            Unsere Rehasport-Kurse finden auch während den Pfingstferien statt.
-          </div>
-        </div>
-      </div>
       <div className="container flex flex-col gap-2">
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full h-80" />
@@ -60,8 +52,9 @@ export default function Rehasport() {
                 <ul className="list-disc px-8">
                   <li>Ticket für Vereinsmitglieder: 50,-€ für 10 Kursstunden a 45 min</li>
                   <li>Ticket für Nichtmitglieder: 80,-€ für 10 Kursstunden a 45 min</li>
+                  <li>Die Kursgebühr ist im Voraus zu bezahlen.</li>
                   <li>
-                    Das Ticket gilt für die Dauer von 15 Wochen. Danach verfallen alle nicht wahr genommen Kursstunden.
+                    Das Ticket gilt für die Dauer von 13 Wochen. Danach verfallen alle nicht wahr genommen Kursstunden.
                     Eine Rückerstattung ist ausgeschlossen. Termine, an denen keine Rehastunde stattfinden kann, (Bsp.:
                     Feiertage) verlängern die Laufzeit entsprechend.
                   </li>
@@ -217,6 +210,19 @@ export default function Rehasport() {
                 <td className="bg-amber-200">
                   <div className="flex flex-col items-center">
                     <div>18:30 - 19:15 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div className="font-medium text-red-600">NEU ab 4. Juli 2024:</div>
+                    <div>19:30 - 20:15 Uhr</div>
                     <div className="font-medium">Orthopädie</div>
                   </div>
                 </td>
