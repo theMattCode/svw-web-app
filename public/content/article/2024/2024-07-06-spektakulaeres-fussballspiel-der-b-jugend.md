@@ -9,8 +9,8 @@ image:
   height: 774
 tags:
   - Fußball
-  - C-Junioren
-teaser: "Die B-Junioren vom SV Bonlanden liefen zu einem aufregenden Duell gegen Schönbuch United im Sportpark Weiherwiesen auf."
+  - B-Junioren
+teaser: "Unsere wieder erstarkten B-Junioren liefen zu einem aufregenden Duell gegen SV Bonlanden im Sportpark Weiherwiesen auf."
 ---
 Am Sonntagmorgen lieferten sich die Mannschaften von Schönbuch United und SV Bonlanden ein aufregendes Duell, das mit einem 5:3-Sieg endete. Beide Teams zeigten viel Einsatz und glänzten mit schönen Kombinationen und zahlreichen Pässen. Das Wetter schuf ideale Bedingungen für ein schnelles Spiel auf dem Kunstrasen. Besonders beeindruckend war die offensive Spielweise beider Teams, die immer wieder begeisterte und den Torspielern alles abverlangte.
 

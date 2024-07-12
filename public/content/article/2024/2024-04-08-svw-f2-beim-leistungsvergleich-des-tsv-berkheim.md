@@ -3,10 +3,10 @@ title: "F2-Junioren mit bärenstarker Leistung beim TSV Berkheim"
 slug: "2024-04-08-svw-f2-beim-leistungsvergleich-des-tsv-berkheim"
 date: "2024-04-08"
 image:
-  src: "/media/sparten/fussball/f-junioren-team-2023-24.png"
-  alt: "F-Junioren Team 2023/24"
-  width: 3686
-  height: 1306
+  src: "/media/2024/2024-04-06-svw-f2-beim-lv-2.jpg"
+  alt: "U8 beim TSV Berkheim"
+  width: 2000
+  height: 1126
 tags:
   - Fußball
   - F-Junioren
@@ -21,5 +21,3 @@ Die jungen Kicker überzeugten mit großartigem Einsatz und einer sehenswürdige
 Auch die Ergebnisse können sich sehen lassen: Mit drei Unentschieden, nur einer Niederlage gegen das Team des FSV Waldebene Ost und fünf Siegen konnte sich unser Team gegen durchaus namhafte Vereine wie TuS Freiberg, TSG Esslingen oder SV 1845 Esslingen deutlich durchsetzen.
 
 Vielen Dank an die Einladung des TSV Berkheim und die tolle Organisation.
-
-![Unser erschöpftes aber glückliches F2-Team](/media/2024/2024-04-06-svw-f2-beim-lv-2.jpg)

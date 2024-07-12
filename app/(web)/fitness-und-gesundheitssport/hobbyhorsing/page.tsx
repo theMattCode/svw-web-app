@@ -51,10 +51,22 @@ export default function HobbyHorsing() {
             <h4>Kursdetails</h4>
             <p>
               <ul>
-                <li>Beginn: 26.01.2024</li>
-                <li>Kursdauer: 20 Termine</li>
-                <li>Immer freitags, 16:30 – 18:15 Uhr</li>
-                <li>Kinder im Alter von 9 bis 15 Jahre</li>
+                <li>
+                  Beginn: <b>13.09.2024</b>
+                </li>
+                <li>
+                  Kursdauer: <b>20 Übungseinheiten</b>{" "}
+                  <span className="text-sm">
+                    (sollten Termine wegen Verhinderung des Übungsleiters oder aus anderen Umständen ausfallen, werden
+                    diese am Ende angehängt)
+                  </span>
+                </li>
+                <li>
+                  Immer <b>freitags, 16:00 – 18:00 Uhr</b>
+                </li>
+                <li>
+                  Kinder im Alter von <b>9 bis 15 Jahre</b>
+                </li>
                 <li>Kursgebühr: €28,- für Vereinsmitglieder, €100,- für Nichtmitglieder</li>
                 <li>Ort: Gymnastikraum in der Ballspielhalle</li>
               </ul>
@@ -71,11 +83,11 @@ export default function HobbyHorsing() {
             <h4>Anmeldung</h4>
             <p>Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden.</p>
             <p>
-              Bitte das{" "}
-              <Link href="/download/2024-01-07_Kursanmeldung_HobbyHorsing.pdf" target="_blank">
+              Bitte das&nbsp;
+              <Link href="/download/2024-07-12_Anmeldeformular_HobbyHorsing_Kurs_H-2024-2.pdf" target="_blank">
                 Anmeldeformular
               </Link>
-              vollständig ausgef&uuml;llt und unterschrieben an{" "}
+              &nbsp; vollständig ausgef&uuml;llt und unterschrieben an{" "}
               <Link href="mailto:kerstin.fischer@svwalddorf.de">Kerstin Fischer</Link> schicken.
             </p>
             <p>

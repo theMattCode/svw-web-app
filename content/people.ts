@@ -44,7 +44,7 @@ export const people: Person[] = [
   {
     firstname: "Björn",
     lastname: "Kittelmann",
-    tags: ["Vorstand Sport", "Trainer C-Junioren"],
+    tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren"],
     email: "bjoern.kittelmann@svwalddorf.de",
     phone: ["+49 1573 5646291"],
     image: { src: "/media/people/bjoern-kittelmann-2023.png", alt: "Björn Kittelmann", width: 771, height: 986 },
@@ -98,7 +98,7 @@ export const people: Person[] = [
   {
     firstname: "Antonino",
     lastname: "Bonfiglio",
-    tags: ["Turnierorganisation", "Trainer F-Junioren (U9)"],
+    tags: ["Turnierorganisation", "Trainer E-Junioren"],
     email: "turniere@svwalddorf.de",
     phone: ["+49 162 9471662"],
     image: { src: "/media/people/antonino-bonfiglio-2021.png", alt: "Antonino Bonfiglio", width: 754, height: 773 },
@@ -194,7 +194,17 @@ export const people: Person[] = [
   {
     firstname: "Benjamin",
     lastname: "Link",
+    tags: [],
+  },
+  {
+    firstname: "Sven",
+    lastname: "Pichler",
     tags: ["Trainer Aktive I"],
+  },
+  {
+    firstname: "Maurice",
+    lastname: "Heim",
+    tags: ["Co-Spielertrainer Aktive I"],
   },
   {
     firstname: "Luis",
@@ -224,14 +234,14 @@ export const people: Person[] = [
   {
     firstname: "Steffen",
     lastname: "Kittelmann",
-    tags: ["Trainer B-Junioren"],
+    tags: [""],
     phone: ["+49 157 87995150"],
     image: { src: "/media/people/steffen-kittelmann-2023.png", alt: "Steffen Kittelmann", width: 870, height: 1024 },
   },
   {
     firstname: "Thomas",
     lastname: "Brülls",
-    tags: ["Trainer B-Junioren"],
+    tags: [""],
     phone: ["+49 151 70166622"],
     image: { src: "/media/people/thomas-bruells-2023.png", alt: "Thomas Brülls", width: 730, height: 927 },
   },
@@ -245,19 +255,19 @@ export const people: Person[] = [
   {
     firstname: "Finn",
     lastname: "Kittelmann",
-    tags: ["Athletiktrainer C-Junioren"],
+    tags: ["Athletiktrainer B-Junioren"],
     image: { src: "/media/people/finn-kittelmann-2023.png", alt: "Finn Kittelmann", width: 839, height: 1024 },
   },
   {
     firstname: "Uwe",
     lastname: "Laux",
-    tags: ["Trainer C-Junioren"],
+    tags: [""],
     image: { src: "/media/people/uwe-laux-2023.png", alt: "Uwe Laux", width: 839, height: 1024 },
   },
   {
     firstname: "Robin",
     lastname: "Schraitle",
-    tags: ["Trainer C-Junioren"],
+    tags: [""],
     image: { src: "/media/people/robin-schraitle-2020.png", alt: "Robin Schraitle", width: 557, height: 692 },
   },
   {
@@ -270,7 +280,7 @@ export const people: Person[] = [
   {
     firstname: "Chris",
     lastname: "Weiß",
-    tags: ["Trainer D-Junioren"],
+    tags: ["Trainer C-Junioren"],
     phone: ["+49 176 64261278"],
     image: { src: "/media/people/chris-weiss-2023.png", alt: "Chris Weiß", width: 817, height: 1024 },
   },
@@ -291,7 +301,7 @@ export const people: Person[] = [
   {
     firstname: "Leonardo",
     lastname: "Lombardi",
-    tags: ["Trainer D-Junioren"],
+    tags: ["Trainer C-Junioren"],
     image: { src: "/media/people/leonardo-lombardi-2023.png", alt: "Leonardo Lombardi", width: 671, height: 845 },
   },
   {
@@ -316,44 +326,49 @@ export const people: Person[] = [
   {
     firstname: "Arif",
     lastname: "Akkoc",
-    tags: ["Trainer E-Junioren"],
+    tags: ["Trainer D-Junioren"],
     phone: ["+49 170 4487003"],
     image: { src: "/media/people/arif-akkoc-2023.png", alt: "Arif Akkoc", width: 681, height: 904 },
   },
   {
     firstname: "Sabawun",
     lastname: "Khostwal",
-    tags: ["Trainer E-Junioren"],
+    tags: [""],
     image: { src: "/media/people/sabawun-khostwal-2023.png", alt: "Sabawun Khostwal", width: 704, height: 935 },
   },
   {
     firstname: "Yann",
     lastname: "Thomas",
-    tags: ["Trainer E-Junioren"],
+    tags: [""],
     image: { src: "/media/people/yann-thomas-2023.png", alt: "Yann Thomas", width: 670, height: 885 },
   },
   {
     firstname: "Timo",
     lastname: "Thomas",
-    tags: ["Trainer E-Junioren"],
+    tags: [""],
     image: { src: "/media/people/timo-thomas-2023.png", alt: "Timo Thomas", width: 620, height: 870 },
   },
   {
     firstname: "Yener",
     lastname: "Selcuk",
-    tags: ["Trainer E-Junioren"],
+    tags: ["Betreuer D-Junioren"],
     image: { src: "/media/people/yener-selcuk-2023.png", alt: "Yener Selcuk", width: 704, height: 935 },
   },
   {
     firstname: "Florian",
     lastname: "Schön",
-    tags: ["Trainer F-Junioren (U9)"],
+    tags: ["Trainer E-Junioren"],
     image: { src: "/media/people/florian-schoen-2023.png", alt: "Florian Schön", width: 375, height: 448 },
+  },
+  {
+    firstname: "Daniel",
+    lastname: "Russom",
+    tags: ["Trainer E-Junioren"],
   },
   {
     firstname: "Matthäus",
     lastname: "Mayer",
-    tags: ["Vorstand Kommunikation", "Trainer F-Junioren (U8)"],
+    tags: ["Vorstand Kommunikation", "Trainer F-Junioren"],
     phone: ["+49 176 66332295"],
     email: "matthaeus.mayer@svwalddorf.de",
     image: { src: "/media/people/matthaeus-mayer-2023.png", alt: "Matthäus Mayer", width: 857, height: 1024 },
@@ -361,25 +376,29 @@ export const people: Person[] = [
   {
     firstname: "Hannes",
     lastname: "Kopp",
-    tags: ["Trainer F-Junioren (U8)"],
+    tags: ["Trainer F-Junioren"],
     image: { src: "/media/people/hannes-kopp-2023.png", alt: "Hannes Kopp", width: 800, height: 1024 },
   },
   {
     firstname: "Vincenzo",
     lastname: "Bonfiglio",
-    tags: ["Trainer F-Junioren (U9)"],
+    tags: ["Trainer E-Junioren"],
     image: { src: "/media/people/vincenzo-bonfiglio-2023.png", alt: "Vincenzo Bonfiglio", width: 835, height: 1024 },
   },
   {
-    firstname: "Ahmet",
-    lastname: "Adsiz",
-    tags: ["Trainer F-Junioren (U8)"],
-    image: { src: "/media/people/ahmet-adsiz-2023.png", alt: "Ahmet Adsiz", width: 375, height: 460 },
+    firstname: "Michael",
+    lastname: "Opalla",
+    tags: ["Trainer F-Junioren"],
+  },
+  {
+    firstname: "Markus",
+    lastname: "Holmgren",
+    tags: ["Torspieler-Trainer F-Junioren"],
   },
   {
     firstname: "Moritz",
     lastname: "Krämer",
-    tags: ["Trainer Bambini"],
+    tags: ["Trainer F-Junioren"],
     image: { src: "/media/people/moritz-kraemer-2023.png", alt: "Moritz Krämer", width: 217, height: 253 },
   },
   {
@@ -391,12 +410,17 @@ export const people: Person[] = [
   {
     firstname: "Jörg",
     lastname: "Schlick",
-    tags: ["Trainer Bambini"],
+    tags: ["Trainer F-Junioren"],
   },
   {
     firstname: "Daniel",
     lastname: "Sax",
     tags: ["Trainer Bambini"],
+  },
+  {
+    firstname: "Marcel",
+    lastname: "Ostermann",
+    tags: ["Trainer E-Junioren"],
   },
   {
     firstname: "Sascha",
@@ -406,7 +430,7 @@ export const people: Person[] = [
   {
     firstname: "Tobias",
     lastname: "Bayha",
-    tags: ["Trainer Bambini"],
+    tags: [""],
   },
   {
     firstname: "Lukas",
