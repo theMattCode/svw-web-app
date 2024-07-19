@@ -14,4 +14,4 @@ Der SV Walddorf führt ein umfangreiches Präventions- und Schutzkonzept unserer
 
 Für die Rolle des Jugendschutzbeauftragten suchen wir noch Unterstützung.
 
-Alle Informationen, Kontaktdaten und die Jugendschutzordnung findet ihr auf der [Seite zum Jugenschutz](/verein/jugendschutz).
+Alle Informationen, Kontaktdaten und die Jugendschutzordnung findet ihr auf der [Seite zum Jugendschutz](/verein/jugendschutz).

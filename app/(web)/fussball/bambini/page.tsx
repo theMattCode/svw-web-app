@@ -47,9 +47,6 @@ export default function Bambini() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <PersonCard person={getPersonByName("Giovanni Cimmino")} />
           <PersonCard person={getPersonByName("Pietro D'Angelo")} />
-          <PersonCard person={getPersonByName("Moritz Krämer")} />
-          <PersonCard person={getPersonByName("Vincenzo Bonfiglio")} />
-          <PersonCard person={getPersonByName("Jörg Schlick")} />
           <PersonCard person={getPersonByName("Daniel Sax")} />
           <PersonCard person={getPersonByName("Sascha Flaig")} />
           <PersonCard person={getPersonByName("Tobias Bayha")} />

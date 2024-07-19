@@ -15,15 +15,15 @@ export const metadata: Metadata = {
 };
 
 export default function DJunioren() {
-  const { width, height } = calcImageDimensionsForWidth({ width: 3656, height: 1311 }, 1200);
+  const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2726 }, 1200);
   return (
     <PageBase>
       <BlockTitle title="D-Junioren" />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
-            src="/media/sparten/fussball/d-junioren-team-2023-24.png"
-            alt="Mannschaftsfoto D-Junioren 2023/24"
+            src="/media/sparten/fussball/d-junioren-team-2024-25.jpg"
+            alt="Mannschaftsfoto D-Junioren 2024/25"
             width={width}
             height={height}
             className="col-span-1 xl:col-span-3"
@@ -42,12 +42,10 @@ export default function DJunioren() {
         <h3>Trainer und Betreuer</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <PersonCard person={getPersonByName("Stefan Bader")} />
-          <PersonCard person={getPersonByName("Chris Weiß")} />
-          <PersonCard person={getPersonByName("Torben Grotz")} />
           <PersonCard person={getPersonByName("Hermann Saile")} />
-          <PersonCard person={getPersonByName("Leonardo Lombardi")} />
           <PersonCard person={getPersonByName("Giovanni Cimmino")} />
-          <PersonCard person={getPersonByName("Branco Dominikovic")} />
+          <PersonCard person={getPersonByName("Arif Akkoc")} />
+          <PersonCard person={getPersonByName("Yener Selcuk")} />
         </div>
       </div>
       <ArticlePreviewList tags={["D-Junioren"]} />

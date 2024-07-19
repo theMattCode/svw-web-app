@@ -16,15 +16,15 @@ export const metadata: Metadata = {
 };
 
 export default function Aktive() {
-  const { width, height } = calcImageDimensionsForWidth({ width: 3477, height: 1367 }, 1200);
+  const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2726 }, 1200);
   return (
     <PageBase>
       <BlockTitle title="Aktive" />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
-            src="/media/sparten/fussball/aktive-team-2023-24.png"
-            alt="Mannschaftsfoto Aktive 2023/24"
+            src="/media/sparten/fussball/aktive-team-2024-25.jpg"
+            alt="Mannschaftsfoto Aktive 2024/25"
             width={width}
             height={height}
             className="col-span-1 xl:col-span-3"
@@ -43,23 +43,23 @@ export default function Aktive() {
         </div>
         <h3>Trainer und Betreuer</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-          <PersonCard person={getPersonByName("Benjamin Link")} />
-          <PersonCard person={getPersonByName("Luis Armbruster")} />
+          <PersonCard person={getPersonByName("Sven Pichler")} />
+          <PersonCard person={getPersonByName("Maurice Heim")} />
           <PersonCard person={getPersonByName("Fabian Schramm")} />
           <PersonCard person={getPersonByName("Julian Wohlfarth")} />
           <PersonCard person={getPersonByName("Achim Wohlfarth")} />
           <PersonCard person={getPersonByName("Björn Kittelmann")} />
         </div>
-        <ArticlePreviewList tags={["Aktive I", "Aktive II"]} />
-        <BlockTitle title="Tabelle Aktive I" />
-        <FussballDeWidget widgetKey="02MK9VOPTC000000VUM1DNPAVTVU8DI7" height={904} />
-        <BlockTitle title="Spielplan Aktive I" />
-        <FussballDeWidget widgetKey="02KJUUTC8K000000VUM1DNOCVUTS8KJE" />
-        <BlockTitle title="Tabelle Aktive II" />
-        <FussballDeWidget widgetKey="02MKA0TUAG000000VUM1DNPEVUF0NFQ2" height={856} />
-        <BlockTitle title="Spielplan Aktive II" />
-        <FussballDeWidget widgetKey="02LH79RNPG000000VUM1DNOBVTKJO187" />
       </div>
+      <ArticlePreviewList tags={["Aktive I", "Aktive II"]} />
+      <BlockTitle title="Tabelle Aktive I" />
+      <FussballDeWidget widgetKey="02MK9VOPTC000000VUM1DNPAVTVU8DI7" height={904} />
+      <BlockTitle title="Spielplan Aktive I" />
+      <FussballDeWidget widgetKey="02KJUUTC8K000000VUM1DNOCVUTS8KJE" />
+      <BlockTitle title="Tabelle Aktive II" />
+      <FussballDeWidget widgetKey="02MKA0TUAG000000VUM1DNPEVUF0NFQ2" height={856} />
+      <BlockTitle title="Spielplan Aktive II" />
+      <FussballDeWidget widgetKey="02LH79RNPG000000VUM1DNOBVTKJO187" />
     </PageBase>
   );
 }

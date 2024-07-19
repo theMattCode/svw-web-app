@@ -16,15 +16,15 @@ export const metadata: Metadata = {
 };
 
 export default function Frauen() {
-  const { width, height } = calcImageDimensionsForWidth({ width: 915, height: 614 }, 1200);
+  const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2725 }, 1200);
   return (
     <PageBase>
       <BlockTitle title={fussballFrauen.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
-            src="/media/sparten/fussball/frauen-team-2023-24.png"
-            alt="Mannschaftsfoto Frauen 2023/24"
+            src="/media/sparten/fussball/frauen-team-2024-25.jpg"
+            alt="Mannschaftsfoto Frauen 2024/25"
             width={width}
             height={height}
             className="col-span-1 xl:col-span-3"
