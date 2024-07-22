@@ -12,6 +12,6 @@ image:
 ---
 Der SV Walddorf führt ein umfangreiches Präventions- und Schutzkonzept unserer Jugendlichen und Kinder.
 
-Für die Rolle des Jugendschutzbeauftragten suchen wir noch Unterstützung.
+Nadine Albrecht übernimmt die Rolle der Jugendschutzbeauftragten.
 
 Alle Informationen, Kontaktdaten und die Jugendschutzordnung findet ihr auf der [Seite zum Jugendschutz](/verein/jugendschutz).

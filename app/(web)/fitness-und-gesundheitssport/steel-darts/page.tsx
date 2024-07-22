@@ -54,7 +54,7 @@ export default function SteelDarts() {
           <PersonCard person={getPersonByName("Rainer Burkhardt")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Fit und Gesund"]} />
+      <ArticlePreviewList tags={["Steel-Darts"]} />
     </PageBase>
   );
 }

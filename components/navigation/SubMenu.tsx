@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import React from "react";
 import { MenuItem } from "#/content/sitemap";
+import { NewBadge } from "#/components/badge/NewBadge";
 
 type Props = {
   item: MenuItem;
@@ -20,6 +21,7 @@ export function SubMenu({ item }: Props) {
             className="w-full flex gap-2 items-center text-lg px-2 font-bold border-b-2 border-opacity-25 border-white hover:border-opacity-50"
           >
             <div>{subPage.name}</div>
+            {subPage.new && <NewBadge />}
             {subPage.external && <HiOutlineExternalLink />}
           </Link>
           {subPage.subMenu && (
@@ -32,6 +34,7 @@ export function SubMenu({ item }: Props) {
                     className="w-full px-2 flex gap-2 items-center"
                   >
                     <div>{subSubPage.name}</div>
+                    {subSubPage.new && <NewBadge />}
                     {subSubPage.external && <HiOutlineExternalLink />}
                   </Link>
                 </li>

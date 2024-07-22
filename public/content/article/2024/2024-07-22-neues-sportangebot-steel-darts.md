@@ -20,3 +20,5 @@ An **Trainingsabenden immer mittwochs ab 18 Uhr im Sportheim Weiherwiesen** spie
 ![Marc Musse & Rainer Burkhardt](/media/2024/2024-07-22-steel-darts.jpg)
 
 Kontakt: [darts@svwalddorf.de](mailto:darts@svwalddorf.de)
+
+Schaut auch gerne auf der [Steel-Darts](/fitness-und-gesundheitssport/steel-darts) Seite vorbei.

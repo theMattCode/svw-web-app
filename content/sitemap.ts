@@ -1,6 +1,7 @@
 export type MenuItem = {
   name: string;
   url: string;
+  new?: boolean;
   external?: boolean;
   subMenu?: MenuItem[];
 };
@@ -15,7 +16,7 @@ export const sponsoring = { name: "Spenden und Sponsoring", url: "/verein/spende
 export const veranstaltungen = { name: "Veranstaltungen", url: "/verein/veranstaltungen" };
 export const historie = { name: "Historie", url: "/verein/historie" };
 export const foerderkreis = { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true };
-export const jugendschutz = { name: "Kinder- und Jugendschutz", url: "/verein/jugendschutz" };
+export const jugendschutz = { name: "Kinder- und Jugendschutz", url: "/verein/jugendschutz", new: true };
 export const satzung = { name: "Satzung", url: "/verein/satzung" };
 export const geschaeftsordnung = { name: "Geschäftsordnung", url: "/verein/geschaeftsordnung" };
 export const jugendschutzordnung = { name: "Jugendschutzordnung", url: "/verein/jugendschutzordnung" };
@@ -66,6 +67,7 @@ export const hobbyHorsing: MenuItem = {
 export const steelDarts: MenuItem = {
   name: "Steel Darts",
   url: "/fitness-und-gesundheitssport/steel-darts",
+  new: true,
 };
 export const fitnessUndGesundheitssport: MenuItem = {
   name: "Fitness & Gesundheitssport",
