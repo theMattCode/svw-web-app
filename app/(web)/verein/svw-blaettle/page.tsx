@@ -51,9 +51,13 @@ export default function SVWBlaettle() {
                 </Link>
                 &nbsp; wenden.
               </p>
+              <p className="my-4">
+                <Link href="/verein/svw-blaettle-reinschauen" className="text-lg">
+                  Reinschauen und herunterladen
+                </Link>
+              </p>
             </div>
           </div>
-          <PDFViewer url="/download/svw_blaettle_web_2022-2023.pdf" />
         </div>
       </div>
     </PageBase>

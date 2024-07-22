@@ -1,33 +1,111 @@
 import React from "react";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import { PDFViewer } from "#/components/pdf-viewer/PDFViewer";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { jugendschutz } from "#/content/sitemap";
 import { PersonCard } from "#/components/person/PersonCard";
+import Image from "next/image";
+import { calcImageDimensionsForHeight } from "#/lib/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: getTitle(jugendschutz.name),
 };
 
 export default function Jugendschutz() {
+  const roteKarteDimensions = calcImageDimensionsForHeight({ width: 354, height: 255 }, 180);
   return (
     <PageBase>
       <BlockTitle title={jugendschutz.name} />
-      <PersonCard
-        person={{
-          firstname: "Andrea",
-          lastname: "Speier",
-          email: "jugendschutz@svwalddorf.de",
-          image: { src: "/media/people/andrea-speier-2023.png", alt: "Andrea Speier", width: 193, height: 256 },
-          tags: ["Jugendschutzbeauftragte"],
-        }}
-      />
-      <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
-        <div className="w-full flex flex-col gap-2">
-          <PDFViewer url="/download/2024-05-27_Jugendschutzordnung.pdf" />
+      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+        <h2>Unsere Leitgedanken</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <p className="p-2 bg-svw-blue-darker text-white text-xl text-center place-content-center">
+            Der SV Walddorf verpflichtet sich zur <b>Gewaltprävention</b> im Allgemeinen und zum{" "}
+            <b>Schutze der Kinder und Jugendlichen</b> im Besonderen.
+          </p>
+          <Image
+            src="/media/verein/jugendschutz/rote-karte.jpg"
+            alt="Rote Karte für Gewalt im Sport!"
+            width={roteKarteDimensions.width}
+            height={roteKarteDimensions.height}
+          />
         </div>
+        <div className="list-disc list-inside p-2">
+          <li>
+            Der SV Walddorf verpflichtet sich zur Gewaltprävention im Allgemeinen und zum Schutze der Kinder und
+            Jugendlichen im Besonderen.
+          </li>
+          <li>Unser Verein soll ein sicherer Ort für alle Kinder und Jugendliche sein.</li>
+          <li>
+            Niemand darf sich respektlos gegenüber anderen verhalten und sich über den erkennbaren Willen eines anderen
+            hinwegsetzen. „Ein Nein ist ein Nein“.
+          </li>
+          <li>Wir sprechen uns deutlich gegen Gewalt aus, egal ob körperlicher, seelischer oder sexueller Natur.</li>
+          <li>
+            Wir verpflichten uns, aktiv für das Kindeswohl einzutreten und jeglicher Kindeswohlgefährdung entgegen zu
+            wirken.
+          </li>
+          <li>Wir schauen nicht weg – sondern wir handeln!</li>
+        </div>
+        <h2>Unsere Zielsetzung</h2>
+        <p>
+          Unser Präventionskonzept zum Kinder- und Jugendschutz hat zum Ziel das Kindeswohl der dem SV Walddorf
+          anvertrauten Kinder und Jugendlichen zu schützen und das Risiko einer Kindeswohlgefährdung, ob psychischer,
+          körperlicher oder sexueller Natur zu minimieren.
+        </p>
+        <p>
+          Der Schutz beginnt mit der Prävention (eine Gefährdung soll erst gar nicht eintreten) und er reicht bis zu den
+          Interventions-Schritten in einem konkreten Fall.
+        </p>
+        <p>
+          Ein wesentlicher Schwerpunkt dabei ist die Vermeidung von sexualisierter Gewalt gegen Kinder und Jugendliche.
+        </p>
+        <div className="flex flex-col gap-2">
+          <h2>Unser Präventions- und Schutzkonzept basiert auf mehreren Bausteinen</h2>
+          <p>
+            1. Verankerung des Jugendschutzes in den Vereinsstatuten:
+            <ul className="list-disc list-inside">
+              <li>
+                <Link href="/verein/geschaeftsordnung" className="underline text-svw-blue-dark">
+                  Geschäftsordnung
+                </Link>
+              </li>
+              <li>
+                <Link href="/verein/jugendschutzordnung" className="underline text-svw-blue-dark">
+                  Jugendschutzordnung
+                </Link>
+                .
+              </li>
+            </ul>
+          </p>
+          <p>
+            2. Vereinbarung mit dem Jugendamt zur Umsetzung des im §72a SGB VIII verankerten Tätigkeitsauschlusses
+            einschlägig vorbestrafter Personen.
+          </p>
+          <p>3. Benennung einer Jugendschutzbeauftragten.</p>
+          <p>
+            4. Regelmäßige Qualifizierungsmaßnahmen für Vereinsmitarbeiter, speziell für Übungsleiter im Kinder- und
+            Jugendbereich.
+          </p>
+          <p>
+            5. Alle Vereinsmitarbeiter bekennen sich zu unserem Ehrenkodex. Alle unsere Übungsleiter im Kinder- und
+            Jugendbereich verpflichten sich spezielle Verhaltensregeln im Umgang mit Kinder- und Jugendlichen
+            einzuhalten. Sie sind verpflichtet, alle 3 Jahre ein erweitertes Führungszeugnis vorzulegen.
+          </p>
+          <p>6. Unser Interventionsleitfaden zeigt auf, was bei einem Vorfall oder im Verdachtsfall zu tun ist.</p>
+        </div>
+        <h2>Unsere Jugendschutzbeauftragte</h2>
+        <PersonCard
+          person={{
+            firstname: "Nadine",
+            lastname: "Albrecht",
+            email: "jugendschutz@svwalddorf.de",
+            //image: { src: "/media/people/andrea-speier-2023.png", alt: "Andrea Speier", width: 193, height: 256 },
+            tags: ["Jugendschutzbeauftragte"],
+          }}
+        />
       </div>
     </PageBase>
   );

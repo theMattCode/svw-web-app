@@ -30,11 +30,10 @@ export default function CJunioren() {
           />
           <div className="flex flex-col">
             <h3>Training Sommer</h3>
-            <p>Dienstag 18:00 - 19:30 Uhr auf dem Kunstrasenplatz</p>
-            <p>Donnerstag 18:00 - 19:30 Uhr auf dem Kunstrasenplatz</p>
+            <p>Dienstags und Donnerstags, 18:00 - 19:30 Uhr in Walddorf</p>
             <h3>Training Winter</h3>
-            <p>Dienstag 18:00 - 19:30 Uhr auf dem Kunstrasenplatz</p>
-            <p>Freitag 18:00 - 19:30 Uhr in der Gemeindehalle</p>
+            <p>Dienstags und Donnerstags, 18:00 - 19:30 Uhr in Walddorf</p>
+            <p>Freitags, 18:00 - 19:30 Uhr in der Gemeindehalle</p>
             <h3>Kontakt</h3>
             <p>
               <Link href="mailto:c-junioren@svwalddorf.de">c-junioren@svwalddorf.de</Link>

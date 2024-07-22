@@ -7,6 +7,8 @@ import Link from "next/link";
 import { FaChevronDown, FaFileSignature, FaShoppingCart } from "react-icons/fa";
 import { shops } from "#/content/club";
 
+import { NewBadge } from "#/components/badge/NewBadge";
+
 export function SmallScreenNavigation() {
   const [open, setOpen] = useState<boolean>(false);
   const toggleOpenClose = () => setOpen((open) => !open);
@@ -70,6 +72,7 @@ function ListItem({ item, onClick }: { item: MenuItem; onClick: () => void }) {
           className="grow h-full flex items-center border-b border-white border-opacity-25"
         >
           <span className="grow pl-2">{item.name}</span>
+          {item.new && <NewBadge />}
         </Link>
         {item.subMenu && (
           <button
@@ -83,9 +86,7 @@ function ListItem({ item, onClick }: { item: MenuItem; onClick: () => void }) {
       </div>
       {item.subMenu && (
         <ul className={`pl-4 transition-all ${open ? "" : "hidden h-0"}`}>
-          {item.subMenu?.map((subItem) => (
-            <ListItem key={subItem.name} item={subItem} onClick={onClick} />
-          ))}
+          {item.subMenu?.map((subItem) => <ListItem key={subItem.name} item={subItem} onClick={onClick} />)}
         </ul>
       )}
     </li>
