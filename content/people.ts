@@ -151,9 +151,9 @@ export const people: Person[] = [
   {
     firstname: "Marc",
     lastname: "Musse",
-    tags: ["Spartenleitung Fitness und Gesundheitssport"],
+    tags: ["Spartenleitung Fitness und Gesundheitssport", "Übungsleitung Steel Darts"],
     email: "spartenleitungFuG@svwalddorf.de",
-    image: { src: "/media/people/marc-musse-2023.png", alt: "Marc Musse", width: 223, height: 295 },
+    image: { src: "/media/people/marc-musse-2024.png", alt: "Marc Musse", width: 518, height: 547 },
   },
   {
     firstname: "Sandra",
@@ -248,14 +248,14 @@ export const people: Person[] = [
   {
     firstname: "Holger",
     lastname: "Schmid",
-    tags: ["Trainer C-Junioren"],
+    tags: ["Trainer B-Junioren"],
     phone: ["+49 151 58259846"],
     image: { src: "/media/people/holger-schmid-2023.png", alt: "Holger Schmid", width: 839, height: 1024 },
   },
   {
     firstname: "Finn",
     lastname: "Kittelmann",
-    tags: ["Athletiktrainer B-Junioren"],
+    tags: ["Trainer B-Junioren"],
     image: { src: "/media/people/finn-kittelmann-2023.png", alt: "Finn Kittelmann", width: 839, height: 1024 },
   },
   {
@@ -449,6 +449,12 @@ export const people: Person[] = [
     lastname: "Senner",
     tags: ["Leitung Frauenfußball"],
     phone: ["+49 178 9778382"],
+  },
+  {
+    firstname: "Rainer",
+    lastname: "Burkhardt",
+    tags: ["Übungsleitung Steel-Darts"],
+    image: { src: "/media/people/rainer-burkhardt-2024.png", alt: "Rainer Burkhardt", width: 494, height: 536 },
   },
 ];
 

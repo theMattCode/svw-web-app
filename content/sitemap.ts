@@ -15,15 +15,16 @@ export const sponsoring = { name: "Spenden und Sponsoring", url: "/verein/spende
 export const veranstaltungen = { name: "Veranstaltungen", url: "/verein/veranstaltungen" };
 export const historie = { name: "Historie", url: "/verein/historie" };
 export const foerderkreis = { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true };
-export const jugendschutz = { name: "Jugendschutz", url: "/verein/jugendschutz" };
+export const jugendschutz = { name: "Kinder- und Jugendschutz", url: "/verein/jugendschutz" };
 export const satzung = { name: "Satzung", url: "/verein/satzung" };
 export const geschaeftsordnung = { name: "Geschäftsordnung", url: "/verein/geschaeftsordnung" };
+export const jugendschutzordnung = { name: "Jugendschutzordnung", url: "/verein/jugendschutzordnung" };
 export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
 export const impressum = { name: "Impressum", url: "/verein/impressum" };
 export const formales = {
   name: "Formales",
   url: "/verein/formales",
-  subMenu: [satzung, geschaeftsordnung, datenschutz, impressum],
+  subMenu: [satzung, geschaeftsordnung, jugendschutzordnung, datenschutz, impressum],
 };
 export const verein: MenuItem = {
   name: "Verein",
@@ -34,12 +35,12 @@ export const verein: MenuItem = {
     sportgaststaette,
     ansprechpartner,
     svwBlaettle,
+    jugendschutz,
     sponsoring,
     mitgliedWerden,
     veranstaltungen,
     historie,
     foerderkreis,
-    jugendschutz,
     formales,
   ],
 };
@@ -62,10 +63,14 @@ export const hobbyHorsing: MenuItem = {
   name: "HobbyHorsing",
   url: "/fitness-und-gesundheitssport/hobbyhorsing",
 };
+export const steelDarts: MenuItem = {
+  name: "Steel Darts",
+  url: "/fitness-und-gesundheitssport/steel-darts",
+};
 export const fitnessUndGesundheitssport: MenuItem = {
   name: "Fitness & Gesundheitssport",
   url: "/fitness-und-gesundheitssport",
-  subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund, hobbyHorsing],
+  subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund, hobbyHorsing, steelDarts],
 };
 
 export const fusballAktive = { name: "Aktive", url: "/fussball/aktive" };

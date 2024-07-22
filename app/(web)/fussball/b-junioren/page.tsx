@@ -30,7 +30,8 @@ export default function BJunioren() {
           />
           <div className="flex flex-col">
             <h3>Training</h3>
-            <p>Dienstag und Donnerstag 18:00 - 19:45 Uhr in Kirchentellinsfurt</p>
+            <p>Dienstags, 18:00 - 19:30 Uhr in Walddorf</p>
+            <p>Freitags, 18:15 - 19:45 Uhr in Walddorf</p>
             <h3>Kontakt</h3>
             <p>
               <Link href="mailto:b-junioren@svwalddorf.de">b-junioren@svwalddorf.de</Link>
@@ -41,6 +42,7 @@ export default function BJunioren() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <PersonCard person={getPersonByName("Björn Kittelmann")} />
           <PersonCard person={getPersonByName("Finn Kittelmann")} />
+          <PersonCard person={getPersonByName("Holger Schmid")} />
         </div>
       </div>
       <ArticlePreviewList tags={["B-Junioren"]} />

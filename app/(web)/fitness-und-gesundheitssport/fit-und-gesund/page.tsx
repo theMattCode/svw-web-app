@@ -17,15 +17,16 @@ export const metadata: Metadata = {
 export default function FitUndGesund() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
+  const teamDimensions = calcImageDimensionsForWidth({ width: 6000, height: 4000 }, 1280);
   return (
     <PageBase>
       <BlockTitle title={fitUndGesund.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
-          src="/media/sparten/fitness-und-gesundheitssport/fit-und-gesund-2019.jpg"
+          src="/media/sparten/fitness-und-gesundheitssport/fit-und-gesund-2024.jpg"
           alt="Fit und Gesund Team"
-          width={756}
-          height={343}
+          width={teamDimensions.width}
+          height={teamDimensions.height}
           className="w-full"
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
