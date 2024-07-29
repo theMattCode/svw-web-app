@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { JSX, PropsWithChildren } from "react";
 import Footer from "#/components/footer/Footer";
 import SponsorGrid from "#/components/sponsor/SponsorGrid";
 import { Metadata, Viewport } from "next";

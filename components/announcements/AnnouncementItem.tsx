@@ -17,7 +17,7 @@ export function AnnouncementItem({ announcement }: Props) {
           <Image
             className="w-full md:w-72 md:min-w-[18rem] h-80 md:h-44 object-cover"
             src={image.src}
-            alt={image.alt}
+            alt={image.alt ?? announcement.title}
             width={imageDimensions.width}
             height={imageDimensions.height}
           />
