@@ -2,10 +2,10 @@ import React from "react";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { FussballDeWidget } from "#/components/widget/Fussball.de";
 import { SubMenu } from "#/components/navigation/SubMenu";
 import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { fussball } from "#/content/sitemap";
+import { NextFussballDeIframeWidget } from "#/components/widget/NextFussballDeWidget";
 
 export const metadata: Metadata = {
   title: getTitle(fussball.name),
@@ -18,8 +18,8 @@ export default function Fussball() {
         <SubMenu item={fussball} />
       </div>
       <BlockTitle title={fussball.name} />
-      <div className="container bg-white shadow-2xl p-2 flex flex-col gap-2">
-        <FussballDeWidget widgetKey="02KJUU7I0O000000VUM1DNPBVTLF6IIO" height={1000} />
+      <div className="container">
+        <NextFussballDeIframeWidget widgetId="b9475af8-d95b-4b12-8bc7-35fffef51ecd" type="club-matches" />
       </div>
       <ArticlePreviewList tags={["Fussball"]} />
     </div>

@@ -24,7 +24,7 @@ export function ArticlePreviewListItem({ articleMatter }: Props): JSX.Element {
           <Image
             className="w-full h-80 object-cover"
             src={articleMatter.image.src}
-            alt={articleMatter.image.alt}
+            alt={articleMatter.image.alt ?? articleMatter.title}
             width={width}
             height={height}
           />

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         ? [
             {
               url: article.image.src,
-              alt: article.image.alt,
+              alt: article.image.alt ?? article.title,
               width: article.image.width,
               height: article.image.height,
             },

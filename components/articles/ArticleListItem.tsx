@@ -23,7 +23,7 @@ export function ArticleListItem({ articleMatter }: Props): JSX.Element {
         <Image
           className="w-full md:max-w-[18rem] h-80 md:max-h-44 object-cover"
           src={articleMatter.image.src}
-          alt={articleMatter.image.alt}
+          alt={articleMatter.image.alt ?? articleMatter.title}
           width={width}
           height={height}
         />

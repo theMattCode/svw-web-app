@@ -47,7 +47,7 @@ export const people: Person[] = [
     tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren"],
     email: "bjoern.kittelmann@svwalddorf.de",
     phone: ["+49 1573 5646291"],
-    image: { src: "/media/people/bjoern-kittelmann-2023.png", alt: "Björn Kittelmann", width: 771, height: 986 },
+    image: { src: "/media/people/bjoern-kittelmann-2024.png", width: 2000, height: 2000 },
   },
   {
     firstname: "Jonas",
@@ -109,7 +109,7 @@ export const people: Person[] = [
     tags: ["Sportliche Leitung Aktive und Jugendfußball", "Co-Trainer Aktive II"],
     email: "julian.wohlfarth@svwalddorf.de",
     phone: ["+49 173 7645542"],
-    image: { src: "/media/people/julian-wohlfarth-2022.png", alt: "Julian Wohlfarth", width: 767, height: 1024 },
+    image: { src: "/media/people/julian-wohlfarth-2024.png", width: 2000, height: 2000 },
   },
   {
     firstname: "Sandra",
@@ -200,11 +200,13 @@ export const people: Person[] = [
     firstname: "Sven",
     lastname: "Pichler",
     tags: ["Trainer Aktive I"],
+    image: { src: "/media/people/sven-pichler-2024.png", alt: "Sven Pichler", width: 2000, height: 2000 },
   },
   {
     firstname: "Maurice",
     lastname: "Heim",
     tags: ["Co-Spielertrainer Aktive I"],
+    image: { src: "/media/people/maurice-heim-2024.png", alt: "Maurice Heim", width: 2000, height: 2000 },
   },
   {
     firstname: "Luis",
@@ -216,13 +218,13 @@ export const people: Person[] = [
     firstname: "Fabian",
     lastname: "Schramm",
     tags: ["Trainer Aktive II"],
-    image: { src: "/media/people/fabian-schramm-2021.png", alt: "Fabian Schramm", width: 551, height: 735 },
+    image: { src: "/media/people/fabian-schramm-2024.png", width: 2000, height: 2000 },
   },
   {
     firstname: "Achim",
     lastname: "Wohlfarth",
     tags: ["Betreuer Aktive I", "Betreuer Aktive II"],
-    image: { src: "/media/people/achim-wohlfarth-2021.png", alt: "Achim Wohlfarth", width: 551, height: 734 },
+    image: { src: "/media/people/achim-wohlfarth-2024.png", width: 2000, height: 2000 },
   },
   {
     firstname: "Alex",

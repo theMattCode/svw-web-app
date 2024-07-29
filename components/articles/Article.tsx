@@ -15,7 +15,7 @@ export default function Article({ article }: Props): JSX.Element {
     <article className="container bg-white p-1 max-w-3xl shadow-xl flex flex-col gap-1">
       {article?.image && (
         <div className="flex flex-col place-items-end pb-4">
-          <Image src={article.image} alt={article.image.alt} width={width} height={height} />
+          <Image src={article.image} alt={article.image.alt ?? article.title} width={width} height={height} />
         </div>
       )}
       <div className="transition-all flex flex-col gap-1 md:p-1">
