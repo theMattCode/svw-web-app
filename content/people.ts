@@ -47,7 +47,7 @@ export const people: Person[] = [
     tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren"],
     email: "bjoern.kittelmann@svwalddorf.de",
     phone: ["+49 1573 5646291"],
-    image: { src: "/media/people/bjoern-kittelmann-2024.png", width: 2000, height: 2000 },
+    image: { src: "/media/people/bjoern-kittelmann-aktive-2024.png", width: 2000, height: 2000 },
   },
   {
     firstname: "Jonas",
