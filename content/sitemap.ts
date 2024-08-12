@@ -75,7 +75,7 @@ export const fitnessUndGesundheitssport: MenuItem = {
   subMenu: [yoga, powerFitness, gymnastik65plus, teenDance, fitUndGesund, hobbyHorsing, steelDarts],
 };
 
-export const fusballAktive = { name: "Aktive", url: "/fussball/aktive" };
+export const fussballAktive = { name: "Aktive", url: "/fussball/aktive" };
 export const fussballB = { name: "B-Junioren", url: "/fussball/b-junioren" };
 export const fussballC = { name: "C-Junioren", url: "/fussball/c-junioren" };
 export const fussballD = { name: "D-Junioren", url: "/fussball/d-junioren" };
@@ -84,11 +84,12 @@ export const fussballF = { name: "F-Junioren", url: "/fussball/f-junioren" };
 export const fussballBambini = { name: "Bambini", url: "/fussball/bambini" };
 export const fussballFrauen = { name: "Frauenfußball", url: "/fussball/frauen" };
 export const fussballHobby = { name: "Hobbykicker", url: "/fussball/hobbykicker" };
+export const fussballAkademie = { name: "Fußball-Akademie", url: "/fussball/akademie" };
 export const fussball = {
   name: "Fußball",
   url: "/fussball",
   subMenu: [
-    fusballAktive,
+    fussballAktive,
     fussballB,
     fussballC,
     fussballD,
@@ -97,10 +98,18 @@ export const fussball = {
     fussballBambini,
     fussballFrauen,
     fussballHobby,
+    fussballAkademie,
   ],
 };
 
-export const badminton = { name: "Badminton", url: "/badminton" };
+export const badmintonAktive = { name: "Aktive", url: "/badminton/aktive" };
+export const badmintonErwachsene = { name: "Erwachsene", url: "/badminton/erwachsene" };
+export const badmintonKinder = { name: "Kinder", url: "/badminton/kinder" };
+export const badminton = {
+  name: "Badminton",
+  url: "/badminton",
+  subMenu: [badmintonAktive, badmintonErwachsene, badmintonKinder],
+};
 
 export const rehasport = { name: "Reha-Sport", url: "/rehasport" };
 

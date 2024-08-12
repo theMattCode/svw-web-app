@@ -15,33 +15,57 @@ export const metadata: Metadata = {
 };
 
 export default function FJunioren() {
-  const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2725 }, 1200);
+  const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2725 }, 1280);
   return (
     <PageBase>
       <BlockTitle title="F-Junioren" />
-      <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
-        <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
-          <Image
-            src="/media/sparten/fussball/f-junioren-team-2024-25.jpg"
-            alt="Mannschaftsfoto F-Junioren 2024/25"
-            width={width}
-            height={height}
-            className="col-span-1 xl:col-span-3"
-          />
-          <div className="flex flex-col">
-            <h3>Training Sommer</h3>
-            <p>Mittwoch, 17:00 - 18:30 Uhr auf dem Rasenplatz</p>
-            <p>Freitag, 17:00 - 18:30 Uhr auf dem Kunstrasen</p>
-            <h3>Training Winter</h3>
-            <p>Freitag 17:00 - 19:00 in der Ballspielhalle</p>
-            <h3>Kontakt</h3>
-            <p>
-              <Link href="mailto:f-junioren@svwalddorf.de">f-junioren@svwalddorf.de</Link>
-            </p>
-            <p>
-              <b>Probetraining</b> nach Absprache
+      <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
+        <Image
+          src="/media/sparten/fussball/f-junioren-team-2024-25.jpg"
+          alt="Mannschaftsfoto F-Junioren 2024/25"
+          width={width}
+          height={height}
+          className="w-full"
+        />
+        <div className="flex flex-col">
+          <div className="font-light flex">
+            <b className="whitespace-nowrap">Reihe 3 (v.l.n.r.):</b>
+            <p className="px-2">
+              Matti Gartenmeier, Jana Laufer, Lias Krämer, Fabian Sakota, Finn Dietrich, Emilian Kaiser, Leon Jansen,
+              Fynn Schlick, Lenz Bayha, Noam Holmgren, Jonas Hedin, Jannis Keppeler
             </p>
           </div>
+          <div className="font-light flex">
+            <b className="whitespace-nowrap">Reihe 2 (v.l.n.r.):</b>
+            <p className="px-2">
+              Hannes Kopp (Trainer), Michael Opalla (Trainer), Diari Ernst, Elias Meyer, Maja Mangold, Marlon Kuhne,
+              Luis Steinhilber, Benjamin Volle, Benno Eisele, Jozo Dugandzic, Jonathan Sax, Benjamin Hornung, Jörg
+              Schlick (Trainer), Moritz Krämer (Trainer), Matthäus Mayer (Trainer)
+            </p>
+          </div>
+          <div className="font-light flex">
+            <b className="whitespace-nowrap ">Reihe 1 (v.l.n.r.):</b>
+            <p className="px-2">
+              Auron Tahiri, Vincent Kopp, Matti Ruoff, Ludwig Trautwein, Louis Schramm, Michel Besserer, Nils Mayer,
+              Luis Thomas, Luuk Opalla, Luis Bayani, Mal Haziri, Jonas Reinecker, Mert Ugurlu
+            </p>
+          </div>
+          <h3>Saison 2024/25</h3>
+          <p>
+            In Saison 2024/25 spielen und trainieren die <b>Kinder der Jahrgänge 2016 (U9) und 2017 (U8)</b> als
+            F-Junioren im Grundlagenbereich der <Link href="/fussball/akademie">SV Walddorf Akademie</Link> mit
+            koordinativen und ersten technischen Inhalten sowie Spaß mit vielen Spielformen.
+          </p>
+          <h3>Training Sommer</h3>
+          <p>Mittwoch, 17:00 - 18:30 Uhr auf dem Rasenplatz</p>
+          <p>Freitag, 17:00 - 18:30 Uhr auf dem Kunstrasen</p>
+          <h3>Training Winter</h3>
+          <p>Freitag, 16:00 - 19:00 in der Ballspielhalle</p>
+          <h3>Kontakt</h3>
+          <p>
+            <Link href="mailto:f-junioren@svwalddorf.de">f-junioren@svwalddorf.de</Link>
+          </p>
+          <p>Probetraining nach Absprache</p>
         </div>
         <h3>Trainer und Betreuer</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">

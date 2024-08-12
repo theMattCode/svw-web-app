@@ -1,4 +1,5 @@
 import React from "react";
+import { PiFilePdf } from "react-icons/pi";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import { Metadata } from "next";
@@ -30,9 +31,10 @@ export default function Jugendschutz() {
             alt="Rote Karte für Gewalt im Sport!"
             width={roteKarteDimensions.width}
             height={roteKarteDimensions.height}
+            className="justify-self-center"
           />
         </div>
-        <div className="list-disc list-inside p-2">
+        <ul className="list-disc list-outside ml-4 p-2">
           <li>
             Der SV Walddorf verpflichtet sich zur Gewaltprävention im Allgemeinen und zum Schutze der Kinder und
             Jugendlichen im Besonderen.
@@ -48,7 +50,7 @@ export default function Jugendschutz() {
             wirken.
           </li>
           <li>Wir schauen nicht weg – sondern wir handeln!</li>
-        </div>
+        </ul>
         <h2>Unsere Zielsetzung</h2>
         <p>
           Unser Präventionskonzept zum Kinder- und Jugendschutz hat zum Ziel das Kindeswohl der dem SV Walddorf
@@ -66,7 +68,7 @@ export default function Jugendschutz() {
           <h2>Unser Präventions- und Schutzkonzept basiert auf mehreren Bausteinen</h2>
           <p>
             1. Verankerung des Jugendschutzes in den Vereinsstatuten:
-            <ul className="list-disc list-inside">
+            <ul className="list-disc ml-2">
               <li>
                 <Link href="/verein/geschaeftsordnung" className="underline text-svw-blue-dark">
                   Geschäftsordnung
@@ -90,11 +92,37 @@ export default function Jugendschutz() {
             Jugendbereich.
           </p>
           <p>
-            5. Alle Vereinsmitarbeiter bekennen sich zu unserem Ehrenkodex. Alle unsere Übungsleiter im Kinder- und
-            Jugendbereich verpflichten sich spezielle Verhaltensregeln im Umgang mit Kinder- und Jugendlichen
-            einzuhalten. Sie sind verpflichtet, alle 3 Jahre ein erweitertes Führungszeugnis vorzulegen.
+            5. Alle Vereinsmitarbeiter bekennen sich zu unserem&nbsp;
+            <Link href="/download/2024-06-05_Ehrenkodex.pdf" className="underline text-svw-blue-dark inline-flex">
+              Ehrenkodex <PiFilePdf />
+            </Link>
+            . Alle unsere Übungsleiter im Kinder- und Jugendbereich verpflichten sich spezielle&nbsp;
+            <Link
+              href="/download/2024-06-05_Uebungsleitung-Verhaltensregeln.pdf"
+              className="underline text-svw-blue-dark inline-flex"
+            >
+              Verhaltensregeln im Umgang mit Kinder- und Jugendlichen <PiFilePdf />
+            </Link>
+            &nbsp; einzuhalten. Sie sind verpflichtet, alle 3 Jahre ein erweitertes Führungszeugnis vorzulegen.
           </p>
-          <p>6. Unser Interventionsleitfaden zeigt auf, was bei einem Vorfall oder im Verdachtsfall zu tun ist.</p>
+          <p>
+            6. Unser Interventionsleitfaden zeigt auf, was bei einem Vorfall oder im Verdachtsfall zu tun ist. Das&nbsp;
+            <Link
+              href="/download/2024-05-01_Formular_Protokoll_Ereignis.pdf"
+              className="underline text-svw-blue-dark inline-flex"
+            >
+              Formular zur Dokumentation eines Ereignisses <PiFilePdf />
+            </Link>
+            &nbsp; im Rahmen des Präventionskonzeptes zum Kinder- und Jugendschutz im Sportverein Walddorf 1904 e.V.
+            steht öffentlich zum&nbsp;
+            <Link
+              href="/download/2024-05-01_Formular_Protokoll_Ereignis.pdf"
+              className="underline text-svw-blue-dark inline-flex"
+            >
+              Download als PDF
+            </Link>
+            &nbsp; bereit.
+          </p>
         </div>
         <h2>Unsere Jugendschutzbeauftragte</h2>
         <PersonCard

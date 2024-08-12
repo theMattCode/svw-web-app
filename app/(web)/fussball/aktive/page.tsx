@@ -28,31 +28,43 @@ export default function Aktive() {
           height={height}
           className="w-full"
         />
-        <div className="flex flex-col items-center text-center gap-2">
-          <p>
-            <span className="underline">4. Reihe:</span> Tom Schwaibold, Jannik Jung, Stefan Tilgner, Robin Schraitle,
-            Jarne Roth, Nico Hunsiker, Sabawun Khostwal
+        <div className="font-light flex">
+          <b className="whitespace-nowrap">Reihe 4 (v.l.n.r.):</b>
+          <p className="px-2">
+            Tom Schwaibold, Jannik Jung, Stefan Tilgner, Robin Schraitle, Jarne Roth, Nico Hunsiker, Sabawun Khostwal
           </p>
-          <p>
-            <span className="underline">3. Reihe:</span> Dennis Hermann, Florian Komenda, Luis Langeneck, Maik Straub,
-            Niko Baur, Jan Becker, Thomas Ammon, Erik Matthäi
+        </div>
+        <div className="font-light flex">
+          <b className="whitespace-nowrap">Reihe 3 (v.l.n.r.):</b>
+          <p className="px-2">
+            Dennis Hermann, Florian Komenda, Luis Langeneck, Maik Straub, Niko Baur, Jan Becker, Thomas Ammon, Erik
+            Matthäi
           </p>
-          <p>
-            <span className="underline">2. Reihe:</span> Marco Speier, Moritz Schwaibold (Kapitän 1.Mannschaft), Maurice
-            Heim (Co-Trainer Erste), Sven Pichler (Cheftrainer Erste), Björn Kittelmann (Vorstand Sport), Julian
-            Wohlfarth (Sportlicher Leiter / Co-Trainer Zweite), Fabian Schramm (Cheftrainer Zweite), Achim Wohlfarth
-            (Betreuer), Paul Röhrich, Simon Vetter (Kapitän 2. Mannschaft)
+        </div>
+        <div className="font-light flex">
+          <b className="whitespace-nowrap">Reihe 2 (v.l.n.r.):</b>
+          <p className="px-2">
+            Marco Speier, Moritz Schwaibold (Kapitän 1.Mannschaft), Maurice Heim (Co-Trainer Erste), Sven Pichler
+            (Cheftrainer Erste), Björn Kittelmann (Vorstand Sport), Julian Wohlfarth (Sportlicher Leiter / Co-Trainer
+            Zweite), Fabian Schramm (Cheftrainer Zweite), Achim Wohlfarth (Betreuer), Paul Röhrich, Simon Vetter
+            (Kapitän 2. Mannschaft)
           </p>
-          <p>
-            <span className="underline">1. Reihe:</span> Luca Schmid, Danylo Gromovenko, Alexander Peguero Castillo,
-            Timo Thomas, Jannik Schülzle, Maximilian Schindler, Marcus Belschner, Jan Roller
+        </div>
+        <div className="font-light flex">
+          <b className="whitespace-nowrap ">Reihe 1 (v.l.n.r.):</b>
+          <p className="px-2">
+            Luca Schmid, Danylo Gromovenko, Alexander Peguero Castillo, Timo Thomas, Jannik Schülzle, Maximilian
+            Schindler, Marcus Belschner, Jan Roller
           </p>
-          <p>
-            <span className="underline">Es fehlen:</span> Patrick Aberle, Marcus Becker, Daniel Burkhardt, Lukas Bux,
-            Philipp Cus, Dennis Dieter, Fabian Gaiser, Max Glässer, Alexander, Alexander Greineck, Florian Gschwind,
-            Carlos Haselhoff, Luca Häfner, Simon Heim, Lukas Hermann, Marco Knoblauch, Patrick Mayer, Kai Petruv, Jonas
-            Retter, Fabian Rößler, Alexander Scharr, Carlo Schmid, David Schnitzler, Max Schraitle, Micha Schuler,
-            Nicolas Stadelmaier, Giuseppe Vitale (Videoanalyst), Lorenzo Vitale, Luis Walker
+        </div>
+        <div className="font-light flex">
+          <b className="whitespace-nowrap ">Es fehlen:</b>
+          <p className="px-2">
+            Patrick Aberle, Marcus Becker, Daniel Burkhardt, Lukas Bux, Philipp Cus, Dennis Dieter, Fabian Gaiser, Max
+            Glässer, Alexander, Alexander Greineck, Florian Gschwind, Carlos Haselhoff, Luca Häfner, Simon Heim, Lukas
+            Hermann, Marco Knoblauch, Patrick Mayer, Kai Petruv, Jonas Retter, Fabian Rößler, Alexander Scharr, Carlo
+            Schmid, David Schnitzler, Max Schraitle, Micha Schuler, Nicolas Stadelmaier, Giuseppe Vitale (Videoanalyst),
+            Lorenzo Vitale, Luis Walker
           </p>
         </div>
         <h3>Trainer und Betreuer</h3>

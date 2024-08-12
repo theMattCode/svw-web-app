@@ -47,12 +47,12 @@ export const people: Person[] = [
     tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren"],
     email: "bjoern.kittelmann@svwalddorf.de",
     phone: ["+49 1573 5646291"],
-    image: { src: "/media/people/bjoern-kittelmann-aktive-2024.png", width: 2000, height: 2000 },
+    image: { src: "/media/people/bjoern-kittelmann-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Jonas",
     lastname: "Tittmann",
-    tags: ["Vorstand Anlagen und Inventar", "Spartenleitung Badminton"],
+    tags: ["Vorstand Anlagen und Inventar", "Stellv. Spartenleitung Badminton", "Trainer Badminton"],
     email: "jonas.tittmann@svwalddorf.de",
     phone: ["+49 151 14364447"],
     image: { src: "/media/people/jonas-tittmann-2023.jpg", alt: "Jonas Tittmann", width: 363, height: 477 },
@@ -60,7 +60,7 @@ export const people: Person[] = [
   {
     firstname: "Julian",
     lastname: "Petermann",
-    tags: ["Vorstand Ehrenamt", "Spartenleitung Badminton"],
+    tags: ["Vorstand Ehrenamt", "Spartenleitung Badminton", "Trainer Badminton"],
     email: "julian.petermann@svwalddorf.de",
     phone: ["+49 152 32768874"],
     image: { src: "/media/people/julian-petermann-2023.jpg", alt: "Julian Petermann", width: 363, height: 481 },
@@ -101,7 +101,7 @@ export const people: Person[] = [
     tags: ["Turnierorganisation", "Trainer E-Junioren"],
     email: "turniere@svwalddorf.de",
     phone: ["+49 162 9471662"],
-    image: { src: "/media/people/antonino-bonfiglio-2021.png", alt: "Antonino Bonfiglio", width: 754, height: 773 },
+    image: { src: "/media/people/antonino-bonfiglio-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Julian",
@@ -277,7 +277,7 @@ export const people: Person[] = [
     lastname: "Bader",
     tags: ["Trainer D-Junioren"],
     phone: ["+49 170 7740115"],
-    image: { src: "/media/people/stefan-bader-2023.png", alt: "Stefan Bader", width: 817, height: 1024 },
+    image: { src: "/media/people/stefan-bader-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Chris",
@@ -298,7 +298,7 @@ export const people: Person[] = [
     lastname: "Saile",
     tags: ["Trainer D-Junioren"],
     phone: ["+49 7127 180636"],
-    image: { src: "/media/people/hermann-saile-2023.png", alt: "Hermann Saile", width: 715, height: 1024 },
+    image: { src: "/media/people/hermann-saile-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Leonardo",
@@ -310,7 +310,13 @@ export const people: Person[] = [
     firstname: "Giovanni",
     lastname: "Cimmino",
     tags: ["Trainer D-Junioren", "Trainer Bambini"],
-    image: { src: "/media/people/giovanni-cimmino-2023.png", alt: "Giovanni Cimmino", width: 709, height: 898 },
+    image: { src: "/media/people/giovanni-cimmino-2024.png", width: 1000, height: 1000 },
+  },
+  {
+    firstname: "Serkan",
+    lastname: "Borhan",
+    tags: ["Trainer Bambini"],
+    image: { src: "/media/people/serkan-borhan-2024.png", width: 180, height: 181 },
   },
   {
     firstname: "Branco",
@@ -323,7 +329,7 @@ export const people: Person[] = [
     lastname: "Thomas",
     tags: ["Trainer E-Junioren"],
     phone: ["+49 175 7015441"],
-    image: { src: "/media/people/daniel-thomas-2023.png", alt: "Daniel Thomas", width: 829, height: 998 },
+    image: { src: "/media/people/daniel-thomas-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Arif",
@@ -354,18 +360,31 @@ export const people: Person[] = [
     firstname: "Yener",
     lastname: "Selcuk",
     tags: ["Betreuer D-Junioren"],
-    image: { src: "/media/people/yener-selcuk-2023.png", alt: "Yener Selcuk", width: 704, height: 935 },
+    image: { src: "/media/people/yener-selcuk-2024.png", width: 1000, height: 1000 },
+  },
+  {
+    firstname: "Tobias",
+    lastname: "Rösch",
+    tags: ["Trainer D-Junioren"],
+    image: { src: "/media/people/tobias-roesch-2024.png", width: 1000, height: 1000 },
+  },
+  {
+    firstname: "Mike",
+    lastname: "Bauer",
+    tags: ["Trainer D-Junioren"],
+    image: { src: "/media/people/mike-bauer-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Florian",
     lastname: "Schön",
     tags: ["Trainer E-Junioren"],
-    image: { src: "/media/people/florian-schoen-2023.png", alt: "Florian Schön", width: 375, height: 448 },
+    image: { src: "/media/people/florian-schoen-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Daniel",
     lastname: "Russom",
     tags: ["Trainer E-Junioren"],
+    image: { src: "/media/people/daniel-russom-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Matthäus",
@@ -373,19 +392,25 @@ export const people: Person[] = [
     tags: ["Vorstand Kommunikation", "Trainer F-Junioren"],
     phone: ["+49 176 66332295"],
     email: "matthaeus.mayer@svwalddorf.de",
-    image: { src: "/media/people/matthaeus-mayer-2023.png", alt: "Matthäus Mayer", width: 857, height: 1024 },
+    image: { src: "/media/people/matthaeus-mayer-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Hannes",
     lastname: "Kopp",
     tags: ["Trainer F-Junioren"],
-    image: { src: "/media/people/hannes-kopp-2023.png", alt: "Hannes Kopp", width: 800, height: 1024 },
+    image: { src: "/media/people/hannes-kopp-2024.png", width: 1000, height: 1000 },
+  },
+  {
+    firstname: "Michael",
+    lastname: "Opalla",
+    tags: ["Trainer F-Junioren"],
+    image: { src: "/media/people/michael-opalla-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Vincenzo",
     lastname: "Bonfiglio",
     tags: ["Trainer E-Junioren"],
-    image: { src: "/media/people/vincenzo-bonfiglio-2023.png", alt: "Vincenzo Bonfiglio", width: 835, height: 1024 },
+    image: { src: "/media/people/vincenzo-bonfiglio-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Michael",
@@ -401,7 +426,7 @@ export const people: Person[] = [
     firstname: "Moritz",
     lastname: "Krämer",
     tags: ["Trainer F-Junioren"],
-    image: { src: "/media/people/moritz-kraemer-2023.png", alt: "Moritz Krämer", width: 217, height: 253 },
+    image: { src: "/media/people/moritz-kraemer-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Pietro",
@@ -413,16 +438,19 @@ export const people: Person[] = [
     firstname: "Jörg",
     lastname: "Schlick",
     tags: ["Trainer F-Junioren"],
+    image: { src: "/media/people/joerg-schlick-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Daniel",
     lastname: "Sax",
     tags: ["Trainer Bambini"],
+    image: { src: "/media/people/daniel-sax-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Marcel",
     lastname: "Ostermann",
     tags: ["Trainer E-Junioren"],
+    image: { src: "/media/people/marcel-ostermann-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Sascha",
@@ -457,6 +485,12 @@ export const people: Person[] = [
     lastname: "Burkhardt",
     tags: ["Übungsleitung Steel-Darts"],
     image: { src: "/media/people/rainer-burkhardt-2024.png", alt: "Rainer Burkhardt", width: 494, height: 536 },
+  },
+  {
+    firstname: "Milena",
+    lastname: "Heim",
+    tags: ["Jugendtrainerin Badminton"],
+    email: "milena.heim@svwalddorf.de",
   },
 ];
 
