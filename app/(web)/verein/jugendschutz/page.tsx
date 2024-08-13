@@ -9,6 +9,7 @@ import { PersonCard } from "#/components/person/PersonCard";
 import Image from "next/image";
 import { calcImageDimensionsForHeight } from "#/lib/image";
 import Link from "next/link";
+import { getPersonByName } from "#/content/people";
 
 export const metadata: Metadata = {
   title: getTitle(jugendschutz.name),
@@ -125,15 +126,7 @@ export default function Jugendschutz() {
           </p>
         </div>
         <h2>Unsere Jugendschutzbeauftragte</h2>
-        <PersonCard
-          person={{
-            firstname: "Nadine",
-            lastname: "Albrecht",
-            email: "jugendschutz@svwalddorf.de",
-            //image: { src: "/media/people/andrea-speier-2023.png", alt: "Andrea Speier", width: 193, height: 256 },
-            tags: ["Jugendschutzbeauftragte"],
-          }}
-        />
+        <PersonCard person={getPersonByName("Nadine Albrecht")} />
       </div>
     </PageBase>
   );

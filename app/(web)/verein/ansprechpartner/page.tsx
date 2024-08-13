@@ -16,7 +16,7 @@ export default function Ansprechpartner() {
   return (
     <PageBase>
       <BlockTitle title={ansprechpartner.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
+      <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="flex flex-col gap-2">
           <p className="font-light">
             Bei Fragen zum SV Walddorf im Allgemeinen, unseren Angeboten oder Veranstaltungen können sie sich jederzeit
@@ -33,17 +33,18 @@ export default function Ansprechpartner() {
           </p>
           <p>
             Hier haben wir nochmals einige Ansprechpartner für die verschiedensten Bereiche im Verein für sie
-            aufgelistet
+            aufgelistet:
           </p>
         </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <PersonCard person={getPersonByTag("Geschäftsstelle")} />
-        <PersonCard person={getPersonByTag("Vorstand Sport")} />
-        <PersonCard person={getPersonByTag("Sportliche Leitung Aktive und Jugendfußball")} />
-        <PersonCard person={getPersonByName("Monika Haar")} />
-        <PersonCard person={getPersonByTag("Rehasport")} />
-        <PersonCard person={getPersonByName("Julian Petermann")} />
+        <div className="flex flex-col gap-2">
+          <PersonCard person={getPersonByTag("Geschäftsstelle")} />
+          <PersonCard person={getPersonByTag("Vorstand Sport")} />
+          <PersonCard person={getPersonByTag("Sportliche Leitung Aktive und Jugendfußball")} />
+          <PersonCard person={getPersonByName("Monika Haar")} />
+          <PersonCard person={getPersonByTag("Rehasport")} />
+          <PersonCard person={getPersonByName("Julian Petermann")} />
+          <PersonCard person={getPersonByName("Nadine Albrecht")} />
+        </div>
       </div>
     </PageBase>
   );

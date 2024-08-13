@@ -492,6 +492,13 @@ export const people: Person[] = [
     tags: ["Jugendtrainerin Badminton"],
     email: "milena.heim@svwalddorf.de",
   },
+  {
+    firstname: "Nadine",
+    lastname: "Albrecht",
+    tags: ["Kinder- und Jugendschutzbeauftragte"],
+    email: "jugendschutz@svwalddorf.de",
+    image: { src: "/media/people/nadine-albrecht-2024.png", width: 720, height: 862 },
+  },
 ];
 
 export function getPersonByTag(tag: string) {
