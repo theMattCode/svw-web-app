@@ -84,6 +84,7 @@ export const fussballF = { name: "F-Junioren", url: "/fussball/f-junioren" };
 export const fussballBambini = { name: "Bambini", url: "/fussball/bambini" };
 export const fussballFrauen = { name: "Frauenfußball", url: "/fussball/frauen" };
 export const fussballHobby = { name: "Hobbykicker", url: "/fussball/hobbykicker" };
+export const fussballAH = { name: "AH", url: "/fussball/ah" };
 export const fussballAkademie = { name: "Fußball-Akademie", url: "/fussball/akademie" };
 export const fussball = {
   name: "Fußball",
@@ -98,6 +99,7 @@ export const fussball = {
     fussballBambini,
     fussballFrauen,
     fussballHobby,
+    fussballAH,
     fussballAkademie,
   ],
 };

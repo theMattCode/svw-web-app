@@ -194,7 +194,9 @@ export const people: Person[] = [
   {
     firstname: "Benjamin",
     lastname: "Link",
-    tags: [],
+    tags: ["Ansprechpartner AH"],
+    phone: ["+49 1520 3845156"],
+    image: { src: "/media/people/benjamin-link-2022.png", width: 451, height: 468 },
   },
   {
     firstname: "Sven",
@@ -383,7 +385,8 @@ export const people: Person[] = [
   {
     firstname: "Daniel",
     lastname: "Russom",
-    tags: ["Trainer E-Junioren"],
+    tags: ["Trainer E-Junioren", "Ansprechpartner AH"],
+    phone: ["+49 172 9089242"],
     image: { src: "/media/people/daniel-russom-2024.png", width: 1000, height: 1000 },
   },
   {

@@ -1,7 +1,7 @@
 ---
 title: "Rehasport Sommerpause"
 activeDate: 2024-07-03 00:00
-expiryDate: 2024-09-09 00:00
+expiryDate: 2024-08-12 00:00
 tags:
   - Rehasport
 image:
