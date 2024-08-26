@@ -500,6 +500,7 @@ export const people: Person[] = [
     lastname: "Albrecht",
     tags: ["Kinder- und Jugendschutzbeauftragte"],
     email: "jugendschutz@svwalddorf.de",
+    phone: ["+49 160 5042204"],
     image: { src: "/media/people/nadine-albrecht-2024.png", width: 720, height: 862 },
   },
 ];
