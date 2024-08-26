@@ -19,7 +19,7 @@ export default function Fussball() {
       </div>
       <BlockTitle title={fussball.name} />
       <div className="container">
-        <NextFussballDeIframeWidget widgetId="b9475af8-d95b-4b12-8bc7-35fffef51ecd" type="club-matches" />
+        <NextFussballDeIframeWidget widgetId="3f3b3ce7-2191-44d1-b785-6cb3fdcb041d" type="club-matches" />
       </div>
       <ArticlePreviewList tags={["Fussball"]} />
     </div>
