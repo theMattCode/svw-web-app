@@ -1,14 +1,14 @@
 import type { Sponsor } from "#/content/sponsor";
 import { OptionalLink } from "#/components/link/Link";
 import Image from "next/image";
-import { calcImageDimensionsForWidth } from "#/lib/image";
+import { calcImageDimensionsForHeight, calcImageDimensionsForWidth } from "#/lib/image";
 
 type Props = {
   sponsor: Sponsor;
 };
 
 export function Sponsor({ sponsor }: Props): JSX.Element | null {
-  const dimensions = calcImageDimensionsForWidth(sponsor.image, 192);
+  const { width, height } = calcImageDimensionsForHeight(sponsor.image, 192);
   return (
     <OptionalLink
       href={sponsor.url}
@@ -18,8 +18,8 @@ export function Sponsor({ sponsor }: Props): JSX.Element | null {
       <Image
         src={sponsor.image.url}
         alt={sponsor.name}
-        width={dimensions.width}
-        height={dimensions.height}
+        width={width}
+        height={height}
         className="transition-all object-contain sm:h-48 h-full w-full"
       />
     </OptionalLink>
