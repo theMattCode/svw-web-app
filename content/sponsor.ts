@@ -19,9 +19,9 @@ export const sponsors: Sponsor[] = [
     name: "Getränke Schwab",
     url: "http://www.getraenke-schwab.de/",
     image: {
-      url: "/media/sponsor/getraenke_schwab.png",
-      width: 1609,
-      height: 1144,
+      url: "/media/sponsor/getraenke_schwab.svg",
+      width: 2126,
+      height: 1418,
     },
   },
   {
@@ -37,23 +37,23 @@ export const sponsors: Sponsor[] = [
     name: "JMS Fahrzeugteile",
     url: "https://www.jms-fahrzeugteile.de/",
     image: {
-      url: "/media/sponsor/jms.jpg",
-      width: 972,
-      height: 520,
+      url: "/media/sponsor/jms.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
     name: "NECKER GmbH",
     url: "https://necker.de/",
     image: {
-      url: "/media/sponsor/necker-gmbh.jpg",
-      width: 390,
-      height: 253,
+      url: "/media/sponsor/necker-gmbh.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
     name: "Pizzeria Linde",
-    url: null,
+    url: "https://pizzeria-linde.jimdosite.com/",
     image: {
       url: "/media/sponsor/pizzeria_linde.jpg",
       width: 823,
@@ -82,9 +82,9 @@ export const sponsors: Sponsor[] = [
     name: "KA Möbel Systeme - Olfert Alter e.K.",
     url: "http://www.ka-moebel.de/",
     image: {
-      url: "/media/sponsor/ka_moebel_systeme.jpg",
-      width: 1632,
-      height: 384,
+      url: "/media/sponsor/ka_moebel_systeme.png",
+      width: 1561,
+      height: 369,
     },
   },
   {
@@ -136,9 +136,9 @@ export const sponsors: Sponsor[] = [
     name: "Stahl Gruppe",
     url: "http://www.stahl-firmengruppe.com/",
     image: {
-      url: "/media/sponsor/stahl_gruppe.jpg",
-      width: 1340,
-      height: 480,
+      url: "/media/sponsor/stahl_gruppe.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
@@ -160,17 +160,8 @@ export const sponsors: Sponsor[] = [
     },
   },
   {
-    name: "WESTKEMPER",
-    url: null,
-    image: {
-      url: "/media/sponsor/westkemper.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
     name: "Walters Eismobil",
-    url: null,
+    url: "https://www.facebook.com/profile.php?id=100057222108789",
     image: {
       url: "/media/sponsor/walters_eismobil.png",
       width: 800,
@@ -178,35 +169,8 @@ export const sponsors: Sponsor[] = [
     },
   },
   {
-    name: "Landwirtschaftsbetrieb Karl Gaiser",
-    url: null,
-    image: {
-      url: "/media/sponsor/karl_gaiser.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
-    name: "Schuhhaus Wezel",
-    url: null,
-    image: {
-      url: "/media/sponsor/schuhhaus_wezel.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
-    name: "Adler Häslach",
-    url: null,
-    image: {
-      url: "/media/sponsor/adler_haeslach.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
     name: "Optik Girke",
-    url: null,
+    url: "https://www.optik-girke.de/",
     image: {
       url: "/media/sponsor/optik_girke.png",
       width: 800,
@@ -220,6 +184,87 @@ export const sponsors: Sponsor[] = [
       url: "/media/sponsor/rebmann_vereinsbedarf.png",
       width: 800,
       height: 305,
+    },
+  },
+  {
+    name: "Skurril Hairstyling",
+    url: null,
+    image: {
+      url: "/media/sponsor/skurril_hairstyling.svg",
+      width: 2835,
+      height: 1890,
+    },
+  },
+  {
+    name: "Kreissparkasse Reutlingen",
+    url: "https://www.ksk-reutlingen.de/",
+    image: {
+      url: "/media/sponsor/ksk-rt.jpg",
+      width: 710,
+      height: 273,
+    },
+  },
+  {
+    name: "Erdem Schreibwaren - Bastelartikel - Bürobedarf",
+    url: null,
+    image: {
+      url: "/media/sponsor/erdem.png",
+      width: 622,
+      height: 160,
+    },
+  },
+  {
+    name: "Sarah's Blumerei",
+    url: null,
+    image: {
+      url: "/media/sponsor/sarahs_blumerei.svg",
+      width: 2835,
+      height: 1890,
+    },
+  },
+  {
+    name: "Physiosana",
+    url: "https://physiosana.com/",
+    image: {
+      url: "/media/sponsor/physiosana.png",
+      width: 239,
+      height: 70,
+    },
+  },
+  {
+    name: "Stadelmaier Immobilien",
+    url: "https://www.stadelmaier-immobilien.de/",
+    image: {
+      url: "/media/sponsor/stadelmeier-immo.svg",
+      width: 2835,
+      height: 1890,
+    },
+  },
+  {
+    name: "Zahnarztpraxis Geigle Wörner",
+    url: "https://zahnaerzte-gw.de/",
+    image: {
+      url: "/media/sponsor/zahnarztpraxis-geigle-woerner.png",
+      width: 400,
+      height: 140,
+    },
+  },
+  {
+    name: "Boris Hairart",
+    url: "https://borishairart.de/",
+    image: {
+      url: "/media/sponsor/boris-hairart.png",
+      width: 630,
+      height: 227,
+    },
+  },
+  {
+    name: "Sportgaststätte Weiherwiesen",
+    url: "https://sportgaststätte-weiherwiesen.de/",
+    image: {
+      url: "/media/sponsor/sportgaststaette-weiherwiesen.png",
+      width: 768,
+      height: 143,
     },
   },
 ];
