@@ -19,9 +19,9 @@ export const sponsors: Sponsor[] = [
     name: "Getränke Schwab",
     url: "http://www.getraenke-schwab.de/",
     image: {
-      url: "/media/sponsor/getraenke_schwab.png",
-      width: 1609,
-      height: 1144,
+      url: "/media/sponsor/getraenke_schwab.svg",
+      width: 2126,
+      height: 1418,
     },
   },
   {
@@ -37,18 +37,18 @@ export const sponsors: Sponsor[] = [
     name: "JMS Fahrzeugteile",
     url: "https://www.jms-fahrzeugteile.de/",
     image: {
-      url: "/media/sponsor/jms.jpg",
-      width: 972,
-      height: 520,
+      url: "/media/sponsor/jms.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
     name: "NECKER GmbH",
     url: "https://necker.de/",
     image: {
-      url: "/media/sponsor/necker-gmbh.jpg",
-      width: 390,
-      height: 253,
+      url: "/media/sponsor/necker-gmbh.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
@@ -82,9 +82,9 @@ export const sponsors: Sponsor[] = [
     name: "KA Möbel Systeme - Olfert Alter e.K.",
     url: "http://www.ka-moebel.de/",
     image: {
-      url: "/media/sponsor/ka_moebel_systeme.jpg",
-      width: 1632,
-      height: 384,
+      url: "/media/sponsor/ka_moebel_systeme.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
@@ -136,9 +136,9 @@ export const sponsors: Sponsor[] = [
     name: "Stahl Gruppe",
     url: "http://www.stahl-firmengruppe.com/",
     image: {
-      url: "/media/sponsor/stahl_gruppe.jpg",
-      width: 1340,
-      height: 480,
+      url: "/media/sponsor/stahl_gruppe.svg",
+      width: 2835,
+      height: 1890,
     },
   },
   {
