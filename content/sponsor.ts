@@ -53,7 +53,7 @@ export const sponsors: Sponsor[] = [
   },
   {
     name: "Pizzeria Linde",
-    url: null,
+    url: "https://pizzeria-linde.jimdosite.com/",
     image: {
       url: "/media/sponsor/pizzeria_linde.jpg",
       width: 823,
@@ -82,9 +82,9 @@ export const sponsors: Sponsor[] = [
     name: "KA Möbel Systeme - Olfert Alter e.K.",
     url: "http://www.ka-moebel.de/",
     image: {
-      url: "/media/sponsor/ka_moebel_systeme.svg",
-      width: 2835,
-      height: 1890,
+      url: "/media/sponsor/ka_moebel_systeme.png",
+      width: 1561,
+      height: 369,
     },
   },
   {
@@ -161,7 +161,7 @@ export const sponsors: Sponsor[] = [
   },
   {
     name: "Walters Eismobil",
-    url: null,
+    url: "https://www.facebook.com/profile.php?id=100057222108789",
     image: {
       url: "/media/sponsor/walters_eismobil.png",
       width: 800,
@@ -170,7 +170,7 @@ export const sponsors: Sponsor[] = [
   },
   {
     name: "Optik Girke",
-    url: null,
+    url: "https://www.optik-girke.de/",
     image: {
       url: "/media/sponsor/optik_girke.png",
       width: 800,
@@ -184,6 +184,87 @@ export const sponsors: Sponsor[] = [
       url: "/media/sponsor/rebmann_vereinsbedarf.png",
       width: 800,
       height: 305,
+    },
+  },
+  {
+    name: "Skurril Hairstyling",
+    url: null,
+    image: {
+      url: "/media/sponsor/skurril_hairstyling.svg",
+      width: 2835,
+      height: 1890,
+    },
+  },
+  {
+    name: "Kreissparkasse Reutlingen",
+    url: "https://www.ksk-reutlingen.de/",
+    image: {
+      url: "/media/sponsor/ksk-rt.jpg",
+      width: 710,
+      height: 273,
+    },
+  },
+  {
+    name: "Erdem Schreibwaren - Bastelartikel - Bürobedarf",
+    url: null,
+    image: {
+      url: "/media/sponsor/erdem.png",
+      width: 622,
+      height: 160,
+    },
+  },
+  {
+    name: "Sarah's Blumerei",
+    url: null,
+    image: {
+      url: "/media/sponsor/sarahs_blumerei.svg",
+      width: 2835,
+      height: 1890,
+    },
+  },
+  {
+    name: "Physiosana",
+    url: "https://physiosana.com/",
+    image: {
+      url: "/media/sponsor/physiosana.png",
+      width: 239,
+      height: 70,
+    },
+  },
+  {
+    name: "Stadelmaier Immobilien",
+    url: "https://www.stadelmaier-immobilien.de/",
+    image: {
+      url: "/media/sponsor/stadelmeier-immo.svg",
+      width: 2835,
+      height: 1890,
+    },
+  },
+  {
+    name: "Zahnarztpraxis Geigle Wörner",
+    url: "https://zahnaerzte-gw.de/",
+    image: {
+      url: "/media/sponsor/zahnarztpraxis-geigle-woerner.png",
+      width: 400,
+      height: 140,
+    },
+  },
+  {
+    name: "Boris Hairart",
+    url: "https://borishairart.de/",
+    image: {
+      url: "/media/sponsor/boris-hairart.png",
+      width: 630,
+      height: 227,
+    },
+  },
+  {
+    name: "Sportgaststätte Weiherwiesen",
+    url: "https://sportgaststätte-weiherwiesen.de/",
+    image: {
+      url: "/media/sponsor/sportgaststaette-weiherwiesen.png",
+      width: 768,
+      height: 143,
     },
   },
 ];
