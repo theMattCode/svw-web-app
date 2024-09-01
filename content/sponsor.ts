@@ -160,46 +160,10 @@ export const sponsors: Sponsor[] = [
     },
   },
   {
-    name: "WESTKEMPER",
-    url: null,
-    image: {
-      url: "/media/sponsor/westkemper.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
     name: "Walters Eismobil",
     url: null,
     image: {
       url: "/media/sponsor/walters_eismobil.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
-    name: "Landwirtschaftsbetrieb Karl Gaiser",
-    url: null,
-    image: {
-      url: "/media/sponsor/karl_gaiser.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
-    name: "Schuhhaus Wezel",
-    url: null,
-    image: {
-      url: "/media/sponsor/schuhhaus_wezel.png",
-      width: 800,
-      height: 305,
-    },
-  },
-  {
-    name: "Adler Häslach",
-    url: null,
-    image: {
-      url: "/media/sponsor/adler_haeslach.png",
       width: 800,
       height: 305,
     },
