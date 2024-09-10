@@ -84,10 +84,10 @@ export default function HobbyHorsing() {
             <p>Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden.</p>
             <p>
               Bitte das&nbsp;
-              <Link href="/download/2024-07-12_Anmeldeformular_HobbyHorsing_Kurs_H-2024-2.pdf" target="_blank">
+              <Link href="/download/2024-09-10_Anmeldeformular_HobbyHorsing_Kurs_H-2024-2.pdf" target="_blank">
                 Anmeldeformular
               </Link>
-              &nbsp; vollständig ausgef&uuml;llt und unterschrieben an{" "}
+              &nbsp;vollständig ausgef&uuml;llt und unterschrieben an&nbsp;
               <Link href="mailto:kerstin.fischer@svwalddorf.de">Kerstin Fischer</Link> schicken.
             </p>
             <p>
