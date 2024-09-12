@@ -63,11 +63,11 @@ th {
 }
 
 tr {
-    @apply even:bg-gray-100 first:border-t border-0 border-gray-400
+    @apply even:bg-gray-100 first:border-t border-0 border-gray-100
 }
 
 thead > tr {
-    @apply bg-svw-blue-default text-white font-medium
+    @apply font-medium
 }
 
 td {

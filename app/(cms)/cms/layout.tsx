@@ -7,13 +7,13 @@ import { Header } from "#/components/cms/header/Header";
 
 export default withPageAuthRequired(function CMSLayout({ children }: PropsWithChildren) {
   return (
-    <div className="w-screen h-screen bg-gray-100 flex">
-      <div className="w-64">
-        <Navigation />
-      </div>
-      <div className="w-full flex-col">
-        <Header />
-        <main className="w-full h-full p-4 overflow-auto">{children}</main>
+    <div className="w-screen h-screen bg-gray-100 flex flex-col">
+      <Header />
+      <div className="w-full h-full flex py-4">
+        <div className="w-64">
+          <Navigation />
+        </div>
+        <main className="w-full h-full overflow-y-auto px-4">{children}</main>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
+import Auth0 from "#/lib/auth0";
 
-export async function GET() {
+export const GET = Auth0.withApiAuthRequired(() => {
   return NextResponse.json("internal API");
-}
+});
