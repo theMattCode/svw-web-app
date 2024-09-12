@@ -8,8 +8,8 @@ export function Item({ Icon, title, href }: { Icon?: IconType | ComponentType; t
   const active = pathname === href;
   return (
     <Link
-      className={`w-full h-10 rounded-r-3xl flex gap-3 pl-4 items-center text-gray-600 font-medium ${
-        active ? "bg-svw-blue-default text-white" : "hover:bg-gray-200"
+      className={`w-full h-10 rounded-r-3xl flex gap-3 pl-4 items-center text-gray-600 text-lg ${
+        active ? "text-white bg-gradient-to-r from-svw-blue-default/75 to-svw-blue-default" : "hover:bg-gray-200"
       }`}
       href={href}
     >
