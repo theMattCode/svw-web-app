@@ -3,7 +3,7 @@ title: "HobbyHorsing - Reite deine Fantasie!"
 slug: "2023-09-11-hobby-horsing-reite-deine-fantasie"
 date: "2023-09-11"
 image:
-  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.png
   alt: HobbyHorsing
   width: 1599
   height: 1066

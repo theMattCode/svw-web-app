@@ -15,9 +15,9 @@ export default function HobbyHorsing() {
   return (
     <PageBase>
       <BlockTitle title={hobbyHorsing.name} />
-      <div className="flex flex-col gap-2">
+      <div className="py-1 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-          <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+          <div className="bg-white p-2 flex flex-col gap-2 text-justify">
             <h4>Reite deine Fantasie!</h4>
             <p>
               Wir freuen uns, euch unseren brandneuen Hobbyhorsing-Kurs im Rahmen unseres Sportangebotes „Spiel und
@@ -26,9 +26,11 @@ export default function HobbyHorsing() {
             </p>
             <h4>Was ist Hobbyhorsing?</h4>
             <p>
-              Hobbyhorsing ist eine faszinierende Sportart, bei der ihr euch auf Holz- oder Plüschpferden reitend voll
+              HobbyHorsing ist eine faszinierende Sportart, bei der ihr euch auf Holz- oder Plüschpferden reitend voll
               und ganz in eure eigene Fantasiewelt hineinversetzen könnt. Mit eurer Kreativität gestaltet ihr euer Pferd
-              und lasst eure Träume und Vorstellungen lebendig werden.
+              und lasst eure Träume und Vorstellungen lebendig werden. Wie mit dem echten Pferd machen wir im Training
+              sowohl Dressur-, als auch Springübungen. Und natürlich kümmern wir uns intensiv um das Aussehen und
+              Wohlbefinden unseres HobbyHorses.
             </p>
             <h4>Unser Kursangebot</h4>
             <p>
@@ -47,7 +49,7 @@ export default function HobbyHorsing() {
               </ul>
             </p>
           </div>
-          <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
+          <div className="bg-white p-2 flex flex-col gap-2">
             <h4>Kursdetails</h4>
             <p>
               <ul>

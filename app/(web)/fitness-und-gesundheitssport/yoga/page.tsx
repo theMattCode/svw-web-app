@@ -7,6 +7,7 @@ import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { Metadata } from "next";
 import { yoga } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: getTitle(yoga.name),
@@ -17,7 +18,7 @@ export default function Yoga() {
       <BlockTitle title={yoga.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 text-justify">
             <h4>Yoga für mehr Wohlbefinden</h4>
             <p>
               Überlegst du noch, oder machst du schon Yoga? So oder so: Wie wäre es, wenn du Montag morgens, 8:30 Uhr,
@@ -43,12 +44,14 @@ export default function Yoga() {
           </div>
           <div className="flex flex-col gap-2">
             <h4>Termine Hatha-Yoga</h4>
-            <p>Montag 08:30 - 10:00 mit Monika Haar im Gymnastikraum in der Ballspielhalle</p>
-            <p>Dienstag 18:30 - 20:00 mit Sandra Dießner im Gymnastikraum in der Ballspielhalle</p>
+            <p>Montag, 08:30 - 10:00 Uhr mit Monika Haar im Gymnastikraum in der Ballspielhalle</p>
+            <p>Dienstag, 18:30 - 20:00 Uhr mit Sandra Dießner im Gymnastikraum in der Ballspielhalle</p>
+            <Image src="/media/sparten/fitness-und-gesundheitssport/yoga-2.jpg" alt="Yoga" width={768} height={417} />
           </div>
         </div>
+        <Image src="/media/sparten/fitness-und-gesundheitssport/yoga-3.jpg" alt="Yoga" width={1376} height={527} />
         <h4>Übungsleitung</h4>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <PersonCard person={getPersonByName("Monika Haar")} />
           <PersonCard person={getPersonByName("Sandra Dießner")} />
         </div>

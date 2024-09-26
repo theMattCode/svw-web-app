@@ -6,6 +6,7 @@ import {
   fitUndGesund,
   gymnastik65plus,
   powerFitness,
+  steelDarts,
   teenDance,
   yoga,
 } from "#/content/sitemap";
@@ -33,31 +34,42 @@ export default function FitnessUndGesundheitssport() {
           <tbody>
             <tr>
               <td>
-                <Link href={yoga.url}>{yoga.name}</Link>
+                <Link href={yoga.url}>{yoga.name}</Link> mit Monika Haar
               </td>
               <td>Montag</td>
               <td>8:30 - 10:00 Uhr</td>
             </tr>
             <tr>
               <td>
-                <Link href={powerFitness.url}>{powerFitness.name}</Link>
+                <Link href={powerFitness.url}>{powerFitness.name}</Link> mit Andrea Troglauer
               </td>
               <td>Montag</td>
-              <td>18:30 - 20:30 Uhr</td>
+              <td>
+                18:30 - 19:30 Uhr
+                <br />
+                19:30 - 20:30 Uhr
+              </td>
             </tr>
             <tr>
               <td>
-                <Link href={gymnastik65plus.url}>{gymnastik65plus.name}</Link>
+                <Link href={gymnastik65plus.url}>{gymnastik65plus.name}</Link> mit Bärbel Neumann
               </td>
               <td>Dienstag</td>
-              <td>16:30 - 17:30 Uhr</td>
+              <td>17:00 - 18:00 Uhr</td>
             </tr>
             <tr>
               <td>
-                <Link href={yoga.url}>{yoga.name}</Link>
+                <Link href={yoga.url}>{yoga.name}</Link> mit Sandra Dießner
               </td>
               <td>Dienstag</td>
               <td>18:30 - 20:00 Uhr</td>
+            </tr>
+            <tr>
+              <td>
+                <Link href={steelDarts.url}>{steelDarts.name}</Link> mit Marc Musse & Rainer Burkhard
+              </td>
+              <td>Mittwoch</td>
+              <td>18:00 - 21:00 Uhr</td>
             </tr>
             <tr>
               <td>
@@ -68,7 +80,7 @@ export default function FitnessUndGesundheitssport() {
             </tr>
             <tr>
               <td>
-                <Link href={fitUndGesund.url}>{fitUndGesund.name}</Link>
+                <Link href={fitUndGesund.url}>{fitUndGesund.name}</Link> mit Silvana Kern
               </td>
               <td>Freitag</td>
               <td>18:30 - 19:30 Uhr</td>

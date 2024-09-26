@@ -4,7 +4,7 @@ slug: "2024-01-05-neuer-hobby-horsing-kurs-startet"
 date: "2024-01-05"
 teaser: "Am Freitag, den 26. Januar 2024, starten wir einen weiteren Hobby Horsing-Kurs."
 image:
-  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.png
   alt: HobbyHorsing
   width: 1599
   height: 1066

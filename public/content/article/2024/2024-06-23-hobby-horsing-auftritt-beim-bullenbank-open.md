@@ -4,7 +4,7 @@ slug: "2024-06-23-hobby-horsing-auftritt-beim-bullenbank-open"
 date: "2024-06-23"
 teaser: "Besucher der Bullenbank Open 2024 in Walddorfhäslach erleben faszinierenden Hobbyhorsing-Auftritt."
 image:
-  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.png
   alt: HobbyHorsing
   width: 1599
   height: 1066

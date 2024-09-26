@@ -4,7 +4,7 @@ slug: "2024-06-08-hobby-horsing-firecup-2.0"
 date: "2024-06-08"
 teaser: "Am 8. Juni 2024 fand in der Ballspielhalle Walddorfhäslach das HobbyHorsing-Turnier Firecup 2.0 statt, das insgesamt 41 Teilnehmer in 8 verschiedenen Wettbewerben vereinte."
 image:
-  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.png
   alt: HobbyHorsing
   width: 1599
   height: 1066

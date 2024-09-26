@@ -4,7 +4,7 @@ slug: "2023-09-22-trendsportart-hobby-horsing-durchgestartet"
 date: "2023-09-22"
 teaser: "Am Freitag, den 22.09.2023, gab es unsere allererste HobbyHorsing Stunde in der Ballspielhalle."
 image:
-  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.png
   alt: HobbyHorsing
   width: 1599
   height: 1066

@@ -6,7 +6,7 @@ tags:
   - Fitness und Gesundheitssport
   - Hobby Horsing
 image:
-  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.jpg
+  src: /media/sparten/fitness-und-gesundheitssport/hobby-horsing.png
   alt: HobbyHorsing
   width: 1599
   height: 1066

@@ -125,7 +125,7 @@ export const people: Person[] = [
     tags: ["Rehasport"],
     email: "rehasport@svwalddorf.de",
     phone: ["+49 7127 580676"],
-    image: { src: "/media/people/lisa-stauch-2023.jpg", alt: "Lisa Stauch", width: 1216, height: 1535 },
+    image: { src: "/media/people/lisa-stauch-2023.jpg", width: 1216, height: 1535 },
   },
   {
     firstname: "Silvana",
@@ -133,6 +133,7 @@ export const people: Person[] = [
     tags: ["Übungsleitung Fit und Gesund"],
     email: "silvana.kern@web.de",
     phone: ["+49 7127 18546"],
+    image: { src: "/media/people/silvana-kern-2024.png", width: 768, height: 1024 },
   },
   {
     firstname: "Monika",
@@ -160,18 +161,21 @@ export const people: Person[] = [
     lastname: "Dießner",
     tags: ["Übungsleitung Hatha-Yoga"],
     email: "sandra.diessner@svwalddorf.de",
+    image: { src: "/media/people/sandra-diessner-2024.png", width: 769, height: 1024 },
   },
   {
     firstname: "Andrea",
     lastname: "Troglauer",
     tags: ["Übungsleitung Powerfitness"],
     email: "andrea.troglauer@svwalddorf.de",
+    image: { src: "/media/people/andrea-troglauer-2024.png", width: 768, height: 1024 },
   },
   {
     firstname: "Bärbel",
     lastname: "Neumann",
     tags: ["Übungsleitung Gymnastik 65plus"],
     phone: ["+49 7127 70746"],
+    image: { src: "/media/people/baerbel-neumann-2024.png", width: 793, height: 742 },
   },
   {
     firstname: "Eva",

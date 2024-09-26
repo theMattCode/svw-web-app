@@ -17,33 +17,38 @@ export const metadata: Metadata = {
 export default function Powerfitness() {
   const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
   const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
+  const gruppeDimensions = calcImageDimensionsForWidth({ width: 5418, height: 2492 }, 768);
 
   return (
     <PageBase>
       <BlockTitle title={powerFitness.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 text-justify">
             <h4>Powerfitness am Montagabend</h4>
             <p>
               Powerfitness ist ein idealer Kurs für Einsteigerinnen, junge Mütter und Wiedereinsteigerinnen.
               Übungsleiterin Andrea Troglauer legt die Trainingsschwerpunkte auf Beweglichkeit und Ausdauer und fördert
               dabei besonders folgende Punkte:
             </p>
-            <p>
-              <ul className="list-disc px-8">
-                <li>Verbesserung der Körperhaltung</li>
-                <li>Steigerung der Herz-Kreislauf-Fitness</li>
-                <li>Verbesserung von Mobilität und Balance</li>
-                <li>Gewichtsreduktion durch erhöhten Kalorienverbrauch</li>
-                <li>Verbesserung der Muskelkraft</li>
-                <li>Allgemeines Wohlbefinden</li>
-              </ul>
-            </p>
+            <ul className="list-disc px-8">
+              <li>Verbesserung der Körperhaltung</li>
+              <li>Steigerung der Herz-Kreislauf-Fitness</li>
+              <li>Verbesserung von Mobilität und Balance</li>
+              <li>Gewichtsreduktion durch erhöhten Kalorienverbrauch</li>
+              <li>Verbesserung der Muskelkraft</li>
+              <li>Allgemeines Wohlbefinden</li>
+            </ul>
           </div>
           <div className="flex flex-col gap-2">
             <h4>Trainingszeiten</h4>
             <p>Montags 18:30 - 19:30 und 19:30 - 20:30 Uhr im Gymnastikraum der Ballspielhalle</p>
+            <Image
+              src="/media/sparten/fitness-und-gesundheitssport/powerfitness-2024.jpg"
+              alt="Powerfitness Gruppe"
+              width={gruppeDimensions.width}
+              height={gruppeDimensions.height}
+            />
           </div>
         </div>
         <h4>Übungsleitung</h4>
