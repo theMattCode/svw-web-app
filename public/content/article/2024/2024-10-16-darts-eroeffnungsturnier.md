@@ -1,7 +1,7 @@
 ---
 title: "Steel-Darts Eröffnungsturnier"
 slug: "2024-10-16-darts-eroeffnungsturnier"
-date: "2024-10-16"
+date: "2024-10-05"
 image:
   src: "/media/2024/2024-10-16-darts-eroeffnungsturnier.png"
   alt: "Steel-Darts"
