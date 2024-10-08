@@ -135,6 +135,7 @@ export const activities: MenuItem[] = [
   fitUndGesund,
   rehasport,
   hobbyHorsing,
+  steelDarts,
 ];
 
 export function findItemByName(menuItem: MenuItem, name: string): MenuItem | undefined {
