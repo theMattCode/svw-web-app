@@ -1,13 +1,13 @@
 import type { Sponsor } from "#/content/sponsor";
 import { OptionalLink } from "#/components/link/Link";
 import Image from "next/image";
-import { calcImageDimensionsForHeight, calcImageDimensionsForWidth } from "#/lib/image";
+import { calcImageDimensionsForHeight } from "#/lib/image";
 
 type Props = {
   sponsor: Sponsor;
 };
 
-export function Sponsor({ sponsor }: Props): JSX.Element | null {
+export function Sponsor({ sponsor }: Props) {
   const { width, height } = calcImageDimensionsForHeight(sponsor.image, 192);
   return (
     <OptionalLink

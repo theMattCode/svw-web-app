@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   title: getTitle(fussballHobby.name),
 };
 export default function HobbyKicker() {
-  const { width, height } = calcImageDimensionsForWidth({ width: 4026, height: 2041 }, 1200);
+  const { width, height } = calcImageDimensionsForWidth({ width: 4026, height: 2041 }, 1520);
   return (
     <PageBase>
       <BlockTitle title={fussballHobby.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
-          src="/media/sparten/fussball/hobby-kicker-team-2023-24.png"
+          src="/media/sparten/fussball/hobby-kicker-team-2023-24.jpg"
           alt="Mannschaftsfoto Hobby-Kicker 2023/24"
           width={width}
           height={height}
