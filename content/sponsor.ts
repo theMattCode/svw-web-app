@@ -19,7 +19,7 @@ export const sponsors: Sponsor[] = [
     name: "Getränke Schwab",
     url: "http://www.getraenke-schwab.de/",
     image: {
-      url: "/media/sponsor/getraenke_schwab.svg",
+      url: "/media/sponsor/getraenke_schwab.png",
       width: 2126,
       height: 1418,
     },
@@ -37,18 +37,18 @@ export const sponsors: Sponsor[] = [
     name: "JMS Fahrzeugteile",
     url: "https://www.jms-fahrzeugteile.de/",
     image: {
-      url: "/media/sponsor/jms.svg",
-      width: 2835,
-      height: 1890,
+      url: "/media/sponsor/jms-2024.jpg",
+      width: 1024,
+      height: 576,
     },
   },
   {
     name: "NECKER GmbH",
     url: "https://necker.de/",
     image: {
-      url: "/media/sponsor/necker-gmbh.svg",
-      width: 2835,
-      height: 1890,
+      url: "/media/sponsor/necker-gmbh-2024.jpg",
+      width: 1000,
+      height: 500,
     },
   },
   {
@@ -82,7 +82,7 @@ export const sponsors: Sponsor[] = [
     name: "KA Möbel Systeme - Olfert Alter e.K.",
     url: "http://www.ka-moebel.de/",
     image: {
-      url: "/media/sponsor/ka_moebel_systeme.png",
+      url: "/media/sponsor/ka_moebel_systeme.jpg",
       width: 1561,
       height: 369,
     },
@@ -137,8 +137,8 @@ export const sponsors: Sponsor[] = [
     url: "http://www.stahl-firmengruppe.com/",
     image: {
       url: "/media/sponsor/stahl_gruppe.svg",
-      width: 2835,
-      height: 1890,
+      width: 880,
+      height: 360,
     },
   },
   {
@@ -190,9 +190,9 @@ export const sponsors: Sponsor[] = [
     name: "Skurril Hairstyling",
     url: null,
     image: {
-      url: "/media/sponsor/skurril_hairstyling.svg",
-      width: 2835,
-      height: 1890,
+      url: "/media/sponsor/skurril_hairstyling-2024.jpg",
+      width: 1024,
+      height: 662,
     },
   },
   {
