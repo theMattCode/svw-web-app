@@ -3,15 +3,15 @@ title: "Spielberichte Aktive"
 slug: "2024-11-10-spielbericht-aktive"
 date: "2024-11-10"
 image:
-  src: "/media/sparten/fussball/aktive-team-2024-25.jpg"
+  src: "/media/2024/2024-11-10-spielbericht-aktive-3.jpg"
   alt: "SVW Aktive 2024/25"
-  width: 4096
-  height: 2726
+  width: 1440
+  height: 870
 tags:
   - Fußball
   - Aktive I
   - Aktive II
-teaser: "Glückwunsch zur Herbstmeisterschaft der Aktiven"
+teaser: "Glückwunsch zur Herbstmeisterschaft beider Aktiven Teams"
 ---
 ## Herbstmeister: Die Erste
 
@@ -33,8 +33,6 @@ Auch die zweite Mannschaft kam zu einem Zu Null-Sieg und ist Herbstmeister. Alle
 ![Im dichten Nebel...](/media/2024/2024-11-10-spielbericht-aktive-1.jpg)
 
 ![...zur Herbstmeisterschaft](/media/2024/2024-11-10-spielbericht-aktive-2.jpg)
-
-![So sehen Herbstmeister aus!](/media/2024/2024-11-10-spielbericht-aktive-3.jpg)
 
 Es spielten: Marco Knoblauch, Luca Häfner, Alex Scharr, Julian Wohlfarth, Marco Speier, Erik Matthäi, Simon Vetter, Dennis Dieter, Lukas Bux, Thomas Ammon, Paul Röhrich, Maxi Schindler, Jannik Jung, Nico Baur, Simon Heim, Micha Schuler
 
