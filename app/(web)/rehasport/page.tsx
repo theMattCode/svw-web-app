@@ -48,13 +48,13 @@ export default function Rehasport() {
               <li>In der Regel genehmigt die Krankenkasse 50 Einheiten Rehasport für einem Zeitraum von 18 Monaten.</li>
               <li>
                 Ohne Verordnung bieten wir je nach Verfügbarkeit auch die Möglichkeit einer Teilnahme auf eigene Kosten
-                an:
+                an, gültig ab 1. Januar 2025:
                 <ul className="list-disc px-8">
-                  <li>Ticket für Vereinsmitglieder: 50,-€ für 10 Kursstunden a 45 min</li>
-                  <li>Ticket für Nichtmitglieder: 80,-€ für 10 Kursstunden a 45 min</li>
+                  <li>Ticket für Vereinsmitglieder: 75,-€ für 15 Kursstunden a 45 min</li>
+                  <li>Ticket für Nichtmitglieder: 120,-€ für 15 Kursstunden a 45 min</li>
                   <li>Die Kursgebühr ist im Voraus zu bezahlen.</li>
                   <li>
-                    Das Ticket gilt für die Dauer von 13 Wochen. Danach verfallen alle nicht wahr genommen Kursstunden.
+                    Das Ticket gilt für die Dauer von 20 Wochen. Danach verfallen alle nicht wahr genommen Kursstunden.
                     Eine Rückerstattung ist ausgeschlossen. Termine, an denen keine Rehastunde stattfinden kann, (Bsp.:
                     Feiertage) verlängern die Laufzeit entsprechend.
                   </li>
@@ -221,7 +221,6 @@ export default function Rehasport() {
                 <td></td>
                 <td className="bg-amber-200">
                   <div className="flex flex-col items-center">
-                    <div className="font-medium text-red-600">NEU ab 4. Juli 2024:</div>
                     <div>19:30 - 20:15 Uhr</div>
                     <div className="font-medium">Orthopädie</div>
                   </div>
