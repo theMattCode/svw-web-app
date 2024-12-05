@@ -53,4 +53,10 @@ Das Ehrenamt im Sportverein ist nicht nur ein Gewinn für die Gemeinschaft, sond
 
 ## Sei dabei und mach mit!
 
-Der SVW wartet auf dich. Lass uns gemeinsam am Tag des Ehrenamtes den ersten Schritt machen – für dich, für andere, für die Gemeinschaft. 
+Der SVW wartet auf dich. Lass uns gemeinsam am Tag des Ehrenamtes den ersten Schritt machen – für dich, für andere, für die Gemeinschaft.
+
+## Danke
+
+Auf diesem Wege darf ein riesen Dankeschön an alle fleißigen Ehrenamtliche selbstverständlich nicht fehlen!
+
+Danke für eure Zeit. Danke euren Einsatz. Danke, dass ihr da seid! 
