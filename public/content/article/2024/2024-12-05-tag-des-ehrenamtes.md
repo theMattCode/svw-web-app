@@ -59,4 +59,4 @@ Der SVW wartet auf dich. Lass uns gemeinsam am Tag des Ehrenamtes den ersten Sch
 
 Auf diesem Wege darf ein riesen Dankeschön an alle fleißigen Ehrenamtliche selbstverständlich nicht fehlen!
 
-Danke für eure Zeit. Danke euren Einsatz. Danke, dass ihr da seid! 
+Danke für eure Zeit. Danke für euren Einsatz. Danke, dass ihr da seid! 
