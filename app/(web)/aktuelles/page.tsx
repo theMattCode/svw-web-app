@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 
 const PAGE_SIZE = 20;
 
-export default async function Aktuelles({ searchParams }: PageProps<{ page: string }>) {
+export default async function Aktuelles(props: PageProps<{ page: string }>) {
+  const searchParams = await props.searchParams;
   const page = searchParams.page ? Number.parseInt(searchParams.page) : 1;
   const articlesResponse = await fetch(`${getURL()}/api/articles?page=${page}&pageSize=${PAGE_SIZE}`, {
     next: { revalidate: false },

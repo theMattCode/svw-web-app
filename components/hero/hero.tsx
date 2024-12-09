@@ -3,6 +3,8 @@ import { activities } from "#/content/sitemap";
 import Link from "next/link";
 import Image from "next/image";
 
+import type { JSX } from "react";
+
 export function Hero(): JSX.Element {
   return (
     <div className="md:pt-0 w-full bg-hero bg-cover bg-center">

@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 type Props = {
   width?: string | null | undefined;
   height?: string | null | undefined;

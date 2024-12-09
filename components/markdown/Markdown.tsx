@@ -4,6 +4,8 @@ import rehypeRaw from "rehype-raw";
 import Link from "next/link";
 import Image from "next/image";
 
+import type { JSX } from "react";
+
 type Props = {
   content?: string | null;
 };

@@ -3,6 +3,8 @@ import { footer } from "#/content/footer";
 import Link from "next/link";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
+import type { JSX } from "react";
+
 export default function Footer(): JSX.Element {
   return (
     <footer className="bg-neutral-200 border-t-4 border-svw-blue-default text-sm">

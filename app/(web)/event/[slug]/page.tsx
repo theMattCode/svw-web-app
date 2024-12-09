@@ -6,14 +6,16 @@ import { getAllEventSlugs, getEventBySlug } from "#/content/events";
 
 const EVENT_FOLDER = "public/content/event";
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
   const article = getEventBySlug(params.slug, EVENT_FOLDER);
   return {
     title: getTitle(article.title),
   };
 }
 
-export default function Page({ params }: PageProps) {
+export default async function Page(props: PageProps) {
+  const params = await props.params;
   const eventArticle = getEventBySlug(params.slug, EVENT_FOLDER);
   return (
     <PageBase>
