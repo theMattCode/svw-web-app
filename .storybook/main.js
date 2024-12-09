@@ -5,18 +5,21 @@ module.exports = {
     "../components/**/*.mdx",
     "../components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
+
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "@chromatic-com/storybook"
   ],
+
   framework: {
     name: "@storybook/nextjs",
     options: {},
   },
-  docs: {
-    autodocs: "tag",
-  },
+
+  docs: {},
+
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -24,5 +27,10 @@ module.exports = {
     };
     return config;
   },
+
   staticDirs: ["../public"],
+
+  typescript: {
+    reactDocgen: "react-docgen-typescript"
+  }
 };
