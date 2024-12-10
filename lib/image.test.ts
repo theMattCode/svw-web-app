@@ -1,4 +1,5 @@
 import { calcImageDimensionsForHeight, calcImageDimensionsForWidth } from "#/lib/image";
+import { describe, expect, test } from "vitest";
 
 describe("Calculate image dimensions", () => {
   test.each`
