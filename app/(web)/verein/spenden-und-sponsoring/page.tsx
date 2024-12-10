@@ -40,11 +40,11 @@ export default function SpendenUndSponsoring() {
           </p>
           <h5>Wir sind befugt Spendenbescheinigungen auszustellen.</h5>
           <p>
-            Spendenkonto SV Walddorf e.V.
+            Spendenkonto SV Walddorf 1904 e.V.
             <br />
-            Vereinigte Volksbanken e.G.
+            Kreissparkasse Reutlingen
             <br />
-            IBAN: DE75 6039 0000 0714 2820 14
+            IBAN: DE29 6405 0000 0100 1577 05
           </p>
         </div>
       </div>
