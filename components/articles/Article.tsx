@@ -1,12 +1,12 @@
 import Markdown from "#/components/markdown/Markdown";
 import Image from "next/image";
 import { formatDate } from "#/lib/format";
-import { Article } from "#/content/article";
+import { Article as ArticleDTO } from "#/content/article";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { SoccerMatchReport } from "#/components/match/SoccerMatchReport";
 
 type Props = {
-  article: Article;
+  article: ArticleDTO;
 };
 
 export default function Article({ article }: Props): JSX.Element {

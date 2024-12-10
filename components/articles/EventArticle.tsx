@@ -1,8 +1,8 @@
 import Markdown from "#/components/markdown/Markdown";
-import { EventArticle } from "#/content/events";
+import { EventArticle as EventArticleDTO } from "#/content/events";
 
 type Props = {
-  eventArticle: EventArticle;
+  eventArticle: EventArticleDTO;
 };
 
 export default function EventArticle({ eventArticle }: Props): JSX.Element {
