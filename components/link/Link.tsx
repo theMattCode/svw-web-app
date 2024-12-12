@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ComponentProps, PropsWithChildren } from "react";
+import { ComponentProps, PropsWithChildren, type JSX } from "react";
 import { UrlObject } from "url";
 
 type Props = Omit<PropsWithChildren<ComponentProps<typeof Link>>, "href"> & {

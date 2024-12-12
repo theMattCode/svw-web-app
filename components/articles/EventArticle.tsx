@@ -1,6 +1,8 @@
 import Markdown from "#/components/markdown/Markdown";
 import { EventArticle as EventArticleDTO } from "#/content/events";
 
+import type { JSX } from "react";
+
 type Props = {
   eventArticle: EventArticleDTO;
 };

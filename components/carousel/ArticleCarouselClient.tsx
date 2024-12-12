@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState, type JSX } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Article } from "#/content/article";

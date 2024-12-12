@@ -7,7 +7,8 @@ import { club } from "#/content/club";
 
 const ARTICLE_DIRECTORY = "public/content/article";
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
   if (!article) return { title: "Artikel nicht gefunden" };
   const title = getTitle(article.title);
@@ -35,7 +36,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function Page({ params }: PageProps) {
+export default async function Page(props: PageProps) {
+  const params = await props.params;
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
   return (
     <PageBase>
