@@ -5,6 +5,8 @@ import { Article as ArticleDTO } from "#/content/article";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { SoccerMatchReport } from "#/components/match/SoccerMatchReport";
 
+import type { JSX } from "react";
+
 type Props = {
   article: ArticleDTO;
 };

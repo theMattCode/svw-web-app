@@ -7,7 +7,7 @@
     "node": "20.x"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "dev:storybook": "storybook dev -p 6006",
     "build": "next build",
     "postbuild": "next-sitemap",
@@ -20,25 +20,25 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",
-    "@next/mdx": "^14.2.20",
+    "@next/mdx": "15.1.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "@tanstack/react-table": "^8.20.5",
     "@tanstack/table-core": "^8.20.5",
     "date-fns": "^3.3.1",
     "gray-matter": "^4.0.3",
-    "next": "^14.2.20",
+    "next": "15.1.0",
     "next-sitemap": "^4.2.3",
     "node-fetch": "2.7.0",
     "nodemailer": "^6.9.13",
     "pdfjs-dist": "3.11.174",
-    "react": "^18.2.0",
+    "react": "19.0.0",
     "react-big-calendar": "^1.9.2",
-    "react-dom": "^18.2.0",
+    "react-dom": "19.0.0",
     "react-icons": "^5.0.1",
-    "react-markdown": "^8.0.7",
-    "rehype-raw": "^6.1.1",
-    "remark-gfm": "^3.0.1"
+    "react-markdown": "^9.0.1",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.13",
@@ -55,16 +55,16 @@
     "@types/node": "^20.9.1",
     "@types/node-fetch": "^2.6.12",
     "@types/nodemailer": "^6.4.14",
-    "@types/react": "^18.2.37",
+    "@types/react": "19.0.1",
     "@types/react-big-calendar": "^1.8.8",
-    "@types/react-dom": "^18.2.15",
+    "@types/react-dom": "19.0.2",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "@vitest/ui": "^2.1.8",
     "autoprefixer": "^10.4.16",
     "chromatic": "^10.9.2",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^14.2.20",
+    "eslint-config-next": "15.1.0",
     "eslint-plugin-storybook": "^0.6.15",
     "jsdom": "^25.0.1",
     "postcss": "^8.4.31",
@@ -76,5 +76,14 @@
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^2.1.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.0.1",
+      "@types/react-dom": "19.0.2"
+    },
+    "patchedDependencies": {
+      "unist-util-visit-parents@6.0.1": "patches/unist-util-visit-parents@6.0.1.patch"
+    }
   }
 }

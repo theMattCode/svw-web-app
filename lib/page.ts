@@ -1,8 +1,8 @@
 import { club } from "#/content/club";
 
-export type PageProps<TSearchParams = {}> = {
-  params: { slug: string };
-  searchParams: TSearchParams;
+export type PageProps = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 export function getTitle(prefix?: string) {

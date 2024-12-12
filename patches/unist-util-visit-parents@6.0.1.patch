@@ -1,0 +1,16 @@
+diff --git a/package.json b/package.json
+index 5c20c420929e060e98bd1a836dc19b21edb92fa3..c5a6baa408647d7e511194e805a9ecdd94891a5c 100644
+--- a/package.json
++++ b/package.json
+@@ -31,10 +31,7 @@
+   "type": "module",
+   "exports": {
+     ".": "./index.js",
+-    "./do-not-use-color": {
+-      "node": "./lib/color.node.js",
+-      "default": "./lib/color.js"
+-    }
++    "./do-not-use-color": "./lib/color.js"
+   },
+   "types": "index.d.ts",
+   "files": [
