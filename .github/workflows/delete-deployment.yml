@@ -18,14 +18,10 @@ jobs:
       - name: Fetch Vercel Deployments
         id: fetch-deployments
         run: |
-          curl -s -G \
-            -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            "https://api.vercel.com/v6/deployments" \
-            --data-urlencode "projectId=${{ secrets.VERCEL_PROJECT_ID }}" \
-            --data-urlencode "meta-pr-number=${{ env.PR_NUMBER }}" \
-            ${{
-              secrets.VERCEL_TEAM_ID && "--data-urlencode teamId=${{ secrets.VERCEL_TEAM_ID }}" || ""
-            }} > deployments.json
+          curl -s -G -H Authorization: Bearer ${{ secrets.VERCEL_TOKEN }} \
+            https://api.vercel.com/v6/deployments \
+            --data-urlencode projectId=${{ secrets.VERCEL_PROJECT_ID }} \
+            --data-urlencode meta-pr-number=${{ env.PR_NUMBER }} > deployments.json
           DEPLOYMENT_ID=$(jq -r '.deployments[0].uid' deployments.json)
           echo "DEPLOYMENT_ID=$DEPLOYMENT_ID" >> $GITHUB_ENV
 
@@ -34,10 +30,7 @@ jobs:
         run: |
           curl -X DELETE \
             -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            "https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }}" \
-            ${{
-              secrets.VERCEL_TEAM_ID && "--data-urlencode teamId=${{ secrets.VERCEL_TEAM_ID }}" || ""
-            }}
+            https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }} \
 
       - name: Output Result
         if: env.DEPLOYMENT_ID == ''
