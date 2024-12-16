@@ -19,7 +19,7 @@ jobs:
         id: fetch-deployments
         run: |
           curl -s -G -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            https://api.vercel.com/v6/deployments \
+            "https://api.vercel.com/v6/deployments" \
             --data-urlencode projectId=${{ secrets.VERCEL_PROJECT_ID }} \
             --data-urlencode meta-pr-number=${{ env.PR_NUMBER }} > deployments.json
           cat deployments.json
@@ -32,7 +32,7 @@ jobs:
         if: env.DEPLOYMENT_ID != ''
         run: |
           curl -X DELETE -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }}
+            "https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }}"
 
       - name: Output Result
         if: env.DEPLOYMENT_ID == ''
