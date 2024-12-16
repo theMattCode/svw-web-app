@@ -30,7 +30,9 @@ jobs:
 
       - name: Delete Deployment
         if: env.DEPLOYMENT_ID != ''
-        run: curl -X DELETE -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }}
+        run: |
+          curl -X DELETE -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
+            https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }}
 
       - name: Output Result
         if: env.DEPLOYMENT_ID == ''
