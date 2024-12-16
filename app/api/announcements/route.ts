@@ -3,22 +3,22 @@ import * as fs from "fs";
 import matter from "gray-matter";
 import { Announcement, AnnouncementWithFrontmatter } from "#/content/announcements";
 import { isWithinInterval } from "date-fns";
+import path from "path";
 
-const announcementsDir = "content/announcement";
 export async function GET(request: NextRequest) {
+  const announcementsDirectory = path.resolve("./public", "content", "announcement");
+
   const now = new Date();
+
   const announcements: Announcement[] = fs
-    .readdirSync(announcementsDir)
+    .readdirSync(announcementsDirectory)
     .map((file) => {
-      const markdown = fs.readFileSync(`${announcementsDir}/${file}`, "utf-8");
+      const markdown = fs.readFileSync(`${announcementsDirectory}/${file}`, "utf-8");
       const { data, content } = matter(markdown);
       return { ...data, mdContent: content } as AnnouncementWithFrontmatter;
     })
     .filter((announcement) =>
-      isWithinInterval(now, {
-        start: new Date(announcement.activeDate),
-        end: new Date(announcement.expiryDate),
-      }),
+      isWithinInterval(now, { start: new Date(announcement.activeDate), end: new Date(announcement.expiryDate) }),
     );
   return NextResponse.json(announcements);
 }
