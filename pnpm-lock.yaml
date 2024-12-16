@@ -60,8 +60,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0
       react-big-calendar:
-        specifier: ^1.9.2
-        version: 1.16.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^1.17.0
+        version: 1.17.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
@@ -4367,8 +4367,8 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
 
-  react-big-calendar@1.16.3:
-    resolution: {integrity: sha512-hErFfZZpnmY89gJkzDvOFXDCNuPq2W/TZFamD69xNIDAInPC2mTAhAfOtBp/fGlmhKVeAdjzETCFyk3QcRh07Q==}
+  react-big-calendar@1.17.0:
+    resolution: {integrity: sha512-blyZDItMFd0m+5uEPpOY4oBwGQ/Rgv2cZ4aYNCgq7zDTBB0DQSCSP4PL1mCqIYkoWrfZSsqrZLo/FKQ00oZuww==}
     peerDependencies:
       react: ^16.14.0 || ^17 || ^18
       react-dom: ^16.14.0 || ^17 || ^18
@@ -10470,7 +10470,7 @@ snapshots:
       schema-utils: 3.3.0
       webpack: 5.97.1(esbuild@0.21.5)
 
-  react-big-calendar@1.16.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  react-big-calendar@1.17.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@babel/runtime': 7.26.0
       clsx: 1.2.1
