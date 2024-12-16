@@ -148,8 +148,8 @@ importers:
         specifier: ^10.4.16
         version: 10.4.20(postcss@8.4.49)
       chromatic:
-        specifier: ^10.9.2
-        version: 10.9.6
+        specifier: ^11.20.2
+        version: 11.20.2
       eslint:
         specifier: ^8.56.0
         version: 8.57.1
@@ -2350,18 +2350,6 @@ packages:
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
-
-  chromatic@10.9.6:
-    resolution: {integrity: sha512-1MoT+/U+vQwEiq2GuehPyStbqhxqHmM1B9pdpVU1dKh26userQg1FyOFYifkTgy+9reo2w2p7sAbc0JRd2kzlA==}
-    hasBin: true
-    peerDependencies:
-      '@chromatic-com/cypress': ^0.5.2 || ^1.0.0
-      '@chromatic-com/playwright': ^0.5.2 || ^1.0.0
-    peerDependenciesMeta:
-      '@chromatic-com/cypress':
-        optional: true
-      '@chromatic-com/playwright':
-        optional: true
 
   chromatic@11.20.2:
     resolution: {integrity: sha512-c+M3HVl5Y60c7ipGTZTyeWzWubRW70YsJ7PPDpO1D735ib8+Lu3yGF90j61pvgkXGngpkTPHZyBw83lcu2JMxA==}
@@ -7982,8 +7970,6 @@ snapshots:
 
   chownr@2.0.0:
     optional: true
-
-  chromatic@10.9.6: {}
 
   chromatic@11.20.2: {}
 
