@@ -22,8 +22,11 @@ jobs:
             https://api.vercel.com/v6/deployments \
             --data-urlencode projectId=${{ secrets.VERCEL_PROJECT_ID }} \
             --data-urlencode meta-pr-number=${{ env.PR_NUMBER }} > deployments.json
-          DEPLOYMENT_ID=$(jq -r '.deployments[0].uid' deployments.json)
+          cat deployments.json
+          export DEPLOYMENT_ID=$(jq -r '.deployments[0].uid' deployments.json)
+          echo $DEPLOYMENT_ID
           echo "DEPLOYMENT_ID=$DEPLOYMENT_ID" >> $GITHUB_ENV
+          echo $GITHUB_ENV
 
       - name: Delete Deployment
         if: env.DEPLOYMENT_ID != ''
