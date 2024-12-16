@@ -18,7 +18,7 @@ jobs:
       - name: Fetch Vercel Deployments
         id: fetch-deployments
         run: |
-          curl -s -G -H Authorization: Bearer ${{ secrets.VERCEL_TOKEN }} \
+          curl -s -G -H Authorization: "Bearer ${{ secrets.VERCEL_TOKEN }}" \
             https://api.vercel.com/v6/deployments \
             --data-urlencode projectId=${{ secrets.VERCEL_PROJECT_ID }} \
             --data-urlencode meta-pr-number=${{ env.PR_NUMBER }} > deployments.json
