@@ -145,7 +145,7 @@ importers:
         specifier: ^2.1.8
         version: 2.1.8(vitest@2.1.8)
       autoprefixer:
-        specifier: ^10.4.16
+        specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       chromatic:
         specifier: ^11.20.2

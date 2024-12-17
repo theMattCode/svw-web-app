@@ -63,7 +63,7 @@
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "@typescript-eslint/parser": "^8.18.1",
     "@vitest/ui": "^2.1.8",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.20",
     "chromatic": "^11.20.2",
     "eslint": "^9.17.0",
     "eslint-config-next": "15.1.0",
