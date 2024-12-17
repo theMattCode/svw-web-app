@@ -22,6 +22,6 @@ jobs:
 
       - name: Call the delete script
         env:
-          BRANCH_NAME: $BRANCH_NAME
+          BRANCH_NAME: ${{ env.BRANCH_NAME }}
         run: |
           bash ./scripts/delete-preview-deployment.sh
