@@ -18,18 +18,10 @@ jobs:
 
       - name: Extract branch name
         shell: bash
-        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-        id: extract_branch
-
-      - name: Hash branch name
-        uses: pplanel/hash-calculator-action@v1.3.1
-        id: hash_branch
-        with:
-          input: ${{ steps.extract_branch.outputs.branch }}
-          method: MD5
+        run: echo "BRANCH_NAME=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
 
       - name: Call the delete script
         env:
-          META_TAG: ${{ steps.hash_branch.outputs.digest }}
+          BRANCH_NAME: ${BRANCH_NAME}
         run: |
           bash ./scripts/delete-preview-deployment.sh
