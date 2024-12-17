@@ -1,9 +1,13 @@
 name: 'Chromatic'
 on:
   push:
-    paths-ignore:
+    paths:
       - 'public/content/**'
-      - 'app/content/announcement/**'
+      - 'components/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.storybook/**'
+      - '.github/workflows/chromatic.yml'
 
 jobs:
   chromatic-deployment:
