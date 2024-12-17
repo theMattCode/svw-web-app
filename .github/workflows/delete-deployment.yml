@@ -5,35 +5,31 @@ on:
     types:
       - closed
 
+env:
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
 jobs:
   delete-deployment:
-    runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true || github.event.pull_request.merged == false
-
+    runs-on: ubuntu-latest
     steps:
-      - name: Extract PR Number
-        id: pr-info
-        run: echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+      - uses: actions/checkout@v2
 
-      - name: Fetch Vercel Deployments
-        id: fetch-deployments
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+
+      - name: Hash branch name
+        uses: pplanel/hash-calculator-action@v1.3.1
+        id: hash_branch
+        with:
+          input: ${{ steps.extract_branch.outputs.branch }}
+          method: MD5
+
+      - name: Call the delete script
+        env:
+          META_TAG: ${{ steps.hash_branch.outputs.digest }}
         run: |
-          curl -s -G -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            "https://api.vercel.com/v6/deployments" \
-            --data-urlencode projectId=${{ secrets.VERCEL_PROJECT_ID }} \
-            --data-urlencode meta-pr-number=${{ env.PR_NUMBER }} > deployments.json
-          cat deployments.json
-          export DEPLOYMENT_ID=$(jq -r '.deployments[0].uid' deployments.json)
-          echo $DEPLOYMENT_ID
-          echo "DEPLOYMENT_ID=$DEPLOYMENT_ID" >> $GITHUB_ENV
-          echo $GITHUB_ENV
-
-      - name: Delete Deployment
-        if: env.DEPLOYMENT_ID != ''
-        run: |
-          curl -X DELETE -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
-            "https://api.vercel.com/v13/deployments/${{ env.DEPLOYMENT_ID }}"
-
-      - name: Output Result
-        if: env.DEPLOYMENT_ID == ''
-        run: echo "No matching deployment found for PR #${{ env.PR_NUMBER }}"
+          bash ./scripts/delete-preview-deployment.sh
