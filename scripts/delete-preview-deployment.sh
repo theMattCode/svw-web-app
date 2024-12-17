@@ -2,6 +2,13 @@
 # Set the pipefail option.
 set -o pipefail
 
+BRANCH_NAME="${1}"
+
+if [[ -z "$BRANCH_NAME" || "$BRANCH_NAME" == "main" ]]; then
+  echo "Branch name is '$BRANCH_NAME'. Skipping..."
+  exit 0
+fi
+
 # Get the Vercel API endpoints.
 GET_DEPLOYMENTS_ENDPOINT="https://api.vercel.com/v6/deployments"
 DELETE_DEPLOYMENTS_ENDPOINT="https://api.vercel.com/v13/deployments"

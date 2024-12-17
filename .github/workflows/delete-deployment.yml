@@ -17,11 +17,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Extract branch name
+        id: extract_branch_name
         shell: bash
-        run: echo "BRANCH_NAME=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        run: echo "branch_name=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
 
       - name: Call the delete script
-        env:
-          BRANCH_NAME: ${{ env.BRANCH_NAME }}
         run: |
-          bash ./scripts/delete-preview-deployment.sh
+          bash ./scripts/delete-preview-deployment.sh ${{ steps.extract_branch_name.outputs.branch_name }}
