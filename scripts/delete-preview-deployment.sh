@@ -16,7 +16,7 @@ filtered_deployments="${filtered_deployments//\"/}" # Remove double quotes
 # Clears the values from filtered_deployments
 IFS=',' read -ra values <<<"$filtered_deployments"
 
-echo "Branch name: ${BRANCH_NAME}"
+echo "Branch name: $BRANCH_NAME"
 echo "Filtered deployments: ${filtered_deployments}"
 
 # Iterate over the filtered deployments list.
