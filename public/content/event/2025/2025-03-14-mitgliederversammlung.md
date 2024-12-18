@@ -10,7 +10,7 @@ calendarEntries:
     start: 2025-03-14T19:30+01:00
     end: 2025-03-14T22:00+01:00
     place:
-      name: Gemeindehalle
+      name: Sportgastststätte Weiherwiesen
 ---
 ## Einladung zur Mitgliederversammlung
 
@@ -18,6 +18,6 @@ Hiermit laden wir alle Mitglieder und Freunde des **Sportvereins Walddorf 1904 e
 
 ### Freitag, 14. März 2024, Beginn 19:30 Uhr
 
-**in die Gemeindehalle Walddorfhäslach** ein.
+in der **Sportgaststätte Weiherwiesen** ein.
 
 Details folgen.
