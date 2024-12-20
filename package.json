@@ -7,8 +7,10 @@
     "node": "20.x"
   },
   "scripts": {
+    "db:migrate": "drizzle-kit migrate",
     "dev": "next dev --turbopack",
     "dev:storybook": "storybook dev -p 6006",
+    "prebuild": "pnpm run db:migrate",
     "build": "next build",
     "postbuild": "next-sitemap",
     "build:storybook": "storybook build",
@@ -20,12 +22,15 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",
+    "@neondatabase/serverless": "^0.10.4",
     "@next/mdx": "15.1.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "@tanstack/react-table": "^8.20.5",
     "@tanstack/table-core": "^8.20.5",
     "date-fns": "^3.3.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.2",
     "gray-matter": "^4.0.3",
     "next": "15.1.0",
     "next-sitemap": "^4.2.3",
@@ -38,7 +43,8 @@
     "react-icons": "^5.0.1",
     "react-markdown": "^9.0.1",
     "rehype-raw": "^7.0.0",
-    "remark-gfm": "^4.0.0"
+    "remark-gfm": "^4.0.0",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
@@ -60,11 +66,13 @@
     "@types/react": "19.0.1",
     "@types/react-big-calendar": "^1.8.8",
     "@types/react-dom": "19.0.2",
+    "@types/ws": "^8.5.13",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "@typescript-eslint/parser": "^8.18.1",
     "@vitest/ui": "^2.1.8",
     "autoprefixer": "^10.4.20",
     "chromatic": "^11.20.2",
+    "drizzle-kit": "^0.30.1",
     "eslint": "^9.17.0",
     "eslint-config-next": "15.1.0",
     "eslint-plugin-storybook": "^0.11.1",
