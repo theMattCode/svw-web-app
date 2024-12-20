@@ -7,11 +7,13 @@
     "node": "20.x"
   },
   "scripts": {
+    "db:migrate": "drizzle-kit migrate",
     "dev": "next dev --turbopack",
     "dev:storybook": "storybook dev -p 6006",
     "build": "next build",
     "postbuild": "next-sitemap",
     "build:storybook": "storybook build",
+    "prestart": "pnpm run db:migrate",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
