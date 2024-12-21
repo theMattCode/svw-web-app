@@ -21,7 +21,7 @@ export default function MitgliedWerden() {
           <p>
             Die <b>Eintrittserklärung</b> sowie die&nbsp;
             <b>Einwilligungserklärung zum Datenschutz</b> können sie direkt{" "}
-            <Link href="/download/2024-03-29_Eintrittserklaerung_mit_Datenschutz_Formular.pdf">hier herunterladen</Link>
+            <Link href="/download/2024-12-21_Eintrittserklaerung_mit_Datenschutz_Formular.pdf">hier herunterladen</Link>
             .
           </p>
           <p>
