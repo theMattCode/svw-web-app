@@ -1,5 +1,14 @@
+"use client";
+
 import Image from "next/image";
-import { MdOutlineDashboard, MdEvent, MdOutlineArticle, MdOutlineLabel, MdOutlinePeopleAlt } from "react-icons/md";
+import {
+  MdClose,
+  MdEvent,
+  MdOutlineArticle,
+  MdOutlineDashboard,
+  MdOutlineLabel,
+  MdOutlinePeopleAlt,
+} from "react-icons/md";
 import { Item } from "#/components/cms/navigation/Item";
 import { SVWIcon } from "#/components/cms/navigation/SVWIcon";
 import { Group } from "#/components/cms/navigation/Group";
@@ -20,18 +29,31 @@ const elements: NavElement[] = [
   },
 ];
 
-export function Navigation() {
+export function Navigation({ open, onClose }: { open: boolean; onClose?: () => void }) {
   return (
-    <div className="w-full h-full flex flex-col">
-      <div></div>
-      <div className="flex flex-col gap-2 ">
-        {elements.map((element) => {
-          return element.type === "item" ? (
-            <Item title={element.title} href={element.href} Icon={element.Icon} key={element.title} />
+    <div
+      className={`absolute transition-all top-0 ${open ? "left-0" : "-left-64 @5xl:left-0"} h-full z-40 @5xl:relative bg-gray-50 @5xl:border-r @5xl:border-r-gray-200`}
+    >
+      <div className="relative h-full flex flex-col gap-2 w-64 pr-4">
+        <div className="p-2 flex items-center gap-2">
+          <Image src="/media/svw-emblem.svg" alt="SVW Emblem" width={48} height={48} />
+          <span className="uppercase font-medium text-lg flex items-center grow">SVW CMS</span>
+          <span className="uppercase font-medium text-lg flex items-center grow-0 @5xl:hidden" onClick={onClose}>
+            <MdClose />
+          </span>
+        </div>
+        {elements.map((element) =>
+          element.type === "item" ? (
+            <Item item={element} onClick={onClose} key={element.title} />
           ) : (
-            <Group title={element.title} items={element.items} key={element.title} />
-          );
-        })}
+            <>
+              <Group group={element} key={element.title} />
+              {element.items.map((item) => (
+                <Item item={item} onClick={onClose} key={item.title} />
+              ))}
+            </>
+          ),
+        )}
       </div>
     </div>
   );

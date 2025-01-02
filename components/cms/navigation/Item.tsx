@@ -1,20 +1,20 @@
-import { IconType } from "react-icons";
-import { ComponentType } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { NavItem } from "#/components/cms/navigation/types";
 
-export function Item({ Icon, title, href }: { Icon?: IconType | ComponentType; title: string; href: string }) {
+export function Item({ item, onClick }: { item: NavItem; onClick?: () => void }) {
   const pathname = usePathname();
-  const active = pathname === href;
+  const active = pathname === item.href;
   return (
     <Link
       className={`w-full h-10 rounded-r-3xl flex gap-3 pl-4 items-center text-gray-600 text-lg ${
         active ? "text-white bg-gradient-to-r from-svw-blue-default/75 to-svw-blue-default" : "hover:bg-gray-200"
       }`}
-      href={href}
+      href={item.href}
+      onClick={onClick}
     >
-      {Icon && <Icon className={`w-6 h-6 flex object-fill ${active && "text-white"}`} />}
-      <div className={active ? "text-white" : ""}>{title}</div>
+      {item.Icon && <item.Icon className={`w-6 h-6 flex object-fill ${active && "text-white"}`} />}
+      <div className={active ? "text-white" : ""}>{item.title}</div>
     </Link>
   );
 }
