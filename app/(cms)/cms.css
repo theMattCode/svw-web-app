@@ -75,7 +75,7 @@ td {
 }
 
 .card-base {
-    @apply bg-white rounded-lg shadow-md shadow-gray-200 flex flex-col
+    @apply bg-white rounded-lg border border-neutral-200 flex flex-col
 }
 
 .card-content {
