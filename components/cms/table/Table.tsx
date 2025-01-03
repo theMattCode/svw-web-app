@@ -1,3 +1,5 @@
+"use client";
+
 import { RowData, TableOptions } from "@tanstack/table-core";
 import { TableHead } from "#/components/cms/table/TableHead";
 import { useReactTable } from "@tanstack/react-table";
