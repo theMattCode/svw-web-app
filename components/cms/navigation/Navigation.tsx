@@ -13,6 +13,7 @@ import { Item } from "#/components/cms/navigation/Item";
 import { SVWIcon } from "#/components/cms/navigation/SVWIcon";
 import { Group } from "#/components/cms/navigation/Group";
 import { NavElement } from "#/components/cms/navigation/types";
+import { Fragment } from "react";
 
 const elements: NavElement[] = [
   { type: "item", title: "Dashboard", href: "/cms", Icon: MdOutlineDashboard },
@@ -46,12 +47,12 @@ export function Navigation({ open, onClose }: { open: boolean; onClose?: () => v
           element.type === "item" ? (
             <Item item={element} onClick={onClose} key={element.title} />
           ) : (
-            <>
-              <Group group={element} key={element.title} />
+            <Fragment key={element.title}>
+              <Group group={element} />
               {element.items.map((item) => (
                 <Item item={item} onClick={onClose} key={item.title} />
               ))}
-            </>
+            </Fragment>
           ),
         )}
       </div>
