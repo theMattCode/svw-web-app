@@ -1,13 +1,13 @@
 import Article from "#/components/articles/Article";
 import { PageBase } from "#/components/page/PageBase";
-import { getTitle, PageProps } from "#/lib/page";
+import { getTitle, PageProps, Slug } from "#/lib/page";
 import { getAllArticleSlugs, getArticleBySlug } from "#/content/article";
 import { Metadata } from "next";
 import { club } from "#/content/club";
 
 const ARTICLE_DIRECTORY = "public/content/article";
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<Slug>): Promise<Metadata> {
   const params = await props.params;
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
   if (!article) return { title: "Artikel nicht gefunden" };
@@ -36,7 +36,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function Page(props: PageProps<Slug>) {
   const params = await props.params;
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
   return (
