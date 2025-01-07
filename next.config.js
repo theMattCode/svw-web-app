@@ -14,6 +14,12 @@ const nextConfig = {
         port: "",
         pathname: "/svwalddorf/**",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/svwalddorf/**",
+      },
     ],
   },
   webpack: (config) => {

@@ -1,7 +1,7 @@
 export type PersonWithRoles = {
   id: string;
-  firstName: string;
-  lastName: string;
+  firstName: string | null;
+  lastName: string | null;
   email: string | null;
   phone: string | null;
   image: string | null;
@@ -10,7 +10,7 @@ export type PersonWithRoles = {
     roleId: string;
     roles: {
       id: string;
-      name: string;
+      name: string | null;
     };
   }[];
 };

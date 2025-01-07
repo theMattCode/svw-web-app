@@ -3,8 +3,8 @@ import { relations } from "drizzle-orm";
 
 export const people = pgTable("people", {
   id: uuid().primaryKey(),
-  firstName: text("first_name").notNull(),
-  lastName: text("last_name").notNull(),
+  firstName: text("first_name"),
+  lastName: text("last_name"),
   email: text(),
   phone: text(),
   image: text(),
@@ -12,7 +12,7 @@ export const people = pgTable("people", {
 
 export const roles = pgTable("roles", {
   id: uuid().primaryKey(),
-  name: text().notNull(),
+  name: text(),
 });
 
 export const peopleToRoles = pgTable(
