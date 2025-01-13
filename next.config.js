@@ -10,9 +10,9 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "svw.uber.space",
+        hostname: "res.cloudinary.com",
         port: "",
-        pathname: "/uploads/**",
+        pathname: "/svwalddorf/**",
       },
     ],
   },

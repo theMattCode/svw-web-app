@@ -2,9 +2,7 @@ import React from "react";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
 import { PDFViewer } from "#/components/pdf-viewer/PDFViewer";
-import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { svwBlaettle } from "#/content/sitemap";
@@ -19,7 +17,7 @@ export default function SVWBlaettleReinschauen() {
     <PageBase>
       <BlockTitle title={svwBlaettle.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
-        <PDFViewer url="/download/svw_blaettle_web_2022-2023.pdf" />
+        <PDFViewer url="/download/svw_blaettle_web_2024-2025.pdf" />
       </div>
     </PageBase>
   );
