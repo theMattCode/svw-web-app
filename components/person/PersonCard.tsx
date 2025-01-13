@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 import { getPersonName, Person } from "#/content/people";
-import { GoPersonFill as Placeholder } from "react-icons/go";
+import { BsPersonBoundingBox as Placeholder } from "react-icons/bs";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 
 type Props = {

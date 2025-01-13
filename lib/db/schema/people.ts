@@ -20,10 +20,10 @@ export const peopleToRoles = pgTable(
   {
     peopleId: uuid("people_id")
       .notNull()
-      .references(() => people.id),
+      .references(() => people.id, { onDelete: "cascade" }),
     roleId: uuid("role_id")
       .notNull()
-      .references(() => roles.id),
+      .references(() => roles.id, { onDelete: "cascade" }),
   },
   (t) => [index("pk").on(t.peopleId, t.roleId)],
 );

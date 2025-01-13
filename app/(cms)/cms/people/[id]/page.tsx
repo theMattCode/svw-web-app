@@ -5,7 +5,7 @@ import { sql } from "drizzle-orm";
 import { PersonWithRoles } from "#/lib/types/people";
 import { cache } from "react";
 import { notFound } from "next/navigation";
-import { PersonEdit } from "#/app/(cms)/cms/people/[id]/PersonEdit";
+import { Edit } from "#/app/(cms)/cms/people/[id]/Edit";
 import placeholder = sql.placeholder;
 
 const preparedPersonStatement = drizzle.query.people
@@ -35,7 +35,7 @@ export default async function Page({ params }: PageProps<{ id: string }>) {
 
   return (
     <div className="container">
-      <PersonEdit person={person} />
+      <Edit person={person} />
     </div>
   );
 }

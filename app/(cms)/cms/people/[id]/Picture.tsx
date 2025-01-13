@@ -1,33 +1,56 @@
 "use client";
 
-import Image from "next/image";
+import NextImage from "next/image";
 import { PersonWithRoles } from "#/lib/types/people";
-import { TextField } from "#/components/cms/input/TextField";
-import { Dispatch, SetStateAction, useState } from "react";
+import { MutateResult, TextField, TextFieldMutationVariables } from "#/components/cms/input/TextField";
 import { BsPersonBoundingBox } from "react-icons/bs";
 import { SiCloudinary } from "react-icons/si";
+import { MutationFunction, useDebouncedMutation } from "#/lib/action";
+import { useCallback, useState } from "react";
+import { mutatePerson } from "#/app/(cms)/cms/people/[id]/actions";
 
-export function Picture({
-  person,
-  onPersonChange,
-}: {
-  person: PersonWithRoles;
-  onPersonChange?: Dispatch<SetStateAction<PersonWithRoles>>;
-}) {
+function validateImageUrl(url: string): boolean {
+  try {
+    new URL(url);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function Picture({ person }: { person: PersonWithRoles }) {
+  const [imageUrl, setImageUrl] = useState(person.image);
+
+  const preparedMutatePictureFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(
+    async ({ value }: TextFieldMutationVariables): Promise<MutateResult> =>
+      mutatePerson(person.id, { image: value ?? "" }),
+    [person.id],
+  );
+  const mutateFirstName = useDebouncedMutation<TextFieldMutationVariables, MutateResult>((variables) => {
+    if (variables.value !== null) {
+      // synchronously load image and test if it is valid
+    }
+    return preparedMutatePictureFn(variables);
+  });
   return (
     <div className="flex flex-col gap-4 items-center">
-      {person.image ? (
-        <Image src={person.image} alt={`${person.firstName} ${person.lastName}`} width={600} height={700} />
+      {imageUrl ? (
+        <NextImage src={imageUrl} alt={`${person.firstName} ${person.lastName}`} width={600} height={700} />
       ) : (
         <BsPersonBoundingBox className="w-full h-48 text-gray-300" />
       )}
       <TextField
         label="URL"
-        value={person.image}
-        Icon={SiCloudinary}
-        save={(value) => {
-          onPersonChange?.((prev) => ({ ...prev, image: value }));
+        defaultValue={imageUrl}
+        onChange={(value: string | null) => {
+          if (value === null || value.trim() === "") {
+            setImageUrl(null);
+          } else if (validateImageUrl(value)) {
+            setImageUrl(value);
+          }
         }}
+        mutate={mutateFirstName}
+        StartIcon={SiCloudinary}
       />
     </div>
   );

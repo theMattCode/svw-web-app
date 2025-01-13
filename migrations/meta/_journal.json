@@ -15,6 +15,13 @@
       "when": 1735905577738,
       "tag": "0001_nullable_names",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1738332589470,
+      "tag": "0002_onDelete_cascade",
+      "breakpoints": true
     }
   ]
 }

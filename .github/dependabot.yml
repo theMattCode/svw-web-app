@@ -7,5 +7,9 @@ updates:
     groups:
       dependencies:
         dependency-types: "production"
+        patterns:
+          - "*"
       devDependencies:
         dependency-types: "development"
+        patterns:
+          - "*"

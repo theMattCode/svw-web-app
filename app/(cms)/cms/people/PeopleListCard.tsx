@@ -1,7 +1,8 @@
-import { Card, CardContent, CardTitle } from "#/components/cms/card/Card";
+import { Card, CardContent, CardHeader, CardTitle, CardToolbar } from "#/components/cms/card/Card";
 import PeopleList from "#/app/(cms)/cms/people/PeopleList";
 import { PersonWithRoles } from "#/lib/types/people";
 import { drizzle } from "#/lib/db/drizzle";
+import { TextField } from "#/components/cms/input/TextField";
 
 async function getData(): Promise<PersonWithRoles[]> {
   return await drizzle.query.people.findMany({
@@ -20,7 +21,9 @@ export async function PeopleListCard() {
 
   return (
     <Card>
-      <CardTitle>Personen</CardTitle>
+      <CardHeader>
+        <CardTitle>Personen</CardTitle>
+      </CardHeader>
       <CardContent>
         <PeopleList data={data} />
       </CardContent>
