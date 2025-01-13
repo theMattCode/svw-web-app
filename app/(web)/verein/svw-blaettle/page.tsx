@@ -1,7 +1,6 @@
 import React from "react";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import { PDFViewer } from "#/components/pdf-viewer/PDFViewer";
 import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import Link from "next/link";
@@ -14,25 +13,18 @@ export const metadata: Metadata = {
 };
 
 export default function SVWBlaettle() {
-  const imageDimensions = calcImageDimensionsForWidth({ width: 3497, height: 4961 }, 300);
+  const imageDimensions = calcImageDimensionsForWidth({ width: 1280, height: 1816 }, 400);
   return (
     <PageBase>
       <BlockTitle title={svwBlaettle.name} />
-      <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
+      <div className="bg-white shadow-2xl p-4 flex flex-col lg:flex-row gap-2">
         <div className="w-full flex flex-col gap-2">
-          <div className="flex flex-col gap-2 md:flex-row">
-            <Image
-              src="/media/verein/svw_blaettle_2022-2023.png"
-              alt="s'SVW Blättle"
-              width={imageDimensions.width}
-              height={imageDimensions.height}
-              className="self-center"
-            />
+          <div className="flex flex-col gap-4 md:flex-row">
             <div className="flex flex-col">
               <h4>Unsere Vereinszeitschrift &quot;s&apos;SVW Blättle&quot;</h4>
               <p>
                 &quot;s&apos;SVW Blättle&quot; wird mit einer aktuellen Berichterstattung über das Vereinsgeschehen
-                während der gesamten Saison 2022/2023 bei allen Veranstaltungen, an alle Neu-Mitglieder der Sparten,
+                während der gesamten Saison 2024/2025 bei allen Veranstaltungen, an alle Neu-Mitglieder der Sparten,
                 sowie den Heimspielen der I. und II. Mannschaft des SV Walddorf an die Zuschauer verteilt. Ferner wird
                 das &quot;SVW Blättle&quot; auch bei Sponsoren und öffentlichen Anlaufpunkten wie dem Rathaus ausliegen.
                 Insgesamt hat das SVW Blättle eine Auflage von über 1.000 Stück, welche auch an wechselnde Haushalte der
@@ -51,11 +43,18 @@ export default function SVWBlaettle() {
                 </Link>
                 &nbsp; wenden.
               </p>
-              <p className="my-4">
-                <Link href="/verein/svw-blaettle-reinschauen" className="text-lg">
-                  Reinschauen und herunterladen
-                </Link>
-              </p>
+            </div>
+            <div className="flex justify-center">
+              <Link href="/verein/svw-blaettle-reinschauen" className="text-lg w-96 flex flex-col text-center">
+                <Image
+                  src="https://res.cloudinary.com/svwalddorf/image/upload/v1736762233/2024-2025-front_njatdz.jpg"
+                  alt="s'SVW Blättle"
+                  width={imageDimensions.width}
+                  height={imageDimensions.height}
+                  className="self-center"
+                />
+                Reinschauen und herunterladen
+              </Link>
             </div>
           </div>
         </div>
