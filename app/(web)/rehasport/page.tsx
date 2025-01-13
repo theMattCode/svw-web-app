@@ -15,27 +15,15 @@ export const metadata: Metadata = {
 };
 
 export default function Rehasport() {
-  const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({width: 775, height: 389}, 850);
-  const trainingsraumDimensions = calcImageDimensionsForWidth({width: 4160, height: 2080}, 850);
+  const wegZurBallsporthalleDimensions = calcImageDimensionsForWidth({ width: 775, height: 389 }, 850);
+  const trainingsraumDimensions = calcImageDimensionsForWidth({ width: 4160, height: 2080 }, 850);
   return (
     <div className="bg-neutral-200 pb-8">
-      <div className="bg-svw-blue-lighter mb-2 py-8 gap-2">
-        <BlockTitle title="Ankündigung"/>
-        <div className="container flex flex-col pt-2 items-center">
-          <div className="bg-white shadow-2xl p-2 flex flex-col gap-2 w-full">
-            <p className="text-xl font-bold">Während den Weihnachtsferien findet kein Rehasport statt.</p>
-            <p>Letzter Rehasporttag vor den Ferien ist der Donnerstag, 19.12.</p>
-            <p> Nach den Ferien geht es weiter am Dienstag, 7. Januar 2025.</p>
-            <p> Wir wünschen allen Rehasportler/innen ein Frohes Fest und einen Guten Rutsch ins Neue Jahr,</p>
-            <p>Euer Rehasport-Team</p>
-          </div>
-        </div>
-      </div>
       <div className="container flex flex-col gap-2">
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
-          <div className="w-full h-80"/>
+          <div className="w-full h-80" />
         </div>
-        <BlockTitle title={rehasport.name}/>
+        <BlockTitle title={rehasport.name} />
         <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
           <h3>Zertifizierte Kurse</h3>
           <p>
@@ -75,9 +63,13 @@ export default function Rehasport() {
             </ul>
           </p>
           <p>
-            Weitere Informationen zum Thema Rehasport findet man unter&nbsp;
+            Weitere Informationen zum Thema Rehasport findest du auf{" "}
             <Link href="https://www.wbrs-online.net/reha-sport" target="_blank">
               www.wbrs-online.net/reha-sport
+            </Link>{" "}
+            und auf{" "}
+            <Link href="https://www.dein-rehasport.de/" target="_blank">
+              www.dein-rehasport.de/
             </Link>
             .
           </p>
@@ -119,126 +111,126 @@ export default function Rehasport() {
           <h3>Kursprogramm</h3>
           <table className="border-separate border-spacing-x-0.5">
             <thead>
-            <tr>
-              <td>Montag</td>
-              <td>Dienstag</td>
-              <td>Mittwoch</td>
-              <td>Donnerstag</td>
-              <td>Freitag</td>
-            </tr>
+              <tr>
+                <td>Montag</td>
+                <td>Dienstag</td>
+                <td>Mittwoch</td>
+                <td>Donnerstag</td>
+                <td>Freitag</td>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-              <td></td>
-              <td className="bg-amber-200 border-1">
-                <div className="flex flex-col items-center">
-                  <div>9:00 - 9:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-              <td className="bg-green-300">
-                <div className="flex flex-col items-center">
-                  <div>9:00 - 9:45 Uhr</div>
-                  <div className="font-medium">Sport nach Krebs</div>
-                </div>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>10:00 - 10:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>10:00 - 10:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>11:00 - 11:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>11:00 - 11:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>16:00 - 16:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>17:00 - 17:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>18:00 - 18:45 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>18:30 - 19:15 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td className="bg-amber-200">
-                <div className="flex flex-col items-center">
-                  <div>19:30 - 20:15 Uhr</div>
-                  <div className="font-medium">Orthopädie</div>
-                </div>
-              </td>
-              <td></td>
-            </tr>
+              <tr>
+                <td></td>
+                <td className="bg-amber-200 border-1">
+                  <div className="flex flex-col items-center">
+                    <div>9:00 - 9:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td className="bg-green-300">
+                  <div className="flex flex-col items-center">
+                    <div>9:00 - 9:45 Uhr</div>
+                    <div className="font-medium">Sport nach Krebs</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>10:00 - 10:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>10:00 - 10:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>11:00 - 11:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>11:00 - 11:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>16:00 - 16:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>17:00 - 17:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>18:00 - 18:45 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>18:30 - 19:15 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td className="bg-amber-200">
+                  <div className="flex flex-col items-center">
+                    <div>19:30 - 20:15 Uhr</div>
+                    <div className="font-medium">Orthopädie</div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
           <p>
@@ -247,9 +239,9 @@ export default function Rehasport() {
           </p>
           <h3>Kursleitung</h3>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-2">
-            <PersonCard person={getPersonByName("Ingrid Hartlieb")}/>
-            <PersonCard person={getPersonByName("Sandra Kalestra")}/>
-            <PersonCard person={getPersonByName("Lisa Stauch")}/>
+            <PersonCard person={getPersonByName("Ingrid Hartlieb")} />
+            <PersonCard person={getPersonByName("Sandra Kalestra")} />
+            <PersonCard person={getPersonByName("Lisa Stauch")} />
           </div>
           <h3>Kontakt</h3>
           <p>
@@ -283,7 +275,7 @@ export default function Rehasport() {
             />
           </div>
         </div>
-        <ArticlePreviewList tags={["Rehasport"]}/>
+        <ArticlePreviewList tags={["Rehasport"]} />
       </div>
     </div>
   );
