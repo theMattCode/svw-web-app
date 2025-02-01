@@ -132,7 +132,7 @@ function Actions<TData extends { id: string }>(cellContext: CellContext<TData, u
         size="small"
         onClick={async () => {
           await deletePerson(cellContext.row.original.id);
-          router.push(`/cms/people`);
+          router.refresh();
         }}
       >
         <MdOutlineDelete />
