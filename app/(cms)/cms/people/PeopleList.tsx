@@ -1,13 +1,13 @@
 "use client";
 
 import * as React from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { PersonWithRoles } from "#/lib/types/people";
-import { CellContext, createColumnHelper, getCoreRowModel, Row, TableOptions } from "@tanstack/table-core";
+import { CellContext, createColumnHelper, getCoreRowModel, TableOptions } from "@tanstack/table-core";
 import { Table } from "#/components/cms/table/Table";
 import { PhoneCell } from "#/components/cms/table/cell/Phone";
 import { MailCell } from "#/components/cms/table/cell/Mail";
 import { RolesCell } from "#/components/cms/table/cell/Roles";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FaRegEdit } from "react-icons/fa";
 import { CardToolbar } from "#/components/cms/card/Card";
 import { debounce } from "lodash";
@@ -55,25 +55,13 @@ const COLUMN_ACTIONS = COLUMN_HELPER.display({
   cell: Actions,
 });
 
-export default function PeopleList() {
-  const [data, setData] = useState<PersonWithRoles[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function fetchPeople() {
-      const res = await fetch("/cms/api/people", { next: { tags: ["cms/api/people"] } });
-      const data = await res.json();
-      setData(data.roles);
-    }
-    fetchPeople().finally(() => setLoading(false));
-  }, []);
-
+export default function PeopleList({ people }: { people: PersonWithRoles[] }) {
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState<string | null>();
-  const filteredData = useMemo(
+  const filteredPeople = useMemo(
     () =>
-      data.filter((person) => {
+      people.filter((person) => {
         if (!searchTerm) return true;
 
         const firstName = person.firstName?.toLowerCase();
@@ -85,17 +73,17 @@ export default function PeopleList() {
         if (person.email?.toLowerCase().includes(searchTerm)) return true;
         return person.peopleToRoles.some((p) => p.roles.name?.toLowerCase().includes(searchTerm) ?? false);
       }),
-    [searchTerm, data],
+    [searchTerm, people],
   );
 
   const options: TableOptions<PersonWithRoles> = useMemo(
     () => ({
-      data: filteredData,
+      data: filteredPeople,
       columns: [COLUMN_FIRSTNAME, COLUMN_LASTNAME, COLUMN_EMAIL, COLUMN_PHONE, COLUMN_ROLES, COLUMN_ACTIONS],
       getRowId: (person) => person.id,
       getCoreRowModel: getCoreRowModel(),
     }),
-    [filteredData],
+    [filteredPeople],
   );
 
   const onChange = useCallback(
@@ -123,7 +111,7 @@ export default function PeopleList() {
           Neue Person
         </Button>
       </CardToolbar>
-      <Table options={options} loading={loading} />
+      <Table options={options} />
     </>
   );
 }
