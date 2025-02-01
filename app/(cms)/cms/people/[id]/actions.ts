@@ -33,8 +33,6 @@ export const deletePerson = async (id: string): Promise<MutateResult> => {
   return { type: "success" };
 };
 
-export const getAllRoles = async () => await drizzle.query.roles.findMany();
-
 export const createRole = async (role: Omit<Role, "id"> = { name: "" }): Promise<MutateResult & { role: Role }> => {
   const newRole = await drizzle.insert(roles).values({ id: crypto.randomUUID(), name: role.name }).returning();
   return { type: "success", role: { ...newRole[0] } };

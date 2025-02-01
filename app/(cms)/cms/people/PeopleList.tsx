@@ -7,7 +7,7 @@ import { Table } from "#/components/cms/table/Table";
 import { PhoneCell } from "#/components/cms/table/cell/Phone";
 import { MailCell } from "#/components/cms/table/cell/Mail";
 import { RolesCell } from "#/components/cms/table/cell/Roles";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FaRegEdit } from "react-icons/fa";
 import { CardToolbar } from "#/components/cms/card/Card";
 import { debounce } from "lodash";
@@ -55,7 +55,19 @@ const COLUMN_ACTIONS = COLUMN_HELPER.display({
   cell: Actions,
 });
 
-export default function PeopleList({ data }: { data: PersonWithRoles[] }) {
+export default function PeopleList() {
+  const [data, setData] = useState<PersonWithRoles[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchPeople() {
+      const res = await fetch("/cms/api/people", { next: { tags: ["cms/api/people"] } });
+      const data = await res.json();
+      setData(data.roles);
+    }
+    fetchPeople().finally(() => setLoading(false));
+  }, []);
+
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState<string | null>();
@@ -111,7 +123,7 @@ export default function PeopleList({ data }: { data: PersonWithRoles[] }) {
           Neue Person
         </Button>
       </CardToolbar>
-      <Table options={options} />
+      <Table options={options} loading={loading} />
     </>
   );
 }
