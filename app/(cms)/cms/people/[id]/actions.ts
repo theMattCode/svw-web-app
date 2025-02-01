@@ -5,6 +5,7 @@ import { drizzle } from "#/lib/db/drizzle";
 import { people, peopleToRoles, roles } from "#/lib/db/schema";
 import { and, eq } from "drizzle-orm";
 import { Person, Role } from "#/lib/types/people";
+import { revalidatePath } from "next/cache";
 
 export const mutatePerson = async (id: string, person: Partial<Omit<Person, "id">>): Promise<MutateResult> => {
   await drizzle.update(people).set(person).where(eq(people.id, id));
@@ -25,11 +26,13 @@ export const createPerson = async (
       image: person.image,
     })
     .returning();
+  revalidatePath("/cms/people");
   return { type: "success", person: { ...newPerson[0] } };
 };
 
 export const deletePerson = async (id: string): Promise<MutateResult> => {
   await drizzle.delete(people).where(eq(people.id, id));
+  revalidatePath("/cms/people");
   return { type: "success" };
 };
 
@@ -40,6 +43,7 @@ export const createRole = async (role: Omit<Role, "id"> = { name: "" }): Promise
 
 export const assignRole = async (peopleId: string, roleId: string): Promise<MutateResult> => {
   await drizzle.insert(peopleToRoles).values({ peopleId, roleId }).onConflictDoNothing().returning();
+  revalidatePath("/cms/people");
   return { type: "success" };
 };
 
