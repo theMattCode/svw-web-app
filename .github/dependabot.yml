@@ -5,11 +5,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      dependencies:
-        dependency-types: "production"
-        patterns:
-          - "*"
-      devDependencies:
-        dependency-types: "development"
-        patterns:
-          - "*"
+      dev-deps:
+        dependency-type: "development"
+      prod-deps:
+        dependency-type: "production"
