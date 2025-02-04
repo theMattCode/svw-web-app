@@ -3,7 +3,7 @@
 import { PersonWithRoles } from "#/lib/types/people";
 import { MutateResult, TextField, TextFieldMutationVariables } from "#/components/cms/input/TextField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
-import { mutatePerson } from "#/app/(cms)/cms/people/actions";
+import { updatePerson } from "#/app/(cms)/cms/people/actions";
 import { useCallback } from "react";
 import { MutationFunction, useDebouncedMutation } from "#/lib/action";
 import { Alert, AlertTitle, Autocomplete, TextField as MuiTextField } from "@mui/material";
@@ -12,28 +12,28 @@ import { Roles } from "#/app/(cms)/cms/people/add/[id]/section/Roles";
 export function Details({ person }: { person: PersonWithRoles }) {
   const preparedMutateFirstNameFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(
     async ({ value }: TextFieldMutationVariables): Promise<MutateResult> =>
-      mutatePerson(person.id, { firstName: value ?? "" }),
+      updatePerson(person.id, { firstName: value ?? "" }),
     [person.id],
   );
   const mutateFirstName = useDebouncedMutation<TextFieldMutationVariables, MutateResult>(preparedMutateFirstNameFn);
 
   const preparedMutateLastNameFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(
     async ({ value }: TextFieldMutationVariables): Promise<MutateResult> =>
-      mutatePerson(person.id, { lastName: value ?? "" }),
+      updatePerson(person.id, { lastName: value ?? "" }),
     [person.id],
   );
   const mutateLastName = useDebouncedMutation<TextFieldMutationVariables, MutateResult>(preparedMutateLastNameFn);
 
   const preparedMutateEmailFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(
     async ({ value }: TextFieldMutationVariables): Promise<MutateResult> =>
-      mutatePerson(person.id, { email: value ?? "" }),
+      updatePerson(person.id, { email: value ?? "" }),
     [person.id],
   );
   const mutateEmail = useDebouncedMutation<TextFieldMutationVariables, MutateResult>(preparedMutateEmailFn);
 
   const preparedMutatePhoneFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(
     async ({ value }: TextFieldMutationVariables): Promise<MutateResult> =>
-      mutatePerson(person.id, { phone: value ?? "" }),
+      updatePerson(person.id, { phone: value ?? "" }),
     [person.id],
   );
   const mutatePhone = useDebouncedMutation<TextFieldMutationVariables, MutateResult>(preparedMutatePhoneFn);

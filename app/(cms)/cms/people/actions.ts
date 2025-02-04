@@ -4,13 +4,8 @@ import { MutateResult } from "#/components/cms/input/TextField";
 import { drizzle } from "#/lib/db/drizzle";
 import { people, peopleToRoles, roles } from "#/lib/db/schema";
 import { and, eq } from "drizzle-orm";
-import { Person, Role } from "#/lib/types/people";
+import { Person, PersonWithRoles, Role } from "#/lib/types/people";
 import { revalidatePath } from "next/cache";
-
-export const mutatePerson = async (id: string, person: Partial<Omit<Person, "id">>): Promise<MutateResult> => {
-  await drizzle.update(people).set(person).where(eq(people.id, id));
-  return { type: "success" };
-};
 
 export const createPerson = async (
   person: Omit<Person, "id"> = { firstName: "", lastName: "", image: "", phone: "", email: "" },
@@ -26,7 +21,18 @@ export const createPerson = async (
       image: person.image,
     })
     .returning();
+  revalidatePath("/cms/people");
   return { type: "success", person: { ...newPerson[0] } };
+};
+
+export const readAllPeople = async (): Promise<PersonWithRoles[]> => {
+  return await drizzle.query.people.findMany({ with: { peopleToRoles: { with: { roles: true } } } });
+};
+
+export const updatePerson = async (id: string, person: Partial<Omit<Person, "id">>): Promise<MutateResult> => {
+  await drizzle.update(people).set(person).where(eq(people.id, id));
+  revalidatePath("/cms/people");
+  return { type: "success" };
 };
 
 export const deletePerson = async (id: string): Promise<MutateResult> => {

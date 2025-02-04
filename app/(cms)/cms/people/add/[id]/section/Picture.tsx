@@ -7,7 +7,7 @@ import { BsPersonBoundingBox } from "react-icons/bs";
 import { SiCloudinary } from "react-icons/si";
 import { MutationFunction, useDebouncedMutation } from "#/lib/action";
 import { useCallback, useState } from "react";
-import { mutatePerson } from "#/app/(cms)/cms/people/actions";
+import { updatePerson } from "#/app/(cms)/cms/people/actions";
 
 function validateImageUrl(url: string): boolean {
   try {
@@ -23,7 +23,7 @@ export function Picture({ person }: { person: PersonWithRoles }) {
 
   const preparedMutatePictureFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(
     async ({ value }: TextFieldMutationVariables): Promise<MutateResult> =>
-      mutatePerson(person.id, { image: value ?? "" }),
+      updatePerson(person.id, { image: value ?? "" }),
     [person.id],
   );
   const mutateFirstName = useDebouncedMutation<TextFieldMutationVariables, MutateResult>((variables) => {
