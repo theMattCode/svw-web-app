@@ -7,7 +7,7 @@ import { updatePerson } from "#/app/(cms)/cms/people/actions";
 import { useCallback } from "react";
 import { MutationFunction, useDebouncedMutation } from "#/lib/action";
 import { Alert, AlertTitle, Autocomplete, TextField as MuiTextField } from "@mui/material";
-import { Roles } from "#/app/(cms)/cms/people/add/[id]/section/Roles";
+import { Roles } from "#/app/(cms)/cms/people/[id]/section/Roles";
 
 export function Details({ person }: { person: PersonWithRoles }) {
   const preparedMutateFirstNameFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(

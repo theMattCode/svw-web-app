@@ -1,11 +1,12 @@
 import "server-only";
+
 import { PageProps } from "#/lib/page";
 import { drizzle } from "#/lib/db/drizzle";
 import { sql } from "drizzle-orm";
 import { PersonWithRoles } from "#/lib/types/people";
 import { cache } from "react";
 import { notFound } from "next/navigation";
-import { Edit } from "#/app/(cms)/cms/people/add/[id]/section/Edit";
+import { Edit } from "#/app/(cms)/cms/people/[id]/section/Edit";
 import placeholder = sql.placeholder;
 
 const preparedPersonStatement = drizzle.query.people

@@ -7,24 +7,6 @@ import { and, eq } from "drizzle-orm";
 import { Person, PersonWithRoles, Role } from "#/lib/types/people";
 import { revalidatePath } from "next/cache";
 
-export const createPerson = async (
-  person: Omit<Person, "id"> = { firstName: "", lastName: "", image: "", phone: "", email: "" },
-): Promise<MutateResult & { person: Person }> => {
-  const newPerson = await drizzle
-    .insert(people)
-    .values({
-      id: crypto.randomUUID(),
-      firstName: person.firstName,
-      lastName: person.lastName,
-      phone: person.phone,
-      email: person.email,
-      image: person.image,
-    })
-    .returning();
-  revalidatePath("/cms/people");
-  return { type: "success", person: { ...newPerson[0] } };
-};
-
 export const readAllPeople = async (): Promise<PersonWithRoles[]> => {
   return await drizzle.query.people.findMany({ with: { peopleToRoles: { with: { roles: true } } } });
 };

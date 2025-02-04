@@ -79,7 +79,10 @@ export default function PeopleList({ people }: { people: PersonWithRoles[] }) {
   const options: TableOptions<PersonWithRoles> = useMemo(
     () => ({
       data: filteredPeople,
-      columns: [COLUMN_FIRSTNAME, COLUMN_LASTNAME, COLUMN_EMAIL, COLUMN_PHONE, COLUMN_ROLES, COLUMN_ACTIONS],
+      columns: [COLUMN_LASTNAME, COLUMN_FIRSTNAME, COLUMN_EMAIL, COLUMN_PHONE, COLUMN_ROLES, COLUMN_ACTIONS],
+      initialState: {
+        sorting: [{ id: "lastName", desc: false }],
+      },
       getRowId: (person) => person.id,
       getCoreRowModel: getCoreRowModel(),
     }),
