@@ -2,7 +2,7 @@ import { PersonWithRoles, Role } from "#/lib/types/people";
 import { Autocomplete, CircularProgress, TextField } from "@mui/material";
 import { useState } from "react";
 import fetch from "node-fetch";
-import { assignRole, createRole, unassignRole } from "#/app/(cms)/cms/people/[id]/actions";
+import { assignRole, createRole, unassignRole } from "#/app/(cms)/cms/people/actions";
 
 export function Roles({ person }: { person: PersonWithRoles }) {
   const [open, setOpen] = useState(false);

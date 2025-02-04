@@ -3,10 +3,10 @@
 import { PersonWithRoles } from "#/lib/types/people";
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "#/components/cms/card/Card";
-import { Picture } from "#/app/(cms)/cms/people/[id]/Picture";
-import { Details } from "#/app/(cms)/cms/people/[id]/Details";
-import { Roles } from "#/app/(cms)/cms/people/[id]/Roles";
-import { Preview } from "#/app/(cms)/cms/people/[id]/Preview";
+import { Picture } from "#/app/(cms)/cms/people/add/[id]/section/Picture";
+import { Details } from "#/app/(cms)/cms/people/add/[id]/section/Details";
+import { Roles } from "#/app/(cms)/cms/people/add/[id]/section/Roles";
+import { Preview } from "#/app/(cms)/cms/people/add/[id]/section/Preview";
 
 export function Edit({ person: initialPerson }: { person: PersonWithRoles }) {
   const [person] = useState<PersonWithRoles>(initialPerson);

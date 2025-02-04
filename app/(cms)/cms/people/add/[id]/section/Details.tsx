@@ -3,11 +3,11 @@
 import { PersonWithRoles } from "#/lib/types/people";
 import { MutateResult, TextField, TextFieldMutationVariables } from "#/components/cms/input/TextField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
-import { mutatePerson } from "#/app/(cms)/cms/people/[id]/actions";
+import { mutatePerson } from "#/app/(cms)/cms/people/actions";
 import { useCallback } from "react";
 import { MutationFunction, useDebouncedMutation } from "#/lib/action";
 import { Alert, AlertTitle, Autocomplete, TextField as MuiTextField } from "@mui/material";
-import { Roles } from "#/app/(cms)/cms/people/[id]/Roles";
+import { Roles } from "#/app/(cms)/cms/people/add/[id]/section/Roles";
 
 export function Details({ person }: { person: PersonWithRoles }) {
   const preparedMutateFirstNameFn: MutationFunction<TextFieldMutationVariables, MutateResult> = useCallback(

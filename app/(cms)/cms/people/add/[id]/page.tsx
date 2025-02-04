@@ -5,7 +5,7 @@ import { sql } from "drizzle-orm";
 import { PersonWithRoles } from "#/lib/types/people";
 import { cache } from "react";
 import { notFound } from "next/navigation";
-import { Edit } from "#/app/(cms)/cms/people/[id]/Edit";
+import { Edit } from "#/app/(cms)/cms/people/add/[id]/section/Edit";
 import placeholder = sql.placeholder;
 
 const preparedPersonStatement = drizzle.query.people
@@ -22,7 +22,6 @@ const preparedPersonStatement = drizzle.query.people
 
 const getPerson = cache(async (id: string) => {
   const person = await preparedPersonStatement.execute({ id });
-
   if (!person) {
     notFound();
   }

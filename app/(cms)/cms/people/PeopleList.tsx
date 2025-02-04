@@ -15,7 +15,7 @@ import { LuSearch } from "react-icons/lu";
 import { MdOutlineDelete, MdOutlinePersonAdd } from "react-icons/md";
 import { Button, IconButton } from "@mui/material";
 import { TextField } from "#/components/cms/input/TextField";
-import { createPerson, deletePerson } from "#/app/(cms)/cms/people/[id]/actions";
+import { deletePerson } from "#/app/(cms)/cms/people/actions";
 import { useRouter } from "next/navigation";
 import { useHotkeys } from "react-hotkeys-hook";
 
@@ -92,8 +92,7 @@ export default function PeopleList({ people }: { people: PersonWithRoles[] }) {
   );
 
   const onNewPerson = useCallback(async () => {
-    const person = await createPerson();
-    router.push(`/cms/people/${person.person.id}`);
+    router.push("/cms/people/add");
   }, [router]);
   useHotkeys("alt+n", onNewPerson);
 
@@ -107,7 +106,7 @@ export default function PeopleList({ people }: { people: PersonWithRoles[] }) {
     <>
       <CardToolbar>
         <TextField inputRef={refSearch} fullWidth={false} onChange={onChange} label="Suche" StartIcon={LuSearch} />
-        <Button variant="contained" aria-label="Neue Person" startIcon={<MdOutlinePersonAdd />} onClick={onNewPerson}>
+        <Button variant="contained" aria-label="Neue Person" startIcon={<MdOutlinePersonAdd />} href="/cms/people/add">
           Neue Person
         </Button>
       </CardToolbar>

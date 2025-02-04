@@ -7,7 +7,7 @@ import { BsPersonBoundingBox } from "react-icons/bs";
 import { SiCloudinary } from "react-icons/si";
 import { MutationFunction, useDebouncedMutation } from "#/lib/action";
 import { useCallback, useState } from "react";
-import { mutatePerson } from "#/app/(cms)/cms/people/[id]/actions";
+import { mutatePerson } from "#/app/(cms)/cms/people/actions";
 
 function validateImageUrl(url: string): boolean {
   try {

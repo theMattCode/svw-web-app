@@ -26,7 +26,6 @@ export const createPerson = async (
       image: person.image,
     })
     .returning();
-  revalidatePath("/cms/people");
   return { type: "success", person: { ...newPerson[0] } };
 };
 
