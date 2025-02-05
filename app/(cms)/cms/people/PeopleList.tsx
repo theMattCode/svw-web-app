@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PersonWithRoles } from "#/lib/types/people";
 import { CellContext, createColumnHelper, getCoreRowModel, TableOptions } from "@tanstack/table-core";
 import { Table } from "#/components/cms/table/Table";
@@ -13,9 +13,9 @@ import { CardToolbar } from "#/components/cms/card/Card";
 import { debounce } from "lodash";
 import { LuSearch } from "react-icons/lu";
 import { MdOutlineDelete, MdOutlinePersonAdd } from "react-icons/md";
-import { Button, IconButton } from "@mui/material";
+import { Button, IconButton, LinearProgress } from "@mui/material";
 import { TextField } from "#/components/cms/input/TextField";
-import { deletePerson } from "#/app/(cms)/cms/people/actions";
+import { deletePerson, readAllPeople } from "#/app/(cms)/cms/people/actions";
 import { useRouter } from "next/navigation";
 import { useHotkeys } from "react-hotkeys-hook";
 
@@ -49,37 +49,58 @@ const COLUMN_ROLES = COLUMN_HELPER.accessor((person) => person.peopleToRoles.map
   cell: RolesCell,
 });
 
-const COLUMN_ACTIONS = COLUMN_HELPER.display({
-  header: "",
-  id: "actions",
-  cell: Actions,
-});
+export default function PeopleList() {
+  const [people, setPeople] = useState<PersonWithRoles[] | undefined>(undefined);
 
-export default function PeopleList({ people }: { people: PersonWithRoles[] }) {
+  useEffect(() => {
+    async function fetchAllPeople() {
+      const response = await fetch("/cms/api/people");
+      const data = await response.json();
+      setPeople(data.people);
+    }
+    fetchAllPeople();
+  }, []);
+
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState<string | null>();
-  const filteredPeople = useMemo(
-    () =>
-      people.filter((person) => {
-        if (!searchTerm) return true;
+  const filteredPeople = useMemo(() => {
+    if (people === undefined) return [];
 
-        const firstName = person.firstName?.toLowerCase();
-        const lastName = person.lastName?.toLowerCase();
+    if (!searchTerm || searchTerm.trim() === "") return people;
 
-        if (firstName?.includes(searchTerm)) return true;
-        if (lastName?.includes(searchTerm)) return true;
-        if (`${firstName} ${lastName}`.includes(searchTerm)) return true;
-        if (person.email?.toLowerCase().includes(searchTerm)) return true;
-        return person.peopleToRoles.some((p) => p.roles.name?.toLowerCase().includes(searchTerm) ?? false);
-      }),
-    [searchTerm, people],
-  );
+    return people.filter((person) => {
+      const firstName = person.firstName?.toLowerCase();
+      const lastName = person.lastName?.toLowerCase();
+
+      if (firstName?.includes(searchTerm)) return true;
+      if (lastName?.includes(searchTerm)) return true;
+      if (`${firstName} ${lastName}`.includes(searchTerm)) return true;
+      if (person.email?.toLowerCase().includes(searchTerm)) return true;
+      return person.peopleToRoles.some((p) => p.roles.name?.toLowerCase().includes(searchTerm) ?? false);
+    });
+  }, [searchTerm, people]);
 
   const options: TableOptions<PersonWithRoles> = useMemo(
     () => ({
       data: filteredPeople,
-      columns: [COLUMN_LASTNAME, COLUMN_FIRSTNAME, COLUMN_EMAIL, COLUMN_PHONE, COLUMN_ROLES, COLUMN_ACTIONS],
+      columns: [
+        COLUMN_LASTNAME,
+        COLUMN_FIRSTNAME,
+        COLUMN_EMAIL,
+        COLUMN_PHONE,
+        COLUMN_ROLES,
+        COLUMN_HELPER.display({
+          header: "",
+          id: "actions",
+          cell: (props) => (
+            <Actions
+              {...props}
+              onDelete={(personId) => setPeople((prev) => prev?.filter((person) => person.id !== personId))}
+            />
+          ),
+        }),
+      ],
       initialState: {
         sorting: [{ id: "lastName", desc: false }],
       },
@@ -113,12 +134,15 @@ export default function PeopleList({ people }: { people: PersonWithRoles[] }) {
           Neue Person
         </Button>
       </CardToolbar>
-      <Table options={options} />
+      <Table options={options} loading={people === undefined} />
     </>
   );
 }
 
-function Actions<TData extends { id: string }>(cellContext: CellContext<TData, unknown>) {
+function Actions<TData extends { id: string }>({
+  onDelete,
+  ...cellContext
+}: CellContext<TData, unknown> & { onDelete: (personId: string) => void }) {
   const router = useRouter();
   return (
     <div className="w-full flex place-content-end gap-2">
@@ -134,7 +158,7 @@ function Actions<TData extends { id: string }>(cellContext: CellContext<TData, u
         size="small"
         onClick={async () => {
           await deletePerson(cellContext.row.original.id);
-          router.refresh();
+          onDelete(cellContext.row.original.id);
         }}
       >
         <MdOutlineDelete />

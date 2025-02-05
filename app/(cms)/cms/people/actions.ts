@@ -13,13 +13,13 @@ export const readAllPeople = async (): Promise<PersonWithRoles[]> => {
 
 export const updatePerson = async (id: string, person: Partial<Omit<Person, "id">>): Promise<MutateResult> => {
   await drizzle.update(people).set(person).where(eq(people.id, id));
-  revalidatePath("/cms/people");
+  revalidatePath("/cms/api/people");
   return { type: "success" };
 };
 
 export const deletePerson = async (id: string): Promise<MutateResult> => {
   await drizzle.delete(people).where(eq(people.id, id));
-  revalidatePath("/cms/people");
+  revalidatePath("/cms/api/people");
   return { type: "success" };
 };
 
@@ -30,7 +30,7 @@ export const createRole = async (role: Omit<Role, "id"> = { name: "" }): Promise
 
 export const assignRole = async (peopleId: string, roleId: string): Promise<MutateResult> => {
   await drizzle.insert(peopleToRoles).values({ peopleId, roleId }).onConflictDoNothing().returning();
-  revalidatePath("/cms/people");
+  revalidatePath("/cms/api/people");
   return { type: "success" };
 };
 

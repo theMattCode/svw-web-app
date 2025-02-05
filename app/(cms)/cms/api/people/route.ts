@@ -3,7 +3,7 @@ import { drizzle } from "#/lib/db/drizzle";
 import { PersonWithRoles } from "#/lib/types/people";
 
 export async function GET(request: NextRequest) {
-  const roles = await drizzle.query.people.findMany({
+  const people = await drizzle.query.people.findMany({
     with: {
       peopleToRoles: {
         with: {
@@ -12,5 +12,5 @@ export async function GET(request: NextRequest) {
       },
     },
   });
-  return NextResponse.json<{ roles: PersonWithRoles[] }>({ roles });
+  return NextResponse.json<{ people: PersonWithRoles[] }>({ people });
 }
