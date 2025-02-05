@@ -11,3 +11,4 @@ updates:
         dependency-type: "production"
     ignore:
       - dependency-name: "pdfjs-dist"
+      - dependency-name: "node-fetch"
