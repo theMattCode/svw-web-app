@@ -22,9 +22,9 @@ jobs:
         with:
           node-version: 20
       - name: Install PNPM
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v4Lift
         with:
-          version: 9
+          version: 10
       - name: Install dependencies
         run: pnpm install
       - name: Publish to Chromatic
