@@ -54,16 +54,30 @@ p > ul > li {
     @apply ml-6
 }
 
+@container (max-width: 600px) {
+    table td:not(:nth-child(1)):not(:nth-child(2)):not(:last-child),
+    table th:not(:nth-child(1)):not(:nth-child(2)):not(:last-child) {
+        display: none;
+    }
+}
+
+@container (max-width: 900px) {
+    table td:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:last-child),
+    table th:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:last-child) {
+        display: none;
+    }
+}
+
 table {
     @apply w-full font-light overflow-scroll
 }
 
 th {
-    @apply border-0 px-3 py-2 first:rounded-tl-md last:rounded-tr-md text-left text-sm uppercase
+    @apply border-0 p-2 first:rounded-tl-md last:rounded-tr-md text-left text-sm uppercase
 }
 
 tr {
-    @apply even:bg-gray-100 first:border-t border-0 border-gray-100
+    @apply even:bg-gray-50 first:border-t border-0 border-gray-100
 }
 
 thead > tr {
@@ -71,19 +85,27 @@ thead > tr {
 }
 
 td {
-    @apply  border-0 border-b border-gray-300 px-3 py-2 font-normal
+    @apply border-0 border-b border-gray-100 p-2 font-normal
 }
 
 .card-base {
-    @apply bg-white rounded-lg border border-neutral-200 flex flex-col
+    @apply bg-white rounded-lg border border-neutral-200 flex flex-col h-full
 }
 
-.card-content {
-    @apply w-full p-4
+.card-header {
+    @apply w-full px-4 pt-4 flex justify-between
 }
 
 .card-title {
-    @apply w-full p-4 text-lg font-medium text-gray-700
+    @apply text-lg font-medium text-gray-700
+}
+
+.card-toolbar {
+    @apply flex justify-end gap-4 items-center
+}
+
+.card-content {
+    @apply w-full p-4 flex flex-col gap-4 @container
 }
 
 .news-title-shadow {

@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      dependencies:
-        dependency-types: "production"
-      devDependencies:
-        dependency-types: "development"
+      dev-deps:
+        dependency-type: "development"
+      prod-deps:
+        dependency-type: "production"

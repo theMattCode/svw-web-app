@@ -1,9 +1,5 @@
-import { Card, CardTitle } from "#/components/cms/card/Card";
+import { PeopleListCard } from "#/app/(cms)/cms/people/PeopleListCard";
 
-export default function People() {
-  return (
-    <Card>
-      <CardTitle>Personen</CardTitle>
-    </Card>
-  );
+export default async function PeoplePage() {
+  return <PeopleListCard />;
 }

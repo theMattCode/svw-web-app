@@ -1,12 +1,12 @@
 import { Metadata } from "next";
-import { getTitle, PageProps } from "#/lib/page";
+import { getTitle, PageProps, Slug } from "#/lib/page";
 import { PageBase } from "#/components/page/PageBase";
 import EventArticle from "#/components/articles/EventArticle";
 import { getAllEventSlugs, getEventBySlug } from "#/content/events";
 
 const EVENT_FOLDER = "public/content/event";
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<Slug>): Promise<Metadata> {
   const params = await props.params;
   const article = getEventBySlug(params.slug, EVENT_FOLDER);
   return {
@@ -14,7 +14,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function Page(props: PageProps<Slug>) {
   const params = await props.params;
   const eventArticle = getEventBySlug(params.slug, EVENT_FOLDER);
   return (
