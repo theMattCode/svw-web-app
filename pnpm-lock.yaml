@@ -10,7 +10,7 @@ overrides:
 
 patchedDependencies:
   unist-util-visit-parents@6.0.1:
-    hash: 6tdo4ttsf3a5ncccesucfbuccm
+    hash: 3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f
     path: patches/unist-util-visit-parents@6.0.1.patch
 
 importers:
@@ -40,10 +40,10 @@ importers:
         version: 15.1.6(@mdx-js/react@3.1.0(@types/react@19.0.1)(react@19.0.0))
       '@react-pdf-viewer/core':
         specifier: ^3.12.0
-        version: 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@react-pdf-viewer/default-layout':
         specifier: ^3.12.0
-        version: 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-table':
         specifier: ^8.20.6
         version: 8.20.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -78,8 +78,8 @@ importers:
         specifier: ^6.10.0
         version: 6.10.0
       pdfjs-dist:
-        specifier: 4.10.38
-        version: 4.10.38
+        specifier: 3.11.174
+        version: 3.11.174
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -1574,70 +1574,6 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
-
-  '@napi-rs/canvas-android-arm64@0.1.66':
-    resolution: {integrity: sha512-77Yq9yaUYN90zCovYOpw7LhidJiswU9wLIWWBGF6iiEJyQdt6tkiXpGRZpOMJVO70afkcdc4T7532cxMIBhk0Q==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [android]
-
-  '@napi-rs/canvas-darwin-arm64@0.1.66':
-    resolution: {integrity: sha512-cz3aJ06b8BZGtwRxKTiE0OVUlB17MH8j+BnE4A5+wD9aD1guCCqECsz+k7tpXdAdTAYKRIz2pq6ZuiJ76NyUbQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-
-  '@napi-rs/canvas-darwin-x64@0.1.66':
-    resolution: {integrity: sha512-szIWqJgFm2OTyGzM+hSiJOaOtjI73VYRC2KN30zZTt7i1+0sgpm5exK5ltDBPOmCdnLt7SbUfpInLj8VvxYlKA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-
-  '@napi-rs/canvas-linux-arm-gnueabihf@0.1.66':
-    resolution: {integrity: sha512-h/TZJFc6JLvp8FwbA5mu+yXiblN0iKqshU7xzd6L+ks5uNYgjS7XWLkNiyPQkMaXQgVczOJfZy7r4NSPK3V8Hg==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [linux]
-
-  '@napi-rs/canvas-linux-arm64-gnu@0.1.66':
-    resolution: {integrity: sha512-RGFUdBdi0Xmf+TfwZcB89Ap6hDYh4nzyJhXhNJIgve6ELrIPFhf7sDHvUHxjgW0YzczGoo+ophyCm03cJggu+w==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-
-  '@napi-rs/canvas-linux-arm64-musl@0.1.66':
-    resolution: {integrity: sha512-2cFViDIZ0xQlAHyJmyym+rj3p04V16vgAiz64sCAfwOOiW6e19agv1HQWHUsro3G2lF3PaHGAnp0WRPXGqLOfg==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-
-  '@napi-rs/canvas-linux-riscv64-gnu@0.1.66':
-    resolution: {integrity: sha512-Vm5ZWS2RDPeBpnfx83eJpZfJT07xl0jqp8d83PklKqiDNa3BmDZZ/uuI40/ICgejGLymXXYo5N21b7oAxhRTSA==}
-    engines: {node: '>= 10'}
-    cpu: [riscv64]
-    os: [linux]
-
-  '@napi-rs/canvas-linux-x64-gnu@0.1.66':
-    resolution: {integrity: sha512-/ptGBhErNBCgWff3khtuEjhiiYWf70oWvBPRj8y5EMB0nLYpve7RxxFnavVvxN49kJ0MQHRIwgfyd47RSOOKPw==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-
-  '@napi-rs/canvas-linux-x64-musl@0.1.66':
-    resolution: {integrity: sha512-XunvXisTkIG+bpq6BcXmsUstoLX3RLS6N9Uz9Pg9RpWIMeM6ObR5shr3NgpGRJq93769I1hS4mJW0DX2Au3WBw==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-
-  '@napi-rs/canvas-win32-x64-msvc@0.1.66':
-    resolution: {integrity: sha512-3n34watNFqpwACDA+pt4jfQD6zR8PzfK86FBajdsgDVVZhSp6ohgbbJv+eUrXM08VUtjxTq7+U4sWspTu9+4Ug==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-
-  '@napi-rs/canvas@0.1.66':
-    resolution: {integrity: sha512-NE/eQKLbUS+LCbMHRa5HnR7cc1Q4ibg/qfLUN4Ukl3CC0lq6LfHE0YbvFm/l4i5RyyS+aUjL+8IuZDD9EH3amg==}
-    engines: {node: '>= 10'}
 
   '@neondatabase/serverless@0.10.4':
     resolution: {integrity: sha512-2nZuh3VUO9voBauuh+IGYRhGU/MskWHt1IuZvHcJw6GLjDgtqj/KViKo7SIrLdGLdot7vFbiRRw+BgEy3wT9HA==}
@@ -4846,6 +4782,10 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
+  path2d-polyfill@2.0.1:
+    resolution: {integrity: sha512-ad/3bsalbbWhmBo0D6FZ4RNMwsLsPpL6gnvhuSaU5Vm7b06Kr5ubSltQQ0T7YKsiJQO+g22zJ4dJKNTXIyOXtA==}
+    engines: {node: '>=8'}
+
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
 
@@ -4857,9 +4797,9 @@ packages:
     resolution: {integrity: sha512-iuh7L6jA7JEGu2WxDwtQP1ddOpaJNC4KlDEFfdQajSGgGPNi4OyDc2R7QnbY2bR9QjBVGwgvTdNJZoE7RaxUMA==}
     engines: {node: '>=0.12'}
 
-  pdfjs-dist@4.10.38:
-    resolution: {integrity: sha512-/Y3fcFrXEAsMjJXeL9J8+ZG9U01LbuWaYypvDW2ycW1jL269L3js3DVBjDJ0Up9Np1uqDXsDrRihHANhZOlwdQ==}
-    engines: {node: '>=20'}
+  pdfjs-dist@3.11.174:
+    resolution: {integrity: sha512-TdTZPf1trZ8/UFu5Cx/GXB7GZM30LT+wWUNfsi6Bq8ePLnb+woNKtDymI2mxZYBpMbonNFqKmiz684DIfnd8dA==}
+    engines: {node: '>=18'}
 
   pg-int8@1.0.1:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}
@@ -7470,50 +7410,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.0.1
 
-  '@napi-rs/canvas-android-arm64@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-darwin-arm64@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-darwin-x64@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-linux-arm-gnueabihf@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-linux-arm64-gnu@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-linux-arm64-musl@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-linux-riscv64-gnu@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-linux-x64-gnu@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-linux-x64-musl@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas-win32-x64-msvc@0.1.66':
-    optional: true
-
-  '@napi-rs/canvas@0.1.66':
-    optionalDependencies:
-      '@napi-rs/canvas-android-arm64': 0.1.66
-      '@napi-rs/canvas-darwin-arm64': 0.1.66
-      '@napi-rs/canvas-darwin-x64': 0.1.66
-      '@napi-rs/canvas-linux-arm-gnueabihf': 0.1.66
-      '@napi-rs/canvas-linux-arm64-gnu': 0.1.66
-      '@napi-rs/canvas-linux-arm64-musl': 0.1.66
-      '@napi-rs/canvas-linux-riscv64-gnu': 0.1.66
-      '@napi-rs/canvas-linux-x64-gnu': 0.1.66
-      '@napi-rs/canvas-linux-x64-musl': 0.1.66
-      '@napi-rs/canvas-win32-x64-msvc': 0.1.66
-    optional: true
-
   '@neondatabase/serverless@0.10.4':
     dependencies:
       '@types/pg': 8.11.6
@@ -7594,159 +7490,159 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
-  '@react-pdf-viewer/attachment@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/attachment@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/bookmark@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/bookmark@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/core@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/core@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      pdfjs-dist: 4.10.38
+      pdfjs-dist: 3.11.174
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@react-pdf-viewer/default-layout@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/default-layout@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/attachment': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/bookmark': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/thumbnail': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/toolbar': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-    transitivePeerDependencies:
-      - pdfjs-dist
-
-  '@react-pdf-viewer/full-screen@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
-    dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/attachment': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/bookmark': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/thumbnail': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/toolbar': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/get-file@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/full-screen@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/open@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/get-file@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/page-navigation@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/open@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/print@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/page-navigation@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/properties@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/print@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/rotate@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/properties@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/scroll-mode@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/rotate@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/search@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/scroll-mode@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/selection-mode@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/search@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/theme@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/selection-mode@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/thumbnail@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/theme@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/toolbar@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/thumbnail@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/full-screen': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/get-file': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/open': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/page-navigation': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/print': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/properties': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/rotate': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/scroll-mode': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/search': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/selection-mode': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/theme': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@react-pdf-viewer/zoom': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - pdfjs-dist
 
-  '@react-pdf-viewer/zoom@3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@react-pdf-viewer/toolbar@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@4.10.38)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/full-screen': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/get-file': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/open': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/page-navigation': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/print': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/properties': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/rotate': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/scroll-mode': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/search': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/selection-mode': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/theme': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-pdf-viewer/zoom': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+    transitivePeerDependencies:
+      - pdfjs-dist
+
+  '@react-pdf-viewer/zoom@3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      '@react-pdf-viewer/core': 3.12.0(pdfjs-dist@3.11.174)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
@@ -10744,7 +10640,7 @@ snapshots:
       '@types/mdast': 4.0.4
       escape-string-regexp: 5.0.0
       unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.1(patch_hash=6tdo4ttsf3a5ncccesucfbuccm)
+      unist-util-visit-parents: 6.0.1(patch_hash=3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f)
 
   mdast-util-from-markdown@2.0.2:
     dependencies:
@@ -11468,6 +11364,9 @@ snapshots:
 
   path-type@4.0.0: {}
 
+  path2d-polyfill@2.0.1:
+    optional: true
+
   pathe@1.1.2: {}
 
   pathval@2.0.0: {}
@@ -11480,9 +11379,13 @@ snapshots:
       safe-buffer: 5.2.1
       sha.js: 2.4.11
 
-  pdfjs-dist@4.10.38:
+  pdfjs-dist@3.11.174:
     optionalDependencies:
-      '@napi-rs/canvas': 0.1.66
+      canvas: 2.11.2
+      path2d-polyfill: 2.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
 
   pg-int8@1.0.1: {}
 
@@ -12605,7 +12508,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  unist-util-visit-parents@6.0.1(patch_hash=6tdo4ttsf3a5ncccesucfbuccm):
+  unist-util-visit-parents@6.0.1(patch_hash=3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f):
     dependencies:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
@@ -12614,7 +12517,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.1(patch_hash=6tdo4ttsf3a5ncccesucfbuccm)
+      unist-util-visit-parents: 6.0.1(patch_hash=3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f)
 
   universalify@2.0.1: {}
 

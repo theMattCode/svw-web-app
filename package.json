@@ -41,7 +41,7 @@
     "next-sitemap": "^4.2.3",
     "node-fetch": "3.3.2",
     "nodemailer": "^6.10.0",
-    "pdfjs-dist": "4.10.38",
+    "pdfjs-dist": "3.11.174",
     "react": "19.0.0",
     "react-big-calendar": "^1.17.1",
     "react-dom": "19.0.0",
