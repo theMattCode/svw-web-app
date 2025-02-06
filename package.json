@@ -6,7 +6,6 @@
   "engines": {
     "node": "20.x"
   },
-  "packageManager": "pnpm@10.2.0",
   "scripts": {
     "db:migrate": "drizzle-kit migrate",
     "dev": "next dev --turbopack",
