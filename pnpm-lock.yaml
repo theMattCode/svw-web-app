@@ -10,7 +10,7 @@ overrides:
 
 patchedDependencies:
   unist-util-visit-parents@6.0.1:
-    hash: 6tdo4ttsf3a5ncccesucfbuccm
+    hash: 3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f
     path: patches/unist-util-visit-parents@6.0.1.patch
 
 importers:
@@ -10605,7 +10605,7 @@ snapshots:
       '@types/mdast': 4.0.4
       escape-string-regexp: 5.0.0
       unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.1(patch_hash=6tdo4ttsf3a5ncccesucfbuccm)
+      unist-util-visit-parents: 6.0.1(patch_hash=3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f)
 
   mdast-util-from-markdown@2.0.2:
     dependencies:
@@ -12463,7 +12463,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  unist-util-visit-parents@6.0.1(patch_hash=6tdo4ttsf3a5ncccesucfbuccm):
+  unist-util-visit-parents@6.0.1(patch_hash=3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f):
     dependencies:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
@@ -12472,7 +12472,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.1(patch_hash=6tdo4ttsf3a5ncccesucfbuccm)
+      unist-util-visit-parents: 6.0.1(patch_hash=3a6a2868b7c0d4923584e3f95ef3772d85f08bef211a389b151f18333cb9507f)
 
   universalify@2.0.1: {}
 
