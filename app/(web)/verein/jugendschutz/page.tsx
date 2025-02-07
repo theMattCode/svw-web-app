@@ -67,24 +67,30 @@ export default function Jugendschutz() {
         </p>
         <div className="flex flex-col gap-2">
           <h2>Unser Präventions- und Schutzkonzept basiert auf mehreren Bausteinen</h2>
+          <p>1. Verankerung des Jugendschutzes in den Vereinsstatuten:</p>
+          <ul className="list-disc list-outside ml-4 px-4">
+            <li>
+              <Link
+                href="/download/2024-04-23_Geschaeftsordnung.pdf"
+                target="_blank"
+                className="underline text-svw-blue-dark inline-flex"
+              >
+                Geschäftsordnung <PiFilePdf />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/download/2024-05-27_Jugendschutzordnung.pdf"
+                target="_blank"
+                className="underline text-svw-blue-dark inline-flex"
+              >
+                Jugendschutzordnung <PiFilePdf />
+              </Link>
+              .
+            </li>
+          </ul>
           <p>
-            1. Verankerung des Jugendschutzes in den Vereinsstatuten:
-            <ul className="list-disc ml-2">
-              <li>
-                <Link href="/verein/geschaeftsordnung" className="underline text-svw-blue-dark">
-                  Geschäftsordnung
-                </Link>
-              </li>
-              <li>
-                <Link href="/verein/jugendschutzordnung" className="underline text-svw-blue-dark">
-                  Jugendschutzordnung
-                </Link>
-                .
-              </li>
-            </ul>
-          </p>
-          <p>
-            2. Vereinbarung mit dem Jugendamt zur Umsetzung des im §72a SGB VIII verankerten Tätigkeitsauschlusses
+            2. Vereinbarung mit dem Jugendamt zur Umsetzung des im §72a SGB VIII verankerten Tätigkeitsausschlusses
             einschlägig vorbestrafter Personen.
           </p>
           <p>3. Benennung einer Jugendschutzbeauftragten.</p>

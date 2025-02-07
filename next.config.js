@@ -14,12 +14,6 @@ const nextConfig = {
         port: "",
         pathname: "/svwalddorf/**",
       },
-      {
-        protocol: "https",
-        hostname: "res.cloudinary.com",
-        port: "",
-        pathname: "/svwalddorf/**",
-      },
     ],
   },
   webpack: (config) => {
@@ -30,7 +24,7 @@ const nextConfig = {
     return config;
   },
   async redirects() {
-    const redirects = [
+    return [
       {
         source: "/der-verein/veranstaltungen/9m-turnier",
         destination: "/event/2024-01-13-9m-turnier",
@@ -92,9 +86,27 @@ const nextConfig = {
         destination: "/fussball/frauen",
         permanent: true,
       },
+      {
+        source: "/verein/satzung",
+        destination: "/verein/formales",
+        permanent: true,
+      },
+      {
+        source: "/verein/geschaeftsordnung",
+        destination: "/verein/formales",
+        permanent: true,
+      },
+      {
+        source: "/verein/jugendschutzordnung",
+        destination: "/verein/formales",
+        permanent: true,
+      },
+      {
+        source: "/verein/svw-blaettle-reinschauen",
+        destination: "/verein/svw-blaettle",
+        permanent: true,
+      },
     ];
-
-    return redirects;
   },
 };
 

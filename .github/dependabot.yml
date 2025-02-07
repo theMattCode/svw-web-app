@@ -9,3 +9,5 @@ updates:
         dependency-type: "development"
       prod-deps:
         dependency-type: "production"
+    ignore:
+      - dependency-name: "node-fetch"
