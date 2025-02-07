@@ -45,7 +45,11 @@ export default function SVWBlaettle() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Link href="/verein/svw-blaettle-reinschauen" className="text-lg w-96 flex flex-col text-center">
+              <Link
+                href="/download/svw_blaettle_web_2024-2025.pdf"
+                target="_blank"
+                className="text-lg w-96 flex flex-col text-center"
+              >
                 <Image
                   src="https://res.cloudinary.com/svwalddorf/image/upload/v1736762233/2024-2025-front_njatdz.jpg"
                   alt="s'SVW Blättle"
@@ -53,7 +57,7 @@ export default function SVWBlaettle() {
                   height={imageDimensions.height}
                   className="self-center"
                 />
-                Reinschauen und herunterladen
+                Herunterladen
               </Link>
             </div>
           </div>

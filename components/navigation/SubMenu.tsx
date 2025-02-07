@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { PiFilePdf } from "react-icons/pi";
 import React from "react";
 import { MenuItem } from "#/content/sitemap";
 import { NewBadge } from "#/components/badge/NewBadge";
@@ -17,12 +18,14 @@ export function SubMenu({ item }: Props) {
         <div key={subPage.name} className="w-full flex flex-col break-inside-avoid py-4">
           <Link
             href={subPage.url}
-            target={subPage.external ? "_blank" : "_self"}
+            target={subPage.external || subPage.download ? "_blank" : "_self"}
+            prefetch={subPage.download === undefined}
             className="w-full flex gap-2 items-center text-lg px-2 font-bold border-b-2 border-opacity-25 border-white hover:border-opacity-50"
           >
             <div>{subPage.name}</div>
             {subPage.new && <NewBadge />}
             {subPage.external && <HiOutlineExternalLink />}
+            {subPage.download && subPage.download.type === "pdf" && <PiFilePdf />}
           </Link>
           {subPage.subMenu && (
             <ul className="w-full pl-2 flex flex-col">
@@ -30,12 +33,14 @@ export function SubMenu({ item }: Props) {
                 <li key={subSubPage.name} className="w-full">
                   <Link
                     href={subSubPage.url}
-                    target={subSubPage.external ? "_blank" : "_self"}
+                    target={subSubPage.external || subSubPage.download ? "_blank" : "_self"}
+                    prefetch={subPage.download === undefined}
                     className="w-full px-2 flex gap-2 items-center"
                   >
                     <div>{subSubPage.name}</div>
                     {subSubPage.new && <NewBadge />}
                     {subSubPage.external && <HiOutlineExternalLink />}
+                    {subSubPage.download && subSubPage.download.type === "pdf" && <PiFilePdf />}
                   </Link>
                 </li>
               ))}

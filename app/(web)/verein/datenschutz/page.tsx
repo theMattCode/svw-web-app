@@ -1,7 +1,6 @@
 import React from "react";
 import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { PageBase } from "#/components/page/PageBase";
-import { PDFViewer } from "#/components/pdf-viewer/PDFViewer";
 import Link from "next/link";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
@@ -59,7 +58,12 @@ export default function Datenschutz() {
             <Link href="/download/Vertraulichkeitserklaerung_Vereinsmitarbeiter_2021-09-13.pdf">hier einsehen</Link>.
           </p>
           <h3>Briefing für Vereinsmitarbeiter</h3>
-          <PDFViewer url="/download/Briefing_Vereinsmitarbeiter_zum_Datenschutz_2019-12-07.pdf" />
+          <p>
+            Download
+            <Link href="/download/Briefing_Vereinsmitarbeiter_zum_Datenschutz_2019-12-07.pdf" target="_blank">
+              Briefing für Vereinsmitarbeiter
+            </Link>
+          </p>
         </div>
       </div>
     </PageBase>

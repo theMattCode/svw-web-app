@@ -3,6 +3,9 @@ export type MenuItem = {
   url: string;
   new?: boolean;
   external?: boolean;
+  download?: {
+    type: "pdf";
+  };
   subMenu?: MenuItem[];
 };
 
@@ -16,10 +19,26 @@ export const sponsoring = { name: "Spenden und Sponsoring", url: "/verein/spende
 export const veranstaltungen = { name: "Veranstaltungen", url: "/verein/veranstaltungen" };
 export const historie = { name: "Historie", url: "/verein/historie" };
 export const foerderkreis = { name: "Förderkreis Jugendsport", url: "https://fkjs.de/", external: true };
-export const jugendschutz = { name: "Kinder- und Jugendschutz", url: "/verein/jugendschutz", new: true };
-export const satzung = { name: "Satzung", url: "/verein/satzung" };
-export const geschaeftsordnung = { name: "Geschäftsordnung", url: "/verein/geschaeftsordnung" };
-export const jugendschutzordnung = { name: "Jugendschutzordnung", url: "/verein/jugendschutzordnung" };
+export const jugendschutz = {
+  name: "Präventionskonzept zum Kinder- und Jugendschutz",
+  url: "/verein/jugendschutz",
+  new: true,
+};
+export const satzung = {
+  name: "Satzung",
+  url: "/download/Satzung_SV_Waldddorf_2022-03-11.pdf",
+  download: { type: "pdf" },
+};
+export const geschaeftsordnung = {
+  name: "Geschäftsordnung",
+  url: "/download/2024-04-23_Geschaeftsordnung.pdf",
+  download: { type: "pdf" },
+};
+export const jugendschutzordnung = {
+  name: "Jugendschutzordnung",
+  url: "/download/2024-05-27_Jugendschutzordnung.pdf",
+  download: { type: "pdf" },
+};
 export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
 export const impressum = { name: "Impressum", url: "/verein/impressum" };
 export const formales = {
@@ -36,10 +55,10 @@ export const verein: MenuItem = {
     sportgaststaette,
     ansprechpartner,
     svwBlaettle,
-    jugendschutz,
     sponsoring,
     mitgliedWerden,
     veranstaltungen,
+    jugendschutz,
     historie,
     foerderkreis,
     formales,
