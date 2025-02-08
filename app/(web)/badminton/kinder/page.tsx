@@ -39,7 +39,7 @@ export default function Badminton() {
             jederzeit eingeladen zum Schnuppern vorbei zu kommen.
           </p>
         </div>
-        <div className="flex flex-col gap-2 flex-shrink-0">
+        <div className="flex flex-col gap-2 shrink-0">
           <h4>Trainingszeiten</h4>
           <h5>Kinder (6-14 Jahre)</h5>
           <p>Montag, 17:00 - 18:30 Uhr</p>

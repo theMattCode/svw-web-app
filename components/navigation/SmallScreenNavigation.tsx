@@ -66,18 +66,14 @@ function ListItem({ item, onClick }: { item: MenuItem; onClick: () => void }) {
   return (
     <li>
       <div className="h-8 flex">
-        <Link
-          href={item.url}
-          onClick={onClick}
-          className="grow h-full flex items-center border-b border-white border-opacity-25"
-        >
+        <Link href={item.url} onClick={onClick} className="grow h-full flex items-center border-b border-white/25">
           <span className="grow pl-2">{item.name}</span>
           {item.new && <NewBadge />}
         </Link>
         {item.subMenu && (
           <button
             aria-label="Toggle Submenu"
-            className="h-full aspect-square flex justify-center items-center border-b border-white border-opacity-25"
+            className="h-full aspect-square flex justify-center items-center border-b border-white/25"
             onClick={toggleOpenClose}
           >
             <FaChevronDown className={`transition-all ${open ? "rotate-90" : ""}`} />

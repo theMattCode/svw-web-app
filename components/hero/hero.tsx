@@ -7,8 +7,8 @@ import type { JSX } from "react";
 
 export function Hero(): JSX.Element {
   return (
-    <div className="md:pt-0 w-full bg-hero bg-cover bg-center">
-      <div className="w-full bg-white bg-opacity-80">
+    <div className="md:pt-0 w-full bg-[url('/media/hero/bg.jpg')] bg-cover bg-center">
+      <div className="w-full bg-white/75">
         <div className="transition-all container px-4 pb-4 flex flex-col md:flex-row justify-center items-center">
           <div className="transition-all w-full md:w-1/2 flex flex-col items-center">
             <div className="md:hidden pt-4 font-medium">Dein Verein für</div>
