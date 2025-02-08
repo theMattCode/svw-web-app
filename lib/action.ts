@@ -13,6 +13,7 @@ export function useDebouncedMutation<TVariables extends {}, TResult = unknown>(
     reject: (reason?: any) => void;
   } | null>(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const debouncedMutation = useCallback(
     debounce(async (variables: TVariables) => {
       try {

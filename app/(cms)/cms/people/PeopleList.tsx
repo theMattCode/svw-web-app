@@ -13,9 +13,9 @@ import { CardToolbar } from "#/components/cms/card/Card";
 import { debounce } from "lodash";
 import { LuSearch } from "react-icons/lu";
 import { MdOutlineDelete, MdOutlinePersonAdd } from "react-icons/md";
-import { Button, IconButton, LinearProgress } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import { TextField } from "#/components/cms/input/TextField";
-import { deletePerson, readAllPeople } from "#/app/(cms)/cms/people/actions";
+import { deletePerson } from "#/app/(cms)/cms/people/actions";
 import { useRouter } from "next/navigation";
 import { useHotkeys } from "react-hotkeys-hook";
 
@@ -110,6 +110,7 @@ export default function PeopleList() {
     [filteredPeople],
   );
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onChange = useCallback(
     debounce((value: string | null) => setSearchTerm(value?.trim().toLowerCase()), 500),
     [],
