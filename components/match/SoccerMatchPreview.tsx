@@ -30,7 +30,7 @@ export function SoccerMatchPreview({ match }: Props) {
 function Opponent({ team, align }: { team: Team; align: "left" | "right" }) {
   return (
     <div
-      className={`col-span-3 flex flex-col items-center gap-1 bg-neutral-100 bg-opacity-30 ${
+      className={`col-span-3 flex flex-col items-center gap-1 bg-neutral-100/30 ${
         align === "left" ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >

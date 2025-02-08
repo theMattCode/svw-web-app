@@ -14,7 +14,7 @@ export default function NavItem({ href, children, icon, active }: NavItemProps):
   return (
     <Link
       href={href}
-      className={`font-medium py-2 px-6 uppercase hover:bg-svw-blue-lighter hover:bg-opacity-25 bg-opacity-40 flex items-center ${
+      className={`font-medium py-2 px-6 uppercase hover:bg-svw-blue-lighter/25 flex items-center ${
         active ? "bg-svw-blue-lighter" : ""
       }`}
     >

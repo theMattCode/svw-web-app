@@ -8,7 +8,7 @@ export function Item({ item, onClick }: { item: NavItem; onClick?: () => void })
   return (
     <Link
       className={`w-full h-10 rounded-r-3xl flex gap-3 pl-4 items-center text-gray-600 text-lg ${
-        active ? "text-white bg-gradient-to-r from-svw-blue-default/75 to-svw-blue-default" : "hover:bg-gray-200"
+        active ? "text-white bg-linear-to-r from-svw-blue-default/75 to-svw-blue-default" : "hover:bg-gray-200"
       }`}
       href={item.href}
       onClick={onClick}

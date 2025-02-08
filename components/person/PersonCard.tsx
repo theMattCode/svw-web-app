@@ -32,7 +32,7 @@ export function PersonCard({ person }: Props) {
         <div className="w-full p-4 flex flex-col justify-start">
           <div className="text-xl">{getPersonName(person)}</div>
           <div className="font-normal">{joinedTags}</div>
-          <div className="flex flex-col @md:grid @md:grid-cols-[auto_minmax(0,1fr)] @md:gap-x-4">
+          <div className="flex flex-col @md:grid @-md:grid-cols-[auto_minmax(0,1fr)] @md:gap-x-4">
             {person.email && (
               <ContactDetail label="E-Mail">
                 <Link href={`mailto:${person.email}`}>{person.email}</Link>

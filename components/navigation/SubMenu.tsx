@@ -20,7 +20,7 @@ export function SubMenu({ item }: Props) {
             href={subPage.url}
             target={subPage.external || subPage.download ? "_blank" : "_self"}
             prefetch={subPage.download === undefined}
-            className="w-full flex gap-2 items-center text-lg px-2 font-bold border-b-2 border-opacity-25 border-white hover:border-opacity-50"
+            className="w-full flex gap-2 items-center text-lg px-2 font-bold border-b-2 border-white/25 hover:border-white/50"
           >
             <div>{subPage.name}</div>
             {subPage.new && <NewBadge />}

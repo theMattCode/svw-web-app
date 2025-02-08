@@ -17,7 +17,7 @@ export function AnnouncementsBlock() {
   }
 
   return (
-    <div className={`flex flex-col px-4 pt-4 bg-svw-blue-lighter bg-opacity-75`}>
+    <div className={`flex flex-col px-4 pt-4 bg-svw-blue-lighter/75`}>
       <BlockTitle title="Ankündigungen" />
       <Announcements announcements={announcements} />
     </div>

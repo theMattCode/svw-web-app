@@ -46,5 +46,4 @@ module.exports = {
       variants: ["sm", "md", "lg", "xl", "2xl"],
     },
   ],
-  plugins: [require("@tailwindcss/container-queries")],
 };

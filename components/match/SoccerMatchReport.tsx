@@ -14,7 +14,7 @@ export function SoccerMatchReport({ match }: Props) {
     <div className="">
       <div className="overflow-hidden relative bg-neutral-200 min-w-[322px] bg-soccer-match-bg">
         <div className="relative flex flex-col items-center gap-1 p-1">
-          <div className="w-full flex justify-center text-sm font-medium bg-neutral-100 bg-opacity-30 p-1">
+          <div className="w-full flex justify-center text-sm font-medium bg-neutral-100/30 p-1">
             {match.competition?.name}
             <span className="px-1.5">⋅</span>
             {match.competition?.round}
@@ -35,7 +35,7 @@ export function Opponent({ team, align }: { team: Team; align: "left" | "right" 
     <div
       className={`flex flex-col ${
         align === "left" ? "md:flex-row-reverse" : "md:flex-row"
-      } items-center gap-1 bg-neutral-100 bg-opacity-30 p-1`}
+      } items-center gap-1 bg-neutral-100/30 p-1`}
     >
       {team.logo && <Image src={team.logo} alt={team.name} width={LOGO_SIZE} height={LOGO_SIZE} />}
       <div className="flex font-medium text-center flex-wrap" lang="de">
