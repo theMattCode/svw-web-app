@@ -22,5 +22,46 @@ in der **Sportgaststätte Weiherwiesen** ein.
 
 ### Agenda
 
-folgt.
+Die Tagesordnung umfasst:
+1. Begrüßung
+2. Bericht des 1. Vorsitzenden
+3. Bericht des Vorstands Finanzen
+4. Bericht der Kassenprüfer
+5. Berichte der Sparten über die Sportangebote des SVW
+6. Neufassung der Satzung <sup>1)</sup>
+7. Erhöhung der Mitgliedsbeiträge
+8. Verabschiedung der Beitragsordnung
+9. Entlastung des Vorstands
+10. Ehrungen
+11. Wahlen
+    * Erste(r) Vorsitzende(r)
+    * Vorstand Sport
+    * Vorstand Anlagen und Inventar
+    * Vorstand Ehrenamt
+    * Schriftführer
+    * Kassenprüfer
+12. Anträge <sup>2)</sup>
+13. Aussprache
 
+> <sup>1)</sup> Die geplante Neufassung der Satzung umfasst im Wesentlichen
+folgende Punkte:
+> * Neu aufgenommen: Gewaltprävention und Jugendschutz
+> * Neufassung des §5 Mitgliedschaften
+> * Neufassung §7 Mitgliedsbeiträge
+> * Neufassung §16 Datenschutz
+> * Klarstellungen zur Durchführung von Abstimmungen
+> * Redaktionelle Anpassungen
+>
+> Die zur Abstimmung in der Mitgliederversammlung vorbereiteten Neufassungen der Satzung und der Beitragsordnung sind zur Einsichtnahme auf der Vereinshomepage des SVW einsehbar. Ein Download-Link wird hier nachgereicht.
+> 
+> Auf Wunsch können auch Ausdrucke der Neufassungen bei der Geschäftsstelle per E-Mail [info@svwalddorf.de](mailto:info@svwalddorf.de) angefordert werden.
+
+> <sup>2)</sup> Anträge, die in der Mitgliederversammlung behandelt werden sollen, müssen spätestens eine Woche vor der Versammlung mit Begründung beim Vorstand eingereicht werden (als Brief oder per E-Mail: [info@svwalddorf.de](mailto:info@svwalddorf.de)).
+
+Die Mitgliederversammlung bietet allen Vereinsmitgliedern eine gute Gelegenheit, sich über das aktuelle Geschehen im Verein zu informieren und in der Diskussion sowie bei den Wahlen aktiv an der Gestaltung des Vereinslebens mitzuwirken. Auch interessierte
+
+Nichtmitglieder heißen wir herzlich willkommen, um sich über den SVW und unser Sportangebot zu informieren. Mit seinem vielfältigen Leistungsangebot Badminton, Fußball, Fitness und Gesundheitssport sowie Rehasport bietet der Sportverein Walddorf ein breites Spektrum von Sportmöglichkeiten für alle Altersklassen.
+
+Die Entscheidungen der Mitgliederversammlung sollten von einer möglichst großen Anzahl von Mitgliedern diskutiert und aktiv mitgetragen werden. Daher würden wir uns über eine zahlreiche Teilnahme freuen.
+
+Der Vorstand
