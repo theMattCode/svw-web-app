@@ -71,7 +71,7 @@ export default function Jugendschutz() {
           <ul className="list-disc list-outside ml-4 px-4">
             <li>
               <Link
-                href="/download/2024-04-23_Geschaeftsordnung.pdf"
+                href="/download/2025-02-15_Geschaeftsordnung.pdf"
                 target="_blank"
                 className="underline text-svw-blue-dark inline-flex"
               >

@@ -29,7 +29,7 @@ Die Tagesordnung umfasst:
 4. Bericht der Kassenprüfer
 5. Berichte der Sparten über die Sportangebote des SVW
 6. Neufassung der Satzung <sup>1)</sup>
-7. Erhöhung der Mitgliedsbeiträge
+7. Anpassung der Mitgliedsbeiträge
 8. Verabschiedung der Beitragsordnung
 9. Entlastung des Vorstands
 10. Ehrungen
@@ -52,7 +52,8 @@ folgende Punkte:
 > * Klarstellungen zur Durchführung von Abstimmungen
 > * Redaktionelle Anpassungen
 >
-> Die zur Abstimmung in der Mitgliederversammlung vorbereiteten Neufassungen der Satzung und der Beitragsordnung sind zur Einsichtnahme auf der Vereinshomepage des SVW einsehbar. Ein Download-Link wird hier nachgereicht.
+> Die zur Abstimmung in der Mitgliederversammlung vorbereiteten Neufassungen der Satzung und der Beitragsordnung sind zur Einsichtnahme bereitgestellt:
+> * [Download der Neufassung der Satzung](/download/2025-02-26_Vorschlag_Neufassung_Satzung.pdf) mit markierten Änderungen.
 > 
 > Auf Wunsch können auch Ausdrucke der Neufassungen bei der Geschäftsstelle per E-Mail [info@svwalddorf.de](mailto:info@svwalddorf.de) angefordert werden.
 

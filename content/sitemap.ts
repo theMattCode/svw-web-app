@@ -31,7 +31,7 @@ export const satzung = {
 };
 export const geschaeftsordnung = {
   name: "Geschäftsordnung",
-  url: "/download/2024-04-23_Geschaeftsordnung.pdf",
+  url: "/download/2025-02-15_Geschaeftsordnung.pdf",
   download: { type: "pdf" },
 };
 export const jugendschutzordnung = {
