@@ -54,10 +54,10 @@ export default function HobbyHorsing() {
             <p>
               <ul>
                 <li>
-                  Beginn: <b>13.09.2024</b>
+                  Beginn: <b>4. April 2025</b>
                 </li>
                 <li>
-                  Kursdauer: <b>20 Übungseinheiten</b>{" "}
+                  Kursdauer: <b>13 Übungseinheiten</b>{" "}
                   <span className="text-sm">
                     (sollten Termine wegen Verhinderung des Übungsleiters oder aus anderen Umständen ausfallen, werden
                     diese am Ende angehängt)
@@ -69,8 +69,8 @@ export default function HobbyHorsing() {
                 <li>
                   Kinder im Alter von <b>9 bis 15 Jahre</b>
                 </li>
-                <li>Kursgebühr: €28,- für Vereinsmitglieder, €100,- für Nichtmitglieder</li>
-                <li>Ort: Gymnastikraum in der Ballspielhalle</li>
+                <li>Kursgebühr: €18,- für Vereinsmitglieder, €65,- für Nichtmitglieder</li>
+                <li>Ort: Spiegelraum in der Ballspielhalle</li>
               </ul>
             </p>
             <h4>Was ihr braucht</h4>
@@ -83,17 +83,17 @@ export default function HobbyHorsing() {
               </ul>
             </p>
             <h4>Anmeldung</h4>
-            <p>Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden.</p>
+            <p>Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden. Anmeldeschluss ist der <b>1. April 2025</b>.</p>
             <p>
               Bitte das&nbsp;
-              <Link href="/download/2024-09-10_Anmeldeformular_HobbyHorsing_Kurs_H-2024-2.pdf" target="_blank">
+              <Link href="/download/2025-03-06_Anmeldeformular_HobbyHorsing_Kurs_H-2025-1.pdf" target="_blank">
                 Anmeldeformular
               </Link>
               &nbsp;vollständig ausgef&uuml;llt und unterschrieben an&nbsp;
               <Link href="mailto:kerstin.fischer@svwalddorf.de">Kerstin Fischer</Link> schicken.
             </p>
             <p>
-              Lasst uns gemeinsam in die faszinierende Welt des Hobbyhorsing eintauchen! Wir freuen uns schon jetzt
+              Lasst uns gemeinsam in die faszinierende Welt des HobbyHorsing eintauchen! Wir freuen uns schon jetzt
               darauf, euch beim SV Walddorf begrüßen zu dürfen.
             </p>
           </div>
