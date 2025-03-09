@@ -54,6 +54,7 @@ folgende Punkte:
 >
 > Die zur Abstimmung in der Mitgliederversammlung vorbereiteten Neufassungen der Satzung und der Beitragsordnung sind zur Einsichtnahme bereitgestellt:
 > * [Download der Neufassung der Satzung](/download/2025-02-26_Vorschlag_Neufassung_Satzung.pdf) mit markierten Änderungen.
+> * [Download der Neufassung der Beitragsordnung](/download/2025-03-09_Beitragsordnung_Entwurf.pdf) mit markierten Änderungen.
 > 
 > Auf Wunsch können auch Ausdrucke der Neufassungen bei der Geschäftsstelle per E-Mail [info@svwalddorf.de](mailto:info@svwalddorf.de) angefordert werden.
 
