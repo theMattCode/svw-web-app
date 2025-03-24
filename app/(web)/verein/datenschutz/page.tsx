@@ -59,7 +59,7 @@ export default function Datenschutz() {
           </p>
           <h3>Briefing für Vereinsmitarbeiter</h3>
           <p>
-            Download
+            Download&nbsp;
             <Link href="/download/Briefing_Vereinsmitarbeiter_zum_Datenschutz_2019-12-07.pdf" target="_blank">
               Briefing für Vereinsmitarbeiter
             </Link>
