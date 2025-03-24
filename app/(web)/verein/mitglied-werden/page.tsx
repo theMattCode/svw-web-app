@@ -38,7 +38,7 @@ export default function MitgliedWerden() {
           </p>
           <p>
             Wenn sie sich genauer über unsere Mitgliedsbeiträge informieren wollen, finden sie hier die aktuelle&nbsp;
-            <Link href="/download/Beitragsordnung_SV_Walddorf_2020-07-10.pdf">Beitragsordnung</Link>.
+            <Link href="/download/2025-03-21_SVW_Beitragsordnung.pdf">Beitragsordnung</Link>.
           </p>
           <h5>
             Sie sind bereits Mitglied beim SV Walddorf oder beim TV Häslach und wollen in Zukunft die Sportangebote

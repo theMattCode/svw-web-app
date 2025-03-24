@@ -34,6 +34,11 @@ export const geschaeftsordnung = {
   url: "/download/2025-02-15_Geschaeftsordnung.pdf",
   download: { type: "pdf" },
 };
+export const beitragsordnung = {
+  name: "Beitragsordnung",
+  url: "/download/2025-03-21_SVW_Beitragsordnung.pdf",
+  download: { type: "pdf" },
+}
 export const jugendschutzordnung = {
   name: "Jugendschutzordnung",
   url: "/download/2024-05-27_Jugendschutzordnung.pdf",
@@ -44,7 +49,7 @@ export const impressum = { name: "Impressum", url: "/verein/impressum" };
 export const formales = {
   name: "Formales",
   url: "/verein/formales",
-  subMenu: [satzung, geschaeftsordnung, jugendschutzordnung, datenschutz, impressum],
+  subMenu: [satzung, geschaeftsordnung, beitragsordnung, jugendschutzordnung, datenschutz, impressum],
 };
 export const verein: MenuItem = {
   name: "Verein",
