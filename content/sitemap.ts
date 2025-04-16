@@ -38,18 +38,24 @@ export const beitragsordnung = {
   name: "Beitragsordnung",
   url: "/download/2025-03-21_SVW_Beitragsordnung.pdf",
   download: { type: "pdf" },
-}
+};
 export const jugendschutzordnung = {
   name: "Jugendschutzordnung",
   url: "/download/2024-05-27_Jugendschutzordnung.pdf",
   download: { type: "pdf" },
 };
+export const ehrenordnung = {
+  name: "Ehrenordnung",
+  url: "/download/2020-02-10_Ehrenordnung.pdf",
+  download: { type: "pdf" },
+};
+
 export const datenschutz = { name: "Datenschutz", url: "/verein/datenschutz" };
 export const impressum = { name: "Impressum", url: "/verein/impressum" };
 export const formales = {
   name: "Formales",
   url: "/verein/formales",
-  subMenu: [satzung, geschaeftsordnung, beitragsordnung, jugendschutzordnung, datenschutz, impressum],
+  subMenu: [satzung, ehrenordnung, geschaeftsordnung, beitragsordnung, jugendschutzordnung, datenschutz, impressum],
 };
 export const verein: MenuItem = {
   name: "Verein",
