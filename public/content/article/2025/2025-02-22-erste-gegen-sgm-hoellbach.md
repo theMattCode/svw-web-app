@@ -40,5 +40,5 @@ Nach dem Rückstand zur Pause, holte unsere Erste in der zweiten Hälfte auf und
 
 Die Torschützen für den SVW waren: 2x Luca Schmid und 2x Stefan Tilgner.
 
-[Details zu Spiel auf Fussball.de](https://www.fussball.de/spiel/sv-walddorf-sgm-hoellbach/-/spiel/02R91P2N3G000000VS5489B4VVGT3US0#!/).
+[Details zum Spiel auf Fussball.de](https://www.fussball.de/spiel/sv-walddorf-sgm-hoellbach/-/spiel/02R91P2N3G000000VS5489B4VVGT3US0#!/).
 
