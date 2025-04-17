@@ -44,10 +44,14 @@ export const people: Person[] = [
   {
     firstname: "Björn",
     lastname: "Kittelmann",
-    tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren"],
+    tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren", "Vereinsschiedsrichter"],
     email: "bjoern.kittelmann@svwalddorf.de",
     phone: ["+49 1573 5646291"],
-    image: { src: "/media/people/bjoern-kittelmann-2024.png", width: 1000, height: 1000 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1731583090/bjoern-kittelmann-2024_ofyik1.png",
+      width: 750,
+      height: 1000,
+    },
   },
   {
     firstname: "Jonas",
@@ -60,7 +64,7 @@ export const people: Person[] = [
   {
     firstname: "Julian",
     lastname: "Petermann",
-    tags: ["Vorstand Ehrenamt", "Spartenleitung Badminton", "Trainer Badminton"],
+    tags: ["Spartenleitung Badminton", "Trainer Badminton"],
     email: "julian.petermann@svwalddorf.de",
     phone: ["+49 152 32768874"],
     image: { src: "/media/people/julian-petermann-2023.jpg", alt: "Julian Petermann", width: 363, height: 481 },
@@ -263,8 +267,13 @@ export const people: Person[] = [
   {
     firstname: "Finn",
     lastname: "Kittelmann",
-    tags: ["Trainer B-Junioren"],
-    image: { src: "/media/people/finn-kittelmann-2023.png", alt: "Finn Kittelmann", width: 839, height: 1024 },
+    tags: ["Trainer B-Junioren", "Vereinsschiedsrichter"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1731583072/finn-kittelmann-2023_aq55tv.png",
+      alt: "Finn Kittelmann",
+      width: 760,
+      height: 1024,
+    },
   },
   {
     firstname: "Uwe",
@@ -399,7 +408,11 @@ export const people: Person[] = [
     tags: ["Vorstand Kommunikation", "Trainer F-Junioren"],
     phone: ["+49 176 66332295"],
     email: "matthaeus.mayer@svwalddorf.de",
-    image: { src: "/media/people/matthaeus-mayer-2024.png", width: 1000, height: 1000 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1731583095/matthaeus-mayer-2024_anfdye.png",
+      width: 750,
+      height: 1000,
+    },
   },
   {
     firstname: "Hannes",
@@ -506,6 +519,87 @@ export const people: Person[] = [
     email: "jugendschutz@svwalddorf.de",
     phone: ["+49 160 5042204"],
     image: { src: "/media/people/nadine-albrecht-2024.png", width: 720, height: 862 },
+  },
+  {
+    firstname: "Georg",
+    lastname: "Bantel",
+    tags: ["Vereinsschiedsrichter"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1744834527/Georg_Bantel_l7gcmr.png",
+      width: 170,
+      height: 174,
+    },
+  },
+  {
+    firstname: "Fionn",
+    lastname: "Fogl",
+    tags: ["Vereinsschiedsrichter", "B-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1744903565/Fionn_Fogl_tkfsuu.png",
+      width: 675,
+      height: 899,
+    },
+  },
+  {
+    firstname: "Moritz",
+    lastname: "Mayer",
+    tags: ["Vereinsschiedsrichter", "B-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1744903356/Moritz_Mayer_hwuivq.png",
+      width: 715,
+      height: 954,
+    },
+  },
+  {
+    firstname: "Jannis",
+    lastname: "Klees",
+    tags: ["Vereinsschiedsrichter", "C-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1744836501/Jannis_Klees_d1piki.png",
+      width: 413,
+      height: 550,
+    },
+  },
+  {
+    firstname: "Peter",
+    lastname: "Braun",
+    tags: ["Vereinsschiedsrichter", "C-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1744836122/Peter_Braun_d5ea22.png",
+      width: 441,
+      height: 588,
+    },
+  },
+  {
+    firstname: "Benedikt",
+    lastname: "Dehner",
+    tags: ["Vereinsschiedsrichter", "C-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1744903056/Benedikt_Dehner_f0vnzt.png",
+      width: 199,
+      height: 287,
+    },
+  },
+  {
+    firstname: "Mika",
+    lastname: "Kittelmann",
+    tags: ["Vereinsschiedsrichter", "C-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1744836880/Mika_Kittelmann_vdcrto.png",
+      width: 480,
+      height: 544,
+    },
+  },
+  {
+    firstname: "Mark-Christian",
+    lastname: "Dehner",
+    tags: ["Vorstand Ehrenamt"],
+    phone: ["+49 172 7196906"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1744902145/Mark-Christian_Dehner_odcyty.png",
+      width: 401,
+      height: 534,
+    },
   },
 ];
 
