@@ -9,7 +9,7 @@ image:
   height: 1365
 tags:
   - Fußball
-  - C-Junioren
+  - B-Junioren
 teaser: "Gleich nach den Weihnachtsferien begaben sich unsere B-Junioren in die Vorbereitungsphase."
 ---
 Gleich nach den Weihnachtsferien begaben sich unsere B-Junioren in die Vorbereitungsphase.
