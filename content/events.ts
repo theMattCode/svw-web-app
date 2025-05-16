@@ -121,6 +121,14 @@ export const events: Event[] = [
     allDay: true,
     place: { name: "Sportplätze" },
   },
+  {
+    title: "Präventionskonzept zum Kindeswohl: Sensibiilisierungsschulung zum Thema sexualisierte Gewalt",
+    start: new Date(2025, 5, 23, 17, 30),
+    end: new Date(2025, 5, 23, 20, 0),
+    allDay: false,
+    place: { name: "SVW-Sportgaststätte (Nebenzimmer)" },
+    url: "/event/2025-05-23-sensibilisierungsschulung-sexualisierte-gewalt",
+  },
 ];
 
 export const EVENT_DIRECTORY = "/content/event";
