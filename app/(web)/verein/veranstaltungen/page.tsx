@@ -14,7 +14,9 @@ export default function Veranstaltungen() {
   return (
     <PageBase>
       <BlockTitle title={veranstaltungen.name} />
-      <EventList />
+      <div className="bg-white shadow-2xl p-2">
+        <EventList />
+      </div>
     </PageBase>
   );
 }
