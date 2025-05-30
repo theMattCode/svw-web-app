@@ -1,7 +1,12 @@
-export type ImageDimensions = {
+export interface ImageProps extends ImageDimensions {
+  src: string;
+  alt?: string;
+}
+
+export interface ImageDimensions {
   width: number;
   height: number;
-};
+}
 
 export function calcImageDimensionsForWidth(source: ImageDimensions | undefined, targetWidth: number): ImageDimensions {
   if (source === undefined) {
@@ -16,7 +21,7 @@ export function calcImageDimensionsForWidth(source: ImageDimensions | undefined,
 
 export function calcImageDimensionsForHeight(
   source: ImageDimensions | undefined,
-  targetHeight: number
+  targetHeight: number,
 ): ImageDimensions {
   if (source === undefined) {
     return { width: 0, height: 0 };

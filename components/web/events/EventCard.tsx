@@ -1,34 +1,49 @@
-import { Event } from '#/content/events';
-import Link from 'next/link';
-import { GrLocation } from 'react-icons/gr'; // Assuming react-icons is available
+import { Event } from "#/content/events";
+import Link from "next/link";
+import { GrLocation } from "react-icons/gr";
+import { Card } from "#/components/web/card/Card"; // Assuming react-icons is available
 
 // Helper function for formatting date and time (can be basic for now)
 // It should handle allDay events appropriately.
 const formatEventDateTime = (start: Date, end: Date, allDay?: boolean): string => {
   const options: Intl.DateTimeFormatOptions = {
-    weekday: 'short',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
     hour12: false, // Use 24-hour format or true for 12-hour
   };
 
   if (allDay) {
-    return `${new Date(start).toLocaleDateString('de-DE', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })} (Ganztägig)`;
+    return `${new Date(start).toLocaleDateString("de-DE", { weekday: "short", year: "numeric", month: "short", day: "numeric" })} (Ganztägig)`;
   }
 
-  const startDateStr = new Date(start).toLocaleDateString('de-DE', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
-  const startTimeStr = new Date(start).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', hour12: false });
-  const endTimeStr = new Date(end).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', hour12: false });
+  const startDateStr = new Date(start).toLocaleDateString("de-DE", {
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+  const startTimeStr = new Date(start).toLocaleTimeString("de-DE", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
+  const endTimeStr = new Date(end).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit", hour12: false });
 
   // If start and end are on the same day
   if (new Date(start).toDateString() === new Date(end).toDateString()) {
     return `${startDateStr}, ${startTimeStr} - ${endTimeStr}`;
   } else {
     // If events span multiple days (less common for cards, but good to handle)
-    const endDateStr = new Date(end).toLocaleDateString('de-DE', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+    const endDateStr = new Date(end).toLocaleDateString("de-DE", {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
     return `${startDateStr}, ${startTimeStr} - ${endDateStr}, ${endTimeStr}`;
   }
 };
@@ -39,11 +54,8 @@ type EventCardProps = {
 
 export function EventCard({ event }: EventCardProps) {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 mb-4 flex flex-col">
-      <h3 className="text-xl font-semibold text-svw-blue-default mb-2">{event.title}</h3>
-      <p className="text-sm text-gray-600 mb-1">
-        {formatEventDateTime(event.start, event.end, event.allDay)}
-      </p>
+    <Card title={event.title}>
+      <p className="text-sm text-gray-600 mb-1">{formatEventDateTime(event.start, event.end, event.allDay)}</p>
       {event.place && (
         <div className="flex items-center text-sm text-gray-600 mb-2">
           <GrLocation className="mr-1 flex-shrink-0" />
@@ -52,7 +64,7 @@ export function EventCard({ event }: EventCardProps) {
         </div>
       )}
       {event.url && (
-        <div className="mt-auto pt-2"> {/* Pushes link to the bottom */}
+        <div className="mt-auto pt-2">
           <Link
             href={event.url}
             className="inline-block bg-svw-orange-default text-white px-4 py-2 rounded hover:bg-svw-orange-darker transition-colors text-sm font-medium"
@@ -61,6 +73,6 @@ export function EventCard({ event }: EventCardProps) {
           </Link>
         </div>
       )}
-    </div>
+    </Card>
   );
 }

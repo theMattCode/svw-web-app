@@ -1,9 +1,9 @@
-import { NextResponse } from 'next/server';
-import path from 'path';
-import { getEventMatters, EventMatter, Event } from '#/content/events'; // Assuming Event is exported from #/content/events
+import { NextResponse } from "next/server";
+import path from "path";
+import { getEventMatters, EventMatter, Event } from "#/content/events";
 
 export async function GET() {
-  const eventDirectory = path.resolve('./public', 'content', 'event');
+  const eventDirectory = path.resolve("./public", "content", "event");
   const allEventMatters: EventMatter[] = getEventMatters(eventDirectory);
 
   const todayAtMidnight = new Date();
@@ -13,20 +13,13 @@ export async function GET() {
 
   allEventMatters.forEach((eventMatter) => {
     eventMatter.calendarEntries.forEach((entry) => {
-      // The 'start' and 'end' fields from gray-matter are initially strings.
-      // They need to be converted to Date objects for comparison and for the response.
-      const eventStartDate = new Date(entry.start);
-      const eventEndDate = new Date(entry.end); // Also convert end date
+      // The 'start' and 'end' fields from gray-matter are initially strings. They need to be converted to Date objects for comparison and for the response.
+      const startDate = new Date(entry.start);
+      const endDate = new Date(entry.end);
 
-      if (eventStartDate >= todayAtMidnight) {
-        // Add the event with Date objects for start/end.
-        // The Event type defines start/end as Date.
+      if (startDate >= todayAtMidnight) {
         // JSON serialization will convert these Date objects to ISO strings.
-        upcomingEvents.push({
-          ...entry,
-          start: eventStartDate,
-          end: eventEndDate,
-        });
+        upcomingEvents.push({ ...entry, start: startDate, end: endDate });
       }
     });
   });
