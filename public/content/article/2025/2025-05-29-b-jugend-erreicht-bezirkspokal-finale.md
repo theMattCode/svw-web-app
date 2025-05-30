@@ -31,7 +31,7 @@ match:
       halftime: 1
       final: 2
 ---
-Mit einem Sieg gegen die TSG Reutlingen II haben sich die B-Junioren von Schönbuch United für das Bezirkspokal-Finale qualifiziert. 
+Mit einem Sieg gegen die TSG Reutlingen II haben sich unsere Schönbuch United B-Junioren für das Bezirkspokal-Finale qualifiziert. 
 
 In der ersten Halbzeit haben wir TSG Reutlingen spielerisch dominiert, uns viele Chancen heraus gespielt und schlussendlich durch einen verwandelten Elfmeter von Leo Filipovic eine verdiente 0:1 Pausenführung.
 

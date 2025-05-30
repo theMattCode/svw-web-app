@@ -1,5 +1,5 @@
 ---
-title: "C-Jugend steht im Bezirkspokal-Finale vor"
+title: "C-Jugend steht im Bezirkspokal-Finale"
 slug: "2025-05-29-c-jugend-erreicht-bezirkspokal-finale"
 date: "2025-05-29"
 image:
@@ -14,7 +14,7 @@ match:
   type: "soccer"
   competition:
     name: "Bezirkspokal C-Junioren"
-    round: "Ko-Runde Halbfinale"
+    round: "KO-Runde Halbfinale"
     link: "https://www.fussball.de/spiel/sgm-tsv-wittlingen-zainingen-roemerstein-i-sgm-sv-walddorf-schoenbuch-united-i/-/spiel/02SAITN2JS000000VS5489B4VTBO2A01#!/"
   opponents:
     home:
@@ -31,6 +31,8 @@ match:
       halftime: 2
       final: 3
 ---
-Die C-Junioren von Schönbuch United haben sich mit einem 3:2-Sieg gegen die SGM TSV Wittlingen/Zainingen/Römerstein I für das Bezirkspokal-Finale qualifiziert. In einem spannenden Halbfinalspiel konnten sie sich durchsetzen und den Sieg sichern.
+Unsere Schönbuch United C-Junioren haben sich mit einem 3:2-Sieg gegen die SGM TSV Wittlingen-Zainingen-Römerstein I für das Bezirkspokal-Finale qualifiziert. In einem spannenden Halbfinalspiel konnten sie sich durchsetzen und den Sieg sichern.
+
+Im Finale treffen sie auf TuS Metzingen II.
 
 [Details zum Spiel auf Fussball.de](https://www.fussball.de/spiel/sgm-tsv-wittlingen-zainingen-roemerstein-i-sgm-sv-walddorf-schoenbuch-united-i/-/spiel/02SAITN2JS000000VS5489B4VTBO2A01#!/)

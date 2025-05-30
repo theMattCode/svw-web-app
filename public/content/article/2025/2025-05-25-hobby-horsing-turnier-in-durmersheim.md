@@ -14,7 +14,7 @@ tags:
 ---
 Einige HobbyHorserInnen vom SV Walddorf haben sich am Sonntag, dem 25.05.2025, um 8 Uhr morgens auf den Weg nach Durmersheim bei Karlsruhe zum Reit- und Fahrverein e.V. Durmersheim aufgemacht. HobbyHorse Turniere können in Reithallen oder in Turnhallen durchgeführt werden. Es gab Springprüfungen (Zeitspringen, Stilspringen, Wahlspringen) und Dressurprüfungen mit vorgegebener Kür.
 
-Mit unseren blauen SV Walddorf Shirts wurden wir eindeutig als Gruppe in der Reithalle erkannt. Wir sind voll stolz auf die "Ausbeute" der Platzierungen.
+Mit unseren blauen SV Walddorf Shirts wurden wir eindeutig als Gruppe in der Reithalle erkannt. Wir blicken voller Stolz auf unsere tollen Platzierungen.
 
 |                 | Platzierung | Disziplin     |
 |-----------------|-------------|---------------|
