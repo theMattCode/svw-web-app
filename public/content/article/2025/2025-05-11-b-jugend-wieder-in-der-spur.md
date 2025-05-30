@@ -1,5 +1,5 @@
 ---
-title: "Vorbereitung Rückrunde B-Junioren"
+title: "B-Junioren wieder in der Spur"
 slug: "2025-05-11-b-jugend-wieder-in-der-spur"
 date: "2025-05-11"
 image:
