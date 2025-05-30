@@ -31,6 +31,12 @@ match:
       halftime: 1
       final: 2
 ---
-Mit einem Sieg gegen die TSG Reutlingen II haben sich die B-Junioren von Schönbuch United für das Bezirkspokal-Finale qualifiziert. In einem spannenden Spiel konnten sie sich mit 2:1 durchsetzen.
+Mit einem Sieg gegen die TSG Reutlingen II haben sich die B-Junioren von Schönbuch United für das Bezirkspokal-Finale qualifiziert. 
+
+In der ersten Halbzeit haben wir TSG Reutlingen spielerisch dominiert, uns viele Chancen heraus gespielt und schlussendlich durch einen verwandelten Elfmeter von Leo Filipovic eine verdiente 0:1 Pausenführung.
+
+In der zweiten Halbzeit haben wir das Spiel beruhigt, durch kameradschaftliches Verteidigen die Führung verwaltet und durch Konter weitere Akzente gesetzt, die zum 0:2 durch einen weiteren Elfmeter von Leo Filipovic geführt haben. Nur noch in der Nachspielzeit konnte die TSG Reutlingen auf 1:2 verkürzen, was jedoch am verdienten Finaleinzug nichts mehr änderte.
+
+![B-Junioren stehen zusammen und feiern den verdienten Sieg](https://res.cloudinary.com/svwalddorf/image/upload/v1748594892/d6c5d860-1bb9-4d19-ba86-f23e1ebeb474_cpcwb6.jpg)
 
 [Details zum Spiel auf Fussball.de](https://www.fussball.de/spiel/tsg-reutlingen-ii-sgm-sv-walddorf-schoenbuch-united/-/spiel/02SAITRI20000000VS5489B4VTBO2A01).
