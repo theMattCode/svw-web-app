@@ -1,15 +1,15 @@
-import React, { Suspense } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName, Person } from "#/content/people";
-import { NextFussballDeIframeWidget, NextFussballDeWidget } from "#/components/widget/NextFussballDeWidget";
+import { NextFussballDeIframeWidget } from "#/components/widget/NextFussballDeWidget";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle("Aktive"),
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 export default function Aktive() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2726 }, 1200);
   return (
-    <PageBase>
-      <BlockTitle title="Die Mannschaft" />
+    <PageContent>
+      <SectionTitle title="Die Mannschaft" />
       <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fussball/aktive-team-2024-25.jpg"
@@ -99,15 +99,15 @@ export default function Aktive() {
           </div>
         </div>
       </div>
-      <ArticlePreviewList tags={["Aktive I", "Aktive II"]} />
-      <BlockTitle title="Tabelle Aktive I" />
+      <ArticleSection tags={["Aktive I", "Aktive II"]} />
+      <SectionTitle title="Tabelle Aktive I" />
       <NextFussballDeIframeWidget widgetId="fd5c08aa-dbe8-4bea-b8d1-79d912931414" type="table" />
-      <BlockTitle title="Spielplan Aktive I" />
+      <SectionTitle title="Spielplan Aktive I" />
       <NextFussballDeIframeWidget widgetId="dbb0c0cc-0c93-40c4-9de5-36f04cd4b788" type="team-matches" />
-      <BlockTitle title="Tabelle Aktive II" />
+      <SectionTitle title="Tabelle Aktive II" />
       <NextFussballDeIframeWidget widgetId="c3ec19ee-9d12-4ea7-86c9-a4c3bcad753f" type="table" />
-      <BlockTitle title="Spielplan Aktive II" />
+      <SectionTitle title="Spielplan Aktive II" />
       <NextFussballDeIframeWidget widgetId="fb7e552b-3689-4d55-a603-3120d5afa6e6" type="team-matches" />
-    </PageBase>
+    </PageContent>
   );
 }

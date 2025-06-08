@@ -1,6 +1,6 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import Link from "next/link";
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 export default function SVWBlaettle() {
   const imageDimensions = calcImageDimensionsForWidth({ width: 1280, height: 1816 }, 400);
   return (
-    <PageBase>
-      <BlockTitle title={svwBlaettle.name} />
+    <PageContent>
+      <SectionTitle title={svwBlaettle.name} />
       <div className="bg-white shadow-2xl p-4 flex flex-col lg:flex-row gap-2">
         <div className="w-full flex flex-col gap-2">
           <div className="flex flex-col gap-4 md:flex-row">
@@ -63,6 +63,6 @@ export default function SVWBlaettle() {
           </div>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

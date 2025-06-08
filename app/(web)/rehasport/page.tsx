@@ -4,11 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { rehasport } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(rehasport.name),
@@ -23,7 +23,7 @@ export default function Rehasport() {
         <div className="transition-all md:pt-0 w-full bg-hero-rehasport bg-cover bg-center">
           <div className="w-full h-80" />
         </div>
-        <BlockTitle title={rehasport.name} />
+        <SectionTitle title={rehasport.name} />
         <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
           <h3>Zertifizierte Kurse</h3>
           <p>
@@ -275,7 +275,7 @@ export default function Rehasport() {
             />
           </div>
         </div>
-        <ArticlePreviewList tags={["Rehasport"]} />
+        <ArticleSection tags={["Rehasport"]} />
       </div>
     </div>
   );

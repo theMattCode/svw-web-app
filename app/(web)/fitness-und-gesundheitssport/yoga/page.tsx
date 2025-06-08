@@ -1,21 +1,21 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { Metadata } from "next";
 import { yoga } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";
 import Image from "next/image";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(yoga.name),
 };
 export default function Yoga() {
   return (
-    <PageBase>
-      <BlockTitle title={yoga.name} />
+    <PageContent>
+      <SectionTitle title={yoga.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2 text-justify">
@@ -56,7 +56,7 @@ export default function Yoga() {
           <PersonCard person={getPersonByName("Sandra Dießner")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Yoga"]} />
-    </PageBase>
+      <ArticleSection tags={["Yoga"]} />
+    </PageContent>
   );
 }

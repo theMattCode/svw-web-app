@@ -2,11 +2,11 @@ import React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
 import { getTitle } from "#/lib/page";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle("Schiedsrichter"),
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function Schiedsrichter() {
   return (
-    <PageBase>
-      <BlockTitle title="Schiedsrichter" />
+    <PageContent>
+      <SectionTitle title="Schiedsrichter" />
       <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="https://res.cloudinary.com/svwalddorf/image/upload/v1744833165/2025-04-16-Schiedsrichter_vrr1mq.jpg"
@@ -51,7 +51,7 @@ export default function Schiedsrichter() {
           </div>
         </div>
       </div>
-      <ArticlePreviewList tags={["Schiedsrichter"]} />
-    </PageBase>
+      <ArticleSection tags={["Schiedsrichter"]} />
+    </PageContent>
   );
 }

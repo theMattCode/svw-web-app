@@ -1,6 +1,6 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import Link from "next/link";
 import { club } from "#/content/club";
 import { impressum } from "#/content/sitemap";
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function Impressum() {
   return (
-    <PageBase>
-      <BlockTitle title={impressum.name} />
+    <PageContent>
+      <SectionTitle title={impressum.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
         <div className="w-full flex flex-col gap-2">
           <h3>Kontakt</h3>
@@ -66,6 +66,6 @@ export default function Impressum() {
           </p>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle("Bambini"),
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 export default function Bambini() {
   const { width, height } = calcImageDimensionsForWidth({ width: 1878, height: 920 }, 1280);
   return (
-    <PageBase>
-      <BlockTitle title="Bambini" />
+    <PageContent>
+      <SectionTitle title="Bambini" />
       <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fussball/bambini-team-2024-25.png"
@@ -52,7 +52,7 @@ export default function Bambini() {
           <PersonCard person={getPersonByName("Sascha Flaig")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Bambini"]} />
-    </PageBase>
+      <ArticleSection tags={["Bambini"]} />
+    </PageContent>
   );
 }

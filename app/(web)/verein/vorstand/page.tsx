@@ -1,8 +1,8 @@
 import React from "react";
 import { getPersonByTag, getPersonName } from "#/content/people";
 import { PersonCard } from "#/components/person/PersonCard";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { vorstand } from "#/content/sitemap";
@@ -24,8 +24,8 @@ export default function Vorstand() {
   ];
 
   return (
-    <PageBase>
-      <BlockTitle title={vorstand.name} />
+    <PageContent>
+      <SectionTitle title={vorstand.name} />
       <div className="transition-all grid grid-cols-1 xl:grid-cols-2 gap-2">
         {people.map((person, index) => (
           <PersonCard
@@ -35,6 +35,6 @@ export default function Vorstand() {
           />
         ))}
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

@@ -1,15 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
 import { getPersonByName } from "#/content/people";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { teenDance } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import Image from "next/image";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(teenDance.name),
@@ -25,8 +25,8 @@ export default function TeenDance() {
   const gruppe3Dimensions = calcImageDimensionsForWidth({ width: 4644, height: 3399 }, 768);
 
   return (
-    <PageBase>
-      <BlockTitle title={teenDance.name} />
+    <PageContent>
+      <SectionTitle title={teenDance.name} />
       <div className="my-1 bg-white p-2 flex flex-col gap-2">
         <p>
           Herzlich Willkommen bei unseren Tanzgruppen! Im Fokus steht immer die Freude am Tanz, der individuelle
@@ -39,7 +39,7 @@ export default function TeenDance() {
           <Link href={`mailto:${monikaHaar?.email}`}>{monikaHaar?.email}</Link>) melden.
         </p>
       </div>
-      <BlockTitle title="Gruppe „Coole Engel“" />
+      <SectionTitle title="Gruppe „Coole Engel“" />
       <div className="my-1 bg-white p-2 grid grid-cols-1 lg:grid-cols-2 gap-4 text-justify">
         <div className="flex flex-col gap-2">
           <p>Für Kinder im Alter von 6 – 9 Jahren.</p>
@@ -62,7 +62,7 @@ export default function TeenDance() {
           height={gruppe1Dimensions.height}
         />
       </div>
-      <BlockTitle title="Gruppe „High Lights“" />
+      <SectionTitle title="Gruppe „High Lights“" />
       <div className="my-1 bg-white p-2 grid grid-cols-1 lg:grid-cols-2 gap-4 text-justify">
         <div className="flex flex-col gap-2">
           <p>Für Teenies im Alter von 8 – 14 Jahren.</p>
@@ -85,7 +85,7 @@ export default function TeenDance() {
           height={gruppe2Dimensions.height}
         />
       </div>
-      <BlockTitle title="Gruppe „Feathers“" />
+      <SectionTitle title="Gruppe „Feathers“" />
       <div className="my-1 bg-white p-2 grid grid-cols-1 lg:grid-cols-2 gap-4 text-justify">
         <div className="flex flex-col gap-2">
           <p>Für Teenies im Alter von 8-14 Jahren.</p>
@@ -101,7 +101,7 @@ export default function TeenDance() {
           height={gruppe3Dimensions.height}
         />
       </div>
-      <ArticlePreviewList tags={["Teen Dance"]} />
-    </PageBase>
+      <ArticleSection tags={["Teen Dance"]} />
+    </PageContent>
   );
 }

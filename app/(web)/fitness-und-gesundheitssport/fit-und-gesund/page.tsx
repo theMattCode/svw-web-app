@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { fitUndGesund } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(fitUndGesund.name),
@@ -20,8 +20,8 @@ export default function FitUndGesund() {
   const teamDimensions = calcImageDimensionsForWidth({ width: 6000, height: 4000 }, 1280);
   const team2Dimensions = calcImageDimensionsForWidth({ width: 3711, height: 2784 }, 768);
   return (
-    <PageBase>
-      <BlockTitle title={fitUndGesund.name} />
+    <PageContent>
+      <SectionTitle title={fitUndGesund.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fitness-und-gesundheitssport/fit-und-gesund-2024-1.jpg"
@@ -76,7 +76,7 @@ export default function FitUndGesund() {
           />
         </div>
       </div>
-      <ArticlePreviewList tags={["Fit und Gesund"]} />
-    </PageBase>
+      <ArticleSection tags={["Fit und Gesund"]} />
+    </PageContent>
   );
 }

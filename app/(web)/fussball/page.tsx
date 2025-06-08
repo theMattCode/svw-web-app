@@ -1,11 +1,10 @@
 import React from "react";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
 import { SubMenu } from "#/components/navigation/SubMenu";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { fussball } from "#/content/sitemap";
-import { NextFussballDeIframeWidget } from "#/components/widget/NextFussballDeWidget";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
+import { PageContent } from "#/components/web/page/PageContent";
 
 export const metadata: Metadata = {
   title: getTitle(fussball.name),
@@ -17,11 +16,9 @@ export default function Fussball() {
       <div className="py-4 w-full bg-svw-blue-default text-white">
         <SubMenu item={fussball} />
       </div>
-      <BlockTitle title={fussball.name} />
-      <div className="container">
-        <NextFussballDeIframeWidget widgetId="3f3b3ce7-2191-44d1-b785-6cb3fdcb041d" type="club-matches" />
-      </div>
-      <ArticlePreviewList tags={["Fussball"]} />
+      <PageContent>
+        <ArticleSection tags={["Fussball", "Fußball"]} />
+      </PageContent>
     </div>
   );
 }

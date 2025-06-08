@@ -11,11 +11,11 @@ import {
   yoga,
 } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(fitnessUndGesundheitssport.name),
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 
 export default function FitnessUndGesundheitssport() {
   return (
-    <PageBase>
-      <BlockTitle title={fitnessUndGesundheitssport.name} />
+    <PageContent>
+      <SectionTitle title={fitnessUndGesundheitssport.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <p>
           In unserer Sparte Fitness & Gesundheit bieten wir ein vielfältiges Programm für alle Altersklassen an. Aktuell
@@ -94,7 +94,7 @@ export default function FitnessUndGesundheitssport() {
           <PersonCard person={getPersonByName("Marc Musse")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Fitness und Gesundheitssport"]} />
-    </PageBase>
+      <ArticleSection tags={["Fitness und Gesundheitssport"]} />
+    </PageContent>
   );
 }

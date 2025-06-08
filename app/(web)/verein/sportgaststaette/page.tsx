@@ -1,8 +1,8 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import Link from "next/link";
 import Image from "next/image";
-import { PageBase } from "#/components/page/PageBase";
+import { PageContent } from "#/components/web/page/PageContent";
 import { sportgaststaette } from "#/content/sitemap";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function Sportgaststaette() {
   return (
-    <PageBase>
-      <BlockTitle title={sportgaststaette.name} />
+    <PageContent>
+      <SectionTitle title={sportgaststaette.name} />
       <div className="bg-white shadow-2xl p-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex flex-col grow">
           <h4>Website</h4>
@@ -120,6 +120,6 @@ export default function Sportgaststaette() {
           </p>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

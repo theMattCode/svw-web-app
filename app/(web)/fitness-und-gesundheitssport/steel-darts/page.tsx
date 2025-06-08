@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { steelDarts } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(steelDarts.name),
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 export default function SteelDarts() {
   return (
-    <PageBase>
-      <BlockTitle title={steelDarts.name} />
+    <PageContent>
+      <SectionTitle title={steelDarts.name} />
       <div className="my-1 bg-white p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fitness-und-gesundheitssport/steeldarts/steeldarts.webp"
@@ -61,7 +61,7 @@ export default function SteelDarts() {
           <PersonCard person={getPersonByName("Rainer Burkhardt")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Steel-Darts"]} />
-    </PageBase>
+      <ArticleSection tags={["Steel-Darts"]} />
+    </PageContent>
   );
 }

@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle("F-Junioren"),
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 export default function FJunioren() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2725 }, 1280);
   return (
-    <PageBase>
-      <BlockTitle title="F-Junioren" />
+    <PageContent>
+      <SectionTitle title="F-Junioren" />
       <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fussball/f-junioren-team-2024-25.jpg"
@@ -77,7 +77,7 @@ export default function FJunioren() {
           <PersonCard person={getPersonByName("Markus Holmgren")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["F-Junioren"]} />
-    </PageBase>
+      <ArticleSection tags={["F-Junioren"]} />
+    </PageContent>
   );
 }

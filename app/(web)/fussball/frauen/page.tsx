@@ -4,12 +4,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { fussballFrauen } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(fussballFrauen.name),
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 export default function Frauen() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2725 }, 1200);
   return (
-    <PageBase>
-      <BlockTitle title={fussballFrauen.name} />
+    <PageContent>
+      <SectionTitle title={fussballFrauen.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 xl:grid-cols-4 grid-flow-row-dense gap-2">
           <Image
@@ -53,7 +53,7 @@ export default function Frauen() {
           <PersonCard person={getPersonByName("Melanie Senner")} />
         </div>
       </div>
-      <ArticlePreviewList tags={["Frauenfußball"]} />
-    </PageBase>
+      <ArticleSection tags={["Frauenfußball"]} />
+    </PageContent>
   );
 }

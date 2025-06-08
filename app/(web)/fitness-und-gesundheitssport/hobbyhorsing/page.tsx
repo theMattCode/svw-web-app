@@ -1,11 +1,11 @@
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { hobbyHorsing } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";
 import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(hobbyHorsing.name),
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function HobbyHorsing() {
   return (
-    <PageBase>
-      <BlockTitle title={hobbyHorsing.name} />
+    <PageContent>
+      <SectionTitle title={hobbyHorsing.name} />
       <div className="py-1 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <div className="bg-white p-2 flex flex-col gap-2 text-justify">
@@ -83,7 +83,10 @@ export default function HobbyHorsing() {
               </ul>
             </p>
             <h4>Anmeldung</h4>
-            <p>Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden. Anmeldeschluss ist der <b>1. April 2025</b>.</p>
+            <p>
+              Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden. Anmeldeschluss ist der{" "}
+              <b>1. April 2025</b>.
+            </p>
             <p>
               Bitte das&nbsp;
               <Link href="/download/2025-03-06_Anmeldeformular_HobbyHorsing_Kurs_H-2025-1.pdf" target="_blank">
@@ -99,7 +102,7 @@ export default function HobbyHorsing() {
           </div>
         </div>
       </div>
-      <ArticlePreviewList tags={["Hobby Horsing"]} />
-    </PageBase>
+      <ArticleSection tags={["Hobby Horsing", "HobbyHorsing"]} />
+    </PageContent>
   );
 }

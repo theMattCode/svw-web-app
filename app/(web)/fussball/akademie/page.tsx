@@ -1,8 +1,8 @@
 import React from "react";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import Image from "next/image";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import Link from "next/link";
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 export default function SVWalddorfAkademie() {
   const { width, height } = calcImageDimensionsForWidth({ width: 767, height: 651 }, 500);
   return (
-    <PageBase>
-      <BlockTitle title="SV Walddorf Akademie" />
+    <PageContent>
+      <SectionTitle title="SV Walddorf Akademie" />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="flex flex-col">
           <p>
@@ -87,6 +87,6 @@ export default function SVWalddorfAkademie() {
           </div>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }
