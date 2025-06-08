@@ -1,9 +1,12 @@
-import { ArticleList } from "#/components/articles/ArticleList";
 import { getTitle, PageProps } from "#/lib/page";
-import { PaginatedArticleMatters } from "#/content/article";
+import { PaginatedArticles } from "#/content/article";
 import { getURL } from "#/lib/url";
 import { Metadata } from "next";
 import { aktuelles } from "#/content/sitemap";
+import { Section } from "#/components/web/section/Section";
+import { PageContent } from "#/components/web/page/PageContent";
+import { Pagination } from "#/components/pagination/Pagination";
+import { ArticleList } from "#/components/web/articles/ArticleList";
 
 export const metadata: Metadata = {
   title: getTitle(aktuelles.name),
@@ -17,12 +20,15 @@ export default async function Aktuelles(props: PageProps) {
   const articlesResponse = await fetch(`${getURL()}/api/articles?page=${page}&pageSize=${PAGE_SIZE}`, {
     next: { revalidate: false },
   });
-  const paginatedArticles: PaginatedArticleMatters = await articlesResponse.json();
+  const paginatedArticles: PaginatedArticles = await articlesResponse.json();
   return (
-    <div className="bg-neutral-200 pt-8">
-      <div className="flex flex-col gap-2">
-        <ArticleList paginatedArticleMatters={paginatedArticles} />
-      </div>
-    </div>
+    <PageContent>
+      <Section title={aktuelles.name}>
+        <ArticleList articles={paginatedArticles.articles} />
+        <div className="sticky bottom-0 flex justify-center items-center p-0.5 pt-2">
+          <Pagination slug={undefined} currentPage={paginatedArticles.page} pageCount={paginatedArticles.totalPages} />
+        </div>
+      </Section>
+    </PageContent>
   );
 }

@@ -1,20 +1,20 @@
 import React from "react";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { fussballAH } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(fussballAH.name),
 };
 export default function AH() {
   return (
-    <PageBase>
-      <BlockTitle title={fussballAH.name} />
+    <PageContent>
+      <SectionTitle title={fussballAH.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <p>
           Für alle fußballbegeisterten Spieler ab 30 Jahren, die Lust haben, in einer lockeren und freundschaftlichen
@@ -46,7 +46,7 @@ export default function AH() {
         <PersonCard person={getPersonByName("Benjamin Link")} />
         <PersonCard person={getPersonByName("Daniel Russom")} />
       </div>
-      <ArticlePreviewList tags={["AH"]} />
-    </PageBase>
+      <ArticleSection tags={["AH"]} />
+    </PageContent>
   );
 }

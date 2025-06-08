@@ -4,12 +4,11 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { badminton, badmintonAktive } from "#/content/sitemap";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { SubMenu } from "#/components/navigation/SubMenu";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(badminton.name),
@@ -18,8 +17,8 @@ export const metadata: Metadata = {
 export default function Badminton() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4085, height: 2298 }, 1520);
   return (
-    <PageBase>
-      <BlockTitle title={badmintonAktive.name} />
+    <PageContent>
+      <SectionTitle title={badmintonAktive.name} />
       <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2 py-2">
         <Image
           src="/media/sparten/badminton/badminton-team-2021-08-22.jpg"
@@ -96,7 +95,7 @@ export default function Badminton() {
           </p>
         </div>
       </div>
-      <ArticlePreviewList tags={["Badminton"]} />
-    </PageBase>
+      <ArticleSection tags={["Badminton"]} />
+    </PageContent>
   );
 }

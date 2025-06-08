@@ -1,7 +1,7 @@
 import { Event } from "#/content/events";
-import Link from "next/link";
 import { GrLocation } from "react-icons/gr";
-import { Card } from "#/components/web/card/Card"; // Assuming react-icons is available
+import { Card, CardContent, CardIcon, CardTitle, IconCard } from "#/components/web/card/Card";
+import { MdEvent } from "react-icons/md"; // Assuming react-icons is available
 
 // Helper function for formatting date and time (can be basic for now)
 // It should handle allDay events appropriately.
@@ -54,16 +54,20 @@ type EventCardProps = {
 
 export function EventCard({ event }: EventCardProps) {
   return (
-    <Card title={event.title}>
-      <p className="text-sm text-gray-600 mb-1">{formatEventDateTime(event.start, event.end, event.allDay)}</p>
-      {event.place && (
-        <div className="flex items-center text-sm text-gray-600 mb-2">
-          <GrLocation className="mr-1 flex-shrink-0" />
-          <span className="font-medium">{event.place.name}</span>
-          {event.place.address && <span className="ml-1">, {event.place.address}</span>}
-        </div>
-      )}
-      {event.url && (
+    <IconCard title={event.title}>
+      <CardIcon icon={MdEvent} />
+      <CardContent>
+        <CardTitle>{event.title}</CardTitle>
+        <p className="text-sm text-gray-600 mb-1">{formatEventDateTime(event.start, event.end, event.allDay)}</p>
+        {event.place && (
+          <div className="flex items-center text-sm text-gray-600 mb-2">
+            <GrLocation className="mr-1 flex-shrink-0" />
+            <span className="font-medium">{event.place.name}</span>
+            {event.place.address && <span className="ml-1">, {event.place.address}</span>}
+          </div>
+        )}
+      </CardContent>
+      {/*event.url && (
         <div className="mt-auto pt-2">
           <Link
             href={event.url}
@@ -72,7 +76,7 @@ export function EventCard({ event }: EventCardProps) {
             Details ansehen
           </Link>
         </div>
-      )}
-    </Card>
+      )*/}
+    </IconCard>
   );
 }

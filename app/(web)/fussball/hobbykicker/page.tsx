@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { PageBase } from "#/components/page/PageBase";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { fussballHobby } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(fussballHobby.name),
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 export default function HobbyKicker() {
   const { width, height } = calcImageDimensionsForWidth({ width: 4026, height: 2041 }, 1520);
   return (
-    <PageBase>
-      <BlockTitle title={fussballHobby.name} />
+    <PageContent>
+      <SectionTitle title={fussballHobby.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <Image
           src="/media/sparten/fussball/hobby-kicker-team-2023-24.jpg"
@@ -56,7 +56,7 @@ export default function HobbyKicker() {
         <h3>Ansprechpartner</h3>
         <PersonCard person={getPersonByName("Lukas Drexler")} />
       </div>
-      <ArticlePreviewList tags={["Hobbykicker"]} />
-    </PageBase>
+      <ArticleSection tags={["Hobbykicker"]} />
+    </PageContent>
   );
 }

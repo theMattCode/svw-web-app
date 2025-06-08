@@ -1,7 +1,7 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import Link from "next/link";
-import { PageBase } from "#/components/page/PageBase";
+import { PageContent } from "#/components/web/page/PageContent";
 import { club } from "#/content/club";
 import { mitgliedWerden } from "#/content/sitemap";
 import { Metadata } from "next";
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function MitgliedWerden() {
   return (
-    <PageBase>
-      <BlockTitle title={mitgliedWerden.name} />
+    <PageContent>
+      <SectionTitle title={mitgliedWerden.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col lg:flex-row gap-2">
         <div className="flex flex-col gap-2">
           <h5>Sie wollen Mitglied beim SV Walddorf werden? Wunderbar!</h5>
@@ -74,6 +74,6 @@ export default function MitgliedWerden() {
           </p>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

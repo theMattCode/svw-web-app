@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { gymnastik65plus } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(gymnastik65plus.name),
@@ -20,8 +20,8 @@ export default function Gymnastik65plus() {
   const gym65plus = calcImageDimensionsForWidth({ width: 5514, height: 3124 }, 768);
 
   return (
-    <PageBase>
-      <BlockTitle title={gymnastik65plus.name} />
+    <PageContent>
+      <SectionTitle title={gymnastik65plus.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2 text-justify">
@@ -68,7 +68,7 @@ export default function Gymnastik65plus() {
           />
         </div>
       </div>
-      <ArticlePreviewList tags={["Gymnastik 65plus"]} />
-    </PageBase>
+      <ArticleSection tags={["Gymnastik 65plus"]} />
+    </PageContent>
   );
 }

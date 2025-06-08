@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { getTitle } from "#/lib/page";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { getPersonByName } from "#/content/people";
 import { powerFitness } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(powerFitness.name),
@@ -20,8 +20,8 @@ export default function Powerfitness() {
   const gruppeDimensions = calcImageDimensionsForWidth({ width: 5418, height: 2492 }, 768);
 
   return (
-    <PageBase>
-      <BlockTitle title={powerFitness.name} />
+    <PageContent>
+      <SectionTitle title={powerFitness.name} />
       <div className="bg-white shadow-2xl p-2 flex flex-col gap-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2 text-justify">
@@ -69,7 +69,7 @@ export default function Powerfitness() {
           />
         </div>
       </div>
-      <ArticlePreviewList tags={["Powerfitness"]} />
-    </PageBase>
+      <ArticleSection tags={["Powerfitness"]} />
+    </PageContent>
   );
 }

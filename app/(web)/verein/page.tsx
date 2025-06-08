@@ -2,8 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { SubMenu } from "#/components/navigation/SubMenu";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
 import { verein } from "#/content/sitemap";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(verein.name),
@@ -15,7 +15,7 @@ export default function Verein() {
       <div className="py-4 w-full bg-svw-blue-dark text-white">
         <SubMenu item={verein} />
       </div>
-      <ArticlePreviewList tags={["Verein"]} />
+      <ArticleSection tags={["Verein"]} />
     </div>
   );
 }

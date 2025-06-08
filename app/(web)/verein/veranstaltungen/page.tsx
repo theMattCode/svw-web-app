@@ -1,7 +1,7 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
-import { EventList } from "#/components/web/events/EventList";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
+import { EventGrid } from "#/components/web/events/EventGrid";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { veranstaltungen } from "#/content/sitemap";
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function Veranstaltungen() {
   return (
-    <PageBase>
-      <BlockTitle title={veranstaltungen.name} />
-      <EventList />
-    </PageBase>
+    <PageContent>
+      <SectionTitle title={veranstaltungen.name} />
+      <EventGrid />
+    </PageContent>
   );
 }

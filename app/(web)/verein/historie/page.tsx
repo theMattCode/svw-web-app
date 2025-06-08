@@ -1,6 +1,6 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { historie } from "#/content/sitemap";
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function Historie() {
   return (
-    <PageBase>
-      <BlockTitle title={historie.name} />
+    <PageContent>
+      <SectionTitle title={historie.name} />
       <div className="bg-white shadow-2xl p-2 flex gap-4 flex-col lg:flex-row">
         <div className="flex flex-col gap-4">
           <h3>Daten unserer Vereinsgeschichte</h3>
@@ -257,6 +257,6 @@ export default function Historie() {
           </table>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

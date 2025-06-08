@@ -4,14 +4,13 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
-import { PageBase } from "#/components/page/PageBase";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
+import { PageContent } from "#/components/web/page/PageContent";
 import { PersonCard } from "#/components/person/PersonCard";
-import { ArticlePreviewList } from "#/components/articles/ArticlePreviewList";
-import { club } from "#/content/club";
 import { getPersonByName } from "#/content/people";
-import { badminton, fussball } from "#/content/sitemap";
+import { badminton } from "#/content/sitemap";
 import { SubMenu } from "#/components/navigation/SubMenu";
+import { ArticleSection } from "#/components/web/articles/ArticleSection";
 
 export const metadata: Metadata = {
   title: getTitle(badminton.name),
@@ -24,8 +23,8 @@ export default function Badminton() {
       <div className="py-4 w-full bg-svw-blue-default text-white">
         <SubMenu item={badminton} />
       </div>
-      <PageBase>
-        <BlockTitle title={badminton.name} />
+      <PageContent>
+        <SectionTitle title={badminton.name} />
         <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2 py-2">
           <Image
             src="/media/sparten/badminton/badminton-team-2021-08-22.jpg"
@@ -72,8 +71,8 @@ export default function Badminton() {
             </div>
           </div>
         </div>
-        <ArticlePreviewList tags={["Badminton"]} />
-      </PageBase>
+        <ArticleSection tags={["Badminton"]} />
+      </PageContent>
     </div>
   );
 }

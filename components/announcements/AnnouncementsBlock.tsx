@@ -3,7 +3,7 @@
 import { Announcements } from "#/components/announcements/Announcements";
 import { useEffect, useState } from "react";
 import { Announcement } from "#/content/announcements";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 
 export function AnnouncementsBlock() {
   const [announcements, setAnnouncements] = useState<Announcement[]>([]);
@@ -18,7 +18,7 @@ export function AnnouncementsBlock() {
 
   return (
     <div className={`flex flex-col px-4 pt-4 bg-svw-blue-lighter/75`}>
-      <BlockTitle title="Ankündigungen" />
+      <SectionTitle title="Ankündigungen" />
       <Announcements announcements={announcements} />
     </div>
   );

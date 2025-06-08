@@ -4,10 +4,10 @@ slug: "2024-09-22-deutsche-meisterschaften-hobby-horsing"
 date: "2024-09-22"
 teaser: "Hannah Jones vertritt den SVW mit großem Erfolg in Frankfurt!"
 image:
-  src: /media/2024/2024-09-22-hobby-horsing-dm-1.jpg
+  src: /media/2024/2024-09-22-hobby-horsing-dm.jpg
   alt: HobbyHorsing
-  width: 4032
-  height: 3024
+  width: 960
+  height: 540
 tags:
   - Hobby Horsing
   - Fitness und Gesundheitssport

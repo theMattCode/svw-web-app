@@ -1,8 +1,8 @@
 import React from "react";
-import { BlockTitle } from "#/components/block-title/BlockTitle";
+import { SectionTitle } from "#/components/web/section/SectionTitle";
 import Link from "next/link";
 import Image from "next/image";
-import { PageBase } from "#/components/page/PageBase";
+import { PageContent } from "#/components/web/page/PageContent";
 import { club } from "#/content/club";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function Geschaeftsstelle() {
   return (
-    <PageBase>
-      <BlockTitle title={geschaeftsstelle.name} />
+    <PageContent>
+      <SectionTitle title={geschaeftsstelle.name} />
       <div className="bg-white shadow-2xl p-2 flex gap-4 flex-col lg:flex-row">
         <Image
           src="/media/verein/geschaeftsstelle_2023.jpg"
@@ -50,6 +50,6 @@ export default function Geschaeftsstelle() {
           </p>
         </div>
       </div>
-    </PageBase>
+    </PageContent>
   );
 }

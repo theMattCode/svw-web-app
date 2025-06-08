@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { Event } from "#/content/events";
 import { EventCard } from "./EventCard";
 import { Spinner } from "#/components/spinner/Spinner";
+import { Grid } from "#/components/web/grid/Grid";
 
-export function EventList() {
+export function EventGrid() {
   const [events, setEvents] = useState<Event[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -65,13 +66,13 @@ export function EventList() {
   }
 
   return (
-    <div className="grid @xs:grid-cols-1 @3xl:grid-cols-2 gap-2">
+    <Grid>
       {sortedEvents.map((event, index) => (
         // Using slug + index as key if event items within calendarEntries don't have unique IDs
         // Ideally, each Event object should have a unique ID for the key. For now, we'll use the title and index as a composite key.
         // The Event type itself doesn't have a slug.
         <EventCard key={`${event.title}-${index}`} event={event} />
       ))}
-    </div>
+    </Grid>
   );
 }

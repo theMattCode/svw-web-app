@@ -8,12 +8,12 @@ type Props = {
 };
 export default function Teaser({ content }: Props): JSX.Element | null {
   return (
-    <div className="p-1 flex flex-col gap-1 h-full">
+    <div className="flex flex-col">
       {content && (
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
-            p: ({ children }) => <p className="font-medium text-sm m-0">{children}</p>,
+            p: ({ children }) => <div className="font-normal">{children}</div>,
           }}
         >
           {content}
