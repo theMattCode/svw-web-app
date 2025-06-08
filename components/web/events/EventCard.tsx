@@ -1,7 +1,8 @@
 import { Event } from "#/content/events";
 import { GrLocation } from "react-icons/gr";
-import { Card, CardContent, CardIcon, CardTitle, IconCard } from "#/components/web/card/Card";
-import { MdEvent } from "react-icons/md"; // Assuming react-icons is available
+import { CardContent, CardIcon, CardTitle, IconCard } from "#/components/web/card/Card";
+import { MdEvent } from "react-icons/md";
+import Link from "next/link"; // Assuming react-icons is available
 
 // Helper function for formatting date and time (can be basic for now)
 // It should handle allDay events appropriately.
@@ -53,7 +54,7 @@ type EventCardProps = {
 };
 
 export function EventCard({ event }: EventCardProps) {
-  return (
+  const Content = (
     <IconCard title={event.title}>
       <CardIcon icon={MdEvent} />
       <CardContent>
@@ -78,5 +79,12 @@ export function EventCard({ event }: EventCardProps) {
         </div>
       )*/}
     </IconCard>
+  );
+  return event.url ? (
+    <Link href={event.url} className="no-underline">
+      {Content}
+    </Link>
+  ) : (
+    Content
   );
 }
