@@ -46,10 +46,10 @@ export default async function Page(props: PageProps<Slug>) {
   const params = await props.params;
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
 
-  const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 1280) : { width: 0, height: 0 };
+  const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 1528) : { width: 0, height: 0 };
 
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center">
       {article?.image && (
         <Image src={article.image} alt={article.image.alt ?? article.title} width={width} height={height} />
       )}
