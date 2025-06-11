@@ -4,7 +4,7 @@ slug: "2025-05-25-hobby-horsing-turnier-in-durmersheim"
 date: "2025-05-25"
 teaser: "Erfolgreiche Teilnahme unserer HobbyHorser beim Turnier in Durmersheim"
 image:
-  src: https://res.cloudinary.com/svwalddorf/image/upload/v1748595616/0_klxqjn.jpg
+  src: https://res.cloudinary.com/svwalddorf/image/upload/v1749628601/2025-05-25-hobbyhorsing-turnier-in-durmersheim-1_16-9_mxkfrl.jpg
   alt: HobbyHorsing
   width: 799
   height: 1065
