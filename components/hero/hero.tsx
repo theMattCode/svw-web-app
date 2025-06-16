@@ -22,8 +22,8 @@ export function Hero(): JSX.Element {
   return (
     <div className="w-full p-4 bg-svw-blue-default text-white transition-all flex flex-col gap-4 justify-center items-center">
       <div className="w-full p-4 flex flex-col gap-4 text-center">
+        <h1 className="text-6xl font-bold upper">{club.name}</h1>
         <p className="font-medium">Erlebe gemeinsam mit uns Breiten- und Leistungssport</p>
-        <h1 className="text-6xl italic font-bold tracking-[-0.75px]">{club.name}</h1>
       </div>
       <div className="container">
         <Carousel>
