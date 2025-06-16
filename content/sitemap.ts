@@ -82,7 +82,7 @@ export const powerFitness: MenuItem = {
   url: "/fitness-und-gesundheitssport/powerfitness",
 };
 export const gymnastik65plus: MenuItem = {
-  name: "Gymnastik 65plus",
+  name: "Gymnastik 65+",
   url: "/fitness-und-gesundheitssport/gymnastik-65plus",
 };
 export const teenDance: MenuItem = { name: "Teen Dance", url: "/fitness-und-gesundheitssport/teen-dance" };
@@ -155,20 +155,7 @@ export const sparten: MenuItem = {
 
 export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };
 
-export const sitemap: MenuItem[] = [verein, sparten, aktuelles];
-
-export const activities: MenuItem[] = [
-  badminton,
-  fussball,
-  yoga,
-  powerFitness,
-  gymnastik65plus,
-  teenDance,
-  fitUndGesund,
-  rehasport,
-  hobbyHorsing,
-  steelDarts,
-];
+export const sitemap: MenuItem[] = [aktuelles, verein, sparten];
 
 export function findItemByName(menuItem: MenuItem, name: string): MenuItem | undefined {
   return menuItem.subMenu?.find((item) => item.name === name);

@@ -19,16 +19,16 @@ export function CardIcon({ icon: Icon }: { icon: IconType }) {
 }
 
 export function CardTitle({ children }: { children: string }) {
-  return <div className="text-xl font-medium text-svw-blue-default">{children}</div>;
+  return <div className="py-2 text-xl font-medium text-svw-blue-default">{children}</div>;
 }
 
 export function CardContent({ children }: PropsWithChildren<{ icon?: IconType }>) {
-  return <div className="w-full p-4 flex flex-col grow gap-2 @5xl:flex-auto">{children}</div>;
+  return <div className="w-full px-4 flex flex-col grow gap-2 @5xl:flex-auto">{children}</div>;
 }
 
 export function CardFooter({ children }: PropsWithChildren<{}>) {
   return (
-    <div className="mt-auto flex flex-row justify-between w-full border-t border-svw-blue-default/25 pt-1 gap-4 text-sm text-svw-blue-default">
+    <div className="mt-auto flex flex-row justify-between w-full border-t border-svw-blue-default/25 py-2 gap-4 text-sm text-svw-blue-default">
       {children}
     </div>
   );

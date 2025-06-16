@@ -1,53 +1,45 @@
 import { club } from "#/content/club";
-import { steelDarts, teenDance } from "#/content/sitemap";
-import Link from "next/link";
+import {
+  badminton,
+  fitUndGesund,
+  fussball,
+  gymnastik65plus,
+  hobbyHorsing,
+  powerFitness,
+  rehasport,
+  steelDarts,
+  teenDance,
+  yoga,
+} from "#/content/sitemap";
 
 import type { JSX } from "react";
 import DartsIcon from "#/components/web/icon/DartsIcon/DartsIcon";
 import DanceIcon from "#/components/web/icon/DanceIcon/DanceIcon";
+import { ActivityCard } from "#/components/web/activity/ActivityCard";
+import { Carousel } from "#/components/web/carousel/Carousel";
 
 export function Hero(): JSX.Element {
   return (
     <div className="w-full p-4 bg-svw-blue-default text-white transition-all flex flex-col gap-4 justify-center items-center">
-      <div className="w-full p-4 flex flex-col gap-4 font-bold text-center">
-        <div className="text-5xl">{club.name}</div>
-        <div className="text-2xl">Erlebe Sport gemeinsam mit uns Breiten- und Leistungssport</div>
+      <div className="w-full p-4 flex flex-col gap-4 text-center">
+        <p className="font-medium">Erlebe gemeinsam mit uns Breiten- und Leistungssport</p>
+        <h1 className="text-6xl italic font-bold tracking-[-0.75px]">{club.name}</h1>
       </div>
-      {/*<div className="transition-all flex flex-wrap gap-2 justify-center text-white max-w-md pb-4 ">
-              {activities.map((activity) => (
-                <Link
-                  key={activity.name}
-                  href={activity.url}
-                  className="transition-all flex items-center px-2 py-1 gap-1 hover:bg-svw-blue-darker whitespace-nowrap bg-svw-blue-default"
-                >
-                  <span className="uppercase font-medium">{activity.name}</span>
-                </Link>
-              ))}
-            </div>*/}
-      <div className="flex flex-row gap-4">
-        <Link
-          href={steelDarts.url}
-          className="w-48 transition-all flex flex-col items-center justify-center hover:scale-105 bg-white"
-        >
-          <div className="w-full p-4">
-            <DartsIcon />
-          </div>
-          <div className="w-full flex justify-center p-2 hover:bg-svw-blue-darker bg-svw-blue-dark text-white uppercase font-bold whitespace-nowrap">
-            {steelDarts.name}
-          </div>
-        </Link>
-        <Link
-          href={teenDance.url}
-          className="w-48 transition-all flex flex-col items-center justify-center hover:scale-105 bg-white"
-        >
-          <div className="w-full p-4">
-            <DanceIcon />
-          </div>
-          <div className="w-full flex justify-center p-2 hover:bg-svw-blue-darker bg-svw-blue-dark text-white uppercase font-bold whitespace-nowrap">
-            {teenDance.name}
-          </div>
-        </Link>
+      <div className="container">
+        <Carousel>
+          <ActivityCard activity={{ ...fussball, icon: <DartsIcon /> }} />
+          <ActivityCard activity={{ ...badminton, icon: <DanceIcon /> }} />
+          <ActivityCard activity={{ ...steelDarts, icon: <DartsIcon /> }} />
+          <ActivityCard activity={{ ...hobbyHorsing, icon: <DartsIcon /> }} />
+          <ActivityCard activity={{ ...yoga, icon: <DartsIcon /> }} />
+          <ActivityCard activity={{ ...teenDance, icon: <DanceIcon /> }} />
+          <ActivityCard activity={{ ...rehasport, icon: <DanceIcon /> }} />
+          <ActivityCard activity={{ ...fitUndGesund, icon: <DanceIcon /> }} />
+          <ActivityCard activity={{ ...powerFitness, icon: <DanceIcon /> }} />
+          <ActivityCard activity={{ ...gymnastik65plus, icon: <DanceIcon /> }} />
+        </Carousel>
       </div>
+      <div className="pt-4">CTA: Mitglied werden</div>
     </div>
   );
 }

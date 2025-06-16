@@ -7,7 +7,7 @@ import { PageContent } from "#/components/web/page/PageContent";
 
 export default async function IndexPage(): Promise<JSX.Element | null> {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col @container">
       <Hero />
       <AnnouncementsBlock />
       <PageContent>
