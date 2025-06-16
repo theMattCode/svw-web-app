@@ -12,8 +12,8 @@ export type Club = {
 };
 
 export const club: Club = {
-  name: "Sportverein Walddorf 1904 e.V.",
-  short: "SV Walddorf 1904 e.V.",
+  name: "Sportverein Walddorf 1904 e.V.",
+  short: "SV Walddorf 1904 e.V.",
   shorter: "SV Walddorf",
   shortest: "SVW",
   abbreviation: "SVW",

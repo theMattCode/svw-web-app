@@ -3,7 +3,9 @@
     stroke: #000;
     stroke-width: 8px;
     stroke-linecap: square;
-    stroke-miterlimit: 1
+    stroke-miterlimit: 1;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 0;
 }
 
 @keyframes danceDash {
@@ -16,17 +18,10 @@
 }
 
 #DanceIcon > g > path {
-    stroke-dasharray: 300;
-    stroke-dashoffset: 0;
     animation: danceDash 1.25s linear;
 }
 
 #DanceSkirt {
-    stroke-dasharray: 300;
-    stroke-dashoffset: 0;
     animation: danceDash 1.25s linear;
-    fill: none;
     stroke: #0b82b6;
-    stroke-width: 8px;
-    stroke-miterlimit: 1;
 }
