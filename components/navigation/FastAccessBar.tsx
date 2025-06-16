@@ -15,13 +15,13 @@ export function FastAccessBar() {
             key={shop.name}
             target="_blank"
             href={shop.url}
-            className="flex items-center px-2 gap-1.5 hover:bg-svw-blue-dark"
+            className="flex items-center px-4 gap-1.5 hover:bg-svw-blue-dark"
           >
             <FaShoppingCart />
             <span>{shop.name}</span>
           </Link>
         ))}
-        <Link href="/verein/mitglied-werden" className="flex items-center px-2 gap-1.5 hover:bg-svw-blue-dark">
+        <Link href="/verein/mitglied-werden" className="flex items-center px-4 gap-1.5 hover:bg-svw-blue-dark">
           <FaFileSignature />
           <span>Mitglied werden</span>
         </Link>

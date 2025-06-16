@@ -15,19 +15,20 @@ export function MainBar() {
             width={128}
             height={128}
             alt={club.name}
-            className="transition-all hidden md:block"
+            className="transition-all hidden md:block bg-white rounded-full shadow-xl"
           />
           <Image
             src={club.emblem}
             width={80}
             height={80}
             alt={club.name}
-            className="transition-all md:hidden translate-y-3"
+            className="transition-all md:hidden translate-y-3 bg-white rounded-full shadow-xl"
           />
         </Link>
         <LargeScreenNavigation />
-        <span className="transition-all md:hidden px-4 text-center">{club.name}</span>
+        <span className="transition-all md:hidden p-4 text-center sm:text-lg">{club.name}</span>
         <SmallScreenNavigation />
+        <div className="hidden md:block w-32" />
       </div>
     </div>
   );
