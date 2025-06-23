@@ -28,7 +28,7 @@ export function Carousel({ children }: PropsWithChildren) {
       <div className="relative w-full overflow-hidden">
         <div className="flex gap-4 overflow-x-scroll no-scrollbar snap-x snap-mandatory" ref={carouselRef}>
           {Children.map(children, (child) => (
-            <div className="flex-none w-32 @xl:w-48 snap-start">{child}</div>
+            <div className="flex-none w-32 snap-start">{child}</div>
           ))}
         </div>
       </div>

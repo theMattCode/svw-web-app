@@ -1,27 +1,29 @@
-#Icon {
+.ActivityIcon {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
     fill: none;
     stroke: #000;
     stroke-width: 8px;
     stroke-linecap: square;
+    stroke-linejoin: round;
     stroke-miterlimit: 1;
-    stroke-dasharray: 300;
+    stroke-dasharray: 580;
     stroke-dashoffset: 0;
 }
 
-@keyframes danceDash {
+@keyframes dash {
     from {
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 580;
     }
     to {
         stroke-dashoffset: 0;
     }
 }
 
-#DanceIcon > g > path {
-    animation: danceDash 1.25s linear;
+path {
+    animation: dash 2s linear;
 }
 
-#DanceSkirt {
-    animation: danceDash 1.25s linear;
+.Accent {
     stroke: #0b82b6;
 }

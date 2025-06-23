@@ -157,6 +157,19 @@ export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };
 
 export const sitemap: MenuItem[] = [aktuelles, verein, sparten];
 
+export const activities: MenuItem[] = [
+  badminton,
+  fussball,
+  yoga,
+  powerFitness,
+  gymnastik65plus,
+  teenDance,
+  fitUndGesund,
+  rehasport,
+  hobbyHorsing,
+  steelDarts,
+];
+
 export function findItemByName(menuItem: MenuItem, name: string): MenuItem | undefined {
   return menuItem.subMenu?.find((item) => item.name === name);
 }
