@@ -1,4 +1,4 @@
-import { Hero } from "#/components/hero/hero";
+import { Hero } from "#/components/web/hero/Hero";
 import { AnnouncementsBlock } from "#/components/announcements/AnnouncementsBlock";
 import { JSX } from "react";
 import { EventSection } from "#/components/web/events/EventSection";

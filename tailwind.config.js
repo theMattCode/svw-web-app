@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        hero: "url('/media/hero/bg.jpg')",
+        hero: "url('/media/hero/bg.jpg') ",
         "hero-rehasport": "url('/media/hero/rehasport-hero-2024-01-29.jpg')",
         "soccer-match-bg": "url('/media/res/matchbg.png')",
       },
