@@ -42,7 +42,7 @@ export default function Powerfitness() {
           </div>
           <div className="flex flex-col gap-2">
             <h4>Trainingszeiten</h4>
-            <p>Montags 18:30 - 19:30 und 19:30 - 20:30 Uhr im Gymnastikraum der Ballspielhalle</p>
+            <p>Montags 19:00 - 20:00 Uhr im Gymnastikraum der Ballspielhalle</p>
             <Image
               src="/media/sparten/fitness-und-gesundheitssport/powerfitness-2024.jpg"
               alt="Powerfitness Gruppe"
