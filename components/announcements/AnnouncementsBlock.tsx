@@ -17,9 +17,11 @@ export function AnnouncementsBlock() {
   }
 
   return (
-    <div className={`flex flex-col px-4 pt-4 bg-svw-blue-lighter/75`}>
-      <SectionTitle title="Ankündigungen" />
-      <Announcements announcements={announcements} />
+    <div className="bg-svw-blue-lighter/75">
+      <div className="container flex flex-col gap-4">
+        <SectionTitle title="Ankündigungen" />
+        <Announcements announcements={announcements} />
+      </div>
     </div>
   );
 }
