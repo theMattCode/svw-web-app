@@ -82,7 +82,7 @@ export const powerFitness: MenuItem = {
   url: "/fitness-und-gesundheitssport/powerfitness",
 };
 export const gymnastik65plus: MenuItem = {
-  name: "Gymnastik 65plus",
+  name: "Gymnastik 65+",
   url: "/fitness-und-gesundheitssport/gymnastik-65plus",
 };
 export const teenDance: MenuItem = { name: "Teen Dance", url: "/fitness-und-gesundheitssport/teen-dance" };
@@ -93,6 +93,7 @@ export const fitUndGesund: MenuItem = {
 export const hobbyHorsing: MenuItem = {
   name: "HobbyHorsing",
   url: "/fitness-und-gesundheitssport/hobbyhorsing",
+  new: true,
 };
 export const steelDarts: MenuItem = {
   name: "Steel Darts",
@@ -155,7 +156,7 @@ export const sparten: MenuItem = {
 
 export const aktuelles: MenuItem = { name: "Aktuelles", url: "/aktuelles" };
 
-export const sitemap: MenuItem[] = [verein, sparten, aktuelles];
+export const sitemap: MenuItem[] = [aktuelles, verein, sparten];
 
 export const activities: MenuItem[] = [
   badminton,

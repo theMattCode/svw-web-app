@@ -12,7 +12,7 @@ export function LargeScreenNavigation() {
           <Link
             href={item.url}
             target={item.external ? "_blank" : "_self"}
-            className="flex gap-2 items-center h-full px-4 hover:bg-gray-100"
+            className="flex gap-2 items-center h-full px-8 hover:bg-gray-100 text-xl"
           >
             <div>{item.name}</div>
             {item.external && <HiOutlineExternalLink />}

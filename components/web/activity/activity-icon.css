@@ -1,0 +1,29 @@
+.ActivityIcon {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: #000;
+    stroke-width: 8px;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke-miterlimit: 1;
+    stroke-dasharray: 580;
+    stroke-dashoffset: 0;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 580;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+path {
+    animation: dash 2s linear;
+}
+
+.Accent {
+    stroke: #0b82b6;
+}

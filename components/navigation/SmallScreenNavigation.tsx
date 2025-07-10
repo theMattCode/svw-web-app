@@ -21,39 +21,42 @@ export function SmallScreenNavigation() {
         className="transition-all h-full aspect-square flex justify-center items-center"
         onClick={toggleOpenClose}
       >
-        {open && <FaX />}
-        {!open && <FaBars />}
+        {open ? <FaX /> : <FaBars />}
       </button>
       <div
         className={`${
-          open ? "flex flex-col" : "hidden h-0"
-        } transition-all w-full absolute right-0 top-12 p-2 pt-6 bg-svw-blue-dark text-white`}
+          open ? "" : "hidden"
+        } transition-all w-full absolute left-0 top-16 p-4 pt-6 bg-svw-blue-dark text-white overflow-y-auto h-[calc(100vh-4rem)]`}
       >
-        <ul className="transition-all w-full">
-          {sitemap.map((item) => (
-            <ListItem key={item.name} item={item} onClick={close} />
-          ))}
-        </ul>
-        <div className="pt-2 flex flex-wrap gap-2 justify-center">
-          {shops.map((shop) => (
+        <div className="relative flex flex-col text-lg">
+          <ul className="transition-all w-full">
+            {sitemap.map((item) => (
+              <ListItem key={item.name} item={item} onClick={close} />
+            ))}
+          </ul>
+          <div className="p-4 flex flex-wrap gap-4 justify-center">
             <Link
-              key={shop.name}
-              target="_blank"
-              href={shop.url}
-              className="flex items-center px-1.5 py-1 gap-1.5 hover:bg-svw-blue-darker whitespace-nowrap"
+              key={mitgliedWerden.name}
+              href={mitgliedWerden.url}
+              className="flex items-center px-4 py-2 gap-2 hover:bg-svw-blue-darker whitespace-nowrap"
             >
-              <FaShoppingCart />
-              <span>{shop.name}</span>
+              <FaFileSignature />
+              <span>{mitgliedWerden.name}</span>
             </Link>
-          ))}
-          <Link
-            key={mitgliedWerden.name}
-            href={mitgliedWerden.url}
-            className="flex items-center px-1.5 py-1 gap-1.5 hover:bg-svw-blue-darker whitespace-nowrap"
-          >
-            <FaFileSignature />
-            <span>{mitgliedWerden.name}</span>
-          </Link>
+          </div>
+          <div className="p-4 flex flex-wrap gap-4 justify-center">
+            {shops.map((shop) => (
+              <Link
+                key={shop.name}
+                target="_blank"
+                href={shop.url}
+                className="flex items-center px-4 py-2 gap-2 hover:bg-svw-blue-darker whitespace-nowrap"
+              >
+                <FaShoppingCart />
+                <span>{shop.name}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -65,15 +68,15 @@ function ListItem({ item, onClick }: { item: MenuItem; onClick: () => void }) {
   const toggleOpenClose = () => setOpen((open) => !open);
   return (
     <li>
-      <div className="h-8 flex">
-        <Link href={item.url} onClick={onClick} className="grow h-full flex items-center border-b border-white/25">
-          <span className="grow pl-2">{item.name}</span>
-          {item.new && <NewBadge />}
+      <div className="w-full py-2 flex flex-row gap-2 items-center border-b border-white/25">
+        <Link href={item.url} onClick={onClick} className="grow h-full flex items-center ">
+          <div className="grow flex flex-row gap-4 pl-1">{item.name}</div>
         </Link>
+        {item.new && <NewBadge />}
         {item.subMenu && (
           <button
             aria-label="Toggle Submenu"
-            className="h-full aspect-square flex justify-center items-center border-b border-white/25"
+            className="h-full aspect-square flex justify-center items-center"
             onClick={toggleOpenClose}
           >
             <FaChevronDown className={`transition-all ${open ? "rotate-90" : ""}`} />

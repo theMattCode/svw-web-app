@@ -1,4 +1,4 @@
-import { Hero } from "#/components/hero/hero";
+import { Hero } from "#/components/web/hero/Hero";
 import { AnnouncementsBlock } from "#/components/announcements/AnnouncementsBlock";
 import { JSX } from "react";
 import { EventSection } from "#/components/web/events/EventSection";
@@ -7,7 +7,7 @@ import { PageContent } from "#/components/web/page/PageContent";
 
 export default async function IndexPage(): Promise<JSX.Element | null> {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col @container">
       <Hero />
       <AnnouncementsBlock />
       <PageContent>
