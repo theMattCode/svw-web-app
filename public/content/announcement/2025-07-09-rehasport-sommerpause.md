@@ -10,7 +10,7 @@ image:
   height: 2967
   alt: Rehasport
 ---
-Vom 4. August bis zum 25. August 2025 macht der Rehasport beim SVW eine Sommerpause. Danach geht es auch während den Schulferien zu den gewohnten Zeiten weiter.
+Vom 4. August bis zum 15. August 2025 macht der Rehasport beim SVW eine Sommerpause. Danach geht es auch während den Schulferien zu den gewohnten Zeiten weiter.
 
 Euer Rehasport-Team
 
