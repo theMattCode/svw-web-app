@@ -55,8 +55,8 @@ export default function BJunioren() {
         <div>
           <h3>Saison 2025/26</h3>
           <p>
-            In Saison 2025/26 spielen und trainieren die Kicker der <b>Jahrgänge 2009 (U17) und 2010 (U16)</b> als
-            B-Junioren im Aufbaubereich der <Link href="/fussball/akademie">SV Walddorf Akademie</Link> mit
+            In Saison 2025/26 spielen und trainieren die Kicker der <b>Jahrgänge 2007 (U19) und 2008 (U18)</b> als
+            A-Junioren im Aufbaubereich der <Link href="/fussball/akademie">SV Walddorf Akademie</Link> mit
             koordinativen, technischen und positionsspezifischer Inhalten sowie grundtaktischer Ausbildung.
           </p>
         </div>
@@ -64,7 +64,6 @@ export default function BJunioren() {
           <div>
             <h3>Training</h3>
             <p>Dienstags, 18:00 - 19:30 Uhr in Walddorf</p>
-
             <p>Donnerstag, 18:15 - 19:45 Uhr in Walddorf</p>
           </div>
           <div>

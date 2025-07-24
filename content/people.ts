@@ -44,7 +44,7 @@ export const people: Person[] = [
   {
     firstname: "Björn",
     lastname: "Kittelmann",
-    tags: ["Vorstand Sport", "Trainer C-Junioren", "Trainer B-Junioren", "Vereinsschiedsrichter"],
+    tags: ["Vorstand Sport", "Trainer B-Junioren", "Trainer A-Junioren", "Vereinsschiedsrichter"],
     email: "bjoern.kittelmann@svwalddorf.de",
     phone: ["+49 1573 5646291"],
     image: {
@@ -194,15 +194,9 @@ export const people: Person[] = [
     image: { src: "/media/people/ronja-moedinger-2023.png", alt: "Ronja Mödinger", width: 772, height: 835 },
   },
   {
-    firstname: "Erol",
-    lastname: "Türkoglu",
-    tags: [],
-    image: { src: "/media/people/erol-tuerkoglu-2023.png", alt: "Erol Türkoglu", width: 582, height: 699 },
-  },
-  {
     firstname: "Benjamin",
     lastname: "Link",
-    tags: ["Ansprechpartner AH"],
+    tags: ["Ansprechpartner AH", "Trainer A-Junioren"],
     phone: ["+49 1520 3845156"],
     image: { src: "/media/people/benjamin-link-2022.png", width: 451, height: 468 },
   },
@@ -246,28 +240,28 @@ export const people: Person[] = [
   {
     firstname: "Steffen",
     lastname: "Kittelmann",
-    tags: [""],
+    tags: [],
     phone: ["+49 157 87995150"],
     image: { src: "/media/people/steffen-kittelmann-2023.png", alt: "Steffen Kittelmann", width: 870, height: 1024 },
   },
   {
     firstname: "Thomas",
     lastname: "Brülls",
-    tags: [""],
+    tags: [],
     phone: ["+49 151 70166622"],
     image: { src: "/media/people/thomas-bruells-2023.png", alt: "Thomas Brülls", width: 730, height: 927 },
   },
   {
     firstname: "Holger",
     lastname: "Schmid",
-    tags: ["Trainer B-Junioren"],
+    tags: ["Trainer B-Junioren", "Trainer A-Junioren"],
     phone: ["+49 151 58259846"],
     image: { src: "/media/people/holger-schmid-2023.png", alt: "Holger Schmid", width: 839, height: 1024 },
   },
   {
     firstname: "Finn",
     lastname: "Kittelmann",
-    tags: ["Trainer B-Junioren", "Vereinsschiedsrichter"],
+    tags: ["Trainer B-Junioren", "Trainer A-Junioren", "Vereinsschiedsrichter"],
     image: {
       src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1731583072/finn-kittelmann-2023_aq55tv.png",
       alt: "Finn Kittelmann",
@@ -278,19 +272,19 @@ export const people: Person[] = [
   {
     firstname: "Uwe",
     lastname: "Laux",
-    tags: [""],
+    tags: [],
     image: { src: "/media/people/uwe-laux-2023.png", alt: "Uwe Laux", width: 839, height: 1024 },
   },
   {
     firstname: "Robin",
     lastname: "Schraitle",
-    tags: [""],
+    tags: [],
     image: { src: "/media/people/robin-schraitle-2020.png", alt: "Robin Schraitle", width: 557, height: 692 },
   },
   {
     firstname: "Stefan",
     lastname: "Bader",
-    tags: ["Trainer D-Junioren"],
+    tags: ["Ausrüstungskoordinator"],
     phone: ["+49 170 7740115"],
     image: { src: "/media/people/stefan-bader-2024.png", width: 1000, height: 1000 },
   },
@@ -330,7 +324,7 @@ export const people: Person[] = [
   {
     firstname: "Serkan",
     lastname: "Borhan",
-    tags: ["Trainer Bambini"],
+    tags: ["Trainer F-Junioren"],
     image: { src: "/media/people/serkan-borhan-2024.png", width: 180, height: 181 },
   },
   {
@@ -342,7 +336,7 @@ export const people: Person[] = [
   {
     firstname: "Daniel",
     lastname: "Thomas",
-    tags: ["Trainer E-Junioren"],
+    tags: [],
     phone: ["+49 175 7015441"],
     image: { src: "/media/people/daniel-thomas-2024.png", width: 1000, height: 1000 },
   },
@@ -356,25 +350,25 @@ export const people: Person[] = [
   {
     firstname: "Sabawun",
     lastname: "Khostwal",
-    tags: [""],
+    tags: [],
     image: { src: "/media/people/sabawun-khostwal-2023.png", alt: "Sabawun Khostwal", width: 704, height: 935 },
   },
   {
     firstname: "Yann",
     lastname: "Thomas",
-    tags: [""],
+    tags: [],
     image: { src: "/media/people/yann-thomas-2023.png", alt: "Yann Thomas", width: 670, height: 885 },
   },
   {
     firstname: "Timo",
     lastname: "Thomas",
-    tags: [""],
+    tags: [],
     image: { src: "/media/people/timo-thomas-2023.png", alt: "Timo Thomas", width: 620, height: 870 },
   },
   {
     firstname: "Yener",
     lastname: "Selcuk",
-    tags: ["Betreuer D-Junioren"],
+    tags: [],
     image: { src: "/media/people/yener-selcuk-2024.png", width: 1000, height: 1000 },
   },
   {
@@ -405,7 +399,7 @@ export const people: Person[] = [
   {
     firstname: "Matthäus",
     lastname: "Mayer",
-    tags: ["Vorstand Kommunikation", "Trainer F-Junioren"],
+    tags: ["Vorstand Kommunikation", "Trainer E-Junioren"],
     phone: ["+49 176 66332295"],
     email: "matthaeus.mayer@svwalddorf.de",
     image: {
@@ -417,7 +411,7 @@ export const people: Person[] = [
   {
     firstname: "Hannes",
     lastname: "Kopp",
-    tags: ["Trainer F-Junioren"],
+    tags: ["Trainer E-Junioren"],
     image: { src: "/media/people/hannes-kopp-2024.png", width: 1000, height: 1000 },
   },
   {
@@ -451,7 +445,7 @@ export const people: Person[] = [
   {
     firstname: "Pietro",
     lastname: "D'Angelo",
-    tags: ["Trainer Bambini"],
+    tags: [],
     image: { src: "/media/people/pietro-dangelo-2023.png", alt: "Pietro D'Angelo", width: 217, height: 253 },
   },
   {
@@ -463,24 +457,24 @@ export const people: Person[] = [
   {
     firstname: "Daniel",
     lastname: "Sax",
-    tags: ["Trainer Bambini"],
+    tags: ["Betreuer F-Junioren"],
     image: { src: "/media/people/daniel-sax-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Marcel",
     lastname: "Ostermann",
-    tags: ["Trainer E-Junioren"],
+    tags: [],
     image: { src: "/media/people/marcel-ostermann-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Sascha",
     lastname: "Flaig",
-    tags: ["Trainer Bambini"],
+    tags: ["Trainer F-Junioren"],
   },
   {
     firstname: "Tobias",
     lastname: "Bayha",
-    tags: [""],
+    tags: [],
   },
   {
     firstname: "Lukas",
@@ -573,7 +567,7 @@ export const people: Person[] = [
   {
     firstname: "Benedikt",
     lastname: "Dehner",
-    tags: ["Vereinsschiedsrichter", "C-Junioren"],
+    tags: ["Vereinsschiedsrichter", "B-Junioren"],
     image: {
       src: "https://res.cloudinary.com/svwalddorf/image/upload/v1744903056/Benedikt_Dehner_f0vnzt.png",
       width: 199,
@@ -593,7 +587,7 @@ export const people: Person[] = [
   {
     firstname: "Mark-Christian",
     lastname: "Dehner",
-    tags: ["Vorstand Ehrenamt"],
+    tags: ["Vorstand Ehrenamt", "Betreuer B-Junioren", "Betreuer A-Junioren"],
     phone: ["+49 172 7196906"],
     image: {
       src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1744902145/Mark-Christian_Dehner_odcyty.png",

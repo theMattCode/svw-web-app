@@ -107,6 +107,7 @@ export const fitnessUndGesundheitssport: MenuItem = {
 };
 
 export const fussballAktive = { name: "Aktive", url: "/fussball/aktive" };
+export const fussballA = { name: "A-Junioren", url: "/fussball/a-junioren" };
 export const fussballB = { name: "B-Junioren", url: "/fussball/b-junioren" };
 export const fussballC = { name: "C-Junioren", url: "/fussball/c-junioren" };
 export const fussballD = { name: "D-Junioren", url: "/fussball/d-junioren" };
@@ -123,6 +124,7 @@ export const fussball = {
   url: "/fussball",
   subMenu: [
     fussballAktive,
+    fussballA,
     fussballB,
     fussballC,
     fussballD,
