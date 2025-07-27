@@ -6,7 +6,7 @@ import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PageContent } from "#/components/web/page/PageContent";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { ArticleSection } from "#/components/web/articles/ArticleSection";
 import { PlayerRow } from "#/app/(web)/fussball/aktive/page";
@@ -45,7 +45,7 @@ export default function BJunioren() {
           players="Tim Keller, Maxi Wörn, Linus Schmidt, Adonis Giannakoglu, Dennis Hess, Jonathan Troost, Chinar Kyose"
         />
         <SectionTitle title="Trainer und Betreuer" />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <PersonCard person={getPersonByName("Finn Kittelmann")} />
           <PersonCard person={getPersonByName("Björn Kittelmann")} />
           <PersonCard person={getPersonByName("Benjamin Link")} />

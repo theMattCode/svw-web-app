@@ -23,7 +23,7 @@ export function CardTitle({ children }: { children: string }) {
 }
 
 export function CardContent({ children }: PropsWithChildren<{ icon?: IconType }>) {
-  return <div className="w-full px-4 flex flex-col grow gap-2 @5xl:flex-auto">{children}</div>;
+  return <div className="w-full px-4 flex flex-col grow gap-2 @5xl:flex-auto min-w-48">{children}</div>;
 }
 
 export function CardFooter({ children }: PropsWithChildren<{}>) {

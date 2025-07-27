@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PageContent } from "#/components/web/page/PageContent";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { teenDance } from "#/content/sitemap";
 import { getTitle } from "#/lib/page";

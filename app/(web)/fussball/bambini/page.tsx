@@ -6,7 +6,7 @@ import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PageContent } from "#/components/web/page/PageContent";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { ArticleSection } from "#/components/web/articles/ArticleSection";
 import { PlayerRow } from "#/app/(web)/fussball/aktive/page";
@@ -44,7 +44,7 @@ export default function Bambini() {
           players="Chrysostomos Kouranos, Josia Meyer, Matteo Klemm, Samuel Siedler, Manuel Liepe (Trainer), Volker Siedler (Trainer)"
         />
         <SectionTitle title="Trainer und Betreuer" />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <PersonCard person={getPersonByName("Tao Qin")} />
           <PersonCard person={getPersonByName("Dirk Brucklacher")} />
           <PersonCard person={getPersonByName("Hendrik Renninger")} />
@@ -53,7 +53,7 @@ export default function Bambini() {
           <PersonCard person={getPersonByName("Volker Siedler")} />
         </div>
         <div>
-          <h3>Saison 2025/26</h3>
+          <SectionTitle title="Saison 2025/26" />
           <p>
             In Saison 2024/25 spielen und trainieren die Kinder der <b>Jahrgänge 2019 und 2020</b> in der U7 im
             Grundlagenbereich der <Link href="/fussball/akademie">SV Walddorf Akademie</Link>. Mit koordinativen und

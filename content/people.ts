@@ -102,8 +102,7 @@ export const people: Person[] = [
   {
     firstname: "Antonino",
     lastname: "Bonfiglio",
-    tags: ["Turnierorganisation", "Trainer E-Junioren"],
-    email: "turniere@svwalddorf.de",
+    tags: ["Trainer E-Junioren"],
     phone: ["+49 162 9471662"],
     image: { src: "/media/people/antonino-bonfiglio-2024.png", width: 1000, height: 1000 },
   },
@@ -318,14 +317,18 @@ export const people: Person[] = [
   {
     firstname: "Giovanni",
     lastname: "Cimmino",
-    tags: ["Trainer D-Junioren", "Trainer Bambini"],
+    tags: ["Trainer C-Junioren", "Trainer F-Junioren"],
     image: { src: "/media/people/giovanni-cimmino-2024.png", width: 1000, height: 1000 },
   },
   {
     firstname: "Serkan",
     lastname: "Borhan",
     tags: ["Trainer F-Junioren"],
-    image: { src: "/media/people/serkan-borhan-2024.png", width: 180, height: 181 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753471740/Serkan_Borhan_2025_uforut.png",
+      width: 800,
+      height: 1000,
+    },
   },
   {
     firstname: "Branco",
@@ -375,7 +378,11 @@ export const people: Person[] = [
     firstname: "Tobias",
     lastname: "Rösch",
     tags: ["Trainer D-Junioren"],
-    image: { src: "/media/people/tobias-roesch-2024.png", width: 1000, height: 1000 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753643755/Tobias_R%C3%B6sch_2025_qryyvq.png",
+      width: 400,
+      height: 500,
+    },
   },
   {
     firstname: "Mike",
@@ -418,23 +425,41 @@ export const people: Person[] = [
     firstname: "Michael",
     lastname: "Opalla",
     tags: ["Trainer F-Junioren"],
-    image: { src: "/media/people/michael-opalla-2024.png", width: 1000, height: 1000 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753642123/Michael_Opalla_2025_uvqmxq.png",
+      width: 400,
+      height: 500,
+    },
   },
   {
     firstname: "Vincenzo",
     lastname: "Bonfiglio",
     tags: ["Trainer E-Junioren"],
-    image: { src: "/media/people/vincenzo-bonfiglio-2024.png", width: 1000, height: 1000 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753643268/Vincenzo_Bonfiglio_2025_tmeloi.png",
+      width: 400,
+      height: 500,
+    },
   },
   {
-    firstname: "Michael",
-    lastname: "Opalla",
-    tags: ["Trainer F-Junioren"],
+    firstname: "Erdem",
+    lastname: "Cakir",
+    tags: ["Trainer E-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753643471/Erdem_Cakir_2025_yfjmyc.png",
+      width: 400,
+      height: 500,
+    },
   },
   {
     firstname: "Markus",
     lastname: "Holmgren",
-    tags: ["Torspieler-Trainer F-Junioren"],
+    tags: ["Trainer F-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753642122/Markus_Holmgren_2025_nrqhce.png",
+      width: 400,
+      height: 500,
+    },
   },
   {
     firstname: "Moritz",
@@ -445,7 +470,7 @@ export const people: Person[] = [
   {
     firstname: "Pietro",
     lastname: "D'Angelo",
-    tags: [],
+    tags:[],
     image: { src: "/media/people/pietro-dangelo-2023.png", alt: "Pietro D'Angelo", width: 217, height: 253 },
   },
   {
@@ -461,20 +486,39 @@ export const people: Person[] = [
     image: { src: "/media/people/daniel-sax-2024.png", width: 1000, height: 1000 },
   },
   {
-    firstname: "Marcel",
-    lastname: "Ostermann",
-    tags: [],
-    image: { src: "/media/people/marcel-ostermann-2024.png", width: 1000, height: 1000 },
-  },
-  {
     firstname: "Sascha",
     lastname: "Flaig",
     tags: ["Trainer F-Junioren"],
   },
   {
+    firstname: "Marc",
+    lastname: "Schneider",
+    tags: ["Trainer F-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753642901/Marc_Schneider_2025_zviu8j.png",
+      width: 400,
+      height: 500,
+    },
+  },
+  {
     firstname: "Tobias",
-    lastname: "Bayha",
-    tags: [],
+    lastname: "Klees",
+    tags: ["Trainer D-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753644219/Tobias_Klees_2025_qf9gkb.png",
+      width: 400,
+      height: 500,
+    },
+  },
+  {
+    firstname: "Björn",
+    lastname: "Schmidt",
+    tags: ["Trainer D-Junioren"],
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753644528/Bj%C3%B6rn_Schmidt_2025_bslhhk.png",
+      width: 400,
+      height: 500,
+    },
   },
   {
     firstname: "Lukas",
@@ -593,6 +637,50 @@ export const people: Person[] = [
       src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1744902145/Mark-Christian_Dehner_odcyty.png",
       width: 401,
       height: 534,
+    },
+  },
+  {
+    firstname: "Tao",
+    lastname: "Qin",
+    tags: ["Trainer Bambini"],
+    email: "bambini@svwalddorf.de",
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753467496/Tao_Qin_2025_pxb3gx.png",
+      width: 800,
+      height: 1000,
+    },
+  },
+  {
+    firstname: "Dirk",
+    lastname: "Brucklacher",
+    tags: ["Trainer Bambini"],
+    email: "bambini@svwalddorf.de",
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753470600/Dirk_Brucklacher_2025_oe1z35.png",
+      width: 400,
+      height: 500,
+    },
+  },
+  {
+    firstname: "Hendrik",
+    lastname: "Renninger",
+    tags: ["Trainer Bambini"],
+    email: "bambini@svwalddorf.de",
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753470765/Hendrik_Renninger_2025_iqss9i.png",
+      width: 400,
+      height: 500,
+    },
+  },
+  {
+    firstname: "Jasmin",
+    lastname: "Echteler",
+    tags: ["Trainerin Bambini"],
+    email: "bambini@svwalddorf.de",
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1753471252/Jasmin_Echteler_2025_sooeno.png",
+      width: 500,
+      height: 625,
     },
   },
 ];

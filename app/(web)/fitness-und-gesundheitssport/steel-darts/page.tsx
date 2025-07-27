@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PageContent } from "#/components/web/page/PageContent";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { steelDarts } from "#/content/sitemap";
 import { ArticleSection } from "#/components/web/articles/ArticleSection";

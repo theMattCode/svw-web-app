@@ -1,6 +1,6 @@
 import React from "react";
 import { getPersonByTag, getPersonName } from "#/content/people";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
 import { PageContent } from "#/components/web/page/PageContent";
 import { Metadata } from "next";
