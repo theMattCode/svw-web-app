@@ -45,7 +45,7 @@ export default function BJunioren() {
           players="Tim Keller, Maxi Wörn, Linus Schmidt, Adonis Giannakoglu, Dennis Hess, Jonathan Troost, Chinar Kyose"
         />
         <SectionTitle title="Trainer und Betreuer" />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <PersonCard person={getPersonByName("Finn Kittelmann")} />
           <PersonCard person={getPersonByName("Björn Kittelmann")} />
           <PersonCard person={getPersonByName("Benjamin Link")} />
@@ -55,8 +55,8 @@ export default function BJunioren() {
         <div>
           <h3>Saison 2025/26</h3>
           <p>
-            In Saison 2025/26 spielen und trainieren die Kicker der <b>Jahrgänge 2009 (U17) und 2010 (U16)</b> als
-            B-Junioren im Aufbaubereich der <Link href="/fussball/akademie">SV Walddorf Akademie</Link> mit
+            In Saison 2025/26 spielen und trainieren die Kicker der <b>Jahrgänge 2007 (U19) und 2008 (U18)</b> als
+            A-Junioren im Aufbaubereich der <Link href="/fussball/akademie">SV Walddorf Akademie</Link> mit
             koordinativen, technischen und positionsspezifischer Inhalten sowie grundtaktischer Ausbildung.
           </p>
         </div>
@@ -64,7 +64,6 @@ export default function BJunioren() {
           <div>
             <h3>Training</h3>
             <p>Dienstags, 18:00 - 19:30 Uhr in Walddorf</p>
-
             <p>Donnerstag, 18:15 - 19:45 Uhr in Walddorf</p>
           </div>
           <div>

@@ -6,7 +6,7 @@ import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { PageContent } from "#/components/web/page/PageContent";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName, Person } from "#/content/people";
 import { NextFussballDeIframeWidget } from "#/components/widget/NextFussballDeWidget";
 import { ArticleSection } from "#/components/web/articles/ArticleSection";
@@ -15,59 +15,52 @@ export const metadata: Metadata = {
   title: getTitle("Aktive"),
 };
 
-export default function Aktive() {
-  const { width, height } = calcImageDimensionsForWidth({ width: 4096, height: 2726 }, 1200);
+export function PlayerRow({ rowTitle, players }: { rowTitle: string; players: string }) {
   return (
-    <PageContent>
-      <SectionTitle title="Die Mannschaft" />
-      <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
-        <Image
-          src="/media/sparten/fussball/aktive-team-2024-25.jpg"
-          alt="Mannschaftsfoto Aktive 2024/25"
-          width={width}
-          height={height}
-          className="w-full"
+    <div className="font-light flex flex-col md:flex-row gap-2">
+      <b className="whitespace-nowrap">{rowTitle}:</b>
+      <p>{players}</p>
+    </div>
+  );
+}
+
+export default function Aktive() {
+  return (
+    <div className="bg-neutral-200">
+      <Image
+        src="https://res.cloudinary.com/svwalddorf/image/upload/v1752432425/2025-26_Mannschaftsfoto_Aktive_tmvjmv.jpg"
+        alt="Mannschaftsfoto Aktive 2025/26"
+        width={1920}
+        height={1080}
+        className="w-full"
+      />
+      <div className="container flex flex-col gap-4 p-4">
+        <SectionTitle title="Die Mannschaft" />
+        <PlayerRow
+          rowTitle="Reihe 3 (v.l.n.r.)"
+          players="Erik Matthäi, Lukas Bux, Maurice Heim, Sabawun Khostwal, Carlo Schmid, Laurin Walker, Florian Komenda, Jack
+            Rein, Jarne Roth, Nico Hunsicker, Thomas Ammon, Jan Becker, Maik Straub"
         />
-        <div className="font-light flex">
-          <b className="whitespace-nowrap">Reihe 4 (v.l.n.r.):</b>
-          <p className="px-2">
-            Tom Schwaibold, Jannik Jung, Stefan Tilgner, Robin Schraitle, Jarne Roth, Nico Hunsiker, Sabawun Khostwal
-          </p>
-        </div>
-        <div className="font-light flex">
-          <b className="whitespace-nowrap">Reihe 3 (v.l.n.r.):</b>
-          <p className="px-2">
-            Dennis Hermann, Florian Komenda, Luis Langeneck, Maik Straub, Niko Baur, Jan Becker, Thomas Ammon, Erik
-            Matthäi
-          </p>
-        </div>
-        <div className="font-light flex">
-          <b className="whitespace-nowrap">Reihe 2 (v.l.n.r.):</b>
-          <p className="px-2">
-            Marco Speier, Moritz Schwaibold (Kapitän 1.Mannschaft), Maurice Heim (Co-Trainer Erste), Sven Pichler
-            (Cheftrainer Erste), Björn Kittelmann (Vorstand Sport), Julian Wohlfarth (Sportlicher Leiter / Co-Trainer
-            Zweite), Fabian Schramm (Cheftrainer Zweite), Achim Wohlfarth (Betreuer), Paul Röhrich, Simon Vetter
-            (Kapitän 2. Mannschaft)
-          </p>
-        </div>
-        <div className="font-light flex">
-          <b className="whitespace-nowrap ">Reihe 1 (v.l.n.r.):</b>
-          <p className="px-2">
-            Luca Schmid, Danylo Gromovenko, Alexander Peguero Castillo, Timo Thomas, Jannik Schülzle, Maximilian
-            Schindler, Marcus Belschner, Jan Roller
-          </p>
-        </div>
-        <div className="font-light flex">
-          <b className="whitespace-nowrap ">Es fehlen:</b>
-          <p className="px-2">
-            Patrick Aberle, Marcus Becker, Daniel Burkhardt, Lukas Bux, Philipp Cus, Dennis Dieter, Fabian Gaiser, Max
-            Glässer, Alexander, Alexander Greineck, Florian Gschwind, Carlos Haselhoff, Luca Häfner, Simon Heim, Lukas
-            Hermann, Marco Knoblauch, Patrick Mayer, Kai Petruv, Jonas Retter, Fabian Rößler, Alexander Scharr, Carlo
-            Schmid, David Schnitzler, Max Schraitle, Micha Schuler, Nicolas Stadelmaier, Giuseppe Vitale (Videoanalyst),
-            Lorenzo Vitale, Luis Walker
-          </p>
-        </div>
-        <h3>Trainer und Betreuer</h3>
+        <PlayerRow
+          rowTitle="Reihe 2 (v.l.n.r.)"
+          players="Phillip Cus, Maximilian Schindler, Alexander Weber, Mannschaftskapitän 1. Mannschaft Luis Langeneck,
+            Cheftrainer 1. Mannschaft Sven Pichler, Videoanalyst Giuseppe Vitale, Sportvorstand Björn Kittelmann,
+            Co-Trainer 2. Mannschaft Julian Wohlfarth, Cheftrainer 2. Mannschaft Fabian Schramm, Mannschaftskapitän 2.
+            Mannschaft Simon Vetter, Niko Baur, Danylo Gromovenko, Marcus Belschner"
+        />
+        <PlayerRow
+          rowTitle="Reihe 1 (v.l.n.r.)"
+          players="Florian Gschwind, Kai Petruv, Kai Ringwald, Tobias Fischer, Fabian Dillmann, Timo Thomas, Jannick Schülzle,
+            Kevin Borek, Lucas Jakob, Louis Labenski, Luca Häfner, Luca Schmid"
+        />
+        <PlayerRow
+          rowTitle="Es fehlen"
+          players="Luis Armbruster, Lirim Armbruster, Marc Bezner, Dennis Dieter, Hakan Durmus, Fabian Gaiser, Dennis Hermann,
+            Lukas Hermann, Simon heim, Jannik Jung, Marco Knoblauch, Shkelqim Krasniqi Patrick Mayer, Sven Riefler, Paul
+            Röhrich, Jan Roller, Max Schraitle, Robin Schraitle, Micha Schuler, Moritz Schwaibold, Kiu Senner, Marco
+            Speier, Nicolas Stadelmaier, Stefan Tilgner"
+        />
+        <SectionTitle title="Trainer und Betreuer" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <PersonCard person={getPersonByName("Sven Pichler")} />
           <PersonCard person={getPersonByName("Maurice Heim")} />
@@ -82,32 +75,36 @@ export default function Aktive() {
               } as Person
             }
           />
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div>
-            <h3>Training</h3>
-            <p>Dienstag und Donnerstag, 19:30 - 21:00 Uhr auf dem Kunstrasenplatz</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <h3>Training</h3>
+              <p>Dienstag, 19:30 - 21:00 Uhr</p>
+              <p>Donnerstag, 19:30 - 21:00 Uhr</p>
+              <p>Freitag, 19:30 - 21:00 Uhr</p>
+            </div>
+            <div>
+              <h3>Kontakt</h3>
+              <p>
+                <Link href="mailto:erstemannschaft@svwalddorf.de">erstemannschaft@svwalddorf.de</Link>
+              </p>
+              <p>
+                <Link href="mailto:zweitemannschaft@svwalddorf.de">zweitemannschaft@svwalddorf.de</Link>
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Kontakt</h3>
-            <p>
-              <Link href="mailto:erstemannschaft@svwalddorf.de">erstemannschaft@svwalddorf.de</Link>
-            </p>
-            <p>
-              <Link href="mailto:zweitemannschaft@svwalddorf.de">zweitemannschaft@svwalddorf.de</Link>
-            </p>
-          </div>
         </div>
+        <ArticleSection tags={["Aktive I", "Aktive II"]} />
+        {/*
+        <SectionTitle title="Tabelle Aktive I" />
+        <NextFussballDeIframeWidget widgetId="fd5c08aa-dbe8-4bea-b8d1-79d912931414" type="table" />
+        <SectionTitle title="Spielplan Aktive I" />
+        <NextFussballDeIframeWidget widgetId="dbb0c0cc-0c93-40c4-9de5-36f04cd4b788" type="team-matches" />
+        <SectionTitle title="Tabelle Aktive II" />
+        <NextFussballDeIframeWidget widgetId="c3ec19ee-9d12-4ea7-86c9-a4c3bcad753f" type="table" />
+        <SectionTitle title="Spielplan Aktive II" />
+        <NextFussballDeIframeWidget widgetId="fb7e552b-3689-4d55-a603-3120d5afa6e6" type="team-matches" />
+        */}
       </div>
-      <ArticleSection tags={["Aktive I", "Aktive II"]} />
-      <SectionTitle title="Tabelle Aktive I" />
-      <NextFussballDeIframeWidget widgetId="fd5c08aa-dbe8-4bea-b8d1-79d912931414" type="table" />
-      <SectionTitle title="Spielplan Aktive I" />
-      <NextFussballDeIframeWidget widgetId="dbb0c0cc-0c93-40c4-9de5-36f04cd4b788" type="team-matches" />
-      <SectionTitle title="Tabelle Aktive II" />
-      <NextFussballDeIframeWidget widgetId="c3ec19ee-9d12-4ea7-86c9-a4c3bcad753f" type="table" />
-      <SectionTitle title="Spielplan Aktive II" />
-      <NextFussballDeIframeWidget widgetId="fb7e552b-3689-4d55-a603-3120d5afa6e6" type="team-matches" />
-    </PageContent>
+    </div>
   );
 }

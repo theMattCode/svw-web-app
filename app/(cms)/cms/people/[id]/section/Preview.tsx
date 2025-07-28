@@ -1,5 +1,5 @@
 import { PersonWithRoles } from "#/lib/types/people";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { Person } from "#/content/people";
 
 export function Preview({ person }: { person: PersonWithRoles }) {

@@ -5,7 +5,7 @@ import { PageContent } from "#/components/web/page/PageContent";
 import { Metadata } from "next";
 import { getTitle } from "#/lib/page";
 import { jugendschutz } from "#/content/sitemap";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import Image from "next/image";
 import { calcImageDimensionsForHeight } from "#/lib/image";
 import Link from "next/link";

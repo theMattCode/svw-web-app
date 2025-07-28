@@ -2,7 +2,7 @@ import React from "react";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
 import Link from "next/link";
 import { PageContent } from "#/components/web/page/PageContent";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName, getPersonByTag } from "#/content/people";
 import { ansprechpartner } from "#/content/sitemap";
 import { Metadata } from "next";

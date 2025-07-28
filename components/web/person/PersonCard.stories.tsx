@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { getPersonByTag } from "#/content/people";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 
 const meta: Meta<typeof PersonCard> = {
   title: "Components/People",

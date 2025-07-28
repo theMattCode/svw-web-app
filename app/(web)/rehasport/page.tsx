@@ -5,7 +5,7 @@ import Image from "next/image";
 import { getTitle } from "#/lib/page";
 import { calcImageDimensionsForWidth } from "#/lib/image";
 import { SectionTitle } from "#/components/web/section/SectionTitle";
-import { PersonCard } from "#/components/person/PersonCard";
+import { PersonCard } from "#/components/web/person/PersonCard";
 import { getPersonByName } from "#/content/people";
 import { rehasport } from "#/content/sitemap";
 import { ArticleSection } from "#/components/web/articles/ArticleSection";
