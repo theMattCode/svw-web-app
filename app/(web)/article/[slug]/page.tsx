@@ -3,8 +3,6 @@ import { getTitle, PageProps, Slug } from "#/lib/page";
 import { getAllArticleSlugs, getArticleBySlug } from "#/content/article";
 import { Metadata } from "next";
 import { club } from "#/content/club";
-import Image from "next/image";
-import { calcImageDimensionsForWidth } from "#/lib/image";
 
 const ARTICLE_DIRECTORY = "public/content/article";
 
@@ -46,13 +44,8 @@ export default async function Page(props: PageProps<Slug>) {
   const params = await props.params;
   const article = getArticleBySlug(params.slug, ARTICLE_DIRECTORY);
 
-  const { width, height } = article?.image ? calcImageDimensionsForWidth(article.image, 1528) : { width: 0, height: 0 };
-
   return (
-    <div className="flex flex-col items-center">
-      {article?.image && (
-        <Image src={article.image} alt={article.image.alt ?? article.title} width={width} height={height} />
-      )}
+    <div className="flex flex-col items-center bg-neutral-50">
       {article ? (
         <Article article={article} />
       ) : (

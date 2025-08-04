@@ -18,8 +18,12 @@ export function CardIcon({ icon: Icon }: { icon: IconType }) {
   return <Icon className="min-w-8 min-h-8 my-4 ml-4 text-svw-blue-default" />;
 }
 
+export function IconCardTitle({ children }: { children: string }) {
+  return <div className="py-2 text-xl font-bold">{children}</div>;
+}
+
 export function CardTitle({ children }: { children: string }) {
-  return <div className="py-2 text-xl font-medium text-svw-blue-default">{children}</div>;
+  return <div className="py-2 text-2xl font-bold italic">{children}</div>;
 }
 
 export function CardContent({ children }: PropsWithChildren<{ icon?: IconType }>) {

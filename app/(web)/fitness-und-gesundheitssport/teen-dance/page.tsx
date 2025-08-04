@@ -20,10 +20,6 @@ export default function TeenDance() {
   const monikaHaar = getPersonByName("Monika Haar");
   const ronjaMoedinger = getPersonByName("Ronja Mödinger");
 
-  const gruppe1Dimensions = calcImageDimensionsForWidth({ width: 6000, height: 4000 }, 768);
-  const gruppe2Dimensions = calcImageDimensionsForWidth({ width: 4507, height: 2873 }, 768);
-  const gruppe3Dimensions = calcImageDimensionsForWidth({ width: 4644, height: 3399 }, 768);
-
   return (
     <PageContent>
       <SectionTitle title={teenDance.name} />
@@ -56,10 +52,11 @@ export default function TeenDance() {
           <PersonCard person={claudiaMusse} />
         </div>
         <Image
-          src="/media/sparten/fitness-und-gesundheitssport/teendance-1.png"
+          src="https://res.cloudinary.com/svwalddorf/image/upload/v1754289796/2024-teendance-1_wdxfyh.jpg"
           alt="Coole Engel"
-          width={gruppe1Dimensions.width}
-          height={gruppe1Dimensions.height}
+          width={1440}
+          height={810}
+          unoptimized={true}
         />
       </div>
       <SectionTitle title="Gruppe „High Lights“" />
@@ -79,10 +76,11 @@ export default function TeenDance() {
           <PersonCard person={ronjaMoedinger} />
         </div>
         <Image
-          src="/media/sparten/fitness-und-gesundheitssport/teendance-2.png"
+          src="https://res.cloudinary.com/svwalddorf/image/upload/v1754289796/2024-teendance-2_wa7rsp.jpg"
           alt="High Lights"
-          width={gruppe2Dimensions.width}
-          height={gruppe2Dimensions.height}
+          width={1440}
+          height={810}
+          unoptimized={true}
         />
       </div>
       <SectionTitle title="Gruppe „Feathers“" />
@@ -95,10 +93,11 @@ export default function TeenDance() {
           <PersonCard person={ronjaMoedinger} />
         </div>
         <Image
-          src="/media/sparten/fitness-und-gesundheitssport/teendance-3.jpg"
+          src="https://res.cloudinary.com/svwalddorf/image/upload/v1754289796/2024-teendance-3_laqhro.jpg"
           alt="Feathers"
-          width={gruppe3Dimensions.width}
-          height={gruppe3Dimensions.height}
+          width={1440}
+          height={810}
+          unoptimized={true}
         />
       </div>
       <ArticleSection tags={["Teen Dance"]} />

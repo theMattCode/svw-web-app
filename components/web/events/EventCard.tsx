@@ -1,6 +1,6 @@
 import { Event } from "#/content/events";
 import { GrLocation } from "react-icons/gr";
-import { CardContent, CardIcon, CardTitle, IconCard } from "#/components/web/card/Card";
+import { CardContent, CardIcon, IconCard, IconCardTitle } from "#/components/web/card/Card";
 import { MdEvent } from "react-icons/md";
 import Link from "next/link"; // Assuming react-icons is available
 
@@ -58,7 +58,7 @@ export function EventCard({ event }: EventCardProps) {
     <IconCard title={event.title}>
       <CardIcon icon={MdEvent} />
       <CardContent>
-        <CardTitle>{event.title}</CardTitle>
+        <IconCardTitle>{event.title}</IconCardTitle>
         <p className="text-sm text-gray-600 mb-1">{formatEventDateTime(event.start, event.end, event.allDay)}</p>
         {event.place && (
           <div className="flex items-center text-sm text-gray-600 mb-2">

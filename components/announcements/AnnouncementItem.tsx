@@ -22,7 +22,7 @@ export function AnnouncementItem({ announcement }: Props) {
             height={imageDimensions.height}
           />
           <div className="flex flex-col gap-4 p-4">
-            <div className="font-medium text-xl">{announcement.title}</div>
+            <div className="text-2xl font-bold italic">{announcement.title}</div>
             <Markdown content={announcement.mdContent} />
           </div>
         </div>
