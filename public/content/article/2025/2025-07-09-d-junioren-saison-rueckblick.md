@@ -10,10 +10,8 @@ image:
 tags:
   - Fußball
   - D-Junioren
-teaser: "Das D-Junioren-Team von Schönbuch United feiert den Saisonabschluss und lässt die Saison Revue passieren."
+teaser: "Am vergangenen Samstag feierte die D-Jugend bei perfektem Wetter ihren Saisonabschluss. Die Trainer zeigten sich sehr zufrieden mit der Entwicklung der Mannschaften und Spieler und ließen die Spielzeit Revue passieren"
 ---
-Am vergangenen Samstag feierte die D-Jugend bei perfektem Wetter ihren Saisonabschluss. Die Trainer zeigten sich sehr zufrieden mit der Entwicklung der Mannschaften und Spieler und ließen die Spielzeit Revue passieren.
-
 Die D1 nahm trotz einiger Abgänge zu Beginn der Runde die große Herausforderung Bezirksstaffel an. In der äußerst stark besetzten Liga konnten die Jungs wertvolle Erfahrungen sammeln und sogar zwei Spiele gewinnen. Letztlich konnte der Abstieg aber nicht verhindert werden.
 
 In der Rückrunde spielte man dann in der Leistungsstaffel, die vom Niveau her deutlich besser zur Mannschaft passte. Durch ein hart erkämpftes 2:1 am letzten Spieltag gegen den TSV Lustnau wurde die Runde auf einem tollen vierten Platz, punktgleich mit den drittplatzierten Sondelfingern beenden.
