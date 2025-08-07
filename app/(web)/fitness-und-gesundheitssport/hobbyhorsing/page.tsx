@@ -54,23 +54,38 @@ export default function HobbyHorsing() {
             <p>
               <ul>
                 <li>
-                  Beginn: <b>4. April 2025</b>
+                  Beginn: <b>19. September 2025</b>
                 </li>
                 <li>
-                  Kursdauer: <b>13 Übungseinheiten</b>{" "}
+                  Ende: <b>24. Oktober 2025</b>
+                  <br />
                   <span className="text-sm">
                     (sollten Termine wegen Verhinderung des Übungsleiters oder aus anderen Umständen ausfallen, werden
                     diese am Ende angehängt)
                   </span>
                 </li>
                 <li>
-                  Immer <b>freitags, 16:00 – 18:00 Uhr</b>
+                  Sommer: Immer <b>freitags, 16:00 – 18:00 Uhr</b> in der Ballspielhalle.
+                </li>
+                <li>
+                  <p>
+                    Winter: Zwischen dem <b>07.11.2025 und 13.02.2025</b> im Spiegelraum der Ballspielhalle mit
+                    Aufteilung der Gruppe nach Können:
+                    <ul>
+                      <li>
+                        entweder von <b>15:00 Uhr - 16:30 Uhr</b>
+                      </li>
+                      <li>
+                        oder von <b>16:30 Uhr - 18:00 Uhr</b>
+                      </li>
+                      (12 Termine ohne Ferien und ohne den 19.12.2025)
+                    </ul>
+                  </p>
                 </li>
                 <li>
                   Kinder im Alter von <b>9 bis 15 Jahre</b>
                 </li>
-                <li>Kursgebühr: €18,- für Vereinsmitglieder, €65,- für Nichtmitglieder</li>
-                <li>Ort: Spiegelraum in der Ballspielhalle</li>
+                <li>Kursgebühr: €20,- für Vereinsmitglieder, €67,- für Nichtmitglieder</li>
               </ul>
             </p>
             <h4>Was ihr braucht</h4>
@@ -84,12 +99,12 @@ export default function HobbyHorsing() {
             </p>
             <h4>Anmeldung</h4>
             <p>
-              Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden. Anmeldeschluss ist der{" "}
-              <b>1. April 2025</b>.
+              Die Plätze sind begrenzt, daher empfehlen wir euch, euch rechtzeitig anzumelden. Anmeldeschluss ist der
+              <b>1. September 2025</b>.
             </p>
             <p>
               Bitte das&nbsp;
-              <Link href="/download/2025-03-06_Anmeldeformular_HobbyHorsing_Kurs_H-2025-1.pdf" target="_blank">
+              <Link href="/download/2025-08-07_Anmeldeformular_HobbyHorsing-Kurs_H-2025-2.pdf" target="_blank">
                 Anmeldeformular
               </Link>
               &nbsp;vollständig ausgef&uuml;llt und unterschrieben an&nbsp;
