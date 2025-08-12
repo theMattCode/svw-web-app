@@ -16,6 +16,15 @@ export const sponsors: Sponsor[] = [
     },
   },
   {
+    name: "Fürstenberg",
+    url: "https://www.paulaner-gruppe.de/",
+    image: {
+      url: "https://res.cloudinary.com/svwalddorf/image/upload/v1754975324/paulaner-2025_m2ehp6.jpg",
+      width: 800,
+      height: 450,
+    },
+  },
+  {
     name: "Digiwerk GmbH",
     url: "https://www.digiwerk.de/",
     image: {
