@@ -18,13 +18,13 @@ Mit verschiedenen Aktionen und Inhalten möchten wir ein starkes Zeichen für de
 
 Die Aktionswoche im Überblick:
 
-| Datum              | Uhrzeit     |                                                                |
-|:-------------------|:------------|----------------------------------------------------------------|
-| Montag, 22.09.     | ab 18 Uhr   | Infostand bei Übungsstunden.                                   |
-| Mittwoch, 24.09.   | ab 18 Uhr   | Infostand bei Übungsstunden.                                   |
-| Donnerstag, 25.09. | ab 17 Uhr   | Infostand bei Übungsstunden.                                   |
-| Freitag, 26.09.    | 18 Uhr      | Festakt mit Banner-Präsentation, Rote vom Grill und Infostand. |
-| Samstag, 27.09.    | ab 9:30 Uhr | Infostand bei Jugendspieltag.                                  |
+| Datum              | Uhrzeit     |                                                                                   |
+|:-------------------|:------------|-----------------------------------------------------------------------------------|
+| Montag, 22.09.     | ab 18 Uhr   | Infostand bei Übungsstunden.                                                      |
+| Mittwoch, 24.09.   | ab 18 Uhr   | Infostand bei Übungsstunden.                                                      |
+| Donnerstag, 25.09. | ab 17 Uhr   | Infostand bei Übungsstunden.                                                      |
+| Freitag, 26.09.    | 18 Uhr      | Festakt am Kunstrasenplatz mit Banner-Präsentation, Rote vom Grill und Infostand. |
+| Samstag, 27.09.    | ab 9:30 Uhr | Infostand bei Jugendspieltag.                                                     |
 
 Kommt vorbei, bringt Freunde mit & zeigt Flagge!
 
