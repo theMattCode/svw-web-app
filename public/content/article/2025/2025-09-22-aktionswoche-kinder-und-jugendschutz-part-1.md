@@ -28,3 +28,5 @@ Um der Wichtigkeit und der nachhaltigen Entwicklung dieses Themas gerecht zu wer
 
 Markus Hartlieb<br />
 1. Vorsitzender des SV Walddorf
+
+**<sub>-- Folie zur Verfügung gestellt von der Württembergischen Sportjugend (WSJ) zum Thema "Gewaltformen".</sub>**
