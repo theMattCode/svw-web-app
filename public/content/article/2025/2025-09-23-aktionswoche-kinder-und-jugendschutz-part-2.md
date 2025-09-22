@@ -5,7 +5,7 @@ date: 2025-09-23
 tags:
   - Jugendschutz
   - Aktionswoche
-teaser: "Miteinander, Füreinander, Grenzen Achten: Welche Risikofaktoren im Sport erkennen und minimieren."
+teaser: "Miteinander, Füreinander, Grenzen Achten: Welche Risikofaktoren existieren insbesondere im Sportbereich? Wie können wir sie erkennen? Und wie können wir sie minimieren?"
 image:
   src: "https://res.cloudinary.com/svwalddorf/image/upload/v1758565766/Header_2_uf8dbs.jpg"
   alt: "SVW Aktionswoche Kinder- und Jugendschutz Part 2: Risikofaktoren im Sport"
@@ -16,7 +16,7 @@ Sportvereine bieten Kindern und Jugendlichen wertvolle Erfahrungen: Teamgeist, F
 
 ## Strukturen und Zuständigkeiten
 
-Fehlende klare Regeln, ungenaue Abläufe bei Einstellungen oder das Ausbleiben von Sanktionen bei Fehlverhalten können ein Klima schaffen, in dem Grenzen leichter überschritten werden.
+Fehlende klare Regeln, ungenaue Abläufe bei Einstellungen oder das Ausbleiben von Sanktionen bei Fehlverhalten können ein Klima schaffen, in dem Grenzen leichter überschritten werden. Hier sind transparente Strukturen und klare Verantwortlichkeiten entscheidend, um Sicherheit zu gewährleisten. 
 
 ## Körperbetonung
 
