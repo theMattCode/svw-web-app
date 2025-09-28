@@ -28,9 +28,9 @@ export const sponsors: Sponsor[] = [
     name: "Digiwerk GmbH",
     url: "https://www.digiwerk.de/",
     image: {
-      url: "https://res.cloudinary.com/svwalddorf/image/upload/v1754892601/digiwerk_2025_agukqe.jpg",
-      width: 800,
-      height: 533,
+      url: "https://res.cloudinary.com/svwalddorf/image/upload/v1759049523/digiwerk-2025_zrfbwz.jpg",
+      width: 477,
+      height: 192,
     },
   },
   {
