@@ -26,6 +26,8 @@ Ein besonderes Highlight war der Auftritt von Lio (5), dem Sohn von Nadine Albre
 
 ![Lio Albrecht performt selbstbewusst](https://res.cloudinary.com/svwalddorf/image/upload/v1759045498/IMG_1975_mwiaie.jpg)
 
+Unser neuer Jugendleiter Finn Kittelmann erläuterte, dass das Thema auch besonders in seiner neuen Rolle wichtig und ernst genommen wird und in den Alltag der Jugendarbeit integriert wird. Neben Nadine als Jugendschutzbeauftragte wird Finn als Ansprechpartner und Kontaktperson dienen.
+
 ### Unterstützung von Verband und Gemeinde
 
 Im Anschluss betonte WSJ-Präsidentin Sonja Carle das Engagement des Vereins und die Bedeutung solcher Präventionsmaßnahmen für die gesamte Sportlandschaft. Das Engagement des SV Walddorf und die Umsetzung des Präventionskonzept und der Aktionswoche hob sie als vorbildlich hervor.
