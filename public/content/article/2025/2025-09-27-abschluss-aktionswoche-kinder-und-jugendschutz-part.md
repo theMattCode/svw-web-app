@@ -14,7 +14,7 @@ image:
 ---
 ### Banner-Präsentation mit reger Teilnahme – Ein starkes Zeichen für Kinder- und Jugendschutz
 
-Am 26. September 2025 fand in feierlichere Atmosphäre die Präsentation des neuen Präventionsbanners zum Kinder- und Jugendschutz statt. Zahlreiche Gäste, darunter Bürgermeisterin Silke Höffinger, die Präsidentin der Württembergischen Sportjugend (WSJ) Sonja Carle sowie Vertreter der Presse und des SVW, nahmen teil.
+Am 26. September 2025 fand in feierlicher Atmosphäre die Präsentation des neuen Präventionsbanners zum Kinder- und Jugendschutz statt. Zahlreiche Gäste, darunter Bürgermeisterin Silke Höflinger, die Präsidentin der Württembergischen Sportjugend (WSJ) Sonja Carle sowie Vertreter der Presse und des SVW, nahmen teil.
 
 ![Rege Teilnahme](https://res.cloudinary.com/svwalddorf/image/upload/v1759045344/IMG_1938_ojedcr.jpg)
 
@@ -22,15 +22,15 @@ Am 26. September 2025 fand in feierlichere Atmosphäre die Präsentation des neu
 
 Nach der Begrüßung durch die 2. Vorsitzende Andrea Speier wurden die Ziele und Inhalte des Präventionskonzeptes vorgestellt. Nadine Albrecht, Jugendschutzbeauftragte des Vereins, erläuterte die Maßnahmen, die künftig fest im Vereinsalltag verankert sind – von verpflichtenden Schulungen über den Ehrenkodex bis hin zur regelmäßigen Vorlage von Führungszeugnissen.
 
-Ein besonderes Highlight war der Auftritt von Lio (5), dem Sohn von Nadine Albrecht, der mit einem selbstbewusst vorgetragenen „Schutz-Rap“ für große Begeisterung sorgte und den wichtigen Themen einen kindgerechten Ton verlieh.
+Ein besonderes Highlight war der Auftritt von Lio (5), dem Sohn von Nadine Albrecht, der mit dem selbstbewusst vorgetragenen [„Schutz-Rap“](https://www.mut-zentrum.de/kinderschutz-rap/) für große Begeisterung sorgte und den wichtigen Themen einen kindgerechten Ton verlieh.
 
 ![Lio Albrecht performt selbstbewusst](https://res.cloudinary.com/svwalddorf/image/upload/v1759045498/IMG_1975_mwiaie.jpg)
 
 ### Unterstützung von Verband und Gemeinde
 
-Im Anschluss betonte WSJ-Präsidentin Sonja Carle das Engagement des Vereins und die Bedeutung solcher Präventionsmaßnahmen für die gesamte Sportlandschaft.
+Im Anschluss betonte WSJ-Präsidentin Sonja Carle das Engagement des Vereins und die Bedeutung solcher Präventionsmaßnahmen für die gesamte Sportlandschaft. Das Engagement des SV Walddorf und die Umsetzung des Präventionskonzept und der Aktionswoche hob sie als vorbildlich hervor.
 
-Bürgermeisterin Silke Höffinger würdigte die Initiative des SV Walddorf als wegweisend, würdigte das Engagement des Vereins und stellte heraus wie wichtig auch ihr dieses Thema ist.
+Bürgermeisterin Silke Höflinger würdigte die Initiative des SV Walddorf als wegweisend, würdigte das Engagement des Vereins und stellte heraus wie wichtig auch ihr dieses Thema ist.
 
 Mit dem feierlichen Ausrollen des Banners wurde das Event abgeschlossen – ein dauerhaft sichtbares Zeichen für den Schutz von Kindern und Jugendlichen im Sport.
 
