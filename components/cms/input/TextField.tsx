@@ -8,7 +8,8 @@ export type TextFieldMutationVariables = { value: string | null };
 export type MutateResult = { type: "success" } | { type: "error"; message: string };
 export type MutateFn = (variables: TextFieldMutationVariables) => Promise<MutateResult | undefined>;
 
-export interface TextFieldProps extends Pick<MuiTextFieldProps, "defaultValue" | "fullWidth" | "ref" | "inputRef"> {
+export interface TextFieldProps
+  extends Pick<MuiTextFieldProps, "defaultValue" | "fullWidth" | "ref" | "inputRef" | "type" | "id" | "placeholder"> {
   StartIcon?: IconType;
   label?: string;
   mutate?: MutateFn;
@@ -24,6 +25,9 @@ export function TextField({
   fullWidth = true,
   ref,
   inputRef,
+  type,
+  id,
+  placeholder,
 }: TextFieldProps) {
   const [value, setValue] = useState(defaultValue ?? "");
   const [mutationResult, setMutationResult] = useState<MutateResult | undefined>();
@@ -41,8 +45,11 @@ export function TextField({
 
   return (
     <MuiTextField
+      type={type}
+      id={id}
       ref={ref}
       value={value}
+      placeholder={placeholder}
       inputRef={inputRef}
       onChange={onChangeHandler}
       onKeyDown={(event) => {
@@ -57,6 +64,8 @@ export function TextField({
       aria-label={label}
       slotProps={{
         input: {
+          id,
+          type,
           startAdornment: StartIcon ? (
             <InputAdornment position="start">
               <StartIcon />

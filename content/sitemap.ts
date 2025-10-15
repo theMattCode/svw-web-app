@@ -57,6 +57,7 @@ export const formales = {
   url: "/verein/formales",
   subMenu: [satzung, ehrenordnung, geschaeftsordnung, beitragsordnung, jugendschutzordnung, datenschutz, impressum],
 };
+export const ehrenamtlerDesJahres = { name: "Ehrenamtler des Jahres", url: "/verein/ehrenamtler-des-jahres" };
 export const verein: MenuItem = {
   name: "Verein",
   url: "/verein",
@@ -73,6 +74,7 @@ export const verein: MenuItem = {
     historie,
     foerderkreis,
     formales,
+    ehrenamtlerDesJahres,
   ],
 };
 
