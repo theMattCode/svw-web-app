@@ -26,7 +26,7 @@ export const jugendschutz = {
 };
 export const satzung = {
   name: "Satzung",
-  url: "/download/Satzung_SV_Waldddorf_2022-03-11.pdf",
+  url: "/download/2025-07-20_Satzung_SVW.pdf",
   download: { type: "pdf" },
 };
 export const geschaeftsordnung = {
