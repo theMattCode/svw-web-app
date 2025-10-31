@@ -97,7 +97,12 @@ export const people: Person[] = [
     tags: ["Rehasport"],
     email: "rehasport@svwalddorf.de",
     phone: ["+49 7127 580676"],
-    image: { src: "/media/people/ingrid-hartlieb-2023.png", alt: "Ingrid Hartlieb", width: 836, height: 883 },
+    image: {
+      src: "https://res.cloudinary.com/svwalddorf/image/upload/v1761907967/2025-06-12_Ingrid_Hartlieb_zzfwv9.png",
+      alt: "Ingrid Hartlieb",
+      width: 579,
+      height: 800,
+    },
   },
   {
     firstname: "Antonino",
@@ -470,7 +475,7 @@ export const people: Person[] = [
   {
     firstname: "Pietro",
     lastname: "D'Angelo",
-    tags:[],
+    tags: [],
     image: { src: "/media/people/pietro-dangelo-2023.png", alt: "Pietro D'Angelo", width: 217, height: 253 },
   },
   {
