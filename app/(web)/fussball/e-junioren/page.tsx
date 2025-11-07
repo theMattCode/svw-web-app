@@ -44,7 +44,6 @@ export default function EJunioren() {
         <SectionTitle title="Trainer und Betreuer" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <PersonCard person={getPersonByName("Antonino Bonfiglio")} />
-          <PersonCard person={getPersonByName("Matthäus Mayer")} />
           <PersonCard person={getPersonByName("Daniel Russom")} />
           <PersonCard person={getPersonByName("Hannes Kopp")} />
           <PersonCard person={getPersonByName("Florian Schön")} />
