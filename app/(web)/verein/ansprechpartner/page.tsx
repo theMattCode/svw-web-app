@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 
 export default function Ansprechpartner() {
   return (
-    <PageContent>
-      <SectionTitle title={ansprechpartner.name} />
-      <div className="my-1 bg-white shadow-2xl p-2 flex flex-col gap-2">
-        <div className="flex flex-col gap-2">
+    <div className="bg-neutral-200 ">
+      <div className="container flex flex-col gap-4 p-4">
+        <SectionTitle title={ansprechpartner.name} />
+        <div className="flex flex-col gap-4">
           <p className="font-light">
             Bei Fragen zum SV Walddorf im Allgemeinen, unseren Angeboten oder Veranstaltungen können sie sich jederzeit
             gerne an ein Mitglied der Vorstandschaft sowie an unserer Geschäftsstelle wenden.
@@ -36,16 +36,17 @@ export default function Ansprechpartner() {
             aufgelistet:
           </p>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <PersonCard person={getPersonByTag("Geschäftsstelle")} />
           <PersonCard person={getPersonByTag("Vorstand Sport")} />
-          <PersonCard person={getPersonByTag("Sportliche Leitung Aktive und Jugendfußball")} />
+          <PersonCard person={getPersonByTag("Sportliche Leitung Aktive")} />
+          <PersonCard person={getPersonByTag("Jugendleitung Fußball")} />
           <PersonCard person={getPersonByName("Monika Haar")} />
           <PersonCard person={getPersonByTag("Rehasport")} />
           <PersonCard person={getPersonByName("Julian Petermann")} />
           <PersonCard person={getPersonByName("Nadine Albrecht")} />
         </div>
       </div>
-    </PageContent>
+    </div>
   );
 }

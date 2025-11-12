@@ -265,7 +265,8 @@ export const people: Person[] = [
   {
     firstname: "Finn",
     lastname: "Kittelmann",
-    tags: ["Trainer B-Junioren", "Trainer A-Junioren", "Vereinsschiedsrichter"],
+    tags: ["Jugendleitung Fußball", "Trainer B-Junioren", "Trainer A-Junioren", "Vereinsschiedsrichter"],
+    email: "jugendleitung-fussball@svwalddorf.de",
     image: {
       src: "https://res.cloudinary.com/svwalddorf/image/upload/c_crop,ar_3:4/v1731583072/finn-kittelmann-2023_aq55tv.png",
       alt: "Finn Kittelmann",
