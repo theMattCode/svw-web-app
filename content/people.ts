@@ -114,7 +114,7 @@ export const people: Person[] = [
   {
     firstname: "Julian",
     lastname: "Wohlfarth",
-    tags: ["Sportliche Leitung Aktive und Jugendfußball", "Co-Trainer Aktive II"],
+    tags: ["Sportliche Leitung Aktive", "Co-Trainer Aktive II"],
     email: "julian.wohlfarth@svwalddorf.de",
     phone: ["+49 173 7645542"],
     image: { src: "/media/people/julian-wohlfarth-2024.png", width: 2000, height: 2000 },
