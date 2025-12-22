@@ -5,17 +5,19 @@
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "paths": {
-      "#/*": ["./*"]
+      "#/*": [
+        "./*"
+      ]
     },
     "plugins": [
       {
@@ -36,6 +38,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "vitest.setup.ts"
+    "vitest.setup.ts",
+    ".next/dev/types/**/*.ts"
   ]
 }

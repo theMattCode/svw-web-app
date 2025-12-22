@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/nextjs";
 import { getPersonByTag } from "#/content/people";
 import { PersonCard } from "#/components/web/person/PersonCard";
 

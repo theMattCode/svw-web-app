@@ -9,8 +9,14 @@ export const parameters = {
     },
   },
   viewport: {
-    viewports: DEFAULT_VIEWPORTS,
-    defaultViewport: "medium",
+    options: DEFAULT_VIEWPORTS
   },
   chromatic: { viewports: [320, 640, 768, 1024, 1200] },
+};
+
+export const initialGlobals = {
+  viewport: {
+    value: "medium",
+    isRotated: false
+  }
 };

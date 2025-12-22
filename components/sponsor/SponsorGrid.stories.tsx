@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/nextjs";
 import { Sponsor } from "#/components/sponsor/Sponsor";
 import SponsorGrid from "#/components/sponsor/SponsorGrid";
 

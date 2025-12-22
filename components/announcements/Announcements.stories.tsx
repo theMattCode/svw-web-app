@@ -1,5 +1,5 @@
 import { AnnouncementsBlock } from "#/components/announcements/AnnouncementsBlock";
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/nextjs";
 import { Announcements } from "#/components/announcements/Announcements";
 import { Announcement } from "#/content/announcements";
 
