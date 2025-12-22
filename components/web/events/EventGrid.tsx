@@ -19,7 +19,6 @@ export function EventGrid() {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data: Event[] = await response.json();
-        console.log(data); // Debugging: Log the fetched data to see its structure
         setEvents(data);
       } catch (e) {
         if (e instanceof Error) {

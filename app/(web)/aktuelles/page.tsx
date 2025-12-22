@@ -1,6 +1,5 @@
 import { getTitle, PageProps } from "#/lib/page";
-import { PaginatedArticles } from "#/content/article";
-import { getURL } from "#/lib/url";
+import { getArticles, PaginatedArticles } from "#/content/article";
 import { Metadata } from "next";
 import { aktuelles } from "#/content/sitemap";
 import { Section } from "#/components/web/section/Section";
@@ -17,10 +16,7 @@ const PAGE_SIZE = 20;
 export default async function Aktuelles(props: PageProps) {
   const searchParams = await props.searchParams;
   const page = searchParams.page ? Number.parseInt(searchParams.page.toString()) : 1;
-  const articlesResponse = await fetch(`${getURL()}/api/articles?page=${page}&pageSize=${PAGE_SIZE}`, {
-    next: { revalidate: false },
-  });
-  const paginatedArticles: PaginatedArticles = await articlesResponse.json();
+  const paginatedArticles: PaginatedArticles = getArticles(page, PAGE_SIZE, "public/content/article");
   return (
     <PageContent>
       <Section title={aktuelles.name}>
