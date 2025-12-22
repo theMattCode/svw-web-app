@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     minimumCacheTTL: 2678400, // 31 days
+    qualities: [75, 85],
     remotePatterns: [
       {
         protocol: "http",
@@ -17,6 +18,7 @@ const nextConfig = {
       },
     ],
   },
+  /*
   webpack: (config) => {
     config.module.rules.push({
       test: /\.node/,
@@ -24,6 +26,7 @@ const nextConfig = {
     });
     return config;
   },
+  */
   async redirects() {
     return [
       {

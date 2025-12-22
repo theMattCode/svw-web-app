@@ -45,7 +45,7 @@ export default function Markdown({ content }: Props): JSX.Element | null {
             ),
             img: (props) => (
               <span className="w-full flex flex-col items-center py-2 gap-1">
-                <Image alt={props.alt ?? ""} src={props.src ?? ""} width={1280} height={768} unoptimized={true} />
+                <Image alt={props.alt ?? ""} src={`${props.src}`} width={1280} height={768} unoptimized={true} />
                 {props.alt && (
                   <span className="w-full flex flex-row justify-center text-sm text-gray-700">{props.alt}</span>
                 )}
