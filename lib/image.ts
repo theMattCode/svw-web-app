@@ -1,8 +1,3 @@
-export interface ImageProps extends ImageDimensions {
-  src: string;
-  alt?: string;
-}
-
 export interface ImageDimensions {
   width: number;
   height: number;
