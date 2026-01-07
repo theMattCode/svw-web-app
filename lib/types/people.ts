@@ -6,16 +6,3 @@ export type Person = {
   phone: string | null;
   image: string | null;
 };
-
-export type Role = {
-  id: string;
-  name: string | null;
-};
-
-export type PersonWithRoles = Person & {
-  peopleToRoles: {
-    peopleId: string;
-    roleId: string;
-    roles: Role;
-  }[];
-};
